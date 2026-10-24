@@ -1,0 +1,289 @@
+.experiment {
+  background: var(--color-ink);
+  overflow-x: auto;
+}
+
+.screen {
+  position: relative;
+  isolation: isolate;
+  width: 1920px;
+  height: 1080px;
+  margin-inline: auto;
+  overflow: hidden;
+  color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+.texture {
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 354.9999899864197px 287.9345006942749px;
+  pointer-events: none;
+}
+
+.resultTexture {
+  opacity: 0.3;
+}
+
+.instructionTitle,
+.resultTitle,
+.resultSecondLine {
+  position: absolute;
+  margin: 0;
+  height: 80px;
+  font: 800 100px/0.8 var(--font-display);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.instructionTitle {
+  left: 266px;
+  top: 330px;
+  width: 598px;
+}
+
+.instructionBanner,
+.resultBanner {
+  position: absolute;
+  margin: 0;
+  height: 120px;
+  padding: 20px;
+  color: var(--color-ink);
+  background: var(--color-yellow);
+  font: 800 100px/0.8 var(--font-display);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.instructionBanner {
+  left: 266px;
+  top: 425px;
+  width: 1127px;
+}
+
+.instructionBanner > span,
+.resultBanner > span {
+  display: block;
+  height: 80px;
+}
+
+.copy {
+  position: absolute;
+  margin: 0;
+  color: var(--color-paper);
+  font: 500 25px/1.2 var(--font-copy);
+  letter-spacing: -1px;
+  white-space: pre-line;
+}
+
+.scrollInstruction {
+  left: 739px;
+  top: 605px;
+  width: 450px;
+  height: 60px;
+}
+
+.distanceInstruction {
+  left: 1214px;
+  top: 662px;
+  width: 549px;
+  height: 90px;
+}
+
+.nextLink {
+  position: absolute;
+  left: 1448px;
+  top: 964px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 442px;
+  height: 86px;
+  padding: 5px 5px 5px 20px;
+  color: var(--color-ink);
+  background: var(--color-yellow);
+  text-decoration: none;
+}
+
+.nextLabel {
+  display: block;
+  height: 35px;
+  font: 700 35px/1 var(--font-display);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.arrowBox {
+  position: relative;
+  width: 75px;
+  height: 76px;
+  overflow: hidden;
+  background: var(--color-ink);
+}
+
+.arrowBox img {
+  position: absolute;
+  left: 22.46435546875px;
+  top: 23.46435546875px;
+  max-inline-size: none;
+}
+
+.bottomLink {
+  position: absolute;
+  left: 30px;
+  top: 1022px;
+  height: 28px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--color-white);
+  background: none;
+  font: 500 25px/1.1 var(--font-copy);
+  letter-spacing: -0.75px;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-position: from-font;
+  text-underline-offset: 1px;
+  white-space: nowrap;
+}
+
+.skipLink {
+  width: 315px;
+}
+
+.helpTrigger {
+  width: 201px;
+}
+
+/* Source vector paths and ellipse slots, always static. No transition or animation. */
+.cross {
+  position: absolute;
+  left: 610px;
+  top: 490px;
+  overflow: visible;
+  max-inline-size: none;
+}
+
+.targetDot,
+.resultDot {
+  position: absolute;
+  top: 490px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--color-yellow);
+}
+
+.targetDot {
+  left: 1210px;
+}
+
+.help {
+  position: absolute;
+  left: 568px;
+  top: 730px;
+  width: 785px;
+  height: 320px;
+  padding: 5px;
+  border: 5px solid var(--color-blue);
+  background: var(--color-white);
+}
+
+.helpInterior {
+  width: 765px;
+  height: 300px;
+  padding: 30px;
+  background: var(--color-blue);
+}
+
+.helpContent {
+  width: 705px;
+  height: 240px;
+}
+
+.helpTitle {
+  width: 238px;
+  height: 40px;
+  margin: 0 0 20px;
+  font: 800 50px/0.8 var(--font-display);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.helpList {
+  width: 705px;
+  height: 180px;
+  margin: 0;
+  padding: 0 0 0 29.5px;
+  font: 500 25px/1.2 var(--font-copy);
+  letter-spacing: -0.75px;
+}
+
+/* Match Figma's list indent and 50px display baseline inside unchanged source boxes. */
+.helpTitle > span {
+  position: relative;
+  top: 1px;
+}
+
+.helpList li {
+  position: relative;
+}
+
+.helpList li::marker {
+  content: '';
+}
+
+.helpList li::before {
+  position: absolute;
+  left: -37.5px;
+  content: counter(list-item) '.';
+}
+
+.helpList a {
+  text-decoration: underline;
+  text-underline-position: from-font;
+  text-underline-offset: 1px;
+}
+
+.resultTitle {
+  left: 30px;
+  top: 341px;
+  width: 498px;
+}
+
+.resultSecondLine {
+  left: 265px;
+  top: 431px;
+  width: 463px;
+}
+
+.resultBanner {
+  left: 265px;
+  top: 526px;
+  width: 546px;
+}
+
+.resultDot {
+  left: 1206px;
+}
+
+.dotExplanation {
+  left: 1209.5px;
+  top: 620px;
+  width: 310px;
+  height: 60px;
+}
+
+.resultNote {
+  left: 30px;
+  top: 960px;
+  width: 473px;
+  height: 90px;
+}

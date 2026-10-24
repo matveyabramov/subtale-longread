@@ -1,0 +1,334 @@
+{
+  "pass": "1",
+  "frames": [
+    {
+      "name": "instructions",
+      "full": {
+        "mae": 0.7224286265432098,
+        "pixelsAbove12Percent": 0.8851755401234568,
+        "max": 244,
+        "exactPercent": 41.83309220679013
+      },
+      "regions": {
+        "title": {
+          "mae": 1.7671818891491022,
+          "pixelsAbove12Percent": 4.560499609679938,
+          "max": 90,
+          "exactPercent": 58.5792349726776,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": 0,
+            "mae": 1.7671818891491022,
+            "pixelsAbove12Percent": 4.560499609679938,
+            "max": 90,
+            "exactPercent": 58.5792349726776
+          }
+        },
+        "banner": {
+          "mae": 1.4166518781425614,
+          "pixelsAbove12Percent": 4.593315587104407,
+          "max": 118,
+          "exactPercent": 94.2058562555457,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": 0,
+            "mae": 1.4166518781425614,
+            "pixelsAbove12Percent": 4.593315587104407,
+            "max": 118,
+            "exactPercent": 94.2058562555457
+          }
+        },
+        "scrollCopy": {
+          "mae": 3.4906543209876544,
+          "pixelsAbove12Percent": 8.670370370370371,
+          "max": 113,
+          "exactPercent": 35.72962962962963,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": 0,
+            "mae": 3.4906543209876544,
+            "pixelsAbove12Percent": 8.670370370370371,
+            "max": 113,
+            "exactPercent": 35.72962962962963
+          }
+        },
+        "distanceCopy": {
+          "mae": 3.640511367469473,
+          "pixelsAbove12Percent": 8.571139445456385,
+          "max": 124,
+          "exactPercent": 35.82270795385549,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": 0,
+            "mae": 3.640511367469473,
+            "pixelsAbove12Percent": 8.571139445456385,
+            "max": 124,
+            "exactPercent": 35.82270795385549
+          }
+        },
+        "skip": {
+          "mae": 16.820800264550265,
+          "pixelsAbove12Percent": 14.424603174603174,
+          "max": 244,
+          "exactPercent": 36.71626984126984,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": 0,
+            "mae": 16.820800264550265,
+            "pixelsAbove12Percent": 14.424603174603174,
+            "max": 244,
+            "exactPercent": 36.71626984126984
+          }
+        },
+        "background": {
+          "mae": 0.3946145833333333,
+          "pixelsAbove12Percent": 0,
+          "max": 4,
+          "exactPercent": 36.69114583333333
+        },
+        "cta": {
+          "mae": 1.2051808200919008,
+          "pixelsAbove12Percent": 3.135851836262233,
+          "max": 174,
+          "exactPercent": 95.57771230137851
+        },
+        "arrow": {
+          "mae": 5.513469387755102,
+          "pixelsAbove12Percent": 7.591836734693878,
+          "max": 174,
+          "exactPercent": 91.26530612244898,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": 0,
+            "mae": 5.513469387755102,
+            "pixelsAbove12Percent": 7.591836734693878,
+            "max": 174,
+            "exactPercent": 91.26530612244898
+          }
+        }
+      }
+    },
+    {
+      "name": "target",
+      "full": {
+        "mae": 1.7215801826131687,
+        "pixelsAbove12Percent": 1.3559027777777777,
+        "max": 254,
+        "exactPercent": 44.141541280864196
+      },
+      "regions": {
+        "cross": {
+          "mae": 0.5012121212121212,
+          "pixelsAbove12Percent": 0,
+          "max": 12,
+          "exactPercent": 44.70247933884298
+        },
+        "dot": {
+          "mae": 0.2467,
+          "pixelsAbove12Percent": 0.66,
+          "max": 29,
+          "exactPercent": 84.81
+        },
+        "help": {
+          "mae": 10.81890525477707,
+          "pixelsAbove12Percent": 10.500398089171975,
+          "max": 254,
+          "exactPercent": 88.76353503184713
+        },
+        "helpTitle": {
+          "mae": 7.6149931972789116,
+          "pixelsAbove12Percent": 11.23265306122449,
+          "max": 254,
+          "exactPercent": 84.55510204081632,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": -1,
+            "mae": 1.218421768707483,
+            "pixelsAbove12Percent": 5.297959183673469,
+            "max": 69,
+            "exactPercent": 88.34285714285714
+          }
+        },
+        "list": {
+          "mae": 20.25019547325103,
+          "pixelsAbove12Percent": 19.290895061728396,
+          "max": 254,
+          "exactPercent": 79.68055555555556,
+          "bestSampleOffset": {
+            "dx": 1,
+            "dy": 0,
+            "mae": 19.154182098765432,
+            "pixelsAbove12Percent": 18.65740740740741,
+            "max": 254,
+            "exactPercent": 80.27237654320987
+          }
+        },
+        "markers": {
+          "mae": 6.0019400352733685,
+          "pixelsAbove12Percent": 6.587301587301587,
+          "max": 254,
+          "exactPercent": 92.94973544973546
+        },
+        "trigger": {
+          "mae": 16.508188225538973,
+          "pixelsAbove12Percent": 12.8886815920398,
+          "max": 244,
+          "exactPercent": 37.8886815920398,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": 0,
+            "mae": 16.508188225538973,
+            "pixelsAbove12Percent": 12.8886815920398,
+            "max": 244,
+            "exactPercent": 37.8886815920398
+          }
+        },
+        "background": {
+          "mae": 0.3946163194444444,
+          "pixelsAbove12Percent": 0,
+          "max": 4,
+          "exactPercent": 36.691319444444446
+        },
+        "cta": {
+          "mae": 0.9100810270440913,
+          "pixelsAbove12Percent": 2.220351467957487,
+          "max": 174,
+          "exactPercent": 96.45901294328107
+        },
+        "arrow": {
+          "mae": 5.513469387755102,
+          "pixelsAbove12Percent": 7.591836734693878,
+          "max": 174,
+          "exactPercent": 91.26530612244898,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": 0,
+            "mae": 5.513469387755102,
+            "pixelsAbove12Percent": 7.591836734693878,
+            "max": 174,
+            "exactPercent": 91.26530612244898
+          }
+        }
+      }
+    },
+    {
+      "name": "result",
+      "full": {
+        "mae": 0.6342147312242798,
+        "pixelsAbove12Percent": 0.5557002314814815,
+        "max": 174,
+        "exactPercent": 32.38715277777778
+      },
+      "regions": {
+        "title": {
+          "mae": 1.7086345381526105,
+          "pixelsAbove12Percent": 4.774096385542169,
+          "max": 88,
+          "exactPercent": 60.592369477911646,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": 0,
+            "mae": 1.7086345381526105,
+            "pixelsAbove12Percent": 4.774096385542169,
+            "max": 88,
+            "exactPercent": 60.592369477911646
+          }
+        },
+        "second": {
+          "mae": 1.8814794816414686,
+          "pixelsAbove12Percent": 4.58963282937365,
+          "max": 81,
+          "exactPercent": 60.49946004319654,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": 0,
+            "mae": 1.8814794816414686,
+            "pixelsAbove12Percent": 4.58963282937365,
+            "max": 81,
+            "exactPercent": 60.49946004319654
+          }
+        },
+        "banner": {
+          "mae": 0.5796652421652422,
+          "pixelsAbove12Percent": 2.512210012210012,
+          "max": 100,
+          "exactPercent": 94.8992673992674,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": 0,
+            "mae": 0.5796652421652422,
+            "pixelsAbove12Percent": 2.512210012210012,
+            "max": 100,
+            "exactPercent": 94.8992673992674
+          }
+        },
+        "dot": {
+          "mae": 0.2658,
+          "pixelsAbove12Percent": 0.66,
+          "max": 30,
+          "exactPercent": 82.55
+        },
+        "copy": {
+          "mae": 2.689085387638442,
+          "pixelsAbove12Percent": 7.390139335476956,
+          "max": 86,
+          "exactPercent": 29.239013933547696,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": 0,
+            "mae": 2.689085387638442,
+            "pixelsAbove12Percent": 7.390139335476956,
+            "max": 86,
+            "exactPercent": 29.239013933547696
+          }
+        },
+        "note": {
+          "mae": 3.4809881763370134,
+          "pixelsAbove12Percent": 8.703312191684285,
+          "max": 104,
+          "exactPercent": 28.653981677237493,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": 0,
+            "mae": 3.4809881763370134,
+            "pixelsAbove12Percent": 8.703312191684285,
+            "max": 104,
+            "exactPercent": 28.653981677237493
+          }
+        },
+        "background": {
+          "mae": 0.48033738425925926,
+          "pixelsAbove12Percent": 0,
+          "max": 5,
+          "exactPercent": 27.572743055555556
+        },
+        "cta": {
+          "mae": 1.1263811427970114,
+          "pixelsAbove12Percent": 2.9595917078817218,
+          "max": 174,
+          "exactPercent": 96.20646111754183
+        },
+        "arrow": {
+          "mae": 5.513469387755102,
+          "pixelsAbove12Percent": 7.591836734693878,
+          "max": 174,
+          "exactPercent": 91.26530612244898,
+          "bestSampleOffset": {
+            "dx": 0,
+            "dy": 0,
+            "mae": 5.513469387755102,
+            "pixelsAbove12Percent": 7.591836734693878,
+            "max": 174,
+            "exactPercent": 91.26530612244898
+          }
+        }
+      }
+    }
+  ],
+  "heroRegression": {
+    "mae": 0,
+    "pixelsAbove12Percent": 0,
+    "max": 0,
+    "exactPercent": 100
+  }
+}

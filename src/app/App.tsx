@@ -18,8 +18,8 @@ export function App() {
     <div data-reduced-motion={reducedMotion}>
       <main id="main-content" tabIndex={-1}>
         <HeroSection />
+        <ExperimentSection />
         <div className={styles.foundation}>
-          <ExperimentSection />
           <EmptinessSection />
           <ElephantSection />
           <BlindZonesExplorer />

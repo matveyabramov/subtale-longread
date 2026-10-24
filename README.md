@@ -4,7 +4,7 @@ Interactive editorial longread about hidden meanings in English-language film an
 
 ## Status
 
-Stage 0.3 **Approved**, Stage 1A **Completed**, Stage 1B.1 **Completed**: Hero Desktop 1920 is implemented; the other nine sections remain technical placeholders. Matching local IBM Plex Mono Latin/Cyrillic subsets are connected (docs/FONT_ASSETS.md). Hero comparison screenshots, checks and explicit visual limits: [HERO_DESKTOP_QA.md](docs/HERO_DESKTOP_QA.md).
+Stage 0.3 **Approved**, Stage 1A **Completed**, Stages 1B.1 and 1B.2 **Completed**: Hero and all three Experiment screens are implemented at Desktop 1920; the other eight sections remain technical placeholders. Matching local IBM Plex Mono Latin/Cyrillic subsets are connected (docs/FONT_ASSETS.md). Comparison screenshots, checks and explicit visual limits: [HERO_DESKTOP_QA.md](docs/HERO_DESKTOP_QA.md) and [EXPERIMENT_DESKTOP_QA.md](docs/EXPERIMENT_DESKTOP_QA.md).
 
 ## Run locally
 

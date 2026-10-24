@@ -1,6 +1,6 @@
 # SUBTALE — execution roadmap (frozen outline)
 
-Work atomically. Stage 0.2 completed (historical asset snapshot: 41 Figma raster masters, 16 SVGs, four WOFF2s, 5/5 films and posters). Stage 0.3 **Approved**: D01–D11 in INTERACTION_SPEC; editorial Figma content is final. Stage 1A **Completed**: see FOUNDATION.md. Stage 1B.1 **Completed — Hero Desktop 1920 only**: [HERO_DESKTOP_QA.md](HERO_DESKTOP_QA.md), three visual comparison passes, explicit family/rasterization differences recorded. Matching local IBM Latin subsets were added in separate commit `1ef5ddb` (six local WOFF2s now); see FONT_ASSETS.md. Other nine section components remain placeholders and unchanged. New UI visual details, later sections, interactions and motion require their own stage requests.
+Work atomically. Stage 0.2 completed (historical asset snapshot: 41 Figma raster masters, 16 SVGs, four WOFF2s, 5/5 films and posters). Stage 0.3 **Approved**: D01–D11 in INTERACTION_SPEC; editorial Figma content is final. Stage 1A **Completed**: see FOUNDATION.md. Stage 1B.1 **Completed — Hero Desktop 1920**: [HERO_DESKTOP_QA.md](HERO_DESKTOP_QA.md). Stage 1B.2 **Completed — Experiment Desktop 1920**: all three frames in natural flow, two production visual QA passes per frame; [EXPERIMENT_DESKTOP_QA.md](EXPERIMENT_DESKTOP_QA.md) records measured rasterization differences and pixel-identical Hero regression. Matching local IBM Latin subsets were added in separate commit `1ef5ddb` (six local WOFF2s now); see FONT_ASSETS.md. The other eight section components remain placeholders and unchanged. New UI visual details, later sections, interactions and motion require their own stage requests.
 
 | Stage | Work | Gate |
 |---|---|---|
@@ -11,6 +11,7 @@ Work atomically. Stage 0.2 completed (historical asset snapshot: 41 Figma raster
 | 1A | Bootstrap Vite + React + TypeScript + style tokens | Done: strict typecheck, production build, dev/preview smoke QA; Latin glyph coverage tracked in FOUNDATION.md |
 | 1B | Build 1920px frames individually: Hero → experiment → content → explorer → movies → ending | Each screen screenshot compared with Figma; no complex motion |
 | 1B.1 | Hero Desktop 1920 + matching IBM Latin coverage | Done: typecheck/build/assets + dev/production DPR1 visual QA; explicit font-family exceptions documented |
+| 1B.2 | Experiment Instructions → Target → Result, Desktop 1920 | Done: native flow/anchors, static cross/dot, visible source help panel; two production DPR1 comparisons per frame, typecheck/build/assets, Hero regression passed |
 | 1C | Integrate all desktop sections in story order | Full 1920 longread; explorer variants never become extra sections; experiment flow follows approved D02 |
 | 2 | Responsive desktop 1440 (plus 1600 and 1280 checks) | Layout reflows appropriately without 1440 Figma mockup |
 | 3 | Functional interactions without elaborate motion | Keyboard, touch, skip, reset, modal and media states work |

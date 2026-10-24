@@ -1,0 +1,2263 @@
+{
+  "stage": "1B.2",
+  "fileKey": "H4HI00uGY2UOxpcfHogUat",
+  "sessionId": "d0221572-85bc-4908-ab00-c398c4f58561",
+  "frames": [
+    {
+      "id": "10:718",
+      "nodes": [
+        {
+          "id": "10:718",
+          "parent": "0:1",
+          "type": "FRAME",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080,
+          "transform": [
+            [
+              1,
+              0,
+              4276
+            ],
+            [
+              0,
+              1,
+              1180
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:719",
+            "10:720",
+            "10:721",
+            "10:723",
+            "10:724",
+            "10:725",
+            "10:729"
+          ],
+          "clip": true,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.04313725605607033,
+                "g": 0.05098039284348488,
+                "b": 0.05882352963089943
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:719",
+          "parent": "10:718",
+          "type": "RECTANGLE",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080,
+          "transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 0.20000000298023224,
+              "blendMode": "NORMAL",
+              "scaleMode": "TILE",
+              "scalingFactor": 0.8942065238952637,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e"
+            }
+          ]
+        },
+        {
+          "id": "10:720",
+          "parent": "10:718",
+          "type": "TEXT",
+          "x": 266,
+          "y": 330,
+          "w": 598,
+          "h": 80,
+          "transform": [
+            [
+              1,
+              0,
+              266
+            ],
+            [
+              0,
+              1,
+              330
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Закрой левый глаз",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 100,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "vertical": "TOP",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Закрой левый глаз",
+              "start": 0,
+              "end": 17,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:721",
+          "parent": "10:718",
+          "type": "FRAME",
+          "x": 266,
+          "y": 425,
+          "w": 1127,
+          "h": 120,
+          "transform": [
+            [
+              1,
+              0,
+              266
+            ],
+            [
+              0,
+              1,
+              425
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:722"
+          ],
+          "clip": false,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9960784316062927,
+                "g": 0.8196078538894653,
+                "b": 0.1568627506494522
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:722",
+          "parent": "10:721",
+          "type": "TEXT",
+          "x": 286,
+          "y": 445,
+          "w": 1087,
+          "h": 80,
+          "transform": [
+            [
+              1,
+              0,
+              20
+            ],
+            [
+              0,
+              1,
+              20
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.04313725605607033,
+                "g": 0.05098039284348488,
+                "b": 0.05882352963089943
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Правым смотри только на крестик",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 100,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "vertical": "TOP",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Правым смотри только на крестик",
+              "start": 0,
+              "end": 31,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:723",
+          "parent": "10:718",
+          "type": "TEXT",
+          "x": 739,
+          "y": 605,
+          "w": 450,
+          "h": 60,
+          "transform": [
+            [
+              1,
+              0,
+              739
+            ],
+            [
+              0,
+              1,
+              605
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9333333373069763,
+                "g": 0.9333333373069763,
+                "b": 0.9058823585510254
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Прокрути вниз — на следующем экране появятся крестик и точка",
+          "font": {
+            "family": "IBM Plex Mono",
+            "style": "Medium"
+          },
+          "size": 25,
+          "line": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": -4
+          },
+          "textCase": "ORIGINAL",
+          "vertical": "CENTER",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Прокрути вниз — на следующем экране появятся крестик и точка",
+              "start": 0,
+              "end": 60,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:724",
+          "parent": "10:718",
+          "type": "TEXT",
+          "x": 1214,
+          "y": 662,
+          "w": 549,
+          "h": 90,
+          "transform": [
+            [
+              1,
+              0,
+              1214
+            ],
+            [
+              0,
+              1,
+              662
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9333333373069763,
+                "g": 0.9333333373069763,
+                "b": 0.9058823585510254
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Не отводя взгляд от крестика, медленно приближайся к экрану или отдаляйся от него, пока точка не исчезнет",
+          "font": {
+            "family": "IBM Plex Mono",
+            "style": "Medium"
+          },
+          "size": 25,
+          "line": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": -4
+          },
+          "textCase": "ORIGINAL",
+          "vertical": "CENTER",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Не отводя взгляд от крестика, медленно приближайся к экрану или отдаляйся от него, пока точка не исчезнет",
+              "start": 0,
+              "end": 105,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:725",
+          "parent": "10:718",
+          "type": "FRAME",
+          "x": 1448,
+          "y": 964,
+          "w": 442,
+          "h": 86,
+          "transform": [
+            [
+              1,
+              0,
+              1448
+            ],
+            [
+              0,
+              1,
+              964
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:726",
+            "10:727"
+          ],
+          "clip": false,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9960784316062927,
+                "g": 0.8196078538894653,
+                "b": 0.1568627506494522
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:726",
+          "parent": "10:725",
+          "type": "TEXT",
+          "x": 1468,
+          "y": 989.5,
+          "w": 194,
+          "h": 35,
+          "transform": [
+            [
+              1,
+              0,
+              20
+            ],
+            [
+              0,
+              1,
+              25.5
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.04313725605607033,
+                "g": 0.05098039284348488,
+                "b": 0.05882352963089943
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "К крестику и точке",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "Bold"
+          },
+          "size": 35,
+          "line": {
+            "unit": "PERCENT",
+            "value": 100
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "vertical": "CENTER",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "К крестику и точке",
+              "start": 0,
+              "end": 18,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:727",
+          "parent": "10:725",
+          "type": "FRAME",
+          "x": 1810,
+          "y": 969,
+          "w": 75,
+          "h": 76,
+          "transform": [
+            [
+              1,
+              0,
+              362
+            ],
+            [
+              0,
+              1,
+              5
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:728"
+          ],
+          "clip": true,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.04313725605607033,
+                "g": 0.05098039284348488,
+                "b": 0.05882352963089943
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:728",
+          "parent": "10:727",
+          "type": "VECTOR",
+          "x": 1836,
+          "y": 996,
+          "w": 20,
+          "h": 20,
+          "transform": [
+            [
+              1,
+              0,
+              26
+            ],
+            [
+              0,
+              1,
+              27
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9529411792755127,
+                "g": 0.7921568751335144,
+                "b": 0.15294118225574493
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 10,
+          "strokeAlign": "CENTER",
+          "vectorPaths": [
+            {
+              "windingRule": "NONE",
+              "data": "M 0 0 L 20 20 M 20 20 L 20 13.076923076923078 L 13.076923076923078 20 L 20 20 Z"
+            }
+          ],
+          "cap": "NONE",
+          "renderBounds": {
+            "x": 6108.46435546875,
+            "y": 2172.46435546875,
+            "width": 28.53564453125,
+            "height": 28.53564453125
+          }
+        },
+        {
+          "id": "10:729",
+          "parent": "10:718",
+          "type": "TEXT",
+          "x": 30,
+          "y": 1022,
+          "w": 315,
+          "h": 28,
+          "transform": [
+            [
+              1,
+              6.099735716084433e-17,
+              30
+            ],
+            [
+              -6.099735716084433e-17,
+              1,
+              1022
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Пропустить эксперимент",
+          "font": {
+            "family": "IBM Plex Mono",
+            "style": "Medium"
+          },
+          "size": 25,
+          "line": {
+            "unit": "PERCENT",
+            "value": 110.00000238418579
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "textCase": "ORIGINAL",
+          "vertical": "TOP",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Пропустить эксперимент",
+              "start": 0,
+              "end": 22,
+              "textDecoration": "UNDERLINE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10:730",
+      "nodes": [
+        {
+          "id": "10:730",
+          "parent": "0:1",
+          "type": "FRAME",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080,
+          "transform": [
+            [
+              1,
+              0,
+              4276
+            ],
+            [
+              0,
+              1,
+              2360
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:731",
+            "10:732",
+            "10:735",
+            "10:736",
+            "10:737",
+            "10:742"
+          ],
+          "clip": true,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.04313725605607033,
+                "g": 0.05098039284348488,
+                "b": 0.05882352963089943
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:731",
+          "parent": "10:730",
+          "type": "RECTANGLE",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080,
+          "transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 0.20000000298023224,
+              "blendMode": "NORMAL",
+              "scaleMode": "TILE",
+              "scalingFactor": 0.8942065238952637,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e"
+            }
+          ]
+        },
+        {
+          "id": "10:732",
+          "parent": "10:730",
+          "type": "GROUP",
+          "x": 610,
+          "y": 490,
+          "w": 100,
+          "h": 100,
+          "transform": [
+            [
+              1,
+              0,
+              610
+            ],
+            [
+              0,
+              1,
+              490
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:733",
+            "10:734"
+          ]
+        },
+        {
+          "id": "10:733",
+          "parent": "10:732",
+          "type": "VECTOR",
+          "x": 610,
+          "y": 540.666015625,
+          "w": 100,
+          "h": 0,
+          "transform": [
+            [
+              1,
+              0,
+              610
+            ],
+            [
+              0,
+              1,
+              540.666015625
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 10,
+          "strokeAlign": "CENTER",
+          "vectorPaths": [
+            {
+              "windingRule": "NONE",
+              "data": "M 0 0 L 100 0"
+            }
+          ],
+          "cap": "NONE",
+          "renderBounds": {
+            "x": 4886,
+            "y": 2895.666015625,
+            "width": 100,
+            "height": 10
+          }
+        },
+        {
+          "id": "10:734",
+          "parent": "10:732",
+          "type": "VECTOR",
+          "x": 660.0068359375,
+          "y": 490,
+          "w": 100,
+          "h": 0,
+          "transform": [
+            [
+              -4.371138828673793e-8,
+              -1,
+              660.0068359375
+            ],
+            [
+              1,
+              -4.371138828673793e-8,
+              490
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 10,
+          "strokeAlign": "CENTER",
+          "vectorPaths": [
+            {
+              "windingRule": "NONE",
+              "data": "M 0 0 L 100 0"
+            }
+          ],
+          "cap": "NONE",
+          "renderBounds": {
+            "x": 4931.0068359375,
+            "y": 2850,
+            "width": 10,
+            "height": 100
+          }
+        },
+        {
+          "id": "10:735",
+          "parent": "10:730",
+          "type": "ELLIPSE",
+          "x": 1210,
+          "y": 490,
+          "w": 100,
+          "h": 100,
+          "transform": [
+            [
+              1,
+              0,
+              1210
+            ],
+            [
+              0,
+              1,
+              490
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9960784316062927,
+                "g": 0.8196078538894653,
+                "b": 0.1568627506494522
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:736",
+          "parent": "10:730",
+          "type": "TEXT",
+          "x": 30,
+          "y": 1022,
+          "w": 201,
+          "h": 28,
+          "transform": [
+            [
+              1,
+              6.099735716084433e-17,
+              30
+            ],
+            [
+              -6.099735716084433e-17,
+              1,
+              1022
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Не получается?",
+          "font": {
+            "family": "IBM Plex Mono",
+            "style": "Medium"
+          },
+          "size": 25,
+          "line": {
+            "unit": "PERCENT",
+            "value": 110.00000238418579
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "textCase": "ORIGINAL",
+          "vertical": "TOP",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Не получается?",
+              "start": 0,
+              "end": 14,
+              "textDecoration": "UNDERLINE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:737",
+          "parent": "10:730",
+          "type": "FRAME",
+          "x": 568,
+          "y": 730,
+          "w": 785,
+          "h": 320,
+          "transform": [
+            [
+              1,
+              -2.7755575615628914e-17,
+              568
+            ],
+            [
+              2.7755575615628914e-17,
+              1,
+              730
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:738"
+          ],
+          "clip": false,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.003921568859368563,
+                "g": 0.18039216101169586,
+                "b": 0.843137264251709
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 5,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "id": "10:738",
+          "parent": "10:737",
+          "type": "FRAME",
+          "x": 578,
+          "y": 740,
+          "w": 765,
+          "h": 300,
+          "transform": [
+            [
+              1,
+              4.437646638823662e-17,
+              10
+            ],
+            [
+              -4.437646638823662e-17,
+              1,
+              10
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:739"
+          ],
+          "clip": false,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.003921568859368563,
+                "g": 0.18039216101169586,
+                "b": 0.843137264251709
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:739",
+          "parent": "10:738",
+          "type": "FRAME",
+          "x": 608,
+          "y": 770,
+          "w": 705,
+          "h": 240,
+          "transform": [
+            [
+              1,
+              -6.162975822039155e-33,
+              30
+            ],
+            [
+              0,
+              1,
+              30
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:740",
+            "10:741"
+          ],
+          "clip": false,
+          "fills": []
+        },
+        {
+          "id": "10:740",
+          "parent": "10:739",
+          "type": "TEXT",
+          "x": 608,
+          "y": 770,
+          "w": 238,
+          "h": 40,
+          "transform": [
+            [
+              1,
+              -1.6620890772607708e-17,
+              0
+            ],
+            [
+              1.6620890772607708e-17,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Не получается?",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 50,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "vertical": "TOP",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Не получается?",
+              "start": 0,
+              "end": 14,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:741",
+          "parent": "10:739",
+          "type": "TEXT",
+          "x": 608,
+          "y": 830,
+          "w": 705,
+          "h": 180,
+          "transform": [
+            [
+              1,
+              4.437646638823662e-17,
+              0
+            ],
+            [
+              -4.437646638823662e-17,
+              1,
+              60
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Держи левый глаз закрытым и не переводи взгляд с крестика.\nМедленно меняй расстояние до экрана. Эффект зависит от размера дисплея и дистанции просмотра.\nЕсли не сработало — можно пропустить.",
+          "font": {
+            "family": "IBM Plex Mono",
+            "style": "Medium"
+          },
+          "size": 25,
+          "line": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "textCase": "ORIGINAL",
+          "vertical": "TOP",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Держи левый глаз закрытым и не переводи взгляд с крестика.\nМедленно меняй расстояние до экрана. Эффект зависит от размера дисплея и дистанции просмотра.\nЕсли не сработало — можно ",
+              "start": 0,
+              "end": 179,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "ORDERED"
+              },
+              "paragraphIndent": 0
+            },
+            {
+              "characters": "пропустить",
+              "start": 179,
+              "end": 189,
+              "textDecoration": "UNDERLINE",
+              "listOptions": {
+                "type": "ORDERED"
+              },
+              "paragraphIndent": 0
+            },
+            {
+              "characters": ".",
+              "start": 189,
+              "end": 190,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "ORDERED"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:742",
+          "parent": "10:730",
+          "type": "FRAME",
+          "x": 1448,
+          "y": 964,
+          "w": 442,
+          "h": 86,
+          "transform": [
+            [
+              1,
+              0,
+              1448
+            ],
+            [
+              0,
+              1,
+              964
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:743",
+            "10:744"
+          ],
+          "clip": false,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9960784316062927,
+                "g": 0.8196078538894653,
+                "b": 0.1568627506494522
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:743",
+          "parent": "10:742",
+          "type": "TEXT",
+          "x": 1468,
+          "y": 989.5,
+          "w": 143,
+          "h": 35,
+          "transform": [
+            [
+              1,
+              0,
+              20
+            ],
+            [
+              0,
+              1,
+              25.5
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.04313725605607033,
+                "g": 0.05098039284348488,
+                "b": 0.05882352963089943
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Я попробовал",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "Bold"
+          },
+          "size": 35,
+          "line": {
+            "unit": "PERCENT",
+            "value": 100
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "vertical": "CENTER",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Я попробовал",
+              "start": 0,
+              "end": 12,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:744",
+          "parent": "10:742",
+          "type": "FRAME",
+          "x": 1810,
+          "y": 969,
+          "w": 75,
+          "h": 76,
+          "transform": [
+            [
+              1,
+              0,
+              362
+            ],
+            [
+              0,
+              1,
+              5
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:745"
+          ],
+          "clip": true,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.04313725605607033,
+                "g": 0.05098039284348488,
+                "b": 0.05882352963089943
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:745",
+          "parent": "10:744",
+          "type": "VECTOR",
+          "x": 1836,
+          "y": 996,
+          "w": 20,
+          "h": 20,
+          "transform": [
+            [
+              1,
+              0,
+              26
+            ],
+            [
+              0,
+              1,
+              27
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9529411792755127,
+                "g": 0.7921568751335144,
+                "b": 0.15294118225574493
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 10,
+          "strokeAlign": "CENTER",
+          "vectorPaths": [
+            {
+              "windingRule": "NONE",
+              "data": "M 0 0 L 20 20 M 20 20 L 20 13.076923076923078 L 13.076923076923078 20 L 20 20 Z"
+            }
+          ],
+          "cap": "NONE",
+          "renderBounds": {
+            "x": 6108.46435546875,
+            "y": 3352.46435546875,
+            "width": 28.53564453125,
+            "height": 28.53564453125
+          }
+        }
+      ]
+    },
+    {
+      "id": "10:760",
+      "nodes": [
+        {
+          "id": "10:760",
+          "parent": "0:1",
+          "type": "FRAME",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080,
+          "transform": [
+            [
+              1,
+              0,
+              4276
+            ],
+            [
+              0,
+              1,
+              3540
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:761",
+            "10:762",
+            "10:764",
+            "10:765",
+            "10:766",
+            "10:767",
+            "10:768",
+            "10:769"
+          ],
+          "clip": true,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.04313725605607033,
+                "g": 0.05098039284348488,
+                "b": 0.05882352963089943
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:761",
+          "parent": "10:760",
+          "type": "RECTANGLE",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080,
+          "transform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 0.30000001192092896,
+              "blendMode": "NORMAL",
+              "scaleMode": "TILE",
+              "scalingFactor": 0.8942065238952637,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e"
+            }
+          ]
+        },
+        {
+          "id": "10:762",
+          "parent": "10:760",
+          "type": "FRAME",
+          "x": 265,
+          "y": 526,
+          "w": 546,
+          "h": 120,
+          "transform": [
+            [
+              1,
+              0,
+              265
+            ],
+            [
+              0,
+              1,
+              526
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:763"
+          ],
+          "clip": false,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9960784316062927,
+                "g": 0.8196078538894653,
+                "b": 0.1568627506494522
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:763",
+          "parent": "10:762",
+          "type": "TEXT",
+          "x": 285,
+          "y": 546,
+          "w": 506,
+          "h": 80,
+          "transform": [
+            [
+              1,
+              0,
+              20
+            ],
+            [
+              0,
+              1,
+              20
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.04313725605607033,
+                "g": 0.05098039284348488,
+                "b": 0.05882352963089943
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Просто исчезла.",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 100,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "vertical": "TOP",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Просто исчезла.",
+              "start": 0,
+              "end": 15,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:764",
+          "parent": "10:760",
+          "type": "TEXT",
+          "x": 1209.5,
+          "y": 620,
+          "w": 310,
+          "h": 60,
+          "transform": [
+            [
+              1,
+              0,
+              1209.5
+            ],
+            [
+              0,
+              1,
+              620
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9333333373069763,
+                "g": 0.9333333373069763,
+                "b": 0.9058823585510254
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Точка всё это время оставалась на экране",
+          "font": {
+            "family": "IBM Plex Mono",
+            "style": "Medium"
+          },
+          "size": 25,
+          "line": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": -4
+          },
+          "textCase": "ORIGINAL",
+          "vertical": "CENTER",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Точка всё это время оставалась на экране",
+              "start": 0,
+              "end": 40,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:765",
+          "parent": "10:760",
+          "type": "TEXT",
+          "x": 30,
+          "y": 960,
+          "w": 473,
+          "h": 90,
+          "transform": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              960
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9333333373069763,
+                "g": 0.9333333373069763,
+                "b": 0.9058823585510254
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Не увидел исчезновения?\nЭто нормально: результат зависит от расстояния и условий просмотра",
+          "font": {
+            "family": "IBM Plex Mono",
+            "style": "Medium"
+          },
+          "size": 25,
+          "line": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": -4
+          },
+          "textCase": "ORIGINAL",
+          "vertical": "CENTER",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Не увидел исчезновения?\nЭто нормально: результат зависит от расстояния и условий просмотра",
+              "start": 0,
+              "end": 90,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:766",
+          "parent": "10:760",
+          "type": "TEXT",
+          "x": 30,
+          "y": 341,
+          "w": 498,
+          "h": 80,
+          "transform": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              341
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Она не мигнула.",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 100,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "vertical": "TOP",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Она не мигнула.",
+              "start": 0,
+              "end": 15,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:767",
+          "parent": "10:760",
+          "type": "TEXT",
+          "x": 265,
+          "y": 431,
+          "w": 463,
+          "h": 80,
+          "transform": [
+            [
+              1,
+              0,
+              265
+            ],
+            [
+              0,
+              1,
+              431
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Не потускнела.",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 100,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "vertical": "TOP",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Не потускнела.",
+              "start": 0,
+              "end": 14,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:768",
+          "parent": "10:760",
+          "type": "ELLIPSE",
+          "x": 1206,
+          "y": 490,
+          "w": 100,
+          "h": 100,
+          "transform": [
+            [
+              1,
+              0,
+              1206
+            ],
+            [
+              0,
+              1,
+              490
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9960784316062927,
+                "g": 0.8196078538894653,
+                "b": 0.1568627506494522
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:769",
+          "parent": "10:760",
+          "type": "FRAME",
+          "x": 1448,
+          "y": 964,
+          "w": 442,
+          "h": 86,
+          "transform": [
+            [
+              1,
+              0,
+              1448
+            ],
+            [
+              0,
+              1,
+              964
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:770",
+            "10:771"
+          ],
+          "clip": false,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9960784316062927,
+                "g": 0.8196078538894653,
+                "b": 0.1568627506494522
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:770",
+          "parent": "10:769",
+          "type": "TEXT",
+          "x": 1468,
+          "y": 989.5,
+          "w": 163,
+          "h": 35,
+          "transform": [
+            [
+              1,
+              0,
+              20
+            ],
+            [
+              0,
+              1,
+              25.5
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.04313725605607033,
+                "g": 0.05098039284348488,
+                "b": 0.05882352963089943
+              },
+              "boundVariables": {}
+            }
+          ],
+          "text": "Что это значит?",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "Bold"
+          },
+          "size": 35,
+          "line": {
+            "unit": "PERCENT",
+            "value": 100
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "vertical": "CENTER",
+          "horizontal": "LEFT",
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "segments": [
+            {
+              "characters": "Что это значит?",
+              "start": 0,
+              "end": 15,
+              "textDecoration": "NONE",
+              "listOptions": {
+                "type": "NONE"
+              },
+              "paragraphIndent": 0
+            }
+          ]
+        },
+        {
+          "id": "10:771",
+          "parent": "10:769",
+          "type": "FRAME",
+          "x": 1810,
+          "y": 969,
+          "w": 75,
+          "h": 76,
+          "transform": [
+            [
+              1,
+              0,
+              362
+            ],
+            [
+              0,
+              1,
+              5
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:772"
+          ],
+          "clip": true,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.04313725605607033,
+                "g": 0.05098039284348488,
+                "b": 0.05882352963089943
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:772",
+          "parent": "10:771",
+          "type": "VECTOR",
+          "x": 1836,
+          "y": 996,
+          "w": 20,
+          "h": 20,
+          "transform": [
+            [
+              1,
+              0,
+              26
+            ],
+            [
+              0,
+              1,
+              27
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9529411792755127,
+                "g": 0.7921568751335144,
+                "b": 0.15294118225574493
+              },
+              "boundVariables": {}
+            }
+          ],
+          "strokeWeight": 10,
+          "strokeAlign": "CENTER",
+          "vectorPaths": [
+            {
+              "windingRule": "NONE",
+              "data": "M 0 0 L 20 20 M 20 20 L 20 13.076923076923078 L 13.076923076923078 20 L 20 20 Z"
+            }
+          ],
+          "cap": "NONE",
+          "renderBounds": {
+            "x": 6108.46435546875,
+            "y": 4532.46435546875,
+            "width": 28.53564453125,
+            "height": 28.53564453125
+          }
+        }
+      ]
+    }
+  ]
+}

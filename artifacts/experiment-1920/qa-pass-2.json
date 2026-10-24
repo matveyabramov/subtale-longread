@@ -1,0 +1,679 @@
+{
+  "pass": "2",
+  "base": "http://127.0.0.1:4173",
+  "sequence": [
+    {
+      "id": "experiment-instructions",
+      "top": 1080,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "experiment-target",
+      "top": 2160,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "experiment-result",
+      "top": 3240,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "frames": [
+    {
+      "name": "instructions",
+      "frame": "10:718",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1,
+        "documentWidth": 1920,
+        "scrollY": 1080,
+        "animations": 0
+      },
+      "geometry": [
+        {
+          "id": "10:718",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "id": "10:719",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "id": "10:720",
+          "x": 266,
+          "y": 330,
+          "w": 598,
+          "h": 80
+        },
+        {
+          "id": "10:721",
+          "x": 266,
+          "y": 425,
+          "w": 1127,
+          "h": 120
+        },
+        {
+          "id": "10:722",
+          "x": 286,
+          "y": 445,
+          "w": 1087,
+          "h": 80
+        },
+        {
+          "id": "10:723",
+          "x": 739,
+          "y": 605,
+          "w": 450,
+          "h": 60
+        },
+        {
+          "id": "10:724",
+          "x": 1214,
+          "y": 662,
+          "w": 549,
+          "h": 90
+        },
+        {
+          "id": "10:725",
+          "x": 1448,
+          "y": 964,
+          "w": 442,
+          "h": 86
+        },
+        {
+          "id": "10:726",
+          "x": 1468,
+          "y": 989.5,
+          "w": 194,
+          "h": 35
+        },
+        {
+          "id": "10:727",
+          "x": 1810,
+          "y": 969,
+          "w": 75,
+          "h": 76
+        },
+        {
+          "id": "10:728",
+          "x": 1832.453125,
+          "y": 992.453125,
+          "w": 29,
+          "h": 29
+        },
+        {
+          "id": "10:729",
+          "x": 30,
+          "y": 1022,
+          "w": 315,
+          "h": 28
+        }
+      ],
+      "textChecks": [
+        {
+          "id": "10:720",
+          "fonts": [
+            {
+              "familyName": "TT Bluescreens Trial",
+              "postScriptName": "TTBluescreensTrial-XBd",
+              "isCustomFont": true,
+              "glyphCount": 17
+            }
+          ]
+        },
+        {
+          "id": "10:722",
+          "fonts": [
+            {
+              "familyName": "TT Bluescreens Trial",
+              "postScriptName": "TTBluescreensTrial-XBd",
+              "isCustomFont": true,
+              "glyphCount": 31
+            }
+          ]
+        },
+        {
+          "id": "10:723",
+          "fonts": [
+            {
+              "familyName": "IBM Plex Mono Medium",
+              "postScriptName": "IBMPlexMono-Medium",
+              "isCustomFont": true,
+              "glyphCount": 59
+            }
+          ]
+        },
+        {
+          "id": "10:724",
+          "fonts": [
+            {
+              "familyName": "IBM Plex Mono Medium",
+              "postScriptName": "IBMPlexMono-Medium",
+              "isCustomFont": true,
+              "glyphCount": 103
+            }
+          ]
+        },
+        {
+          "id": "10:726",
+          "fonts": [
+            {
+              "familyName": "TT Bluescreens Trial",
+              "postScriptName": "TTBluescreensTrial-Bd",
+              "isCustomFont": true,
+              "glyphCount": 18
+            }
+          ]
+        },
+        {
+          "id": "10:729",
+          "fonts": [
+            {
+              "familyName": "IBM Plex Mono Medium",
+              "postScriptName": "IBMPlexMono-Medium",
+              "isCustomFont": true,
+              "glyphCount": 22
+            }
+          ]
+        }
+      ],
+      "wraps": {
+        "10:720": [
+          "Закрой левый глаз"
+        ],
+        "10:722": [
+          "Правым смотри только на крестик"
+        ],
+        "10:723": [
+          "Прокрути вниз — на следующем",
+          "экране появятся крестик и точка"
+        ],
+        "10:724": [
+          "Не отводя взгляд от крестика, медленно",
+          "приближайся к экрану или отдаляйся от",
+          "него, пока точка не исчезнет"
+        ],
+        "10:726": [
+          "К крестику и точке"
+        ],
+        "10:729": [
+          "Пропустить эксперимент"
+        ]
+      }
+    },
+    {
+      "name": "target",
+      "frame": "10:730",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1,
+        "documentWidth": 1920,
+        "scrollY": 2160,
+        "animations": 0
+      },
+      "geometry": [
+        {
+          "id": "10:730",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "id": "10:731",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "id": "10:732",
+          "x": 610,
+          "y": 490,
+          "w": 100,
+          "h": 100
+        },
+        {
+          "id": "10:733",
+          "x": 610,
+          "y": 540.666015625,
+          "w": 100,
+          "h": 0
+        },
+        {
+          "id": "10:734",
+          "x": 660.0068359375,
+          "y": 490,
+          "w": 0,
+          "h": 100
+        },
+        {
+          "id": "10:735",
+          "x": 1210,
+          "y": 490,
+          "w": 100,
+          "h": 100
+        },
+        {
+          "id": "10:736",
+          "x": 30,
+          "y": 1022,
+          "w": 201,
+          "h": 28
+        },
+        {
+          "id": "10:737",
+          "x": 568,
+          "y": 730,
+          "w": 785,
+          "h": 320
+        },
+        {
+          "id": "10:738",
+          "x": 578,
+          "y": 740,
+          "w": 765,
+          "h": 300
+        },
+        {
+          "id": "10:739",
+          "x": 608,
+          "y": 770,
+          "w": 705,
+          "h": 240
+        },
+        {
+          "id": "10:740",
+          "x": 608,
+          "y": 770,
+          "w": 238,
+          "h": 40
+        },
+        {
+          "id": "10:741",
+          "x": 608,
+          "y": 830,
+          "w": 705,
+          "h": 180
+        },
+        {
+          "id": "10:742",
+          "x": 1448,
+          "y": 964,
+          "w": 442,
+          "h": 86
+        },
+        {
+          "id": "10:743",
+          "x": 1468,
+          "y": 989.5,
+          "w": 143,
+          "h": 35
+        },
+        {
+          "id": "10:744",
+          "x": 1810,
+          "y": 969,
+          "w": 75,
+          "h": 76
+        },
+        {
+          "id": "10:745",
+          "x": 1832.453125,
+          "y": 992.453125,
+          "w": 29,
+          "h": 29
+        }
+      ],
+      "textChecks": [
+        {
+          "id": "10:736",
+          "fonts": [
+            {
+              "familyName": "IBM Plex Mono Medium",
+              "postScriptName": "IBMPlexMono-Medium",
+              "isCustomFont": true,
+              "glyphCount": 14
+            }
+          ]
+        },
+        {
+          "id": "10:740",
+          "fonts": [
+            {
+              "familyName": "TT Bluescreens Trial",
+              "postScriptName": "TTBluescreensTrial-XBd",
+              "isCustomFont": true,
+              "glyphCount": 14
+            }
+          ]
+        },
+        {
+          "id": "10:741",
+          "fonts": [
+            {
+              "familyName": "IBM Plex Mono Medium",
+              "postScriptName": "IBMPlexMono-Medium",
+              "isCustomFont": true,
+              "glyphCount": 175
+            }
+          ]
+        },
+        {
+          "id": "10:743",
+          "fonts": [
+            {
+              "familyName": "TT Bluescreens Trial",
+              "postScriptName": "TTBluescreensTrial-Bd",
+              "isCustomFont": true,
+              "glyphCount": 12
+            }
+          ]
+        }
+      ],
+      "wraps": {
+        "10:736": [
+          "Не получается?"
+        ],
+        "10:740": [
+          "Не получается?"
+        ],
+        "10:741": [
+          "Держи левый глаз закрытым и не переводи взгляд",
+          "с крестика.",
+          "Медленно меняй расстояние до экрана. Эффект",
+          "зависит от размера дисплея и дистанции",
+          "просмотра.",
+          "Если не сработало — можно пропустить."
+        ],
+        "10:743": [
+          "Я попробовал"
+        ]
+      }
+    },
+    {
+      "name": "result",
+      "frame": "10:760",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1,
+        "documentWidth": 1920,
+        "scrollY": 3240,
+        "animations": 0
+      },
+      "geometry": [
+        {
+          "id": "10:760",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "id": "10:761",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "id": "10:762",
+          "x": 265,
+          "y": 526,
+          "w": 546,
+          "h": 120
+        },
+        {
+          "id": "10:763",
+          "x": 285,
+          "y": 546,
+          "w": 506,
+          "h": 80
+        },
+        {
+          "id": "10:764",
+          "x": 1209.5,
+          "y": 620,
+          "w": 310,
+          "h": 60
+        },
+        {
+          "id": "10:765",
+          "x": 30,
+          "y": 960,
+          "w": 473,
+          "h": 90
+        },
+        {
+          "id": "10:766",
+          "x": 30,
+          "y": 341,
+          "w": 498,
+          "h": 80
+        },
+        {
+          "id": "10:767",
+          "x": 265,
+          "y": 431,
+          "w": 463,
+          "h": 80
+        },
+        {
+          "id": "10:768",
+          "x": 1206,
+          "y": 490,
+          "w": 100,
+          "h": 100
+        },
+        {
+          "id": "10:769",
+          "x": 1448,
+          "y": 964,
+          "w": 442,
+          "h": 86
+        },
+        {
+          "id": "10:770",
+          "x": 1468,
+          "y": 989.5,
+          "w": 163,
+          "h": 35
+        },
+        {
+          "id": "10:771",
+          "x": 1810,
+          "y": 969,
+          "w": 75,
+          "h": 76
+        },
+        {
+          "id": "10:772",
+          "x": 1832.453125,
+          "y": 992.453125,
+          "w": 29,
+          "h": 29
+        }
+      ],
+      "textChecks": [
+        {
+          "id": "10:763",
+          "fonts": [
+            {
+              "familyName": "TT Bluescreens Trial",
+              "postScriptName": "TTBluescreensTrial-XBd",
+              "isCustomFont": true,
+              "glyphCount": 15
+            }
+          ]
+        },
+        {
+          "id": "10:764",
+          "fonts": [
+            {
+              "familyName": "IBM Plex Mono Medium",
+              "postScriptName": "IBMPlexMono-Medium",
+              "isCustomFont": true,
+              "glyphCount": 39
+            }
+          ]
+        },
+        {
+          "id": "10:765",
+          "fonts": [
+            {
+              "familyName": "IBM Plex Mono Medium",
+              "postScriptName": "IBMPlexMono-Medium",
+              "isCustomFont": true,
+              "glyphCount": 88
+            }
+          ]
+        },
+        {
+          "id": "10:766",
+          "fonts": [
+            {
+              "familyName": "TT Bluescreens Trial",
+              "postScriptName": "TTBluescreensTrial-XBd",
+              "isCustomFont": true,
+              "glyphCount": 15
+            }
+          ]
+        },
+        {
+          "id": "10:767",
+          "fonts": [
+            {
+              "familyName": "TT Bluescreens Trial",
+              "postScriptName": "TTBluescreensTrial-XBd",
+              "isCustomFont": true,
+              "glyphCount": 14
+            }
+          ]
+        },
+        {
+          "id": "10:770",
+          "fonts": [
+            {
+              "familyName": "TT Bluescreens Trial",
+              "postScriptName": "TTBluescreensTrial-Bd",
+              "isCustomFont": true,
+              "glyphCount": 15
+            }
+          ]
+        }
+      ],
+      "wraps": {
+        "10:763": [
+          "Просто исчезла."
+        ],
+        "10:764": [
+          "Точка всё это время",
+          "оставалась на экране"
+        ],
+        "10:765": [
+          "Не увидел исчезновения?",
+          "Это нормально: результат зависит",
+          "от расстояния и условий просмотра"
+        ],
+        "10:766": [
+          "Она не мигнула."
+        ],
+        "10:767": [
+          "Не потускнела."
+        ],
+        "10:770": [
+          "Что это значит?"
+        ]
+      }
+    }
+  ],
+  "staticStimulus": [
+    {
+      "id": "10:732",
+      "x": 610,
+      "y": 490,
+      "w": 100,
+      "h": 100,
+      "opacity": "1",
+      "transform": "none",
+      "animation": "none",
+      "transitionDuration": "0s"
+    },
+    {
+      "id": "10:735",
+      "x": 1210,
+      "y": 490,
+      "w": 100,
+      "h": 100,
+      "opacity": "1",
+      "transform": "none",
+      "animation": "none",
+      "transitionDuration": "0s"
+    }
+  ],
+  "staticChecks": {
+    "elapsed750ms": true,
+    "reducedMotionChange": true,
+    "anchorReturn": true
+  },
+  "anchors": [
+    {
+      "from": "hero",
+      "nodeId": "10:1930",
+      "to": "experiment-instructions",
+      "passed": true
+    },
+    {
+      "from": "experiment-instructions",
+      "nodeId": "10:725",
+      "to": "experiment-target",
+      "passed": true
+    },
+    {
+      "from": "experiment-instructions",
+      "nodeId": "10:729",
+      "to": "emptiness",
+      "passed": true
+    },
+    {
+      "from": "experiment-target",
+      "nodeId": "10:742",
+      "to": "experiment-result",
+      "passed": true
+    },
+    {
+      "from": "experiment-result",
+      "nodeId": "10:769",
+      "to": "emptiness",
+      "passed": true
+    },
+    {
+      "from": "target-help",
+      "to": "emptiness",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "bad": [],
+  "externalRequests": 0,
+  "fontRequests": [
+    "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-600-normal.woff2",
+    "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20Bold.woff2",
+    "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-600-normal.woff2",
+    "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20ExtraBold.woff2",
+    "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-500-normal.woff2",
+    "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-500-normal.woff2"
+  ]
+}

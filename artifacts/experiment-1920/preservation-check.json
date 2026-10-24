@@ -1,0 +1,11 @@
+{
+  "filesChecked": 123,
+  "scope": [
+    "public/assets",
+    "source-assets",
+    "src/sections/hero",
+    "src/styles"
+  ],
+  "algorithm": "SHA256",
+  "changed": []
+}
