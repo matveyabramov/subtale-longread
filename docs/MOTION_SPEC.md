@@ -1,29 +1,102 @@
-# SUBTALE — preliminary motion / interaction map
+# SUBTALE — Motion Contracts (Stage 0.3)
+
+Дата: 2026-10-24. **Draft for approval.** Измеренные Figma endpoints ниже подтверждены; триггеры, длительности и интерполяции Stage 0.3 — рекомендации, пока не утверждённые пользователем. Никакого motion-кода, установки библиотек или изменения ассетов в этом этапе нет. Полные UX-состояния, focus, keyboard/touch, media lifecycle и решения D01–D11: [INTERACTION_SPEC.md](INTERACTION_SPEC.md).
 
 **Current raster paths (Stage 0.2H.2):** original Figma sources now live under `source-assets/images/`; source filenames in historical endpoint tables identify those masters. Use each imageHash's separate `optimizedPath` in `FIGMA_ASSET_MAP.json` / `ASSET_DELIVERY.json` for future rendering. Multiply unchanged normalized crops by the selected delivery file's actual dimensions. Hidden/occluded source-only fills have no public derivative unless later approved motion needs one. All positions, transforms, source visibility, ordering, SVG/CSS masks and independent object boundaries below remain unchanged. Idiom WebPs and its shared Mosaic PNG delivery path/bytes are untouched.
 
 
-**Proposed behaviors**, not verified Figma prototypes. Stage 0.3 must reconcile these with approved editorial intent and available layered assets before implementation.
+## Stage 0.3 — назначение и характер движения
 
-| Area | Figma nodes | Proposed trigger/state | First code pass |
-|---|---|---|---|
-| Hero | `10:472` | CTA to start experiment; optional hint and skip. Ensure user cannot get stuck. | Static CTA + working state controls |
-| Experiment | `10:718`, `10:730`, `10:760` | Three-stage instructions → dot/cross → result; help overlay and skip. | Semantic state machine, keyboard/focus, no scroll trapping without an exit |
-| Emptiness | `10:838` | Reconstructed/blocked perception through tiles, possible scroll reveal | Keep layers separate |
-| Elephant | `10:917` | Four conceptual layers revealed in reading order | Static four levels, then motion |
-| Idiom | `10:1431`, `10:1596` | Ice/telephone before ↔ after | Click/hover/touch, replay, reduced motion |
-| Pun | `10:1495`, `10:1981` | Whole bicycle composite rotates ≈34.37°; verified endpoints below | Click/hover/touch, replay, reduced motion |
-| Double meaning | `10:1528`, `10:2017` | Mutually exclusive full-eye PNG fills; verified endpoints below | Click/hover/touch with visible alternative |
-| Cultural reference | `10:1560`, `10:2049` | Five snowflake instances replaced by one throne; verified compositions below | Click/hover/touch, replay, reduced motion |
-| Movies | `10:1794` | Five scene cards with contextual reveal and/or video preview | Video state ownership; pause offscreen, hidden tab, reduced-motion handling |
-| Vocab | `10:966` | Scroll-triggered statement emphasis if approved | Static first |
-| Blind-spot-scene | `10:997` | Six separate line segments flank one central bitmap; verified structure below | Preserve segments, text and artwork separately; motion unspecified |
-| What-to-do | `10:1272` | Two-part viewing guidance; likely minimal motion | Static first |
-| Footer | `10:1016` | Final emphasis/credits reveal only if approved | Static first |
+SUBTALE строится на резкой типографике, контрасте синего/жёлтого, зерне, пикселях и коллаже. Рекомендация: движение отмечает **изменение прочтения**, не добавляет самостоятельное шоу. Не анимировать каждый заголовок, не раскладывать текст по буквам, не вводить cursor-follow, floating loop, glitch, bounce, auto-carousel, zoom камеры или parallax только ради стиля. Статические композиции остаются полноценным результатом.
 
-## For every animation ticket
+Принципы навыка `animate` использованы для выбора назначения, interruptibility и предпочтения простого инструмента. Его общее требование самостоятельно выбирать единственный эффект/писать код не применяется к Stage 0.3: пользователь требует варианты и документацию до реализации. Его автоматический запрет motion от keyboard заменён эквивалентностью способов ввода: семантика одинакова, необязательное перемещение снимается reduced motion. Дополнительные библиотеки и отсутствующие cross-referenced skills не использованы; implemented motion/a11y review не проводились.
 
-Document: trigger; default state; active state; exact Figma state IDs; assets; duration/easing; replay/reset; interruption; keyboard/touch equivalents; preferred reduced-motion alternative; and scope of Playwright testing. Never treat an animation skill as authority to replace approved narrative or design.
+**Разделение:** React сразу задаёт semantic target; CSS/GSAP только догоняют его визуально. Конец анимации никогда не разрешает следующий шаг истории. Stage 3 сначала реализует все переходы мгновенно; Stage 4 добавляет только согласованную презентацию. Ни один эффект не меняет исходную типографику, crops, texture opacity, PNG alpha или финальную геометрию.
+
+### Предлагаемые motion tokens
+
+Значения — стартовые параметры для согласования/feel-check на 1920px, не извлечены из Figma prototype. Существующих runtime tokens ещё нет; при Stage 1A зарезервировать одну систему, а не несколько наборов таймингов.
+
+| Token | Значение R | Назначение |
+|---|---|---|
+| `duration-instant` | 0ms | Смена категории, reduced motion, статические swaps |
+| `duration-feedback` | 150ms | Только hover/pressed color/opacity; focus outline появляется сразу |
+| `duration-ui` | 200ms | Небольшое явное раскрытие hint/help, fade декоративной группы |
+| `duration-state` | 250ms | Pun A↔B; общая длительность последовательной замены reference |
+| `duration-half-state` | 125ms | Один opacity-проход reference |
+| `ease-out` | `cubic-bezier(0.23, 1, 0.32, 1)` | UI появление/исчезновение и opacity; быстрое подтверждение действия |
+| `ease-in-out` | `cubic-bezier(0.77, 0, 0.175, 1)` | Наклон composite Pun без overshoot |
+
+Для 0ms easing неприменим. Не вводить задержку перед ответом, stagger текста, spring или разные тайминги для mouse и keyboard. Hover-feedback действует только при `(hover: hover) and (pointer: fine)`; focus/selected показываются также без hover. `transition: all` не использовать.
+
+### Реестр motion-контрактов R
+
+Все строки ниже требуют согласования связанных D-решений из INTERACTION_SPEC. Начальное состояние из Figma сохраняет исходную видимость; «без motion» не означает скрытый слой, ожидающий JS.
+
+| ID / область | Trigger → endpoints | Предлагаемая презентация, назначение / владелец | Возврат, повтор, interruption | Reduced motion |
+|---|---|---|---|---|
+| M01 Hero `10:472` | CTA / Start / Skip → anchors | Мгновенная навигация; collage/headline статичны. Feedback контрола 150ms color/opacity CSS | Нативный scroll назад; CTA не запускает повторную intro-анимацию | То же, 0ms feedback допустим |
+| M02 Hint / contents / help | Явная кнопка closed↔open; D01/D03/D04 | Если panel выбран: opacity 0↔1, 200ms ease-out CSS. Не двигать текст/фон; немодальные панели | Latest target wins; раскрытый semantic state сразу. При close сначала защитить focus, затем убрать панель; повторное открытие retarget текущую opacity | Мгновенно показать/скрыть |
+| M03 Experiment `10:718`/`10:730`/`10:760` | Anchors и native scroll; D02 | Подэкраны статичны, 0ms. Dot/cross никогда не анимируются; эффект физиологический | Любой scroll/skip/replay доступен сразу; нет timeline/timer успеха | Тот же неподвижный stimulus и полный результат |
+| M04 Emptiness `10:838` | Чтение | Статично; не менять paint order квадратов и не раскрывать source-only portrait | Нет reset/replay | Та же полная композиция |
+| M05 Elephant `10:917` | Чтение четырёх уровней | Статично, без pin и скрытых уровней | Scroll назад не запускает новый цикл | Все уровни видны |
+| M06 Explorer category | Click/tap/Enter/Space по tab; D05 | Мгновенный выбор сохранённого A/B. Текст/tabpanel не сдвигаются; feedback 150ms CSS | Незавершённый reveal предыдущей категории отменить и зафиксировать её semantic target; новый category state сразу | Мгновенный выбор |
+| M07 Idiom `10:1431`↔`10:1596` | Нижняя reveal-кнопка; D05/D06/D08 | 200ms opacity только телефона, без translate/scale. Изменение смысла; CSS + дискретный paint order, подробности ниже | Повторный toggle retarget текущую opacity; возврат восстанавливает точный A-order. Не очередь | Мгновенный swap телефона и order |
+| M08 Pun `10:1495`↔`10:1981` | Reveal-кнопка | 250ms ease-in-out `transform: rotate(0deg)`↔`rotate(34.3671413753deg)` единого wrapper; видимая связь endpoints, CSS | Reverse из текущего угла; одинаковый pivot и длительность в обе стороны, без отдельного вращения wheels | Мгновенно установить A или B; наклонённый B как статическое изображение разрешён |
+| M09 Double meaning `10:1528`↔`10:2017` | Reveal-кнопка | 0ms смена полного source в том же слоте: чёткий «второй взгляд». React/CSS; fade не нужен | Повтор — обратный source swap, stale image load игнорировать | Тот же swap и доступное описание |
+| M10 Reference `10:1560`↔`10:2049` | Reveal-кнопка | 125ms opacity-out всей A-композиции → замена → 125ms opacity-in B, ease-out; 250ms total. Никакого morph/траектории | Последний target побеждает; не накладывать два полупрозрачных изображения, см. ниже | Мгновенно заменить композицию |
+| M11 Movies `10:1794` | Явный Play / Pause / Replay; D07 | Движение только внутри исходного MP4. Poster→первый декодированный кадр без zoom/crossfade; native controls | Pause при hidden/offscreen/другом клипе; return не resume. Media state принадлежит React/media events | Без autoplay; явный Play разрешён, preference change ставит pause |
+| M12 Vocab `10:966` | Чтение | Статичный SVG «98%», без count-up/поэлементной сборки | Нет replay/reset | То же |
+| M13 Blind-spot-scene `10:997` | Чтение | Статичная центральная PNG и шесть исходных line segments, без прохода линий через круг | Нет replay/reset | То же |
+| M14 What-to-do `10:1272` | Чтение | Статичные советы; без имитации взаимодействия с видеосервисом | Нет replay/reset | То же |
+| M15 Footer `10:1016` | Чтение | Статичная collage/credits; hidden Union остаётся clipped | Нет loop/replay | То же |
+
+### M02 — DOM, focus и быстрые открытия
+
+Не требовать отдельной библиотеки для opacity. Fade 0↔1 принадлежит внешнему wrapper; исходные opacity/effects внутренних Figma-слоёв сохраняются. Во время exit панель уже не интерактивна (`inert`/исключена из AT), focus предварительно перемещён на существующий триггер, если он находился внутри. DOM можно временно сохранить только для fade, после него скрыть; при повторном open отменить pending hide. Старый `transitionend` не закрывает новую панель. Внешний click закрывает без кражи focus. Само оглавление/help — по рекомендуемой немодальной модели; modal-вариант требует нового UX-контракта.
+
+### M07 — дискретный order Idiom
+
+**F:** все восемь ледяных объектов стоят на месте. В A mosaic ниже всего льда. В B порядок back→front: upper-left → telephone → mosaic → остальные семь объектов. `z-index` не интерполируется, а перенос mosaic под всё изображение ломает конечный B.
+
+**R:** A→B в начале установить B-order и телефон opacity 0, затем 0→1 за 200ms; B→A телефон 1→0 за 200ms при B-order, затем atomically вернуть A-order. Смена order — предложенный промежуточный художественный выбор, не измеренный Figma transition. При обратном запросе во время fade остаётся текущая opacity; order держится B, пока целевой телефон не станет 0. Если категория скрыта, preference изменилась или effect отменён, немедленно установить order/opacity последнего semantic target. Ни один старый callback не меняет их после нового запроса.
+
+**O:** мгновенная атомарная смена телефона и order, без промежуточной композиции — точнее статическим endpoints и дешевле; выбрать вместо fade, если переключение upper-left заметно. Траектория телефонной трубки/разлёт льда не имеет подтверждённого начального положения и не входит в контракт. Кнопка работает также без fade.
+
+### M08 — pivot Pun и transforms
+
+Composite A: origin (50,200), 735×985; frame pivot (417.5,692.5) = local (367.5,492.5). Общий wrapper несёт два PNG-слота, второй высотой 984px, оба с исходным FILL/alpha. Применить rotation **один раз**, не на group и каждого потомка. В Figma угол отрицательный, в CSS y-down положительный; ниже сохранена полная B-матрица. Не интерполировать bounding box как размеры, не убирать frame clipping и не выбирать независимый центр wheel-pair.
+
+### M09 / M10 — замена цельных картинок
+
+Double meaning: два полных источника с разной исходной resolution/alpha, а не глаз и overlay пары. Рекомендован cut; O — sequential opacity как у M10 после отдельного просмотра, поскольку обычный crossfade даёт промежуточную неоднозначную полупрозрачность. Cultural reference: fade применяется к целой пятиобъектной группе, затем к цельному throne; размеры/позиции только из соответствующего endpoint. Фон и UI не исчезают. При любом endpoint ровно одна композиция полностью видна.
+
+Interrupt M10: если target снова совпал с текущей displayed composition, развернуть opacity к 1; если отличается — довести текущую к 0, заменить на последний target, вернуть к 1. Каждый новый opacity-проход не длиннее 125ms; semantic target обновляется сразу, скрытая композиция исключена из AT. Быстрые запросы не создают очередь fade-пар. При смене категории/unmount/reduced motion — cut к последнему target, без отложенного callback. До успешного decode B не fade-out A; ошибка загрузки оставляет читаемое A и локальную возможность Retry.
+
+### O01 — дополнительный scroll reveal декора, только по D08
+
+Не входит в базовый набор. Если одобрен: I03 Emptiness — целая artwork group; I04 Elephant — illustration; I08 Blind-spot-scene — шесть декоративных line segments как группа; I10 Footer — collage group. Opacity 0→исходная opacity за 200ms ease-out, без translate/scale/stagger. Не менять локальные opacity исходных line/texture объектов; opacity внешнего wrapper приходит к 1. Тексты и controls всегда видны, circle не маскирует линии.
+
+Trigger: при первом входе верхней границы группы в нижние 90% viewport (`IntersectionObserver`, bottom rootMargin −10%, threshold 0, проверка `isIntersecting`). Уже видимая при начальном открытии/прямом hash группа отображается сразу без flash; hidden-tab не запускает эффект. Повторный вход не replay; при быстром уходе/skip — сразу завершить к исходному виду и считать показанной, не задерживать чтение. Reduced motion, отсутствующий observer или сбой setup — исходный вид сразу. Одноразовый reveal не оправдывает ScrollTrigger. До активации эффекта DOM видим; не оставлять opacity 0, ожидая JS, на уровне глобальных базовых стилей.
+
+## Reduced motion, interruption и performance
+
+- CSS учитывает `prefers-reduced-motion`, React читает preference и слушает изменения. При включении reduce: отменить активный transform/fade и поставить **последний выбранный** endpoint без перемещения; не сбрасывать к A и не стирать значение. При выключении — не переигрывать страницу, разрешить обычные переходы со следующего действия.
+- Базовый reduced-вариант — 0ms для UI/state/decor, native instant anchors, статичные stimulus и тексты. Это сознательно строже общего совета навыка оставить fade: смены смыслов понятны без промежуточного кадра. Оба состояния доступны теми же кнопками/описаниями. Видео — отдельный явно запрошенный контент; preference change ставит pause, дальнейший Play явный.
+- Native scroll не блокируется timeline; нет scroll hijacking, pin, scrub, compulsory snap, synthetic smooth-scroller и задержанных focus-переходов. Такие решения потребовали бы отдельного согласования, их нет в этом плане.
+- Простые переходы — CSS с явными свойствами transform/opacity/color. Текст не проходит через blur, clip-path или 3D. Не анимировать width/height/top/left, image filters и texture blend; z-order дискретный. `will-change` — только на время реального эффекта, не на все растры страницы.
+- GSAP/ScrollTrigger не обязательны ни одному базовому контракту. Если будущий согласованный multi-layer timeline потребует GSAP, локальный context/revert и единый владелец свойства обязательны; не делать React render на каждом animation tick/scroll. Не заявлять GPU-only/performance результат без измерений.
+- На скрытии вкладки state/decor transitions завершаются к цели, media pause. При возвращении нет отложенного entrance или autoresume. Полный offscreen active artwork также завершается к цели; возвращение показывает сохранённый endpoint. Все listeners/observers/timelines убираются при unmount и повторном mount.
+
+## Gate и проверка motion-ticket
+
+Перед Stage 4 ticket ссылается на I/M ID и выбранные D-решения; содержит Figma A/B, runtime asset mapping, trigger/default/target, свойства, pivot/order, duration/easing, reverse/reset/replay, interruption, keyboard/touch, reduced motion и проверки. Без авторского одобрения не подменять документированное O вариантом R. Stage 1A и статическая сборка не разрешают motion-pass автоматически.
+
+Acceptance: endpoints совпадают с Figma на 1920px; input работает до окончания transition; 10 быстрых toggle/category changes завершаются последним target без очереди; scroll/back сохраняет смысл; runtime reduced-motion change не оставляет opacity 0/промежуточный transform; hidden-tab/offscreen не возвращают старый timeline; source-only artwork не появился; layout не скачет и media не играет в фоне. Проверить mouse, keyboard-only и реальный touch, медленную загрузку B, сбой decode, repeat mount, native scroll. Feel-check M07/M08/M10 сначала при увеличенной длительности для поиска разрывов, затем при целевых 200/250ms. Полная матрица будущего QA — INTERACTION_SPEC §8. Сейчас проверена только документация, motion/performance/browser QA не проводились.
+
+## Stage 0.2 — сохранённые доказательства конечных состояний
+
+Разделы ниже сохранены без изменения измерений. Их фразы «decide in a later stage», «unspecified trigger» и старые пути `public/*.png` описывают момент импорта Stage 0.2. Текущие предложения и открытые решения находятся выше и в INTERACTION_SPEC; текущие delivery paths — в реестрах. Не трактовать исторические placeholders как разрешённые эффекты или отсутствие Stage 0.3-контракта.
 
 ## Stage 0.2D.1 — verified Idiom endpoints (2026-10-24)
 
