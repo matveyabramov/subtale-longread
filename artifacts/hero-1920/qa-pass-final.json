@@ -1,0 +1,916 @@
+{
+  "pass": "final",
+  "base": "http://127.0.0.1:5173",
+  "structure": {
+    "width": 1920,
+    "height": 1080,
+    "dpr": 1,
+    "documentWidth": 1920,
+    "heroHeight": 1080,
+    "narrativeSections": [
+      "hero",
+      "experiment",
+      "emptiness",
+      "elephant",
+      "blind-zones",
+      "movies",
+      "vocab",
+      "blind-spot-scene",
+      "what-to-do",
+      "footer"
+    ],
+    "animations": 0
+  },
+  "geometry": [
+    {
+      "id": "10:472",
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:1928",
+      "x": 30,
+      "y": 874,
+      "width": 680,
+      "height": 176,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:1929",
+      "x": 30,
+      "y": 874,
+      "width": 680,
+      "height": 60,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "25px",
+      "lineHeight": "30px",
+      "tracking": "-1px"
+    },
+    {
+      "id": "10:1930",
+      "x": 30,
+      "y": 964,
+      "width": 680,
+      "height": 86,
+      "font": "\"TT Bluescreens Trial\", sans-serif",
+      "fontSize": "35px",
+      "lineHeight": "35px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:1931",
+      "x": 50,
+      "y": 989.5,
+      "width": 311,
+      "height": 35,
+      "font": "\"TT Bluescreens Trial\", sans-serif",
+      "fontSize": "35px",
+      "lineHeight": "35px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:1932",
+      "x": 630,
+      "y": 969,
+      "width": 75,
+      "height": 76,
+      "font": "\"TT Bluescreens Trial\", sans-serif",
+      "fontSize": "35px",
+      "lineHeight": "35px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:1933",
+      "x": 652.453125,
+      "y": 992.453125,
+      "width": 29,
+      "height": 29,
+      "font": "\"TT Bluescreens Trial\", sans-serif",
+      "fontSize": "35px",
+      "lineHeight": "35px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:473",
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:475",
+      "x": 1450,
+      "y": 600,
+      "width": 500.011474609375,
+      "height": 540.45166015625,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:476",
+      "x": 1530.3565673828125,
+      "y": 678.212890625,
+      "width": 319.662841796875,
+      "height": 364.20361328125,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:477",
+      "x": 1440.0054931640625,
+      "y": 590.00146484375,
+      "width": 500.011474609375,
+      "height": 540.45166015625,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:474",
+      "x": 200.921875,
+      "y": 635,
+      "width": 76,
+      "height": 72,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:478",
+      "x": 1441.515625,
+      "y": 798,
+      "width": 59,
+      "height": 57,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:479",
+      "x": 65.515625,
+      "y": 595,
+      "width": 59,
+      "height": 57,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:480",
+      "x": 290.515625,
+      "y": 533,
+      "width": 59,
+      "height": 57,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:481",
+      "x": 127.046875,
+      "y": 490,
+      "width": 41,
+      "height": 39,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:482",
+      "x": 1479.90625,
+      "y": 647,
+      "width": 75,
+      "height": 72,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:483",
+      "x": 1745.21875,
+      "y": 662,
+      "width": 48,
+      "height": 46,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:687",
+      "x": 1618.640625,
+      "y": 565,
+      "width": 103,
+      "height": 98,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:484",
+      "x": 574,
+      "y": 357,
+      "width": 771,
+      "height": 694,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:485",
+      "x": 574,
+      "y": 666,
+      "width": 771,
+      "height": 154,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:486",
+      "x": 574,
+      "y": 357,
+      "width": 771.421875,
+      "height": 462.84375,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:524",
+      "x": 805,
+      "y": 819.84375,
+      "width": 462.84375,
+      "height": 231.421875,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:540",
+      "x": 574,
+      "y": 1051.28125,
+      "width": 617.140625,
+      "height": 385.703125,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:570",
+      "x": 574,
+      "y": 357,
+      "width": 771,
+      "height": 309,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:571",
+      "x": 574,
+      "y": 357,
+      "width": 771.421875,
+      "height": 462.84375,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:610",
+      "x": 769,
+      "y": 565,
+      "width": 187,
+      "height": 93,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:611",
+      "x": 30,
+      "y": 20,
+      "width": 160,
+      "height": 66.65625,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:612",
+      "x": 30,
+      "y": 19.359375,
+      "width": 46,
+      "height": 68,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:675",
+      "x": 86.28125,
+      "y": 35.59375,
+      "width": 104,
+      "height": 51.046875,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:676",
+      "x": 86.28125,
+      "y": 35.59375,
+      "width": 63,
+      "height": 11,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "13.9224px",
+      "lineHeight": "11.138px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:677",
+      "x": 86.28125,
+      "y": 53.640625,
+      "width": 104,
+      "height": 33,
+      "font": "\"TT Bluescreens Trial\", sans-serif",
+      "fontSize": "41.6328px",
+      "lineHeight": "33.3062px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:685",
+      "x": 30,
+      "y": 115,
+      "width": 1360,
+      "height": 96,
+      "font": "\"TT Bluescreens Trial\", sans-serif",
+      "fontSize": "120px",
+      "lineHeight": "96px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:678",
+      "x": 26,
+      "y": 221,
+      "width": 1580,
+      "height": 136,
+      "font": "\"TT Bluescreens Trial\", sans-serif",
+      "fontSize": "120px",
+      "lineHeight": "96px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:679",
+      "x": 46,
+      "y": 241,
+      "width": 1540,
+      "height": 96,
+      "font": "\"TT Bluescreens Trial\", sans-serif",
+      "fontSize": "120px",
+      "lineHeight": "96px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:680",
+      "x": 1719,
+      "y": 20,
+      "width": 171,
+      "height": 27,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "26.1px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:681",
+      "x": 1719,
+      "y": 20,
+      "width": 119,
+      "height": 27,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "26.1px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:682",
+      "x": 1858,
+      "y": 25,
+      "width": 32,
+      "height": 17,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "26.1px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:686",
+      "x": 935,
+      "y": 532,
+      "width": 200,
+      "height": 200,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:688",
+      "x": 482,
+      "y": 854,
+      "width": 956,
+      "height": 196,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:689",
+      "x": 492,
+      "y": 864,
+      "width": 936,
+      "height": 176,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:690",
+      "x": 522,
+      "y": 894,
+      "width": 556,
+      "height": 116,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:691",
+      "x": 522,
+      "y": 894,
+      "width": 556,
+      "height": 40,
+      "font": "\"TT Bluescreens Trial\", sans-serif",
+      "fontSize": "50px",
+      "lineHeight": "40px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:692",
+      "x": 522,
+      "y": 954,
+      "width": 556,
+      "height": 56,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "25px",
+      "lineHeight": "27.5px",
+      "tracking": "-0.75px"
+    },
+    {
+      "id": "10:693",
+      "x": 1138,
+      "y": 894,
+      "width": 260,
+      "height": 116,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:694",
+      "x": 1138,
+      "y": 894,
+      "width": 260,
+      "height": 77,
+      "font": "\"TT Bluescreens Trial\", sans-serif",
+      "fontSize": "35px",
+      "lineHeight": "35px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:695",
+      "x": 1158,
+      "y": 915,
+      "width": 70,
+      "height": 35,
+      "font": "\"TT Bluescreens Trial\", sans-serif",
+      "fontSize": "35px",
+      "lineHeight": "35px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:696",
+      "x": 1326,
+      "y": 899,
+      "width": 67,
+      "height": 67,
+      "font": "\"TT Bluescreens Trial\", sans-serif",
+      "fontSize": "35px",
+      "lineHeight": "35px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:697",
+      "x": 1344.453125,
+      "y": 919.453125,
+      "width": 29,
+      "height": 29,
+      "font": "\"TT Bluescreens Trial\", sans-serif",
+      "fontSize": "35px",
+      "lineHeight": "35px",
+      "tracking": "normal"
+    },
+    {
+      "id": "10:698",
+      "x": 1138,
+      "y": 988,
+      "width": 115,
+      "height": 22,
+      "font": "\"IBM Plex Mono\", monospace",
+      "fontSize": "20px",
+      "lineHeight": "22px",
+      "tracking": "-0.6px"
+    }
+  ],
+  "fonts": [
+    {
+      "id": "10:1929",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono SemiBold",
+          "postScriptName": "IBMPlexMono-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 68
+        }
+      ]
+    },
+    {
+      "id": "10:1931",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-Bd",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "id": "10:676",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono SemiBold",
+          "postScriptName": "IBMPlexMono-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "id": "10:677",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "id": "10:679",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 37
+        }
+      ]
+    },
+    {
+      "id": "10:681",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono SemiBold",
+          "postScriptName": "IBMPlexMono-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ]
+    },
+    {
+      "id": "10:685",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 32
+        }
+      ]
+    },
+    {
+      "id": "10:691",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 31
+        }
+      ]
+    },
+    {
+      "id": "10:692",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 59
+        }
+      ]
+    },
+    {
+      "id": "10:695",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-Bd",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "id": "10:698",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:5173/",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:5173/@vite/client",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/main.tsx?t=1792858525691",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/@react-refresh",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/node_modules/.vite/deps/react.js?v=22623ecd",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=89e7f371",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/app/App.tsx?t=1792858525691",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/styles/fonts.css?t=1792857717272",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/styles/tokens.css",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/styles/reset.css",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/styles/global.css",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=22623ecd",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/node_modules/.vite/deps/react-DgVJeC5g.js?v=ca2b4c84",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/hero/HeroSection.tsx?t=1792858525691",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/experiment/ExperimentSection.tsx",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/emptiness/EmptinessSection.tsx",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/elephant/ElephantSection.tsx",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/blind-zones/BlindZonesExplorer.tsx",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/movies/MoviesSection.tsx",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/vocab/VocabSection.tsx",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/blind-spot-scene/BlindSpotSceneSection.tsx",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/what-to-do/WhatToDoSection.tsx",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/footer/FooterSection.tsx",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/shared/useReducedMotion.ts",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/app/App.module.css?t=1792858129509",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/assets/generated.ts",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/hero/HeroArtwork.tsx?t=1792858525680",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/hero/HeroSection.module.css?t=1792858525680",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/experiment/model.ts",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/movies/model.ts",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/node_modules/.vite/deps/react-dom-CFuoV50Q.js?v=ca2b4c84",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/blind-zones/model.ts",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/src/sections/hero/heroArtworkData.ts?t=1792858338326",
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/images/hero-person-collage.webp",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/illustrations/hero-cta-arrow.svg",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/images/hero-film-cutout.webp",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/illustrations/star-accent.svg",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/illustrations/hero-star-62.svg",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/illustrations/hero-star-43.svg",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/illustrations/hero-star-78x79.svg",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/illustrations/hero-star-50.svg",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/illustrations/hero-star-108.svg",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/images/hero-man-eye.webp",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/illustrations/subtale-pixel-mark.svg",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/images/hero-eye-accent.webp",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/images/mosaic-texture.png",
+      "type": "image"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/fonts/ibm-plex-mono-cyrillic-600-normal.woff2",
+      "type": "font"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/fonts/TT%20Bluescreens%20Trial%20Bold.woff2",
+      "type": "font"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/fonts/ibm-plex-mono-latin-600-normal.woff2",
+      "type": "font"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/fonts/TT%20Bluescreens%20Trial%20ExtraBold.woff2",
+      "type": "font"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/fonts/ibm-plex-mono-cyrillic-500-normal.woff2",
+      "type": "font"
+    },
+    {
+      "url": "http://127.0.0.1:5173/assets/fonts/ibm-plex-mono-latin-500-normal.woff2",
+      "type": "font"
+    }
+  ],
+  "errors": [],
+  "bad": [],
+  "externalRequests": 0
+}

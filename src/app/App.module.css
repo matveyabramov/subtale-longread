@@ -1,5 +1,7 @@
 /* Technical scaffold only. No screen composition is reproduced here. */
 .foundation {
+  display: grid;
+  gap: var(--space-20);
   max-inline-size: var(--design-width);
   margin-inline: auto;
   padding: var(--space-30);

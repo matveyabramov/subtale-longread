@@ -1,0 +1,419 @@
+.hero {
+  background: var(--color-blue);
+  overflow-x: auto;
+}
+
+.canvas {
+  position: relative;
+  isolation: isolate;
+  -webkit-font-smoothing: antialiased;
+  width: 1920px;
+  height: 1080px;
+  margin-inline: auto;
+  overflow: hidden;
+  color: var(--color-white);
+}
+
+.introduction {
+  position: absolute;
+  left: 30px;
+  top: 874px;
+  width: 680px;
+}
+
+.introCopy {
+  color: var(--color-paper);
+  height: 60px;
+  white-space: pre;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.primaryCta, .hintStart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-ink);
+  background: var(--color-yellow);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 5px 5px 5px 20px;
+}
+
+.primaryCta {
+  position: relative;
+  margin-top: 30px;
+  width: 680px;
+  height: 86px;
+}
+
+.primaryArrowBox {
+  position: relative;
+  width: 75px;
+  height: 76px;
+  background: var(--color-ink);
+  overflow: hidden;
+}
+
+.primaryArrowBox img {
+  position: absolute;
+  left: 22.46435546875px;
+  top: 23.4644775390625px;
+  max-inline-size: none;
+}
+
+.texture {
+  position: absolute;
+  inset: 0;
+  opacity: 0.4;
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 354.9999899864197px 287.9345006942749px;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  max-inline-size: none;
+  pointer-events: none;
+}
+
+.film {
+  position: absolute;
+  left: 1450px;
+  top: 762.8031005859375px;
+  width: 325.60614013671875px;
+  height: 436.0796813964844px;
+  transform: matrix(0.8660253882408142, -0.5, 0.5, 0.8660253882408142, 0, 0);
+  transform-origin: 0 0;
+}
+
+.filmBacking {
+  position: absolute;
+  left: 64.5296630859375px;
+  top: 48.976951599121094px;
+  width: 189.47726440429688px;
+  height: 311.159912109375px;
+  background: var(--color-white);
+}
+
+.filmImage {
+  position: absolute;
+  left: -3.660371780395508px;
+  top: -13.661026954650879px;
+  width: 325.60614013671875px;
+  height: 436.07965087890625px;
+  max-inline-size: none;
+  object-fit: cover;
+}
+
+.portrait {
+  position: absolute;
+  left: 574px;
+  top: 357px;
+  width: 771px;
+  height: 694px;
+  overflow: hidden;
+}
+
+.portraitFragment {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-inline-size: none;
+  overflow: hidden;
+}
+
+.middleBand {
+  position: absolute;
+  left: 0;
+  top: 309px;
+  width: 771px;
+  height: 154px;
+  overflow: hidden;
+}
+
+.middleBand .portraitFragment {
+  top: -309px;
+}
+
+.lowerBand {
+  position: absolute;
+  left: 231px;
+  top: 462.857421875px;
+}
+
+.clippedBand {
+  position: absolute;
+  left: 0;
+  top: 694.287109375px;
+}
+
+.upperBand {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 771px;
+  height: 309px;
+  overflow: hidden;
+}
+
+.eyeCrop {
+  position: absolute;
+  left: 195px;
+  top: 208px;
+  width: 187px;
+  height: 93px;
+  overflow: hidden;
+}
+
+.eyeCrop img {
+  position: absolute;
+  max-inline-size: none;
+  width: 595.6159932745996%;
+  height: 1502.683402243875%;
+  left: -175.03674403149122%;
+  top: -361.71041450446546%;
+}
+
+.brand {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  width: 160px;
+  height: 66.66667175292969px;
+}
+
+.brandMark {
+  position: absolute;
+  left: 0;
+  top: -0.6495208740234375px;
+  max-inline-size: none;
+}
+
+.brandName {
+  position: absolute;
+  left: 56.29256057739258px;
+  top: 15.609073638916016px;
+  width: 104px;
+  height: 51.05759811401367px;
+  text-transform: uppercase;
+}
+
+.brandLatin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 63px;
+  height: 11px;
+  font: 600 13.922446250915527px/0.8 var(--font-copy);
+  color: var(--color-yellow);
+}
+
+.brandCyrillic {
+  position: absolute;
+  top: 18.057598114013672px;
+  left: 0;
+  width: 104px;
+  height: 33px;
+  font: 800 41.63276290893555px/0.8 var(--font-display);
+}
+
+.headline {
+  margin: 0;
+  font: 800 120px/0.8 var(--font-display);
+  text-transform: uppercase;
+}
+
+.headlineFirst {
+  position: absolute;
+  left: 30px;
+  top: 115px;
+  width: 1360px;
+  height: 96px;
+  white-space: nowrap;
+}
+
+.headlineBanner {
+  position: absolute;
+  left: 26px;
+  top: 221px;
+  width: 1580px;
+  height: 136px;
+  padding: 20px;
+  color: var(--color-ink);
+  background: var(--color-yellow);
+  white-space: nowrap;
+}
+
+.contents {
+  position: absolute;
+  left: 1719px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 171px;
+  height: 27px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--color-white);
+  font: 600 20px/26.100000381469727px var(--font-copy);
+}
+
+.contents > span:first-child {
+  display: block;
+  width: 119px;
+  flex: none;
+  white-space: nowrap;
+}
+
+.contentsIcon {
+  position: relative;
+  display: block;
+  flex: none;
+  width: 32px;
+  height: 17px;
+}
+
+.contentsIcon i {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 32px;
+  height: 3px;
+  background: var(--color-white);
+}
+
+.contentsIcon i:last-child {
+  top: 14px;
+}
+
+.accent {
+  position: absolute;
+  left: 935px;
+  top: 532px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hint {
+  position: absolute;
+  left: 482px;
+  top: 854px;
+  width: 956px;
+  height: 196px;
+  border: 5px solid #000;
+  padding: 5px;
+  background: #fff;
+}
+
+.hintInterior {
+  display: flex;
+  gap: 60px;
+  padding: 30px;
+  width: 936px;
+  height: 176px;
+  background: #000;
+}
+
+.hintCopy {
+  flex: none;
+  width: 556px;
+}
+
+.hintCopy h2 {
+  margin: 0 0 20px;
+  height: 40px;
+  white-space: nowrap;
+  font: 800 50px/0.8 var(--font-display);
+  text-transform: uppercase;
+}
+
+.hintCopy p {
+  width: 556px;
+  height: 56px;
+  font: 500 25px/1.1 var(--font-copy);
+  letter-spacing: -0.75px;
+}
+
+.hintActions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 260px;
+  height: 116px;
+  flex: none;
+}
+
+.hintStart {
+  width: 260px;
+  height: 77px;
+}
+
+.hintArrowBox {
+  position: relative;
+  width: 67px;
+  height: 67px;
+  background: var(--color-ink);
+  overflow: hidden;
+}
+
+.hintArrowBox img {
+  position: absolute;
+  left: 18.46435546875px;
+  top: 20.4644775390625px;
+  max-inline-size: none;
+}
+
+.hintSkip {
+  font: 500 20px/1.1 var(--font-copy);
+  letter-spacing: -0.6px;
+  text-decoration: underline;
+  text-underline-position: from-font;
+}
+
+
+/* Figma text boxes are rounded containers, not intrinsic browser glyph widths. */
+.primaryCta > span:first-child {
+  display: block;
+  width: 311px;
+}
+
+.headlineBanner > span {
+  display: block;
+  width: 1540px;
+  height: 96px;
+}
+
+.hintStart > span:first-child {
+  display: block;
+  width: 70px;
+}
+
+.hintSkip {
+  width: 115px;
+  text-align: center;
+}
+
+.contents > span:first-child {
+  height: 27px;
+  display: flex;
+  align-items: center;
+}
+
+
+/* Figma cap-height alignment for the 50px/40px hint title; outer box stays measured. */
+.hintCopy h2 > span {
+  position: relative;
+  top: 1px;
+}

@@ -15,24 +15,23 @@ export function App() {
   const reducedMotion = useReducedMotion();
 
   return (
-    <div className={styles.foundation} data-reduced-motion={reducedMotion}>
-      <header>
-        <h1>SUBTALE — Stage 1A</h1>
-        <p>Техническая структура · визуальная реализация ещё не начата</p>
-        <a href="#main-content">К структуре разделов</a>
-      </header>
+    <div data-reduced-motion={reducedMotion}>
       <main id="main-content" tabIndex={-1}>
         <HeroSection />
-        <ExperimentSection />
-        <EmptinessSection />
-        <ElephantSection />
-        <BlindZonesExplorer />
-        <MoviesSection />
-        <VocabSection />
-        <BlindSpotSceneSection />
-        <WhatToDoSection />
+        <div className={styles.foundation}>
+          <ExperimentSection />
+          <EmptinessSection />
+          <ElephantSection />
+          <BlindZonesExplorer />
+          <MoviesSection />
+          <VocabSection />
+          <BlindSpotSceneSection />
+          <WhatToDoSection />
+        </div>
       </main>
-      <FooterSection />
+      <div className={styles.foundation}>
+        <FooterSection />
+      </div>
     </div>
   );
 }

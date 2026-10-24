@@ -1,0 +1,113 @@
+{
+  "pass1": {
+    "full": {
+      "meanAbsoluteRgb": 6.698961226851852,
+      "percentPixelsMaxChannelDeltaAbove12": 7.028115354938271,
+      "maxChannelDelta": 255
+    },
+    "headline": {
+      "meanAbsoluteRgb": 5.637875306372549,
+      "percentPixelsMaxChannelDeltaAbove12": 8.808976715686274,
+      "maxChannelDelta": 234
+    },
+    "question": {
+      "meanAbsoluteRgb": 3.4800211940836943,
+      "percentPixelsMaxChannelDeltaAbove12": 8.1737012987013,
+      "maxChannelDelta": 200
+    },
+    "portrait": {
+      "meanAbsoluteRgb": 26.012549138323237,
+      "percentPixelsMaxChannelDeltaAbove12": 23.33612570363817,
+      "maxChannelDelta": 253
+    },
+    "hint": {
+      "meanAbsoluteRgb": 6.304370179033957,
+      "percentPixelsMaxChannelDeltaAbove12": 6.191828195713432,
+      "maxChannelDelta": 255
+    },
+    "background": {
+      "meanAbsoluteRgb": 0.48361666666666664,
+      "percentPixelsMaxChannelDeltaAbove12": 0,
+      "maxChannelDelta": 6
+    },
+    "familyExceptions": {
+      "meanAbsoluteRgb": 20.55945419103314,
+      "percentPixelsMaxChannelDeltaAbove12": 22.915312973792506,
+      "maxChannelDelta": 254
+    }
+  },
+  "pass2": {
+    "full": {
+      "meanAbsoluteRgb": 2.089674318415638,
+      "percentPixelsMaxChannelDeltaAbove12": 2.8918788580246915,
+      "maxChannelDelta": 255
+    },
+    "headline": {
+      "meanAbsoluteRgb": 5.637875306372549,
+      "percentPixelsMaxChannelDeltaAbove12": 8.808976715686274,
+      "maxChannelDelta": 234
+    },
+    "question": {
+      "meanAbsoluteRgb": 3.4800211940836943,
+      "percentPixelsMaxChannelDeltaAbove12": 8.1737012987013,
+      "maxChannelDelta": 200
+    },
+    "portrait": {
+      "meanAbsoluteRgb": 1.4679508090479758,
+      "percentPixelsMaxChannelDeltaAbove12": 1.9517885523256269,
+      "maxChannelDelta": 83
+    },
+    "hint": {
+      "meanAbsoluteRgb": 6.294891910739191,
+      "percentPixelsMaxChannelDeltaAbove12": 6.174216548544104,
+      "maxChannelDelta": 255
+    },
+    "background": {
+      "meanAbsoluteRgb": 0.48361666666666664,
+      "percentPixelsMaxChannelDeltaAbove12": 0,
+      "maxChannelDelta": 6
+    },
+    "familyExceptions": {
+      "meanAbsoluteRgb": 20.55945419103314,
+      "percentPixelsMaxChannelDeltaAbove12": 22.915312973792506,
+      "maxChannelDelta": 254
+    }
+  },
+  "passfinal": {
+    "full": {
+      "meanAbsoluteRgb": 1.1789618698559672,
+      "percentPixelsMaxChannelDeltaAbove12": 2.0434027777777777,
+      "maxChannelDelta": 255
+    },
+    "headline": {
+      "meanAbsoluteRgb": 1.5337622549019607,
+      "percentPixelsMaxChannelDeltaAbove12": 5.254289215686274,
+      "maxChannelDelta": 112
+    },
+    "question": {
+      "meanAbsoluteRgb": 0.9943993506493507,
+      "percentPixelsMaxChannelDeltaAbove12": 4.5522186147186146,
+      "maxChannelDelta": 96
+    },
+    "portrait": {
+      "meanAbsoluteRgb": 1.4679508090479758,
+      "percentPixelsMaxChannelDeltaAbove12": 1.9517885523256269,
+      "maxChannelDelta": 83
+    },
+    "hint": {
+      "meanAbsoluteRgb": 2.0343017960322203,
+      "percentPixelsMaxChannelDeltaAbove12": 3.545811630091367,
+      "maxChannelDelta": 255
+    },
+    "background": {
+      "meanAbsoluteRgb": 0.48361666666666664,
+      "percentPixelsMaxChannelDeltaAbove12": 0,
+      "maxChannelDelta": 6
+    },
+    "familyExceptions": {
+      "meanAbsoluteRgb": 18.94541910331384,
+      "percentPixelsMaxChannelDeltaAbove12": 22.763699371886506,
+      "maxChannelDelta": 254
+    }
+  }
+}

@@ -88,4 +88,4 @@ Browser checks used the existing bundled Playwright with local Chrome, not an in
 
 No remaining build/startup blocker. Latin font coverage was resolved in the separately scoped Stage 1B.1 font commit (FONT_ASSETS.md); the preceding QA table preserves Stage 1A results. Section-specific typography/container/radius/layer values and new UI-state visuals are checked during Stage 1B implementation. Captions/transcripts and media behavior remain Stage 3 work under D10. Baseline motion is reserved for Stage 4.
 
-Next stage, only upon request: Stage 1B static Desktop 1920 sections, starting with Hero. No pixel layout, responsive composition, interaction state machine or animation has started here. Locate the separate Stage 1A commit with `git log -1 --format=%h -- docs/FOUNDATION.md`.
+Historical next step: Stage 1B static Desktop 1920 sections, starting with Hero. Hero was subsequently completed under the explicit Stage 1B.1 request; see HERO_DESKTOP_QA.md. No pixel layout, responsive composition, interaction state machine or animation has started here. Locate the separate Stage 1A commit with `git log -1 --format=%h -- docs/FOUNDATION.md`.

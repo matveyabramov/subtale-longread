@@ -4,7 +4,7 @@ Interactive editorial longread about hidden meanings in English-language film an
 
 ## Status
 
-Stage 0.3 **Approved**. Stage 1A provides a technical React shell, local fonts, scoped design tokens and delivery-asset URLs. The visible screen is a labelled technical structure, not a designed longread. Stage 1B screen implementation has not started. IBM Plex Mono Latin/Cyrillic coverage is fixed with matching local subsets; see docs/FONT_ASSETS.md.
+Stage 0.3 **Approved**, Stage 1A **Completed**, Stage 1B.1 **Completed**: Hero Desktop 1920 is implemented; the other nine sections remain technical placeholders. Matching local IBM Plex Mono Latin/Cyrillic subsets are connected (docs/FONT_ASSETS.md). Hero comparison screenshots, checks and explicit visual limits: [HERO_DESKTOP_QA.md](docs/HERO_DESKTOP_QA.md).
 
 ## Run locally
 
@@ -28,7 +28,7 @@ npm run assets:check
 
 ## Structure
 
-- `src/app/`: ordered longread shell and temporary CSS Module for technical labels.
+- `src/app/`: ordered longread shell and CSS Module scoped to the remaining technical placeholders.
 - `src/sections/`: ten section components; Experiment contains three independently anchored screens in normal flow. Explorer stays one section.
 - `src/sections/{experiment,blind-zones,movies}/model.ts`: identifiers, frame/media mappings and future state types; no reducers or playback logic yet.
 - `src/shared/`: reading-anchor types and a reduced-motion subscription.
