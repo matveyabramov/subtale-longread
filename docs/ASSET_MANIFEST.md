@@ -1,12 +1,14 @@
 # SUBTALE — Figma asset manifest
 
-Current raster status (Stage 0.2E.2, 2026-10-24): **41 verified / 0 pending / 0 errors**. Every unique imageHash in `FIGMA_ASSET_MAP.json` has an original local file. All 41 files passed full pixel decoding, source-dimension and duplicate-byte checks; total original raster size is **91,025,613 bytes**. Sources remain unoptimized. Section reports preserve exact fills, crop/transform metadata and source checksums.
+Current original-raster status (verified through Stage 0.2H.1, 2026-10-24): **41 verified / 0 pending / 0 errors**. Every unique imageHash in `FIGMA_ASSET_MAP.json` has an original local file. All 41 files passed full pixel decoding, source-dimension and duplicate-byte checks; total original raster size is **91,025,613 bytes**. Original source bytes remain unchanged; optimized Idiom delivery files are tracked separately below. Section reports preserve exact fills, crop/transform metadata and source checksums.
 
-The inventory and staged reports below retain historical findings; earlier pending statements describe their stage dates, not current raster status. Font files, movie video selection and later implementation/visual QA remain separate work. No temporary Figma MCP URL is used as a project asset.
+The inventory and staged reports below retain historical findings; earlier pending counts and import paths describe their stage dates, not current status. Font files are present; film-video migration is partial, and playback/scene/audio QA plus later implementation/visual QA remain open. No temporary Figma MCP URL is used as a project asset.
 
 Current vector status (Stage 0.2F.1): **19 frames audited, 1 missing SVG imported, 15 existing SVG files reused**. All 16 SVGs parse and render without external dependencies. See `docs/VECTOR_ASSET_AUDIT.md` for the exhaustive node decision table and `docs/VECTOR_ASSET_SOURCE.json` for exact geometry and checksums.
 
 Current Idiom delivery status (Stage 0.2H.1): **9 originals archived unchanged in `source-assets/images/`; 9 WebP delivery derivatives in public, 10,942,476 bytes instead of 39,997,317 bytes (72.64% saved)**. Registry `localPath` always locates the original; `optimizedPath` locates its derivative. Current paths and checks: `ASSET_OPTIMIZATION_RESULTS.md` and `IDIOM_ASSET_OPTIMIZATION.json`. Earlier stage tables retain historical import paths.
+
+Current video status (Stage 0.2G): **4 of 5 MP4s and all 5 original JPEG posters imported unchanged**. Sherlock MP4 is pending; playback, scene and audio verification remain open. Mapping and local completion instructions: `VIDEO_ASSETS.md`. The pre-optimization weight baseline and remaining delivery plan are in `ASSET_WEIGHT_AUDIT.md`; current Idiom results below supersede that baseline for this section.
 
 ## Initial candidate inventory (historical)
 
@@ -56,7 +58,7 @@ Read-only Figma export metadata obtained for all **19** top-level frames. Totals
 
 **Font audit:** Figma file has 229 text nodes; 133 report `hasMissingFont`. Families/styles: TT Bluescreens Trial ExtraBold (128), Bold (5); IBM Plex Mono Medium (92), SemiBold (1); Inter Semi Bold (2); Manrope SemiBold (1). No local Figma variable collections or Figma text styles were returned. Prioritize collecting **font files with correct styles** so rendered geometry can match; no legal/licensing audit is in scope for this educational project.
 
-**Outstanding:** original asset bytes, deduplicated count, intrinsic pixel dimensions, transparency, optimization, reliable font files, and candidate film video verification. Figma MCP provided short-lived export URLs but no original files have been saved in this repository. All images are still pending local download and pixel QA. **Do not mark asset migration complete based on the metadata inventory alone.**
+**Inventory follow-up:** raster extraction/deduplication and vector import were completed in the later stages recorded below; font files are now present. Idiom delivery optimization is complete, while other delivery optimizations and the remaining video transfer/playback checks are separate work. Metadata inventory alone did not establish successful migration.
 
 ## Stage 0.2 — verified transfers (2026-10-24)
 
@@ -68,9 +70,9 @@ Original bytes acquired via read-only Figma Plugin API, transferred directly int
 | `public/assets/illustrations/subtale-pixel-mark.svg` | `10:612` | exported SVG | 5,018 bytes |
 | `public/assets/illustrations/star-accent.svg` | `10:474` | exported SVG | 300 bytes |
 
-A machine-readable Figma hash-to-layer registry is in `docs/FIGMA_ASSET_MAP.json`, covering **41 unique image hashes** found in the current Figma file. Its `localPath` field is null until the actual source is saved. Run `node scripts/check-assets.mjs` once assets are present locally; it checks files, PNG geometry and duplicate bytes without npm installs. SVGs are not included in the raster hash inventory.
+A machine-readable Figma hash-to-layer registry is in `docs/FIGMA_ASSET_MAP.json`, covering **41 unique image hashes** found in the current Figma file. Its `localPath` now resolves every exact original, including the nine archived Idiom sources outside `public/`; Idiom `optimizedPath` fields resolve separate WebP delivery files. `node scripts/check-assets.mjs` checks original PNG/JPEG files, PNG geometry and duplicate bytes without npm installs; WebP decoding/alpha checks are recorded in the optimization report. SVGs are not included in the raster hash inventory.
 
-**Not yet done:** export the other 40 raster sources, verify images' real alpha pixels / visual cropping, fetch needed font files, collect movie MP4s. The next import should target the actual Hero art and the individual exploded-animation layers. The secondary texture is a large JPEG (3370 × 2247; 4.24 MB) and should be downloaded locally rather than transmitted in small API chunks.
+**Transfer history:** these were the first three verified files. The subsequent section imports completed all 41 original raster sources, actual-alpha/crop QA and the needed vector inventory. Movie transfers are tracked separately in Stage 0.2G; they do not change the 41-source Figma raster count.
 
 ## Stage 0.2A — Hero original assets (2026-10-24)
 
@@ -275,10 +277,24 @@ Simple experiment cross/dots, section dividers, film perforations, pixel geometr
 
 **Blockers:** none for vector import. Browser calibration of Figma backdrop blur and the previously recorded Footer raster filters belongs to later layout QA. No Figma edits, layout/animation implementation, dependency installation or legacy changes.
 
+## Stage 0.2G — legacy film video migration (partial)
+
+Imported four of five verified MP4s plus all five original JPEG posters from private `matveyabramov/sp-longread`; exact source/destination Git object SHA values match for each imported file. `case-04.mp4` (Sherlock, 1,075,310 bytes) is pending due to the GitHub 1 MiB content retrieval limit. Detailed mapping, durations for the four retrievable files, output paths and one-command local completion: `docs/VIDEO_ASSETS.md`.
+
+This is a direct copy; no transcoding, filtering or page implementation. Actual playback and visual scene verification remain open until local `ffprobe`/browser QA.
+
+## Stage 0.2H — asset weight baseline and delivery plan
+
+The incoming `docs/ASSET_WEIGHT_AUDIT.md` records the pre-optimization remote snapshot `d64a173bf42a`: **92,906,861 bytes / 92.91 MB** of public assets, including four MP4s and five posters. Its Idiom total of approximately 40 MB is the original baseline, not the current delivery weight. The audit's “seven ice PNGs … 0.00 MB” subtotal is erroneous: their original total is **37,365,014 bytes / 37.37 MB**. Current Idiom delivery measurements and encoder/visual checks are in Stage 0.2H.1 below; do not use the historical audit as a post-optimization measurement.
+
+The audit's source-versus-delivery architecture is retained: preserve exact masters outside `public/`, keep Figma imageHash mapped to original `localPath`, record derivatives separately, preserve all active fills/crops/masks and independent objects, and validate at the actual 1920px display size. Stage 0.2H.1 completes that pilot for Idiom. The planned other-illustration, Hero/Footer/texture, and video/final-budget stages remain future work; no universal quality or byte limit overrides visible fidelity. Media lazy loading and poster/preload behavior remain application-stage decisions.
+
+Both TT Bluescreens Trial weights and both IBM Plex Mono weights are present locally. Video transfer remains partial as described in Stage 0.2G; decoder/browser/audio QA is still pending. The weight audit was not available when the local Idiom pilot began and arrived with this merge, so the pilot report's missing-document note describes that earlier point in time.
+
 ## Stage 0.2H.1 — Idiom WebP delivery (2026-10-24)
 
 Moved all nine original Idiom PNG/JPEG files unchanged to `source-assets/images/` through `git mv`; their original SHA256, imageHash and dimensions remain valid. Created nine separate WebP derivatives under `public/assets/images/`, preserving full canvases, normalized crops, six SVG masks, eight independent ice objects and the telephone. Seven ice files use 2304 × 1286 lossless WebP; the visible telephone uses 1344 × 1800 lossless WebP, and the optional hidden-JPEG derivative uses 1344 × 1800 q96 WebP. The hidden fill stays hidden.
 
 Public Idiom package: **39,997,317 → 10,942,476 bytes; 29,054,841 bytes / 29.05 MB / 72.64% saved**. Originals are outside public; no PNG/JPEG Idiom original remains there. The seven distinct ice sources were not merged; both lower objects reuse their one shared derivative with separate crops. All masks and other-section images remain unchanged.
 
-Individually compared 45 candidates, checked transparency/edge color at DPR1/DPR2, and inspected both state reconstructions against the original sources and Figma-verified crop metadata. Eight visible derivatives preserve resized reference alpha and nonzero-alpha RGB exactly. All nine source and output hashes, six mask hashes, all other public asset hashes and reproduction checks pass. `node scripts/check-assets.mjs` → **41 verified / 0 pending / 0 errors**. Full tables/settings, missing weight-audit note and visual QA limits: `docs/ASSET_OPTIMIZATION_RESULTS.md`, `docs/IDIOM_ASSET_OPTIMIZATION.json`.
+Individually compared 45 candidates, checked transparency/edge color at DPR1/DPR2, and inspected both state reconstructions against the original sources and Figma-verified crop metadata. Eight visible derivatives preserve resized reference alpha and nonzero-alpha RGB exactly. All nine source and output hashes, six mask hashes, all other public asset hashes and reproduction checks pass. `node scripts/check-assets.mjs` → **41 verified / 0 pending / 0 errors**. Full tables/settings, historical missing-weight-audit note and visual QA limits: `docs/ASSET_OPTIMIZATION_RESULTS.md`, `docs/IDIOM_ASSET_OPTIMIZATION.json`.
