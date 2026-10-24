@@ -186,3 +186,22 @@ Compared A `10:1528` and B `10:2017`. Imported **2 original PNG files, 1,968,067
 **Checks:** both downloaded originals match Figma byte counts and FNV-1a fingerprints; decoded dimensions match the registry; actual alpha pixels verified. Originals inspected on a checkerboard at the common 845 × 563 slot and compared with Figma screenshots. The recorded 32-node structures differ internally only in the two fill visibility flags. `node scripts/check-assets.mjs` → **Verified: 28 | Pending: 13 | Errors: 0**; no duplicate raster bytes.
 
 **Animation limits:** the existing assets support switching between full-eye states. The figures, pupil and eye are not separately layered; no independent figure movement or existing pupil-mask animation is available. Timing/interpolation and controls remain later design decisions. No missing Double Meaning sources. No Figma edits, layout/animation implementation, dependency installation or legacy-file changes.
+
+## Stage 0.2D.4 — Cultural Reference originals and snowflake geometry (2026-10-24)
+
+Compared A `10:1560` and B `10:2049`. Imported **4 original raster files, 10,459,326 bytes**; updated four `localPath` entries. The five snowflake objects share one JPEG/PNG pair, stored once by imageHash. Existing mosaic is reused and its original byte fingerprint verified. Exact per-instance geometry, fills, alpha QA and SHA256 checksums are in `docs/CULTURAL_REFERENCE_ASSET_IMPORT.json`; illustration structure and animation limits are documented in `docs/MOTION_SPEC.md`.
+
+| New file under `public/assets/images/` | Figma imageHash | Original dimensions | Bytes | Role |
+|---|---|---|---:|---|
+| `cultural-snowflake-base.jpg` | `a3b7ac7e799505da584c86b7c42f8da6723eedbc` | 1792 × 2400 | 1,752,022 | Hidden JPEG shared by all five snowflakes |
+| `cultural-snowflake-cutout.png` | `479c47cbc92ef29bc039dc843d2f7103b80d1391` | 1792 × 2400 | 2,584,249 | Visible transparent PNG shared by all five snowflakes |
+| `cultural-iron-throne-base.jpg` | `429921b86495a728937851d97677ae3dcf8c9122` | 1792 × 2400 | 2,262,774 | Hidden original JPEG of throne |
+| `cultural-iron-throne-cutout.png` | `76a447de6eae4a64eca6b2865f63ff9cdb9e566c` | 1792 × 2400 | 3,860,281 | Visible transparent PNG of throne |
+
+**Actual differences:** A contains five complete snowflake instances; B contains a single throne image, with no snowflake counterparts in its subtree. All snowflakes have rotation 0°, but different slot positions and dimensions. B's throne has its own origin (301, 263) and slot 610 × 817. No one-to-one mapping, component morph or movement trajectory is specified between these different objects. The 30 common texture/interface nodes have no differences in the recorded in-frame properties. The geometry of every snowflake, including paint order 5–9 and exact transforms, is tabulated in `MOTION_SPEC.md`.
+
+**Fills and fidelity:** each object has a hidden JPEG followed by a visible transparent PNG. Retain both, without displaying the JPEG behind the PNG. Both PNGs have alpha 0–255, real transparent/partial-alpha pixels and fully transparent canvas edges. All original canvases, source resolution and per-slot FILL cover crops were preserved; no trimming, normalization, re-encoding or per-instance source copies. No explicit masks or Boolean clipping objects exist in either frame; PNG alpha supplies the silhouette and interior holes, so no separate mask file was needed.
+
+**Checks:** four original byte counts and FNV-1a fingerprints match Figma; decoded JPEG/PNG dimensions match the registry; actual alpha verified. Originals inspected on a checkerboard. Temporary FILL/position reconstructions of both compositions visually compared with Figma screenshots. `node scripts/check-assets.mjs` → **Verified: 32 | Pending: 9 | Errors: 0**; no duplicate raster bytes.
+
+**Animation feasibility:** five snowflake instances can move independently while sharing one PNG, and the throne is a separate whole bitmap. Snowflake arms and throne swords are fused inside their images. No motion timing, disappearance/entry behavior or morph is defined by the supplied states; those remain decisions for the later motion stage. No missing Cultural Reference sources. No Figma edits, layout/animation implementation, dependencies or legacy-file changes.

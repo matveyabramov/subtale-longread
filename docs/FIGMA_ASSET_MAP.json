@@ -55,7 +55,7 @@
       "sourceWidth": 1792,
       "sourceHeight": 2400,
       "occurrences": 5,
-      "localPath": null
+      "localPath": "public/assets/images/cultural-snowflake-base.jpg"
     },
     {
       "hash": "479c47cbc92ef29bc039dc843d2f7103b80d1391",
@@ -64,7 +64,7 @@
       "sourceWidth": 1792,
       "sourceHeight": 2400,
       "occurrences": 5,
-      "localPath": null
+      "localPath": "public/assets/images/cultural-snowflake-cutout.png"
     },
     {
       "hash": "c027bce002d6d9ef41326d8cce3bb29eac6f7e22",
@@ -343,7 +343,7 @@
       "sourceWidth": 1792,
       "sourceHeight": 2400,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/cultural-iron-throne-base.jpg"
     },
     {
       "hash": "76a447de6eae4a64eca6b2865f63ff9cdb9e566c",
@@ -352,7 +352,7 @@
       "sourceWidth": 1792,
       "sourceHeight": 2400,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/cultural-iron-throne-cutout.png"
     },
     {
       "hash": "bfdc63b7bc0f0d5abbdf1a00f3ec8121daffde5a",

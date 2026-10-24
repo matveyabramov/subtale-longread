@@ -1,0 +1,1337 @@
+{
+  "stage": "0.2D.4",
+  "date": "2026-10-24",
+  "figmaFileKey": "H4HI00uGY2UOxpcfHogUat",
+  "frameNodeIds": [
+    "10:1560",
+    "10:2049"
+  ],
+  "newFiles": 4,
+  "newBytes": 10459326,
+  "method": "Original Figma MCP raw downloads matched to getImageByHash().getBytesAsync() byte counts and FNV-1a. One original per imageHash; no resize, crop, alpha cleanup, re-encoding or per-instance bitmap copies.",
+  "assets": [
+    {
+      "hash": "429921b86495a728937851d97677ae3dcf8c9122",
+      "bytes": 2262774,
+      "fnv1a": "8c3f55bc",
+      "format": "jpg",
+      "width": 1792,
+      "height": 2400,
+      "nodeId": "10:2087",
+      "localPath": "public/assets/images/cultural-iron-throne-base.jpg",
+      "sha256": "db9a7bdcdb137d24d5187778f603c83909725a0b442c4b44faf93377616dec80",
+      "pixelQA": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "width": 1792,
+        "height": 2400,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0,
+        "transparentEdgePixels": 0,
+        "alphaBounds": [
+          0,
+          0,
+          1792,
+          2400
+        ]
+      }
+    },
+    {
+      "hash": "a3b7ac7e799505da584c86b7c42f8da6723eedbc",
+      "bytes": 1752022,
+      "fnv1a": "83713400",
+      "format": "jpg",
+      "width": 1792,
+      "height": 2400,
+      "nodeId": "10:1591",
+      "localPath": "public/assets/images/cultural-snowflake-base.jpg",
+      "sha256": "0968e1ae99abdcd9814b75ddfd173e040a0a50f5c212f6a2463941466e283852",
+      "pixelQA": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "width": 1792,
+        "height": 2400,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0,
+        "transparentEdgePixels": 0,
+        "alphaBounds": [
+          0,
+          0,
+          1792,
+          2400
+        ]
+      }
+    },
+    {
+      "hash": "76a447de6eae4a64eca6b2865f63ff9cdb9e566c",
+      "bytes": 3860281,
+      "fnv1a": "18d0f258",
+      "format": "png",
+      "width": 1792,
+      "height": 2400,
+      "nodeId": "10:2087",
+      "localPath": "public/assets/images/cultural-iron-throne-cutout.png",
+      "sha256": "7733212873f1187b887517ff5a2eb1e4338751d626f8a19807cddd6599703c3d",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1792,
+        "height": 2400,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 1892480,
+        "partialAlphaPixels": 67898,
+        "transparentEdgePixels": 8384,
+        "alphaBounds": [
+          93,
+          87,
+          1714,
+          2302
+        ]
+      }
+    },
+    {
+      "hash": "479c47cbc92ef29bc039dc843d2f7103b80d1391",
+      "bytes": 2584249,
+      "fnv1a": "5ffb77b1",
+      "format": "png",
+      "width": 1792,
+      "height": 2400,
+      "nodeId": "10:1591",
+      "localPath": "public/assets/images/cultural-snowflake-cutout.png",
+      "sha256": "83779a9d97f2429d1db9f19c6df71c1673a800779d3c6b572342eeecfb021870",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1792,
+        "height": 2400,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 2623754,
+        "partialAlphaPixels": 90206,
+        "transparentEdgePixels": 8384,
+        "alphaBounds": [
+          31,
+          167,
+          1761,
+          2233
+        ]
+      }
+    }
+  ],
+  "reusedTexture": {
+    "hash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
+    "bytes": 43725,
+    "fnv1a": "d0cf41a0",
+    "format": "png",
+    "width": 397,
+    "height": 322,
+    "localPath": "public/assets/images/mosaic-texture.png",
+    "originalBytesVerified": true
+  },
+  "snowflakeInstances": [
+    {
+      "nodeId": "10:1591",
+      "x": 328,
+      "y": 321,
+      "width": 522,
+      "height": 699,
+      "center": {
+        "x": 589,
+        "y": 670.5
+      },
+      "rotation": 0,
+      "paintOrder": 5,
+      "opacity": 1,
+      "visible": true,
+      "frameTransform": [
+        [
+          1,
+          0,
+          328
+        ],
+        [
+          0,
+          1,
+          321
+        ]
+      ],
+      "sourceImageHashes": [
+        "a3b7ac7e799505da584c86b7c42f8da6723eedbc",
+        "479c47cbc92ef29bc039dc843d2f7103b80d1391"
+      ],
+      "counterpartInB": null,
+      "relativeSizeToMain": {
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "nodeId": "10:1592",
+      "x": 76,
+      "y": 283,
+      "width": 232,
+      "height": 311,
+      "center": {
+        "x": 192,
+        "y": 438.5
+      },
+      "rotation": 0,
+      "paintOrder": 6,
+      "opacity": 1,
+      "visible": true,
+      "frameTransform": [
+        [
+          1,
+          0,
+          76
+        ],
+        [
+          0,
+          1,
+          283
+        ]
+      ],
+      "sourceImageHashes": [
+        "a3b7ac7e799505da584c86b7c42f8da6723eedbc",
+        "479c47cbc92ef29bc039dc843d2f7103b80d1391"
+      ],
+      "counterpartInB": null,
+      "relativeSizeToMain": {
+        "width": 0.4444444444444444,
+        "height": 0.4449213161659514
+      }
+    },
+    {
+      "nodeId": "10:1593",
+      "x": 870,
+      "y": 198,
+      "width": 232,
+      "height": 311,
+      "center": {
+        "x": 986,
+        "y": 353.5
+      },
+      "rotation": 0,
+      "paintOrder": 7,
+      "opacity": 1,
+      "visible": true,
+      "frameTransform": [
+        [
+          1,
+          0,
+          870
+        ],
+        [
+          0,
+          1,
+          198
+        ]
+      ],
+      "sourceImageHashes": [
+        "a3b7ac7e799505da584c86b7c42f8da6723eedbc",
+        "479c47cbc92ef29bc039dc843d2f7103b80d1391"
+      ],
+      "counterpartInB": null,
+      "relativeSizeToMain": {
+        "width": 0.4444444444444444,
+        "height": 0.4449213161659514
+      }
+    },
+    {
+      "nodeId": "10:1594",
+      "x": 902,
+      "y": 655,
+      "width": 168,
+      "height": 224,
+      "center": {
+        "x": 986,
+        "y": 767
+      },
+      "rotation": 0,
+      "paintOrder": 8,
+      "opacity": 1,
+      "visible": true,
+      "frameTransform": [
+        [
+          1,
+          0,
+          902
+        ],
+        [
+          0,
+          1,
+          655
+        ]
+      ],
+      "sourceImageHashes": [
+        "a3b7ac7e799505da584c86b7c42f8da6723eedbc",
+        "479c47cbc92ef29bc039dc843d2f7103b80d1391"
+      ],
+      "counterpartInB": null,
+      "relativeSizeToMain": {
+        "width": 0.3218390804597701,
+        "height": 0.32045779685264664
+      }
+    },
+    {
+      "nodeId": "10:1595",
+      "x": 126,
+      "y": 732,
+      "width": 110,
+      "height": 147,
+      "center": {
+        "x": 181,
+        "y": 805.5
+      },
+      "rotation": 0,
+      "paintOrder": 9,
+      "opacity": 1,
+      "visible": true,
+      "frameTransform": [
+        [
+          1,
+          0,
+          126
+        ],
+        [
+          0,
+          1,
+          732
+        ]
+      ],
+      "sourceImageHashes": [
+        "a3b7ac7e799505da584c86b7c42f8da6723eedbc",
+        "479c47cbc92ef29bc039dc843d2f7103b80d1391"
+      ],
+      "counterpartInB": null,
+      "relativeSizeToMain": {
+        "width": 0.210727969348659,
+        "height": 0.21030042918454936
+      }
+    }
+  ],
+  "throne": {
+    "nodeId": "10:2087",
+    "x": 301,
+    "y": 263,
+    "width": 610,
+    "height": 817,
+    "center": {
+      "x": 606,
+      "y": 671.5
+    },
+    "rotation": 0,
+    "paintOrder": 5,
+    "opacity": 1,
+    "visible": true,
+    "frameTransform": [
+      [
+        1,
+        0,
+        301
+      ],
+      [
+        0,
+        1,
+        263
+      ]
+    ],
+    "sourceImageHashes": [
+      "429921b86495a728937851d97677ae3dcf8c9122",
+      "76a447de6eae4a64eca6b2865f63ff9cdb9e566c"
+    ],
+    "counterpartInA": null
+  },
+  "states": [
+    {
+      "nodeId": "10:1560",
+      "width": 1920,
+      "height": 1080,
+      "clipsContent": true,
+      "imageNodes": [
+        {
+          "nodeId": "10:1561",
+          "parentId": "10:1560",
+          "type": "RECTANGLE",
+          "name": "Mosaic",
+          "paintOrder": 0,
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 0.4000000059604645,
+              "blendMode": "NORMAL",
+              "scaleMode": "TILE",
+              "scalingFactor": 0.8942065238952637,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e"
+            }
+          ],
+          "isMask": false,
+          "effects": [],
+          "strokes": []
+        },
+        {
+          "nodeId": "10:1591",
+          "parentId": "10:1560",
+          "type": "RECTANGLE",
+          "name": "Snowflake_vector_graphic_illustr…_2K_20261023182816 1",
+          "paintOrder": 5,
+          "visible": true,
+          "opacity": 1,
+          "x": 328,
+          "y": 321,
+          "width": 522,
+          "height": 699,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              328
+            ],
+            [
+              0,
+              1,
+              321
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              328
+            ],
+            [
+              0,
+              1,
+              321
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": false,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "a3b7ac7e799505da584c86b7c42f8da6723eedbc"
+            },
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "479c47cbc92ef29bc039dc843d2f7103b80d1391"
+            }
+          ],
+          "isMask": false,
+          "effects": [],
+          "strokes": []
+        },
+        {
+          "nodeId": "10:1592",
+          "parentId": "10:1560",
+          "type": "RECTANGLE",
+          "name": "Snowflake_vector_graphic_illustr…_2K_20261023182816 2",
+          "paintOrder": 6,
+          "visible": true,
+          "opacity": 1,
+          "x": 76,
+          "y": 283,
+          "width": 232,
+          "height": 311,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              76
+            ],
+            [
+              0,
+              1,
+              283
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              76
+            ],
+            [
+              0,
+              1,
+              283
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": false,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "a3b7ac7e799505da584c86b7c42f8da6723eedbc"
+            },
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "479c47cbc92ef29bc039dc843d2f7103b80d1391"
+            }
+          ],
+          "isMask": false,
+          "effects": [],
+          "strokes": []
+        },
+        {
+          "nodeId": "10:1593",
+          "parentId": "10:1560",
+          "type": "RECTANGLE",
+          "name": "Snowflake_vector_graphic_illustr…_2K_20261023182816 3",
+          "paintOrder": 7,
+          "visible": true,
+          "opacity": 1,
+          "x": 870,
+          "y": 198,
+          "width": 232,
+          "height": 311,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              870
+            ],
+            [
+              0,
+              1,
+              198
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              870
+            ],
+            [
+              0,
+              1,
+              198
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": false,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "a3b7ac7e799505da584c86b7c42f8da6723eedbc"
+            },
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "479c47cbc92ef29bc039dc843d2f7103b80d1391"
+            }
+          ],
+          "isMask": false,
+          "effects": [],
+          "strokes": []
+        },
+        {
+          "nodeId": "10:1594",
+          "parentId": "10:1560",
+          "type": "RECTANGLE",
+          "name": "Snowflake_vector_graphic_illustr…_2K_20261023182816 4",
+          "paintOrder": 8,
+          "visible": true,
+          "opacity": 1,
+          "x": 902,
+          "y": 655,
+          "width": 168,
+          "height": 224,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              902
+            ],
+            [
+              0,
+              1,
+              655
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              902
+            ],
+            [
+              0,
+              1,
+              655
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": false,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "a3b7ac7e799505da584c86b7c42f8da6723eedbc"
+            },
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "479c47cbc92ef29bc039dc843d2f7103b80d1391"
+            }
+          ],
+          "isMask": false,
+          "effects": [],
+          "strokes": []
+        },
+        {
+          "nodeId": "10:1595",
+          "parentId": "10:1560",
+          "type": "RECTANGLE",
+          "name": "Snowflake_vector_graphic_illustr…_2K_20261023182816 5",
+          "paintOrder": 9,
+          "visible": true,
+          "opacity": 1,
+          "x": 126,
+          "y": 732,
+          "width": 110,
+          "height": 147,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              126
+            ],
+            [
+              0,
+              1,
+              732
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              126
+            ],
+            [
+              0,
+              1,
+              732
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": false,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "a3b7ac7e799505da584c86b7c42f8da6723eedbc"
+            },
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "479c47cbc92ef29bc039dc843d2f7103b80d1391"
+            }
+          ],
+          "isMask": false,
+          "effects": [],
+          "strokes": []
+        }
+      ]
+    },
+    {
+      "nodeId": "10:2049",
+      "width": 1920,
+      "height": 1080,
+      "clipsContent": true,
+      "imageNodes": [
+        {
+          "nodeId": "10:2050",
+          "parentId": "10:2049",
+          "type": "RECTANGLE",
+          "name": "Mosaic",
+          "paintOrder": 0,
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 0.4000000059604645,
+              "blendMode": "NORMAL",
+              "scaleMode": "TILE",
+              "scalingFactor": 0.8942065238952637,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e"
+            }
+          ],
+          "isMask": false,
+          "effects": [],
+          "strokes": []
+        },
+        {
+          "nodeId": "10:2087",
+          "parentId": "10:2049",
+          "type": "RECTANGLE",
+          "name": "Graphic_illustration_of_Iron_Throne_2K_20261023183233 1",
+          "paintOrder": 5,
+          "visible": true,
+          "opacity": 1,
+          "x": 301,
+          "y": 263,
+          "width": 610,
+          "height": 817,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              301
+            ],
+            [
+              0,
+              1,
+              263
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              301
+            ],
+            [
+              0,
+              1,
+              263
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": false,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "429921b86495a728937851d97677ae3dcf8c9122"
+            },
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "76a447de6eae4a64eca6b2865f63ff9cdb9e566c"
+            }
+          ],
+          "isMask": false,
+          "effects": [],
+          "strokes": []
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "nodeCountA": 36,
+    "nodeCountB": 32,
+    "commonNodes": [
+      {
+        "from": "10:1561",
+        "to": "10:2050",
+        "type": "RECTANGLE"
+      },
+      {
+        "from": "10:1562",
+        "to": "10:2051",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1563",
+        "to": "10:2052",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1564",
+        "to": "10:2053",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1565",
+        "to": "10:2054",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1566",
+        "to": "10:2055",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1567",
+        "to": "10:2056",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1568",
+        "to": "10:2057",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1569",
+        "to": "10:2058",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1570",
+        "to": "10:2059",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1571",
+        "to": "10:2060",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1572",
+        "to": "10:2061",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1573",
+        "to": "10:2062",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1574",
+        "to": "10:2063",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1575",
+        "to": "10:2064",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1576",
+        "to": "10:2065",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1577",
+        "to": "10:2066",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1578",
+        "to": "10:2067",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1579",
+        "to": "10:2068",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1580",
+        "to": "10:2069",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1581",
+        "to": "10:2070",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1582",
+        "to": "10:2071",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1583",
+        "to": "10:2072",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1584",
+        "to": "10:2073",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1585",
+        "to": "10:2074",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1586",
+        "to": "10:2075",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1587",
+        "to": "10:2076",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1588",
+        "to": "10:2077",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1589",
+        "to": "10:2078",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1590",
+        "to": "10:2079",
+        "type": "TEXT"
+      }
+    ],
+    "differences": []
+  },
+  "observedDifferences": {
+    "A": "Five whole snowflake bitmap instances with the same hidden JPEG and visible PNG sources at different positions/sizes.",
+    "B": "Snowflake nodes are absent from the B subtree; one different whole Iron Throne bitmap node is present instead. No hidden snowflake counterparts were found.",
+    "unchanged": "The 30 common texture/interface nodes match all recorded in-frame geometry, paint order, visibility, opacity, fills, text, transforms, masks, effects and strokes.",
+    "correspondence": "Five A-only objects and one B-only object. No one-to-one mapping of snowflake parts to throne parts is established. Do not infer a morph, travel path or central-snowflake scale/translation into the throne."
+  },
+  "masksAndCrop": {
+    "explicitMasks": 0,
+    "booleanOperations": 0,
+    "sourceAlpha": "Visible PNG alpha provides silhouettes and interior cutouts; no additional mask file required.",
+    "fillSettings": "All image art has hidden JPEG fill 0 and visible PNG fill 1. Both fills use NORMAL, opacity 1, FILL, identity imageTransform and scalingFactor 0.5. All nodes are visible at opacity 1 and rotation 0.",
+    "cropping": "Retain original 1792x2400 canvases and exact per-instance slots. Slight slot aspect differences imply different centered FILL cover crops; do not trim margins or make five source copies.",
+    "frameClipping": "Both frames clip at 1920x1080. The throne canvas ends at y=1080 exactly; its source alpha leaves transparent margins."
+  },
+  "animationFeasibility": {
+    "independent": "Five separate snowflake nodes can each be transformed independently while sharing one PNG. The throne is one separate bitmap object.",
+    "fused": "Each snowflake is complete in a single bitmap, not six independently layered arms. The throne and all its swords are also fused into one bitmap.",
+    "notSpecified": "Only the two compositions are provided. No trajectories, duration/easing, fades, morph, matched parts or disappear/entry poses are specified. Such decisions require the later motion stage; none implemented."
+  },
+  "checks": {
+    "sourceBytes": "All four originals plus reused texture match Figma byte lengths and FNV-1a fingerprints; SHA256 recorded",
+    "dimensions": "All four originals decoded at 1792x2400, matching registry",
+    "transparency": "Both PNGs retain true zero-alpha pixels, partial alpha and all transparent canvas-edge samples; alpha 0..255",
+    "visual": "JPEG/PNG originals inspected on checkerboard. Temporary reconstructions using the five measured FILL slots and the throne slot visually compared with both Figma screenshots.",
+    "assetScript": "Verified: 32 | Pending: 9 | Errors: 0"
+  }
+}

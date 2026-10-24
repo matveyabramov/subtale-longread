@@ -11,7 +11,7 @@
 | Idiom | `10:1431`, `10:1596` | Ice/telephone before ↔ after | Click/hover/touch, replay, reduced motion |
 | Pun | `10:1495`, `10:1981` | Whole bicycle composite rotates ≈34.37°; verified endpoints below | Click/hover/touch, replay, reduced motion |
 | Double meaning | `10:1528`, `10:2017` | Mutually exclusive full-eye PNG fills; verified endpoints below | Click/hover/touch with visible alternative |
-| Cultural reference | `10:1560`, `10:2049` | Snowflake → throne | Click/hover/touch, replay, reduced motion |
+| Cultural reference | `10:1560`, `10:2049` | Five snowflake instances replaced by one throne; verified compositions below | Click/hover/touch, replay, reduced motion |
 | Movies | `10:1794` | Five scene cards with contextual reveal and/or video preview | Video state ownership; pause offscreen, hidden tab, reduced-motion handling |
 | Vocab | `10:966` | Scroll-triggered statement emphasis if approved | Static first |
 | Blind-spot-scene | `10:997` | Three lines pass through central blind area with information losses | Preserve line and circle layers |
@@ -189,3 +189,56 @@ The recorded structure has 32 nodes per frame. Pairwise comparison of their in-f
 **Supported by the assets:** exact switching between two complete images in the fixed slot. The couple, iris, pupil, highlight and eye outline are fused into those images; they are not separate independently transformable objects. Independently moving the figures or morphing the pupil would require additional agreed source preparation and a design decision. These reference states specify no duration, easing, path or interpolation, so this import does not invent one.
 
 Trigger, replay/reset, interruption and keyboard/touch access remain decisions for the interaction/motion stage. Both readings must remain accessible without requiring motion, including for prefers-reduced-motion. No layout, transition or animation has been implemented.
+
+## Stage 0.2D.4 — verified Cultural Reference compositions (2026-10-24)
+
+Scope: **A `10:1560`** and **B `10:2049`**, both 1920 × 1080. Exact fills, transforms, source checksums, alpha QA and common-node correspondence are in `docs/CULTURAL_REFERENCE_ASSET_IMPORT.json`. These are measured compositions, not an approved animation sequence.
+
+**Observed difference:** A contains **five complete snowflake image instances** at different positions and sizes. B contains **one complete Iron Throne image** and no snowflake nodes, including hidden counterparts. The five instances are not five separately drawn fragments of one snowflake. Their identical imageHash pairs reference one shared JPEG/PNG source pair. The throne uses a different source pair. The 30 common texture/interface nodes retain all recorded in-frame geometry, transforms, paint order, visibility, opacity, fills, effects, strokes, mask/clipping flags and text content.
+
+There is no direct A/B node correspondence between a particular snowflake and the throne, and no correspondence between snowflake arms and swords. Do not describe the central snowflake as moving/scaling into the throne or infer a morph from these two reference frames.
+
+### Geometry of every illustration object
+
+Coordinates are frame-local slot origins; dimensions are the full image-slot canvas, including transparent margins. Paint order is the zero-based frame child index, back to front. All listed nodes are visible, at opacity 1, rotation 0°, with no skew/reflection. Each snowflake is an independently placed instance of the same full PNG.
+
+| State / object | Figma node | x | y | Width | Height | Center (x, y) | Rotation | Paint order | Other-state counterpart |
+|---|---|---:|---:|---:|---:|---|---|---:|---|
+| A / main snowflake | `10:1591` | 328 | 321 | 522 | 699 | (589, 670.5) | 0° | 5 | Absent in B |
+| A / upper-left snowflake | `10:1592` | 76 | 283 | 232 | 311 | (192, 438.5) | 0° | 6 | Absent in B |
+| A / upper-right snowflake | `10:1593` | 870 | 198 | 232 | 311 | (986, 353.5) | 0° | 7 | Absent in B |
+| A / lower-right snowflake | `10:1594` | 902 | 655 | 168 | 224 | (986, 767) | 0° | 8 | Absent in B |
+| A / lower-left snowflake | `10:1595` | 126 | 732 | 110 | 147 | (181, 805.5) | 0° | 9 | Absent in B |
+| B / Iron Throne | `10:2087` | 301 | 263 | 610 | 817 | (606, 671.5) | 0° | 5 | Absent in A |
+
+For each object, the frame-local projection is `[[1, 0, x], [0, 1, y]]` using its table origin. Differently sized snowflake slots represent instance sizes, not a sequence of scale changes. Since no snowflake has a counterpart in B, an A→B transform/scale ratio is **undefined** for each one; the same applies to the throne's starting pose in A. Full-precision per-instance geometry is recorded in the JSON.
+
+**Stacking:** both frames have mosaic 0 → sidebar group 1 → title 2 → yellow heading container 3 → bottom text link 4. A then paints the five snowflake nodes in table order, 5–9. B instead paints the throne at 5. The existing mosaic is below all artwork, with unchanged TILE scalingFactor 0.8942065238952637 and paint opacity 0.4. No mask or foreground texture overlays the illustrations. Both frames clip at 1920 × 1080; the throne's full slot reaches y=1080 exactly. Preserve frame clipping and original transparent margins.
+
+### Original sources, fill visibility and cropping
+
+All four originals are **1792 × 2400**. There is one file per imageHash; the five snowflakes share their two originals without per-instance copies.
+
+| Source / fill | imageHash | File under `public/assets/images/` | Used by | Fill visibility |
+|---|---|---|---|---|
+| Snowflake JPEG | `a3b7ac7e799505da584c86b7c42f8da6723eedbc` | `cultural-snowflake-base.jpg` | All five A instances | Hidden |
+| Snowflake PNG | `479c47cbc92ef29bc039dc843d2f7103b80d1391` | `cultural-snowflake-cutout.png` | All five A instances | Visible |
+| Throne JPEG | `429921b86495a728937851d97677ae3dcf8c9122` | `cultural-iron-throne-base.jpg` | B throne | Hidden |
+| Throne PNG | `76a447de6eae4a64eca6b2865f63ff9cdb9e566c` | `cultural-iron-throne-cutout.png` | B throne | Visible |
+
+Every illustration node has hidden JPEG fill 0 followed by visible PNG fill 1. Preserve both originals without enabling the opaque JPEG behind the PNG. Both fills use NORMAL blend, paint opacity 1, FILL mode, identity imageTransform `[[1, 0, 0], [0, 1, 0]]`, zero filters and stored `scalingFactor: 0.5`. This scalingFactor is fill metadata, not an animation scale.
+
+There is no custom CROP matrix. Preserve the small centered cover crop implicit in FILL for each exact slot aspect ratio; notably the 168 × 224 slot differs slightly in aspect from the original canvas and the other instances. Do not normalize dimensions, trim alpha margins, or save five cropped copies of the snowflake to reproduce these slots.
+
+### Transparency, masks and independence
+
+Both PNG originals have alpha 0–255, fully transparent edges and genuine partial-alpha pixels. Their alpha provides the silhouette and internal cutouts; no explicit `isMask=true` nodes or Boolean operations were found in either frame. No extra mask file is required.
+
+| PNG | Nonzero-alpha bounds in source pixels | Fully transparent pixels | Partially transparent pixels |
+|---|---|---:|---:|
+| Snowflake | (31, 167)–(1761, 2233) | 2,623,754 | 90,206 |
+| Iron Throne | (93, 87)–(1714, 2302) | 1,892,480 | 67,898 |
+
+**Independent objects available:** five complete snowflake wrappers in A can each be transformed independently, while all five reuse one visible PNG. The complete throne is one separately transformable bitmap in B. Each snowflake's arms are fused into its raster; the throne's swords, seat and other details are fused into its raster. There are no separate arm/sword nodes supporting independent component animation.
+
+**Not established by the design:** how the five A objects disappear, how the B object enters, any motion path, transform origin, morph, fade, duration/easing or intermediate state. These endpoints show a replacement of compositions, not a specified snowflake-to-throne transformation. Decide transition behavior, trigger, replay/reset, interruption, keyboard/touch access and a prefers-reduced-motion alternative in the later interaction/motion stage. No transition, animation or new component separation has been implemented.
