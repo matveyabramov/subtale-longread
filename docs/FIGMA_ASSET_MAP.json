@@ -1,7 +1,7 @@
 {
   "figmaFileKey": "H4HI00uGY2UOxpcfHogUat",
   "pageId": "0:1",
-  "notes": "41 unique Figma image hashes, all imported as original raster files with verified localPath. Figma hash is an ID, not a file SHA256. Per-layer crops, filters, visibility and composition evidence are recorded in the section import reports and MOTION_SPEC.md.",
+  "notes": "41 unique Figma image hashes, all imported as original raster files with verified localPath. Figma hash is an ID, not a file SHA256. Per-layer crops, filters, visibility and composition evidence are recorded in the section import reports and MOTION_SPEC.md. Stage 0.2H.1: nine Idiom originals moved unchanged to source-assets/images; optimizedPath is a separate delivery derivative, not the original imageHash. All normalized Figma crops and six SVG masks remain unchanged.",
   "sources": [
     {
       "hash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
@@ -19,7 +19,14 @@
       "sourceWidth": 4096,
       "sourceHeight": 2286,
       "occurrences": 10,
-      "localPath": "public/assets/images/idiom-ice-lower-shared.png"
+      "localPath": "source-assets/images/idiom-ice-lower-shared.png",
+      "sourceSha256": "5d7bb3feebd04a69e20e000a1ac20fa019d477acd2f277307111afc016b6f3a1",
+      "optimizedPath": "public/assets/images/idiom-ice-lower-shared.webp",
+      "optimizedFormat": "WebP",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286,
+      "optimizedBytes": 1488938,
+      "optimizedSha256": "3ae75ad9d9c001514ff8b2a6ca538766ad52ffb73562977aa1b65119e7ba5255"
     },
     {
       "hash": "a29311f1f1d2be133c14d891089c6650c953c32e",
@@ -28,7 +35,14 @@
       "sourceWidth": 4096,
       "sourceHeight": 2286,
       "occurrences": 6,
-      "localPath": "public/assets/images/idiom-ice-center.png"
+      "localPath": "source-assets/images/idiom-ice-center.png",
+      "sourceSha256": "26bc36f7ab52ca7ccf67f9ea87d34dbafadf70b628ad92a747e2057b1dcb01b7",
+      "optimizedPath": "public/assets/images/idiom-ice-center.webp",
+      "optimizedFormat": "WebP",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286,
+      "optimizedBytes": 1468314,
+      "optimizedSha256": "7101f42d2247dd80681077dc633dfae09d146e75904f8daaeb9ce17b31fc2dc7"
     },
     {
       "hash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
@@ -37,7 +51,14 @@
       "sourceWidth": 4096,
       "sourceHeight": 2286,
       "occurrences": 6,
-      "localPath": "public/assets/images/idiom-ice-right-small.png"
+      "localPath": "source-assets/images/idiom-ice-right-small.png",
+      "sourceSha256": "b35c5dbf24f2c9a53b3a024b8bb0988669ef2dbc1646183910c1b64e668fe461",
+      "optimizedPath": "public/assets/images/idiom-ice-right-small.webp",
+      "optimizedFormat": "WebP",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286,
+      "optimizedBytes": 1488796,
+      "optimizedSha256": "9086801d721d22519caf136e0a14483edb7e07ea10e0f2ba2a9f44939e32ced7"
     },
     {
       "hash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
@@ -73,7 +94,14 @@
       "sourceWidth": 4096,
       "sourceHeight": 2286,
       "occurrences": 4,
-      "localPath": "public/assets/images/idiom-ice-upper-right.png"
+      "localPath": "source-assets/images/idiom-ice-upper-right.png",
+      "sourceSha256": "34888d7c2bed6f8f01198691999d249a860751e8b920f5b37f6c5b6a0a0c56fb",
+      "optimizedPath": "public/assets/images/idiom-ice-upper-right.webp",
+      "optimizedFormat": "WebP",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286,
+      "optimizedBytes": 1427006,
+      "optimizedSha256": "bda6a350858cff466f9d8c013db84c05f41e01a04858115aa174c4a279861ce4"
     },
     {
       "hash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
@@ -82,7 +110,14 @@
       "sourceWidth": 4096,
       "sourceHeight": 2286,
       "occurrences": 4,
-      "localPath": "public/assets/images/idiom-ice-left-small.png"
+      "localPath": "source-assets/images/idiom-ice-left-small.png",
+      "sourceSha256": "fbc67bd83f3b759d685d2713b2d25dacc886bc2aff1ea4029c61bcd94e0acfc9",
+      "optimizedPath": "public/assets/images/idiom-ice-left-small.webp",
+      "optimizedFormat": "WebP",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286,
+      "optimizedBytes": 1489202,
+      "optimizedSha256": "be24e17a17a16b1d95571e606978976392e3bbedbe3a2d191729cf88988b9a3a"
     },
     {
       "hash": "364855320f08ade1d04f13556e9f3defb0d52bcb",
@@ -109,7 +144,14 @@
       "sourceWidth": 4096,
       "sourceHeight": 2286,
       "occurrences": 2,
-      "localPath": "public/assets/images/idiom-ice-upper-left.png"
+      "localPath": "source-assets/images/idiom-ice-upper-left.png",
+      "sourceSha256": "7707f055314d12f2d131c31d685ad4f70b937fc7f8c6c3bc4035b9d0781636bd",
+      "optimizedPath": "public/assets/images/idiom-ice-upper-left.webp",
+      "optimizedFormat": "WebP",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286,
+      "optimizedBytes": 1430316,
+      "optimizedSha256": "d828ced458727b6a735d050ff3e3993952e3883c7cd93d269e6802efbf0d9b2a"
     },
     {
       "hash": "528b075a5c6b35f819c787bff455d9dbd2436c83",
@@ -118,7 +160,14 @@
       "sourceWidth": 4096,
       "sourceHeight": 2286,
       "occurrences": 2,
-      "localPath": "public/assets/images/idiom-ice-lower-middle.png"
+      "localPath": "source-assets/images/idiom-ice-lower-middle.png",
+      "sourceSha256": "9acb5cf2b567fed8a35ac89548a8d40aa9c69dec7260ea556c08a136712f3b74",
+      "optimizedPath": "public/assets/images/idiom-ice-lower-middle.webp",
+      "optimizedFormat": "WebP",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286,
+      "optimizedBytes": 1487862,
+      "optimizedSha256": "bbfb20c71f6926201c1138d111ebaa7a87e360bd5f8deba21fbadcc5d721132f"
     },
     {
       "hash": "f896e935d71fd96ad289d93b7e8ce7d177767633",
@@ -361,7 +410,14 @@
       "sourceWidth": 1792,
       "sourceHeight": 2400,
       "occurrences": 1,
-      "localPath": "public/assets/images/idiom-telephone-base.jpg"
+      "localPath": "source-assets/images/idiom-telephone-base.jpg",
+      "sourceSha256": "9aa7aac0bb0fc41a6c05e2475918d4b6771be24c631b08c2d7c37d8d73cdc7d8",
+      "optimizedPath": "public/assets/images/idiom-telephone-base.webp",
+      "optimizedFormat": "WebP",
+      "optimizedWidth": 1344,
+      "optimizedHeight": 1800,
+      "optimizedBytes": 109800,
+      "optimizedSha256": "04de6d5254dee5d16d84abadeead49a0cad0fb172e94b7ddc32634e36c6349c8"
     },
     {
       "hash": "be5817d93162046d2b9f3af61b7489db7df1278c",
@@ -370,7 +426,14 @@
       "sourceWidth": 1792,
       "sourceHeight": 2400,
       "occurrences": 1,
-      "localPath": "public/assets/images/idiom-telephone-cutout.png"
+      "localPath": "source-assets/images/idiom-telephone-cutout.png",
+      "sourceSha256": "fe269301ebbb0557b94073032509241fdb8215d00c5346dbb2cfacc410fea689",
+      "optimizedPath": "public/assets/images/idiom-telephone-cutout.webp",
+      "optimizedFormat": "WebP",
+      "optimizedWidth": 1344,
+      "optimizedHeight": 1800,
+      "optimizedBytes": 552242,
+      "optimizedSha256": "168cc8bbd75a231773e8089f75acaa408e9f38c9785878012c2955c2615936ad"
     }
   ]
 }

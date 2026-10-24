@@ -6,6 +6,8 @@ The inventory and staged reports below retain historical findings; earlier pendi
 
 Current vector status (Stage 0.2F.1): **19 frames audited, 1 missing SVG imported, 15 existing SVG files reused**. All 16 SVGs parse and render without external dependencies. See `docs/VECTOR_ASSET_AUDIT.md` for the exhaustive node decision table and `docs/VECTOR_ASSET_SOURCE.json` for exact geometry and checksums.
 
+Current Idiom delivery status (Stage 0.2H.1): **9 originals archived unchanged in `source-assets/images/`; 9 WebP delivery derivatives in public, 10,942,476 bytes instead of 39,997,317 bytes (72.64% saved)**. Registry `localPath` always locates the original; `optimizedPath` locates its derivative. Current paths and checks: `ASSET_OPTIMIZATION_RESULTS.md` and `IDIOM_ASSET_OPTIMIZATION.json`. Earlier stage tables retain historical import paths.
+
 ## Initial candidate inventory (historical)
 
 | Section / Figma node | Candidate media or vector layers | Verification / action |
@@ -272,3 +274,11 @@ Simple experiment cross/dots, section dividers, film perforations, pixel geometr
 **Checks:** all **16 local SVGs** pass XML/viewBox and external-dependency checks and render as nonempty RGBA images. Vocab was visually compared with the Figma screenshot at 679 × 395, including silhouette, holes, color and bounds. Current individual Hero/Footer SVG exports match existing originals. `node scripts/check-assets.mjs` → **Verified: 41 | Pending: 0 | Errors: 0**. Full per-node decisions, layer independence, special transforms, opacity and source checksums are in `VECTOR_ASSET_AUDIT.md` and `VECTOR_ASSET_SOURCE.json`.
 
 **Blockers:** none for vector import. Browser calibration of Figma backdrop blur and the previously recorded Footer raster filters belongs to later layout QA. No Figma edits, layout/animation implementation, dependency installation or legacy changes.
+
+## Stage 0.2H.1 — Idiom WebP delivery (2026-10-24)
+
+Moved all nine original Idiom PNG/JPEG files unchanged to `source-assets/images/` through `git mv`; their original SHA256, imageHash and dimensions remain valid. Created nine separate WebP derivatives under `public/assets/images/`, preserving full canvases, normalized crops, six SVG masks, eight independent ice objects and the telephone. Seven ice files use 2304 × 1286 lossless WebP; the visible telephone uses 1344 × 1800 lossless WebP, and the optional hidden-JPEG derivative uses 1344 × 1800 q96 WebP. The hidden fill stays hidden.
+
+Public Idiom package: **39,997,317 → 10,942,476 bytes; 29,054,841 bytes / 29.05 MB / 72.64% saved**. Originals are outside public; no PNG/JPEG Idiom original remains there. The seven distinct ice sources were not merged; both lower objects reuse their one shared derivative with separate crops. All masks and other-section images remain unchanged.
+
+Individually compared 45 candidates, checked transparency/edge color at DPR1/DPR2, and inspected both state reconstructions against the original sources and Figma-verified crop metadata. Eight visible derivatives preserve resized reference alpha and nonzero-alpha RGB exactly. All nine source and output hashes, six mask hashes, all other public asset hashes and reproduction checks pass. `node scripts/check-assets.mjs` → **41 verified / 0 pending / 0 errors**. Full tables/settings, missing weight-audit note and visual QA limits: `docs/ASSET_OPTIMIZATION_RESULTS.md`, `docs/IDIOM_ASSET_OPTIMIZATION.json`.

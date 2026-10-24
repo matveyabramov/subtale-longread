@@ -1,0 +1,3797 @@
+{
+  "stage": "0.2H.1",
+  "date": "2026-10-24",
+  "scope": "Idiom only; original full canvases retained, no trimming, crop/mask flattening or merged objects",
+  "originalBytes": 39997317,
+  "optimizedBytes": 10942476,
+  "assets": [
+    {
+      "imageHash": "a29311f1f1d2be133c14d891089c6650c953c32e",
+      "sourcePath": "source-assets/images/idiom-ice-center.png",
+      "sourceBytes": 5115592,
+      "sourceSha256": "26bc36f7ab52ca7ccf67f9ea87d34dbafadf70b628ad92a747e2057b1dcb01b7",
+      "sourceWidth": 4096,
+      "sourceHeight": 2286,
+      "optimizedPath": "public/assets/images/idiom-ice-center.webp",
+      "format": "WebP",
+      "width": 2304,
+      "height": 1286,
+      "bytes": 1468314,
+      "sha256": "7101f42d2247dd80681077dc633dfae09d146e75904f8daaeb9ce17b31fc2dc7",
+      "selectedCandidate": "lossless",
+      "settings": {
+        "lossless": true,
+        "effort": 6
+      },
+      "visibleFill": true,
+      "selectionReason": "Individually compared all five candidates; lossless avoids chroma errors and alpha quantization in visible artwork"
+    },
+    {
+      "imageHash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
+      "sourcePath": "source-assets/images/idiom-ice-left-small.png",
+      "sourceBytes": 5129695,
+      "sourceSha256": "fbc67bd83f3b759d685d2713b2d25dacc886bc2aff1ea4029c61bcd94e0acfc9",
+      "sourceWidth": 4096,
+      "sourceHeight": 2286,
+      "optimizedPath": "public/assets/images/idiom-ice-left-small.webp",
+      "format": "WebP",
+      "width": 2304,
+      "height": 1286,
+      "bytes": 1489202,
+      "sha256": "be24e17a17a16b1d95571e606978976392e3bbedbe3a2d191729cf88988b9a3a",
+      "selectedCandidate": "lossless",
+      "settings": {
+        "lossless": true,
+        "effort": 6
+      },
+      "visibleFill": true,
+      "selectionReason": "Individually compared all five candidates; lossless avoids chroma errors and alpha quantization in visible artwork"
+    },
+    {
+      "imageHash": "528b075a5c6b35f819c787bff455d9dbd2436c83",
+      "sourcePath": "source-assets/images/idiom-ice-lower-middle.png",
+      "sourceBytes": 5104941,
+      "sourceSha256": "9acb5cf2b567fed8a35ac89548a8d40aa9c69dec7260ea556c08a136712f3b74",
+      "sourceWidth": 4096,
+      "sourceHeight": 2286,
+      "optimizedPath": "public/assets/images/idiom-ice-lower-middle.webp",
+      "format": "WebP",
+      "width": 2304,
+      "height": 1286,
+      "bytes": 1487862,
+      "sha256": "bbfb20c71f6926201c1138d111ebaa7a87e360bd5f8deba21fbadcc5d721132f",
+      "selectedCandidate": "lossless",
+      "settings": {
+        "lossless": true,
+        "effort": 6
+      },
+      "visibleFill": true,
+      "selectionReason": "Individually compared all five candidates; lossless avoids chroma errors and alpha quantization in visible artwork"
+    },
+    {
+      "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+      "sourcePath": "source-assets/images/idiom-ice-lower-shared.png",
+      "sourceBytes": 6893692,
+      "sourceSha256": "5d7bb3feebd04a69e20e000a1ac20fa019d477acd2f277307111afc016b6f3a1",
+      "sourceWidth": 4096,
+      "sourceHeight": 2286,
+      "optimizedPath": "public/assets/images/idiom-ice-lower-shared.webp",
+      "format": "WebP",
+      "width": 2304,
+      "height": 1286,
+      "bytes": 1488938,
+      "sha256": "3ae75ad9d9c001514ff8b2a6ca538766ad52ffb73562977aa1b65119e7ba5255",
+      "selectedCandidate": "lossless",
+      "settings": {
+        "lossless": true,
+        "effort": 6
+      },
+      "visibleFill": true,
+      "selectionReason": "Individually compared all five candidates; lossless avoids chroma errors and alpha quantization in visible artwork"
+    },
+    {
+      "imageHash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
+      "sourcePath": "source-assets/images/idiom-ice-right-small.png",
+      "sourceBytes": 5132569,
+      "sourceSha256": "b35c5dbf24f2c9a53b3a024b8bb0988669ef2dbc1646183910c1b64e668fe461",
+      "sourceWidth": 4096,
+      "sourceHeight": 2286,
+      "optimizedPath": "public/assets/images/idiom-ice-right-small.webp",
+      "format": "WebP",
+      "width": 2304,
+      "height": 1286,
+      "bytes": 1488796,
+      "sha256": "9086801d721d22519caf136e0a14483edb7e07ea10e0f2ba2a9f44939e32ced7",
+      "selectedCandidate": "lossless",
+      "settings": {
+        "lossless": true,
+        "effort": 6
+      },
+      "visibleFill": true,
+      "selectionReason": "Individually compared all five candidates; lossless avoids chroma errors and alpha quantization in visible artwork"
+    },
+    {
+      "imageHash": "35938ea29ed9ca1307edc53950674e4c8ebe63d5",
+      "sourcePath": "source-assets/images/idiom-ice-upper-left.png",
+      "sourceBytes": 4982184,
+      "sourceSha256": "7707f055314d12f2d131c31d685ad4f70b937fc7f8c6c3bc4035b9d0781636bd",
+      "sourceWidth": 4096,
+      "sourceHeight": 2286,
+      "optimizedPath": "public/assets/images/idiom-ice-upper-left.webp",
+      "format": "WebP",
+      "width": 2304,
+      "height": 1286,
+      "bytes": 1430316,
+      "sha256": "d828ced458727b6a735d050ff3e3993952e3883c7cd93d269e6802efbf0d9b2a",
+      "selectedCandidate": "lossless",
+      "settings": {
+        "lossless": true,
+        "effort": 6
+      },
+      "visibleFill": true,
+      "selectionReason": "Individually compared all five candidates; lossless avoids chroma errors and alpha quantization in visible artwork"
+    },
+    {
+      "imageHash": "c027bce002d6d9ef41326d8cce3bb29eac6f7e22",
+      "sourcePath": "source-assets/images/idiom-ice-upper-right.png",
+      "sourceBytes": 5006341,
+      "sourceSha256": "34888d7c2bed6f8f01198691999d249a860751e8b920f5b37f6c5b6a0a0c56fb",
+      "sourceWidth": 4096,
+      "sourceHeight": 2286,
+      "optimizedPath": "public/assets/images/idiom-ice-upper-right.webp",
+      "format": "WebP",
+      "width": 2304,
+      "height": 1286,
+      "bytes": 1427006,
+      "sha256": "bda6a350858cff466f9d8c013db84c05f41e01a04858115aa174c4a279861ce4",
+      "selectedCandidate": "lossless",
+      "settings": {
+        "lossless": true,
+        "effort": 6
+      },
+      "visibleFill": true,
+      "selectionReason": "Individually compared all five candidates; lossless avoids chroma errors and alpha quantization in visible artwork"
+    },
+    {
+      "imageHash": "bfdc63b7bc0f0d5abbdf1a00f3ec8121daffde5a",
+      "sourcePath": "source-assets/images/idiom-telephone-base.jpg",
+      "sourceBytes": 1276691,
+      "sourceSha256": "9aa7aac0bb0fc41a6c05e2475918d4b6771be24c631b08c2d7c37d8d73cdc7d8",
+      "sourceWidth": 1792,
+      "sourceHeight": 2400,
+      "optimizedPath": "public/assets/images/idiom-telephone-base.webp",
+      "format": "WebP",
+      "width": 1344,
+      "height": 1800,
+      "bytes": 109800,
+      "sha256": "04de6d5254dee5d16d84abadeead49a0cad0fb172e94b7ddc32634e36c6349c8",
+      "selectedCandidate": "q96",
+      "settings": {
+        "quality": 96,
+        "alphaQuality": 100,
+        "smartSubsample": true,
+        "effort": 6
+      },
+      "visibleFill": false,
+      "selectionReason": "Hidden JPEG fill; q96 retains a compact optional derivative; never enable automatically"
+    },
+    {
+      "imageHash": "be5817d93162046d2b9f3af61b7489db7df1278c",
+      "sourcePath": "source-assets/images/idiom-telephone-cutout.png",
+      "sourceBytes": 1355612,
+      "sourceSha256": "fe269301ebbb0557b94073032509241fdb8215d00c5346dbb2cfacc410fea689",
+      "sourceWidth": 1792,
+      "sourceHeight": 2400,
+      "optimizedPath": "public/assets/images/idiom-telephone-cutout.webp",
+      "format": "WebP",
+      "width": 1344,
+      "height": 1800,
+      "bytes": 552242,
+      "sha256": "168cc8bbd75a231773e8089f75acaa408e9f38c9785878012c2955c2615936ad",
+      "selectedCandidate": "lossless",
+      "settings": {
+        "lossless": true,
+        "effort": 6
+      },
+      "visibleFill": true,
+      "selectionReason": "Individually compared all five candidates; lossless avoids chroma errors and alpha quantization in visible artwork"
+    }
+  ],
+  "encoderVersions": {
+    "aom": "3.15.1",
+    "archive": "3.8.9",
+    "cairo": "1.18.6",
+    "cgif": "0.5.4",
+    "exif": "0.6.26",
+    "expat": "2.8.5",
+    "ffi": "3.8.0",
+    "fontconfig": "2.18.3",
+    "freetype": "2.14.3",
+    "fribidi": "1.0.17",
+    "glib": "2.90.0",
+    "harfbuzz": "14.5.0",
+    "heif": "1.23.5",
+    "highway": "1.4.0",
+    "imagequant": "2.4.1",
+    "lcms": "2.19.1",
+    "mozjpeg": "0826579",
+    "pango": "1.58.2",
+    "pixman": "0.46.4",
+    "png": "1.6.58",
+    "proxy-libintl": "0.5",
+    "rsvg": "2.63.2",
+    "tiff": "4.7.2",
+    "uhdr": "2.0.2",
+    "vips": "8.18.7",
+    "webp": "1.6.0",
+    "xml2": "2.15.4",
+    "zlib-ng": "2.3.3",
+    "sharp": "0.35.5"
+  },
+  "resize": {
+    "kernel": "lanczos3",
+    "fit": "fill",
+    "premultiplication": "sharp/libvips alpha-aware resize",
+    "reference": "PNG buffer from resized original; then WebP encoding"
+  },
+  "missingPrerequisite": "docs/ASSET_WEIGHT_AUDIT.md absent; scoped measurements reconstructed from IDIOM_ASSET_IMPORT and MOTION_SPEC",
+  "savedBytes": 29054841,
+  "savedPercent": 72.64197496047048,
+  "candidateComparisons": [
+    {
+      "name": "idiom-ice-center",
+      "candidate": "q82",
+      "bytes": 327430,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 1.169216926311298,
+          "p99": 7.0,
+          "max": 47.1843147277832,
+          "psnr": 42.889
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 1.169216926311298,
+          "p99": 7.0,
+          "max": 47.1843147277832,
+          "psnr": 42.889
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 1.169216926311298,
+          "p99": 7.0,
+          "max": 47.1843147277832,
+          "psnr": 42.889
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 1.169216926311298,
+          "p99": 7.0,
+          "max": 47.1843147277832,
+          "psnr": 42.889
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1940",
+          "dpr": 1,
+          "worstBackgroundMAE": 1.07139993419524,
+          "worstBackgroundP99": 6.453097712993539,
+          "minPSNR": 43.587
+        },
+        {
+          "nodeId": "10:1940",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.6482118738023452,
+          "worstBackgroundP99": 15.129409271478654,
+          "minPSNR": 37.889
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-center",
+      "candidate": "q90",
+      "bytes": 370534,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.9174553268378906,
+          "p99": 5.0,
+          "max": 44.352943420410156,
+          "psnr": 45.171
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.9174553268378906,
+          "p99": 5.0,
+          "max": 44.352943420410156,
+          "psnr": 45.171
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.9174553268378906,
+          "p99": 5.0,
+          "max": 44.352943420410156,
+          "psnr": 45.171
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.9174553268378906,
+          "p99": 5.0,
+          "max": 44.352943420410156,
+          "psnr": 45.171
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1940",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.8766939189948794,
+          "worstBackgroundP99": 5.808550356626483,
+          "minPSNR": 44.804
+        },
+        {
+          "nodeId": "10:1940",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.4388772049221592,
+          "worstBackgroundP99": 14.77435257971272,
+          "minPSNR": 38.495
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-center",
+      "candidate": "q96",
+      "bytes": 444608,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.8140891830592688,
+          "p99": 3.0,
+          "max": 45.03529739379883,
+          "psnr": 46.503
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.8140891830592688,
+          "p99": 3.0,
+          "max": 45.03529739379883,
+          "psnr": 46.503
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.8140891830592688,
+          "p99": 3.0,
+          "max": 45.03529739379883,
+          "psnr": 46.503
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.8140891830592688,
+          "p99": 3.0,
+          "max": 45.03529739379883,
+          "psnr": 46.503
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1940",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.8270617825903926,
+          "worstBackgroundP99": 5.455608015060397,
+          "minPSNR": 45.261
+        },
+        {
+          "nodeId": "10:1940",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.367952688403107,
+          "worstBackgroundP99": 14.505879256129266,
+          "minPSNR": 38.764
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-center",
+      "candidate": "near80",
+      "bytes": 1318634,
+      "alphaVsResizedReference": {
+        "mae": 0.029109224677085876,
+        "p99": 1.0,
+        "max": 1.0,
+        "psnr": 63.49
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.1114473547992782,
+          "p99": 1.0,
+          "max": 1.949019730091095,
+          "psnr": 57.701
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.1136118401375562,
+          "p99": 1.0,
+          "max": 1.9882354140281677,
+          "psnr": 57.602
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.11382743237507349,
+          "p99": 1.0,
+          "max": 1.9921568036079407,
+          "psnr": 57.573
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.11861323141106804,
+          "p99": 1.0,
+          "max": 1.996078372001648,
+          "psnr": 57.223
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1940",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.5428816017164785,
+          "worstBackgroundP99": 5.082352340221405,
+          "minPSNR": 46.731
+        },
+        {
+          "nodeId": "10:1940",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.0051751150236543,
+          "worstBackgroundP99": 14.207846283912659,
+          "minPSNR": 39.325
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-center",
+      "candidate": "lossless",
+      "bytes": 1468314,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1940",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.5292383668836057,
+          "worstBackgroundP99": 5.141175947189331,
+          "minPSNR": 46.735
+        },
+        {
+          "nodeId": "10:1940",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.9728235340724222,
+          "worstBackgroundP99": 14.141174668073655,
+          "minPSNR": 39.398
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-left-small",
+      "candidate": "q82",
+      "bytes": 329218,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 1.1749012148078068,
+          "p99": 7.0,
+          "max": 58.49020004272461,
+          "psnr": 42.864
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 1.1749012148078068,
+          "p99": 7.0,
+          "max": 58.49020004272461,
+          "psnr": 42.864
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 1.1749012148078068,
+          "p99": 7.0,
+          "max": 58.49020004272461,
+          "psnr": 42.864
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 1.1749012148078068,
+          "p99": 7.0,
+          "max": 58.49020004272461,
+          "psnr": 42.864
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1950",
+          "dpr": 1,
+          "worstBackgroundMAE": 1.2284340996045782,
+          "worstBackgroundP99": 7.048550419807438,
+          "minPSNR": 42.411
+        },
+        {
+          "nodeId": "10:1950",
+          "dpr": 2,
+          "worstBackgroundMAE": 2.08861930549014,
+          "worstBackgroundP99": 17.999998927116394,
+          "minPSNR": 36.159
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-left-small",
+      "candidate": "q90",
+      "bytes": 372564,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.9246480179666121,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.095
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.9246480179666121,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.095
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.9246480179666121,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.095
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.9246480179666121,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.095
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1950",
+          "dpr": 1,
+          "worstBackgroundMAE": 1.0120282809595031,
+          "worstBackgroundP99": 6.0250294709205665,
+          "minPSNR": 43.739
+        },
+        {
+          "nodeId": "10:1950",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.8385623597534828,
+          "worstBackgroundP99": 17.21177447795868,
+          "minPSNR": 36.736
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-left-small",
+      "candidate": "q96",
+      "bytes": 447328,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.8190679850750764,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.438
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.8190679850750764,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.438
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.8190679850750764,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.438
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.8190679850750764,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.438
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1950",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.9208001129026583,
+          "worstBackgroundP99": 5.870588692426682,
+          "minPSNR": 44.424
+        },
+        {
+          "nodeId": "10:1950",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.7206175090636744,
+          "worstBackgroundP99": 17.284938130378737,
+          "minPSNR": 36.993
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-left-small",
+      "candidate": "near80",
+      "bytes": 1336734,
+      "alphaVsResizedReference": {
+        "mae": 0.028515895828604698,
+        "p99": 1.0,
+        "max": 1.0,
+        "psnr": 63.58
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.11283331380464043,
+          "p99": 1.0,
+          "max": 1.949019730091095,
+          "psnr": 57.646
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.11475258041702308,
+          "p99": 1.0,
+          "max": 1.9882354140281677,
+          "psnr": 57.558
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.1147301669135482,
+          "p99": 1.0,
+          "max": 1.9921568036079407,
+          "psnr": 57.541
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.11920031277087488,
+          "p99": 1.0,
+          "max": 1.996078372001648,
+          "psnr": 57.212
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1950",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.6565263261449757,
+          "worstBackgroundP99": 5.543209975957886,
+          "minPSNR": 45.694
+        },
+        {
+          "nodeId": "10:1950",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.365376732674578,
+          "worstBackgroundP99": 17.083292243480702,
+          "minPSNR": 37.479
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-left-small",
+      "candidate": "lossless",
+      "bytes": 1489202,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1950",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.6337859998175908,
+          "worstBackgroundP99": 5.6186664426326836,
+          "minPSNR": 45.66
+        },
+        {
+          "nodeId": "10:1950",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.3176254296064212,
+          "worstBackgroundP99": 17.062743961811066,
+          "minPSNR": 37.544
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-lower-middle",
+      "candidate": "q82",
+      "bytes": 329776,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 1.1753625822437697,
+          "p99": 7.0,
+          "max": 64.62745469808578,
+          "psnr": 42.829
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 1.1753625822437697,
+          "p99": 7.0,
+          "max": 64.62745469808578,
+          "psnr": 42.829
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 1.1753625822437697,
+          "p99": 7.0,
+          "max": 64.62745469808578,
+          "psnr": 42.829
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 1.1753625822437697,
+          "p99": 7.0,
+          "max": 64.62745469808578,
+          "psnr": 42.829
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1936",
+          "dpr": 1,
+          "worstBackgroundMAE": 1.175440634439863,
+          "worstBackgroundP99": 6.9691757512092565,
+          "minPSNR": 42.758
+        },
+        {
+          "nodeId": "10:1936",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.8981440258583142,
+          "worstBackgroundP99": 16.725487201809884,
+          "minPSNR": 36.802
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-lower-middle",
+      "candidate": "q90",
+      "bytes": 373044,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.9241881046668118,
+          "p99": 5.0,
+          "max": 64.64706420898438,
+          "psnr": 45.109
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.9241881046668118,
+          "p99": 5.0,
+          "max": 64.64706420898438,
+          "psnr": 45.109
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.9241881046668118,
+          "p99": 5.0,
+          "max": 64.64706420898438,
+          "psnr": 45.109
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.9241881046668118,
+          "p99": 5.0,
+          "max": 64.64706420898438,
+          "psnr": 45.109
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1936",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.9386812320199198,
+          "worstBackgroundP99": 5.952937848567963,
+          "minPSNR": 44.232
+        },
+        {
+          "nodeId": "10:1936",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.6393931088141334,
+          "worstBackgroundP99": 15.999999046325684,
+          "minPSNR": 37.515
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-lower-middle",
+      "candidate": "q96",
+      "bytes": 448162,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.8177530918035665,
+          "p99": 3.0,
+          "max": 66.4941177368164,
+          "psnr": 46.452
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.8177530918035665,
+          "p99": 3.0,
+          "max": 66.4941177368164,
+          "psnr": 46.452
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.8177530918035665,
+          "p99": 3.0,
+          "max": 66.4941177368164,
+          "psnr": 46.452
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.8177530918035665,
+          "p99": 3.0,
+          "max": 66.4941177368164,
+          "psnr": 46.452
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1936",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.867444443582137,
+          "worstBackgroundP99": 5.527725555300711,
+          "minPSNR": 44.872
+        },
+        {
+          "nodeId": "10:1936",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.5399154646405921,
+          "worstBackgroundP99": 15.999999046325684,
+          "minPSNR": 37.791
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-lower-middle",
+      "candidate": "near80",
+      "bytes": 1336066,
+      "alphaVsResizedReference": {
+        "mae": 0.028631996363401413,
+        "p99": 1.0,
+        "max": 1.0,
+        "psnr": 63.562
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.11268728640705401,
+          "p99": 1.0,
+          "max": 1.949019730091095,
+          "psnr": 57.652
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.11463324123035765,
+          "p99": 1.0,
+          "max": 1.9882354140281677,
+          "psnr": 57.563
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.11458055906042935,
+          "p99": 1.0,
+          "max": 1.9921568036079407,
+          "psnr": 57.548
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.11910293480516693,
+          "p99": 1.0,
+          "max": 1.996078372001648,
+          "psnr": 57.217
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1936",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.5809549867591479,
+          "worstBackgroundP99": 5.120119540691365,
+          "minPSNR": 46.32
+        },
+        {
+          "nodeId": "10:1936",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.1613238801648162,
+          "worstBackgroundP99": 15.661881136894221,
+          "minPSNR": 38.37
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-lower-middle",
+      "candidate": "lossless",
+      "bytes": 1487862,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1936",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.5600749076180839,
+          "worstBackgroundP99": 5.143410399556159,
+          "minPSNR": 46.372
+        },
+        {
+          "nodeId": "10:1936",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.1191808588763879,
+          "worstBackgroundP99": 15.529403651356697,
+          "minPSNR": 38.444
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-lower-shared",
+      "candidate": "q82",
+      "bytes": 328920,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 1.1735309610553561,
+          "p99": 7.0,
+          "max": 58.49020004272461,
+          "psnr": 42.873
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 1.1735309610553561,
+          "p99": 7.0,
+          "max": 58.49020004272461,
+          "psnr": 42.873
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 1.1735309610553561,
+          "p99": 7.0,
+          "max": 58.49020004272461,
+          "psnr": 42.873
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 1.1735309610553561,
+          "p99": 7.0,
+          "max": 58.49020004272461,
+          "psnr": 42.873
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1953",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.9187284872656825,
+          "worstBackgroundP99": 5.709882843494374,
+          "minPSNR": 44.987
+        },
+        {
+          "nodeId": "10:1958",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.9171576481698649,
+          "worstBackgroundP99": 5.976470530033112,
+          "minPSNR": 44.817
+        },
+        {
+          "nodeId": "10:1953",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.3180239243737113,
+          "worstBackgroundP99": 12.627447962760925,
+          "minPSNR": 39.715
+        },
+        {
+          "nodeId": "10:1958",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.3263016954485731,
+          "worstBackgroundP99": 13.850940846204722,
+          "minPSNR": 39.168
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-lower-shared",
+      "candidate": "q90",
+      "bytes": 372106,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.9240804211307218,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.102
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.9240804211307218,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.102
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.9240804211307218,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.102
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.9240804211307218,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.102
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1953",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.7203305178144015,
+          "worstBackgroundP99": 5.0,
+          "minPSNR": 46.201
+        },
+        {
+          "nodeId": "10:1958",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.7278185941903623,
+          "worstBackgroundP99": 5.2784308910369875,
+          "minPSNR": 45.873
+        },
+        {
+          "nodeId": "10:1953",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.1359430018939165,
+          "worstBackgroundP99": 12.011779010295868,
+          "minPSNR": 40.342
+        },
+        {
+          "nodeId": "10:1958",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.1559572414598434,
+          "worstBackgroundP99": 13.301919933557475,
+          "minPSNR": 39.645
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-lower-shared",
+      "candidate": "q96",
+      "bytes": 446720,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.8194114100601414,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.432
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.8194114100601414,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.432
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.8194114100601414,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.432
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.8194114100601414,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.432
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1953",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.7026545052886285,
+          "worstBackgroundP99": 4.803921484947205,
+          "minPSNR": 46.497
+        },
+        {
+          "nodeId": "10:1958",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.719114168053901,
+          "worstBackgroundP99": 5.035284304618836,
+          "minPSNR": 46.103
+        },
+        {
+          "nodeId": "10:1953",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.1061276032192817,
+          "worstBackgroundP99": 11.92548954486847,
+          "minPSNR": 40.556
+        },
+        {
+          "nodeId": "10:1958",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.1389249339831735,
+          "worstBackgroundP99": 13.19215587079525,
+          "minPSNR": 39.786
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-lower-shared",
+      "candidate": "near80",
+      "bytes": 1337038,
+      "alphaVsResizedReference": {
+        "mae": 0.02841801941394806,
+        "p99": 1.0,
+        "max": 1.0,
+        "psnr": 63.595
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.11290944532048956,
+          "p99": 1.0,
+          "max": 1.949019730091095,
+          "psnr": 57.642
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.11477760360768323,
+          "p99": 1.0,
+          "max": 1.9882354140281677,
+          "psnr": 57.556
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.1146335234071628,
+          "p99": 1.0,
+          "max": 1.9921568036079407,
+          "psnr": 57.547
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.11905148911626151,
+          "p99": 1.0,
+          "max": 1.996078372001648,
+          "psnr": 57.221
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1953",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.4191414056458322,
+          "worstBackgroundP99": 4.55686342716217,
+          "minPSNR": 48.326
+        },
+        {
+          "nodeId": "10:1958",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.4255746111163129,
+          "worstBackgroundP99": 4.984313547611237,
+          "minPSNR": 47.826
+        },
+        {
+          "nodeId": "10:1953",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.7470274516092054,
+          "worstBackgroundP99": 11.78040635585785,
+          "minPSNR": 41.276
+        },
+        {
+          "nodeId": "10:1958",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.7720083171078226,
+          "worstBackgroundP99": 13.011763734221459,
+          "minPSNR": 40.41
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-lower-shared",
+      "candidate": "lossless",
+      "bytes": 1488938,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1953",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.4103314555967771,
+          "worstBackgroundP99": 4.647059142589569,
+          "minPSNR": 48.317
+        },
+        {
+          "nodeId": "10:1958",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.41649168925721164,
+          "worstBackgroundP99": 4.999999701976776,
+          "minPSNR": 47.819
+        },
+        {
+          "nodeId": "10:1953",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.7256262304152877,
+          "worstBackgroundP99": 11.576470017433167,
+          "minPSNR": 41.347
+        },
+        {
+          "nodeId": "10:1958",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.7517251680204234,
+          "worstBackgroundP99": 12.972548837661742,
+          "minPSNR": 40.466
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-right-small",
+      "candidate": "q82",
+      "bytes": 331030,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 1.1735580891173623,
+          "p99": 7.0,
+          "max": 58.49020004272461,
+          "psnr": 42.875
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 1.1735580891173623,
+          "p99": 7.0,
+          "max": 58.49020004272461,
+          "psnr": 42.875
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 1.1735580891173623,
+          "p99": 7.0,
+          "max": 58.49020004272461,
+          "psnr": 42.875
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 1.1735580891173623,
+          "p99": 7.0,
+          "max": 58.49020004272461,
+          "psnr": 42.875
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1945",
+          "dpr": 1,
+          "worstBackgroundMAE": 1.2376845702908468,
+          "worstBackgroundP99": 7.0,
+          "minPSNR": 42.529
+        },
+        {
+          "nodeId": "10:1945",
+          "dpr": 2,
+          "worstBackgroundMAE": 2.0169980731475268,
+          "worstBackgroundP99": 17.027451785802842,
+          "minPSNR": 36.496
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-right-small",
+      "candidate": "q90",
+      "bytes": 374426,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.92418240028291,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.104
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.92418240028291,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.104
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.92418240028291,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.104
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.92418240028291,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.104
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1945",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.995440106698623,
+          "worstBackgroundP99": 5.917646825313568,
+          "minPSNR": 44.082
+        },
+        {
+          "nodeId": "10:1945",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.755396309697735,
+          "worstBackgroundP99": 16.800001583695412,
+          "minPSNR": 37.146
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-right-small",
+      "candidate": "q96",
+      "bytes": 449474,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.8188613258988008,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.441
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.8188613258988008,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.441
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.8188613258988008,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.441
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.8188613258988008,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.441
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1945",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.879808431018436,
+          "worstBackgroundP99": 5.345095938444137,
+          "minPSNR": 44.956
+        },
+        {
+          "nodeId": "10:1945",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.6203622444188095,
+          "worstBackgroundP99": 16.52498007655142,
+          "minPSNR": 37.487
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-right-small",
+      "candidate": "near80",
+      "bytes": 1336722,
+      "alphaVsResizedReference": {
+        "mae": 0.02889288403093815,
+        "p99": 1.0,
+        "max": 1.0,
+        "psnr": 63.523
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.11307044552934506,
+          "p99": 1.0,
+          "max": 1.949019730091095,
+          "psnr": 57.638
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.11500919636595795,
+          "p99": 1.0,
+          "max": 1.9882354140281677,
+          "psnr": 57.549
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.11499579000366807,
+          "p99": 1.0,
+          "max": 1.9921568036079407,
+          "psnr": 57.532
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.11954297639186354,
+          "p99": 1.0,
+          "max": 1.996078372001648,
+          "psnr": 57.198
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1945",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.5990595172659186,
+          "worstBackgroundP99": 5.135763633847218,
+          "minPSNR": 46.295
+        },
+        {
+          "nodeId": "10:1945",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.2447080065648344,
+          "worstBackgroundP99": 16.087294019460714,
+          "minPSNR": 37.998
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-right-small",
+      "candidate": "lossless",
+      "bytes": 1488796,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1945",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.5721445850585992,
+          "worstBackgroundP99": 5.188241444826126,
+          "minPSNR": 46.341
+        },
+        {
+          "nodeId": "10:1945",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.1939475247620925,
+          "worstBackgroundP99": 16.05831185638903,
+          "minPSNR": 38.077
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-upper-left",
+      "candidate": "q82",
+      "bytes": 316814,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 1.1782437763567144,
+          "p99": 7.0,
+          "max": 60.95294189453125,
+          "psnr": 42.717
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 1.1782437763567144,
+          "p99": 7.0,
+          "max": 60.95294189453125,
+          "psnr": 42.717
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 1.1782437763567144,
+          "p99": 7.0,
+          "max": 60.95294189453125,
+          "psnr": 42.717
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 1.1782437763567144,
+          "p99": 7.0,
+          "max": 60.95294189453125,
+          "psnr": 42.717
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1935",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.9240734005891258,
+          "worstBackgroundP99": 5.650985059142113,
+          "minPSNR": 44.977
+        },
+        {
+          "nodeId": "10:1935",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.2795230805658535,
+          "worstBackgroundP99": 11.508000053167489,
+          "minPSNR": 40.005
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-upper-left",
+      "candidate": "q90",
+      "bytes": 357330,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.921567897708477,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.12
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.921567897708477,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.12
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.921567897708477,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.12
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.921567897708477,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.12
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1935",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.7611090079382979,
+          "worstBackgroundP99": 4.823530152440071,
+          "minPSNR": 46.321
+        },
+        {
+          "nodeId": "10:1935",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.1195202716471977,
+          "worstBackgroundP99": 10.717646961212159,
+          "minPSNR": 40.795
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-upper-left",
+      "candidate": "q96",
+      "bytes": 432360,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.8144319189262259,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.494
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.8144319189262259,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.494
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.8144319189262259,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.494
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.8144319189262259,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.494
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1935",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.725691369559411,
+          "worstBackgroundP99": 4.278430700302124,
+          "minPSNR": 46.76
+        },
+        {
+          "nodeId": "10:1935",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.0792133590359476,
+          "worstBackgroundP99": 10.305885100364685,
+          "minPSNR": 41.039
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-upper-left",
+      "candidate": "near80",
+      "bytes": 1284698,
+      "alphaVsResizedReference": {
+        "mae": 0.028917523100972176,
+        "p99": 1.0,
+        "max": 1.0,
+        "psnr": 63.519
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.11076585553458874,
+          "p99": 1.0,
+          "max": 1.949019730091095,
+          "psnr": 57.725
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.11320626872015067,
+          "p99": 1.0,
+          "max": 1.9882354140281677,
+          "psnr": 57.614
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.11364822571302469,
+          "p99": 1.0,
+          "max": 1.9921568036079407,
+          "psnr": 57.574
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.118710995375946,
+          "p99": 1.0,
+          "max": 1.996078372001648,
+          "psnr": 57.209
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1935",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.39994813038084975,
+          "worstBackgroundP99": 4.0196074140071865,
+          "minPSNR": 49.018
+        },
+        {
+          "nodeId": "10:1935",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.6879342831771872,
+          "worstBackgroundP99": 10.003016758561207,
+          "minPSNR": 41.914
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-upper-left",
+      "candidate": "lossless",
+      "bytes": 1430316,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1935",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.38412744172346974,
+          "worstBackgroundP99": 4.050979435443878,
+          "minPSNR": 49.092
+        },
+        {
+          "nodeId": "10:1935",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.6609753947927111,
+          "worstBackgroundP99": 10.0,
+          "minPSNR": 41.998
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-upper-right",
+      "candidate": "q82",
+      "bytes": 321402,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 1.163792252682,
+          "p99": 7.0,
+          "max": 62.80000305175781,
+          "psnr": 42.888
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 1.163792252682,
+          "p99": 7.0,
+          "max": 62.80000305175781,
+          "psnr": 42.888
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 1.163792252682,
+          "p99": 7.0,
+          "max": 62.80000305175781,
+          "psnr": 42.888
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 1.163792252682,
+          "p99": 7.0,
+          "max": 62.80000305175781,
+          "psnr": 42.888
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1937",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.9504974384633452,
+          "worstBackgroundP99": 5.999999642372131,
+          "minPSNR": 44.527
+        },
+        {
+          "nodeId": "10:1937",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.3382132459935436,
+          "worstBackgroundP99": 12.505999876260868,
+          "minPSNR": 39.543
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-upper-right",
+      "candidate": "q90",
+      "bytes": 365616,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.9182859694735366,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.123
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.9182859694735366,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.123
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.9182859694735366,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.123
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.9182859694735366,
+          "p99": 5.0,
+          "max": 65.87843322753906,
+          "psnr": 45.123
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1937",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.8186150320191711,
+          "worstBackgroundP99": 5.054901692271232,
+          "minPSNR": 45.614
+        },
+        {
+          "nodeId": "10:1937",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.20562041566968,
+          "worstBackgroundP99": 11.999999105930328,
+          "minPSNR": 40.138
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-upper-right",
+      "candidate": "q96",
+      "bytes": 440654,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.8113506991383326,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.496
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.8113506991383326,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.496
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.8113506991383326,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.496
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.8113506991383326,
+          "p99": 3.0,
+          "max": 65.26274871826172,
+          "psnr": 46.496
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1937",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.7753333237689484,
+          "worstBackgroundP99": 4.921569576859474,
+          "minPSNR": 46.067
+        },
+        {
+          "nodeId": "10:1937",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.1551846291952543,
+          "worstBackgroundP99": 11.88236522614956,
+          "minPSNR": 40.387
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-upper-right",
+      "candidate": "near80",
+      "bytes": 1275848,
+      "alphaVsResizedReference": {
+        "mae": 0.030792346224188805,
+        "p99": 1.0,
+        "max": 1.0,
+        "psnr": 63.246
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.11484232425300343,
+          "p99": 1.0,
+          "max": 1.949019730091095,
+          "psnr": 57.6
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.11734366487448683,
+          "p99": 1.0,
+          "max": 1.9882354140281677,
+          "psnr": 57.483
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.1180319632118582,
+          "p99": 1.0,
+          "max": 1.9921568036079407,
+          "psnr": 57.419
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.12363876441692749,
+          "p99": 1.0,
+          "max": 1.996078372001648,
+          "psnr": 57.036
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1937",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.4431336492998191,
+          "worstBackgroundP99": 4.619607442617417,
+          "minPSNR": 48.06
+        },
+        {
+          "nodeId": "10:1937",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.7550147959359481,
+          "worstBackgroundP99": 11.435294491052627,
+          "minPSNR": 41.201
+        }
+      ]
+    },
+    {
+      "name": "idiom-ice-upper-right",
+      "candidate": "lossless",
+      "bytes": 1427006,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1937",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.4243746017305592,
+          "worstBackgroundP99": 4.677847763896011,
+          "minPSNR": 48.13
+        },
+        {
+          "nodeId": "10:1937",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.7230359660897494,
+          "worstBackgroundP99": 11.317649185657501,
+          "minPSNR": 41.29
+        }
+      ]
+    },
+    {
+      "name": "idiom-telephone-base",
+      "candidate": "q82",
+      "bytes": 52038,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.8206153549382716,
+          "p99": 6.0,
+          "max": 37.0,
+          "psnr": 45.134
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.8206153549382716,
+          "p99": 6.0,
+          "max": 37.0,
+          "psnr": 45.134
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.8206153549382716,
+          "p99": 6.0,
+          "max": 37.0,
+          "psnr": 45.134
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.8206153549382716,
+          "p99": 6.0,
+          "max": 37.0,
+          "psnr": 45.134
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "telephone-hidden-base",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.5826586600294235,
+          "worstBackgroundP99": 3.0,
+          "minPSNR": 48.336
+        },
+        {
+          "nodeId": "telephone-hidden-base",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.8168423130422445,
+          "worstBackgroundP99": 6.0,
+          "minPSNR": 44.692
+        }
+      ]
+    },
+    {
+      "name": "idiom-telephone-base",
+      "candidate": "q90",
+      "bytes": 71344,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.7412137621252205,
+          "p99": 4.0,
+          "max": 33.0,
+          "psnr": 46.835
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.7412137621252205,
+          "p99": 4.0,
+          "max": 33.0,
+          "psnr": 46.835
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.7412137621252205,
+          "p99": 4.0,
+          "max": 33.0,
+          "psnr": 46.835
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.7412137621252205,
+          "p99": 4.0,
+          "max": 33.0,
+          "psnr": 46.835
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "telephone-hidden-base",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.5266923890682877,
+          "worstBackgroundP99": 2.0,
+          "minPSNR": 49.679
+        },
+        {
+          "nodeId": "telephone-hidden-base",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.7539638405951312,
+          "worstBackgroundP99": 5.0,
+          "minPSNR": 45.903
+        }
+      ]
+    },
+    {
+      "name": "idiom-telephone-base",
+      "candidate": "q96",
+      "bytes": 109800,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.686171875,
+          "p99": 3.0,
+          "max": 34.0,
+          "psnr": 47.888
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.686171875,
+          "p99": 3.0,
+          "max": 34.0,
+          "psnr": 47.888
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.686171875,
+          "p99": 3.0,
+          "max": 34.0,
+          "psnr": 47.888
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.686171875,
+          "p99": 3.0,
+          "max": 34.0,
+          "psnr": 47.888
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "telephone-hidden-base",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.49199983962051747,
+          "worstBackgroundP99": 2.0,
+          "minPSNR": 50.37
+        },
+        {
+          "nodeId": "telephone-hidden-base",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.7160331677106754,
+          "worstBackgroundP99": 4.0,
+          "minPSNR": 46.585
+        }
+      ]
+    },
+    {
+      "name": "idiom-telephone-base",
+      "candidate": "near80",
+      "bytes": 1062364,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.05370935295414462,
+          "p99": 1.0,
+          "max": 1.0,
+          "psnr": 60.83
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.05370935295414462,
+          "p99": 1.0,
+          "max": 1.0,
+          "psnr": 60.83
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.05370935295414462,
+          "p99": 1.0,
+          "max": 1.0,
+          "psnr": 60.83
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.05370935295414462,
+          "p99": 1.0,
+          "max": 1.0,
+          "psnr": 60.83
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "telephone-hidden-base",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.2242512282909407,
+          "worstBackgroundP99": 1.0,
+          "minPSNR": 54.133
+        },
+        {
+          "nodeId": "telephone-hidden-base",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.40102411552257494,
+          "worstBackgroundP99": 3.0,
+          "minPSNR": 49.011
+        }
+      ]
+    },
+    {
+      "name": "idiom-telephone-base",
+      "candidate": "lossless",
+      "bytes": 1091468,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "telephone-hidden-base",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.21431078459493386,
+          "worstBackgroundP99": 1.0,
+          "minPSNR": 54.4
+        },
+        {
+          "nodeId": "telephone-hidden-base",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.38474960753290094,
+          "worstBackgroundP99": 3.0,
+          "minPSNR": 49.283
+        }
+      ]
+    },
+    {
+      "name": "idiom-telephone-cutout",
+      "candidate": "q82",
+      "bytes": 75004,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 1.159315350660132,
+          "p99": 9.0,
+          "max": 47.09019899368286,
+          "psnr": 41.728
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 1.159315350660132,
+          "p99": 9.0,
+          "max": 47.09019899368286,
+          "psnr": 41.728
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 1.159315350660132,
+          "p99": 9.0,
+          "max": 47.09019899368286,
+          "psnr": 41.728
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 1.159315350660132,
+          "p99": 9.0,
+          "max": 47.09019899368286,
+          "psnr": 41.728
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1598",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.7651633985857026,
+          "worstBackgroundP99": 5.0,
+          "minPSNR": 45.441
+        },
+        {
+          "nodeId": "10:1598",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.2426112212681728,
+          "worstBackgroundP99": 10.0,
+          "minPSNR": 40.694
+        }
+      ]
+    },
+    {
+      "name": "idiom-telephone-cutout",
+      "candidate": "q90",
+      "bytes": 92690,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.9220932054266469,
+          "p99": 6.0,
+          "max": 47.68627595901489,
+          "psnr": 44.331
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.9220932054266469,
+          "p99": 6.0,
+          "max": 47.68627595901489,
+          "psnr": 44.331
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.9220932054266469,
+          "p99": 6.0,
+          "max": 47.68627595901489,
+          "psnr": 44.331
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.9220932054266469,
+          "p99": 6.0,
+          "max": 47.68627595901489,
+          "psnr": 44.331
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1598",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.6060657273704253,
+          "worstBackgroundP99": 4.0,
+          "minPSNR": 47.85
+        },
+        {
+          "nodeId": "10:1598",
+          "dpr": 2,
+          "worstBackgroundMAE": 1.0580040783815607,
+          "worstBackgroundP99": 9.0,
+          "minPSNR": 42.246
+        }
+      ]
+    },
+    {
+      "name": "idiom-telephone-cutout",
+      "candidate": "q96",
+      "bytes": 125220,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.7528682916037799,
+          "p99": 4.0,
+          "max": 47.68627595901489,
+          "psnr": 46.346
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.7528682916037799,
+          "p99": 4.0,
+          "max": 47.68627595901489,
+          "psnr": 46.346
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.7528682916037799,
+          "p99": 4.0,
+          "max": 47.68627595901489,
+          "psnr": 46.346
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.7528682916037799,
+          "p99": 4.0,
+          "max": 47.68627595901489,
+          "psnr": 46.346
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1598",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.5090696533178718,
+          "worstBackgroundP99": 3.0,
+          "minPSNR": 49.424
+        },
+        {
+          "nodeId": "10:1598",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.9430142601685791,
+          "worstBackgroundP99": 8.0,
+          "minPSNR": 43.193
+        }
+      ]
+    },
+    {
+      "name": "idiom-telephone-cutout",
+      "candidate": "near80",
+      "bytes": 499940,
+      "alphaVsResizedReference": {
+        "mae": 0.0033779761288315058,
+        "p99": 0.0,
+        "max": 1.0,
+        "psnr": 72.844
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.12896458503825275,
+          "p99": 1.0,
+          "max": 1.9450982213020325,
+          "psnr": 57.062
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.1310746320719777,
+          "p99": 1.0,
+          "max": 1.9843139052391052,
+          "psnr": 56.966
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.13350267561950227,
+          "p99": 1.0,
+          "max": 1.9921568036079407,
+          "psnr": 56.835
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.13614810825396986,
+          "p99": 1.0,
+          "max": 1.996078372001648,
+          "psnr": 56.674
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1598",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.31537332739289486,
+          "worstBackgroundP99": 2.0117645263671875,
+          "minPSNR": 51.824
+        },
+        {
+          "nodeId": "10:1598",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.6503263672387112,
+          "worstBackgroundP99": 7.0,
+          "minPSNR": 44.605
+        }
+      ]
+    },
+    {
+      "name": "idiom-telephone-cutout",
+      "candidate": "lossless",
+      "bytes": 552242,
+      "alphaVsResizedReference": {
+        "mae": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "psnr": null
+      },
+      "fullCanvasComposite": [
+        {
+          "background": [
+            11,
+            13,
+            15
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            1,
+            46,
+            215
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            254,
+            209,
+            40
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        },
+        {
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "mae": 0.0,
+          "p99": 0.0,
+          "max": 0.0,
+          "psnr": null
+        }
+      ],
+      "display": [
+        {
+          "nodeId": "10:1598",
+          "dpr": 1,
+          "worstBackgroundMAE": 0.29022593242051964,
+          "worstBackgroundP99": 2.0,
+          "minPSNR": 52.294
+        },
+        {
+          "nodeId": "10:1598",
+          "dpr": 2,
+          "worstBackgroundMAE": 0.6129454273517322,
+          "worstBackgroundP99": 7.0,
+          "minPSNR": 44.904
+        }
+      ]
+    }
+  ],
+  "qa": {
+    "assetChecks": [
+      {
+        "imageHash": "a29311f1f1d2be133c14d891089c6650c953c32e",
+        "optimizedPath": "public/assets/images/idiom-ice-center.webp",
+        "alphaMatchesResizedReference": true,
+        "visibleRgbMatchesResizedReference": true,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaBounds": [
+          75,
+          36,
+          2229,
+          1259
+        ]
+      },
+      {
+        "imageHash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
+        "optimizedPath": "public/assets/images/idiom-ice-left-small.webp",
+        "alphaMatchesResizedReference": true,
+        "visibleRgbMatchesResizedReference": true,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaBounds": [
+          75,
+          36,
+          2229,
+          1259
+        ]
+      },
+      {
+        "imageHash": "528b075a5c6b35f819c787bff455d9dbd2436c83",
+        "optimizedPath": "public/assets/images/idiom-ice-lower-middle.webp",
+        "alphaMatchesResizedReference": true,
+        "visibleRgbMatchesResizedReference": true,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaBounds": [
+          75,
+          36,
+          2229,
+          1259
+        ]
+      },
+      {
+        "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+        "optimizedPath": "public/assets/images/idiom-ice-lower-shared.webp",
+        "alphaMatchesResizedReference": true,
+        "visibleRgbMatchesResizedReference": true,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaBounds": [
+          75,
+          36,
+          2229,
+          1259
+        ]
+      },
+      {
+        "imageHash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
+        "optimizedPath": "public/assets/images/idiom-ice-right-small.webp",
+        "alphaMatchesResizedReference": true,
+        "visibleRgbMatchesResizedReference": true,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaBounds": [
+          75,
+          36,
+          2229,
+          1259
+        ]
+      },
+      {
+        "imageHash": "35938ea29ed9ca1307edc53950674e4c8ebe63d5",
+        "optimizedPath": "public/assets/images/idiom-ice-upper-left.webp",
+        "alphaMatchesResizedReference": true,
+        "visibleRgbMatchesResizedReference": true,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaBounds": [
+          75,
+          36,
+          2229,
+          1259
+        ]
+      },
+      {
+        "imageHash": "c027bce002d6d9ef41326d8cce3bb29eac6f7e22",
+        "optimizedPath": "public/assets/images/idiom-ice-upper-right.webp",
+        "alphaMatchesResizedReference": true,
+        "visibleRgbMatchesResizedReference": true,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaBounds": [
+          75,
+          36,
+          2228,
+          1259
+        ]
+      },
+      {
+        "imageHash": "bfdc63b7bc0f0d5abbdf1a00f3ec8121daffde5a",
+        "optimizedPath": "public/assets/images/idiom-telephone-base.webp",
+        "alphaMatchesResizedReference": true,
+        "visibleRgbMatchesResizedReference": false,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "alphaBounds": [
+          0,
+          0,
+          1344,
+          1800
+        ]
+      },
+      {
+        "imageHash": "be5817d93162046d2b9f3af61b7489db7df1278c",
+        "optimizedPath": "public/assets/images/idiom-telephone-cutout.webp",
+        "alphaMatchesResizedReference": true,
+        "visibleRgbMatchesResizedReference": true,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaBounds": [
+          139,
+          99,
+          1107,
+          1800
+        ]
+      }
+    ],
+    "originalSha256Matches": 9,
+    "svgMaskSha256Matches": 6,
+    "otherPublicAssetsUnchanged": 56,
+    "independentIceObjects": 8,
+    "independentTelephoneObjects": 1,
+    "sharedLowerDerivative": true,
+    "compositions": [
+      {
+        "state": "A",
+        "dpr": 1,
+        "meanAbsoluteRgbError": [
+          0.06074749228395062,
+          0.060356867283950615,
+          0.07727237654320987
+        ]
+      },
+      {
+        "state": "A",
+        "dpr": 2,
+        "meanAbsoluteRgbError": [
+          0.11033830054012346,
+          0.10219823013117284,
+          0.1368725887345679
+        ]
+      },
+      {
+        "state": "B",
+        "dpr": 1,
+        "meanAbsoluteRgbError": [
+          0.07074990354938272,
+          0.06989535108024691,
+          0.0828221450617284
+        ]
+      },
+      {
+        "state": "B",
+        "dpr": 2,
+        "meanAbsoluteRgbError": [
+          0.13185498649691357,
+          0.1257690731095679,
+          0.15169741030092593
+        ]
+      }
+    ],
+    "visualReview": "Eight separately cropped/masked ice wrappers compared side by side at 1920px design scale; DPR2 candidate sheets, both telephone sources, selected alpha edges on checkerboard/blue, and A/B illustration reconstructions inspected. No visible new halos, blocking, color fringe or loss of silhouette detail in selected delivery files. No new Figma read; comparison uses SHA-verified originals and the Figma crop/mask/order metadata previously visually verified in Stage 0.2D.1.",
+    "reproduction": "scripts/optimize-idiom.mjs --verify-only regenerated all nine derivatives in memory; every output SHA256 matched committed candidates",
+    "assetCheck": "Verified: 41 | Pending: 0 | Errors: 0",
+    "fullDecodeVerifiedOriginals": 41,
+    "fullDecodeVerifiedDerivatives": 9,
+    "duplicateOriginalBytes": 0,
+    "duplicateDerivativeBytes": 0,
+    "publicIdiomOriginalFilesRemaining": 0
+  }
+}

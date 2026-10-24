@@ -30,17 +30,17 @@ Scope: illustration layers in approved frames **A `10:1431`** and **B `10:1596`*
 
 Coordinates below are frame-local top-left positions before any hypothetical motion. Paint order is the zero-based Figma child index, back to front; omitted indices belong to the unchanged interface. Dimensions are the object/crop viewport, not source-file dimensions. Rotation is Figma's recorded angle. Scale is **B relative to A**; all ice transforms have identity linear parts, so there is no rotation, skew or reflection in either endpoint.
 
-| Object | A node → B node | Position A → B (x, y) | Dimensions A = B | Rotation A → B | Scale B/A (x, y) | Paint order A → B | Source under `public/assets/images/` |
+| Object | A node → B node | Position A → B (x, y) | Dimensions A = B | Rotation A → B | Scale B/A (x, y) | Paint order A → B | Delivery file under `public/assets/images/` |
 |---|---|---|---|---|---|---|---|
-| Upper-left ice | `10:1935` → `10:1597` | (30, 397) → (30, 397) | 501 × 337 | 0° → 0° | (1, 1) | 5 → 0 | `idiom-ice-upper-left.png` |
-| Lower-middle ice | `10:1936` → `10:1628` | (415, 853) → (415, 853) | 232 × 147 | 0° → 0° | (1, 1) | 6 → 6 | `idiom-ice-lower-middle.png` |
-| Upper-right ice | `10:1937` → `10:1629` | (657, 397) → (657, 397) | 424 × 299 | 0° → 0° | (1, 1) | 7 → 7 | `idiom-ice-upper-right.png` |
-| Center ice | `10:1940` → `10:1632` | (504, 499) → (504, 499) | 203 × 379 | 0° → 0° | (1, 1) | 8 → 8 | `idiom-ice-center.png` |
-| Right small ice | `10:1945` → `10:1637` | (900, 646) → (900, 646) | 210 × 145 | 0° → 0° | (1, 1) | 9 → 9 | `idiom-ice-right-small.png` |
-| Left small ice | `10:1950` → `10:1642` | (354, 685) → (354, 685) | 133 × 116 | 0° → 0° | (1, 1) | 10 → 10 | `idiom-ice-left-small.png` |
-| Lower-left ice | `10:1953` → `10:1645` | (30, 727) → (30, 727) | 393 × 273 | 0° → 0° | (1, 1) | 11 → 11 | `idiom-ice-lower-shared.png` |
-| Lower-right ice | `10:1958` → `10:1650` | (653, 735) → (653, 735) | 457 × 265 | 0° → 0° | (1, 1) | 12 → 12 | `idiom-ice-lower-shared.png` |
-| Telephone | absent → `10:1598` | undefined → (227, 228) | undefined → 635 × 851 | undefined → 0° | undefined | absent → 1 | `idiom-telephone-cutout.png` |
+| Upper-left ice | `10:1935` → `10:1597` | (30, 397) → (30, 397) | 501 × 337 | 0° → 0° | (1, 1) | 5 → 0 | `idiom-ice-upper-left.webp` |
+| Lower-middle ice | `10:1936` → `10:1628` | (415, 853) → (415, 853) | 232 × 147 | 0° → 0° | (1, 1) | 6 → 6 | `idiom-ice-lower-middle.webp` |
+| Upper-right ice | `10:1937` → `10:1629` | (657, 397) → (657, 397) | 424 × 299 | 0° → 0° | (1, 1) | 7 → 7 | `idiom-ice-upper-right.webp` |
+| Center ice | `10:1940` → `10:1632` | (504, 499) → (504, 499) | 203 × 379 | 0° → 0° | (1, 1) | 8 → 8 | `idiom-ice-center.webp` |
+| Right small ice | `10:1945` → `10:1637` | (900, 646) → (900, 646) | 210 × 145 | 0° → 0° | (1, 1) | 9 → 9 | `idiom-ice-right-small.webp` |
+| Left small ice | `10:1950` → `10:1642` | (354, 685) → (354, 685) | 133 × 116 | 0° → 0° | (1, 1) | 10 → 10 | `idiom-ice-left-small.webp` |
+| Lower-left ice | `10:1953` → `10:1645` | (30, 727) → (30, 727) | 393 × 273 | 0° → 0° | (1, 1) | 11 → 11 | `idiom-ice-lower-shared.webp` |
+| Lower-right ice | `10:1958` → `10:1650` | (653, 735) → (653, 735) | 457 × 265 | 0° → 0° | (1, 1) | 12 → 12 | `idiom-ice-lower-shared.webp` |
+| Telephone | absent → `10:1598` | undefined → (227, 228) | undefined → 635 × 851 | undefined → 0° | undefined | absent → 1 | `idiom-telephone-cutout.webp` |
 | Mosaic | `10:1432` → `10:1599` | (0, 0) → (0, 0) | 1920 × 1080 | 0° → 0° | (1, 1) | 0 → 2 | existing `mosaic-texture.png` |
 
 **Paint order:** A has mosaic below all eight ice objects. B has upper-left ice → telephone → mosaic → remaining seven ice objects. Preserve the mosaic's 0.4 paint opacity and TILE scale (`scalingFactor` 0.8942065238952637), including its overlay on the telephone and upper-left fragment. Moving that texture behind all imagery changes B's appearance. The telephone is behind every ice object except the upper-left one. Both frames clip content at their 1920 × 1080 bounds.
@@ -80,6 +80,12 @@ The telephone has two original **1792 × 2400** fills: hidden JPEG `bfdc63b7bc0f
 **Feasible:** eight ice wrappers plus one telephone can be transformed independently. Each wrapper must carry its image crop and Boolean mask as one object. Reuse the seven original ice textures and six clipping masks across states; no duplicate state bitmaps are needed. Independent transforms of the two lower objects remain possible despite their shared imageHash.
 
 **Not specified by these frames:** trigger, duration/easing, telephone entry pose/path, transform origins, replay/reset, interruption behavior and when/how the upper-left shard changes stacking relative to the mosaic. Do not infer ice displacement or an explosion from these static endpoints. Decide these in the motion stage before implementation, along with keyboard/touch access and a prefers-reduced-motion alternative that exposes the meaning/state without requiring movement. No scroll hijacking is authorized. No animation, CSS layout or interaction has been implemented in this import stage.
+
+### Stage 0.2H.1 — delivery derivatives (2026-10-24)
+
+The nine original raster fills now live unchanged under `source-assets/images/`, keyed by the same Figma imageHash and original SHA256. The table above selects WebP delivery files; seven ice derivatives are 2304 × 1286, and telephone derivatives are 1344 × 1800. All eight visible PNG-derived files use lossless WebP after alpha-aware resizing. The hidden telephone JPEG has an optional q96 WebP derivative and stays hidden; do not preload or display it automatically.
+
+Every full source canvas and transparent margin is retained in the derivatives. **Use the same normalized CROP matrices, centered FILL behavior, wrapper dimensions, source positions, paint order and six SVG masks.** Do not apply source-pixel crop coordinates calculated for 4096 × 2286 directly to a smaller derivative: multiply normalized crop values by that derivative's actual width/height. Both lower objects continue to reference `idiom-ice-lower-shared.webp` with distinct crops and independent wrappers. No object merge, mask bake-in, animation endpoint or transition was introduced. See `IDIOM_ASSET_OPTIMIZATION.json` and `ASSET_OPTIMIZATION_RESULTS.md` for per-file settings, hashes and QA.
 
 ## Stage 0.2D.2 — verified Pun endpoints (2026-10-24)
 

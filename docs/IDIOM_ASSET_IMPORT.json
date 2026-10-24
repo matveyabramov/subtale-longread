@@ -20,7 +20,7 @@
       "width": 4096,
       "height": 2286,
       "nodeId": "10:1940",
-      "localPath": "public/assets/images/idiom-ice-center.png",
+      "localPath": "source-assets/images/idiom-ice-center.png",
       "sha256": "26bc36f7ab52ca7ccf67f9ea87d34dbafadf70b628ad92a747e2057b1dcb01b7",
       "pixelQA": {
         "format": "PNG",
@@ -40,7 +40,8 @@
           3958,
           2233
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/idiom-ice-center.webp"
     },
     {
       "hash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
@@ -50,7 +51,7 @@
       "width": 4096,
       "height": 2286,
       "nodeId": "10:1950",
-      "localPath": "public/assets/images/idiom-ice-left-small.png",
+      "localPath": "source-assets/images/idiom-ice-left-small.png",
       "sha256": "fbc67bd83f3b759d685d2713b2d25dacc886bc2aff1ea4029c61bcd94e0acfc9",
       "pixelQA": {
         "format": "PNG",
@@ -70,7 +71,8 @@
           3958,
           2233
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/idiom-ice-left-small.webp"
     },
     {
       "hash": "528b075a5c6b35f819c787bff455d9dbd2436c83",
@@ -80,7 +82,7 @@
       "width": 4096,
       "height": 2286,
       "nodeId": "10:1936",
-      "localPath": "public/assets/images/idiom-ice-lower-middle.png",
+      "localPath": "source-assets/images/idiom-ice-lower-middle.png",
       "sha256": "9acb5cf2b567fed8a35ac89548a8d40aa9c69dec7260ea556c08a136712f3b74",
       "pixelQA": {
         "format": "PNG",
@@ -100,7 +102,8 @@
           3958,
           2233
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/idiom-ice-lower-middle.webp"
     },
     {
       "hash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
@@ -110,7 +113,7 @@
       "width": 4096,
       "height": 2286,
       "nodeId": "10:1953",
-      "localPath": "public/assets/images/idiom-ice-lower-shared.png",
+      "localPath": "source-assets/images/idiom-ice-lower-shared.png",
       "sha256": "5d7bb3feebd04a69e20e000a1ac20fa019d477acd2f277307111afc016b6f3a1",
       "pixelQA": {
         "format": "PNG",
@@ -130,7 +133,8 @@
           3958,
           2233
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/idiom-ice-lower-shared.webp"
     },
     {
       "hash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
@@ -140,7 +144,7 @@
       "width": 4096,
       "height": 2286,
       "nodeId": "10:1945",
-      "localPath": "public/assets/images/idiom-ice-right-small.png",
+      "localPath": "source-assets/images/idiom-ice-right-small.png",
       "sha256": "b35c5dbf24f2c9a53b3a024b8bb0988669ef2dbc1646183910c1b64e668fe461",
       "pixelQA": {
         "format": "PNG",
@@ -160,7 +164,8 @@
           3958,
           2233
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/idiom-ice-right-small.webp"
     },
     {
       "hash": "35938ea29ed9ca1307edc53950674e4c8ebe63d5",
@@ -170,7 +175,7 @@
       "width": 4096,
       "height": 2286,
       "nodeId": "10:1935",
-      "localPath": "public/assets/images/idiom-ice-upper-left.png",
+      "localPath": "source-assets/images/idiom-ice-upper-left.png",
       "sha256": "7707f055314d12f2d131c31d685ad4f70b937fc7f8c6c3bc4035b9d0781636bd",
       "pixelQA": {
         "format": "PNG",
@@ -190,7 +195,8 @@
           3958,
           2233
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/idiom-ice-upper-left.webp"
     },
     {
       "hash": "c027bce002d6d9ef41326d8cce3bb29eac6f7e22",
@@ -200,7 +206,7 @@
       "width": 4096,
       "height": 2286,
       "nodeId": "10:1937",
-      "localPath": "public/assets/images/idiom-ice-upper-right.png",
+      "localPath": "source-assets/images/idiom-ice-upper-right.png",
       "sha256": "34888d7c2bed6f8f01198691999d249a860751e8b920f5b37f6c5b6a0a0c56fb",
       "pixelQA": {
         "format": "PNG",
@@ -220,7 +226,8 @@
           3956,
           2233
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/idiom-ice-upper-right.webp"
     },
     {
       "hash": "bfdc63b7bc0f0d5abbdf1a00f3ec8121daffde5a",
@@ -230,7 +237,7 @@
       "width": 1792,
       "height": 2400,
       "nodeId": "10:1598",
-      "localPath": "public/assets/images/idiom-telephone-base.jpg",
+      "localPath": "source-assets/images/idiom-telephone-base.jpg",
       "sha256": "9aa7aac0bb0fc41a6c05e2475918d4b6771be24c631b08c2d7c37d8d73cdc7d8",
       "pixelQA": {
         "format": "JPEG",
@@ -250,7 +257,8 @@
           1792,
           2400
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/idiom-telephone-base.webp"
     },
     {
       "hash": "be5817d93162046d2b9f3af61b7489db7df1278c",
@@ -260,7 +268,7 @@
       "width": 1792,
       "height": 2400,
       "nodeId": "10:1598",
-      "localPath": "public/assets/images/idiom-telephone-cutout.png",
+      "localPath": "source-assets/images/idiom-telephone-cutout.png",
       "sha256": "fe269301ebbb0557b94073032509241fdb8215d00c5346dbb2cfacc410fea689",
       "pixelQA": {
         "format": "PNG",
@@ -280,7 +288,8 @@
           1475,
           2400
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/idiom-telephone-cutout.webp"
     }
   ],
   "reusedTexture": {
@@ -310,7 +319,7 @@
         }
       ],
       "imageHash": "35938ea29ed9ca1307edc53950674e4c8ebe63d5",
-      "localPath": "public/assets/images/idiom-ice-upper-left.png",
+      "localPath": "public/assets/images/idiom-ice-upper-left.webp",
       "crop": [
         [
           0.4636995494365692,
@@ -329,7 +338,10 @@
         "x": 1,
         "y": 1
       },
-      "maskPath": null
+      "maskPath": null,
+      "sourcePath": "source-assets/images/idiom-ice-upper-left.png",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286
     },
     {
       "from": "10:1936",
@@ -347,7 +359,7 @@
         }
       ],
       "imageHash": "528b075a5c6b35f819c787bff455d9dbd2436c83",
-      "localPath": "public/assets/images/idiom-ice-lower-middle.png",
+      "localPath": "public/assets/images/idiom-ice-lower-middle.webp",
       "crop": [
         [
           0.21472714841365814,
@@ -366,7 +378,10 @@
         "x": 1,
         "y": 1
       },
-      "maskPath": null
+      "maskPath": null,
+      "sourcePath": "source-assets/images/idiom-ice-lower-middle.png",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286
     },
     {
       "from": "10:1937",
@@ -392,7 +407,7 @@
         }
       ],
       "imageHash": "c027bce002d6d9ef41326d8cce3bb29eac6f7e22",
-      "localPath": "public/assets/images/idiom-ice-upper-right.png",
+      "localPath": "public/assets/images/idiom-ice-upper-right.webp",
       "crop": [
         [
           0.3924323618412018,
@@ -411,7 +426,10 @@
         "x": 1,
         "y": 1
       },
-      "maskPath": "public/assets/illustrations/idiom-ice-upper-right-mask.svg"
+      "maskPath": "public/assets/illustrations/idiom-ice-upper-right-mask.svg",
+      "sourcePath": "source-assets/images/idiom-ice-upper-right.png",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286
     },
     {
       "from": "10:1940",
@@ -445,7 +463,7 @@
         }
       ],
       "imageHash": "a29311f1f1d2be133c14d891089c6650c953c32e",
-      "localPath": "public/assets/images/idiom-ice-center.png",
+      "localPath": "public/assets/images/idiom-ice-center.webp",
       "crop": [
         [
           0.18788623809814453,
@@ -464,7 +482,10 @@
         "x": 1,
         "y": 1
       },
-      "maskPath": "public/assets/illustrations/idiom-ice-center-mask.svg"
+      "maskPath": "public/assets/illustrations/idiom-ice-center-mask.svg",
+      "sourcePath": "source-assets/images/idiom-ice-center.png",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286
     },
     {
       "from": "10:1945",
@@ -498,7 +519,7 @@
         }
       ],
       "imageHash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
-      "localPath": "public/assets/images/idiom-ice-right-small.png",
+      "localPath": "public/assets/images/idiom-ice-right-small.webp",
       "crop": [
         [
           0.19436506927013397,
@@ -517,7 +538,10 @@
         "x": 1,
         "y": 1
       },
-      "maskPath": "public/assets/illustrations/idiom-ice-right-small-mask.svg"
+      "maskPath": "public/assets/illustrations/idiom-ice-right-small-mask.svg",
+      "sourcePath": "source-assets/images/idiom-ice-right-small.png",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286
     },
     {
       "from": "10:1950",
@@ -543,7 +567,7 @@
         }
       ],
       "imageHash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
-      "localPath": "public/assets/images/idiom-ice-left-small.png",
+      "localPath": "public/assets/images/idiom-ice-left-small.webp",
       "crop": [
         [
           0.12309788167476654,
@@ -562,7 +586,10 @@
         "x": 1,
         "y": 1
       },
-      "maskPath": "public/assets/illustrations/idiom-ice-left-small-mask.svg"
+      "maskPath": "public/assets/illustrations/idiom-ice-left-small-mask.svg",
+      "sourcePath": "source-assets/images/idiom-ice-left-small.png",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286
     },
     {
       "from": "10:1953",
@@ -596,7 +623,7 @@
         }
       ],
       "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
-      "localPath": "public/assets/images/idiom-ice-lower-shared.png",
+      "localPath": "public/assets/images/idiom-ice-lower-shared.webp",
       "crop": [
         [
           0.36374035477638245,
@@ -615,7 +642,10 @@
         "x": 1,
         "y": 1
       },
-      "maskPath": "public/assets/illustrations/idiom-ice-lower-left-mask.svg"
+      "maskPath": "public/assets/illustrations/idiom-ice-lower-left-mask.svg",
+      "sourcePath": "source-assets/images/idiom-ice-lower-shared.png",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286
     },
     {
       "from": "10:1958",
@@ -649,7 +679,7 @@
         }
       ],
       "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
-      "localPath": "public/assets/images/idiom-ice-lower-shared.png",
+      "localPath": "public/assets/images/idiom-ice-lower-shared.webp",
       "crop": [
         [
           0.42297545075416565,
@@ -668,7 +698,10 @@
         "x": 1,
         "y": 1
       },
-      "maskPath": "public/assets/illustrations/idiom-ice-lower-right-mask.svg"
+      "maskPath": "public/assets/illustrations/idiom-ice-lower-right-mask.svg",
+      "sourcePath": "source-assets/images/idiom-ice-lower-shared.png",
+      "optimizedWidth": 2304,
+      "optimizedHeight": 1286
     }
   ],
   "telephone": {
@@ -4211,5 +4244,10 @@
     "independentObjects": "8 ice wrappers and 1 telephone; shared raster source for the two lower shards does not prevent independent transforms. Crop and mask must travel with each wrapper.",
     "unapproved": "Endpoints do not specify an explosion, ice displacement/rotation/scale change, timing, easing, trigger, trajectory or telephone initial pose. No animation implemented."
   },
-  "newBytes": 39998458
+  "newBytes": 39998458,
+  "optimization": {
+    "stage": "0.2H.1",
+    "report": "docs/IDIOM_ASSET_OPTIMIZATION.json",
+    "note": "Original file SHA256, Figma imageHash, source dimensions and recorded Figma fills/crops remain original metadata. assets[].localPath now locates archived originals; objectMapping[].localPath selects runtime WebP. Normalized crop matrices and SVG mask paths are unchanged."
+  }
 }
