@@ -272,3 +272,9 @@ Simple experiment cross/dots, section dividers, film perforations, pixel geometr
 **Checks:** all **16 local SVGs** pass XML/viewBox and external-dependency checks and render as nonempty RGBA images. Vocab was visually compared with the Figma screenshot at 679 × 395, including silhouette, holes, color and bounds. Current individual Hero/Footer SVG exports match existing originals. `node scripts/check-assets.mjs` → **Verified: 41 | Pending: 0 | Errors: 0**. Full per-node decisions, layer independence, special transforms, opacity and source checksums are in `VECTOR_ASSET_AUDIT.md` and `VECTOR_ASSET_SOURCE.json`.
 
 **Blockers:** none for vector import. Browser calibration of Figma backdrop blur and the previously recorded Footer raster filters belongs to later layout QA. No Figma edits, layout/animation implementation, dependency installation or legacy changes.
+
+## Stage 0.2G — legacy film video migration (partial)
+
+Imported four of five verified MP4s plus all five original JPEG posters from private `matveyabramov/sp-longread`; exact source/destination Git object SHA values match for each imported file. `case-04.mp4` (Sherlock, 1,075,310 bytes) is pending due to the GitHub 1 MiB content retrieval limit. Detailed mapping, durations for the four retrievable files, output paths and one-command local completion: `docs/VIDEO_ASSETS.md`.
+
+This is a direct copy; no transcoding, filtering or page implementation. Actual playback and visual scene verification remain open until local `ffprobe`/browser QA.
