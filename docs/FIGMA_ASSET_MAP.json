@@ -1,0 +1,376 @@
+{
+  "figmaFileKey": "H4HI00uGY2UOxpcfHogUat",
+  "pageId": "0:1",
+  "notes": "Read-only mapping of 41 unique Figma image hashes. Asset export and local filepath fields remain unset unless explicitly imported. Figma hash is an ID, not a file SHA256.",
+  "sources": [
+    {
+      "hash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
+      "nodeId": "10:473",
+      "layer": "Mosaic",
+      "sourceWidth": 397,
+      "sourceHeight": 322,
+      "occurrences": 16,
+      "localPath": "public/assets/images/mosaic-texture.png"
+    },
+    {
+      "hash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+      "nodeId": "10:1953",
+      "layer": "Subtract",
+      "sourceWidth": 4096,
+      "sourceHeight": 2286,
+      "occurrences": 10,
+      "localPath": null
+    },
+    {
+      "hash": "a29311f1f1d2be133c14d891089c6650c953c32e",
+      "nodeId": "10:1940",
+      "layer": "Subtract",
+      "sourceWidth": 4096,
+      "sourceHeight": 2286,
+      "occurrences": 6,
+      "localPath": null
+    },
+    {
+      "hash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
+      "nodeId": "10:1945",
+      "layer": "Subtract",
+      "sourceWidth": 4096,
+      "sourceHeight": 2286,
+      "occurrences": 6,
+      "localPath": null
+    },
+    {
+      "hash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
+      "nodeId": "10:486",
+      "layer": "Union",
+      "sourceWidth": 1122,
+      "sourceHeight": 1402,
+      "occurrences": 5,
+      "localPath": null
+    },
+    {
+      "hash": "a3b7ac7e799505da584c86b7c42f8da6723eedbc",
+      "nodeId": "10:1591",
+      "layer": "Snowflake_vector_graphic_illustr…_2K_20261023182816 1",
+      "sourceWidth": 1792,
+      "sourceHeight": 2400,
+      "occurrences": 5,
+      "localPath": null
+    },
+    {
+      "hash": "479c47cbc92ef29bc039dc843d2f7103b80d1391",
+      "nodeId": "10:1591",
+      "layer": "Snowflake_vector_graphic_illustr…_2K_20261023182816 1",
+      "sourceWidth": 1792,
+      "sourceHeight": 2400,
+      "occurrences": 5,
+      "localPath": null
+    },
+    {
+      "hash": "c027bce002d6d9ef41326d8cce3bb29eac6f7e22",
+      "nodeId": "10:1937",
+      "layer": "Subtract",
+      "sourceWidth": 4096,
+      "sourceHeight": 2286,
+      "occurrences": 4,
+      "localPath": null
+    },
+    {
+      "hash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
+      "nodeId": "10:1950",
+      "layer": "Subtract",
+      "sourceWidth": 4096,
+      "sourceHeight": 2286,
+      "occurrences": 4,
+      "localPath": null
+    },
+    {
+      "hash": "364855320f08ade1d04f13556e9f3defb0d52bcb",
+      "nodeId": "10:998",
+      "layer": "AU-FG-Texture4-8K",
+      "sourceWidth": 3370,
+      "sourceHeight": 2247,
+      "occurrences": 3,
+      "localPath": null
+    },
+    {
+      "hash": "144a3d120c3632ab1ee03b64c4d9e288a22b8b5a",
+      "nodeId": "10:686",
+      "layer": "image 22",
+      "sourceWidth": 1254,
+      "sourceHeight": 1254,
+      "occurrences": 2,
+      "localPath": null
+    },
+    {
+      "hash": "35938ea29ed9ca1307edc53950674e4c8ebe63d5",
+      "nodeId": "10:1935",
+      "layer": "Untitled-2 2",
+      "sourceWidth": 4096,
+      "sourceHeight": 2286,
+      "occurrences": 2,
+      "localPath": null
+    },
+    {
+      "hash": "528b075a5c6b35f819c787bff455d9dbd2436c83",
+      "nodeId": "10:1936",
+      "layer": "Untitled-2 5",
+      "sourceWidth": 4096,
+      "sourceHeight": 2286,
+      "occurrences": 2,
+      "localPath": null
+    },
+    {
+      "hash": "f896e935d71fd96ad289d93b7e8ce7d177767633",
+      "nodeId": "10:1977",
+      "layer": "Black_bicycle_vector_illustration_2K_20261023164203 1",
+      "sourceWidth": 1792,
+      "sourceHeight": 2400,
+      "occurrences": 2,
+      "localPath": null
+    },
+    {
+      "hash": "062b06beeb916ea58e9db0134f2d6a1ba921958a",
+      "nodeId": "10:1977",
+      "layer": "Black_bicycle_vector_illustration_2K_20261023164203 1",
+      "sourceWidth": 1792,
+      "sourceHeight": 2400,
+      "occurrences": 2,
+      "localPath": null
+    },
+    {
+      "hash": "abafb5e224150ff4820d1e37233090f06e1e9689",
+      "nodeId": "10:1979",
+      "layer": "Isolate_and_extract_only_the_2K_20261023164340 1",
+      "sourceWidth": 1792,
+      "sourceHeight": 2400,
+      "occurrences": 2,
+      "localPath": null
+    },
+    {
+      "hash": "173aa0acd8edfb44bd3dee924ff505e613162e4f",
+      "nodeId": "10:1979",
+      "layer": "Isolate_and_extract_only_the_2K_20261023164340 1",
+      "sourceWidth": 1792,
+      "sourceHeight": 2400,
+      "occurrences": 2,
+      "localPath": null
+    },
+    {
+      "hash": "a9f463489c07be031417200565743725d6a366ac",
+      "nodeId": "10:1558",
+      "layer": "image 50",
+      "sourceWidth": 3072,
+      "sourceHeight": 2048,
+      "occurrences": 2,
+      "localPath": null
+    },
+    {
+      "hash": "3a4dbff1bde5d50b9dc399bc758f670e1fbee740",
+      "nodeId": "10:1558",
+      "layer": "image 50",
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "occurrences": 2,
+      "localPath": null
+    },
+    {
+      "hash": "7af494cdff7ca99afd79ecd61a707cd7452a7435",
+      "nodeId": "10:477",
+      "layer": "image.png_2K_20261011144124 1",
+      "sourceWidth": 1792,
+      "sourceHeight": 2400,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "e652c3e807f5bf1e34657836f066c3b3db9c575c",
+      "nodeId": "10:477",
+      "layer": "image.png_2K_20261011144124 1",
+      "sourceWidth": 1792,
+      "sourceHeight": 2400,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "0e552b102cf5a1f06b9c6d961e804df3ec2e4893",
+      "nodeId": "10:610",
+      "layer": "man eye 1",
+      "sourceWidth": 1698,
+      "sourceHeight": 2122,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "40eccc4ce44ce41732834332152c96e11bfcaabd",
+      "nodeId": "10:864",
+      "layer": "Isolating_male_character_cutout_2K_20261022151813 1",
+      "sourceWidth": 2752,
+      "sourceHeight": 1536,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "a7989beee0d2ab130f2012d50167c4ed4862f4d0",
+      "nodeId": "10:864",
+      "layer": "Isolating_male_character_cutout_2K_20261022151813 1",
+      "sourceWidth": 2752,
+      "sourceHeight": 1536,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "b7c41bc585e7ce56a516ed7cc7c897a8339c874d",
+      "nodeId": "10:875",
+      "layer": "Union",
+      "sourceWidth": 1122,
+      "sourceHeight": 1402,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "5117fe324500367f27967d387a1ca2d13f13b5b0",
+      "nodeId": "10:899",
+      "layer": "Isolate_female_character_from_image_2K_20261022151830 1",
+      "sourceWidth": 2752,
+      "sourceHeight": 1536,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "7a1b43ea9e3c8bbaab739debe43323d87d1c550f",
+      "nodeId": "10:899",
+      "layer": "Isolate_female_character_from_image_2K_20261022151830 1",
+      "sourceWidth": 2752,
+      "sourceHeight": 1536,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "32e0e75e18ed7cf100a240a42dc39d57bdf810d4",
+      "nodeId": "10:920",
+      "layer": "image.png_2K_20261023153634 1",
+      "sourceWidth": 2752,
+      "sourceHeight": 1536,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "4c9b031136e4b4714ea5f8a5806597a98bfa2d41",
+      "nodeId": "10:920",
+      "layer": "image.png_2K_20261023153634 1",
+      "sourceWidth": 2752,
+      "sourceHeight": 1536,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "097adb30ab0ee1356352c1673681a2318d190cad",
+      "nodeId": "10:1012",
+      "layer": "image 51",
+      "sourceWidth": 512,
+      "sourceHeight": 512,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "a3a4fd64ac220162df428e62b8a3cddf755b1fe7",
+      "nodeId": "10:1012",
+      "layer": "image 51",
+      "sourceWidth": 512,
+      "sourceHeight": 512,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "a2527d39f79d61137e7c901c1bd8802fb781330d",
+      "nodeId": "10:1142",
+      "layer": "image 21",
+      "sourceWidth": 1774,
+      "sourceHeight": 887,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "b7079f327ac77217ba31eccfa428d1c9bf81ad54",
+      "nodeId": "10:1143",
+      "layer": "image 30",
+      "sourceWidth": 2172,
+      "sourceHeight": 724,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "bd6b5cacdd1170f72989f6b707a0d3eda9355621",
+      "nodeId": "10:1144",
+      "layer": "image 31",
+      "sourceWidth": 2172,
+      "sourceHeight": 724,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "f4f836747639bb4a43af9d32647b44556507ae72",
+      "nodeId": "10:1146",
+      "layer": "image 29",
+      "sourceWidth": 2172,
+      "sourceHeight": 724,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "c643e024e3da13f99a21672f8a7f13101d606a1c",
+      "nodeId": "10:1162",
+      "layer": "telegram-peer-photo-size-2-5471880767551434404-1-0-0 1",
+      "sourceWidth": 640,
+      "sourceHeight": 640,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "f9cf72afab8959879ed22d0f0b83522d3b03cbec",
+      "nodeId": "10:1162",
+      "layer": "telegram-peer-photo-size-2-5471880767551434404-1-0-0 1",
+      "sourceWidth": 640,
+      "sourceHeight": 640,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "429921b86495a728937851d97677ae3dcf8c9122",
+      "nodeId": "10:2087",
+      "layer": "Graphic_illustration_of_Iron_Throne_2K_20261023183233 1",
+      "sourceWidth": 1792,
+      "sourceHeight": 2400,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "76a447de6eae4a64eca6b2865f63ff9cdb9e566c",
+      "nodeId": "10:2087",
+      "layer": "Graphic_illustration_of_Iron_Throne_2K_20261023183233 1",
+      "sourceWidth": 1792,
+      "sourceHeight": 2400,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "bfdc63b7bc0f0d5abbdf1a00f3ec8121daffde5a",
+      "nodeId": "10:1598",
+      "layer": "Telephone_handset_vector_artwork_2K_20261023160333 1",
+      "sourceWidth": 1792,
+      "sourceHeight": 2400,
+      "occurrences": 1,
+      "localPath": null
+    },
+    {
+      "hash": "be5817d93162046d2b9f3af61b7489db7df1278c",
+      "nodeId": "10:1598",
+      "layer": "Telephone_handset_vector_artwork_2K_20261023160333 1",
+      "sourceWidth": 1792,
+      "sourceHeight": 2400,
+      "occurrences": 1,
+      "localPath": null
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # SUBTALE — execution roadmap (frozen outline)
 
-Work atomically. Current status: Stage 0.1 **structural Figma inventory complete**, Stage 0.2 inventory underway (asset export pending).
+Work atomically. Current status: Stage 0.1 **structural Figma inventory complete**, Stage 0.2 underway: 41 raster sources mapped; mosaic texture and two SVGs transferred; bulk imagery pending..
 
 | Stage | Work | Gate |
 |---|---|---|

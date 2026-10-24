@@ -49,3 +49,17 @@ Read-only Figma export metadata obtained for all **19** top-level frames. Totals
 **Font audit:** Figma file has 229 text nodes; 133 report `hasMissingFont`. Families/styles: TT Bluescreens Trial ExtraBold (128), Bold (5); IBM Plex Mono Medium (92), SemiBold (1); Inter Semi Bold (2); Manrope SemiBold (1). No local Figma variable collections or Figma text styles were returned. Prioritize collecting **font files with correct styles** so rendered geometry can match; no legal/licensing audit is in scope for this educational project.
 
 **Outstanding:** original asset bytes, deduplicated count, intrinsic pixel dimensions, transparency, optimization, reliable font files, and candidate film video verification. Figma MCP provided short-lived export URLs but no original files have been saved in this repository. All images are still pending local download and pixel QA. **Do not mark asset migration complete based on the metadata inventory alone.**
+
+## Stage 0.2 — verified transfers (2026-10-24)
+
+Original bytes acquired via read-only Figma Plugin API, transferred directly into GitHub as Git blobs (not screenshot derivatives):
+
+| Git path | Figma node / hash | Format | Actual image geometry |
+|---|---|---|---|
+| `public/assets/images/mosaic-texture.png` | `10:473`, `6be621144e7ecf462b8e2789f21ec8f7499d659e` | original PNG | 397 × 322; 43,725 bytes |
+| `public/assets/illustrations/subtale-pixel-mark.svg` | `10:612` | exported SVG | 5,018 bytes |
+| `public/assets/illustrations/star-accent.svg` | `10:474` | exported SVG | 300 bytes |
+
+A machine-readable Figma hash-to-layer registry is in `docs/FIGMA_ASSET_MAP.json`, covering **41 unique image hashes** found in the current Figma file. Its `localPath` field is null until the actual source is saved. Run `node scripts/check-assets.mjs` once assets are present locally; it checks files, PNG geometry and duplicate bytes without npm installs. SVGs are not included in the raster hash inventory.
+
+**Not yet done:** export the other 40 raster sources, verify images' real alpha pixels / visual cropping, fetch needed font files, collect movie MP4s. The next import should target the actual Hero art and the individual exploded-animation layers. The secondary texture is a large JPEG (3370 × 2247; 4.24 MB) and should be downloaded locally rather than transmitted in small API chunks.
