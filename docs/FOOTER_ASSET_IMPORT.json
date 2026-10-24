@@ -1,0 +1,2477 @@
+{
+  "stage": "0.2E.2",
+  "date": "2026-10-24",
+  "figmaFileKey": "H4HI00uGY2UOxpcfHogUat",
+  "frame": {
+    "nodeId": "10:1016",
+    "width": 1920,
+    "height": 1334,
+    "clipsContent": true
+  },
+  "newRasterFiles": 6,
+  "newRasterBytes": 8029333,
+  "newSvgFiles": 1,
+  "newSvgBytes": 5019,
+  "newFiles": 7,
+  "newBytes": 8034352,
+  "method": "Original Figma MCP image bytes matched using original byte lengths and FNV-1a; raw thumbnails and transformed renditions excluded from project assets. Separate Footer pixel-mark SVG_STRING export, unchanged. No optimization or re-encoding.",
+  "assets": [
+    {
+      "hash": "a2527d39f79d61137e7c901c1bd8802fb781330d",
+      "bytes": 2326187,
+      "fnv1a": "edd864fc",
+      "format": "png",
+      "width": 1774,
+      "height": 887,
+      "nodeId": "10:1142",
+      "localPath": "public/assets/images/footer-eye.png",
+      "sha256": "dd17ae41f28cf16546e5d4b7c0739be31ec4a55dffab16fc28356d8e8e5011cd",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1774,
+        "height": 887,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 718841,
+        "partialAlphaPixels": 854493,
+        "transparentEdgePixels": 5317,
+        "alphaBounds": [
+          0,
+          9,
+          1768,
+          867
+        ]
+      }
+    },
+    {
+      "hash": "b7079f327ac77217ba31eccfa428d1c9bf81ad54",
+      "bytes": 1888868,
+      "fnv1a": "814da17a",
+      "format": "png",
+      "width": 2172,
+      "height": 724,
+      "nodeId": "10:1143",
+      "localPath": "public/assets/images/footer-unsaid-strip.png",
+      "sha256": "d1e8167844a77ddebfc4fab6e0ac8af63fc7a6632fde774e96597e4ebc48f6a8",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 2172,
+        "height": 724,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 795702,
+        "partialAlphaPixels": 776707,
+        "transparentEdgePixels": 5792,
+        "alphaBounds": [
+          33,
+          9,
+          2150,
+          654
+        ]
+      }
+    },
+    {
+      "hash": "bd6b5cacdd1170f72989f6b707a0d3eda9355621",
+      "bytes": 1448962,
+      "fnv1a": "d56f3fe0",
+      "format": "png",
+      "width": 2172,
+      "height": 724,
+      "nodeId": "10:1144",
+      "localPath": "public/assets/images/footer-between-lines-strip.png",
+      "sha256": "b0c23a108fa55e7073ef5d6fec16d6827c6af2876bad670f1eb05d906d66d103",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 2172,
+        "height": 724,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 910875,
+        "partialAlphaPixels": 661594,
+        "transparentEdgePixels": 5787,
+        "alphaBounds": [
+          31,
+          0,
+          2045,
+          708
+        ]
+      }
+    },
+    {
+      "hash": "f4f836747639bb4a43af9d32647b44556507ae72",
+      "bytes": 2260107,
+      "fnv1a": "9b5400f9",
+      "format": "png",
+      "width": 2172,
+      "height": 724,
+      "nodeId": "10:1146",
+      "localPath": "public/assets/images/footer-mouth.png",
+      "sha256": "17e12f17e03327081c6062708df6d02476cbb27a2c5f127f656751293936000f",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 2172,
+        "height": 724,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 765201,
+        "partialAlphaPixels": 807324,
+        "transparentEdgePixels": 5792,
+        "alphaBounds": [
+          114,
+          10,
+          2130,
+          714
+        ]
+      }
+    },
+    {
+      "hash": "c643e024e3da13f99a21672f8a7f13101d606a1c",
+      "bytes": 27132,
+      "fnv1a": "bd09a218",
+      "format": "jpg",
+      "width": 640,
+      "height": 640,
+      "nodeId": "10:1162",
+      "localPath": "public/assets/images/footer-school-logo-base.jpg",
+      "sha256": "1121633db4797f953059b3cced3d07e77f71f42ed004bf09adf4ee43af4e8d4e",
+      "pixelQA": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "width": 640,
+        "height": 640,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0,
+        "transparentEdgePixels": 0,
+        "alphaBounds": [
+          0,
+          0,
+          640,
+          640
+        ]
+      }
+    },
+    {
+      "hash": "f9cf72afab8959879ed22d0f0b83522d3b03cbec",
+      "bytes": 78077,
+      "fnv1a": "e7bad3bf",
+      "format": "png",
+      "width": 640,
+      "height": 640,
+      "nodeId": "10:1162",
+      "localPath": "public/assets/images/footer-school-logo-cutout.png",
+      "sha256": "59b843dbf21b9cc83efb24e4857ed65eccf54c311a4ea5622175111c78c87303",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 640,
+        "height": 640,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 341883,
+        "partialAlphaPixels": 44241,
+        "transparentEdgePixels": 2560,
+        "alphaBounds": [
+          62,
+          219,
+          578,
+          424
+        ]
+      }
+    }
+  ],
+  "reused": [
+    {
+      "hash": "364855320f08ade1d04f13556e9f3defb0d52bcb",
+      "bytes": 4242403,
+      "fnv1a": "98631a1f",
+      "format": "jpg",
+      "width": 3370,
+      "height": 2247,
+      "localPath": "public/assets/images/au-fg-texture4-8k.jpg",
+      "sha256": "a61f3a7ab37031d8f43f76ee858a9b02387830c3edd500979219cda2b493e892"
+    },
+    {
+      "hash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
+      "bytes": 2380332,
+      "fnv1a": "81c5563f",
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "localPath": "public/assets/images/hero-person-collage.png",
+      "sha256": "afec175f28f8fb67dd524fa1cd3f32b0c0ed2cc6a1b296a563d3e278e2b3d1ae"
+    },
+    {
+      "hash": "144a3d120c3632ab1ee03b64c4d9e288a22b8b5a",
+      "bytes": 1050513,
+      "fnv1a": "521efecd",
+      "format": "png",
+      "width": 1254,
+      "height": 1254,
+      "localPath": "public/assets/images/hero-eye-accent.png",
+      "sha256": "7779b4ce99d1fad272e4d4290af53354d9d7be5173a1f7b028d185b26038fb93"
+    }
+  ],
+  "footerImageHashCount": 9,
+  "images": [
+    {
+      "nodeId": "10:1017",
+      "parentId": "10:1016",
+      "type": "RECTANGLE",
+      "name": "AU-FG-Texture4-8K",
+      "paintPath": [
+        0
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 0.4000000059604645,
+          "blendMode": "NORMAL",
+          "scaleMode": "CROP",
+          "scalingFactor": 0.5,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "364855320f08ade1d04f13556e9f3defb0d52bcb",
+          "localPath": "public/assets/images/au-fg-texture4-8k.jpg"
+        }
+      ],
+      "blendMode": "LIGHTEN",
+      "isMask": false
+    },
+    {
+      "nodeId": "10:1073",
+      "parentId": "10:1019",
+      "type": "BOOLEAN_OPERATION",
+      "name": "Union",
+      "paintPath": [
+        2,
+        16
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 694.287109375,
+      "width": 617.142578125,
+      "height": 385.712890625,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          1106
+        ],
+        [
+          0,
+          1,
+          887.287109375
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          694.287109375
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          },
+          "boundVariables": {}
+        },
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "CROP",
+          "scalingFactor": 0.5,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              0.818902313709259,
+              0,
+              -0.012672530487179756
+            ],
+            [
+              0,
+              0.4095972180366516,
+              0.7499189376831055
+            ]
+          ],
+          "imageHash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
+          "localPath": "public/assets/images/hero-person-collage.png"
+        }
+      ],
+      "blendMode": "PASS_THROUGH",
+      "isMask": false,
+      "booleanOperation": "UNION"
+    },
+    {
+      "nodeId": "10:1142",
+      "parentId": "10:1103",
+      "type": "RECTANGLE",
+      "name": "image 21",
+      "paintPath": [
+        2,
+        17,
+        38
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 396,
+      "y": 201.92578125,
+      "width": 258.57818603515625,
+      "height": 129.28909301757812,
+      "rotation": 15.000000120055855,
+      "frameTransform": [
+        [
+          0.9659258127212524,
+          0.258819043636322,
+          1502
+        ],
+        [
+          -0.258819043636322,
+          0.9659258127212524,
+          394.92578125
+        ]
+      ],
+      "relativeTransform": [
+        [
+          0.9659258127212524,
+          0.258819043636322,
+          396
+        ],
+        [
+          -0.258819043636322,
+          0.9659258127212524,
+          201.92578125
+        ]
+      ],
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "a2527d39f79d61137e7c901c1bd8802fb781330d",
+          "localPath": "public/assets/images/footer-eye.png"
+        }
+      ],
+      "blendMode": "PASS_THROUGH",
+      "isMask": false
+    },
+    {
+      "nodeId": "10:1143",
+      "parentId": "10:1103",
+      "type": "RECTANGLE",
+      "name": "image 30",
+      "paintPath": [
+        2,
+        17,
+        39
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 142,
+      "y": 23,
+      "width": 321,
+      "height": 107,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          1248
+        ],
+        [
+          0,
+          1,
+          216
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          142
+        ],
+        [
+          0,
+          1,
+          23
+        ]
+      ],
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "b7079f327ac77217ba31eccfa428d1c9bf81ad54",
+          "localPath": "public/assets/images/footer-unsaid-strip.png"
+        }
+      ],
+      "blendMode": "PASS_THROUGH",
+      "isMask": false
+    },
+    {
+      "nodeId": "10:1144",
+      "parentId": "10:1019",
+      "type": "RECTANGLE",
+      "name": "image 31",
+      "paintPath": [
+        2,
+        18
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 440,
+      "y": 626.962890625,
+      "width": 336,
+      "height": 112,
+      "rotation": 15.000000120055855,
+      "frameTransform": [
+        [
+          0.9659258127212524,
+          0.258819043636322,
+          1546
+        ],
+        [
+          -0.258819043636322,
+          0.9659258127212524,
+          819.962890625
+        ]
+      ],
+      "relativeTransform": [
+        [
+          0.9659258127212524,
+          0.258819043636322,
+          440
+        ],
+        [
+          -0.258819043636322,
+          0.9659258127212524,
+          626.962890625
+        ]
+      ],
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "bd6b5cacdd1170f72989f6b707a0d3eda9355621",
+          "localPath": "public/assets/images/footer-between-lines-strip.png"
+        }
+      ],
+      "blendMode": "PASS_THROUGH",
+      "isMask": false
+    },
+    {
+      "nodeId": "10:1145",
+      "parentId": "10:1019",
+      "type": "RECTANGLE",
+      "name": "image 22",
+      "paintPath": [
+        2,
+        19
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 438,
+      "y": 62,
+      "width": 337,
+      "height": 337,
+      "rotation": -180,
+      "frameTransform": [
+        [
+          -1,
+          0,
+          1544
+        ],
+        [
+          0,
+          1,
+          255
+        ]
+      ],
+      "relativeTransform": [
+        [
+          -1,
+          0,
+          438
+        ],
+        [
+          0,
+          1,
+          62
+        ]
+      ],
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 1,
+            "contrast": 1,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": -1
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "144a3d120c3632ab1ee03b64c4d9e288a22b8b5a",
+          "localPath": "public/assets/images/hero-eye-accent.png"
+        }
+      ],
+      "blendMode": "PASS_THROUGH",
+      "isMask": false
+    },
+    {
+      "nodeId": "10:1146",
+      "parentId": "10:1016",
+      "type": "RECTANGLE",
+      "name": "image 29",
+      "paintPath": [
+        3
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 1329,
+      "y": 568,
+      "width": 432,
+      "height": 144,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          1329
+        ],
+        [
+          0,
+          1,
+          568
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1329
+        ],
+        [
+          0,
+          1,
+          568
+        ]
+      ],
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "f4f836747639bb4a43af9d32647b44556507ae72",
+          "localPath": "public/assets/images/footer-mouth.png"
+        }
+      ],
+      "blendMode": "PASS_THROUGH",
+      "isMask": false
+    },
+    {
+      "nodeId": "10:1162",
+      "parentId": "10:1016",
+      "type": "RECTANGLE",
+      "name": "telegram-peer-photo-size-2-5471880767551434404-1-0-0 1",
+      "paintPath": [
+        6
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 1679,
+      "y": 1120,
+      "width": 201,
+      "height": 80,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          1679
+        ],
+        [
+          0,
+          1,
+          1120
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1679
+        ],
+        [
+          0,
+          1,
+          1120
+        ]
+      ],
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": false,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "c643e024e3da13f99a21672f8a7f13101d606a1c",
+          "localPath": "public/assets/images/footer-school-logo-base.jpg"
+        },
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "CROP",
+          "scalingFactor": 0.5,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              0.8072287440299988,
+              0,
+              0.09638551622629166
+            ],
+            [
+              0,
+              0.3212851583957672,
+              0.3413654565811157
+            ]
+          ],
+          "imageHash": "f9cf72afab8959879ed22d0f0b83522d3b03cbec",
+          "localPath": "public/assets/images/footer-school-logo-cutout.png"
+        }
+      ],
+      "blendMode": "PASS_THROUGH",
+      "isMask": false
+    }
+  ],
+  "collageGeometry": [
+    {
+      "nodeId": "10:1017",
+      "name": "AU-FG-Texture4-8K",
+      "paintPath": [
+        0
+      ],
+      "parentId": "10:1016",
+      "localOrigin": {
+        "x": 0,
+        "y": 0
+      },
+      "frameOrigin": {
+        "x": 0,
+        "y": 0
+      },
+      "width": 1920,
+      "height": 1080,
+      "figmaRotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "sourcePixelScale": {
+        "x": 0.56973293768546,
+        "y": 0.48064085447263016
+      },
+      "visibleSource": "364855320f08ade1d04f13556e9f3defb0d52bcb",
+      "fullyClipped": false,
+      "clipAncestorIds": [
+        "10:1016"
+      ]
+    },
+    {
+      "nodeId": "10:1073",
+      "name": "Union",
+      "paintPath": [
+        2,
+        16
+      ],
+      "parentId": "10:1019",
+      "localOrigin": {
+        "x": 0,
+        "y": 694.287109375
+      },
+      "frameOrigin": {
+        "x": 1106,
+        "y": 887.287109375
+      },
+      "width": 617.142578125,
+      "height": 385.712890625,
+      "figmaRotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          1106
+        ],
+        [
+          0,
+          1,
+          887.287109375
+        ]
+      ],
+      "sourcePixelScale": {
+        "x": 0.6716771209579067,
+        "y": 0.6716749341886358
+      },
+      "visibleSource": "0cc45628624ce265cbbcc50415fbfab33556f60c",
+      "fullyClipped": true,
+      "clipAncestorIds": [
+        "10:1019",
+        "10:1016"
+      ]
+    },
+    {
+      "nodeId": "10:1142",
+      "name": "image 21",
+      "paintPath": [
+        2,
+        17,
+        38
+      ],
+      "parentId": "10:1103",
+      "localOrigin": {
+        "x": 396,
+        "y": 201.92578125
+      },
+      "frameOrigin": {
+        "x": 1502,
+        "y": 394.92578125
+      },
+      "width": 258.57818603515625,
+      "height": 129.28909301757812,
+      "figmaRotation": 15.000000120055855,
+      "frameTransform": [
+        [
+          0.9659258127212524,
+          0.258819043636322,
+          1502
+        ],
+        [
+          -0.258819043636322,
+          0.9659258127212524,
+          394.92578125
+        ]
+      ],
+      "sourcePixelScale": {
+        "x": 0.14575996958013318,
+        "y": 0.14575996958013318
+      },
+      "visibleSource": "a2527d39f79d61137e7c901c1bd8802fb781330d",
+      "fullyClipped": false,
+      "clipAncestorIds": [
+        "10:1103",
+        "10:1019",
+        "10:1016"
+      ]
+    },
+    {
+      "nodeId": "10:1143",
+      "name": "image 30",
+      "paintPath": [
+        2,
+        17,
+        39
+      ],
+      "parentId": "10:1103",
+      "localOrigin": {
+        "x": 142,
+        "y": 23
+      },
+      "frameOrigin": {
+        "x": 1248,
+        "y": 216
+      },
+      "width": 321,
+      "height": 107,
+      "figmaRotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          1248
+        ],
+        [
+          0,
+          1,
+          216
+        ]
+      ],
+      "sourcePixelScale": {
+        "x": 0.1477900552486188,
+        "y": 0.1477900552486188
+      },
+      "visibleSource": "b7079f327ac77217ba31eccfa428d1c9bf81ad54",
+      "fullyClipped": false,
+      "clipAncestorIds": [
+        "10:1103",
+        "10:1019",
+        "10:1016"
+      ]
+    },
+    {
+      "nodeId": "10:1144",
+      "name": "image 31",
+      "paintPath": [
+        2,
+        18
+      ],
+      "parentId": "10:1019",
+      "localOrigin": {
+        "x": 440,
+        "y": 626.962890625
+      },
+      "frameOrigin": {
+        "x": 1546,
+        "y": 819.962890625
+      },
+      "width": 336,
+      "height": 112,
+      "figmaRotation": 15.000000120055855,
+      "frameTransform": [
+        [
+          0.9659258127212524,
+          0.258819043636322,
+          1546
+        ],
+        [
+          -0.258819043636322,
+          0.9659258127212524,
+          819.962890625
+        ]
+      ],
+      "sourcePixelScale": {
+        "x": 0.15469613259668508,
+        "y": 0.15469613259668508
+      },
+      "visibleSource": "bd6b5cacdd1170f72989f6b707a0d3eda9355621",
+      "fullyClipped": false,
+      "clipAncestorIds": [
+        "10:1019",
+        "10:1016"
+      ]
+    },
+    {
+      "nodeId": "10:1145",
+      "name": "image 22",
+      "paintPath": [
+        2,
+        19
+      ],
+      "parentId": "10:1019",
+      "localOrigin": {
+        "x": 438,
+        "y": 62
+      },
+      "frameOrigin": {
+        "x": 1544,
+        "y": 255
+      },
+      "width": 337,
+      "height": 337,
+      "figmaRotation": -180,
+      "frameTransform": [
+        [
+          -1,
+          0,
+          1544
+        ],
+        [
+          0,
+          1,
+          255
+        ]
+      ],
+      "sourcePixelScale": {
+        "x": 0.2687400318979266,
+        "y": 0.2687400318979266
+      },
+      "visibleSource": "144a3d120c3632ab1ee03b64c4d9e288a22b8b5a",
+      "fullyClipped": false,
+      "clipAncestorIds": [
+        "10:1019",
+        "10:1016"
+      ]
+    },
+    {
+      "nodeId": "10:1146",
+      "name": "image 29",
+      "paintPath": [
+        3
+      ],
+      "parentId": "10:1016",
+      "localOrigin": {
+        "x": 1329,
+        "y": 568
+      },
+      "frameOrigin": {
+        "x": 1329,
+        "y": 568
+      },
+      "width": 432,
+      "height": 144,
+      "figmaRotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          1329
+        ],
+        [
+          0,
+          1,
+          568
+        ]
+      ],
+      "sourcePixelScale": {
+        "x": 0.19889502762430938,
+        "y": 0.19889502762430938
+      },
+      "visibleSource": "f4f836747639bb4a43af9d32647b44556507ae72",
+      "fullyClipped": false,
+      "clipAncestorIds": [
+        "10:1016"
+      ]
+    },
+    {
+      "nodeId": "10:1162",
+      "name": "telegram-peer-photo-size-2-5471880767551434404-1-0-0 1",
+      "paintPath": [
+        6
+      ],
+      "parentId": "10:1016",
+      "localOrigin": {
+        "x": 1679,
+        "y": 1120
+      },
+      "frameOrigin": {
+        "x": 1679,
+        "y": 1120
+      },
+      "width": 201,
+      "height": 80,
+      "figmaRotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          1679
+        ],
+        [
+          0,
+          1,
+          1120
+        ]
+      ],
+      "sourcePixelScale": {
+        "x": 0.3890625827223127,
+        "y": 0.3890624784043769
+      },
+      "visibleSource": "f9cf72afab8959879ed22d0f0b83522d3b03cbec",
+      "fullyClipped": false,
+      "clipAncestorIds": [
+        "10:1016"
+      ]
+    }
+  ],
+  "containers": [
+    {
+      "nodeId": "10:1016",
+      "parentId": "0:1",
+      "type": "FRAME",
+      "name": "Footer",
+      "paintPath": [],
+      "visible": true,
+      "opacity": 1,
+      "x": 4274,
+      "y": 18743,
+      "width": 1920,
+      "height": 1334,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          4274
+        ],
+        [
+          0,
+          1,
+          18743
+        ]
+      ],
+      "clipsContent": true
+    },
+    {
+      "nodeId": "10:1019",
+      "parentId": "10:1016",
+      "type": "FRAME",
+      "name": "Frame 20",
+      "paintPath": [
+        2
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 1106,
+      "y": 193,
+      "width": 771,
+      "height": 694,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          1106
+        ],
+        [
+          0,
+          1,
+          193
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1106
+        ],
+        [
+          0,
+          1,
+          193
+        ]
+      ],
+      "clipsContent": true
+    },
+    {
+      "nodeId": "10:1020",
+      "parentId": "10:1019",
+      "type": "FRAME",
+      "name": "Frame 23",
+      "paintPath": [
+        2,
+        0
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 309,
+      "width": 771,
+      "height": 154,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          1106
+        ],
+        [
+          0,
+          1,
+          502
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          309
+        ]
+      ],
+      "clipsContent": true
+    },
+    {
+      "nodeId": "10:1073",
+      "parentId": "10:1019",
+      "type": "BOOLEAN_OPERATION",
+      "name": "Union",
+      "paintPath": [
+        2,
+        16
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 694.287109375,
+      "width": 617.142578125,
+      "height": 385.712890625,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          1106
+        ],
+        [
+          0,
+          1,
+          887.287109375
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          694.287109375
+        ]
+      ],
+      "clipsContent": false,
+      "booleanOperation": "UNION"
+    },
+    {
+      "nodeId": "10:1103",
+      "parentId": "10:1019",
+      "type": "FRAME",
+      "name": "Frame 22",
+      "paintPath": [
+        2,
+        17
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 0,
+      "width": 771,
+      "height": 309,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          1106
+        ],
+        [
+          0,
+          1,
+          193
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "clipsContent": true
+    },
+    {
+      "nodeId": "10:1147",
+      "parentId": "10:1016",
+      "type": "FRAME",
+      "name": "Frame 15",
+      "paintPath": [
+        4
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 30,
+      "y": 818,
+      "width": 832,
+      "height": 232,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          818
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          818
+        ]
+      ],
+      "clipsContent": false
+    },
+    {
+      "nodeId": "10:1149",
+      "parentId": "10:1016",
+      "type": "FRAME",
+      "name": "Frame 65",
+      "paintPath": [
+        5
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 1080,
+      "width": 1920,
+      "height": 254,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1080
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1080
+        ]
+      ],
+      "clipsContent": true
+    },
+    {
+      "nodeId": "10:2092",
+      "parentId": "10:1149",
+      "type": "FRAME",
+      "name": "Frame 11",
+      "paintPath": [
+        5,
+        0
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 40,
+      "y": 40,
+      "width": 160,
+      "height": 66.66667175292969,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          40
+        ],
+        [
+          0,
+          1,
+          1120
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          40
+        ],
+        [
+          0,
+          1,
+          40
+        ]
+      ],
+      "clipsContent": false
+    },
+    {
+      "nodeId": "10:2093",
+      "parentId": "10:2092",
+      "type": "GROUP",
+      "name": "Group 10",
+      "paintPath": [
+        5,
+        0,
+        0
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": -0.6495208740234375,
+      "width": 45.2786865234375,
+      "height": 67.31619262695312,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          40
+        ],
+        [
+          0,
+          1,
+          1119.349609375
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -0.6495208740234375
+        ]
+      ],
+      "clipsContent": false
+    },
+    {
+      "nodeId": "10:2156",
+      "parentId": "10:2092",
+      "type": "FRAME",
+      "name": "Frame 77",
+      "paintPath": [
+        5,
+        0,
+        1
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 56.29256057739258,
+      "y": 15.609073638916016,
+      "width": 104,
+      "height": 51.05759811401367,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          96.29248046875
+        ],
+        [
+          0,
+          1,
+          1135.609375
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          56.29256057739258
+        ],
+        [
+          0,
+          1,
+          15.609073638916016
+        ]
+      ],
+      "clipsContent": false
+    },
+    {
+      "nodeId": "10:1152",
+      "parentId": "10:1149",
+      "type": "FRAME",
+      "name": "Frame 71",
+      "paintPath": [
+        5,
+        1
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 40,
+      "y": 145,
+      "width": 790,
+      "height": 69,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          40
+        ],
+        [
+          0,
+          1,
+          1225
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          40
+        ],
+        [
+          0,
+          1,
+          145
+        ]
+      ],
+      "clipsContent": false
+    },
+    {
+      "nodeId": "10:1153",
+      "parentId": "10:1152",
+      "type": "FRAME",
+      "name": "Frame 68",
+      "paintPath": [
+        5,
+        1,
+        0
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 0,
+      "width": 233,
+      "height": 69,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          40
+        ],
+        [
+          0,
+          1,
+          1225
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "clipsContent": false
+    },
+    {
+      "nodeId": "10:1156",
+      "parentId": "10:1152",
+      "type": "FRAME",
+      "name": "Frame 69",
+      "paintPath": [
+        5,
+        1,
+        1
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 333,
+      "y": 0,
+      "width": 224,
+      "height": 69,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          373
+        ],
+        [
+          0,
+          1,
+          1225
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          333
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "clipsContent": false
+    },
+    {
+      "nodeId": "10:1159",
+      "parentId": "10:1152",
+      "type": "FRAME",
+      "name": "Frame 70",
+      "paintPath": [
+        5,
+        1,
+        2
+      ],
+      "visible": true,
+      "opacity": 1,
+      "x": 657,
+      "y": 0,
+      "width": 133,
+      "height": 69,
+      "rotation": 0,
+      "frameTransform": [
+        [
+          1,
+          0,
+          697
+        ],
+        [
+          0,
+          1,
+          1225
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          657
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "clipsContent": false
+    }
+  ],
+  "pixelColumns": [
+    "nodeId",
+    "parentId",
+    "paintPath",
+    "x",
+    "y",
+    "width",
+    "height",
+    "rotation",
+    "frameX",
+    "frameY",
+    "cornerRadius",
+    "fills[type,visible,opacity,rgb]",
+    "strokeCount",
+    "effectCount",
+    "isMask"
+  ],
+  "pixels": [
+    ["10:1021","10:1020",[2,0,0],154.2861328125,-309,77.14286041259766,77.14286041259766,0,1260.2861328125,193,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1022","10:1020",[2,0,1],154.2861328125,-231.857421875,77.14286041259766,77.14286041259766,0,1260.2861328125,270.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1023","10:1020",[2,0,2],154.2861328125,-154.71484375,77.14286041259766,77.14286041259766,0,1260.2861328125,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1024","10:1020",[2,0,3],154.2861328125,-77.572265625,77.14286041259766,77.14286041259766,0,1260.2861328125,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1025","10:1020",[2,0,4],154.2861328125,76.71484375,77.14286041259766,77.14286041259766,0,1260.2861328125,578.71484375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1026","10:1020",[2,0,5],77.142578125,-154.71484375,77.14286041259766,77.14286041259766,0,1183.142578125,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1027","10:1020",[2,0,6],0,-77.572265625,77.14286041259766,77.14286041259766,0,1106,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1028","10:1020",[2,0,7],231.4287109375,-231.857421875,77.14286041259766,77.14286041259766,0,1337.4287109375,270.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1029","10:1020",[2,0,8],231.4287109375,-154.71484375,77.14286041259766,77.14286041259766,0,1337.4287109375,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1030","10:1020",[2,0,9],231.4287109375,-77.572265625,77.14286041259766,77.14286041259766,0,1337.4287109375,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1031","10:1020",[2,0,10],231.4287109375,-0.427734375,77.14286041259766,77.14286041259766,0,1337.4287109375,501.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1032","10:1020",[2,0,11],308.5712890625,-231.857421875,77.14286041259766,77.14286041259766,0,1414.5712890625,270.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1033","10:1020",[2,0,12],308.5712890625,-154.71484375,77.14286041259766,77.14286041259766,0,1414.5712890625,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1034","10:1020",[2,0,13],308.5712890625,-77.572265625,77.14286041259766,77.14286041259766,0,1414.5712890625,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1035","10:1020",[2,0,14],308.5712890625,76.71484375,77.14286041259766,77.14286041259766,0,1414.5712890625,578.71484375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1036","10:1020",[2,0,15],308.5712890625,-0.427734375,77.14286041259766,77.14286041259766,0,1414.5712890625,501.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1037","10:1020",[2,0,16],385.71484375,-231.857421875,77.14286041259766,77.14286041259766,0,1491.71484375,270.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1038","10:1020",[2,0,17],385.71484375,-154.71484375,77.14286041259766,77.14286041259766,0,1491.71484375,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1039","10:1020",[2,0,18],385.71484375,-77.572265625,77.14286041259766,77.14286041259766,0,1491.71484375,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1040","10:1020",[2,0,19],385.71484375,76.71484375,77.14286041259766,77.14286041259766,0,1491.71484375,578.71484375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1041","10:1020",[2,0,20],385.71484375,-0.427734375,77.14286041259766,77.14286041259766,0,1491.71484375,501.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1042","10:1020",[2,0,21],462.857421875,-231.857421875,77.14286041259766,77.14286041259766,0,1568.857421875,270.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1043","10:1020",[2,0,22],540.0000610351562,-309,77.14286041259766,77.14286041259766,0,1646,193,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1044","10:1020",[2,0,23],462.857421875,-154.71484375,77.14286041259766,77.14286041259766,0,1568.857421875,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1045","10:1020",[2,0,24],462.857421875,-77.572265625,77.14286041259766,77.14286041259766,0,1568.857421875,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1046","10:1020",[2,0,25],462.857421875,76.71484375,77.14286041259766,77.14286041259766,0,1568.857421875,578.71484375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1047","10:1020",[2,0,26],462.857421875,-0.427734375,77.14286041259766,77.14286041259766,0,1568.857421875,501.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1048","10:1020",[2,0,27],540,-154.71484375,77.14286041259766,77.14286041259766,0,1646,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1049","10:1020",[2,0,28],540,-77.572265625,77.14286041259766,77.14286041259766,0,1646,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1050","10:1020",[2,0,29],540,76.71484375,77.14286041259766,77.14286041259766,0,1646,578.71484375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1051","10:1020",[2,0,30],540,-0.427734375,77.14286041259766,77.14286041259766,0,1646,501.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1052","10:1020",[2,0,31],617.142578125,-154.71484375,77.14286041259766,77.14286041259766,0,1723.142578125,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1053","10:1020",[2,0,32],617.142578125,-77.572265625,77.14286041259766,77.14286041259766,0,1723.142578125,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1054","10:1020",[2,0,33],617.142578125,76.71484375,77.14286041259766,77.14286041259766,0,1723.142578125,578.71484375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1055","10:1020",[2,0,34],694.28515625,-77.572265625,77.14286041259766,77.14286041259766,0,1800.28515625,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1056","10:1020",[2,0,35],694.28515625,76.71484375,77.14286041259766,77.14286041259766,0,1800.28515625,578.71484375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1057","10:1020",[2,0,36],385.71484375,-309,77.14286041259766,77.14286041259766,0,1491.71484375,193,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1058","10:1019",[2,1],231,462.857421875,77.14286041259766,77.14286041259766,0,1337,655.857421875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1059","10:1019",[2,2],308.142578125,462.857421875,77.14286041259766,77.14286041259766,0,1414.142578125,655.857421875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1060","10:1019",[2,3],308.1427917480469,540,77.14286041259766,77.14286041259766,0,1414.142578125,733,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1061","10:1019",[2,4],308.142578125,617.142578125,77.14286041259766,77.14286041259766,0,1414.142578125,810.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1062","10:1019",[2,5],385.28515625,462.857421875,77.14286041259766,77.14286041259766,0,1491.28515625,655.857421875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1063","10:1019",[2,6],385.28515625,540,77.14286041259766,77.14286041259766,0,1491.28515625,733,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1064","10:1019",[2,7],385.28515625,617.142578125,77.14286041259766,77.14286041259766,0,1491.28515625,810.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1065","10:1019",[2,8],462.4287109375,462.857421875,77.14286041259766,77.14286041259766,0,1568.4287109375,655.857421875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1066","10:1019",[2,9],462.4284973144531,540,77.14286041259766,77.14286041259766,0,1568.4287109375,733,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1067","10:1019",[2,10],462.4287109375,617.142578125,77.14286041259766,77.14286041259766,0,1568.4287109375,810.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1068","10:1019",[2,11],539.5712890625,462.857421875,77.14286041259766,77.14286041259766,0,1645.5712890625,655.857421875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1069","10:1019",[2,12],539.5713500976562,540,77.14286041259766,77.14286041259766,0,1645.5712890625,733,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1070","10:1019",[2,13],539.5712890625,617.142578125,77.14286041259766,77.14286041259766,0,1645.5712890625,810.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1071","10:1019",[2,14],616.7138671875,540,77.14286041259766,77.14286041259766,0,1722.7138671875,733,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1072","10:1019",[2,15],616.7138671875,617.142578125,77.14286041259766,77.14286041259766,0,1722.7138671875,810.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1074","10:1073",[2,16,0],77.142578125,694.287109375,77.14286041259766,77.14286041259766,0,1183.142578125,887.287109375,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1075","10:1073",[2,16,1],308.5712890625,694.287109375,77.14286041259766,77.14286041259766,0,1414.5712890625,887.287109375,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1076","10:1073",[2,16,2],308.5715026855469,771.4295501708984,77.14286041259766,77.14286041259766,0,1414.5712890625,964.4296875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1077","10:1073",[2,16,3],77.142578125,848.572265625,77.14286041259766,77.14286041259766,0,1183.142578125,1041.572265625,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1078","10:1073",[2,16,4],77.142578125,925.71484375,77.14286041259766,77.14286041259766,0,1183.142578125,1118.71484375,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1079","10:1073",[2,16,5],77.142578125,1002.857421875,77.14286041259766,77.14286041259766,0,1183.142578125,1195.857421875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1080","10:1073",[2,16,6],308.5712890625,925.71484375,77.14286041259766,77.14286041259766,0,1414.5712890625,1118.71484375,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1081","10:1073",[2,16,7],308.5712890625,1002.857421875,77.14286041259766,77.14286041259766,0,1414.5712890625,1195.857421875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1082","10:1073",[2,16,8],154.2861328125,694.287109375,77.14286041259766,77.14286041259766,0,1260.2861328125,887.287109375,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1083","10:1073",[2,16,9],154.2861328125,771.4296875,77.14286041259766,77.14286041259766,0,1260.2861328125,964.4296875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1084","10:1073",[2,16,10],385.71484375,694.287109375,77.14286041259766,77.14286041259766,0,1491.71484375,887.287109375,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1085","10:1073",[2,16,11],385.71484375,771.4296875,77.14286041259766,77.14286041259766,0,1491.71484375,964.4296875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1086","10:1073",[2,16,12],154.2861328125,848.572265625,77.14286041259766,77.14286041259766,0,1260.2861328125,1041.572265625,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1087","10:1073",[2,16,13],154.2861328125,925.71484375,77.14286041259766,77.14286041259766,0,1260.2861328125,1118.71484375,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1088","10:1073",[2,16,14],154.2861328125,1002.857421875,77.14286041259766,77.14286041259766,0,1260.2861328125,1195.857421875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1089","10:1073",[2,16,15],385.71484375,925.71484375,77.14286041259766,77.14286041259766,0,1491.71484375,1118.71484375,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1090","10:1073",[2,16,16],385.71484375,1002.857421875,77.14286041259766,77.14286041259766,0,1491.71484375,1195.857421875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1091","10:1073",[2,16,17],231.4287109375,694.287109375,77.14286041259766,77.14286041259766,0,1337.4287109375,887.287109375,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1092","10:1073",[2,16,18],231.4286346435547,771.4295501708984,77.14286041259766,77.14286041259766,0,1337.4287109375,964.4296875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1093","10:1073",[2,16,19],0.00006975446740398183,848.5724029541016,77.14286041259766,77.14286041259766,0,1106,1041.572265625,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1094","10:1073",[2,16,20],462.857421875,694.287109375,77.14286041259766,77.14286041259766,0,1568.857421875,887.287109375,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1095","10:1073",[2,16,21],462.8572082519531,771.4295501708984,77.14286041259766,77.14286041259766,0,1568.857421875,964.4296875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1096","10:1073",[2,16,22],462.8572082519531,848.5724029541016,77.14286041259766,77.14286041259766,0,1568.857421875,1041.572265625,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1097","10:1073",[2,16,23],540.0000610351562,771.4295501708984,77.14286041259766,77.14286041259766,0,1646,964.4296875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1098","10:1073",[2,16,24],231.4286346435547,848.5724029541016,77.14286041259766,77.14286041259766,0,1337.4287109375,1041.572265625,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1099","10:1073",[2,16,25],231.4287109375,925.71484375,77.14286041259766,77.14286041259766,0,1337.4287109375,1118.71484375,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1100","10:1073",[2,16,26],231.4287109375,1002.857421875,77.14286041259766,77.14286041259766,0,1337.4287109375,1195.857421875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1101","10:1073",[2,16,27],462.857421875,925.71484375,77.14286041259766,77.14286041259766,0,1568.857421875,1118.71484375,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1102","10:1073",[2,16,28],462.857421875,1002.857421875,77.14286041259766,77.14286041259766,0,1568.857421875,1195.857421875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1104","10:1103",[2,17,0],154.2861328125,0,77.14286041259766,77.14286041259766,0,1260.2861328125,193,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1105","10:1103",[2,17,1],154.2861328125,77.142578125,77.14286041259766,77.14286041259766,0,1260.2861328125,270.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1106","10:1103",[2,17,2],154.2861328125,154.28515625,77.14286041259766,77.14286041259766,0,1260.2861328125,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1107","10:1103",[2,17,3],154.2861328125,231.427734375,77.14286041259766,77.14286041259766,0,1260.2861328125,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1108","10:1103",[2,17,4],154.2861328125,385.71484375,77.14286041259766,77.14286041259766,0,1260.2861328125,578.71484375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1109","10:1103",[2,17,5],77.142578125,154.28515625,77.14286041259766,77.14286041259766,0,1183.142578125,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1110","10:1103",[2,17,6],0,231.427734375,77.14286041259766,77.14286041259766,0,1106,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1111","10:1103",[2,17,7],231.4287109375,77.142578125,77.14286041259766,77.14286041259766,0,1337.4287109375,270.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1112","10:1103",[2,17,8],231.4287109375,154.28515625,77.14286041259766,77.14286041259766,0,1337.4287109375,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1113","10:1103",[2,17,9],231.4287109375,231.427734375,77.14286041259766,77.14286041259766,0,1337.4287109375,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1114","10:1103",[2,17,10],231.4287109375,308.572265625,77.14286041259766,77.14286041259766,0,1337.4287109375,501.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1115","10:1103",[2,17,11],308.5712890625,77.142578125,77.14286041259766,77.14286041259766,0,1414.5712890625,270.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1116","10:1103",[2,17,12],308.5712890625,154.28515625,77.14286041259766,77.14286041259766,0,1414.5712890625,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1117","10:1103",[2,17,13],308.5712890625,231.427734375,77.14286041259766,77.14286041259766,0,1414.5712890625,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1118","10:1103",[2,17,14],309,231,77.14286041259766,77.14286041259766,0,1415,424,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1119","10:1103",[2,17,15],308.5712890625,385.71484375,77.14286041259766,77.14286041259766,0,1414.5712890625,578.71484375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1120","10:1103",[2,17,16],308.5712890625,308.572265625,77.14286041259766,77.14286041259766,0,1414.5712890625,501.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1121","10:1103",[2,17,17],385.71484375,77.142578125,77.14286041259766,77.14286041259766,0,1491.71484375,270.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1122","10:1103",[2,17,18],385.71484375,154.28515625,77.14286041259766,77.14286041259766,0,1491.71484375,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1123","10:1103",[2,17,19],385.71484375,231.427734375,77.14286041259766,77.14286041259766,0,1491.71484375,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1124","10:1103",[2,17,20],385.71484375,385.71484375,77.14286041259766,77.14286041259766,0,1491.71484375,578.71484375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1125","10:1103",[2,17,21],385.71484375,308.572265625,77.14286041259766,77.14286041259766,0,1491.71484375,501.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1126","10:1103",[2,17,22],462.857421875,77.142578125,77.14286041259766,77.14286041259766,0,1568.857421875,270.142578125,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1127","10:1103",[2,17,23],540.0000610351562,3.637978807091713e-12,77.14286041259766,77.14286041259766,0,1646,193,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1128","10:1103",[2,17,24],462.857421875,154.28515625,77.14286041259766,77.14286041259766,0,1568.857421875,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1129","10:1103",[2,17,25],462.857421875,231.427734375,77.14286041259766,77.14286041259766,0,1568.857421875,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1130","10:1103",[2,17,26],462.857421875,385.71484375,77.14286041259766,77.14286041259766,0,1568.857421875,578.71484375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1131","10:1103",[2,17,27],462.857421875,308.572265625,77.14286041259766,77.14286041259766,0,1568.857421875,501.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1132","10:1103",[2,17,28],540,154.28515625,77.14286041259766,77.14286041259766,0,1646,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1133","10:1103",[2,17,29],540,231.427734375,77.14286041259766,77.14286041259766,0,1646,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1134","10:1103",[2,17,30],540,385.71484375,77.14286041259766,77.14286041259766,0,1646,578.71484375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1135","10:1103",[2,17,31],540,308.572265625,77.14286041259766,77.14286041259766,0,1646,501.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1136","10:1103",[2,17,32],617.142578125,154.28515625,77.14286041259766,77.14286041259766,0,1723.142578125,347.28515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1137","10:1103",[2,17,33],617.142578125,231.427734375,77.14286041259766,77.14286041259766,0,1723.142578125,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1138","10:1103",[2,17,34],617.142578125,385.71484375,77.14286041259766,77.14286041259766,0,1723.142578125,578.71484375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1139","10:1103",[2,17,35],694.28515625,231.427734375,77.14286041259766,77.14286041259766,0,1800.28515625,424.427734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1140","10:1103",[2,17,36],694.28515625,385.71484375,77.14286041259766,77.14286041259766,0,1800.28515625,578.71484375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:1141","10:1103",[2,17,37],385.71484375,0,77.14286041259766,77.14286041259766,0,1491.71484375,193,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2094","10:2093",[5,0,0,0],22.639842987060547,3.7778234481811523,7.546543121337891,7.546543121337891,0,62.6396484375,1123.77734375,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2095","10:2093",[5,0,0,1],25.155467987060547,11.324698448181152,5.031028747558594,5.031028747558594,0,65.1552734375,1131.32421875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2096","10:2093",[5,0,0,2],30.185155868530273,11.928604125976562,6.288803577423096,6.288803577423096,0,70.18505859375,1131.927734375,0,[["SOLID",true,1,[1,1,1]]],0,0,false],
+    ["10:2097","10:2093",[5,0,0,3],36.474220275878906,5.638760566711426,6.288803577423096,6.288803577423096,0,76.47412109375,1125.638671875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2098","10:2093",[5,0,0,4],30.185155868530273,-0.6495204925595317,6.288803577423096,6.288803577423096,0,70.18505859375,1119.349609375,0,[["SOLID",true,1,[1,1,1]]],0,0,false],
+    ["10:2099","10:2093",[5,0,0,5],20.124217987060547,11.324698448181152,5.031028747558594,5.031028747558594,0,60.1240234375,1131.32421875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2100","10:2093",[5,0,0,6],20.124217987060547,6.293448448181152,5.031028747558594,5.031028747558594,0,60.1240234375,1126.29296875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2101","10:2093",[5,0,0,7],15.092968940734863,6.293448448181152,5.031028747558594,5.031028747558594,0,55.0927734375,1126.29296875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2102","10:2093",[5,0,0,8],15.092968940734863,11.324698448181152,5.031028747558594,5.031028747558594,0,55.0927734375,1131.32421875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2103","10:2093",[5,0,0,9],10.0625,6.293448448181152,5.031028747558594,5.031028747558594,0,50.0625,1126.29296875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2104","10:2093",[5,0,0,10],10.0625,11.324698448181152,5.031028747558594,5.031028747558594,0,50.0625,1131.32421875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2105","10:2093",[5,0,0,11],5.03125,11.324698448181152,5.031028747558594,5.031028747558594,0,45.03125,1131.32421875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2106","10:2093",[5,0,0,12],5.03125,16.355947494506836,5.031028747558594,5.031028747558594,0,45.03125,1136.35546875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2107","10:2093",[5,0,0,13],5.03125,21.386417388916016,5.031028747558594,5.031028747558594,0,45.03125,1141.384765625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2108","10:2093",[5,0,0,14],5.03125,26.416885375976562,5.031028747558594,5.031028747558594,0,45.03125,1146.416015625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2109","10:2093",[5,0,0,15],10.0625,16.355947494506836,5.031028747558594,5.031028747558594,0,50.0625,1136.35546875,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2110","10:2093",[5,0,0,16],10.0625,21.386417388916016,5.031028747558594,5.031028747558594,0,50.0625,1141.384765625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2111","10:2093",[5,0,0,17],10.0625,26.416885375976562,5.031028747558594,5.031028747558594,0,50.0625,1146.416015625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2112","10:2093",[5,0,0,18],10.0625,31.448135375976562,5.031028747558594,5.031028747558594,0,50.0625,1151.447265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2113","10:2093",[5,0,0,19],15.092968940734863,26.416885375976562,5.031028747558594,5.031028747558594,0,55.0927734375,1146.416015625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2114","10:2093",[5,0,0,20],15.092968940734863,31.448135375976562,5.031028747558594,5.031028747558594,0,55.0927734375,1151.447265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2115","10:2093",[5,0,0,21],20.124217987060547,26.416885375976562,5.031028747558594,5.031028747558594,0,60.1240234375,1146.416015625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2116","10:2093",[5,0,0,22],20.124217987060547,31.448135375976562,5.031028747558594,5.031028747558594,0,60.1240234375,1151.447265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2117","10:2093",[5,0,0,23],25.155467987060547,26.416885375976562,5.031028747558594,5.031028747558594,0,65.1552734375,1146.416015625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2118","10:2093",[5,0,0,24],25.155467987060547,31.448135375976562,5.031028747558594,5.031028747558594,0,65.1552734375,1151.447265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2119","10:2093",[5,0,0,25],25.155467987060547,36.47938537597656,5.031028747558594,5.031028747558594,0,65.1552734375,1156.478515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2120","10:2093",[5,0,0,26],30.185155868530273,31.448135375976562,5.031028747558594,5.031028747558594,0,70.18505859375,1151.447265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2121","10:2093",[5,0,0,27],30.185155868530273,36.47938537597656,5.031028747558594,5.031028747558594,0,70.18505859375,1156.478515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2122","10:2093",[5,0,0,28],30.185155868530273,41.51063537597656,5.031028747558594,5.031028747558594,0,70.18505859375,1161.509765625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2123","10:2093",[5,0,0,29],30.185155868530273,46.54188537597656,5.031028747558594,5.031028747558594,0,70.18505859375,1166.541015625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2124","10:2093",[5,0,0,30],30.185155868530273,51.572357177734375,5.031028747558594,5.031028747558594,0,70.18505859375,1171.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2125","10:2093",[5,0,0,31],35.21796798706055,51.572357177734375,5.031028747558594,5.031028747558594,0,75.2177734375,1171.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2126","10:2093",[5,0,0,32],25.155467987060547,51.572357177734375,5.031028747558594,5.031028747558594,0,65.1552734375,1171.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2127","10:2093",[5,0,0,33],25.155467987060547,56.603607177734375,5.031028747558594,5.031028747558594,0,65.1552734375,1176.603515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2128","10:2093",[5,0,0,34],30.185155868530273,56.603607177734375,5.031028747558594,5.031028747558594,0,70.18505859375,1176.603515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2129","10:2093",[5,0,0,35],35.21796798706055,56.603607177734375,5.031028747558594,5.031028747558594,0,75.2177734375,1176.603515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2130","10:2093",[5,0,0,36],20.124217987060547,51.572357177734375,5.031028747558594,5.031028747558594,0,60.1240234375,1171.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2131","10:2093",[5,0,0,37],20.124217987060547,56.603607177734375,5.031028747558594,5.031028747558594,0,60.1240234375,1176.603515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2132","10:2093",[5,0,0,38],15.092968940734863,51.572357177734375,5.031028747558594,5.031028747558594,0,55.0927734375,1171.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2133","10:2093",[5,0,0,39],15.092968940734863,56.603607177734375,5.031028747558594,5.031028747558594,0,55.0927734375,1176.603515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2134","10:2093",[5,0,0,40],10.0625,56.603607177734375,5.031028747558594,5.031028747558594,0,50.0625,1176.603515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2135","10:2093",[5,0,0,41],10.0625,59.119232177734375,27.670658111572266,5.031028747558594,0,50.0625,1179.119140625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2136","10:2093",[5,0,0,42],10.0625,61.63563537597656,10.062057495117188,5.031028747558594,0,50.0625,1181.634765625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2137","10:2093",[5,0,0,43],1.8189894035458565e-12,56.603607177734375,5.031028747558594,5.031028747558594,0,40,1176.603515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2138","10:2093",[5,0,0,44],5.03125,51.572357177734375,5.031028747558594,5.031028747558594,0,45.03125,1171.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2139","10:2093",[5,0,0,45],5.03125,61.63563537597656,5.031028747558594,5.031028747558594,0,45.03125,1181.634765625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2140","10:2093",[5,0,0,46],10.0625,46.54188537597656,5.031028747558594,5.031028747558594,0,50.0625,1166.541015625,0,[["SOLID",true,1,[1,1,1]]],0,0,false],
+    ["10:2141","10:2093",[5,0,0,47],5.03125,41.51063537597656,5.031028747558594,5.031028747558594,0,45.03125,1161.509765625,0,[["SOLID",true,1,[1,1,1]]],0,0,false],
+    ["10:2142","10:2093",[5,0,0,48],35.21796798706055,36.47938537597656,5.031028747558594,5.031028747558594,0,75.2177734375,1156.478515625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2143","10:2093",[5,0,0,49],35.21796798706055,41.51063537597656,5.031028747558594,5.031028747558594,0,75.2177734375,1161.509765625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2144","10:2093",[5,0,0,50],40.247657775878906,41.51063537597656,5.031028747558594,5.031028747558594,0,80.24755859375,1161.509765625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2145","10:2093",[5,0,0,51],40.247657775878906,38.99501037597656,5.031028747558594,5.031028747558594,0,80.24755859375,1158.994140625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2146","10:2093",[5,0,0,52],35.21796798706055,46.54188537597656,5.031028747558594,5.031028747558594,0,75.2177734375,1166.541015625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2147","10:2093",[5,0,0,53],40.247657775878906,46.54188537597656,5.031028747558594,5.031028747558594,0,80.24755859375,1166.541015625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2148","10:2093",[5,0,0,54],40.247657775878906,51.572357177734375,5.031028747558594,5.031028747558594,0,80.24755859375,1171.572265625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2149","10:2093",[5,0,0,55],40.247657775878906,54.087982177734375,5.031028747558594,5.031028747558594,0,80.24755859375,1174.087890625,0,[["SOLID",true,1,[0.9960784316062927,0.8196078538894653,0.1568627506494522]]],0,0,false],
+    ["10:2150","10:2093",[5,0,0,56],8.049219131469727,15.148136138916016,2.515514373779297,2.515514373779297,0,48.04931640625,1135.146484375,0,[["SOLID",true,1,[0.003921568859368563,0.18039216101169586,0.843137264251709]]],0,0,false],
+    ["10:2151","10:2093",[5,0,0,57],39.74531173706055,42.71844482421875,2.515514373779297,2.515514373779297,0,79.7451171875,1162.716796875,0,[["SOLID",true,1,[0.003921568859368563,0.18039216101169586,0.843137264251709]]],0,0,false],
+    ["10:2152","10:2093",[5,0,0,58],8.049219131469727,20.178604125976562,2.515514373779297,2.515514373779297,0,48.04931640625,1140.177734375,0,[["SOLID",true,1,[0.003921568859368563,0.18039216101169586,0.843137264251709]]],0,0,false],
+    ["10:2153","10:2093",[5,0,0,59],39.74531173706055,47.74891662597656,2.515514373779297,2.515514373779297,0,79.7451171875,1167.748046875,0,[["SOLID",true,1,[0.003921568859368563,0.18039216101169586,0.843137264251709]]],0,0,false],
+    ["10:2154","10:2093",[5,0,0,60],8.049219131469727,25.209854125976562,2.515514373779297,2.515514373779297,0,48.04931640625,1145.208984375,0,[["SOLID",true,1,[0.003921568859368563,0.18039216101169586,0.843137264251709]]],0,0,false],
+    ["10:2155","10:2093",[5,0,0,61],39.74531173706055,52.78016662597656,2.515514373779297,2.515514373779297,0,79.7451171875,1172.779296875,0,[["SOLID",true,1,[0.003921568859368563,0.18039216101169586,0.843137264251709]]],0,0,false]
+  ],
+  "pixelCountsByParent": {
+    "10:1020": 37,
+    "10:1019": 15,
+    "10:1073": 29,
+    "10:1103": 38,
+    "10:2093": 62
+  },
+  "footerMark": {
+    "nodeId": "10:2093",
+    "localPath": "public/assets/illustrations/footer-pixel-mark.svg",
+    "bytes": 5019,
+    "sha256": "062cc7927700dad6a1c52317e155b956a07e625d031bcf4a96766bdfcd5b0bbf",
+    "rootSize": {
+      "width": 46,
+      "height": 68
+    },
+    "note": "Same pixel-mark design as Hero but direct Footer export has small subpixel coordinate quantization differences; preserve the source-specific SVG instead of claiming an exact match."
+  },
+  "structureFindings": {
+    "image21": "One RGBA raster of torn-paper eye, not independently layered eye/paper; FILL, 15 degree Figma rotation (15 degree counterclockwise on screen). Clipped by upper collage band and outer container.",
+    "image30": "One RGBA raster strip with baked-in [не сказано...] lettering; not editable type. FILL, unrotated.",
+    "image31": "One RGBA raster strip with baked-in [между строк] lettering; FILL, 15 degree Figma rotation.",
+    "image29": "One RGBA raster of mouth and torn paper; FILL, no rotation; separate root child above the clipped collage subtree.",
+    "telegramPeerPhoto": "Not a person photo: hidden square RGB JPEG and visible square RGBA PNG of HSE ART AND DESIGN SCHOOL. Visible source is custom-CROP into the 201x80 slot; keep both originals.",
+    "image22": "Reuses Hero eye-accent hash, but horizontal reflection matrix [-1,0;0,1], exposure 1, contrast 1, shadows -1. Original bytes reused; source filter metadata retained, no guessed CSS conversion or permanent filtered duplicate.",
+    "union": "Reuses Hero portrait plus yellow SOLID inside Boolean Union. Its top is y=694.287109375 within the 694px-high outer clip, so the entire object and 29 primitive operands are currently fully clipped; do not expose it or count it as visible portrait artwork."
+  },
+  "checks": {
+    "sourceBytes": "All 6 new raster originals and 3 reused source files match Figma original byte counts and FNV-1a; SHA256 recorded",
+    "dimensions": "Decoded original sizes match registry",
+    "visual": "New originals inspected on checkerboard. Temporary collage reconstruction using original slots, rotations, reflection, parent clips and pixel geometry visually compared with Figma screenshot. Figma-provided processed image22 was used only in temporary QA to check the recorded filter appearance; it is not a project asset.",
+    "globalDecode": "All 41 mapped raster files passed PNG/JPEG integrity verification and full pixel decode; all dimensions match the registry; pending 0, errors 0, duplicate byte payloads 0. Total raster bytes: 91025613.",
+    "assetScript": "Verified: 41 | Pending: 0 | Errors: 0"
+  },
+  "independentElements": "Eye, mouth, two paper text strips, reflected accent, school logo and visible pixel rectangles are separately placeable objects. Image/paper/letters are fused within each original PNG. The hidden portrait Union is not currently visible. The 62-pixel Footer mark is exported as one SVG. No animation timing/paths are established by the static frame.",
+  "openQuestions": [
+    "Exact runtime conversion of image22 Figma color filters is deferred to the later layout stage; raw source, parameters and Figma reference are preserved.",
+    "Motion behavior remains unspecified; this stage implements no motion."
+  ],
+  "globalRasterVerification": {
+    "verified": 41,
+    "pending": 0,
+    "errors": 0,
+    "duplicateBytes": 0,
+    "totalRasterBytes": 91025613,
+    "files": [
+      {
+        "hash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
+        "localPath": "public/assets/images/mosaic-texture.png",
+        "format": "PNG",
+        "width": 397,
+        "height": 322,
+        "mode": "P",
+        "bytes": 43725,
+        "sha256": "0d81abdd30e85743fae712ad94555c45acbd30d069af4ef2f393da32f87bbbf5"
+      },
+      {
+        "hash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+        "localPath": "public/assets/images/idiom-ice-lower-shared.png",
+        "format": "PNG",
+        "width": 4096,
+        "height": 2286,
+        "mode": "RGBA",
+        "bytes": 6893692,
+        "sha256": "5d7bb3feebd04a69e20e000a1ac20fa019d477acd2f277307111afc016b6f3a1"
+      },
+      {
+        "hash": "a29311f1f1d2be133c14d891089c6650c953c32e",
+        "localPath": "public/assets/images/idiom-ice-center.png",
+        "format": "PNG",
+        "width": 4096,
+        "height": 2286,
+        "mode": "RGBA",
+        "bytes": 5115592,
+        "sha256": "26bc36f7ab52ca7ccf67f9ea87d34dbafadf70b628ad92a747e2057b1dcb01b7"
+      },
+      {
+        "hash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
+        "localPath": "public/assets/images/idiom-ice-right-small.png",
+        "format": "PNG",
+        "width": 4096,
+        "height": 2286,
+        "mode": "RGBA",
+        "bytes": 5132569,
+        "sha256": "b35c5dbf24f2c9a53b3a024b8bb0988669ef2dbc1646183910c1b64e668fe461"
+      },
+      {
+        "hash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
+        "localPath": "public/assets/images/hero-person-collage.png",
+        "format": "PNG",
+        "width": 1122,
+        "height": 1402,
+        "mode": "RGBA",
+        "bytes": 2380332,
+        "sha256": "afec175f28f8fb67dd524fa1cd3f32b0c0ed2cc6a1b296a563d3e278e2b3d1ae"
+      },
+      {
+        "hash": "a3b7ac7e799505da584c86b7c42f8da6723eedbc",
+        "localPath": "public/assets/images/cultural-snowflake-base.jpg",
+        "format": "JPEG",
+        "width": 1792,
+        "height": 2400,
+        "mode": "RGB",
+        "bytes": 1752022,
+        "sha256": "0968e1ae99abdcd9814b75ddfd173e040a0a50f5c212f6a2463941466e283852"
+      },
+      {
+        "hash": "479c47cbc92ef29bc039dc843d2f7103b80d1391",
+        "localPath": "public/assets/images/cultural-snowflake-cutout.png",
+        "format": "PNG",
+        "width": 1792,
+        "height": 2400,
+        "mode": "RGBA",
+        "bytes": 2584249,
+        "sha256": "83779a9d97f2429d1db9f19c6df71c1673a800779d3c6b572342eeecfb021870"
+      },
+      {
+        "hash": "c027bce002d6d9ef41326d8cce3bb29eac6f7e22",
+        "localPath": "public/assets/images/idiom-ice-upper-right.png",
+        "format": "PNG",
+        "width": 4096,
+        "height": 2286,
+        "mode": "RGBA",
+        "bytes": 5006341,
+        "sha256": "34888d7c2bed6f8f01198691999d249a860751e8b920f5b37f6c5b6a0a0c56fb"
+      },
+      {
+        "hash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
+        "localPath": "public/assets/images/idiom-ice-left-small.png",
+        "format": "PNG",
+        "width": 4096,
+        "height": 2286,
+        "mode": "RGBA",
+        "bytes": 5129695,
+        "sha256": "fbc67bd83f3b759d685d2713b2d25dacc886bc2aff1ea4029c61bcd94e0acfc9"
+      },
+      {
+        "hash": "364855320f08ade1d04f13556e9f3defb0d52bcb",
+        "localPath": "public/assets/images/au-fg-texture4-8k.jpg",
+        "format": "JPEG",
+        "width": 3370,
+        "height": 2247,
+        "mode": "RGB",
+        "bytes": 4242403,
+        "sha256": "a61f3a7ab37031d8f43f76ee858a9b02387830c3edd500979219cda2b493e892"
+      },
+      {
+        "hash": "144a3d120c3632ab1ee03b64c4d9e288a22b8b5a",
+        "localPath": "public/assets/images/hero-eye-accent.png",
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "mode": "RGBA",
+        "bytes": 1050513,
+        "sha256": "7779b4ce99d1fad272e4d4290af53354d9d7be5173a1f7b028d185b26038fb93"
+      },
+      {
+        "hash": "35938ea29ed9ca1307edc53950674e4c8ebe63d5",
+        "localPath": "public/assets/images/idiom-ice-upper-left.png",
+        "format": "PNG",
+        "width": 4096,
+        "height": 2286,
+        "mode": "RGBA",
+        "bytes": 4982184,
+        "sha256": "7707f055314d12f2d131c31d685ad4f70b937fc7f8c6c3bc4035b9d0781636bd"
+      },
+      {
+        "hash": "528b075a5c6b35f819c787bff455d9dbd2436c83",
+        "localPath": "public/assets/images/idiom-ice-lower-middle.png",
+        "format": "PNG",
+        "width": 4096,
+        "height": 2286,
+        "mode": "RGBA",
+        "bytes": 5104941,
+        "sha256": "9acb5cf2b567fed8a35ac89548a8d40aa9c69dec7260ea556c08a136712f3b74"
+      },
+      {
+        "hash": "f896e935d71fd96ad289d93b7e8ce7d177767633",
+        "localPath": "public/assets/images/pun-bicycle-base.jpg",
+        "format": "JPEG",
+        "width": 1792,
+        "height": 2400,
+        "mode": "RGB",
+        "bytes": 1637962,
+        "sha256": "36102c58ea1e5c1a98465865849c0320b8fd12143c14892668eebff6f6967777"
+      },
+      {
+        "hash": "062b06beeb916ea58e9db0134f2d6a1ba921958a",
+        "localPath": "public/assets/images/pun-bicycle-cutout.png",
+        "format": "PNG",
+        "width": 1792,
+        "height": 2400,
+        "mode": "RGBA",
+        "bytes": 2600467,
+        "sha256": "47a9262b37bbcbdc9e68da7aa627f3c4ccfe14352252f4dfd8093b31acb3c24f"
+      },
+      {
+        "hash": "abafb5e224150ff4820d1e37233090f06e1e9689",
+        "localPath": "public/assets/images/pun-wheels-base.jpg",
+        "format": "JPEG",
+        "width": 1792,
+        "height": 2400,
+        "mode": "RGB",
+        "bytes": 1558592,
+        "sha256": "d6cdb153eaaa8bd19132f90f893878d378d5034357fa27047f0bacb477dbdf55"
+      },
+      {
+        "hash": "173aa0acd8edfb44bd3dee924ff505e613162e4f",
+        "localPath": "public/assets/images/pun-wheels-cutout.png",
+        "format": "PNG",
+        "width": 1792,
+        "height": 2400,
+        "mode": "RGBA",
+        "bytes": 959426,
+        "sha256": "ab49220c877c0e85abbc83d418cfeafbea3590604fa29657d4191561c1ba2abc"
+      },
+      {
+        "hash": "a9f463489c07be031417200565743725d6a366ac",
+        "localPath": "public/assets/images/double-meaning-eye.png",
+        "format": "PNG",
+        "width": 3072,
+        "height": 2048,
+        "mode": "RGBA",
+        "bytes": 940785,
+        "sha256": "70df22876417d9cbdd1c8c54cb7a8dd89b68bcbcbc7bd567d1e85ae95aaf59f7"
+      },
+      {
+        "hash": "3a4dbff1bde5d50b9dc399bc758f670e1fbee740",
+        "localPath": "public/assets/images/double-meaning-eye-couple.png",
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGBA",
+        "bytes": 1027282,
+        "sha256": "e796a62b6057c5949804d0dc61165fa72931c57b2fa8a1b1161f256743c9b7cf"
+      },
+      {
+        "hash": "7af494cdff7ca99afd79ecd61a707cd7452a7435",
+        "localPath": "public/assets/images/hero-film-base.jpg",
+        "format": "JPEG",
+        "width": 1792,
+        "height": 2400,
+        "mode": "RGB",
+        "bytes": 1428684,
+        "sha256": "f2c16b86e8d58f3672a574ffdadda618bde2f50620dcef3720f17aff46d629c3"
+      },
+      {
+        "hash": "e652c3e807f5bf1e34657836f066c3b3db9c575c",
+        "localPath": "public/assets/images/hero-film-cutout.png",
+        "format": "PNG",
+        "width": 1792,
+        "height": 2400,
+        "mode": "RGBA",
+        "bytes": 1711853,
+        "sha256": "bf3934a85b08bb2202d35131b497899edbd5e8a976c4347321cbc519d0e77237"
+      },
+      {
+        "hash": "0e552b102cf5a1f06b9c6d961e804df3ec2e4893",
+        "localPath": "public/assets/images/hero-man-eye.png",
+        "format": "PNG",
+        "width": 1698,
+        "height": 2122,
+        "mode": "RGBA",
+        "bytes": 133874,
+        "sha256": "42f4b70bc8f1445dc0da33c334e39c2048f7b62771bcbcb53c6323aea0177173"
+      },
+      {
+        "hash": "40eccc4ce44ce41732834332152c96e11bfcaabd",
+        "localPath": "public/assets/images/emptiness-male-base.jpg",
+        "format": "JPEG",
+        "width": 2752,
+        "height": 1536,
+        "mode": "RGB",
+        "bytes": 1472785,
+        "sha256": "4983d9ae72f08eed4bf1c5a30d90f0c388b0fda4d81c0361d404680317fb3357"
+      },
+      {
+        "hash": "a7989beee0d2ab130f2012d50167c4ed4862f4d0",
+        "localPath": "public/assets/images/emptiness-male-cutout.png",
+        "format": "PNG",
+        "width": 2752,
+        "height": 1536,
+        "mode": "RGBA",
+        "bytes": 1001055,
+        "sha256": "b02c5bede368e85b9d8b93d6be31b5aad19fca1e2ea416344cdb4f656e9c3076"
+      },
+      {
+        "hash": "b7c41bc585e7ce56a516ed7cc7c897a8339c874d",
+        "localPath": "public/assets/images/emptiness-pixel-strip-source.png",
+        "format": "PNG",
+        "width": 1122,
+        "height": 1402,
+        "mode": "RGBA",
+        "bytes": 2798104,
+        "sha256": "10c17957ee73a00edf0a442b26d9d396828ffc4397aca4163081e29c8b8b1131"
+      },
+      {
+        "hash": "5117fe324500367f27967d387a1ca2d13f13b5b0",
+        "localPath": "public/assets/images/emptiness-female-base.jpg",
+        "format": "JPEG",
+        "width": 2752,
+        "height": 1536,
+        "mode": "RGB",
+        "bytes": 1402762,
+        "sha256": "04c806e3ae2dc917446ef6487c0b2f047d450149123d78759830b5d79a84f955"
+      },
+      {
+        "hash": "7a1b43ea9e3c8bbaab739debe43323d87d1c550f",
+        "localPath": "public/assets/images/emptiness-female-cutout.png",
+        "format": "PNG",
+        "width": 2752,
+        "height": 1536,
+        "mode": "RGBA",
+        "bytes": 1770817,
+        "sha256": "b223f616cef1838032330a84b3ddccbd37fd9cb9348afc36a5c62966d85179d3"
+      },
+      {
+        "hash": "32e0e75e18ed7cf100a240a42dc39d57bdf810d4",
+        "localPath": "public/assets/images/elephant-base.jpg",
+        "format": "JPEG",
+        "width": 2752,
+        "height": 1536,
+        "mode": "RGB",
+        "bytes": 1638136,
+        "sha256": "87e4b1d78c0d0e9fd62708a1ed94a3477ccd8a4f360ee1e1dcf6f6844b09de74"
+      },
+      {
+        "hash": "4c9b031136e4b4714ea5f8a5806597a98bfa2d41",
+        "localPath": "public/assets/images/elephant-cutout.png",
+        "format": "PNG",
+        "width": 2752,
+        "height": 1536,
+        "mode": "RGBA",
+        "bytes": 2302668,
+        "sha256": "8f9e9b76d9aac5e41ebb7460c48952e89e023dd24a60c2176ebbc286d7bb8998"
+      },
+      {
+        "hash": "097adb30ab0ee1356352c1673681a2318d190cad",
+        "localPath": "public/assets/images/blind-spot-circle-source.png",
+        "format": "PNG",
+        "width": 512,
+        "height": 512,
+        "mode": "RGB",
+        "bytes": 222197,
+        "sha256": "99c29196f4a26fd9935c82e59998fc9697545475d90b7b847445a6d39a229312"
+      },
+      {
+        "hash": "a3a4fd64ac220162df428e62b8a3cddf755b1fe7",
+        "localPath": "public/assets/images/blind-spot-circle-cutout.png",
+        "format": "PNG",
+        "width": 512,
+        "height": 512,
+        "mode": "RGBA",
+        "bytes": 215215,
+        "sha256": "13240a05edccb105d5dee97fc39d9b8ac284cec08234c239ff58cf2b8083f6e3"
+      },
+      {
+        "hash": "a2527d39f79d61137e7c901c1bd8802fb781330d",
+        "localPath": "public/assets/images/footer-eye.png",
+        "format": "PNG",
+        "width": 1774,
+        "height": 887,
+        "mode": "RGBA",
+        "bytes": 2326187,
+        "sha256": "dd17ae41f28cf16546e5d4b7c0739be31ec4a55dffab16fc28356d8e8e5011cd"
+      },
+      {
+        "hash": "b7079f327ac77217ba31eccfa428d1c9bf81ad54",
+        "localPath": "public/assets/images/footer-unsaid-strip.png",
+        "format": "PNG",
+        "width": 2172,
+        "height": 724,
+        "mode": "RGBA",
+        "bytes": 1888868,
+        "sha256": "d1e8167844a77ddebfc4fab6e0ac8af63fc7a6632fde774e96597e4ebc48f6a8"
+      },
+      {
+        "hash": "bd6b5cacdd1170f72989f6b707a0d3eda9355621",
+        "localPath": "public/assets/images/footer-between-lines-strip.png",
+        "format": "PNG",
+        "width": 2172,
+        "height": 724,
+        "mode": "RGBA",
+        "bytes": 1448962,
+        "sha256": "b0c23a108fa55e7073ef5d6fec16d6827c6af2876bad670f1eb05d906d66d103"
+      },
+      {
+        "hash": "f4f836747639bb4a43af9d32647b44556507ae72",
+        "localPath": "public/assets/images/footer-mouth.png",
+        "format": "PNG",
+        "width": 2172,
+        "height": 724,
+        "mode": "RGBA",
+        "bytes": 2260107,
+        "sha256": "17e12f17e03327081c6062708df6d02476cbb27a2c5f127f656751293936000f"
+      },
+      {
+        "hash": "c643e024e3da13f99a21672f8a7f13101d606a1c",
+        "localPath": "public/assets/images/footer-school-logo-base.jpg",
+        "format": "JPEG",
+        "width": 640,
+        "height": 640,
+        "mode": "RGB",
+        "bytes": 27132,
+        "sha256": "1121633db4797f953059b3cced3d07e77f71f42ed004bf09adf4ee43af4e8d4e"
+      },
+      {
+        "hash": "f9cf72afab8959879ed22d0f0b83522d3b03cbec",
+        "localPath": "public/assets/images/footer-school-logo-cutout.png",
+        "format": "PNG",
+        "width": 640,
+        "height": 640,
+        "mode": "RGBA",
+        "bytes": 78077,
+        "sha256": "59b843dbf21b9cc83efb24e4857ed65eccf54c311a4ea5622175111c78c87303"
+      },
+      {
+        "hash": "429921b86495a728937851d97677ae3dcf8c9122",
+        "localPath": "public/assets/images/cultural-iron-throne-base.jpg",
+        "format": "JPEG",
+        "width": 1792,
+        "height": 2400,
+        "mode": "RGB",
+        "bytes": 2262774,
+        "sha256": "db9a7bdcdb137d24d5187778f603c83909725a0b442c4b44faf93377616dec80"
+      },
+      {
+        "hash": "76a447de6eae4a64eca6b2865f63ff9cdb9e566c",
+        "localPath": "public/assets/images/cultural-iron-throne-cutout.png",
+        "format": "PNG",
+        "width": 1792,
+        "height": 2400,
+        "mode": "RGBA",
+        "bytes": 3860281,
+        "sha256": "7733212873f1187b887517ff5a2eb1e4338751d626f8a19807cddd6599703c3d"
+      },
+      {
+        "hash": "bfdc63b7bc0f0d5abbdf1a00f3ec8121daffde5a",
+        "localPath": "public/assets/images/idiom-telephone-base.jpg",
+        "format": "JPEG",
+        "width": 1792,
+        "height": 2400,
+        "mode": "RGB",
+        "bytes": 1276691,
+        "sha256": "9aa7aac0bb0fc41a6c05e2475918d4b6771be24c631b08c2d7c37d8d73cdc7d8"
+      },
+      {
+        "hash": "be5817d93162046d2b9f3af61b7489db7df1278c",
+        "localPath": "public/assets/images/idiom-telephone-cutout.png",
+        "format": "PNG",
+        "width": 1792,
+        "height": 2400,
+        "mode": "RGBA",
+        "bytes": 1355612,
+        "sha256": "fe269301ebbb0557b94073032509241fdb8215d00c5346dbb2cfacc410fea689"
+      }
+    ],
+    "footerSvg": "Parsed 46x68 SVG, 62 rect primitives, no embedded raster"
+  }
+}

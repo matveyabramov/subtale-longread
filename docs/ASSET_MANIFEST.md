@@ -1,6 +1,10 @@
-# SUBTALE — initial Figma asset manifest
+# SUBTALE — Figma asset manifest
 
-Status: **candidates located; no assets extracted into project yet**. Source: document-wide Figma layer metadata + selected node design contexts. Assets must be exported as originals / SVG where available and verified locally; do not commit ephemeral Figma MCP asset URLs.
+Current raster status (Stage 0.2E.2, 2026-10-24): **41 verified / 0 pending / 0 errors**. Every unique imageHash in `FIGMA_ASSET_MAP.json` has an original local file. All 41 files passed full pixel decoding, source-dimension and duplicate-byte checks; total original raster size is **91,025,613 bytes**. Sources remain unoptimized. Section reports preserve exact fills, crop/transform metadata and source checksums.
+
+The inventory and staged reports below retain historical findings; earlier pending statements describe their stage dates, not current raster status. Font files, movie video selection and later implementation/visual QA remain separate work. No temporary Figma MCP URL is used as a project asset.
+
+## Initial candidate inventory (historical)
 
 | Section / Figma node | Candidate media or vector layers | Verification / action |
 |---|---|---|
@@ -225,3 +229,26 @@ Imported **3 original raster files, 4,679,815 bytes**; updated three `localPath`
 **Checks:** all three downloaded originals match Figma byte counts and FNV-1a fingerprints; decoded JPEG/PNG dimensions match the registry; actual alpha and opaque center verified. Originals inspected on a checkerboard. A temporary reconstruction of the source texture's LIGHTEN/opacity, six lines and visible circle geometry was visually compared with the Figma screenshot. `node scripts/check-assets.mjs` → **Verified: 35 | Pending: 6 | Errors: 0**; no duplicate raster bytes.
 
 **Animation feasibility:** six lines, six row text nodes and the whole circle bitmap are independent source objects. Ring, center and cracks are fused in the PNG. No scrolling, reveal, moving mask or other animation is specified by the single static frame. No missing assets for this scoped import. No Figma edits, layout/animation implementation, dependency installation or legacy-file changes.
+
+## Stage 0.2E.2 — Footer originals and completed raster registry (2026-10-24)
+
+Imported **6 original raster files, 8,029,333 bytes**, plus one separate source SVG, **5,019 bytes**: **7 files / 8,034,352 bytes total**. All six remaining `localPath` entries are filled. Exact source checksums, image fills, transforms, ancestor clips and primitive geometry are recorded in `docs/FOOTER_ASSET_IMPORT.json`; placement and independent-object constraints are documented in `docs/MOTION_SPEC.md`.
+
+| New file under `public/assets/images/` | Figma imageHash | Original dimensions | Bytes | Actual structure |
+|---|---|---|---:|---|
+| `footer-eye.png` | `a2527d39f79d61137e7c901c1bd8802fb781330d` | 1774 × 887 | 2,326,187 | `image 21`: one transparent PNG with fused eye and paper |
+| `footer-unsaid-strip.png` | `b7079f327ac77217ba31eccfa428d1c9bf81ad54` | 2172 × 724 | 1,888,868 | `image 30`: one transparent PNG with baked-in lettering |
+| `footer-between-lines-strip.png` | `bd6b5cacdd1170f72989f6b707a0d3eda9355621` | 2172 × 724 | 1,448,962 | `image 31`: one transparent PNG with baked-in lettering |
+| `footer-mouth.png` | `f4f836747639bb4a43af9d32647b44556507ae72` | 2172 × 724 | 2,260,107 | `image 29`: one transparent PNG with fused mouth and paper |
+| `footer-school-logo-base.jpg` | `c643e024e3da13f99a21672f8a7f13101d606a1c` | 640 × 640 | 27,132 | Hidden JPEG fill of `telegram-peer-photo` |
+| `footer-school-logo-cutout.png` | `f9cf72afab8959879ed22d0f0b83522d3b03cbec` | 640 × 640 | 78,077 | Visible transparent PNG fill: HSE ART AND DESIGN SCHOOL logo |
+
+**Vector file:** `public/assets/illustrations/footer-pixel-mark.svg`, direct SVG_STRING export of `10:2093`, 46 × 68, 62 rectangles, 5,019 bytes. It has no embedded raster. Its design matches Hero's mark, but the original Footer geometry has small subpixel quantization differences; its exact source export is retained.
+
+**Reuse:** Footer has eight image-filled nodes referencing nine unique raster hashes. The shared `au-fg-texture4-8k.jpg`, `hero-eye-accent.png` (`image 22`) and `hero-person-collage.png` (Union) are reused without copies. Figma original byte lengths and fingerprints match all three existing files. The Union is fully outside its ancestor's clip, despite visible flags; the current Footer does not display its portrait. `image 22` has a horizontal reflection and exposure=1, contrast=1, shadows=-1; its original source and filter parameters are preserved without saving a filtered duplicate.
+
+**Fidelity and composition:** all four collage PNGs contain one visible fill; there are no corresponding JPEG layers to invent. The school-logo node retains a hidden JPEG and visible PNG with its custom CROP transform; it is a logo rather than a portrait. Original dimensions, alpha, bytes and source canvases remain unchanged. Rotation, scale, layer order and nested clips are recorded separately. Eye and unsaid strip are clipped by both upper and outer collage frames; the mouth is a root child above the collage and does not inherit those clips. The 181 solid rectangles include 90 non-Union collage tiles, 29 fully clipped Union operands and 62 brand-mark primitives. Collage tiles can be reproduced through CSS; text remains text. No whole-frame image was exported as a project asset.
+
+**Checks:** all six imported raster originals match Figma byte lengths and fingerprints; their decoded sizes, actual transparency and full image decoding pass. A temporary composition/crop reconstruction was visually compared with Figma. All **41** mapped raster files passed full decoding and registry-dimension checks, with **0 duplicate byte contents**; their combined size is **91,025,613 bytes**. `node scripts/check-assets.mjs` → **Verified: 41 | Pending: 0 | Errors: 0**. The additional SVG is outside the raster count. Originals were not optimized or re-encoded.
+
+**Independent elements and remaining work:** eye, mouth, each paper strip, accent, school logo, tiles, brand mark and text groups are separate objects. Components baked inside each PNG cannot animate independently without additional source preparation. No motion behavior is specified by this static frame. Exact runtime reproduction of the accent's Figma color filters remains a later layout-stage validation task; no asset-import blockers remain. No Figma edits, layout/animation implementation, dependency installation or legacy-file changes.

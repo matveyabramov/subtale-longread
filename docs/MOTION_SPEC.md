@@ -302,3 +302,82 @@ These six text nodes and six line segments are separate frame children, not thre
 **Potential independent animation elements:** six line segments, six statement/reaction text nodes, one complete central illustration and one background texture rectangle. Rows can be logically coordinated later while preserving their source geometry. The center/ring/cracks cannot be animated separately from the supplied bitmap, and there is no existing moving aperture or line mask.
 
 **Not specified:** trigger, scroll relationship, line travel, changing text/line visibility, timing/easing, replay/reset, interruption or an alternate circle state. Decide any such behavior in a later scoped motion ticket, including keyboard/touch access and a prefers-reduced-motion alternative. Do not infer scroll trapping or a reveal from the static frame. No layout, animation, SVG/CSS implementation or source-image cleanup was performed.
+
+## Stage 0.2E.2 — verified Footer collage (2026-10-24)
+
+Scope: Footer **`10:1016`**, 1920 × 1334, frame clipping enabled. Source: one static Figma frame. Every image, fill, ancestor clip, source transform, primitive pixel rectangle and byte checksum is recorded in `docs/FOOTER_ASSET_IMPORT.json`. No animation was inferred or implemented.
+
+### Raster structure and reuse
+
+Footer has **8 image-filled nodes referencing 9 unique raster hashes**: six previously pending originals and three reused sources. The four new collage layers each contain one complete RGBA image. They are not editable paper/photo/text component trees.
+
+| Figma layer / node | Actual content | Source under `public/assets/images/` | Original dimensions |
+|---|---|---|---|
+| `image 21` / `10:1142` | Torn-paper eye, fused into one PNG | `footer-eye.png` | 1774 × 887 |
+| `image 30` / `10:1143` | Paper strip with baked-in «[не сказано...]» lettering | `footer-unsaid-strip.png` | 2172 × 724 |
+| `image 31` / `10:1144` | Paper strip with baked-in «[между строк]» lettering | `footer-between-lines-strip.png` | 2172 × 724 |
+| `image 29` / `10:1146` | Mouth and torn paper, fused into one PNG | `footer-mouth.png` | 2172 × 724 |
+| `telegram-peer-photo…` / `10:1162` | HSE ART AND DESIGN SCHOOL logo, not a portrait; hidden JPEG plus visible cropped PNG | `footer-school-logo-base.jpg`, `footer-school-logo-cutout.png` | Both 640 × 640 |
+| `image 22` / `10:1145` | Reflected, color-filtered Hero accent | reused `hero-eye-accent.png` | 1254 × 1254 |
+| `Union` / `10:1073` | Yellow Boolean Union with Hero portrait fill; fully clipped in this frame | reused `hero-person-collage.png` | 1122 × 1402 |
+| `AU-FG-Texture4-8K` / `10:1017` | Shared texture, LIGHTEN at 0.4 paint opacity | reused `au-fg-texture4-8k.jpg` | 3370 × 2247 |
+
+The four collage PNGs each have one visible NORMAL IMAGE fill at opacity 1, FILL mode, identity imageTransform, scalingFactor 0.5 and zero filters. Their slot and source aspect ratios match, so no aspect-ratio crop is required. `telegram-peer-photo` has a hidden JPEG FILL followed by visible PNG CROP; do not enable the JPEG behind the transparent logo. Raster filenames/labels do not imply extra editable sublayers or different imagery.
+
+### Position, scale, rotation and paint order
+
+Coordinates below are the **frame-local transform origin**, not the axis-aligned visual bounding-box corner after rotation/reflection. Source-pixel scale is display pixels per original image pixel, using the effective CROP window where present. Rounded display values below are for reading; full precision matrices and scales are in the JSON.
+
+Paint paths are zero-based child indices from the Footer frame, back to front. Keep ancestor clipping with each object. No animated endpoint scales or trajectories are implied.
+
+| Element | Frame transform origin (x, y) | Local slot width × height | Figma rotation / reflection | Effective source scale | Paint path |
+|---|---|---|---|---|---|
+| Texture `10:1017` | (0, 0) | 1920 × 1080 | 0° | x 0.569733; y 0.480641 | 0 |
+| Hidden-by-clip Union `10:1073` | (1106, 887.287109375) | 617.142578125 × 385.712890625 | 0° | ≈0.671676 | 2 / 16 |
+| Eye `10:1142` | (1502, 394.92578125) | 258.578186035 × 129.289093018 | +15° Figma / 15° counterclockwise on screen | 0.145759970 | 2 / 17 / 38 |
+| Unsaid strip `10:1143` | (1248, 216) | 321 × 107 | 0° | 0.147790055 | 2 / 17 / 39 |
+| Between-lines strip `10:1144` | (1546, 819.962890625) | 336 × 112 | +15° Figma / 15° counterclockwise on screen | 0.154696133 | 2 / 18 |
+| Accent `10:1145` | (1544, 255) | 337 × 337 | Horizontal reflection; matrix below | 0.268740032 | 2 / 19 |
+| Mouth `10:1146` | (1329, 568) | 432 × 144 | 0° | 0.198895028 | 3 |
+| School logo `10:1162` | (1679, 1120) | 201 × 80 | 0° | ≈0.3890625 after CROP | 6 |
+
+For the eye and between-lines strip, the frame projection is `x = 0.9659258127212524u + 0.258819043636322v + originX`, `y = -0.258819043636322u + 0.9659258127212524v + originY`. This is one 15° counterclockwise rotation, equivalent to CSS -15°. Do not use the generated axis-aligned wrapper top as the unrotated image origin.
+
+For the accent, use `x = -u + 1544`, `y = v + 255`, giving the actual footprint **x=1207…1544, y=255…592**. The API's scalar rotation of -180° is accompanied by reflection; applying a plain 180° rotation would be incorrect. Preserve the complete matrix `[[−1, 0, 1544], [0, 1, 255]]`.
+
+The accent also has Figma IMAGE filters **exposure=1, contrast=1, shadows=-1**, with saturation, temperature, tint and highlights at 0. This makes the reused Hero source appear gray/white in Footer. No filtered duplicate was committed. Exact runtime filter conversion is deferred to the later layout stage; preserve these original parameters and compare against the Figma appearance instead of assuming a generic CSS brightness/contrast approximation is exact. A Figma-provided processed rendition was used only for temporary visual QA.
+
+### Clipping, crop transforms and effective visibility
+
+| Container | Node / paint path | Frame origin | Dimensions | Clips children |
+|---|---|---|---|---|
+| Outer collage | `10:1019` / 2 | (1106, 193) | 771 × 694 | yes |
+| Middle band | `10:1020` / 2 / 0 | (1106, 502) | 771 × 154 | yes |
+| Upper band | `10:1103` / 2 / 17 | (1106, 193) | 771 × 309 | yes |
+| Credit strip | `10:1149` / 5 | (0, 1080) | 1920 × 254 | yes |
+
+The eye and unsaid strip are children of the upper band as well as the outer collage, so retain **both** clips. The between-lines strip and reflected accent are only inside the outer collage. The mouth is a separate **root child at paint path 3**, painted above the whole collage subtree; do not move it inside those clips. The school logo is also a separate root child, painted at path 6 after the dark credit-strip subtree at 5; it is not a child of the credit strip.
+
+The portrait Union starts at outer-collage local y=**694.287109375**, beyond its parent's **694px** bottom edge. It and its 29 Boolean rectangle operands are therefore **fully clipped**, despite the node and fill being marked visible. Preserve its source metadata and existing Hero image reference, but do not reveal a portrait that the current Footer does not show. This is geometric clipping, not opacity 0 or an absent source.
+
+School logo's visible PNG CROP transform is exactly `[[0.8072287440299988, 0, 0.09638551622629166], [0, 0.3212851583957672, 0.3413654565811157]]`, normalized to its 640 × 640 source. Preserve this custom crop and its 201 × 80 viewport instead of stretching the entire square PNG. The hidden JPEG has FILL/identity transform and is retained only as an original source.
+
+The hidden portrait Union has visible yellow SOLID plus visible IMAGE, with CROP `[[0.818902313709259, 0, -0.012672530487179756], [0, 0.4095972180366516, 0.7499189376831055]]`. No copy of the portrait bitmap is needed. The texture has the already verified full-source normalized identity CROP mapping into 1920 × 1080, node LIGHTEN and paint NORMAL/opacity 0.4; it stops at the top of the credit strip.
+
+### Pixel geometry, brand mark and independent elements
+
+There are **181 solid primitive rectangles** recorded in the JSON with exact local/frame coordinates, dimensions, colors and paint paths:
+
+- 37 in middle band `10:1020`, with many outside its clip.
+- 15 direct outer-collage rectangles.
+- 29 operands in the fully clipped Union `10:1073`.
+- 38 in upper band `10:1103`, again retaining the original clip.
+- 62 primitives in Footer's pixel mark `10:2093`.
+
+All these rectangles have zero rotation/corner radius, no strokes/effects and opaque solid fills; collage tiles are approximately 77.14286px square. CSS rectangles can reproduce the collage geometry; keep fractional coordinates, original order, near-duplicate placements and clips rather than deduplicating tiles by visual position or flattening the collage into a bitmap. The 90 non-Union collage tiles are separate source nodes; only the parts within their parent clips are visible.
+
+The Footer pixel mark is exported separately as **`public/assets/illustrations/footer-pixel-mark.svg`**, 46 × 68, 62 rectangles, at frame origin approximately (40, 1119.349609375), within the brand group at (40, 1120). It is the same mark design as Hero but the direct Footer export has small subpixel coordinate quantization differences, so its source-specific SVG is retained. The adjacent brand name and all other headlines/credits remain text, not part of the PNG collage or this SVG.
+
+**Independently placeable objects:** eye, mouth, each of two paper strips, reflected accent, school logo, pixel geometry, Footer brand mark and text/credit groups. Each paper/photo/letter composition is fused within its own PNG; the paper edges, eye/mouth and raster letters cannot move independently without further source preparation. The fully clipped Union is not currently visible artwork to animate into view by default. Independent movement must carry the correct image crop, source filters, reflection and ancestor clips.
+
+No animation duration, trigger, path, replay/reset or interruption behavior is supplied by this static frame. Decide any future behavior, keyboard/touch equivalent and prefers-reduced-motion alternative in a later scoped motion ticket. No layout or animation was implemented. Footer can be reconstructed from these separate original sources, primitives, text and recorded transforms/clips; no whole-frame screenshot is used as an asset.

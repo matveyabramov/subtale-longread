@@ -1,7 +1,7 @@
 {
   "figmaFileKey": "H4HI00uGY2UOxpcfHogUat",
   "pageId": "0:1",
-  "notes": "Read-only mapping of 41 unique Figma image hashes. Asset export and local filepath fields remain unset unless explicitly imported. Figma hash is an ID, not a file SHA256.",
+  "notes": "41 unique Figma image hashes, all imported as original raster files with verified localPath. Figma hash is an ID, not a file SHA256. Per-layer crops, filters, visibility and composition evidence are recorded in the section import reports and MOTION_SPEC.md.",
   "sources": [
     {
       "hash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
@@ -289,7 +289,7 @@
       "sourceWidth": 1774,
       "sourceHeight": 887,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/footer-eye.png"
     },
     {
       "hash": "b7079f327ac77217ba31eccfa428d1c9bf81ad54",
@@ -298,7 +298,7 @@
       "sourceWidth": 2172,
       "sourceHeight": 724,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/footer-unsaid-strip.png"
     },
     {
       "hash": "bd6b5cacdd1170f72989f6b707a0d3eda9355621",
@@ -307,7 +307,7 @@
       "sourceWidth": 2172,
       "sourceHeight": 724,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/footer-between-lines-strip.png"
     },
     {
       "hash": "f4f836747639bb4a43af9d32647b44556507ae72",
@@ -316,7 +316,7 @@
       "sourceWidth": 2172,
       "sourceHeight": 724,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/footer-mouth.png"
     },
     {
       "hash": "c643e024e3da13f99a21672f8a7f13101d606a1c",
@@ -325,7 +325,7 @@
       "sourceWidth": 640,
       "sourceHeight": 640,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/footer-school-logo-base.jpg"
     },
     {
       "hash": "f9cf72afab8959879ed22d0f0b83522d3b03cbec",
@@ -334,7 +334,7 @@
       "sourceWidth": 640,
       "sourceHeight": 640,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/footer-school-logo-cutout.png"
     },
     {
       "hash": "429921b86495a728937851d97677ae3dcf8c9122",
