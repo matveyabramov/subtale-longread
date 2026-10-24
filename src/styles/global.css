@@ -1,0 +1,18 @@
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-copy);
+  font-size: var(--font-size-copy-20);
+  font-weight: var(--weight-copy-medium);
+  line-height: var(--line-copy);
+  font-synthesis: none;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: var(--border-divider-width) solid var(--color-blue);
+  outline-offset: var(--space-10);
+}

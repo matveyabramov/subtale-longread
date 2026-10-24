@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-inline-size: 100%;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}

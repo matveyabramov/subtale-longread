@@ -1,0 +1,63 @@
+/* Sources, scope and deliberately undefined tokens: docs/DESIGN_TOKENS.md. */
+:root {
+  --color-blue: #012ed7;
+  --color-yellow: #fed128;
+  --color-ink: #0b0d0f;
+  --color-paper: #eeeee7;
+  --color-white: #fff;
+
+  --font-display: 'TT Bluescreens Trial', sans-serif;
+  --font-copy: 'IBM Plex Mono', monospace;
+  --weight-display-bold: 700;
+  --weight-display-extrabold: 800;
+  --weight-copy-medium: 500;
+  --weight-copy-semibold: 600;
+
+  --font-size-copy-20: 20px;
+  --font-size-copy-25: 25px;
+  --font-size-display-35: 35px;
+  --font-size-display-50: 50px;
+  --font-size-display-80: 80px;
+  --font-size-display-100: 100px;
+  --font-size-display-120: 120px;
+  --line-display-tight: 0.8;
+  --line-display-solid: 1;
+  --line-copy-tight: 1.1;
+  --line-copy: 1.2;
+  --tracking-display: 0;
+  --tracking-copy-tight: -0.04em;
+  --tracking-copy-hint: -0.03em;
+
+  /* Reference geometry; these do not impose 100vh or a responsive composition. */
+  --design-width: 1920px;
+  --design-screen-height: 1080px;
+  --design-elephant-height: 2187px;
+  --design-movies-height: 1899px;
+  --design-footer-height: 1334px;
+  --space-10: 10px;
+  --space-20: 20px;
+  --space-30: 30px;
+  --border-divider-width: 4px;
+  --border-art-frame-width: 10px;
+  --opacity-divider: 0.3;
+  --radius-none: 0;
+  --z-base: 0;
+
+  /* Approved Stage 0.3 baseline; declared here, no animations enabled. */
+  --duration-instant: 0ms;
+  --duration-feedback: 150ms;
+  --duration-ui: 200ms;
+  --duration-state: 250ms;
+  --duration-half-state: 125ms;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-feedback: var(--duration-instant);
+    --duration-ui: var(--duration-instant);
+    --duration-state: var(--duration-instant);
+    --duration-half-state: var(--duration-instant);
+  }
+}
