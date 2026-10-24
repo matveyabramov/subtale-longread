@@ -1,0 +1,585 @@
+{
+  "stage": "0.2A",
+  "date": "2026-10-24",
+  "figmaFileKey": "H4HI00uGY2UOxpcfHogUat",
+  "heroNodeId": "10:472",
+  "method": "Original image fills downloaded via Figma MCP URLs; byte count and FNV-1a compared with getImageByHash().getBytesAsync(). Separate SVG_STRING exports; no Figma mutations, resizing, cropping or re-encoding.",
+  "newFiles": 11,
+  "newBytes": 6706924,
+  "rasters": [
+    {
+      "hash": "7af494cdff7ca99afd79ecd61a707cd7452a7435",
+      "bytes": 1428684,
+      "fnv1a": "fcc78cc",
+      "width": 1792,
+      "height": 2400,
+      "localPath": "public/assets/images/hero-film-base.jpg",
+      "sha256": "f2c16b86e8d58f3672a574ffdadda618bde2f50620dcef3720f17aff46d629c3",
+      "pixelQA": {
+        "file": "film-base.jpg",
+        "format": "JPEG",
+        "mode": "RGB",
+        "width": 1792,
+        "height": 2400,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0,
+        "transparentEdgePixels": 0,
+        "alphaBounds": [
+          0,
+          0,
+          1792,
+          2400
+        ]
+      }
+    },
+    {
+      "hash": "e652c3e807f5bf1e34657836f066c3b3db9c575c",
+      "bytes": 1711853,
+      "fnv1a": "62fc5064",
+      "width": 1792,
+      "height": 2400,
+      "localPath": "public/assets/images/hero-film-cutout.png",
+      "sha256": "bf3934a85b08bb2202d35131b497899edbd5e8a976c4347321cbc519d0e77237",
+      "pixelQA": {
+        "file": "film-cutout.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1792,
+        "height": 2400,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 2604046,
+        "partialAlphaPixels": 48113,
+        "transparentEdgePixels": 8384,
+        "alphaBounds": [
+          373,
+          339,
+          1421,
+          2061
+        ]
+      }
+    },
+    {
+      "hash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
+      "bytes": 2380332,
+      "fnv1a": "81c5563f",
+      "width": 1122,
+      "height": 1402,
+      "localPath": "public/assets/images/hero-person-collage.png",
+      "sha256": "afec175f28f8fb67dd524fa1cd3f32b0c0ed2cc6a1b296a563d3e278e2b3d1ae",
+      "pixelQA": {
+        "file": "collage.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1122,
+        "height": 1402,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 634065,
+        "partialAlphaPixels": 938704,
+        "transparentEdgePixels": 4984,
+        "alphaBounds": [
+          0,
+          32,
+          1122,
+          1402
+        ]
+      }
+    },
+    {
+      "hash": "0e552b102cf5a1f06b9c6d961e804df3ec2e4893",
+      "bytes": 133874,
+      "fnv1a": "11d511f9",
+      "width": 1698,
+      "height": 2122,
+      "localPath": "public/assets/images/hero-man-eye.png",
+      "sha256": "42f4b70bc8f1445dc0da33c334e39c2048f7b62771bcbcb53c6323aea0177173",
+      "pixelQA": {
+        "file": "eye.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1698,
+        "height": 2122,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 3573350,
+        "partialAlphaPixels": 27420,
+        "transparentEdgePixels": 7640,
+        "alphaBounds": [
+          475,
+          508,
+          785,
+          654
+        ]
+      }
+    },
+    {
+      "hash": "144a3d120c3632ab1ee03b64c4d9e288a22b8b5a",
+      "bytes": 1050513,
+      "fnv1a": "521efecd",
+      "width": 1254,
+      "height": 1254,
+      "localPath": "public/assets/images/hero-eye-accent.png",
+      "sha256": "7779b4ce99d1fad272e4d4290af53354d9d7be5173a1f7b028d185b26038fb93",
+      "pixelQA": {
+        "file": "eye-accent.png",
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1254,
+        "height": 1254,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 1193284,
+        "partialAlphaPixels": 378828,
+        "transparentEdgePixels": 5015,
+        "alphaBounds": [
+          0,
+          31,
+          1226,
+          1235
+        ]
+      }
+    }
+  ],
+  "vectors": [
+    {
+      "nodeId": "10:1933",
+      "name": "Vector 3",
+      "width": 20,
+      "height": 20,
+      "localPath": "public/assets/illustrations/hero-cta-arrow.svg",
+      "bytes": 232,
+      "sha256": "493fc9ced9bd26ad01fbe5a4c9aac3e03db8bfa5b047f6cb0d515f6c04b8366f",
+      "nodeIds": [
+        "10:1933",
+        "10:697"
+      ],
+      "reused": false
+    },
+    {
+      "nodeId": "10:474",
+      "name": "Star 4",
+      "width": 79,
+      "height": 79,
+      "localPath": "public/assets/illustrations/star-accent.svg",
+      "bytes": 300,
+      "sha256": "f650a39bc8002cd88b19b5c10aa15db8c4726ce252d39e80184d9bf56e3860f6",
+      "nodeIds": [
+        "10:474"
+      ],
+      "reused": true
+    },
+    {
+      "nodeId": "10:478",
+      "name": "Star 3",
+      "width": 62,
+      "height": 62,
+      "localPath": "public/assets/illustrations/hero-star-62.svg",
+      "bytes": 282,
+      "sha256": "92f2cd4c18d73dc13f7633a1fbe4a4c289433635a77fb035a11f4596c64ac975",
+      "nodeIds": [
+        "10:478",
+        "10:479",
+        "10:480"
+      ],
+      "reused": false
+    },
+    {
+      "nodeId": "10:481",
+      "name": "Star 8",
+      "width": 43,
+      "height": 43,
+      "localPath": "public/assets/illustrations/hero-star-43.svg",
+      "bytes": 283,
+      "sha256": "3bead6ba4001ef808f002d2181f15f0321b536f213696f721b23b0b559c6c901",
+      "nodeIds": [
+        "10:481"
+      ],
+      "reused": false
+    },
+    {
+      "nodeId": "10:482",
+      "name": "Star 4",
+      "width": 78,
+      "height": 79,
+      "localPath": "public/assets/illustrations/hero-star-78x79.svg",
+      "bytes": 300,
+      "sha256": "30b0c8f86e4000c8465574d0eba2124ed907123cc547c816e9a27c36b370e3f7",
+      "nodeIds": [
+        "10:482"
+      ],
+      "reused": false
+    },
+    {
+      "nodeId": "10:483",
+      "name": "Star 5",
+      "width": 50,
+      "height": 50,
+      "localPath": "public/assets/illustrations/hero-star-50.svg",
+      "bytes": 284,
+      "sha256": "41c59f7ee64239def1071df1cf278d088affb3cd4de0dffbcdfb7f2404cd3330",
+      "nodeIds": [
+        "10:483"
+      ],
+      "reused": false
+    },
+    {
+      "nodeId": "10:687",
+      "name": "Star 3",
+      "width": 108,
+      "height": 108,
+      "localPath": "public/assets/illustrations/hero-star-108.svg",
+      "bytes": 287,
+      "sha256": "d4ae4f06695c2efcc82860f99c49d3a112110441388506b15af801158b862c75",
+      "nodeIds": [
+        "10:687"
+      ],
+      "reused": false
+    }
+  ],
+  "reused": [
+    {
+      "localPath": "public/assets/images/mosaic-texture.png",
+      "hash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
+      "originalByteFingerprintVerified": true
+    },
+    {
+      "localPath": "public/assets/illustrations/subtale-pixel-mark.svg",
+      "nodeId": "10:612",
+      "exactSvgExportMatch": true
+    }
+  ],
+  "fillLayers": [
+    {
+      "nodeId": "10:473",
+      "name": "Mosaic",
+      "type": "RECTANGLE",
+      "width": 1920,
+      "height": 1080,
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 0.4000000059604645,
+          "blendMode": "NORMAL",
+          "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
+          "scaleMode": "TILE",
+          "scalingFactor": 0.8942065238952637,
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "nodeId": "10:477",
+      "name": "image.png_2K_20261011144124 1",
+      "type": "RECTANGLE",
+      "width": 325.60614013671875,
+      "height": 436.07965087890625,
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": false,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "7af494cdff7ca99afd79ecd61a707cd7452a7435",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "e652c3e807f5bf1e34657836f066c3b3db9c575c",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "nodeId": "10:486",
+      "name": "Union",
+      "type": "BOOLEAN_OPERATION",
+      "width": 771.4287109375,
+      "height": 462.857421875,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          }
+        },
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
+          "scaleMode": "CROP",
+          "scalingFactor": 0.5,
+          "imageTransform": [
+            [
+              1,
+              0,
+              -8.881784197001252e-16
+            ],
+            [
+              0,
+              0.48017117381095886,
+              0.019119538366794586
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "nodeId": "10:524",
+      "name": "Union",
+      "type": "BOOLEAN_OPERATION",
+      "width": 462.857421875,
+      "height": 231.427734375,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          }
+        },
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
+          "scaleMode": "CROP",
+          "scalingFactor": 0.5,
+          "imageTransform": [
+            [
+              0.5968382358551025,
+              0,
+              -0.0008815540932118893
+            ],
+            [
+              0,
+              0.23882043361663818,
+              0.5034594535827637
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "nodeId": "10:540",
+      "name": "Union",
+      "type": "BOOLEAN_OPERATION",
+      "width": 617.142578125,
+      "height": 385.712890625,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          }
+        },
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
+          "scaleMode": "CROP",
+          "scalingFactor": 0.5,
+          "imageTransform": [
+            [
+              0.818902313709259,
+              0,
+              -0.012672530487179756
+            ],
+            [
+              0,
+              0.4095972180366516,
+              0.7499189376831055
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "nodeId": "10:571",
+      "name": "Union",
+      "type": "BOOLEAN_OPERATION",
+      "width": 771.4287109375,
+      "height": 462.857421875,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          }
+        },
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
+          "scaleMode": "CROP",
+          "scalingFactor": 0.5,
+          "imageTransform": [
+            [
+              1,
+              0,
+              -8.881784197001252e-16
+            ],
+            [
+              0,
+              0.48017117381095886,
+              0.019119538366794586
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "nodeId": "10:610",
+      "name": "man eye 1",
+      "type": "RECTANGLE",
+      "width": 187,
+      "height": 93,
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "0e552b102cf5a1f06b9c6d961e804df3ec2e4893",
+          "scaleMode": "CROP",
+          "scalingFactor": 0.5,
+          "imageTransform": [
+            [
+              0.1678934097290039,
+              0,
+              0.29387515783309937
+            ],
+            [
+              0,
+              0.06654761731624603,
+              0.24070966243743896
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "nodeId": "10:686",
+      "name": "image 22",
+      "type": "RECTANGLE",
+      "width": 200,
+      "height": 200,
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "144a3d120c3632ab1ee03b64c4d9e288a22b8b5a",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "assetScript": "Verified: 6 | Pending: 35 | Errors: 0",
+    "pngAndJpegDimensions": "Match source registry and Figma original dimensions",
+    "svg": "All 8 local SVGs parsed; positive width/height and viewBox; no embedded raster images",
+    "visual": "Five original rasters inspected on checkerboard; film PNG cutout, person collage, isolated eye and eye accent retain real transparent pixels",
+    "duplicates": "One file per Figma image hash; repeated stars/CTA arrow and pre-existing assets reused"
+  },
+  "notes": [
+    "10:477 first IMAGE fill is hidden JPEG; second IMAGE fill is visible transparent PNG. Both retained, do not display the hidden JPEG automatically.",
+    "10:486, 10:524, 10:540 and 10:571 combine visible yellow SOLID and the same transparent IMAGE with distinct crops. Retain yellow underlay and boolean clipping in the later layout stage.",
+    "Original eye image retains its large transparent canvas and off-center content; do not trim it.",
+    "SVG root geometry follows original Figma SVG_STRING export, including rounded export bounds. No additional bitmap exports of the four Union crops or the whole Hero were saved.",
+    "35 pending raster hashes belong to later stages."
+  ]
+}

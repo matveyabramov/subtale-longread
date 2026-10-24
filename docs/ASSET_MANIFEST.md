@@ -63,3 +63,25 @@ Original bytes acquired via read-only Figma Plugin API, transferred directly int
 A machine-readable Figma hash-to-layer registry is in `docs/FIGMA_ASSET_MAP.json`, covering **41 unique image hashes** found in the current Figma file. Its `localPath` field is null until the actual source is saved. Run `node scripts/check-assets.mjs` once assets are present locally; it checks files, PNG geometry and duplicate bytes without npm installs. SVGs are not included in the raster hash inventory.
 
 **Not yet done:** export the other 40 raster sources, verify images' real alpha pixels / visual cropping, fetch needed font files, collect movie MP4s. The next import should target the actual Hero art and the individual exploded-animation layers. The secondary texture is a large JPEG (3370 × 2247; 4.24 MB) and should be downloaded locally rather than transmitted in small API chunks.
+
+## Stage 0.2A — Hero original assets (2026-10-24)
+
+Imported **11 new files, 6,706,924 bytes** from Hero `10:472`: five original raster sources and six separate SVG exports. Existing mosaic texture, star accent and pixel mark are reused. Updated five raster `localPath` entries in `FIGMA_ASSET_MAP.json`. Detailed source identities, SHA256 checksums, original-byte fingerprints, alpha pixel counts, SVG node mappings and crop/fill metadata: `docs/HERO_ASSET_IMPORT.json`.
+
+| New file under `public/assets/` | Original geometry / role |
+|---|---|
+| `images/hero-film-base.jpg` | 1792 × 2400; hidden original JPEG fill of `10:477` |
+| `images/hero-film-cutout.png` | 1792 × 2400; visible transparent PNG fill of `10:477` |
+| `images/hero-person-collage.png` | 1122 × 1402; shared source for four Union crops |
+| `images/hero-man-eye.png` | 1698 × 2122; isolated eye with original transparent canvas |
+| `images/hero-eye-accent.png` | 1254 × 1254; circular eye accent and yellow rays |
+| `illustrations/hero-cta-arrow.svg` | Separate arrow; reused by both CTA nodes |
+| `illustrations/hero-star-62.svg` | Shared by stars `10:478`, `10:479`, `10:480` |
+| `illustrations/hero-star-43.svg` | Star `10:481` |
+| `illustrations/hero-star-78x79.svg` | Star `10:482` |
+| `illustrations/hero-star-50.svg` | Star `10:483` |
+| `illustrations/hero-star-108.svg` | Star `10:687` |
+
+**Checks:** `node scripts/check-assets.mjs` → **Verified: 6 | Pending: 35 | Errors: 0**. Additional decoded pixel checks verified all five new raster dimensions (including JPEG), real alpha pixels and transparent edges in all four PNGs. Visually inspected originals on a checkerboard. All eight local SVGs parse, have positive dimensions/viewBox and no embedded raster images. Downloaded original raster bytes match Figma byte counts and FNV-1a fingerprints; existing pixel mark and star match direct SVG exports exactly.
+
+**Composition findings:** film JPEG is hidden in Figma; preserve it as a source, not a visible extra layer. Four Union fragments have a yellow SOLID underlay plus the same transparent portrait IMAGE with different crops; these are not redundant layers. Crop transforms and visibility are recorded for the later layout stage. Original transparent margins remain intact. No Hero-wide render is stored as an asset. No outstanding Hero source downloads; remaining 35 raster hashes are outside this stage. No Figma edits, layout implementation, optimization or dependency installation.
