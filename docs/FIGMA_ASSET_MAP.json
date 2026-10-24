@@ -253,7 +253,7 @@
       "sourceWidth": 2752,
       "sourceHeight": 1536,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/elephant-base.jpg"
     },
     {
       "hash": "4c9b031136e4b4714ea5f8a5806597a98bfa2d41",
@@ -262,7 +262,7 @@
       "sourceWidth": 2752,
       "sourceHeight": 1536,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/elephant-cutout.png"
     },
     {
       "hash": "097adb30ab0ee1356352c1673681a2318d190cad",

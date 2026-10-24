@@ -1,0 +1,656 @@
+{
+  "stage": "0.2C",
+  "date": "2026-10-24",
+  "figmaFileKey": "H4HI00uGY2UOxpcfHogUat",
+  "frameNodeId": "10:917",
+  "frameSize": {
+    "width": 1920,
+    "height": 2187
+  },
+  "newFiles": 2,
+  "newBytes": 3940804,
+  "method": "Original Figma MCP raw image downloads, checked against getImageByHash().getBytesAsync() byte count and FNV-1a. Original canvas, color data, resolution and alpha retained without cropping or re-encoding.",
+  "assets": [
+    {
+      "hash": "32e0e75e18ed7cf100a240a42dc39d57bdf810d4",
+      "bytes": 1638136,
+      "fnv1a": "239f32df",
+      "format": "jpg",
+      "width": 2752,
+      "height": 1536,
+      "nodeId": "10:920",
+      "localPath": "public/assets/images/elephant-base.jpg",
+      "sha256": "87e4b1d78c0d0e9fd62708a1ed94a3477ccd8a4f360ee1e1dcf6f6844b09de74",
+      "pixelQA": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "width": 2752,
+        "height": 1536,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0,
+        "transparentEdgePixels": 0,
+        "alphaBounds": [
+          0,
+          0,
+          2752,
+          1536
+        ]
+      }
+    },
+    {
+      "hash": "4c9b031136e4b4714ea5f8a5806597a98bfa2d41",
+      "bytes": 2302668,
+      "fnv1a": "9cd538e9",
+      "format": "png",
+      "width": 2752,
+      "height": 1536,
+      "nodeId": "10:920",
+      "localPath": "public/assets/images/elephant-cutout.png",
+      "sha256": "8f9e9b76d9aac5e41ebb7460c48952e89e023dd24a60c2176ebbc286d7bb8998",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 2752,
+        "height": 1536,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 2491799,
+        "partialAlphaPixels": 31616,
+        "transparentEdgePixels": 8576,
+        "alphaBounds": [
+          310,
+          48,
+          2224,
+          1486
+        ]
+      }
+    }
+  ],
+  "reusedTexture": {
+    "hash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
+    "bytes": 43725,
+    "fnv1a": "d0cf41a0",
+    "format": "png",
+    "width": 397,
+    "height": 322,
+    "localPath": "public/assets/images/mosaic-texture.png",
+    "originalBytesVerified": true,
+    "nodeId": "10:918",
+    "fillOpacity": 0.4000000059604645,
+    "scaleMode": "TILE",
+    "scalingFactor": 0.8942065238952637,
+    "layerHeight": 2512,
+    "clippedByFrame": true
+  },
+  "illustration": {
+    "nodeId": "10:920",
+    "parentId": "10:919",
+    "x": -10.161287307739258,
+    "y": 78.93955993652344,
+    "width": 864.4822387695312,
+    "height": 482.4964904785156,
+    "rotation": -2.000247494309496,
+    "relativeTransform": [
+      [
+        0.9993906617164612,
+        -0.03489517420530319,
+        -10.161287307739258
+      ],
+      [
+        0.034903813153505325,
+        0.9993909597396851,
+        78.93955993652344
+      ]
+    ],
+    "fills": [
+      {
+        "type": "IMAGE",
+        "visible": false,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "32e0e75e18ed7cf100a240a42dc39d57bdf810d4"
+      },
+      {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "4c9b031136e4b4714ea5f8a5806597a98bfa2d41"
+      }
+    ],
+    "assessment": "First JPEG fill is hidden. Second PNG fill is visible at full opacity with NORMAL blend and FILL mode; only the PNG contributes the illustration in the current composition. Preserve JPEG as an original, but do not render it behind the PNG. There are no other non-background image-filled nodes in this frame."
+  },
+  "decorativePixels": {
+    "color": "#FED128",
+    "width": 77.14286041259766,
+    "height": 77.14286041259766,
+    "nodes": [
+      {
+        "nodeId": "10:948",
+        "parentId": "10:917",
+        "x": 1768.142578125,
+        "y": 308,
+        "width": 77.14286041259766,
+        "height": 77.14286041259766,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            1768.142578125
+          ],
+          [
+            0,
+            1,
+            308
+          ]
+        ]
+      },
+      {
+        "nodeId": "10:949",
+        "parentId": "10:917",
+        "x": 1845.2861328125,
+        "y": 308,
+        "width": 77.14286041259766,
+        "height": 77.14286041259766,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            1845.2861328125
+          ],
+          [
+            0,
+            1,
+            308
+          ]
+        ]
+      },
+      {
+        "nodeId": "10:950",
+        "parentId": "10:917",
+        "x": 1691,
+        "y": 385.142578125,
+        "width": 77.14286041259766,
+        "height": 77.14286041259766,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            1691
+          ],
+          [
+            0,
+            1,
+            385.142578125
+          ]
+        ]
+      },
+      {
+        "nodeId": "10:951",
+        "parentId": "10:917",
+        "x": 1845.2861328125,
+        "y": 385.142578125,
+        "width": 77.14286041259766,
+        "height": 77.14286041259766,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            1845.2861328125
+          ],
+          [
+            0,
+            1,
+            385.142578125
+          ]
+        ]
+      },
+      {
+        "nodeId": "10:952",
+        "parentId": "10:917",
+        "x": 1768.142578125,
+        "y": 0,
+        "width": 77.14286041259766,
+        "height": 77.14286041259766,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            1768.142578125
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "nodeId": "10:953",
+        "parentId": "10:917",
+        "x": 1845.2861328125,
+        "y": 0,
+        "width": 77.14286041259766,
+        "height": 77.14286041259766,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            1845.2861328125
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "nodeId": "10:954",
+        "parentId": "10:917",
+        "x": 1691,
+        "y": 77.142578125,
+        "width": 77.14286041259766,
+        "height": 77.14286041259766,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            1691
+          ],
+          [
+            0,
+            1,
+            77.142578125
+          ]
+        ]
+      },
+      {
+        "nodeId": "10:955",
+        "parentId": "10:917",
+        "x": 1845.2861328125,
+        "y": 77.142578125,
+        "width": 77.14286041259766,
+        "height": 77.14286041259766,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            1845.2861328125
+          ],
+          [
+            0,
+            1,
+            77.142578125
+          ]
+        ]
+      },
+      {
+        "nodeId": "10:956",
+        "parentId": "10:917",
+        "x": 1845.2861328125,
+        "y": 231.4296875,
+        "width": 77.14286041259766,
+        "height": 77.14286041259766,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            1845.2861328125
+          ],
+          [
+            0,
+            1,
+            231.4296875
+          ]
+        ]
+      }
+    ],
+    "assessment": "Nine solid axis-aligned squares with zero corner radius, no strokes and no effects are exact CSS candidates. Preserve fractional source dimensions and frame clipping; rightmost squares extend to x=1922.4289932250977 and are clipped at 1920. No separate image/SVG files required."
+  },
+  "artFrame": {
+    "nodeId": "10:919",
+    "parentId": "10:917",
+    "x": 30,
+    "y": 383.75390625,
+    "width": 749.2565307617188,
+    "height": 666.5664672851562,
+    "rotation": 1.9999999065344156,
+    "relativeTransform": [
+      [
+        0.9993908405303955,
+        0.03489949554204941,
+        30
+      ],
+      [
+        -0.03489949554204941,
+        0.9993908405303955,
+        383.75390625
+      ]
+    ],
+    "strokeWeight": 10,
+    "strokeAlign": "INSIDE",
+    "strokes": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0.9960784316062927,
+          "g": 0.8196078538894653,
+          "b": 0.1568627506494522
+        },
+        "boundVariables": {}
+      }
+    ],
+    "clipsContent": false,
+    "assessment": "Transparent rectangular frame, yellow 10px inside stroke, Figma rotation approximately +2 degrees; image has a separate inverse relative transform. CSS border and transform can reproduce this geometry; preserve source transforms and unclipped image overflow."
+  },
+  "dividers": {
+    "nodes": [
+      {
+        "nodeId": "10:924",
+        "parentId": "10:923",
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 0,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "strokeWeight": 4,
+        "strokeAlign": "CENTER",
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 0.30000001192092896,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            },
+            "boundVariables": {}
+          }
+        ],
+        "vectorPaths": [
+          {
+            "windingRule": "NONE",
+            "data": "M 0 0 L 1919.9999999999998 0"
+          }
+        ],
+        "dashPattern": [],
+        "strokeCap": "NONE",
+        "strokeJoin": "MITER"
+      },
+      {
+        "nodeId": "10:929",
+        "parentId": "10:928",
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 0,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "strokeWeight": 4,
+        "strokeAlign": "CENTER",
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 0.30000001192092896,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            },
+            "boundVariables": {}
+          }
+        ],
+        "vectorPaths": [
+          {
+            "windingRule": "NONE",
+            "data": "M 0 0 L 1919.9999999999998 0"
+          }
+        ],
+        "dashPattern": [],
+        "strokeCap": "NONE",
+        "strokeJoin": "MITER"
+      },
+      {
+        "nodeId": "10:934",
+        "parentId": "10:933",
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 0,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "strokeWeight": 4,
+        "strokeAlign": "CENTER",
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 0.30000001192092896,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            },
+            "boundVariables": {}
+          }
+        ],
+        "vectorPaths": [
+          {
+            "windingRule": "NONE",
+            "data": "M 0 0 L 1919.9999999999998 0"
+          }
+        ],
+        "dashPattern": [],
+        "strokeCap": "NONE",
+        "strokeJoin": "MITER"
+      },
+      {
+        "nodeId": "10:939",
+        "parentId": "10:938",
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 0,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "strokeWeight": 4,
+        "strokeAlign": "CENTER",
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 0.30000001192092896,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            },
+            "boundVariables": {}
+          }
+        ],
+        "vectorPaths": [
+          {
+            "windingRule": "NONE",
+            "data": "M 0 0 L 1919.9999999999998 0"
+          }
+        ],
+        "dashPattern": [],
+        "strokeCap": "NONE",
+        "strokeJoin": "MITER"
+      },
+      {
+        "nodeId": "10:943",
+        "parentId": "10:922",
+        "x": 0,
+        "y": 960,
+        "width": 1920,
+        "height": 0,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            960
+          ]
+        ],
+        "strokeWeight": 4,
+        "strokeAlign": "CENTER",
+        "strokes": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 0.30000001192092896,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            },
+            "boundVariables": {}
+          }
+        ],
+        "vectorPaths": [
+          {
+            "windingRule": "NONE",
+            "data": "M 0 0 L 1919.9999999999998 0"
+          }
+        ],
+        "dashPattern": [],
+        "strokeCap": "NONE",
+        "strokeJoin": "MITER"
+      }
+    ],
+    "assessment": "Five identical straight horizontal paths, 1920px long, 4px centered white stroke at 0.3 paint opacity. CSS horizontal rules are sufficient; preserve centered stroke placement. No dedicated SVG saved."
+  },
+  "checks": {
+    "sourceBytes": "Both originals and existing texture match Figma byte counts and FNV-1a fingerprints",
+    "dimensions": "Both decoded originals are 2752x1536, matching registry",
+    "transparency": "PNG alpha range 0..255; 2491799 fully transparent pixels, 31616 partially transparent pixels and 8576 fully transparent edge samples. JPEG is opaque RGB.",
+    "visual": "Original JPEG and PNG inspected on checkerboard; visible cutout artwork matches the Figma screenshot. Transparent margins retained; full elephant silhouette is within canvas.",
+    "assetScript": "Verified: 13 | Pending: 28 | Errors: 0"
+  },
+  "openQuestions": []
+}

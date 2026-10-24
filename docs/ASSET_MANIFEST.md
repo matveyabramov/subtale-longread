@@ -107,3 +107,20 @@ Imported **5 original raster files, 8,445,523 bytes** from Emptiness `10:838`. U
 **Checks:** original byte counts and FNV-1a fingerprints match Figma for all five downloads; decoded JPEG/PNG dimensions match the registry; visually inspected originals against a checkerboard. A temporary pixel QA reconstruction using the original crops and child order was visually compared with the Figma composition. `node scripts/check-assets.mjs` → **Verified: 11 | Pending: 30 | Errors: 0**. No duplicate raster bytes detected.
 
 **Outstanding:** no missing Emptiness source files. Whether the occluded portrait strip should appear during a future reveal is not established by this static frame; its source is retained for the motion stage. The remaining 30 raster hashes belong to other sections. No Figma edits, layout or animation implementation, dependency installation, or changes to legacy files.
+
+## Stage 0.2C — Elephant original assets (2026-10-24)
+
+Imported **2 original raster files, 3,940,804 bytes** from Elephant `10:917`; updated both `localPath` entries. Existing `images/mosaic-texture.png` is reused by its Figma hash and verified original byte fingerprint. Source identities, SHA256 checksums, pixel QA, transforms, decoration coordinates and divider paths are recorded in `docs/ELEPHANT_ASSET_IMPORT.json`.
+
+| New file under `public/assets/images/` | Figma source | Original dimensions | Bytes | Role |
+|---|---|---|---:|---|
+| `elephant-base.jpg` | `10:920`, `32e0e75e18ed7cf100a240a42dc39d57bdf810d4` | 2752 × 1536 | 1,638,136 | Hidden original JPEG fill; opaque gray background |
+| `elephant-cutout.png` | `10:920`, `4c9b031136e4b4714ea5f8a5806597a98bfa2d41` | 2752 × 1536 | 2,302,668 | Visible transparent PNG fill |
+
+**Composition:** node `10:920` has a hidden JPEG followed by a visible PNG at full opacity, NORMAL blend, FILL mode. Only the PNG contributes the elephant illustration; the JPEG is retained as an original source and must not be rendered automatically behind it. No other non-background image layers were found. The PNG contains 2,491,799 fully transparent pixels, 31,616 partially transparent pixels and transparent pixels on all four canvas edges. The full silhouette and original transparent margins were preserved without trimming, resizing or re-encoding. Visually checked both originals on a checkerboard against the Figma artwork.
+
+**CSS candidates:** nine decorative yellow squares `10:948`–`10:956` are plain axis-aligned rectangles, **77.1428604 × 77.1428604**, with no corner radius, strokes or effects. Preserve their recorded fractional dimensions, coordinates and clipping at the right frame edge; they need no standalone PNG/SVG. The yellow art frame `10:919` is a transparent rectangle with a 10px inside border and approximately 2° Figma rotation; it also fits CSS. Keep its unclipped image overflow and the image's separate inverse transform. Five divider vectors `10:924`, `10:929`, `10:934`, `10:939`, `10:943` are identical straight 1920px paths with centered 4px white strokes at 0.3 opacity; CSS rules can reproduce them without dedicated SVG files. These are implementation findings only; no CSS or animation was implemented.
+
+**Background:** reuse the 397 × 322 mosaic with its existing TILE scale and 0.4 paint opacity. Current Elephant frame is 1920 × 2187; the texture layer is 1920 × 2512 and is clipped by the frame. Do not turn the texture's layer size into an image export or a new viewport assumption.
+
+**Checks:** both original byte counts and FNV-1a fingerprints match Figma; decoded JPEG/PNG dimensions match the registry, and PNG transparency was verified by actual pixels. `node scripts/check-assets.mjs` → **Verified: 13 | Pending: 28 | Errors: 0**. No duplicate raster bytes detected. No unresolved Elephant source questions; remaining 28 hashes are outside this stage. No Figma edits, layout, animation, dependency installation, or legacy-file changes.
