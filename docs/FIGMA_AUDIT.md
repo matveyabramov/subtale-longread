@@ -1,5 +1,7 @@
 # SUBTALE — Figma audit (Stage 0.1)
 
+Current override (Stage 0.3 Approved, 2026-10-24): this document retains historical audit observations. D01–D11 in INTERACTION_SPEC.md supersede its open decisions: Experiment has three in-flow screens; explorer is one four-category A/B section; all editorial text, headings, numbers (including «98%») and meanings are approved and must not be fact-checked or edited. Only TT Bluescreens Trial and IBM Plex Mono are used.
+
 Status: **structural inventory complete, visual deep QA and asset extraction pending**. Audited 2026-10-24 using Figma MCP on file key `H4HI00uGY2UOxpcfHogUat`, page `0:1`. Figma is read-only throughout. Current design supplies **1920px-wide frames only**. No implementation has started.
 
 ## Top-level frame inventory

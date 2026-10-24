@@ -1,14 +1,14 @@
 # SUBTALE — execution roadmap (frozen outline)
 
-Work atomically. Current status: Stage 0.2 completed — 41 Figma raster masters, optimized delivery, 16 SVGs, 4 WOFF2 fonts, 5/5 films and posters in GitHub. Stage 0.3 documentation prepared (2026-10-24): [INTERACTION_SPEC.md](INTERACTION_SPEC.md), [MOTION_SPEC.md](MOTION_SPEC.md). Recommendations and decisions D01–D11 await user approval; the approval gate is not complete. Browser video playback, captions/transcripts and scene/audio checks remain integration QA items. Next requested stage after agreement: **Stage 1A only**, not automatic implementation.
+Work atomically. Stage 0.2 completed: 41 Figma raster masters, optimized delivery, 16 SVGs, 4 WOFF2 fonts, 5/5 films and posters. **Stage 0.3 Approved (2026-10-24)**: D01–D11 closed in [INTERACTION_SPEC.md](INTERACTION_SPEC.md); [MOTION_SPEC.md](MOTION_SPEC.md) records approved baseline motion. Figma editorial content, including «98%», is final; only TT Bluescreens Trial / IBM Plex Mono. New UI visual details are reviewed per section. Stage 1A is now explicitly requested; Stage 1B does not start automatically. Captions/transcripts and video playback/audio QA belong to video implementation.
 
 | Stage | Work | Gate |
 |---|---|---|
 | −1 | Clean GitHub repository and Codex skills | Done: independent history, repository rules, pinned skill set |
 | 0.1 | Figma page/frame inventory and preliminary tokens | 19 frames mapped to 10 narrative sections, source IDs recorded |
 | 0.2 | Export/verify necessary graphic, video, font assets | All necessary sources exported/deduplicated and alpha/dimensions verified |
-| 0.3 | Section contracts, state transitions, and motion spec | Draft complete; user approval of UX/motion and open D-decisions pending |
-| 1A | Bootstrap Vite + React + TypeScript + style tokens (upon approval) | Static shell builds |
+| 0.3 | Section contracts, state transitions, and motion spec | Approved: D01–D11; UI visual details reviewed during section implementation |
+| 1A | Bootstrap Vite + React + TypeScript + style tokens (requested) | Static shell builds |
 | 1B | Build 1920px frames individually: Hero → experiment → content → explorer → movies → ending | Each screen screenshot compared with Figma; no complex motion |
 | 1C | Integrate all desktop sections in story order | Full 1920 longread; explorer variants never become extra sections; experiment flow follows approved D02 |
 | 2 | Responsive desktop 1440 (plus 1600 and 1280 checks) | Layout reflows appropriately without 1440 Figma mockup |

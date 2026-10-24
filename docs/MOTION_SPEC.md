@@ -1,6 +1,6 @@
 # SUBTALE — Motion Contracts (Stage 0.3)
 
-Дата: 2026-10-24. **Draft for approval.** Измеренные Figma endpoints ниже подтверждены; триггеры, длительности и интерполяции Stage 0.3 — рекомендации, пока не утверждённые пользователем. Никакого motion-кода, установки библиотек или изменения ассетов в этом этапе нет. Полные UX-состояния, focus, keyboard/touch, media lifecycle и решения D01–D11: [INTERACTION_SPEC.md](INTERACTION_SPEC.md).
+Дата: 2026-10-24. **Approved (2026-10-24).** Измеренные Figma endpoints ниже подтверждены; базовые триггеры, длительности и интерполяции M01–M15 утверждены как отправная точка D08. Художественная доводка допускается на Stage 4 после визуальных тестов. D01–D11 закрыты в INTERACTION_SPEC §9; визуальные детали дополнительных UI-состояний уточняются в своих секциях. Редакционное содержание Figma, включая «98%», утверждено и не пересматривается. Никакого motion-кода, установки библиотек или изменения ассетов в этом этапе нет. Полные UX-состояния, focus, keyboard/touch, media lifecycle и решения D01–D11: [INTERACTION_SPEC.md](INTERACTION_SPEC.md).
 
 **Current raster paths (Stage 0.2H.2):** original Figma sources now live under `source-assets/images/`; source filenames in historical endpoint tables identify those masters. Use each imageHash's separate `optimizedPath` in `FIGMA_ASSET_MAP.json` / `ASSET_DELIVERY.json` for future rendering. Multiply unchanged normalized crops by the selected delivery file's actual dimensions. Hidden/occluded source-only fills have no public derivative unless later approved motion needs one. All positions, transforms, source visibility, ordering, SVG/CSS masks and independent object boundaries below remain unchanged. Idiom WebPs and its shared Mosaic PNG delivery path/bytes are untouched.
 
@@ -15,7 +15,7 @@ SUBTALE строится на резкой типографике, контра�
 
 ### Предлагаемые motion tokens
 
-Значения — стартовые параметры для согласования/feel-check на 1920px, не извлечены из Figma prototype. Существующих runtime tokens ещё нет; при Stage 1A зарезервировать одну систему, а не несколько наборов таймингов.
+Значения — утверждённые стартовые параметры для feel-check на 1920px в Stage 4, не извлечены из Figma prototype. Существующих runtime tokens ещё нет; при Stage 1A зарезервировать одну систему, а не несколько наборов таймингов.
 
 | Token | Значение R | Назначение |
 |---|---|---|
@@ -31,12 +31,12 @@ SUBTALE строится на резкой типографике, контра�
 
 ### Реестр motion-контрактов R
 
-Все строки ниже требуют согласования связанных D-решений из INTERACTION_SPEC. Начальное состояние из Figma сохраняет исходную видимость; «без motion» не означает скрытый слой, ожидающий JS.
+Все строки ниже используют утверждённые D-решения из INTERACTION_SPEC. Начальное состояние из Figma сохраняет исходную видимость; «без motion» не означает скрытый слой, ожидающий JS.
 
 | ID / область | Trigger → endpoints | Предлагаемая презентация, назначение / владелец | Возврат, повтор, interruption | Reduced motion |
 |---|---|---|---|---|
 | M01 Hero `10:472` | CTA / Start / Skip → anchors | Мгновенная навигация; collage/headline статичны. Feedback контрола 150ms color/opacity CSS | Нативный scroll назад; CTA не запускает повторную intro-анимацию | То же, 0ms feedback допустим |
-| M02 Hint / contents / help | Явная кнопка closed↔open; D01/D03/D04 | Если panel выбран: opacity 0↔1, 200ms ease-out CSS. Не двигать текст/фон; немодальные панели | Latest target wins; раскрытый semantic state сразу. При close сначала защитить focus, затем убрать панель; повторное открытие retarget текущую opacity | Мгновенно показать/скрыть |
+| M02 Hint / contents / help | Явная кнопка closed↔open; D01/D03/D04 | Для разрешённой панели: opacity 0↔1, 200ms ease-out CSS. Не двигать текст/фон; немодальные панели | Latest target wins; раскрытый semantic state сразу. При close сначала защитить focus, затем убрать панель; повторное открытие retarget текущую opacity | Мгновенно показать/скрыть |
 | M03 Experiment `10:718`/`10:730`/`10:760` | Anchors и native scroll; D02 | Подэкраны статичны, 0ms. Dot/cross никогда не анимируются; эффект физиологический | Любой scroll/skip/replay доступен сразу; нет timeline/timer успеха | Тот же неподвижный stimulus и полный результат |
 | M04 Emptiness `10:838` | Чтение | Статично; не менять paint order квадратов и не раскрывать source-only portrait | Нет reset/replay | Та же полная композиция |
 | M05 Elephant `10:917` | Чтение четырёх уровней | Статично, без pin и скрытых уровней | Scroll назад не запускает новый цикл | Все уровни видны |
@@ -82,7 +82,7 @@ Trigger: при первом входе верхней границы групп
 ## Reduced motion, interruption и performance
 
 - CSS учитывает `prefers-reduced-motion`, React читает preference и слушает изменения. При включении reduce: отменить активный transform/fade и поставить **последний выбранный** endpoint без перемещения; не сбрасывать к A и не стирать значение. При выключении — не переигрывать страницу, разрешить обычные переходы со следующего действия.
-- Базовый reduced-вариант — 0ms для UI/state/decor, native instant anchors, статичные stimulus и тексты. Это сознательно строже общего совета навыка оставить fade: смены смыслов понятны без промежуточного кадра. Оба состояния доступны теми же кнопками/описаниями. Видео — отдельный явно запрошенный контент; preference change ставит pause, дальнейший Play явный.
+- Базовый reduced-вариант — 0ms для UI/state/decor, native instant anchors, статичные stimulus и тексты. Это сознательно строже общего совета навыка оставить fade: смены смыслов понятны без промежуточного кадра. Оба состояния доступны теми же кнопками/описаниями. Видео — отдельный явно запрошенный контент; preference change ставит pause, дальнейший Play явный. По D07 первый явный Play запускается со звуком, последующие действия уважают ручной mute.
 - Native scroll не блокируется timeline; нет scroll hijacking, pin, scrub, compulsory snap, synthetic smooth-scroller и задержанных focus-переходов. Такие решения потребовали бы отдельного согласования, их нет в этом плане.
 - Простые переходы — CSS с явными свойствами transform/opacity/color. Текст не проходит через blur, clip-path или 3D. Не анимировать width/height/top/left, image filters и texture blend; z-order дискретный. `will-change` — только на время реального эффекта, не на все растры страницы.
 - GSAP/ScrollTrigger не обязательны ни одному базовому контракту. Если будущий согласованный multi-layer timeline потребует GSAP, локальный context/revert и единый владелец свойства обязательны; не делать React render на каждом animation tick/scroll. Не заявлять GPU-only/performance результат без измерений.
@@ -90,13 +90,13 @@ Trigger: при первом входе верхней границы групп
 
 ## Gate и проверка motion-ticket
 
-Перед Stage 4 ticket ссылается на I/M ID и выбранные D-решения; содержит Figma A/B, runtime asset mapping, trigger/default/target, свойства, pivot/order, duration/easing, reverse/reset/replay, interruption, keyboard/touch, reduced motion и проверки. Без авторского одобрения не подменять документированное O вариантом R. Stage 1A и статическая сборка не разрешают motion-pass автоматически.
+Перед Stage 4 ticket ссылается на I/M ID и выбранные D-решения; содержит Figma A/B, runtime asset mapping, trigger/default/target, свойства, pivot/order, duration/easing, reverse/reset/replay, interruption, keyboard/touch, reduced motion и проверки. Не включать невыбранные O-варианты автоматически; базовые R-контракты утверждены D08. Stage 1A и статическая сборка не разрешают motion-pass автоматически.
 
 Acceptance: endpoints совпадают с Figma на 1920px; input работает до окончания transition; 10 быстрых toggle/category changes завершаются последним target без очереди; scroll/back сохраняет смысл; runtime reduced-motion change не оставляет opacity 0/промежуточный transform; hidden-tab/offscreen не возвращают старый timeline; source-only artwork не появился; layout не скачет и media не играет в фоне. Проверить mouse, keyboard-only и реальный touch, медленную загрузку B, сбой decode, repeat mount, native scroll. Feel-check M07/M08/M10 сначала при увеличенной длительности для поиска разрывов, затем при целевых 200/250ms. Полная матрица будущего QA — INTERACTION_SPEC §8. Сейчас проверена только документация, motion/performance/browser QA не проводились.
 
 ## Stage 0.2 — сохранённые доказательства конечных состояний
 
-Разделы ниже сохранены без изменения измерений. Их фразы «decide in a later stage», «unspecified trigger» и старые пути `public/*.png` описывают момент импорта Stage 0.2. Текущие предложения и открытые решения находятся выше и в INTERACTION_SPEC; текущие delivery paths — в реестрах. Не трактовать исторические placeholders как разрешённые эффекты или отсутствие Stage 0.3-контракта.
+Разделы ниже сохранены без изменения измерений. Их фразы «decide in a later stage», «unspecified trigger» и старые пути `public/*.png` описывают момент импорта Stage 0.2. Утверждённые текущие контракты и границы будущих визуальных уточнений находятся выше и в INTERACTION_SPEC; текущие delivery paths — в реестрах. Не трактовать исторические placeholders как разрешённые эффекты или отсутствие Stage 0.3-контракта.
 
 ## Stage 0.2D.1 — verified Idiom endpoints (2026-10-24)
 
