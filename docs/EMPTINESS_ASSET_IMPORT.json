@@ -1,0 +1,887 @@
+{
+  "stage": "0.2B",
+  "date": "2026-10-24",
+  "figmaFileKey": "H4HI00uGY2UOxpcfHogUat",
+  "frameNodeId": "10:838",
+  "newFiles": 5,
+  "newBytes": 8445523,
+  "method": "Original Figma MCP raw image downloads, matched by byte count and FNV-1a against getImageByHash().getBytesAsync(); no crop, resize, re-encoding or Figma mutation.",
+  "assets": [
+    {
+      "hash": "40eccc4ce44ce41732834332152c96e11bfcaabd",
+      "bytes": 1472785,
+      "fnv1a": "4509ce42",
+      "format": "jpg",
+      "width": 2752,
+      "height": 1536,
+      "nodeId": "10:864",
+      "localPath": "public/assets/images/emptiness-male-base.jpg",
+      "sha256": "4983d9ae72f08eed4bf1c5a30d90f0c388b0fda4d81c0361d404680317fb3357",
+      "pixelQA": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "width": 2752,
+        "height": 1536,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0,
+        "transparentEdgePixels": 0,
+        "alphaBounds": [
+          0,
+          0,
+          2752,
+          1536
+        ]
+      }
+    },
+    {
+      "hash": "a7989beee0d2ab130f2012d50167c4ed4862f4d0",
+      "bytes": 1001055,
+      "fnv1a": "2d31c14a",
+      "format": "png",
+      "width": 2752,
+      "height": 1536,
+      "nodeId": "10:864",
+      "localPath": "public/assets/images/emptiness-male-cutout.png",
+      "sha256": "b02c5bede368e85b9d8b93d6be31b5aad19fca1e2ea416344cdb4f656e9c3076",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 2752,
+        "height": 1536,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 3711972,
+        "partialAlphaPixels": 31441,
+        "transparentEdgePixels": 7750,
+        "alphaBounds": [
+          1078,
+          594,
+          2077,
+          1536
+        ]
+      }
+    },
+    {
+      "hash": "5117fe324500367f27967d387a1ca2d13f13b5b0",
+      "bytes": 1402762,
+      "fnv1a": "c95f14cf",
+      "format": "jpg",
+      "width": 2752,
+      "height": 1536,
+      "nodeId": "10:899",
+      "localPath": "public/assets/images/emptiness-female-base.jpg",
+      "sha256": "04c806e3ae2dc917446ef6487c0b2f047d450149123d78759830b5d79a84f955",
+      "pixelQA": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "width": 2752,
+        "height": 1536,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0,
+        "transparentEdgePixels": 0,
+        "alphaBounds": [
+          0,
+          0,
+          2752,
+          1536
+        ]
+      }
+    },
+    {
+      "hash": "7a1b43ea9e3c8bbaab739debe43323d87d1c550f",
+      "bytes": 1770817,
+      "fnv1a": "feed4a5f",
+      "format": "png",
+      "width": 2752,
+      "height": 1536,
+      "nodeId": "10:899",
+      "localPath": "public/assets/images/emptiness-female-cutout.png",
+      "sha256": "b223f616cef1838032330a84b3ddccbd37fd9cb9348afc36a5c62966d85179d3",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 2752,
+        "height": 1536,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 3153974,
+        "partialAlphaPixels": 86365,
+        "transparentEdgePixels": 7606,
+        "alphaBounds": [
+          1474,
+          69,
+          2503,
+          1536
+        ]
+      }
+    },
+    {
+      "hash": "b7c41bc585e7ce56a516ed7cc7c897a8339c874d",
+      "bytes": 2798104,
+      "fnv1a": "b5edfa47",
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "nodeId": "10:875",
+      "localPath": "public/assets/images/emptiness-pixel-strip-source.png",
+      "sha256": "10c17957ee73a00edf0a442b26d9d396828ffc4397aca4163081e29c8b8b1131",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1122,
+        "height": 1402,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 378072,
+        "partialAlphaPixels": 1194808,
+        "transparentEdgePixels": 4679,
+        "alphaBounds": [
+          0,
+          0,
+          1122,
+          1402
+        ]
+      }
+    }
+  ],
+  "reusedTexture": {
+    "hash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
+    "bytes": 43725,
+    "fnv1a": "d0cf41a0",
+    "format": "png",
+    "width": 397,
+    "height": 322,
+    "localPath": "public/assets/images/mosaic-texture.png",
+    "originalBytesVerified": true
+  },
+  "characterFills": [
+    {
+      "nodeId": "10:864",
+      "width": 508,
+      "height": 480,
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": false,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "40eccc4ce44ce41732834332152c96e11bfcaabd",
+          "scaleMode": "FILL",
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "a7989beee0d2ab130f2012d50167c4ed4862f4d0",
+          "scaleMode": "CROP",
+          "imageTransform": [
+            [
+              0.3702388405799866,
+              0,
+              0.3932058811187744
+            ],
+            [
+              0,
+              0.6282553672790527,
+              0.3717448115348816
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "nodeId": "10:875",
+      "width": 231,
+      "height": 77,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          }
+        },
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "b7c41bc585e7ce56a516ed7cc7c897a8339c874d",
+          "scaleMode": "CROP",
+          "imageTransform": [
+            [
+              0.6015974283218384,
+              0,
+              0.16819779574871063
+            ],
+            [
+              0,
+              0.1604831963777542,
+              0.4943529963493347
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "nodeId": "10:899",
+      "width": 328,
+      "height": 463,
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": false,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "5117fe324500367f27967d387a1ca2d13f13b5b0",
+          "scaleMode": "FILL",
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "7a1b43ea9e3c8bbaab739debe43323d87d1c550f",
+          "scaleMode": "CROP",
+          "imageTransform": [
+            [
+              0.3813953399658203,
+              0,
+              0.5279069542884827
+            ],
+            [
+              0,
+              0.9645833969116211,
+              0.03541667014360428
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "pixelMask": {
+    "groupNodeId": "10:846",
+    "width": 1049,
+    "height": 480,
+    "frameOffset": {
+      "x": 801,
+      "y": 300
+    },
+    "isFigmaMask": false,
+    "directSquares": 50,
+    "booleanUnions": 2,
+    "unionChildSquares": 6,
+    "color": "#FED128",
+    "tileSize": 77,
+    "coordinateConvention": "groupLocalX/Y subtract the group x=40,y=270 from Figma node x/y. Group origin in Emptiness frame is x=801,y=300. Order follows Figma children, back to front. Union children retain their own parent IDs and are not additional independently painted squares.",
+    "layers": [
+      {
+        "nodeId": "10:847",
+        "order": 0,
+        "type": "RECTANGLE",
+        "groupLocalX": 469,
+        "groupLocalY": 326,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:848",
+        "order": 1,
+        "type": "RECTANGLE",
+        "groupLocalX": 392,
+        "groupLocalY": 249,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:849",
+        "order": 2,
+        "type": "RECTANGLE",
+        "groupLocalX": 315,
+        "groupLocalY": 326,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:850",
+        "order": 3,
+        "type": "RECTANGLE",
+        "groupLocalX": 777,
+        "groupLocalY": 403,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:851",
+        "order": 4,
+        "type": "RECTANGLE",
+        "groupLocalX": 392,
+        "groupLocalY": 326,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:852",
+        "order": 5,
+        "type": "RECTANGLE",
+        "groupLocalX": 315,
+        "groupLocalY": 172,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:853",
+        "order": 6,
+        "type": "RECTANGLE",
+        "groupLocalX": 315,
+        "groupLocalY": 95,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:854",
+        "order": 7,
+        "type": "RECTANGLE",
+        "groupLocalX": 546,
+        "groupLocalY": 95,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:855",
+        "order": 8,
+        "type": "RECTANGLE",
+        "groupLocalX": 546,
+        "groupLocalY": 172,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:856",
+        "order": 9,
+        "type": "RECTANGLE",
+        "groupLocalX": 392,
+        "groupLocalY": 95,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:857",
+        "order": 10,
+        "type": "RECTANGLE",
+        "groupLocalX": 392,
+        "groupLocalY": 172,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:858",
+        "order": 11,
+        "type": "RECTANGLE",
+        "groupLocalX": 469,
+        "groupLocalY": 95,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:859",
+        "order": 12,
+        "type": "RECTANGLE",
+        "groupLocalX": 469,
+        "groupLocalY": 172,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:860",
+        "order": 13,
+        "type": "RECTANGLE",
+        "groupLocalX": 546,
+        "groupLocalY": 403,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:861",
+        "order": 14,
+        "type": "RECTANGLE",
+        "groupLocalX": 546,
+        "groupLocalY": 249,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:862",
+        "order": 15,
+        "type": "RECTANGLE",
+        "groupLocalX": 469,
+        "groupLocalY": 403,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:863",
+        "order": 16,
+        "type": "RECTANGLE",
+        "groupLocalX": 392,
+        "groupLocalY": 403,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:864",
+        "order": 17,
+        "type": "RECTANGLE",
+        "groupLocalX": 0,
+        "groupLocalY": 0,
+        "width": 508,
+        "height": 480
+      },
+      {
+        "nodeId": "10:865",
+        "order": 18,
+        "type": "RECTANGLE",
+        "groupLocalX": 700,
+        "groupLocalY": 95,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:866",
+        "order": 19,
+        "type": "RECTANGLE",
+        "groupLocalX": 623,
+        "groupLocalY": 95,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:867",
+        "order": 20,
+        "type": "RECTANGLE",
+        "groupLocalX": 623,
+        "groupLocalY": 172,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:868",
+        "order": 21,
+        "type": "RECTANGLE",
+        "groupLocalX": 777,
+        "groupLocalY": 172,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:869",
+        "order": 22,
+        "type": "RECTANGLE",
+        "groupLocalX": 700,
+        "groupLocalY": 249,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:870",
+        "order": 23,
+        "type": "RECTANGLE",
+        "groupLocalX": 854,
+        "groupLocalY": 172,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:871",
+        "order": 24,
+        "type": "RECTANGLE",
+        "groupLocalX": 854,
+        "groupLocalY": 249,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:872",
+        "order": 25,
+        "type": "RECTANGLE",
+        "groupLocalX": 854,
+        "groupLocalY": 326,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:873",
+        "order": 26,
+        "type": "RECTANGLE",
+        "groupLocalX": 623,
+        "groupLocalY": 18,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:874",
+        "order": 27,
+        "type": "RECTANGLE",
+        "groupLocalX": 623,
+        "groupLocalY": 249,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:875",
+        "order": 28,
+        "type": "BOOLEAN_OPERATION",
+        "groupLocalX": 623,
+        "groupLocalY": 326,
+        "width": 231,
+        "height": 77
+      },
+      {
+        "nodeId": "10:879",
+        "order": 29,
+        "type": "RECTANGLE",
+        "groupLocalX": 700,
+        "groupLocalY": 403,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:880",
+        "order": 30,
+        "type": "RECTANGLE",
+        "groupLocalX": 700,
+        "groupLocalY": 326,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:881",
+        "order": 31,
+        "type": "RECTANGLE",
+        "groupLocalX": 623,
+        "groupLocalY": 326,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:882",
+        "order": 32,
+        "type": "BOOLEAN_OPERATION",
+        "groupLocalX": 623,
+        "groupLocalY": 172,
+        "width": 231,
+        "height": 77
+      },
+      {
+        "nodeId": "10:886",
+        "order": 33,
+        "type": "RECTANGLE",
+        "groupLocalX": 238,
+        "groupLocalY": 403,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:887",
+        "order": 34,
+        "type": "RECTANGLE",
+        "groupLocalX": 161,
+        "groupLocalY": 403,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:888",
+        "order": 35,
+        "type": "RECTANGLE",
+        "groupLocalX": 84,
+        "groupLocalY": 326,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:889",
+        "order": 36,
+        "type": "RECTANGLE",
+        "groupLocalX": 7,
+        "groupLocalY": 403,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:890",
+        "order": 37,
+        "type": "RECTANGLE",
+        "groupLocalX": 7,
+        "groupLocalY": 249,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:891",
+        "order": 38,
+        "type": "RECTANGLE",
+        "groupLocalX": 469,
+        "groupLocalY": 249,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:892",
+        "order": 39,
+        "type": "RECTANGLE",
+        "groupLocalX": 392,
+        "groupLocalY": 18,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:893",
+        "order": 40,
+        "type": "RECTANGLE",
+        "groupLocalX": 238,
+        "groupLocalY": 18,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:894",
+        "order": 41,
+        "type": "RECTANGLE",
+        "groupLocalX": 161,
+        "groupLocalY": 95,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:895",
+        "order": 42,
+        "type": "RECTANGLE",
+        "groupLocalX": 238,
+        "groupLocalY": 249,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:896",
+        "order": 43,
+        "type": "RECTANGLE",
+        "groupLocalX": 315,
+        "groupLocalY": 249,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:897",
+        "order": 44,
+        "type": "RECTANGLE",
+        "groupLocalX": 777,
+        "groupLocalY": 95,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:898",
+        "order": 45,
+        "type": "RECTANGLE",
+        "groupLocalX": 854,
+        "groupLocalY": 95,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:899",
+        "order": 46,
+        "type": "RECTANGLE",
+        "groupLocalX": 721,
+        "groupLocalY": 17,
+        "width": 328,
+        "height": 463
+      },
+      {
+        "nodeId": "10:900",
+        "order": 47,
+        "type": "RECTANGLE",
+        "groupLocalX": 777,
+        "groupLocalY": 18,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:901",
+        "order": 48,
+        "type": "RECTANGLE",
+        "groupLocalX": 854,
+        "groupLocalY": 95,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:902",
+        "order": 49,
+        "type": "RECTANGLE",
+        "groupLocalX": 931,
+        "groupLocalY": 172,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:903",
+        "order": 50,
+        "type": "RECTANGLE",
+        "groupLocalX": 854,
+        "groupLocalY": 18,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:904",
+        "order": 51,
+        "type": "RECTANGLE",
+        "groupLocalX": 777,
+        "groupLocalY": 326,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:905",
+        "order": 52,
+        "type": "RECTANGLE",
+        "groupLocalX": 854,
+        "groupLocalY": 403,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:906",
+        "order": 53,
+        "type": "RECTANGLE",
+        "groupLocalX": 931,
+        "groupLocalY": 326,
+        "width": 77,
+        "height": 77
+      }
+    ],
+    "unionChildren": [
+      {
+        "nodeId": "10:876",
+        "parentId": "10:875",
+        "groupLocalX": 623,
+        "groupLocalY": 326,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:877",
+        "parentId": "10:875",
+        "groupLocalX": 700,
+        "groupLocalY": 326,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:878",
+        "parentId": "10:875",
+        "groupLocalX": 777,
+        "groupLocalY": 326,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:883",
+        "parentId": "10:882",
+        "groupLocalX": 623,
+        "groupLocalY": 172,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:884",
+        "parentId": "10:882",
+        "groupLocalX": 700,
+        "groupLocalY": 172,
+        "width": 77,
+        "height": 77
+      },
+      {
+        "nodeId": "10:885",
+        "parentId": "10:882",
+        "groupLocalX": 777,
+        "groupLocalY": 172,
+        "width": 77,
+        "height": 77
+      }
+    ],
+    "cssAssessment": "All 50 solid 77x77 squares and the two 231x77 unions (each three adjacent squares) are exact rectangular CSS candidates. They need no standalone SVG/PNG. Preserve child paint order around both cutouts; do not flatten the group into one mask file.",
+    "imageAssessment": "Both visible character PNG fills require separate original files. Hidden JPEG fills retained. Union 10:875 also has a distinct transparent portrait fill requiring the saved source if exposed later; no duplicate of Hero portrait was substituted.",
+    "occludedImage": {
+      "nodeId": "10:875",
+      "coveredByNodeIds": [
+        "10:881",
+        "10:880",
+        "10:904"
+      ],
+      "coverage": "Three later opaque 77x77 squares exactly cover the full 231x77 image-filled strip in the current composition."
+    },
+    "overlappingSquares": {
+      "nodeIds": [
+        "10:898",
+        "10:901"
+      ],
+      "reason": "Same bounds, but they straddle female layer 10:899 in paint order. Retain both in the recorded source structure; do not deduplicate by coordinates alone."
+    }
+  },
+  "checks": {
+    "sourceBytes": "All five downloaded originals match Figma byte counts and FNV-1a fingerprints",
+    "dimensions": "All five decoded dimensions match registry, including both JPEGs",
+    "transparency": "Both character PNGs and the strip PNG have real fully transparent and partially transparent pixels; original canvas and source-edge clipping retained",
+    "visual": "Originals inspected on checkerboard; temporary pixel QA composition reconstructed from Figma crops and child order and compared visually to frame screenshot",
+    "assetScript": "Verified: 11 | Pending: 30 | Errors: 0"
+  },
+  "openQuestions": [
+    "Future motion/reveal behavior for the occluded portrait strip is not specified by this static frame. Keep source; decide only in the motion stage."
+  ]
+}

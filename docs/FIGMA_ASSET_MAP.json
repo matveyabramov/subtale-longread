@@ -208,7 +208,7 @@
       "sourceWidth": 2752,
       "sourceHeight": 1536,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/emptiness-male-base.jpg"
     },
     {
       "hash": "a7989beee0d2ab130f2012d50167c4ed4862f4d0",
@@ -217,7 +217,7 @@
       "sourceWidth": 2752,
       "sourceHeight": 1536,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/emptiness-male-cutout.png"
     },
     {
       "hash": "b7c41bc585e7ce56a516ed7cc7c897a8339c874d",
@@ -226,7 +226,7 @@
       "sourceWidth": 1122,
       "sourceHeight": 1402,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/emptiness-pixel-strip-source.png"
     },
     {
       "hash": "5117fe324500367f27967d387a1ca2d13f13b5b0",
@@ -235,7 +235,7 @@
       "sourceWidth": 2752,
       "sourceHeight": 1536,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/emptiness-female-base.jpg"
     },
     {
       "hash": "7a1b43ea9e3c8bbaab739debe43323d87d1c550f",
@@ -244,7 +244,7 @@
       "sourceWidth": 2752,
       "sourceHeight": 1536,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/emptiness-female-cutout.png"
     },
     {
       "hash": "32e0e75e18ed7cf100a240a42dc39d57bdf810d4",
