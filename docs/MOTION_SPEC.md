@@ -10,7 +10,7 @@
 | Elephant | `10:917` | Four conceptual layers revealed in reading order | Static four levels, then motion |
 | Idiom | `10:1431`, `10:1596` | Ice/telephone before ↔ after | Click/hover/touch, replay, reduced motion |
 | Pun | `10:1495`, `10:1981` | Whole bicycle composite rotates ≈34.37°; verified endpoints below | Click/hover/touch, replay, reduced motion |
-| Double meaning | `10:1528`, `10:2017` | Eye image / two readings | Click/hover/touch with visible alternative |
+| Double meaning | `10:1528`, `10:2017` | Mutually exclusive full-eye PNG fills; verified endpoints below | Click/hover/touch with visible alternative |
 | Cultural reference | `10:1560`, `10:2049` | Snowflake → throne | Click/hover/touch, replay, reduced motion |
 | Movies | `10:1794` | Five scene cards with contextual reveal and/or video preview | Video state ownership; pause offscreen, hidden tab, reduced-motion handling |
 | Vocab | `10:966` | Scroll-triggered statement emphasis if approved | Static first |
@@ -142,3 +142,50 @@ The existing art supports **two independently transformable bitmap wrappers**, a
 - Moving the wheel-pair overlay away exposes the original wheels underneath. A clean wheel-free frame and independently detached wheels are therefore **not available as supplied**. Such motion requires separately agreed source preparation/masking; it must not be claimed complete from these assets or improvised in this import stage.
 
 The observed endpoints are achievable with existing files. Trigger, duration/easing, path, replay/reset, interruption handling and keyboard/touch controls remain decisions for the motion stage. A prefers-reduced-motion option should expose both states/meaning without requiring rotation. No scroll hijacking is authorized. No layout, animation, new wheel isolation or dependency installation was performed.
+
+## Stage 0.2D.3 — verified Double Meaning endpoints (2026-10-24)
+
+Scope: **A `10:1528`**, **B `10:2017`**, both 1920 × 1080. Source checksums, exact fills/transforms and A/B node correspondence are in `docs/DOUBLE_MEANING_ASSET_IMPORT.json`. The earlier interaction row remains a proposal; this section records the actual endpoint mechanism and introduces no animation.
+
+**Observed visual difference:** A shows an eye with an empty yellow center; B shows a dark couple silhouette within that center. Both are **complete eye PNGs**, not a common eye plus a separate couple overlay. In Figma there is one illustration rectangle with two IMAGE fills; their `visible` flags are exchanged. Position, scale, rotation, crop settings, node opacity, paint opacity, mask structure and layer order do not change. No geometric reveal or opacity tween is encoded by these endpoints.
+
+### Object structure and fixed geometry
+
+| Object | A node → B node | Position A = B (x, y) | Dimensions A = B | Rotation A = B | Scale B/A | Node opacity A = B | Frame paint order A = B |
+|---|---|---|---|---|---|---|---|
+| Eye rectangle, two fills | `10:1558` → `10:2047` | (115, 383) | 845 × 563 | 0° | (1, 1) | 1 | 4 |
+| Existing mosaic | `10:1529` → `10:2018` | (0, 0) | 1920 × 1080 | 0° | (1, 1) | 1 | 0 |
+
+Frame paint order is zero-based, back to front. Within either frame: mosaic 0 → sidebar group 1 → title 2 → yellow heading container 3 → eye rectangle 4 → bottom text link 5. The image remains above the mosaic in both states. Frame-local eye transform is exactly `[[1, 0, 115], [0, 1, 383]]` for A and B; its slot center is (537.5, 664.5). Both frames clip at 1920 × 1080. The page-level sibling indices of the two reference frames (13 and 14) are document placement, not a transition in the internal stacking.
+
+### The actual state change: fill visibility
+
+Fill-array order stays fixed. Each paint uses NORMAL blend, opacity 1, FILL mode, identity imageTransform `[[1, 0, 0], [0, 1, 0]]`, zero filters and stored `scalingFactor: 0.5`.
+
+| Fill index | Original imageHash | File under `public/assets/images/` | Original resolution | A visible | B visible |
+|---|---|---|---|---|---|
+| 0 | `a9f463489c07be031417200565743725d6a366ac` | `double-meaning-eye.png` | 3072 × 2048 | true | false |
+| 1 | `3a4dbff1bde5d50b9dc399bc758f670e1fbee740` | `double-meaning-eye-couple.png` | 1536 × 1024 | false | true |
+
+Exactly one fill is enabled per endpoint. The two fills are alternative full artwork, not two simultaneously visible compositing layers. To reproduce the endpoints, switch the enabled image in the same logical slot. A crossfade, pupil opening, animated clipping mask or independent couple movement would be an additional design decision, not a behavior established by these frames.
+
+The apparent size stays the same despite B's source having half the width and height of A's source: both use the identical 845 × 563 slot. Both canvases have a 3:2 aspect ratio, slightly different from the slot, so retain the small centered cover crop implicit in FILL. There is no custom CROP transform, and the paint `scalingFactor` is not an endpoint scale change. Do not resize originals to a common resolution, trim transparent margins, or align the art by nonzero-alpha bounds.
+
+### Alpha and masks
+
+Both originals are RGBA PNGs with fully transparent edges and real partially transparent pixels. A's alpha range is **0–255**; B's is **0–254**, with no fully opaque pixel. This is source-pixel data, not a change to Figma node/paint opacity, which stays 1. Preserve these bytes without forcing alpha to 255 or flattening against the blue background.
+
+| PNG | Nonzero-alpha bounds in original pixels | Fully transparent pixels | Partially transparent pixels |
+|---|---|---:|---:|
+| Eye A, 3072 × 2048 | (104, 2)–(2998, 2022) | 2,621,824 | 3,425,234 |
+| Eye with couple B, 1536 × 1024 | (52, 1)–(1499, 1011) | 655,456 | 917,408 |
+
+No `isMask=true` nodes or Boolean operations were found in either inspected frame. PNG alpha contains the silhouette and internal illustration; slot cover and frame clipping provide the remaining clipping. There is no separate pupil mask to export. No additional SVG/mask file is needed. The mosaic is reused at 0.4 paint opacity, TILE scalingFactor 0.8942065238952637, unchanged below the eye.
+
+### Comparison evidence and animation limits
+
+The recorded structure has 32 nodes per frame. Pairwise comparison of their in-frame geometry, transforms, visibility, opacity, fills, effects, strokes, mask/clipping flags and text content found a single changed property: the eye rectangle's fill array, differing **only in the two `visible` flags**. Source hashes and paint-array order remain the same. Original-byte fingerprints, decoded dimensions and actual alpha pixels were checked; both original images were visually inspected in the same logical slot against the Figma references.
+
+**Supported by the assets:** exact switching between two complete images in the fixed slot. The couple, iris, pupil, highlight and eye outline are fused into those images; they are not separate independently transformable objects. Independently moving the figures or morphing the pupil would require additional agreed source preparation and a design decision. These reference states specify no duration, easing, path or interpolation, so this import does not invent one.
+
+Trigger, replay/reset, interruption and keyboard/touch access remain decisions for the interaction/motion stage. Both readings must remain accessible without requiring motion, including for prefers-reduced-motion. No layout, transition or animation has been implemented.

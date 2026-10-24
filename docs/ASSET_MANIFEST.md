@@ -169,3 +169,20 @@ Compared frames A `10:1495` and B `10:1981`. Imported **4 original raster files,
 **Animation limits:** two image wrappers can transform separately, and both can rotate together to reproduce B. The full bicycle source includes its wheels, while the extracted pair is fused into one bitmap. There is no clean wheel-free frame or separate left/right wheel asset. Clean detached-wheel animation would require an additional agreed source-preparation stage; moving only the existing pair exposes the original wheels behind it.
 
 **Checks:** all four original byte counts and FNV-1a fingerprints match Figma; decoded JPEG/PNG dimensions match the registry; pixel alpha checked. Originals inspected on a checkerboard; temporary affine/cover reconstructions of both compositions visually compared with Figma screenshots. `node scripts/check-assets.mjs` → **Verified: 26 | Pending: 15 | Errors: 0**; no duplicate raster bytes. No missing Pun originals. No Figma edits, layout/animation implementation, dependencies or legacy-file changes.
+
+## Stage 0.2D.3 — Double Meaning original PNG fills (2026-10-24)
+
+Compared A `10:1528` and B `10:2017`. Imported **2 original PNG files, 1,968,067 bytes**; updated both `localPath` entries. Both imageHashes occur in both states and are saved once. Existing mosaic texture is reused and its original byte fingerprint verified. Figma MCP also returned 384 × 256 variants; those were excluded after checking original dimensions, byte lengths and fingerprints.
+
+| New file under `public/assets/images/` | Figma imageHash | Original dimensions | Bytes | Use |
+|---|---|---|---:|---|
+| `double-meaning-eye.png` | `a9f463489c07be031417200565743725d6a366ac` | 3072 × 2048 | 940,785 | Visible fill 0 in A; hidden in B |
+| `double-meaning-eye-couple.png` | `3a4dbff1bde5d50b9dc399bc758f670e1fbee740` | 1536 × 1024 | 1,027,282 | Hidden fill 1 in A; visible in B |
+
+**Actual difference and mechanism:** A has an empty yellow center; B has a couple silhouette there. Both PNGs contain the entire eye. In one rectangle (`10:1558` → `10:2047`), the two IMAGE fills exchange visibility; all other recorded in-frame properties remain unchanged. Position (115, 383), slot 845 × 563, rotation 0°, scale 1 × 1, node/paint opacity 1, FILL settings and paint order 4 are identical. No mask reveal, opacity tween, movement or stacking transition is encoded. Detailed state correspondence and parameter tables are in `docs/MOTION_SPEC.md`; exact metadata and SHA256 checksums are in `docs/DOUBLE_MEANING_ASSET_IMPORT.json`.
+
+**Alpha, cropping and masks:** both PNGs retain full original RGBA data, transparent canvas margins, fully transparent edges and partially transparent pixels. A's alpha range is 0–255; B's is 0–254, so the latter has no fully opaque pixel. Do not normalize this alpha or flatten the sources. The two original 3:2 resolutions share the same logical slot and small FILL cover crop; no resizing or trimming was performed. No explicit masks or Boolean geometry exist in either frame, so no extra mask files were required.
+
+**Checks:** both downloaded originals match Figma byte counts and FNV-1a fingerprints; decoded dimensions match the registry; actual alpha pixels verified. Originals inspected on a checkerboard at the common 845 × 563 slot and compared with Figma screenshots. The recorded 32-node structures differ internally only in the two fill visibility flags. `node scripts/check-assets.mjs` → **Verified: 28 | Pending: 13 | Errors: 0**; no duplicate raster bytes.
+
+**Animation limits:** the existing assets support switching between full-eye states. The figures, pupil and eye are not separately layered; no independent figure movement or existing pupil-mask animation is available. Timing/interpolation and controls remain later design decisions. No missing Double Meaning sources. No Figma edits, layout/animation implementation, dependency installation or legacy-file changes.

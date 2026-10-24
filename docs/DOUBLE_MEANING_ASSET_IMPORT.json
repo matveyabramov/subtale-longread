@@ -1,0 +1,887 @@
+{
+  "stage": "0.2D.3",
+  "date": "2026-10-24",
+  "figmaFileKey": "H4HI00uGY2UOxpcfHogUat",
+  "frameNodeIds": [
+    "10:1528",
+    "10:2017"
+  ],
+  "newFiles": 2,
+  "newBytes": 1968067,
+  "method": "Figma MCP original downloads selected by exact original byte counts and FNV-1a from getImageByHash().getBytesAsync(); 384x256 MCP thumbnail variants discarded. No crop, resize, alpha normalization or re-encoding.",
+  "assets": [
+    {
+      "hash": "a9f463489c07be031417200565743725d6a366ac",
+      "bytes": 940785,
+      "fnv1a": "ed0ed45f",
+      "format": "png",
+      "width": 3072,
+      "height": 2048,
+      "nodeId": "10:1558",
+      "localPath": "public/assets/images/double-meaning-eye.png",
+      "sha256": "70df22876417d9cbdd1c8c54cb7a8dd89b68bcbcbc7bd567d1e85ae95aaf59f7",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 3072,
+        "height": 2048,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 2621824,
+        "partialAlphaPixels": 3425234,
+        "transparentEdgePixels": 10240,
+        "alphaBounds": [
+          104,
+          2,
+          2998,
+          2022
+        ]
+      }
+    },
+    {
+      "hash": "3a4dbff1bde5d50b9dc399bc758f670e1fbee740",
+      "bytes": 1027282,
+      "fnv1a": "59ee92e3",
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "nodeId": "10:1558",
+      "localPath": "public/assets/images/double-meaning-eye-couple.png",
+      "sha256": "e796a62b6057c5949804d0dc61165fa72931c57b2fa8a1b1161f256743c9b7cf",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1536,
+        "height": 1024,
+        "alphaExtrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 655456,
+        "partialAlphaPixels": 917408,
+        "transparentEdgePixels": 5120,
+        "alphaBounds": [
+          52,
+          1,
+          1499,
+          1011
+        ]
+      }
+    }
+  ],
+  "reusedTexture": {
+    "hash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
+    "bytes": 43725,
+    "fnv1a": "d0cf41a0",
+    "format": "png",
+    "width": 397,
+    "height": 322,
+    "localPath": "public/assets/images/mosaic-texture.png",
+    "originalBytesVerified": true
+  },
+  "objectMapping": [
+    {
+      "from": "10:1558",
+      "to": "10:2047",
+      "role": "One rectangle with two full-artwork PNG fills",
+      "positionA": {
+        "x": 115,
+        "y": 383
+      },
+      "positionB": {
+        "x": 115,
+        "y": 383
+      },
+      "width": 845,
+      "height": 563,
+      "rotationA": 0,
+      "rotationB": 0,
+      "scaleBRelativeToA": {
+        "x": 1,
+        "y": 1
+      },
+      "nodeOpacityA": 1,
+      "nodeOpacityB": 1,
+      "paintOrderA": 4,
+      "paintOrderB": 4,
+      "frameTransformA": [
+        [
+          1,
+          0,
+          115
+        ],
+        [
+          0,
+          1,
+          383
+        ]
+      ],
+      "frameTransformB": [
+        [
+          1,
+          0,
+          115
+        ],
+        [
+          0,
+          1,
+          383
+        ]
+      ]
+    },
+    {
+      "from": "10:1529",
+      "to": "10:2018",
+      "role": "Reused mosaic",
+      "positionA": {
+        "x": 0,
+        "y": 0
+      },
+      "positionB": {
+        "x": 0,
+        "y": 0
+      },
+      "width": 1920,
+      "height": 1080,
+      "rotationA": 0,
+      "rotationB": 0,
+      "paintOrderA": 0,
+      "paintOrderB": 0
+    }
+  ],
+  "states": [
+    {
+      "nodeId": "10:1528",
+      "width": 1920,
+      "height": 1080,
+      "clipsContent": true,
+      "artworkAndTexture": [
+        {
+          "nodeId": "10:1529",
+          "parentId": "10:1528",
+          "type": "RECTANGLE",
+          "name": "Mosaic",
+          "paintOrder": 0,
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 0.4000000059604645,
+              "blendMode": "NORMAL",
+              "scaleMode": "TILE",
+              "scalingFactor": 0.8942065238952637,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e"
+            }
+          ],
+          "isMask": false,
+          "effects": [],
+          "strokes": []
+        },
+        {
+          "nodeId": "10:1558",
+          "parentId": "10:1528",
+          "type": "RECTANGLE",
+          "name": "image 50",
+          "paintOrder": 4,
+          "visible": true,
+          "opacity": 1,
+          "x": 115,
+          "y": 383,
+          "width": 845,
+          "height": 563,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              115
+            ],
+            [
+              0,
+              1,
+              383
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              115
+            ],
+            [
+              0,
+              1,
+              383
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "a9f463489c07be031417200565743725d6a366ac"
+            },
+            {
+              "type": "IMAGE",
+              "visible": false,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "3a4dbff1bde5d50b9dc399bc758f670e1fbee740"
+            }
+          ],
+          "isMask": false,
+          "effects": [],
+          "strokes": []
+        }
+      ]
+    },
+    {
+      "nodeId": "10:2017",
+      "width": 1920,
+      "height": 1080,
+      "clipsContent": true,
+      "artworkAndTexture": [
+        {
+          "nodeId": "10:2018",
+          "parentId": "10:2017",
+          "type": "RECTANGLE",
+          "name": "Mosaic",
+          "paintOrder": 0,
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 0.4000000059604645,
+              "blendMode": "NORMAL",
+              "scaleMode": "TILE",
+              "scalingFactor": 0.8942065238952637,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e"
+            }
+          ],
+          "isMask": false,
+          "effects": [],
+          "strokes": []
+        },
+        {
+          "nodeId": "10:2047",
+          "parentId": "10:2017",
+          "type": "RECTANGLE",
+          "name": "image 50",
+          "paintOrder": 4,
+          "visible": true,
+          "opacity": 1,
+          "x": 115,
+          "y": 383,
+          "width": 845,
+          "height": 563,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              115
+            ],
+            [
+              0,
+              1,
+              383
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              115
+            ],
+            [
+              0,
+              1,
+              383
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": false,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "a9f463489c07be031417200565743725d6a366ac"
+            },
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "3a4dbff1bde5d50b9dc399bc758f670e1fbee740"
+            }
+          ],
+          "isMask": false,
+          "effects": [],
+          "strokes": []
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "comparedNodesPerFrame": 32,
+    "checkedProperties": [
+      "type",
+      "paintOrder within frame",
+      "visible",
+      "opacity",
+      "x/y within frame",
+      "width",
+      "height",
+      "rotation",
+      "relativeTransform within frame",
+      "frameTransform",
+      "fills",
+      "isMask",
+      "clipsContent",
+      "booleanOperation",
+      "effects",
+      "strokes",
+      "characters"
+    ],
+    "allNodeMapping": [
+      {
+        "from": "10:1528",
+        "to": "10:2017",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1529",
+        "to": "10:2018",
+        "type": "RECTANGLE"
+      },
+      {
+        "from": "10:1530",
+        "to": "10:2019",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1531",
+        "to": "10:2020",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1532",
+        "to": "10:2021",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1533",
+        "to": "10:2022",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1534",
+        "to": "10:2023",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1535",
+        "to": "10:2024",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1536",
+        "to": "10:2025",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1537",
+        "to": "10:2026",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1538",
+        "to": "10:2027",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1539",
+        "to": "10:2028",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1540",
+        "to": "10:2029",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1541",
+        "to": "10:2030",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1542",
+        "to": "10:2031",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1543",
+        "to": "10:2032",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1544",
+        "to": "10:2033",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1545",
+        "to": "10:2034",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1546",
+        "to": "10:2035",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1547",
+        "to": "10:2036",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1548",
+        "to": "10:2037",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1549",
+        "to": "10:2038",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1550",
+        "to": "10:2039",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1551",
+        "to": "10:2040",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1552",
+        "to": "10:2041",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1553",
+        "to": "10:2042",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1554",
+        "to": "10:2043",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1555",
+        "to": "10:2044",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1556",
+        "to": "10:2045",
+        "type": "FRAME"
+      },
+      {
+        "from": "10:1557",
+        "to": "10:2046",
+        "type": "TEXT"
+      },
+      {
+        "from": "10:1558",
+        "to": "10:2047",
+        "type": "RECTANGLE"
+      },
+      {
+        "from": "10:1559",
+        "to": "10:2048",
+        "type": "TEXT"
+      }
+    ],
+    "inFrameChanges": [
+      {
+        "from": "10:1558",
+        "to": "10:2047",
+        "property": "fills",
+        "a": [
+          {
+            "type": "IMAGE",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "scaleMode": "FILL",
+            "scalingFactor": 0.5,
+            "rotation": 0,
+            "filters": {
+              "exposure": 0,
+              "contrast": 0,
+              "saturation": 0,
+              "temperature": 0,
+              "tint": 0,
+              "highlights": 0,
+              "shadows": 0
+            },
+            "imageTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "imageHash": "a9f463489c07be031417200565743725d6a366ac"
+          },
+          {
+            "type": "IMAGE",
+            "visible": false,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "scaleMode": "FILL",
+            "scalingFactor": 0.5,
+            "rotation": 0,
+            "filters": {
+              "exposure": 0,
+              "contrast": 0,
+              "saturation": 0,
+              "temperature": 0,
+              "tint": 0,
+              "highlights": 0,
+              "shadows": 0
+            },
+            "imageTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "imageHash": "3a4dbff1bde5d50b9dc399bc758f670e1fbee740"
+          }
+        ],
+        "b": [
+          {
+            "type": "IMAGE",
+            "visible": false,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "scaleMode": "FILL",
+            "scalingFactor": 0.5,
+            "rotation": 0,
+            "filters": {
+              "exposure": 0,
+              "contrast": 0,
+              "saturation": 0,
+              "temperature": 0,
+              "tint": 0,
+              "highlights": 0,
+              "shadows": 0
+            },
+            "imageTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "imageHash": "a9f463489c07be031417200565743725d6a366ac"
+          },
+          {
+            "type": "IMAGE",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "scaleMode": "FILL",
+            "scalingFactor": 0.5,
+            "rotation": 0,
+            "filters": {
+              "exposure": 0,
+              "contrast": 0,
+              "saturation": 0,
+              "temperature": 0,
+              "tint": 0,
+              "highlights": 0,
+              "shadows": 0
+            },
+            "imageTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "imageHash": "3a4dbff1bde5d50b9dc399bc758f670e1fbee740"
+          }
+        ]
+      }
+    ],
+    "ignoredDocumentPlacement": "Frame root names/absolute page positions and root sibling indices 13/14 identify separate reference frames; they do not change internal artwork stacking."
+  },
+  "mechanism": {
+    "type": "Mutually exclusive IMAGE fill visibility on one rectangle",
+    "A": "Fill 0 (3072x2048 plain-center eye) visible; fill 1 (1536x1024 eye with couple) hidden",
+    "B": "Fill 0 hidden; fill 1 visible",
+    "unchanged": [
+      "Position (115,383)",
+      "Slot 845x563",
+      "Rotation 0 degrees",
+      "Scale 1x1",
+      "Node opacity 1",
+      "Both paint opacities 1",
+      "FILL with identity imageTransform and scalingFactor 0.5",
+      "Image fill array order",
+      "Node paint order 4",
+      "Mosaic below art",
+      "Frame clip 1920x1080"
+    ],
+    "notPresent": "No changing mask, reveal aperture, motion path, transform change, opacity tween or layer-order change is specified. Both endpoints show a different pre-rendered complete eye bitmap."
+  },
+  "masksAndCrop": {
+    "explicitMasks": 0,
+    "booleanOperations": 0,
+    "sourceAlpha": "Both PNGs retain original RGBA silhouettes and transparent edges; state B alpha max is 254, do not normalize.",
+    "crop": "FILL cover uses the same 845x563 logical slot with original 3:2 canvases, slightly different aspect from the slot. Retain the implicit centered cover crop and full transparent margins; do not force source files to a common resolution."
+  },
+  "animationFeasibility": {
+    "available": "Exact endpoint reproduction by switching the two complete images in the same slot.",
+    "limits": "The couple is baked into the second full-eye PNG. Pupil, iris, highlight and figures are not separate transformable objects. No independent character animation or existing pupil-mask reveal can be claimed.",
+    "unspecified": "Timing, trigger, interpolation/crossfade, replay/interruption and input/reduced-motion behavior remain unspecified; no animation is invented or implemented."
+  },
+  "checks": {
+    "assetScript": "Verified: 28 | Pending: 13 | Errors: 0",
+    "sourceBytes": "Both originals and existing texture match Figma byte counts and FNV-1a; originals retain distinct imageHashes and SHA256 checksums",
+    "dimensions": "Decoded PNG sizes match registry: 3072x2048 and 1536x1024",
+    "alpha": "Both decoded RGBA images contain real alpha-zero pixels, partial alpha and transparent edges. State A range 0..255, state B 0..254.",
+    "visual": "Both originals inspected in the same 845x563 FILL slot on checkerboard; eye silhouette and the couple/empty-center distinction compared with Figma screenshots."
+  }
+}
