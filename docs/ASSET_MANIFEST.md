@@ -4,6 +4,8 @@ Current raster status (Stage 0.2E.2, 2026-10-24): **41 verified / 0 pending / 0 
 
 The inventory and staged reports below retain historical findings; earlier pending statements describe their stage dates, not current raster status. Font files, movie video selection and later implementation/visual QA remain separate work. No temporary Figma MCP URL is used as a project asset.
 
+Current vector status (Stage 0.2F.1): **19 frames audited, 1 missing SVG imported, 15 existing SVG files reused**. All 16 SVGs parse and render without external dependencies. See `docs/VECTOR_ASSET_AUDIT.md` for the exhaustive node decision table and `docs/VECTOR_ASSET_SOURCE.json` for exact geometry and checksums.
+
 ## Initial candidate inventory (historical)
 
 | Section / Figma node | Candidate media or vector layers | Verification / action |
@@ -252,3 +254,21 @@ Imported **6 original raster files, 8,029,333 bytes**, plus one separate source 
 **Checks:** all six imported raster originals match Figma byte lengths and fingerprints; their decoded sizes, actual transparency and full image decoding pass. A temporary composition/crop reconstruction was visually compared with Figma. All **41** mapped raster files passed full decoding and registry-dimension checks, with **0 duplicate byte contents**; their combined size is **91,025,613 bytes**. `node scripts/check-assets.mjs` → **Verified: 41 | Pending: 0 | Errors: 0**. The additional SVG is outside the raster count. Originals were not optimized or re-encoded.
 
 **Independent elements and remaining work:** eye, mouth, each paper strip, accent, school logo, tiles, brand mark and text groups are separate objects. Components baked inside each PNG cannot animate independently without additional source preparation. No motion behavior is specified by this static frame. Exact runtime reproduction of the accent's Figma color filters remains a later layout-stage validation task; no asset-import blockers remain. No Figma edits, layout/animation implementation, dependency installation or legacy-file changes.
+
+## Stage 0.2F.1 — SVG audit and missing vector import (2026-10-24)
+
+Audited vector geometry in all **19 approved frames** using scoped, read-only Figma MCP queries. Checked **627 shape/Boolean nodes and 86 painted/bordered frames** (713 geometry nodes total). **530 nodes** are CSS/HTML candidates; **182** are covered by **15 existing SVG files**; **one** unique artwork node required import. Counts include clipping operands and clipped/occluded geometry, not just independent visible objects. Text, raster rectangles and unpainted layout containers are excluded. Earlier “25 SVG entries” were export references, not a unique-resource target.
+
+| New file | Figma source | Geometry | Bytes | SHA256 |
+|---|---|---|---:|---|
+| `public/assets/illustrations/vocab-illustration.svg` | `10:970`, Vocab `10:966` | 679 × 395 / viewBox `0 0 679 395`; one #FED128 compound path spelling «98%» | 4,134 | 6c52c7b82ce8d1e44747e0b5e0159f8d7f38df7f056dda3c3059b0c0ae0ad09c |
+
+The SVG is an unchanged individual SVG_STRING export, with no embedded raster, external resources, font dependency, optimization or frame flattening. The original node is 678.853820801 × 394.455017090; rounded-up export bounds preserve its complete silhouette and transparent counters. Its single compound source node has no independent digit/percent layers. This is existing artwork, not a newly asserted or fact-checked statistic.
+
+Reused six Hero star files, the Hero CTA arrow, two existing pixel-mark exports and six existing derived Idiom masks. Experiment arrows share the Hero geometry and gold paint; Movies uses the same contour with white color and vertical reflection, suitable for reuse as an SVG alpha mask with recorded placement. Small canvas-dependent export rounding does not justify duplicate files. All six Idiom mask checksums and source A/B geometry were rechecked; no new masks were exported.
+
+Simple experiment cross/dots, section dividers, film perforations, pixel geometry, borders and card fills are documented for CSS/HTML. Existing raster imagery remains raster even where its Figma layer name contains “vector”. All original raster files and their registry are unchanged.
+
+**Checks:** all **16 local SVGs** pass XML/viewBox and external-dependency checks and render as nonempty RGBA images. Vocab was visually compared with the Figma screenshot at 679 × 395, including silhouette, holes, color and bounds. Current individual Hero/Footer SVG exports match existing originals. `node scripts/check-assets.mjs` → **Verified: 41 | Pending: 0 | Errors: 0**. Full per-node decisions, layer independence, special transforms, opacity and source checksums are in `VECTOR_ASSET_AUDIT.md` and `VECTOR_ASSET_SOURCE.json`.
+
+**Blockers:** none for vector import. Browser calibration of Figma backdrop blur and the previously recorded Footer raster filters belongs to later layout QA. No Figma edits, layout/animation implementation, dependency installation or legacy changes.
