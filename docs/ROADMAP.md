@@ -1,6 +1,6 @@
 # SUBTALE — execution roadmap (frozen outline)
 
-Work atomically. Current status: Stage 0.1 done; Stage 0.2 raster 41/41, vectors audited, fonts present, video migration 4/5 MP4 + 5/5 posters, one Sherlock clip pending local transfer; optimization pending.
+Work atomically. Current status: Stage 0.1 done; Stage 0.2 original rasters 41/41, 16 SVG, 4 WOFF2; 4/5 videos and 5/5 posters pushed; Stage 0.2H optimization in progress. See docs/ASSET_WEIGHT_AUDIT.md.
 
 | Stage | Work | Gate |
 |---|---|---|
