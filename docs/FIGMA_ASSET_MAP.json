@@ -19,7 +19,7 @@
       "sourceWidth": 4096,
       "sourceHeight": 2286,
       "occurrences": 10,
-      "localPath": null
+      "localPath": "public/assets/images/idiom-ice-lower-shared.png"
     },
     {
       "hash": "a29311f1f1d2be133c14d891089c6650c953c32e",
@@ -28,7 +28,7 @@
       "sourceWidth": 4096,
       "sourceHeight": 2286,
       "occurrences": 6,
-      "localPath": null
+      "localPath": "public/assets/images/idiom-ice-center.png"
     },
     {
       "hash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
@@ -37,7 +37,7 @@
       "sourceWidth": 4096,
       "sourceHeight": 2286,
       "occurrences": 6,
-      "localPath": null
+      "localPath": "public/assets/images/idiom-ice-right-small.png"
     },
     {
       "hash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
@@ -73,7 +73,7 @@
       "sourceWidth": 4096,
       "sourceHeight": 2286,
       "occurrences": 4,
-      "localPath": null
+      "localPath": "public/assets/images/idiom-ice-upper-right.png"
     },
     {
       "hash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
@@ -82,7 +82,7 @@
       "sourceWidth": 4096,
       "sourceHeight": 2286,
       "occurrences": 4,
-      "localPath": null
+      "localPath": "public/assets/images/idiom-ice-left-small.png"
     },
     {
       "hash": "364855320f08ade1d04f13556e9f3defb0d52bcb",
@@ -109,7 +109,7 @@
       "sourceWidth": 4096,
       "sourceHeight": 2286,
       "occurrences": 2,
-      "localPath": null
+      "localPath": "public/assets/images/idiom-ice-upper-left.png"
     },
     {
       "hash": "528b075a5c6b35f819c787bff455d9dbd2436c83",
@@ -118,7 +118,7 @@
       "sourceWidth": 4096,
       "sourceHeight": 2286,
       "occurrences": 2,
-      "localPath": null
+      "localPath": "public/assets/images/idiom-ice-lower-middle.png"
     },
     {
       "hash": "f896e935d71fd96ad289d93b7e8ce7d177767633",
@@ -361,7 +361,7 @@
       "sourceWidth": 1792,
       "sourceHeight": 2400,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/idiom-telephone-base.jpg"
     },
     {
       "hash": "be5817d93162046d2b9f3af61b7489db7df1278c",
@@ -370,7 +370,7 @@
       "sourceWidth": 1792,
       "sourceHeight": 2400,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/idiom-telephone-cutout.png"
     }
   ]
 }

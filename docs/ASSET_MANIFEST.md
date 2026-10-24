@@ -124,3 +124,29 @@ Imported **2 original raster files, 3,940,804 bytes** from Elephant `10:917`; up
 **Background:** reuse the 397 × 322 mosaic with its existing TILE scale and 0.4 paint opacity. Current Elephant frame is 1920 × 2187; the texture layer is 1920 × 2512 and is clipped by the frame. Do not turn the texture's layer size into an image export or a new viewport assumption.
 
 **Checks:** both original byte counts and FNV-1a fingerprints match Figma; decoded JPEG/PNG dimensions match the registry, and PNG transparency was verified by actual pixels. `node scripts/check-assets.mjs` → **Verified: 13 | Pending: 28 | Errors: 0**. No duplicate raster bytes detected. No unresolved Elephant source questions; remaining 28 hashes are outside this stage. No Figma edits, layout, animation, dependency installation, or legacy-file changes.
+
+## Stage 0.2D.1 — Idiom original assets and state mapping (2026-10-24)
+
+Compared frames A `10:1431` and B `10:1596`. Imported **9 unique original raster files (39,997,317 bytes)** plus **6 geometry-only SVG clipping masks (1,141 bytes)**: **15 files, 39,998,458 bytes total**. Updated nine `localPath` entries. Reused the existing mosaic by imageHash and verified its original byte fingerprint. No combined frame images or duplicate state/fragment bitmaps were imported.
+
+| New file under `public/assets/images/` | Figma imageHash | Original size | Bytes |
+|---|---|---|---:|
+| `idiom-ice-upper-left.png` | `35938ea29ed9ca1307edc53950674e4c8ebe63d5` | 4096 × 2286 | 4,982,184 |
+| `idiom-ice-lower-middle.png` | `528b075a5c6b35f819c787bff455d9dbd2436c83` | 4096 × 2286 | 5,104,941 |
+| `idiom-ice-upper-right.png` | `c027bce002d6d9ef41326d8cce3bb29eac6f7e22` | 4096 × 2286 | 5,006,341 |
+| `idiom-ice-center.png` | `a29311f1f1d2be133c14d891089c6650c953c32e` | 4096 × 2286 | 5,115,592 |
+| `idiom-ice-right-small.png` | `82405a0f66f9cee86dbb6403577b78f20ce30fd4` | 4096 × 2286 | 5,132,569 |
+| `idiom-ice-left-small.png` | `b71b959d5e0c085f6c923f1d4bc1aa9ef978464e` | 4096 × 2286 | 5,129,695 |
+| `idiom-ice-lower-shared.png` | `b0d17f5142962d3ddc19f08fa9cae9df92eac834` | 4096 × 2286 | 6,893,692 |
+| `idiom-telephone-base.jpg` | `bfdc63b7bc0f0d5abbdf1a00f3ec8121daffde5a` | 1792 × 2400 | 1,276,691 |
+| `idiom-telephone-cutout.png` | `be5817d93162046d2b9f3af61b7489db7df1278c` | 1792 × 2400 | 1,355,612 |
+
+Six masks in `public/assets/illustrations/`: `idiom-ice-upper-right-mask.svg`, `idiom-ice-center-mask.svg`, `idiom-ice-right-small-mask.svg`, `idiom-ice-left-small-mask.svg`, `idiom-ice-lower-left-mask.svg`, `idiom-ice-lower-right-mask.svg`. These reproduce the original Boolean SUBTRACT geometry from measured rectangle operands; they are explicitly derived clipping assets, not direct Figma SVG exports. Each contains only a white opaque remaining path and transparent cutouts, with no embedded raster. Both states share the same masks. Exact source operand identities, coordinates and reproduction details are retained in `docs/IDIOM_ASSET_IMPORT.json`.
+
+**Fills and deduplication:** all seven ice PNGs are distinct original imageHashes with pixel differences, even where full artwork looks similar. Keep each original. Eight visible ice objects use these seven sources: both lower corner objects reuse `idiom-ice-lower-shared.png` with different crops. Telephone JPEG is hidden and PNG is visible; preserve both without enabling the JPEG in the composition. All eight PNG sources have real zero-alpha and partial-alpha pixels, including transparent edges. Original source canvases and cable clipping at the telephone PNG's bottom edge are retained. No cropping, resizing or re-encoding of originals.
+
+**State comparison:** all eight ice objects and their 20 descendants retain position, dimensions, rotation, fills, crop transforms, opacity and Boolean geometry. B adds the telephone; the upper-left shard also moves below the telephone and below the mosaic in paint order. In B the mosaic overlays that shard and the telephone, while the other seven ice objects remain above it. Both states are 1920 × 1080. Full per-object A/B node correspondence, transforms, scales and stacking are documented in `docs/MOTION_SPEC.md`; exact metadata and SHA256 checksums are in `docs/IDIOM_ASSET_IMPORT.json`.
+
+**Checks:** nine original byte counts and FNV-1a fingerprints match Figma; decoded dimensions match the registry; actual alpha pixels verified. Originals were visually inspected on a checkerboard. Temporary QA reconstructions using the recorded crops, Boolean cutouts and paint order were visually compared with both Figma screenshots. SVGs parse and retain the measured object bounds and cutouts. `node scripts/check-assets.mjs` → **Verified: 22 | Pending: 19 | Errors: 0**; no duplicate raster bytes.
+
+**Animation feasibility:** eight ice wrappers and one telephone can animate independently; each ice crop/mask must move with its wrapper. These endpoints establish no ice movement or explosion. Telephone entry pose, timing, easing, trigger, replay/interruption and stacking transition remain decisions for the motion stage. No source downloads remain for Idiom. No Figma edits, layout/animation implementation, dependency installation or legacy-file changes.

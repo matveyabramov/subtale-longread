@@ -1,0 +1,4215 @@
+{
+  "stage": "0.2D.1",
+  "date": "2026-10-24",
+  "figmaFileKey": "H4HI00uGY2UOxpcfHogUat",
+  "frameNodeIds": [
+    "10:1431",
+    "10:1596"
+  ],
+  "newRasterFiles": 9,
+  "newMaskFiles": 6,
+  "newFiles": 15,
+  "rasterBytes": 39997317,
+  "maskBytes": 1141,
+  "assets": [
+    {
+      "hash": "a29311f1f1d2be133c14d891089c6650c953c32e",
+      "bytes": 5115592,
+      "fnv1a": "1642febd",
+      "format": "png",
+      "width": 4096,
+      "height": 2286,
+      "nodeId": "10:1940",
+      "localPath": "public/assets/images/idiom-ice-center.png",
+      "sha256": "26bc36f7ab52ca7ccf67f9ea87d34dbafadf70b628ad92a747e2057b1dcb01b7",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 4096,
+        "height": 2286,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 3971335,
+        "partialAlphaPixels": 191173,
+        "transparentEdgePixels": 12764,
+        "alphaBounds": [
+          137,
+          67,
+          3958,
+          2233
+        ]
+      }
+    },
+    {
+      "hash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
+      "bytes": 5129695,
+      "fnv1a": "d3c100cb",
+      "format": "png",
+      "width": 4096,
+      "height": 2286,
+      "nodeId": "10:1950",
+      "localPath": "public/assets/images/idiom-ice-left-small.png",
+      "sha256": "fbc67bd83f3b759d685d2713b2d25dacc886bc2aff1ea4029c61bcd94e0acfc9",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 4096,
+        "height": 2286,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 3928253,
+        "partialAlphaPixels": 155046,
+        "transparentEdgePixels": 12764,
+        "alphaBounds": [
+          137,
+          67,
+          3958,
+          2233
+        ]
+      }
+    },
+    {
+      "hash": "528b075a5c6b35f819c787bff455d9dbd2436c83",
+      "bytes": 5104941,
+      "fnv1a": "92bcecdb",
+      "format": "png",
+      "width": 4096,
+      "height": 2286,
+      "nodeId": "10:1936",
+      "localPath": "public/assets/images/idiom-ice-lower-middle.png",
+      "sha256": "9acb5cf2b567fed8a35ac89548a8d40aa9c69dec7260ea556c08a136712f3b74",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 4096,
+        "height": 2286,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 3934465,
+        "partialAlphaPixels": 159747,
+        "transparentEdgePixels": 12764,
+        "alphaBounds": [
+          137,
+          67,
+          3958,
+          2233
+        ]
+      }
+    },
+    {
+      "hash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+      "bytes": 6893692,
+      "fnv1a": "9e2f07f0",
+      "format": "png",
+      "width": 4096,
+      "height": 2286,
+      "nodeId": "10:1953",
+      "localPath": "public/assets/images/idiom-ice-lower-shared.png",
+      "sha256": "5d7bb3feebd04a69e20e000a1ac20fa019d477acd2f277307111afc016b6f3a1",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 4096,
+        "height": 2286,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 3929710,
+        "partialAlphaPixels": 148305,
+        "transparentEdgePixels": 12764,
+        "alphaBounds": [
+          137,
+          67,
+          3958,
+          2233
+        ]
+      }
+    },
+    {
+      "hash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
+      "bytes": 5132569,
+      "fnv1a": "edffda7d",
+      "format": "png",
+      "width": 4096,
+      "height": 2286,
+      "nodeId": "10:1945",
+      "localPath": "public/assets/images/idiom-ice-right-small.png",
+      "sha256": "b35c5dbf24f2c9a53b3a024b8bb0988669ef2dbc1646183910c1b64e668fe461",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 4096,
+        "height": 2286,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 3931885,
+        "partialAlphaPixels": 165112,
+        "transparentEdgePixels": 12764,
+        "alphaBounds": [
+          137,
+          67,
+          3958,
+          2233
+        ]
+      }
+    },
+    {
+      "hash": "35938ea29ed9ca1307edc53950674e4c8ebe63d5",
+      "bytes": 4982184,
+      "fnv1a": "89f3b713",
+      "format": "png",
+      "width": 4096,
+      "height": 2286,
+      "nodeId": "10:1935",
+      "localPath": "public/assets/images/idiom-ice-upper-left.png",
+      "sha256": "7707f055314d12f2d131c31d685ad4f70b937fc7f8c6c3bc4035b9d0781636bd",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 4096,
+        "height": 2286,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 4076519,
+        "partialAlphaPixels": 222966,
+        "transparentEdgePixels": 12764,
+        "alphaBounds": [
+          137,
+          67,
+          3958,
+          2233
+        ]
+      }
+    },
+    {
+      "hash": "c027bce002d6d9ef41326d8cce3bb29eac6f7e22",
+      "bytes": 5006341,
+      "fnv1a": "b1694a91",
+      "format": "png",
+      "width": 4096,
+      "height": 2286,
+      "nodeId": "10:1937",
+      "localPath": "public/assets/images/idiom-ice-upper-right.png",
+      "sha256": "34888d7c2bed6f8f01198691999d249a860751e8b920f5b37f6c5b6a0a0c56fb",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 4096,
+        "height": 2286,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 4125386,
+        "partialAlphaPixels": 270931,
+        "transparentEdgePixels": 12764,
+        "alphaBounds": [
+          137,
+          67,
+          3956,
+          2233
+        ]
+      }
+    },
+    {
+      "hash": "bfdc63b7bc0f0d5abbdf1a00f3ec8121daffde5a",
+      "bytes": 1276691,
+      "fnv1a": "2cfc92d3",
+      "format": "jpg",
+      "width": 1792,
+      "height": 2400,
+      "nodeId": "10:1598",
+      "localPath": "public/assets/images/idiom-telephone-base.jpg",
+      "sha256": "9aa7aac0bb0fc41a6c05e2475918d4b6771be24c631b08c2d7c37d8d73cdc7d8",
+      "pixelQA": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "width": 1792,
+        "height": 2400,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0,
+        "transparentEdgePixels": 0,
+        "alphaBounds": [
+          0,
+          0,
+          1792,
+          2400
+        ]
+      }
+    },
+    {
+      "hash": "be5817d93162046d2b9f3af61b7489db7df1278c",
+      "bytes": 1355612,
+      "fnv1a": "37a087ab",
+      "format": "png",
+      "width": 1792,
+      "height": 2400,
+      "nodeId": "10:1598",
+      "localPath": "public/assets/images/idiom-telephone-cutout.png",
+      "sha256": "fe269301ebbb0557b94073032509241fdb8215d00c5346dbb2cfacc410fea689",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1792,
+        "height": 2400,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 3104209,
+        "partialAlphaPixels": 27562,
+        "transparentEdgePixels": 8211,
+        "alphaBounds": [
+          188,
+          134,
+          1475,
+          2400
+        ]
+      }
+    }
+  ],
+  "reusedTexture": {
+    "hash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
+    "bytes": 43725,
+    "fnv1a": "d0cf41a0",
+    "format": "png",
+    "width": 397,
+    "height": 322,
+    "localPath": "public/assets/images/mosaic-texture.png",
+    "originalBytesVerified": true
+  },
+  "objectMapping": [
+    {
+      "from": "10:1935",
+      "to": "10:1597",
+      "x": 30,
+      "y": 397,
+      "width": 501,
+      "height": 337,
+      "orderA": 5,
+      "orderB": 0,
+      "subtreeNodeMapping": [
+        {
+          "from": "10:1935",
+          "to": "10:1597"
+        }
+      ],
+      "imageHash": "35938ea29ed9ca1307edc53950674e4c8ebe63d5",
+      "localPath": "public/assets/images/idiom-ice-upper-left.png",
+      "crop": [
+        [
+          0.4636995494365692,
+          0,
+          0.00020405784016475081
+        ],
+        [
+          0,
+          0.5588722825050354,
+          0
+        ]
+      ],
+      "rotationA": 0,
+      "rotationB": 0,
+      "scaleBRelativeToA": {
+        "x": 1,
+        "y": 1
+      },
+      "maskPath": null
+    },
+    {
+      "from": "10:1936",
+      "to": "10:1628",
+      "x": 415,
+      "y": 853,
+      "width": 232,
+      "height": 147,
+      "orderA": 6,
+      "orderB": 6,
+      "subtreeNodeMapping": [
+        {
+          "from": "10:1936",
+          "to": "10:1628"
+        }
+      ],
+      "imageHash": "528b075a5c6b35f819c787bff455d9dbd2436c83",
+      "localPath": "public/assets/images/idiom-ice-lower-middle.png",
+      "crop": [
+        [
+          0.21472714841365814,
+          0,
+          0.3565400540828705
+        ],
+        [
+          0,
+          0.24378108978271484,
+          0.7562189102172852
+        ]
+      ],
+      "rotationA": 0,
+      "rotationB": 0,
+      "scaleBRelativeToA": {
+        "x": 1,
+        "y": 1
+      },
+      "maskPath": null
+    },
+    {
+      "from": "10:1937",
+      "to": "10:1629",
+      "x": 657,
+      "y": 397,
+      "width": 424,
+      "height": 299,
+      "orderA": 7,
+      "orderB": 7,
+      "subtreeNodeMapping": [
+        {
+          "from": "10:1937",
+          "to": "10:1629"
+        },
+        {
+          "from": "10:1938",
+          "to": "10:1630"
+        },
+        {
+          "from": "10:1939",
+          "to": "10:1631"
+        }
+      ],
+      "imageHash": "c027bce002d6d9ef41326d8cce3bb29eac6f7e22",
+      "localPath": "public/assets/images/idiom-ice-upper-right.png",
+      "crop": [
+        [
+          0.3924323618412018,
+          0,
+          0.5805226564407349
+        ],
+        [
+          0,
+          0.49585404992103577,
+          3.5232549316861804e-15
+        ]
+      ],
+      "rotationA": 0,
+      "rotationB": 0,
+      "scaleBRelativeToA": {
+        "x": 1,
+        "y": 1
+      },
+      "maskPath": "public/assets/illustrations/idiom-ice-upper-right-mask.svg"
+    },
+    {
+      "from": "10:1940",
+      "to": "10:1632",
+      "x": 504,
+      "y": 499,
+      "width": 203,
+      "height": 379,
+      "orderA": 8,
+      "orderB": 8,
+      "subtreeNodeMapping": [
+        {
+          "from": "10:1940",
+          "to": "10:1632"
+        },
+        {
+          "from": "10:1941",
+          "to": "10:1633"
+        },
+        {
+          "from": "10:1942",
+          "to": "10:1634"
+        },
+        {
+          "from": "10:1943",
+          "to": "10:1635"
+        },
+        {
+          "from": "10:1944",
+          "to": "10:1636"
+        }
+      ],
+      "imageHash": "a29311f1f1d2be133c14d891089c6650c953c32e",
+      "localPath": "public/assets/images/idiom-ice-center.png",
+      "crop": [
+        [
+          0.18788623809814453,
+          0,
+          0.43798828125
+        ],
+        [
+          0,
+          0.6285240650177002,
+          0.16749586164951324
+        ]
+      ],
+      "rotationA": 0,
+      "rotationB": 0,
+      "scaleBRelativeToA": {
+        "x": 1,
+        "y": 1
+      },
+      "maskPath": "public/assets/illustrations/idiom-ice-center-mask.svg"
+    },
+    {
+      "from": "10:1945",
+      "to": "10:1637",
+      "x": 900,
+      "y": 646,
+      "width": 210,
+      "height": 145,
+      "orderA": 9,
+      "orderB": 9,
+      "subtreeNodeMapping": [
+        {
+          "from": "10:1945",
+          "to": "10:1637"
+        },
+        {
+          "from": "10:1946",
+          "to": "10:1638"
+        },
+        {
+          "from": "10:1947",
+          "to": "10:1639"
+        },
+        {
+          "from": "10:1948",
+          "to": "10:1640"
+        },
+        {
+          "from": "10:1949",
+          "to": "10:1641"
+        }
+      ],
+      "imageHash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
+      "localPath": "public/assets/images/idiom-ice-right-small.png",
+      "crop": [
+        [
+          0.19436506927013397,
+          0,
+          0.8054308891296387
+        ],
+        [
+          0,
+          0.24046432971954346,
+          0.4129352867603302
+        ]
+      ],
+      "rotationA": 0,
+      "rotationB": 0,
+      "scaleBRelativeToA": {
+        "x": 1,
+        "y": 1
+      },
+      "maskPath": "public/assets/illustrations/idiom-ice-right-small-mask.svg"
+    },
+    {
+      "from": "10:1950",
+      "to": "10:1642",
+      "x": 354,
+      "y": 685,
+      "width": 133,
+      "height": 116,
+      "orderA": 10,
+      "orderB": 10,
+      "subtreeNodeMapping": [
+        {
+          "from": "10:1950",
+          "to": "10:1642"
+        },
+        {
+          "from": "10:1951",
+          "to": "10:1643"
+        },
+        {
+          "from": "10:1952",
+          "to": "10:1644"
+        }
+      ],
+      "imageHash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
+      "localPath": "public/assets/images/idiom-ice-left-small.png",
+      "crop": [
+        [
+          0.12309788167476654,
+          0,
+          0.30008161067962646
+        ],
+        [
+          0,
+          0.19237148761749268,
+          0.4776119589805603
+        ]
+      ],
+      "rotationA": 0,
+      "rotationB": 0,
+      "scaleBRelativeToA": {
+        "x": 1,
+        "y": 1
+      },
+      "maskPath": "public/assets/illustrations/idiom-ice-left-small-mask.svg"
+    },
+    {
+      "from": "10:1953",
+      "to": "10:1645",
+      "x": 30,
+      "y": 727,
+      "width": 393,
+      "height": 273,
+      "orderA": 11,
+      "orderB": 11,
+      "subtreeNodeMapping": [
+        {
+          "from": "10:1953",
+          "to": "10:1645"
+        },
+        {
+          "from": "10:1954",
+          "to": "10:1646"
+        },
+        {
+          "from": "10:1955",
+          "to": "10:1647"
+        },
+        {
+          "from": "10:1956",
+          "to": "10:1648"
+        },
+        {
+          "from": "10:1957",
+          "to": "10:1649"
+        }
+      ],
+      "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+      "localPath": "public/assets/images/idiom-ice-lower-shared.png",
+      "crop": [
+        [
+          0.36374035477638245,
+          0,
+          0.00020405784016475081
+        ],
+        [
+          0,
+          0.4527363181114197,
+          0.5472636818885803
+        ]
+      ],
+      "rotationA": 0,
+      "rotationB": 0,
+      "scaleBRelativeToA": {
+        "x": 1,
+        "y": 1
+      },
+      "maskPath": "public/assets/illustrations/idiom-ice-lower-left-mask.svg"
+    },
+    {
+      "from": "10:1958",
+      "to": "10:1650",
+      "x": 653,
+      "y": 735,
+      "width": 457,
+      "height": 265,
+      "orderA": 12,
+      "orderB": 12,
+      "subtreeNodeMapping": [
+        {
+          "from": "10:1958",
+          "to": "10:1650"
+        },
+        {
+          "from": "10:1959",
+          "to": "10:1651"
+        },
+        {
+          "from": "10:1960",
+          "to": "10:1652"
+        },
+        {
+          "from": "10:1961",
+          "to": "10:1653"
+        },
+        {
+          "from": "10:1962",
+          "to": "10:1654"
+        }
+      ],
+      "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+      "localPath": "public/assets/images/idiom-ice-lower-shared.png",
+      "crop": [
+        [
+          0.42297545075416565,
+          0,
+          0.576820433139801
+        ],
+        [
+          0,
+          0.4394693076610565,
+          0.5605306625366211
+        ]
+      ],
+      "rotationA": 0,
+      "rotationB": 0,
+      "scaleBRelativeToA": {
+        "x": 1,
+        "y": 1
+      },
+      "maskPath": "public/assets/illustrations/idiom-ice-lower-right-mask.svg"
+    }
+  ],
+  "telephone": {
+    "stateA": "Absent; no source node or initial pose defined",
+    "stateB": {
+      "nodeId": "10:1598",
+      "parentId": "10:1596",
+      "type": "RECTANGLE",
+      "name": "Telephone_handset_vector_artwork_2K_20261023160333 1",
+      "visible": true,
+      "opacity": 1,
+      "x": 227,
+      "y": 228,
+      "width": 635,
+      "height": 851,
+      "rotation": 0,
+      "paintOrder": 1,
+      "frameTransform": [
+        [
+          1,
+          0,
+          227
+        ],
+        [
+          0,
+          1,
+          228
+        ]
+      ],
+      "relativeTransform": [
+        [
+          1,
+          0,
+          227
+        ],
+        [
+          0,
+          1,
+          228
+        ]
+      ],
+      "isMask": false,
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": false,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "bfdc63b7bc0f0d5abbdf1a00f3ec8121daffde5a",
+          "scaleMode": "FILL",
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "scalingFactor": 0.5
+        },
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "imageHash": "be5817d93162046d2b9f3af61b7489db7df1278c",
+          "scaleMode": "FILL",
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "scalingFactor": 0.5
+        }
+      ]
+    }
+  },
+  "masks": {
+    "provenance": "Derived losslessly from Figma Boolean SUBTRACT rectangle operands. White opaque remaining area, transparent rectangular cutouts; evenodd paths. These SVGs contain geometry only and no embedded bitmap. Not claimed to be direct Figma SVG exports.",
+    "sourceCutRectanglesVerifiedPlain": true,
+    "files": [
+      {
+        "nodeId": "10:1937",
+        "width": 424,
+        "height": 299,
+        "cuts": [
+          {
+            "nodeId": "10:1939",
+            "x": -41,
+            "y": 276,
+            "width": 84,
+            "height": 48
+          }
+        ],
+        "name": "idiom-ice-upper-right-mask.svg",
+        "holes": [
+          {
+            "x": 0,
+            "y": 276,
+            "width": 43,
+            "height": 23
+          }
+        ],
+        "localPath": "public/assets/illustrations/idiom-ice-upper-right-mask.svg",
+        "bytes": 176,
+        "sha256": "21adb0cf9163d374a4f6c35b2976ea087795d374cb2fcee72c10a0dac040dc3b",
+        "stateBNodeId": "10:1629"
+      },
+      {
+        "nodeId": "10:1940",
+        "width": 203,
+        "height": 379,
+        "cuts": [
+          {
+            "nodeId": "10:1943",
+            "x": -30,
+            "y": 359,
+            "width": 91,
+            "height": 39
+          },
+          {
+            "nodeId": "10:1944",
+            "x": 158,
+            "y": 350,
+            "width": 94,
+            "height": 58
+          }
+        ],
+        "name": "idiom-ice-center-mask.svg",
+        "holes": [
+          {
+            "x": 0,
+            "y": 359,
+            "width": 61,
+            "height": 20
+          },
+          {
+            "x": 158,
+            "y": 350,
+            "width": 45,
+            "height": 29
+          }
+        ],
+        "localPath": "public/assets/illustrations/idiom-ice-center-mask.svg",
+        "bytes": 195,
+        "sha256": "7659fa3f3a7c410dafe958d2b84d423bb9d0bbc0f3cf570e923a86e3f1539f6d",
+        "stateBNodeId": "10:1632"
+      },
+      {
+        "nodeId": "10:1945",
+        "width": 210,
+        "height": 145,
+        "cuts": [
+          {
+            "nodeId": "10:1948",
+            "x": -21,
+            "y": -20,
+            "width": 38,
+            "height": 32
+          },
+          {
+            "nodeId": "10:1949",
+            "x": -11,
+            "y": 134,
+            "width": 22,
+            "height": 17
+          }
+        ],
+        "name": "idiom-ice-right-small-mask.svg",
+        "holes": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 17,
+            "height": 12
+          },
+          {
+            "x": 0,
+            "y": 134,
+            "width": 11,
+            "height": 11
+          }
+        ],
+        "localPath": "public/assets/illustrations/idiom-ice-right-small-mask.svg",
+        "bytes": 191,
+        "sha256": "03b71411a412c94ac53088817076647de02ffbcbf08d7ca18a299dcf012d0782",
+        "stateBNodeId": "10:1637"
+      },
+      {
+        "nodeId": "10:1950",
+        "width": 133,
+        "height": 116,
+        "cuts": [
+          {
+            "nodeId": "10:1952",
+            "x": -19,
+            "y": -17,
+            "width": 36,
+            "height": 31
+          }
+        ],
+        "name": "idiom-ice-left-small-mask.svg",
+        "holes": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 17,
+            "height": 14
+          }
+        ],
+        "localPath": "public/assets/illustrations/idiom-ice-left-small-mask.svg",
+        "bytes": 174,
+        "sha256": "c1a40329411f437b5c206af9da374877db40170d16b098b78a3185275a0fc291",
+        "stateBNodeId": "10:1642"
+      },
+      {
+        "nodeId": "10:1953",
+        "width": 393,
+        "height": 273,
+        "cuts": [
+          {
+            "nodeId": "10:1955",
+            "x": 377,
+            "y": 197,
+            "width": 30,
+            "height": 25
+          },
+          {
+            "nodeId": "10:1956",
+            "x": 320,
+            "y": -26,
+            "width": 95,
+            "height": 79
+          },
+          {
+            "nodeId": "10:1957",
+            "x": 218,
+            "y": -31,
+            "width": 65,
+            "height": 45
+          }
+        ],
+        "name": "idiom-ice-lower-left-mask.svg",
+        "holes": [
+          {
+            "x": 377,
+            "y": 197,
+            "width": 16,
+            "height": 25
+          },
+          {
+            "x": 320,
+            "y": 0,
+            "width": 73,
+            "height": 53
+          },
+          {
+            "x": 218,
+            "y": 0,
+            "width": 65,
+            "height": 14
+          }
+        ],
+        "localPath": "public/assets/illustrations/idiom-ice-lower-left-mask.svg",
+        "bytes": 212,
+        "sha256": "5035237a62965da5f5e3f9ce7af8f19e4e8f2c5c98b7cadec452244fb0024b9e",
+        "stateBNodeId": "10:1645"
+      },
+      {
+        "nodeId": "10:1958",
+        "width": 457,
+        "height": 265,
+        "cuts": [
+          {
+            "nodeId": "10:1961",
+            "x": 261,
+            "y": -30,
+            "width": 183,
+            "height": 81
+          },
+          {
+            "nodeId": "10:1962",
+            "x": -42,
+            "y": -19,
+            "width": 75,
+            "height": 103
+          }
+        ],
+        "name": "idiom-ice-lower-right-mask.svg",
+        "holes": [
+          {
+            "x": 261,
+            "y": 0,
+            "width": 183,
+            "height": 51
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "width": 33,
+            "height": 84
+          }
+        ],
+        "localPath": "public/assets/illustrations/idiom-ice-lower-right-mask.svg",
+        "bytes": 193,
+        "sha256": "83e6352d68b49685f23977e289c6ee60ee0036204b02359e3f2240ae9dbe13c9",
+        "stateBNodeId": "10:1650"
+      }
+    ]
+  },
+  "states": [
+    {
+      "nodeId": "10:1431",
+      "width": 1920,
+      "height": 1080,
+      "clipsContent": true,
+      "nodes": [
+        {
+          "nodeId": "10:1432",
+          "parentId": "10:1431",
+          "type": "RECTANGLE",
+          "name": "Mosaic",
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 0.4000000059604645,
+              "blendMode": "NORMAL",
+              "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
+              "scaleMode": "TILE",
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "scalingFactor": 0.8942065238952637
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1935",
+          "parentId": "10:1431",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 2",
+          "visible": true,
+          "opacity": 1,
+          "x": 30,
+          "y": 397,
+          "width": 501,
+          "height": 337,
+          "rotation": 0,
+          "paintOrder": 5,
+          "frameTransform": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              397
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              397
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "35938ea29ed9ca1307edc53950674e4c8ebe63d5",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.4636995494365692,
+                  0,
+                  0.00020405784016475081
+                ],
+                [
+                  0,
+                  0.5588722825050354,
+                  0
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1936",
+          "parentId": "10:1431",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 5",
+          "visible": true,
+          "opacity": 1,
+          "x": 415,
+          "y": 853,
+          "width": 232,
+          "height": 147,
+          "rotation": 0,
+          "paintOrder": 6,
+          "frameTransform": [
+            [
+              1,
+              0,
+              415
+            ],
+            [
+              0,
+              1,
+              853
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              415
+            ],
+            [
+              0,
+              1,
+              853
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "528b075a5c6b35f819c787bff455d9dbd2436c83",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.21472714841365814,
+                  0,
+                  0.3565400540828705
+                ],
+                [
+                  0,
+                  0.24378108978271484,
+                  0.7562189102172852
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1937",
+          "parentId": "10:1431",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 657,
+          "y": 397,
+          "width": 424,
+          "height": 299,
+          "rotation": 0,
+          "paintOrder": 7,
+          "frameTransform": [
+            [
+              1,
+              0,
+              657
+            ],
+            [
+              0,
+              1,
+              397
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              657
+            ],
+            [
+              0,
+              1,
+              397
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "c027bce002d6d9ef41326d8cce3bb29eac6f7e22",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.3924323618412018,
+                  0,
+                  0.5805226564407349
+                ],
+                [
+                  0,
+                  0.49585404992103577,
+                  3.5232549316861804e-15
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1938",
+          "parentId": "10:1937",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 8",
+          "visible": true,
+          "opacity": 1,
+          "x": 657,
+          "y": 397,
+          "width": 424,
+          "height": 299,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              657
+            ],
+            [
+              0,
+              1,
+              397
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              657
+            ],
+            [
+              0,
+              1,
+              397
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "c027bce002d6d9ef41326d8cce3bb29eac6f7e22",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.3924323618412018,
+                  0,
+                  0.5805226564407349
+                ],
+                [
+                  0,
+                  0.49585404992103577,
+                  0
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1939",
+          "parentId": "10:1937",
+          "type": "RECTANGLE",
+          "name": "Rectangle 197",
+          "visible": true,
+          "opacity": 1,
+          "x": 616,
+          "y": 673,
+          "width": 84,
+          "height": 48,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              616
+            ],
+            [
+              0,
+              1,
+              673
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              616
+            ],
+            [
+              0,
+              1,
+              673
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1940",
+          "parentId": "10:1431",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 504,
+          "y": 499,
+          "width": 203,
+          "height": 379,
+          "rotation": 0,
+          "paintOrder": 8,
+          "frameTransform": [
+            [
+              1,
+              0,
+              504
+            ],
+            [
+              0,
+              1,
+              499
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              504
+            ],
+            [
+              0,
+              1,
+              499
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "a29311f1f1d2be133c14d891089c6650c953c32e",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.18788623809814453,
+                  0,
+                  0.43798828125
+                ],
+                [
+                  0,
+                  0.6285240650177002,
+                  0.16749586164951324
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1941",
+          "parentId": "10:1940",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 504,
+          "y": 499,
+          "width": 203,
+          "height": 379,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              504
+            ],
+            [
+              0,
+              1,
+              499
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              504
+            ],
+            [
+              0,
+              1,
+              499
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "a29311f1f1d2be133c14d891089c6650c953c32e",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.18788623809814453,
+                  0,
+                  0.43798828125
+                ],
+                [
+                  0,
+                  0.6285240650177002,
+                  0.16749586164951324
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1942",
+          "parentId": "10:1941",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 6",
+          "visible": true,
+          "opacity": 1,
+          "x": 504,
+          "y": 499,
+          "width": 203,
+          "height": 379,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              504
+            ],
+            [
+              0,
+              1,
+              499
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              504
+            ],
+            [
+              0,
+              1,
+              499
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "a29311f1f1d2be133c14d891089c6650c953c32e",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.18788623809814453,
+                  0,
+                  0.43798828125
+                ],
+                [
+                  0,
+                  0.6285240650177002,
+                  0.16749586164951324
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1943",
+          "parentId": "10:1941",
+          "type": "RECTANGLE",
+          "name": "Rectangle 198",
+          "visible": true,
+          "opacity": 1,
+          "x": 474,
+          "y": 858,
+          "width": 91,
+          "height": 39,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              474
+            ],
+            [
+              0,
+              1,
+              858
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              474
+            ],
+            [
+              0,
+              1,
+              858
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1944",
+          "parentId": "10:1940",
+          "type": "RECTANGLE",
+          "name": "Rectangle 199",
+          "visible": true,
+          "opacity": 1,
+          "x": 662,
+          "y": 849,
+          "width": 94,
+          "height": 58,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              662
+            ],
+            [
+              0,
+              1,
+              849
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              662
+            ],
+            [
+              0,
+              1,
+              849
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1945",
+          "parentId": "10:1431",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 900,
+          "y": 646,
+          "width": 210,
+          "height": 145,
+          "rotation": 0,
+          "paintOrder": 9,
+          "frameTransform": [
+            [
+              1,
+              0,
+              900
+            ],
+            [
+              0,
+              1,
+              646
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              900
+            ],
+            [
+              0,
+              1,
+              646
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.19436506927013397,
+                  0,
+                  0.8054308891296387
+                ],
+                [
+                  0,
+                  0.24046432971954346,
+                  0.4129352867603302
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1946",
+          "parentId": "10:1945",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 900,
+          "y": 646,
+          "width": 210,
+          "height": 145,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              900
+            ],
+            [
+              0,
+              1,
+              646
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              900
+            ],
+            [
+              0,
+              1,
+              646
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.19436506927013397,
+                  0,
+                  0.8054308891296387
+                ],
+                [
+                  0,
+                  0.24046432971954346,
+                  0.4129352867603302
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1947",
+          "parentId": "10:1946",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 9",
+          "visible": true,
+          "opacity": 1,
+          "x": 900,
+          "y": 646,
+          "width": 210,
+          "height": 145,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              900
+            ],
+            [
+              0,
+              1,
+              646
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              900
+            ],
+            [
+              0,
+              1,
+              646
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.19436506927013397,
+                  0,
+                  0.8054308891296387
+                ],
+                [
+                  0,
+                  0.24046432971954346,
+                  0.4129352867603302
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1948",
+          "parentId": "10:1946",
+          "type": "RECTANGLE",
+          "name": "Rectangle 201",
+          "visible": true,
+          "opacity": 1,
+          "x": 879,
+          "y": 626,
+          "width": 38,
+          "height": 32,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              879
+            ],
+            [
+              0,
+              1,
+              626
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              879
+            ],
+            [
+              0,
+              1,
+              626
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1949",
+          "parentId": "10:1945",
+          "type": "RECTANGLE",
+          "name": "Rectangle 202",
+          "visible": true,
+          "opacity": 1,
+          "x": 889,
+          "y": 780,
+          "width": 22,
+          "height": 17,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              889
+            ],
+            [
+              0,
+              1,
+              780
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              889
+            ],
+            [
+              0,
+              1,
+              780
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1950",
+          "parentId": "10:1431",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 354,
+          "y": 685,
+          "width": 133,
+          "height": 116,
+          "rotation": 0,
+          "paintOrder": 10,
+          "frameTransform": [
+            [
+              1,
+              0,
+              354
+            ],
+            [
+              0,
+              1,
+              685
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              354
+            ],
+            [
+              0,
+              1,
+              685
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.12309788167476654,
+                  0,
+                  0.30008161067962646
+                ],
+                [
+                  0,
+                  0.19237148761749268,
+                  0.4776119589805603
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1951",
+          "parentId": "10:1950",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 3",
+          "visible": true,
+          "opacity": 1,
+          "x": 354,
+          "y": 685,
+          "width": 133,
+          "height": 116,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              354
+            ],
+            [
+              0,
+              1,
+              685
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              354
+            ],
+            [
+              0,
+              1,
+              685
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.12309788167476654,
+                  0,
+                  0.30008161067962646
+                ],
+                [
+                  0,
+                  0.19237148761749268,
+                  0.4776119589805603
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1952",
+          "parentId": "10:1950",
+          "type": "RECTANGLE",
+          "name": "Rectangle 203",
+          "visible": true,
+          "opacity": 1,
+          "x": 335,
+          "y": 668,
+          "width": 36,
+          "height": 31,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              335
+            ],
+            [
+              0,
+              1,
+              668
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              335
+            ],
+            [
+              0,
+              1,
+              668
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1953",
+          "parentId": "10:1431",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 30,
+          "y": 727,
+          "width": 393,
+          "height": 273,
+          "rotation": 0,
+          "paintOrder": 11,
+          "frameTransform": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              727
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              727
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.36374035477638245,
+                  0,
+                  0.00020405784016475081
+                ],
+                [
+                  0,
+                  0.4527363181114197,
+                  0.5472636818885803
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1954",
+          "parentId": "10:1953",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 6",
+          "visible": true,
+          "opacity": 1,
+          "x": 30,
+          "y": 727,
+          "width": 393,
+          "height": 273,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              727
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              727
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.36374035477638245,
+                  0,
+                  0.00020405784016475081
+                ],
+                [
+                  0,
+                  0.4527363181114197,
+                  0.5472636818885803
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1955",
+          "parentId": "10:1953",
+          "type": "RECTANGLE",
+          "name": "Rectangle 204",
+          "visible": true,
+          "opacity": 1,
+          "x": 407,
+          "y": 924,
+          "width": 30,
+          "height": 25,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              407
+            ],
+            [
+              0,
+              1,
+              924
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              407
+            ],
+            [
+              0,
+              1,
+              924
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1956",
+          "parentId": "10:1953",
+          "type": "RECTANGLE",
+          "name": "Rectangle 205",
+          "visible": true,
+          "opacity": 1,
+          "x": 350,
+          "y": 701,
+          "width": 95,
+          "height": 79,
+          "rotation": 0,
+          "paintOrder": 2,
+          "frameTransform": [
+            [
+              1,
+              0,
+              350
+            ],
+            [
+              0,
+              1,
+              701
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              350
+            ],
+            [
+              0,
+              1,
+              701
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1957",
+          "parentId": "10:1953",
+          "type": "RECTANGLE",
+          "name": "Rectangle 206",
+          "visible": true,
+          "opacity": 1,
+          "x": 248,
+          "y": 696,
+          "width": 65,
+          "height": 45,
+          "rotation": 0,
+          "paintOrder": 3,
+          "frameTransform": [
+            [
+              1,
+              0,
+              248
+            ],
+            [
+              0,
+              1,
+              696
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              248
+            ],
+            [
+              0,
+              1,
+              696
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1958",
+          "parentId": "10:1431",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 653,
+          "y": 735,
+          "width": 457,
+          "height": 265,
+          "rotation": 0,
+          "paintOrder": 12,
+          "frameTransform": [
+            [
+              1,
+              0,
+              653
+            ],
+            [
+              0,
+              1,
+              735
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              653
+            ],
+            [
+              0,
+              1,
+              735
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.42297545075416565,
+                  0,
+                  0.576820433139801
+                ],
+                [
+                  0,
+                  0.4394693076610565,
+                  0.5605306625366211
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1959",
+          "parentId": "10:1958",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 653,
+          "y": 735,
+          "width": 457,
+          "height": 265,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              653
+            ],
+            [
+              0,
+              1,
+              735
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              653
+            ],
+            [
+              0,
+              1,
+              735
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.42297545075416565,
+                  0,
+                  0.576820433139801
+                ],
+                [
+                  0,
+                  0.4394693076610565,
+                  0.5605306625366211
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1960",
+          "parentId": "10:1959",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 6",
+          "visible": true,
+          "opacity": 1,
+          "x": 653,
+          "y": 735,
+          "width": 457,
+          "height": 265,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              653
+            ],
+            [
+              0,
+              1,
+              735
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              653
+            ],
+            [
+              0,
+              1,
+              735
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.42297545075416565,
+                  0,
+                  0.576820433139801
+                ],
+                [
+                  0,
+                  0.4394693076610565,
+                  0.5605306625366211
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1961",
+          "parentId": "10:1959",
+          "type": "RECTANGLE",
+          "name": "Rectangle 207",
+          "visible": true,
+          "opacity": 1,
+          "x": 914,
+          "y": 705,
+          "width": 183,
+          "height": 81,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              914
+            ],
+            [
+              0,
+              1,
+              705
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              914
+            ],
+            [
+              0,
+              1,
+              705
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1962",
+          "parentId": "10:1958",
+          "type": "RECTANGLE",
+          "name": "Rectangle 208",
+          "visible": true,
+          "opacity": 1,
+          "x": 611,
+          "y": 716,
+          "width": 75,
+          "height": 103,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              611
+            ],
+            [
+              0,
+              1,
+              716
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              611
+            ],
+            [
+              0,
+              1,
+              716
+            ]
+          ],
+          "isMask": false
+        }
+      ]
+    },
+    {
+      "nodeId": "10:1596",
+      "width": 1920,
+      "height": 1080,
+      "clipsContent": true,
+      "nodes": [
+        {
+          "nodeId": "10:1597",
+          "parentId": "10:1596",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 2",
+          "visible": true,
+          "opacity": 1,
+          "x": 30,
+          "y": 397,
+          "width": 501,
+          "height": 337,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              397
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              397
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "35938ea29ed9ca1307edc53950674e4c8ebe63d5",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.4636995494365692,
+                  0,
+                  0.00020405784016475081
+                ],
+                [
+                  0,
+                  0.5588722825050354,
+                  0
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1598",
+          "parentId": "10:1596",
+          "type": "RECTANGLE",
+          "name": "Telephone_handset_vector_artwork_2K_20261023160333 1",
+          "visible": true,
+          "opacity": 1,
+          "x": 227,
+          "y": 228,
+          "width": 635,
+          "height": 851,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              227
+            ],
+            [
+              0,
+              1,
+              228
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              227
+            ],
+            [
+              0,
+              1,
+              228
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": false,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "bfdc63b7bc0f0d5abbdf1a00f3ec8121daffde5a",
+              "scaleMode": "FILL",
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "scalingFactor": 0.5
+            },
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "be5817d93162046d2b9f3af61b7489db7df1278c",
+              "scaleMode": "FILL",
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1599",
+          "parentId": "10:1596",
+          "type": "RECTANGLE",
+          "name": "Mosaic",
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "rotation": 0,
+          "paintOrder": 2,
+          "frameTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 0.4000000059604645,
+              "blendMode": "NORMAL",
+              "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
+              "scaleMode": "TILE",
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "scalingFactor": 0.8942065238952637
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1628",
+          "parentId": "10:1596",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 5",
+          "visible": true,
+          "opacity": 1,
+          "x": 415,
+          "y": 853,
+          "width": 232,
+          "height": 147,
+          "rotation": 0,
+          "paintOrder": 6,
+          "frameTransform": [
+            [
+              1,
+              0,
+              415
+            ],
+            [
+              0,
+              1,
+              853
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              415
+            ],
+            [
+              0,
+              1,
+              853
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "528b075a5c6b35f819c787bff455d9dbd2436c83",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.21472714841365814,
+                  0,
+                  0.3565400540828705
+                ],
+                [
+                  0,
+                  0.24378108978271484,
+                  0.7562189102172852
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1629",
+          "parentId": "10:1596",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 657,
+          "y": 397,
+          "width": 424,
+          "height": 299,
+          "rotation": 0,
+          "paintOrder": 7,
+          "frameTransform": [
+            [
+              1,
+              0,
+              657
+            ],
+            [
+              0,
+              1,
+              397
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              657
+            ],
+            [
+              0,
+              1,
+              397
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "c027bce002d6d9ef41326d8cce3bb29eac6f7e22",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.3924323618412018,
+                  0,
+                  0.5805226564407349
+                ],
+                [
+                  0,
+                  0.49585404992103577,
+                  3.5232549316861804e-15
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1630",
+          "parentId": "10:1629",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 8",
+          "visible": true,
+          "opacity": 1,
+          "x": 657,
+          "y": 397,
+          "width": 424,
+          "height": 299,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              657
+            ],
+            [
+              0,
+              1,
+              397
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              657
+            ],
+            [
+              0,
+              1,
+              397
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "c027bce002d6d9ef41326d8cce3bb29eac6f7e22",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.3924323618412018,
+                  0,
+                  0.5805226564407349
+                ],
+                [
+                  0,
+                  0.49585404992103577,
+                  0
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1631",
+          "parentId": "10:1629",
+          "type": "RECTANGLE",
+          "name": "Rectangle 197",
+          "visible": true,
+          "opacity": 1,
+          "x": 616,
+          "y": 673,
+          "width": 84,
+          "height": 48,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              616
+            ],
+            [
+              0,
+              1,
+              673
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              616
+            ],
+            [
+              0,
+              1,
+              673
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1632",
+          "parentId": "10:1596",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 504,
+          "y": 499,
+          "width": 203,
+          "height": 379,
+          "rotation": 0,
+          "paintOrder": 8,
+          "frameTransform": [
+            [
+              1,
+              0,
+              504
+            ],
+            [
+              0,
+              1,
+              499
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              504
+            ],
+            [
+              0,
+              1,
+              499
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "a29311f1f1d2be133c14d891089c6650c953c32e",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.18788623809814453,
+                  0,
+                  0.43798828125
+                ],
+                [
+                  0,
+                  0.6285240650177002,
+                  0.16749586164951324
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1633",
+          "parentId": "10:1632",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 504,
+          "y": 499,
+          "width": 203,
+          "height": 379,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              504
+            ],
+            [
+              0,
+              1,
+              499
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              504
+            ],
+            [
+              0,
+              1,
+              499
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "a29311f1f1d2be133c14d891089c6650c953c32e",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.18788623809814453,
+                  0,
+                  0.43798828125
+                ],
+                [
+                  0,
+                  0.6285240650177002,
+                  0.16749586164951324
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1634",
+          "parentId": "10:1633",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 6",
+          "visible": true,
+          "opacity": 1,
+          "x": 504,
+          "y": 499,
+          "width": 203,
+          "height": 379,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              504
+            ],
+            [
+              0,
+              1,
+              499
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              504
+            ],
+            [
+              0,
+              1,
+              499
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "a29311f1f1d2be133c14d891089c6650c953c32e",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.18788623809814453,
+                  0,
+                  0.43798828125
+                ],
+                [
+                  0,
+                  0.6285240650177002,
+                  0.16749586164951324
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1635",
+          "parentId": "10:1633",
+          "type": "RECTANGLE",
+          "name": "Rectangle 198",
+          "visible": true,
+          "opacity": 1,
+          "x": 474,
+          "y": 858,
+          "width": 91,
+          "height": 39,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              474
+            ],
+            [
+              0,
+              1,
+              858
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              474
+            ],
+            [
+              0,
+              1,
+              858
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1636",
+          "parentId": "10:1632",
+          "type": "RECTANGLE",
+          "name": "Rectangle 199",
+          "visible": true,
+          "opacity": 1,
+          "x": 662,
+          "y": 849,
+          "width": 94,
+          "height": 58,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              662
+            ],
+            [
+              0,
+              1,
+              849
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              662
+            ],
+            [
+              0,
+              1,
+              849
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1637",
+          "parentId": "10:1596",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 900,
+          "y": 646,
+          "width": 210,
+          "height": 145,
+          "rotation": 0,
+          "paintOrder": 9,
+          "frameTransform": [
+            [
+              1,
+              0,
+              900
+            ],
+            [
+              0,
+              1,
+              646
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              900
+            ],
+            [
+              0,
+              1,
+              646
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.19436506927013397,
+                  0,
+                  0.8054308891296387
+                ],
+                [
+                  0,
+                  0.24046432971954346,
+                  0.4129352867603302
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1638",
+          "parentId": "10:1637",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 900,
+          "y": 646,
+          "width": 210,
+          "height": 145,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              900
+            ],
+            [
+              0,
+              1,
+              646
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              900
+            ],
+            [
+              0,
+              1,
+              646
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.19436506927013397,
+                  0,
+                  0.8054308891296387
+                ],
+                [
+                  0,
+                  0.24046432971954346,
+                  0.4129352867603302
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1639",
+          "parentId": "10:1638",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 9",
+          "visible": true,
+          "opacity": 1,
+          "x": 900,
+          "y": 646,
+          "width": 210,
+          "height": 145,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              900
+            ],
+            [
+              0,
+              1,
+              646
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              900
+            ],
+            [
+              0,
+              1,
+              646
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.19436506927013397,
+                  0,
+                  0.8054308891296387
+                ],
+                [
+                  0,
+                  0.24046432971954346,
+                  0.4129352867603302
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1640",
+          "parentId": "10:1638",
+          "type": "RECTANGLE",
+          "name": "Rectangle 201",
+          "visible": true,
+          "opacity": 1,
+          "x": 879,
+          "y": 626,
+          "width": 38,
+          "height": 32,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              879
+            ],
+            [
+              0,
+              1,
+              626
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              879
+            ],
+            [
+              0,
+              1,
+              626
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1641",
+          "parentId": "10:1637",
+          "type": "RECTANGLE",
+          "name": "Rectangle 202",
+          "visible": true,
+          "opacity": 1,
+          "x": 889,
+          "y": 780,
+          "width": 22,
+          "height": 17,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              889
+            ],
+            [
+              0,
+              1,
+              780
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              889
+            ],
+            [
+              0,
+              1,
+              780
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1642",
+          "parentId": "10:1596",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 354,
+          "y": 685,
+          "width": 133,
+          "height": 116,
+          "rotation": 0,
+          "paintOrder": 10,
+          "frameTransform": [
+            [
+              1,
+              0,
+              354
+            ],
+            [
+              0,
+              1,
+              685
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              354
+            ],
+            [
+              0,
+              1,
+              685
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.12309788167476654,
+                  0,
+                  0.30008161067962646
+                ],
+                [
+                  0,
+                  0.19237148761749268,
+                  0.4776119589805603
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1643",
+          "parentId": "10:1642",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 3",
+          "visible": true,
+          "opacity": 1,
+          "x": 354,
+          "y": 685,
+          "width": 133,
+          "height": 116,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              354
+            ],
+            [
+              0,
+              1,
+              685
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              354
+            ],
+            [
+              0,
+              1,
+              685
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.12309788167476654,
+                  0,
+                  0.30008161067962646
+                ],
+                [
+                  0,
+                  0.19237148761749268,
+                  0.4776119589805603
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1644",
+          "parentId": "10:1642",
+          "type": "RECTANGLE",
+          "name": "Rectangle 203",
+          "visible": true,
+          "opacity": 1,
+          "x": 335,
+          "y": 668,
+          "width": 36,
+          "height": 31,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              335
+            ],
+            [
+              0,
+              1,
+              668
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              335
+            ],
+            [
+              0,
+              1,
+              668
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1645",
+          "parentId": "10:1596",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 30,
+          "y": 727,
+          "width": 393,
+          "height": 273,
+          "rotation": 0,
+          "paintOrder": 11,
+          "frameTransform": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              727
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              727
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.36374035477638245,
+                  0,
+                  0.00020405784016475081
+                ],
+                [
+                  0,
+                  0.4527363181114197,
+                  0.5472636818885803
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1646",
+          "parentId": "10:1645",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 6",
+          "visible": true,
+          "opacity": 1,
+          "x": 30,
+          "y": 727,
+          "width": 393,
+          "height": 273,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              727
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              727
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.36374035477638245,
+                  0,
+                  0.00020405784016475081
+                ],
+                [
+                  0,
+                  0.4527363181114197,
+                  0.5472636818885803
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1647",
+          "parentId": "10:1645",
+          "type": "RECTANGLE",
+          "name": "Rectangle 204",
+          "visible": true,
+          "opacity": 1,
+          "x": 407,
+          "y": 924,
+          "width": 30,
+          "height": 25,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              407
+            ],
+            [
+              0,
+              1,
+              924
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              407
+            ],
+            [
+              0,
+              1,
+              924
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1648",
+          "parentId": "10:1645",
+          "type": "RECTANGLE",
+          "name": "Rectangle 205",
+          "visible": true,
+          "opacity": 1,
+          "x": 350,
+          "y": 701,
+          "width": 95,
+          "height": 79,
+          "rotation": 0,
+          "paintOrder": 2,
+          "frameTransform": [
+            [
+              1,
+              0,
+              350
+            ],
+            [
+              0,
+              1,
+              701
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              350
+            ],
+            [
+              0,
+              1,
+              701
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1649",
+          "parentId": "10:1645",
+          "type": "RECTANGLE",
+          "name": "Rectangle 206",
+          "visible": true,
+          "opacity": 1,
+          "x": 248,
+          "y": 696,
+          "width": 65,
+          "height": 45,
+          "rotation": 0,
+          "paintOrder": 3,
+          "frameTransform": [
+            [
+              1,
+              0,
+              248
+            ],
+            [
+              0,
+              1,
+              696
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              248
+            ],
+            [
+              0,
+              1,
+              696
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1650",
+          "parentId": "10:1596",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 653,
+          "y": 735,
+          "width": 457,
+          "height": 265,
+          "rotation": 0,
+          "paintOrder": 12,
+          "frameTransform": [
+            [
+              1,
+              0,
+              653
+            ],
+            [
+              0,
+              1,
+              735
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              653
+            ],
+            [
+              0,
+              1,
+              735
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.42297545075416565,
+                  0,
+                  0.576820433139801
+                ],
+                [
+                  0,
+                  0.4394693076610565,
+                  0.5605306625366211
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1651",
+          "parentId": "10:1650",
+          "type": "BOOLEAN_OPERATION",
+          "name": "Subtract",
+          "visible": true,
+          "opacity": 1,
+          "x": 653,
+          "y": 735,
+          "width": 457,
+          "height": 265,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              653
+            ],
+            [
+              0,
+              1,
+              735
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              653
+            ],
+            [
+              0,
+              1,
+              735
+            ]
+          ],
+          "booleanOperation": "SUBTRACT",
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.42297545075416565,
+                  0,
+                  0.576820433139801
+                ],
+                [
+                  0,
+                  0.4394693076610565,
+                  0.5605306625366211
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1652",
+          "parentId": "10:1651",
+          "type": "RECTANGLE",
+          "name": "Untitled-2 6",
+          "visible": true,
+          "opacity": 1,
+          "x": 653,
+          "y": 735,
+          "width": 457,
+          "height": 265,
+          "rotation": 0,
+          "paintOrder": 0,
+          "frameTransform": [
+            [
+              1,
+              0,
+              653
+            ],
+            [
+              0,
+              1,
+              735
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              653
+            ],
+            [
+              0,
+              1,
+              735
+            ]
+          ],
+          "isMask": false,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "imageHash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
+              "scaleMode": "CROP",
+              "imageTransform": [
+                [
+                  0.42297545075416565,
+                  0,
+                  0.576820433139801
+                ],
+                [
+                  0,
+                  0.4394693076610565,
+                  0.5605306625366211
+                ]
+              ],
+              "scalingFactor": 0.5
+            }
+          ]
+        },
+        {
+          "nodeId": "10:1653",
+          "parentId": "10:1651",
+          "type": "RECTANGLE",
+          "name": "Rectangle 207",
+          "visible": true,
+          "opacity": 1,
+          "x": 914,
+          "y": 705,
+          "width": 183,
+          "height": 81,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              914
+            ],
+            [
+              0,
+              1,
+              705
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              914
+            ],
+            [
+              0,
+              1,
+              705
+            ]
+          ],
+          "isMask": false
+        },
+        {
+          "nodeId": "10:1654",
+          "parentId": "10:1650",
+          "type": "RECTANGLE",
+          "name": "Rectangle 208",
+          "visible": true,
+          "opacity": 1,
+          "x": 611,
+          "y": 716,
+          "width": 75,
+          "height": 103,
+          "rotation": 0,
+          "paintOrder": 1,
+          "frameTransform": [
+            [
+              1,
+              0,
+              611
+            ],
+            [
+              0,
+              1,
+              716
+            ]
+          ],
+          "relativeTransform": [
+            [
+              1,
+              0,
+              611
+            ],
+            [
+              0,
+              1,
+              716
+            ]
+          ],
+          "isMask": false
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "sourceBytes": "All 9 downloads and reused texture match original byte counts and FNV-1a fingerprints obtained through Figma MCP",
+    "dimensions": "7 ice PNGs 4096x2286; telephone JPEG and PNG 1792x2400; all match registry",
+    "alpha": "All eight PNG originals contain fully transparent and partially transparent pixels; transparent margins retained. Telephone cable reaches the original bottom edge.",
+    "stateComparison": "All 8 ice root objects and 20 descendants match geometry, transforms, fills and visibility between states; only top-level order changes for upper-left shard. Telephone exists only in B.",
+    "visual": "Originals inspected on checkerboard. Temporary crop/Boolean-cut reconstruction of both compositions visually compared with Figma screenshots; source paint order and texture overlay retained.",
+    "assetScript": "Verified: 22 | Pending: 19 | Errors: 0"
+  },
+  "motion": {
+    "independentObjects": "8 ice wrappers and 1 telephone; shared raster source for the two lower shards does not prevent independent transforms. Crop and mask must travel with each wrapper.",
+    "unapproved": "Endpoints do not specify an explosion, ice displacement/rotation/scale change, timing, easing, trigger, trajectory or telephone initial pose. No animation implemented."
+  },
+  "newBytes": 39998458
+}
