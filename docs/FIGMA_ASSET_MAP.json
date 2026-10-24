@@ -91,7 +91,7 @@
       "sourceWidth": 3370,
       "sourceHeight": 2247,
       "occurrences": 3,
-      "localPath": null
+      "localPath": "public/assets/images/au-fg-texture4-8k.jpg"
     },
     {
       "hash": "144a3d120c3632ab1ee03b64c4d9e288a22b8b5a",
@@ -271,7 +271,7 @@
       "sourceWidth": 512,
       "sourceHeight": 512,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/blind-spot-circle-source.png"
     },
     {
       "hash": "a3a4fd64ac220162df428e62b8a3cddf755b1fe7",
@@ -280,7 +280,7 @@
       "sourceWidth": 512,
       "sourceHeight": 512,
       "occurrences": 1,
-      "localPath": null
+      "localPath": "public/assets/images/blind-spot-circle-cutout.png"
     },
     {
       "hash": "a2527d39f79d61137e7c901c1bd8802fb781330d",

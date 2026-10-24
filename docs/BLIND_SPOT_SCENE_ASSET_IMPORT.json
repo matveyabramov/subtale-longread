@@ -1,0 +1,2150 @@
+{
+  "stage": "0.2E.1",
+  "date": "2026-10-24",
+  "figmaFileKey": "H4HI00uGY2UOxpcfHogUat",
+  "frame": {
+    "nodeId": "10:997",
+    "width": 1920,
+    "height": 1080,
+    "clipsContent": true
+  },
+  "newFiles": 3,
+  "newBytes": 4679815,
+  "method": "Original Figma MCP raw downloads, matched by byte count and FNV-1a against getImageByHash().getBytesAsync(); non-original alternate responses excluded. No resize, crop, alpha changes or re-encoding.",
+  "assets": [
+    {
+      "hash": "364855320f08ade1d04f13556e9f3defb0d52bcb",
+      "bytes": 4242403,
+      "fnv1a": "98631a1f",
+      "format": "jpg",
+      "width": 3370,
+      "height": 2247,
+      "nodeId": "10:998",
+      "localPath": "public/assets/images/au-fg-texture4-8k.jpg",
+      "sha256": "a61f3a7ab37031d8f43f76ee858a9b02387830c3edd500979219cda2b493e892",
+      "pixelQA": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "width": 3370,
+        "height": 2247,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0,
+        "transparentEdgePixels": 0,
+        "alphaBounds": [
+          0,
+          0,
+          3370,
+          2247
+        ],
+        "centerPixel": [
+          13,
+          13,
+          13,
+          255
+        ]
+      }
+    },
+    {
+      "hash": "097adb30ab0ee1356352c1673681a2318d190cad",
+      "bytes": 222197,
+      "fnv1a": "6e0e5027",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "nodeId": "10:1012",
+      "localPath": "public/assets/images/blind-spot-circle-source.png",
+      "sha256": "99c29196f4a26fd9935c82e59998fc9697545475d90b7b847445a6d39a229312",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGB",
+        "width": 512,
+        "height": 512,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0,
+        "transparentEdgePixels": 0,
+        "alphaBounds": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "centerPixel": [
+          1,
+          1,
+          1,
+          255
+        ]
+      }
+    },
+    {
+      "hash": "a3a4fd64ac220162df428e62b8a3cddf755b1fe7",
+      "bytes": 215215,
+      "fnv1a": "ed159bde",
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "nodeId": "10:1012",
+      "localPath": "public/assets/images/blind-spot-circle-cutout.png",
+      "sha256": "13240a05edccb105d5dee97fc39d9b8ac284cec08234c239ff58cf2b8083f6e3",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 512,
+        "height": 512,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 77172,
+        "partialAlphaPixels": 7049,
+        "transparentEdgePixels": 2048,
+        "alphaBounds": [
+          13,
+          13,
+          499,
+          499
+        ],
+        "centerPixel": [
+          1,
+          1,
+          1,
+          255
+        ]
+      }
+    }
+  ],
+  "sharedTexture": {
+    "imageHash": "364855320f08ade1d04f13556e9f3defb0d52bcb",
+    "localPath": "public/assets/images/au-fg-texture4-8k.jpg",
+    "usages": [
+      {
+        "frameNodeId": "10:997",
+        "frameName": "Blind-spot-scene",
+        "frameWidth": 1920,
+        "frameHeight": 1080,
+        "frameClipsContent": true,
+        "nodeId": "10:998",
+        "parentId": "10:997",
+        "type": "RECTANGLE",
+        "name": "AU-FG-Texture4-8K",
+        "paintOrder": 0,
+        "visible": true,
+        "opacity": 1,
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "frameTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "visible": true,
+            "opacity": 0.4000000059604645,
+            "blendMode": "NORMAL",
+            "scaleMode": "CROP",
+            "scalingFactor": 0.5,
+            "filters": {
+              "exposure": 0,
+              "contrast": 0,
+              "saturation": 0,
+              "temperature": 0,
+              "tint": 0,
+              "highlights": 0,
+              "shadows": 0
+            },
+            "imageTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "imageHash": "364855320f08ade1d04f13556e9f3defb0d52bcb"
+          }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "strokeCap": "NONE",
+        "dashPattern": [],
+        "effects": [],
+        "isMask": false,
+        "blendMode": "LIGHTEN"
+      },
+      {
+        "frameNodeId": "10:1272",
+        "frameName": "What-to-do",
+        "frameWidth": 1920,
+        "frameHeight": 1080,
+        "frameClipsContent": true,
+        "nodeId": "10:1273",
+        "parentId": "10:1272",
+        "type": "RECTANGLE",
+        "name": "AU-FG-Texture4-8K",
+        "paintOrder": 0,
+        "visible": true,
+        "opacity": 1,
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "frameTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "visible": true,
+            "opacity": 0.20000000298023224,
+            "blendMode": "NORMAL",
+            "scaleMode": "CROP",
+            "scalingFactor": 0.5,
+            "filters": {
+              "exposure": 0,
+              "contrast": 0,
+              "saturation": 0,
+              "temperature": 0,
+              "tint": 0,
+              "highlights": 0,
+              "shadows": 0
+            },
+            "imageTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "imageHash": "364855320f08ade1d04f13556e9f3defb0d52bcb"
+          }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "strokeCap": "NONE",
+        "dashPattern": [],
+        "effects": [],
+        "isMask": false,
+        "blendMode": "LIGHTEN"
+      },
+      {
+        "frameNodeId": "10:1016",
+        "frameName": "Footer",
+        "frameWidth": 1920,
+        "frameHeight": 1334,
+        "frameClipsContent": true,
+        "nodeId": "10:1017",
+        "parentId": "10:1016",
+        "type": "RECTANGLE",
+        "name": "AU-FG-Texture4-8K",
+        "paintOrder": 0,
+        "visible": true,
+        "opacity": 1,
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "rotation": 0,
+        "relativeTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "frameTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "fills": [
+          {
+            "type": "IMAGE",
+            "visible": true,
+            "opacity": 0.4000000059604645,
+            "blendMode": "NORMAL",
+            "scaleMode": "CROP",
+            "scalingFactor": 0.5,
+            "filters": {
+              "exposure": 0,
+              "contrast": 0,
+              "saturation": 0,
+              "temperature": 0,
+              "tint": 0,
+              "highlights": 0,
+              "shadows": 0
+            },
+            "imageTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "imageHash": "364855320f08ade1d04f13556e9f3defb0d52bcb"
+          }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "strokeCap": "NONE",
+        "dashPattern": [],
+        "effects": [],
+        "isMask": false,
+        "blendMode": "LIGHTEN"
+      }
+    ],
+    "interpretation": "Same JPEG used once in each of the three named frames. Node LIGHTEN blend; paint NORMAL with opacity 0.4, 0.2, 0.4 respectively. CROP plus identity imageTransform maps the full normalized source into each 1920x1080 texture rectangle. Do not substitute tiled Mosaic, a rendered PNG or a uniform cover assumption. Footer texture rectangle is 1080px high within a 1334px frame."
+  },
+  "centralIllustration": {
+    "nodeId": "10:1012",
+    "parentId": "10:997",
+    "type": "RECTANGLE",
+    "name": "image 51",
+    "paintOrder": 14,
+    "visible": true,
+    "opacity": 1,
+    "x": 670,
+    "y": 336,
+    "width": 581,
+    "height": 581,
+    "rotation": 0,
+    "relativeTransform": [
+      [
+        1,
+        0,
+        670
+      ],
+      [
+        0,
+        1,
+        336
+      ]
+    ],
+    "frameTransform": [
+      [
+        1,
+        0,
+        670
+      ],
+      [
+        0,
+        1,
+        336
+      ]
+    ],
+    "fills": [
+      {
+        "type": "IMAGE",
+        "visible": false,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "097adb30ab0ee1356352c1673681a2318d190cad"
+      },
+      {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "a3a4fd64ac220162df428e62b8a3cddf755b1fe7"
+      }
+    ],
+    "strokes": [],
+    "strokeWeight": 1,
+    "strokeAlign": "INSIDE",
+    "strokeCap": "NONE",
+    "dashPattern": [],
+    "effects": [],
+    "isMask": false,
+    "blendMode": "PASS_THROUGH"
+  },
+  "lineSegments": [
+    {
+      "nodeId": "10:1000",
+      "parentId": "10:997",
+      "type": "VECTOR",
+      "name": "Vector 10",
+      "paintOrder": 2,
+      "visible": true,
+      "opacity": 1,
+      "x": 356,
+      "y": 509,
+      "width": 284,
+      "height": 0,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          356
+        ],
+        [
+          0,
+          1,
+          509
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          356
+        ],
+        [
+          0,
+          1,
+          509
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "vectorPaths": [
+        {
+          "windingRule": "NONE",
+          "data": "M 0 0 L 284 0"
+        }
+      ]
+    },
+    {
+      "nodeId": "10:1001",
+      "parentId": "10:997",
+      "type": "VECTOR",
+      "name": "Vector 11",
+      "paintOrder": 3,
+      "visible": true,
+      "opacity": 1,
+      "x": 1281,
+      "y": 509,
+      "width": 146,
+      "height": 0,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          509
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          509
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "vectorPaths": [
+        {
+          "windingRule": "NONE",
+          "data": "M 0 0 L 146 0"
+        }
+      ]
+    },
+    {
+      "nodeId": "10:1002",
+      "parentId": "10:997",
+      "type": "VECTOR",
+      "name": "Vector 12",
+      "paintOrder": 4,
+      "visible": true,
+      "opacity": 1,
+      "x": 1281,
+      "y": 626,
+      "width": 146,
+      "height": 0,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          626
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          626
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "vectorPaths": [
+        {
+          "windingRule": "NONE",
+          "data": "M 0 0 L 146 0"
+        }
+      ]
+    },
+    {
+      "nodeId": "10:1003",
+      "parentId": "10:997",
+      "type": "VECTOR",
+      "name": "Vector 13",
+      "paintOrder": 5,
+      "visible": true,
+      "opacity": 1,
+      "x": 1281,
+      "y": 743,
+      "width": 29,
+      "height": 0,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          743
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          743
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "vectorPaths": [
+        {
+          "windingRule": "NONE",
+          "data": "M 0 0 L 28.999999999999996 0"
+        }
+      ]
+    },
+    {
+      "nodeId": "10:1006",
+      "parentId": "10:997",
+      "type": "VECTOR",
+      "name": "Vector 10",
+      "paintOrder": 8,
+      "visible": true,
+      "opacity": 1,
+      "x": 317,
+      "y": 626,
+      "width": 323,
+      "height": 0,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          317
+        ],
+        [
+          0,
+          1,
+          626
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          317
+        ],
+        [
+          0,
+          1,
+          626
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "vectorPaths": [
+        {
+          "windingRule": "NONE",
+          "data": "M 0 0 L 323 0"
+        }
+      ]
+    },
+    {
+      "nodeId": "10:1009",
+      "parentId": "10:997",
+      "type": "VECTOR",
+      "name": "Vector 10",
+      "paintOrder": 11,
+      "visible": true,
+      "opacity": 1,
+      "x": 297,
+      "y": 743,
+      "width": 343,
+      "height": 0,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          297
+        ],
+        [
+          0,
+          1,
+          743
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          297
+        ],
+        [
+          0,
+          1,
+          743
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "vectorPaths": [
+        {
+          "windingRule": "NONE",
+          "data": "M 0 0 L 343 0"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "nodeId": "10:997",
+      "parentId": "0:1",
+      "type": "FRAME",
+      "name": "Blind-spot-scene",
+      "paintOrder": 7,
+      "visible": true,
+      "opacity": 1,
+      "x": 4274,
+      "y": 16215,
+      "width": 1920,
+      "height": 1080,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          4274
+        ],
+        [
+          0,
+          1,
+          16215
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.003921568859368563,
+            "g": 0.18039216101169586,
+            "b": 0.843137264251709
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "clipsContent": true
+    },
+    {
+      "nodeId": "10:998",
+      "parentId": "10:997",
+      "type": "RECTANGLE",
+      "name": "AU-FG-Texture4-8K",
+      "paintOrder": 0,
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 0.4000000059604645,
+          "blendMode": "NORMAL",
+          "scaleMode": "CROP",
+          "scalingFactor": 0.5,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "364855320f08ade1d04f13556e9f3defb0d52bcb"
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "blendMode": "LIGHTEN"
+    },
+    {
+      "nodeId": "10:999",
+      "parentId": "10:997",
+      "type": "TEXT",
+      "name": "Все слова понял",
+      "paintOrder": 1,
+      "visible": true,
+      "opacity": 1,
+      "x": 30,
+      "y": 488,
+      "width": 296,
+      "height": 42,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          488
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          488
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "characters": "Все слова понял"
+    },
+    {
+      "nodeId": "10:1000",
+      "parentId": "10:997",
+      "type": "VECTOR",
+      "name": "Vector 10",
+      "paintOrder": 2,
+      "visible": true,
+      "opacity": 1,
+      "x": 356,
+      "y": 509,
+      "width": 284,
+      "height": 0,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          356
+        ],
+        [
+          0,
+          1,
+          509
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          356
+        ],
+        [
+          0,
+          1,
+          509
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "vectorPaths": [
+        {
+          "windingRule": "NONE",
+          "data": "M 0 0 L 284 0"
+        }
+      ]
+    },
+    {
+      "nodeId": "10:1001",
+      "parentId": "10:997",
+      "type": "VECTOR",
+      "name": "Vector 11",
+      "paintOrder": 3,
+      "visible": true,
+      "opacity": 1,
+      "x": 1281,
+      "y": 509,
+      "width": 146,
+      "height": 0,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          509
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          509
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "vectorPaths": [
+        {
+          "windingRule": "NONE",
+          "data": "M 0 0 L 146 0"
+        }
+      ]
+    },
+    {
+      "nodeId": "10:1002",
+      "parentId": "10:997",
+      "type": "VECTOR",
+      "name": "Vector 12",
+      "paintOrder": 4,
+      "visible": true,
+      "opacity": 1,
+      "x": 1281,
+      "y": 626,
+      "width": 146,
+      "height": 0,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          626
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          626
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "vectorPaths": [
+        {
+          "windingRule": "NONE",
+          "data": "M 0 0 L 146 0"
+        }
+      ]
+    },
+    {
+      "nodeId": "10:1003",
+      "parentId": "10:997",
+      "type": "VECTOR",
+      "name": "Vector 13",
+      "paintOrder": 5,
+      "visible": true,
+      "opacity": 1,
+      "x": 1281,
+      "y": 743,
+      "width": 29,
+      "height": 0,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          743
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          743
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "vectorPaths": [
+        {
+          "windingRule": "NONE",
+          "data": "M 0 0 L 28.999999999999996 0"
+        }
+      ]
+    },
+    {
+      "nodeId": "10:1004",
+      "parentId": "10:997",
+      "type": "TEXT",
+      "name": "Но почему они смеются?",
+      "paintOrder": 6,
+      "visible": true,
+      "opacity": 1,
+      "x": 1457,
+      "y": 488,
+      "width": 433,
+      "height": 42,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1457
+        ],
+        [
+          0,
+          1,
+          488
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          1457
+        ],
+        [
+          0,
+          1,
+          488
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "characters": "Но почему они смеются?"
+    },
+    {
+      "nodeId": "10:1005",
+      "parentId": "10:997",
+      "type": "TEXT",
+      "name": "Сюжет понятен",
+      "paintOrder": 7,
+      "visible": true,
+      "opacity": 1,
+      "x": 30,
+      "y": 605,
+      "width": 257,
+      "height": 42,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          605
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          605
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "characters": "Сюжет понятен"
+    },
+    {
+      "nodeId": "10:1006",
+      "parentId": "10:997",
+      "type": "VECTOR",
+      "name": "Vector 10",
+      "paintOrder": 8,
+      "visible": true,
+      "opacity": 1,
+      "x": 317,
+      "y": 626,
+      "width": 323,
+      "height": 0,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          317
+        ],
+        [
+          0,
+          1,
+          626
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          317
+        ],
+        [
+          0,
+          1,
+          626
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "vectorPaths": [
+        {
+          "windingRule": "NONE",
+          "data": "M 0 0 L 323 0"
+        }
+      ]
+    },
+    {
+      "nodeId": "10:1007",
+      "parentId": "10:997",
+      "type": "TEXT",
+      "name": "Но почему он обиделся?",
+      "paintOrder": 9,
+      "visible": true,
+      "opacity": 1,
+      "x": 1457,
+      "y": 605,
+      "width": 433,
+      "height": 42,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1457
+        ],
+        [
+          0,
+          1,
+          605
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          1457
+        ],
+        [
+          0,
+          1,
+          605
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "characters": "Но почему он обиделся?"
+    },
+    {
+      "nodeId": "10:1008",
+      "parentId": "10:997",
+      "type": "TEXT",
+      "name": "Ответ знаком",
+      "paintOrder": 10,
+      "visible": true,
+      "opacity": 1,
+      "x": 30,
+      "y": 722,
+      "width": 237,
+      "height": 42,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          722
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          722
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "characters": "Ответ знаком"
+    },
+    {
+      "nodeId": "10:1009",
+      "parentId": "10:997",
+      "type": "VECTOR",
+      "name": "Vector 10",
+      "paintOrder": 11,
+      "visible": true,
+      "opacity": 1,
+      "x": 297,
+      "y": 743,
+      "width": 343,
+      "height": 0,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          297
+        ],
+        [
+          0,
+          1,
+          743
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          297
+        ],
+        [
+          0,
+          1,
+          743
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "vectorPaths": [
+        {
+          "windingRule": "NONE",
+          "data": "M 0 0 L 343 0"
+        }
+      ]
+    },
+    {
+      "nodeId": "10:1010",
+      "parentId": "10:997",
+      "type": "TEXT",
+      "name": "Но почему он звучит странно?",
+      "paintOrder": 12,
+      "visible": true,
+      "opacity": 1,
+      "x": 1340,
+      "y": 722,
+      "width": 550,
+      "height": 42,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1340
+        ],
+        [
+          0,
+          1,
+          722
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          1340
+        ],
+        [
+          0,
+          1,
+          722
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "characters": "Но почему он звучит странно?"
+    },
+    {
+      "nodeId": "10:1011",
+      "parentId": "10:997",
+      "type": "TEXT",
+      "name": "Ты можешь не заметить сам пробел. Но можешь услышать его эхо — реакцию, которой не ожидал",
+      "paintOrder": 13,
+      "visible": true,
+      "opacity": 1,
+      "x": 1435,
+      "y": 30,
+      "width": 455,
+      "height": 90,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1435
+        ],
+        [
+          0,
+          1,
+          30
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          1435
+        ],
+        [
+          0,
+          1,
+          30
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "characters": "Ты можешь не заметить сам пробел. Но можешь услышать его эхо — реакцию, которой не ожидал"
+    },
+    {
+      "nodeId": "10:1012",
+      "parentId": "10:997",
+      "type": "RECTANGLE",
+      "name": "image 51",
+      "paintOrder": 14,
+      "visible": true,
+      "opacity": 1,
+      "x": 670,
+      "y": 336,
+      "width": 581,
+      "height": 581,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          670
+        ],
+        [
+          0,
+          1,
+          336
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          670
+        ],
+        [
+          0,
+          1,
+          336
+        ]
+      ],
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": false,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "097adb30ab0ee1356352c1673681a2318d190cad"
+        },
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "a3a4fd64ac220162df428e62b8a3cddf755b1fe7"
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "blendMode": "PASS_THROUGH"
+    },
+    {
+      "nodeId": "10:1013",
+      "parentId": "10:997",
+      "type": "TEXT",
+      "name": "Сцена сама выдаёт,",
+      "paintOrder": 15,
+      "visible": true,
+      "opacity": 1,
+      "x": 30,
+      "y": 30,
+      "width": 614,
+      "height": 80,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          30
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          30
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 0.23099100589752197,
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "characters": "Сцена сама выдаёт,"
+    },
+    {
+      "nodeId": "10:1014",
+      "parentId": "10:997",
+      "type": "FRAME",
+      "name": "Frame 93",
+      "paintOrder": 16,
+      "visible": true,
+      "opacity": 1,
+      "x": 30,
+      "y": 125,
+      "width": 734,
+      "height": 120,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          125
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          125
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "clipsContent": false
+    },
+    {
+      "nodeId": "10:1015",
+      "parentId": "10:1014",
+      "type": "TEXT",
+      "name": "что что-то не сошлось",
+      "paintOrder": 0,
+      "visible": true,
+      "opacity": 1,
+      "x": 20,
+      "y": 20,
+      "width": 694,
+      "height": 80,
+      "rotation": 0,
+      "relativeTransform": [
+        [
+          1,
+          0,
+          20
+        ],
+        [
+          0,
+          1,
+          20
+        ]
+      ],
+      "frameTransform": [
+        [
+          1,
+          0,
+          50
+        ],
+        [
+          0,
+          1,
+          145
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.04313725605607033,
+            "g": 0.05098039284348488,
+            "b": 0.05882352963089943
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 0.23099100589752197,
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": "NONE",
+      "dashPattern": [],
+      "effects": [],
+      "isMask": false,
+      "characters": "что что-то не сошлось"
+    }
+  ],
+  "cssSvgAssessment": {
+    "lines": "Six independent simple straight paths. CSS is sufficient: white 4px-high rectangles with opacity 0.3, left=x, top=y-2, width=source width. SVG can preserve the exact path coordinates and centered strokes if later path control is useful; no decorative PNG/SVG exports are necessary now.",
+    "geometry": "No extra ellipse, clipping path, Boolean subtraction or actual Figma mask exists. Circle artwork and its black center remain original raster pixels; do not redraw the custom artwork as CSS.",
+    "lineGaps": "Every left segment ends at x=640, every right segment starts at x=1281. Image slot spans x=670..1251: 30px gap to the slot on both sides. No full line continues beneath the circle in this frame."
+  },
+  "masksAndCrop": {
+    "image": "Both circle originals are 512x512; same 581x581 FILL slot at (670,336), no aspect-ratio crop and no rotation. FILL identity imageTransform and scalingFactor 0.5 retained.",
+    "sourceAlpha": "Fill 0 is hidden RGB PNG with opaque white background. Fill 1 is visible RGBA PNG with genuine transparent edges. Black center is opaque, not a hole.",
+    "upscale": "The designed 581px slot displays a 512px original at 1.134765625x. Source files remain at 512x512; no artificial high-resolution export replaces them.",
+    "frame": "1920x1080, clipsContent true; no separate masks/Boolean operations."
+  },
+  "independentElements": {
+    "available": [
+      "Six independent line segments",
+      "Three statement text nodes and three reaction text nodes",
+      "Central illustration as one bitmap object",
+      "Shared texture rectangle as a separate background layer"
+    ],
+    "notSeparated": "Yellow ring, black center, highlights and cracks are fused in the PNG; there is no separate hole or ring component to move independently.",
+    "notSpecified": "One static frame supplies no scroll sequence, duration/easing, line-travel path or changing central mask. Existing preliminary motion language was a proposal. No motion implemented."
+  },
+  "checks": {
+    "sourceBytes": "All three originals match Figma byte lengths and FNV-1a; SHA256 recorded",
+    "dimensions": "JPEG 3370x2247, two PNGs 512x512 match registry",
+    "alpha": "Hidden PNG is RGB/fully opaque; visible PNG RGBA alpha 0..255, 77172 fully transparent and 7049 partial-alpha pixels, 2048 transparent edge samples; center alpha 255.",
+    "visual": "Originals inspected on checkerboard. Temporary source-texture LIGHTEN/opacity and measured line/image geometry reconstruction compared visually with Figma screenshot.",
+    "assetScript": "Verified: 35 | Pending: 6 | Errors: 0"
+  }
+}

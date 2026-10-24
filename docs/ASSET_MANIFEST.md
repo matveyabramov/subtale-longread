@@ -205,3 +205,23 @@ Compared A `10:1560` and B `10:2049`. Imported **4 original raster files, 10,459
 **Checks:** four original byte counts and FNV-1a fingerprints match Figma; decoded JPEG/PNG dimensions match the registry; actual alpha verified. Originals inspected on a checkerboard. Temporary FILL/position reconstructions of both compositions visually compared with Figma screenshots. `node scripts/check-assets.mjs` → **Verified: 32 | Pending: 9 | Errors: 0**; no duplicate raster bytes.
 
 **Animation feasibility:** five snowflake instances can move independently while sharing one PNG, and the throne is a separate whole bitmap. Snowflake arms and throne swords are fused inside their images. No motion timing, disappearance/entry behavior or morph is defined by the supplied states; those remain decisions for the later motion stage. No missing Cultural Reference sources. No Figma edits, layout/animation implementation, dependencies or legacy-file changes.
+
+## Stage 0.2E.1 — Blind-spot-scene originals and shared texture (2026-10-24)
+
+Imported **3 original raster files, 4,679,815 bytes**; updated three `localPath` entries. Shared texture usage was verified in Blind-spot-scene `10:997`, What-to-do `10:1272` and Footer `10:1016`, with one local JPEG per imageHash. Secondary frames were checked only for the texture, without importing their other assets. Exact metadata, source checksums, line paths and alpha QA are in `docs/BLIND_SPOT_SCENE_ASSET_IMPORT.json`; layer structure is documented in `docs/MOTION_SPEC.md`.
+
+| New file under `public/assets/images/` | Figma imageHash | Original dimensions | Bytes | Role |
+|---|---|---|---:|---|
+| `au-fg-texture4-8k.jpg` | `364855320f08ade1d04f13556e9f3defb0d52bcb` | 3370 × 2247 | 4,242,403 | Original shared JPEG; “8K” is the layer name, not measured resolution |
+| `blind-spot-circle-source.png` | `097adb30ab0ee1356352c1673681a2318d190cad` | 512 × 512 | 222,197 | Hidden original RGB PNG; opaque white exterior |
+| `blind-spot-circle-cutout.png` | `a3a4fd64ac220162df428e62b8a3cddf755b1fe7` | 512 × 512 | 215,215 | Visible original RGBA PNG; transparent exterior |
+
+**Shared texture:** all three texture nodes are at (0, 0), 1920 × 1080, paint order 0, node opacity 1 and LIGHTEN blend. Paint opacity is 0.4 in Blind-spot-scene/Footer and 0.2 in What-to-do; IMAGE paint blend is NORMAL. Source mode is CROP with identity imageTransform, not TILE. Retain its measured full-source mapping instead of substituting the early Mosaic or a rendered PNG. Footer frame is 1334px high but its texture rectangle is only 1080px high. No duplicate texture files were saved.
+
+**Central image:** node `10:1012` is at (670, 336), 581 × 581, rotation 0°, opacity 1, paint order 14. It retains a hidden RGB PNG followed by a visible RGBA PNG; both FILL paints have identity transforms and square aspect, with no crop. Original 512px files remain unchanged despite the designed 581px display slot. The visible PNG has real alpha-zero and partial-alpha pixels and transparent edges; its black center is opaque, not a hole. Hidden RGB PNG has no alpha channel. No extra mask/ellipse/Boolean geometry exists.
+
+**Lines and CSS/SVG:** six independent straight VECTOR paths flank the bitmap, with 4px centered white strokes at opacity 0.3 and butt caps. They can use CSS rectangles or measured SVG paths without image exports. The left endpoints finish at x=640; the right segments start at x=1281; the image slot spans x=670–1251, leaving 30px gaps. There are no complete lines crossing beneath the circle. Exact endpoints and layer order are in `MOTION_SPEC.md`.
+
+**Checks:** all three downloaded originals match Figma byte counts and FNV-1a fingerprints; decoded JPEG/PNG dimensions match the registry; actual alpha and opaque center verified. Originals inspected on a checkerboard. A temporary reconstruction of the source texture's LIGHTEN/opacity, six lines and visible circle geometry was visually compared with the Figma screenshot. `node scripts/check-assets.mjs` → **Verified: 35 | Pending: 6 | Errors: 0**; no duplicate raster bytes.
+
+**Animation feasibility:** six lines, six row text nodes and the whole circle bitmap are independent source objects. Ring, center and cracks are fused in the PNG. No scrolling, reveal, moving mask or other animation is specified by the single static frame. No missing assets for this scoped import. No Figma edits, layout/animation implementation, dependency installation or legacy-file changes.

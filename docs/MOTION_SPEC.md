@@ -14,7 +14,7 @@
 | Cultural reference | `10:1560`, `10:2049` | Five snowflake instances replaced by one throne; verified compositions below | Click/hover/touch, replay, reduced motion |
 | Movies | `10:1794` | Five scene cards with contextual reveal and/or video preview | Video state ownership; pause offscreen, hidden tab, reduced-motion handling |
 | Vocab | `10:966` | Scroll-triggered statement emphasis if approved | Static first |
-| Blind-spot-scene | `10:997` | Three lines pass through central blind area with information losses | Preserve line and circle layers |
+| Blind-spot-scene | `10:997` | Six separate line segments flank one central bitmap; verified structure below | Preserve segments, text and artwork separately; motion unspecified |
 | What-to-do | `10:1272` | Two-part viewing guidance; likely minimal motion | Static first |
 | Footer | `10:1016` | Final emphasis/credits reveal only if approved | Static first |
 
@@ -242,3 +242,63 @@ Both PNG originals have alpha 0–255, fully transparent edges and genuine parti
 **Independent objects available:** five complete snowflake wrappers in A can each be transformed independently, while all five reuse one visible PNG. The complete throne is one separately transformable bitmap in B. Each snowflake's arms are fused into its raster; the throne's swords, seat and other details are fused into its raster. There are no separate arm/sword nodes supporting independent component animation.
 
 **Not established by the design:** how the five A objects disappear, how the B object enters, any motion path, transform origin, morph, fade, duration/easing or intermediate state. These endpoints show a replacement of compositions, not a specified snowflake-to-throne transformation. Decide transition behavior, trigger, replay/reset, interruption, keyboard/touch access and a prefers-reduced-motion alternative in the later interaction/motion stage. No transition, animation or new component separation has been implemented.
+
+## Stage 0.2E.1 — verified Blind-spot-scene structure (2026-10-24)
+
+Scope: main frame **`10:997`**, 1920 × 1080, plus targeted verification of the shared `AU-FG-Texture4-8K` image in What-to-do `10:1272` and Footer `10:1016`. Those two frames were inspected only for this texture usage. Exact layer metadata, source checksums and line paths are in `docs/BLIND_SPOT_SCENE_ASSET_IMPORT.json`. There is one static reference frame; no animation or second state was inferred.
+
+### Shared original texture
+
+ImageHash **`364855320f08ade1d04f13556e9f3defb0d52bcb`** is one original **JPEG, 3370 × 2247**, saved once as `public/assets/images/au-fg-texture4-8k.jpg`. The layer name contains “8K”, but the actual original dimensions are the measured 3370 × 2247, not an assumed 8K export. Do not use the PNG render returned for the layer as a substitute original.
+
+| Use / texture node | Texture rectangle | Frame size | Paint opacity | Node opacity | Node blend mode | Paint order |
+|---|---|---|---|---|---|---:|
+| Blind-spot-scene `10:998` | (0, 0), 1920 × 1080 | 1920 × 1080 | 0.4 | 1 | LIGHTEN | 0 |
+| What-to-do `10:1273` | (0, 0), 1920 × 1080 | 1920 × 1080 | 0.2 | 1 | LIGHTEN | 0 |
+| Footer `10:1017` | (0, 0), 1920 × 1080 | 1920 × 1334 | 0.4 | 1 | LIGHTEN | 0 |
+
+All three IMAGE paints are visible, NORMAL blend, CROP mode, `imageTransform: [[1, 0, 0], [0, 1, 0]]`, `scalingFactor: 0.5`, with zero filters and no rotation. Preserve the full source-normalized mapping into each measured texture rectangle; the design context maps the whole image to the rectangle rather than tiling it. Do not replace this with the early-section Mosaic, a tiled texture, or an automatic aspect-preserving cover crop. Preserve the distinction between **node LIGHTEN** and **paint NORMAL/opacity**. Footer's texture ends at y=1080 even though its frame extends to y=1334; do not automatically stretch it to the full Footer height. All three frames have content clipping enabled.
+
+### Central `image 51`: original fills and geometry
+
+One rectangle **`10:1012`**, frame origin **(670, 336)**, slot **581 × 581**, center **(960.5, 626.5)**, rotation **0°**, node opacity **1**, frame paint order **14**. Its frame projection is `[[1, 0, 670], [0, 1, 336]]`. Node blend is PASS_THROUGH; IMAGE paints use NORMAL at opacity 1.
+
+| Fill index | Original imageHash | File under `public/assets/images/` | Original dimensions / pixels | Visible |
+|---|---|---|---|---|
+| 0 | `097adb30ab0ee1356352c1673681a2318d190cad` | `blind-spot-circle-source.png` | 512 × 512, RGB, opaque white background | false |
+| 1 | `a3a4fd64ac220162df428e62b8a3cddf755b1fe7` | `blind-spot-circle-cutout.png` | 512 × 512, RGBA, transparent exterior | true |
+
+Both PNG originals are retained. Only fill 1 contributes to the supplied composition; do not enable fill 0 underneath it or treat the hidden PNG as a designed alternate state. Both paints use FILL, identity imageTransform, `scalingFactor: 0.5`, no rotation and zero filters. A square source in a square slot has no aspect-ratio crop. The original 512px image is displayed at **581/512 = 1.134765625×** in Figma. Preserve original bytes/resolution rather than replacing them with a larger rendered export.
+
+The visible PNG has alpha 0–255: **77,172 fully transparent pixels**, **7,049 partial-alpha pixels**, **2,048 transparent edge samples**; nonzero-alpha bounds are (13, 13)–(499, 499). The hidden RGB PNG has no alpha channel and is fully opaque. The visible image's **black center is opaque** (sampled source center RGBA `(1, 1, 1, 255)`), not a transparent hole. Yellow ring, black center, cracks and highlights are fused into the bitmap. No independent ellipse, central mask or Boolean cutout is present.
+
+### Six separate line segments
+
+Each line is a separate VECTOR node with a single straight horizontal path, no fill, arrows, dashes, rotation or effects. Stroke: **white, 4px, centered, opacity 0.3**, butt/no extension cap (`NONE`); node opacity 1. Root frame child indices below are paint order, back to front. Source path data is retained exactly in the JSON, including the third right segment's floating-point length ≈29.
+
+| Segment | Node | Start (x, y) | End (x, y) | Length | Paint order |
+|---|---|---|---|---:|---:|
+| Upper left | `10:1000` | (356, 509) | (640, 509) | 284 | 2 |
+| Upper right | `10:1001` | (1281, 509) | (1427, 509) | 146 | 3 |
+| Middle left | `10:1006` | (317, 626) | (640, 626) | 323 | 8 |
+| Middle right | `10:1002` | (1281, 626) | (1427, 626) | 146 | 4 |
+| Lower left | `10:1009` | (297, 743) | (640, 743) | 343 | 11 |
+| Lower right | `10:1003` | (1281, 743) | (1310, 743) | 29 | 5 |
+
+All left segments end at **x=640** and all right segments start at **x=1281**. The central image slot spans **x=670…1251**, leaving a **30px gap** on each side before even accounting for the PNG's own transparent margin. There are no continuous lines extending through or beneath the circle, and no mask hiding their middle portions. The preliminary suggestion of lines passing through the blind area was a proposed behavior, not the observed geometry.
+
+**CSS/SVG assessment:** CSS rectangles are sufficient for the current geometry: width equal to the recorded segment length, height 4px, top at `y−2`, white at opacity 0.3. Preserve each segment independently and do not make the short lower-right segment equal to the others. SVG is also appropriate if later work requires path-based controls: use these six measured paths, centered strokes and butt caps; the two equal 146px paths may share geometry while retaining separate placements. No dedicated vector asset file is needed at this import stage. The central custom bitmap should remain an image rather than be approximated with CSS circles.
+
+### Text structure, stacking and independent elements
+
+| Row center y | Left statement / node | Left text box | Right reaction / node | Right text box |
+|---:|---|---|---|---|
+| 509 | «Все слова понял» `10:999` | (30, 488), 296 × 42 | «Но почему они смеются?» `10:1004` | (1457, 488), 433 × 42 |
+| 626 | «Сюжет понятен» `10:1005` | (30, 605), 257 × 42 | «Но почему он обиделся?» `10:1007` | (1457, 605), 433 × 42 |
+| 743 | «Ответ знаком» `10:1008` | (30, 722), 237 × 42 | «Но почему он звучит странно?» `10:1010` | (1340, 722), 550 × 42 |
+
+These six text nodes and six line segments are separate frame children, not three pre-existing grouped full-width paths. Texture is child 0; statements, reactions and line segments occupy 1–12; explanatory note `10:1011` is 13; central image is 14; title `10:1013` is 15; yellow heading container `10:1014` is 16. The image is painted after the row elements, but the recorded line segments do not overlap its slot. All source paint indices are retained in the metadata.
+
+**Potential independent animation elements:** six line segments, six statement/reaction text nodes, one complete central illustration and one background texture rectangle. Rows can be logically coordinated later while preserving their source geometry. The center/ring/cracks cannot be animated separately from the supplied bitmap, and there is no existing moving aperture or line mask.
+
+**Not specified:** trigger, scroll relationship, line travel, changing text/line visibility, timing/easing, replay/reset, interruption or an alternate circle state. Decide any such behavior in a later scoped motion ticket, including keyboard/touch access and a prefers-reduced-motion alternative. Do not infer scroll trapping or a reveal from the static frame. No layout, animation, SVG/CSS implementation or source-image cleanup was performed.
