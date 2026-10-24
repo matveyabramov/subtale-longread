@@ -1,6 +1,7 @@
 # Dependencies and builds
 node_modules/
 dist/
+dist-explorer-qa/
 build/
 coverage/
 playwright-report/

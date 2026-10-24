@@ -12,6 +12,7 @@
     "assets:generate": "node scripts/generate-runtime-assets.mjs",
     "assets:check": "node scripts/generate-runtime-assets.mjs --check && node scripts/check-assets.mjs",
     "build": "npm run assets:generate && npm run typecheck && vite build",
+    "build:explorer-qa": "npm run assets:generate && npm run typecheck && vite build --config vite.explorer-qa.config.ts",
     "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {

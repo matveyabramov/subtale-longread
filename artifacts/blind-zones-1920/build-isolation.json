@@ -1,0 +1,19 @@
+{
+  "normalHtml": [
+    "index.html"
+  ],
+  "normalContainsFixtureEntry": false,
+  "normalContainsFixtureMarker": false,
+  "fixturePages": [
+    "qa/idiom-A.html",
+    "qa/idiom-B.html",
+    "qa/pun-A.html",
+    "qa/pun-B.html",
+    "qa/doubleMeaning-A.html",
+    "qa/doubleMeaning-B.html",
+    "qa/reference-A.html",
+    "qa/reference-B.html"
+  ],
+  "normalDefault": "idiom-A",
+  "querySelectsState": false
+}

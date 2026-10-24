@@ -1,0 +1,732 @@
+{
+  "pass": "3",
+  "results": [
+    {
+      "name": "idiom-A",
+      "textNodes": 15,
+      "images": 8,
+      "masks": 6,
+      "layers": 13
+    },
+    {
+      "name": "idiom-B",
+      "textNodes": 15,
+      "images": 9,
+      "masks": 6,
+      "layers": 14
+    },
+    {
+      "name": "pun-A",
+      "textNodes": 15,
+      "images": 2,
+      "masks": 0,
+      "layers": 6
+    },
+    {
+      "name": "pun-B",
+      "textNodes": 15,
+      "images": 2,
+      "masks": 0,
+      "layers": 6
+    },
+    {
+      "name": "doubleMeaning-A",
+      "textNodes": 15,
+      "images": 1,
+      "masks": 0,
+      "layers": 6
+    },
+    {
+      "name": "doubleMeaning-B",
+      "textNodes": 15,
+      "images": 1,
+      "masks": 0,
+      "layers": 6
+    },
+    {
+      "name": "reference-A",
+      "textNodes": 15,
+      "images": 5,
+      "masks": 0,
+      "layers": 10
+    },
+    {
+      "name": "reference-B",
+      "textNodes": 15,
+      "images": 1,
+      "masks": 0,
+      "layers": 6
+    }
+  ],
+  "app": {
+    "ids": [
+      "hero",
+      "experiment",
+      "emptiness",
+      "elephant",
+      "blind-zones",
+      "movies",
+      "vocab",
+      "blind-spot-scene",
+      "what-to-do",
+      "footer"
+    ],
+    "sections": 1,
+    "category": "idiom",
+    "meaning": "A",
+    "top": 7587,
+    "width": 1920,
+    "fixtureMarker": null
+  },
+  "regression": [
+    {
+      "name": "hero",
+      "baseline": "artifacts/hero-1920/browser-pass-production.png",
+      "capture": "artifacts/blind-zones-1920/hero-regression-pass-3.png",
+      "mae": 0,
+      "max": 0,
+      "differentChannels": 0
+    },
+    {
+      "name": "instructions",
+      "baseline": "artifacts/experiment-1920/instructions-production-pass-2.png",
+      "capture": "artifacts/blind-zones-1920/instructions-regression-pass-3.png",
+      "mae": 0,
+      "max": 0,
+      "differentChannels": 0
+    },
+    {
+      "name": "target",
+      "baseline": "artifacts/experiment-1920/target-production-pass-2.png",
+      "capture": "artifacts/blind-zones-1920/target-regression-pass-3.png",
+      "mae": 0,
+      "max": 0,
+      "differentChannels": 0
+    },
+    {
+      "name": "result",
+      "baseline": "artifacts/experiment-1920/result-production-pass-2.png",
+      "capture": "artifacts/blind-zones-1920/result-regression-pass-3.png",
+      "mae": 0,
+      "max": 0,
+      "differentChannels": 0
+    },
+    {
+      "name": "emptiness",
+      "baseline": "artifacts/emptiness-1920/production-pass-3.png",
+      "capture": "artifacts/blind-zones-1920/emptiness-regression-pass-3.png",
+      "mae": 0,
+      "max": 0,
+      "differentChannels": 0
+    },
+    {
+      "name": "elephant",
+      "baseline": "artifacts/elephant-1920/production-pass-3.png",
+      "capture": "artifacts/blind-zones-1920/elephant-regression-pass-3.png",
+      "mae": 0.000005001143118427069,
+      "max": 1,
+      "differentChannels": 63
+    }
+  ],
+  "network": {
+    "errors": [],
+    "failed": [],
+    "externalRequests": 0,
+    "requests": [
+      {
+        "url": "http://127.0.0.1:4174/qa/idiom-A.html",
+        "type": "document"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/explorer-R2wfPBlG.js",
+        "type": "script"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/global-CqOdP5vz.js",
+        "type": "script"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/global-Bwxw4O2l.css",
+        "type": "stylesheet"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-ice-upper-left.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-ice-lower-middle.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-ice-upper-right.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-ice-center.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-ice-right-small.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-ice-left-small.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-ice-lower-shared.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/mosaic-texture.png",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/illustrations/idiom-ice-upper-right-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/illustrations/idiom-ice-center-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/illustrations/idiom-ice-right-small-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/illustrations/idiom-ice-left-small-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/illustrations/idiom-ice-lower-left-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/illustrations/idiom-ice-lower-right-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/fonts/TT%20Bluescreens%20Trial%20ExtraBold.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/fonts/ibm-plex-mono-cyrillic-500-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/fonts/ibm-plex-mono-latin-500-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4174/qa/idiom-B.html",
+        "type": "document"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-telephone-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/qa/pun-A.html",
+        "type": "document"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/pun-bicycle-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/pun-wheels-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/qa/pun-B.html",
+        "type": "document"
+      },
+      {
+        "url": "http://127.0.0.1:4174/qa/doubleMeaning-A.html",
+        "type": "document"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/double-meaning-eye.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/qa/doubleMeaning-B.html",
+        "type": "document"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/double-meaning-eye-couple.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/qa/reference-A.html",
+        "type": "document"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/cultural-snowflake-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4174/qa/reference-B.html",
+        "type": "document"
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/cultural-iron-throne-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/",
+        "type": "document"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-Cayk8ssJ.js",
+        "type": "script"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-Dvtz-FsL.css",
+        "type": "stylesheet"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-person-collage.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-cta-arrow.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-film-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/star-accent.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-62.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-43.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-78x79.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-50.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-108.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-man-eye.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/subtale-pixel-mark.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-eye-accent.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-male-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-female-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/elephant-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-upper-left.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-lower-middle.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-upper-right.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-center.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-right-small.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-left-small.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-lower-shared.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/mosaic-texture.png",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-upper-right-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-center-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-right-small-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-left-small-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-lower-left-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-lower-right-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-600-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20Bold.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-600-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20ExtraBold.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-500-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-500-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/?category=pun&meaning=B",
+        "type": "document"
+      }
+    ],
+    "responses": [
+      {
+        "url": "http://127.0.0.1:4174/qa/idiom-A.html",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/global-Bwxw4O2l.css",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/explorer-R2wfPBlG.js",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/global-CqOdP5vz.js",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-ice-upper-left.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-ice-upper-right.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-ice-lower-middle.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-ice-center.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-ice-right-small.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-ice-left-small.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/fonts/TT%20Bluescreens%20Trial%20ExtraBold.woff2",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/fonts/ibm-plex-mono-cyrillic-500-normal.woff2",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/fonts/ibm-plex-mono-latin-500-normal.woff2",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/illustrations/idiom-ice-upper-right-mask.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/illustrations/idiom-ice-lower-left-mask.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/illustrations/idiom-ice-lower-right-mask.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-ice-lower-shared.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/mosaic-texture.png",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/illustrations/idiom-ice-left-small-mask.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/illustrations/idiom-ice-right-small-mask.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/illustrations/idiom-ice-center-mask.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/qa/idiom-B.html",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/idiom-telephone-cutout.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/qa/pun-A.html",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/pun-bicycle-cutout.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/pun-wheels-cutout.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4174/qa/pun-B.html",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/qa/doubleMeaning-A.html",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/double-meaning-eye.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/qa/doubleMeaning-B.html",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/double-meaning-eye-couple.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/qa/reference-A.html",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/cultural-snowflake-cutout.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/qa/reference-B.html",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/images/cultural-iron-throne-cutout.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-Dvtz-FsL.css",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-Cayk8ssJ.js",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-person-collage.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-cta-arrow.svg",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-film-cutout.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/star-accent.svg",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-62.svg",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-43.svg",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-78x79.svg",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-50.svg",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-108.svg",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-man-eye.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-eye-accent.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/subtale-pixel-mark.svg",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-male-cutout.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-female-cutout.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/elephant-cutout.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-upper-left.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-lower-middle.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-upper-right.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-center.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-right-small.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-left-small.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/mosaic-texture.png",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-600-normal.woff2",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20Bold.woff2",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-600-normal.woff2",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-500-normal.woff2",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20ExtraBold.woff2",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-500-normal.woff2",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-lower-shared.webp",
+        "status": 304
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-upper-right-mask.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-center-mask.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-right-small-mask.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-left-small-mask.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-lower-left-mask.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-lower-right-mask.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/?category=pun&meaning=B",
+        "status": 200
+      }
+    ]
+  }
+}

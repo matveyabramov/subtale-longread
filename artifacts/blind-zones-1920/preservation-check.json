@@ -1,0 +1,12 @@
+{
+  "algorithm": "SHA256",
+  "filesChecked": 140,
+  "scope": [
+    "public/assets",
+    "source-assets",
+    "src/styles",
+    "all section sources except blind-zones",
+    "package-lock.json"
+  ],
+  "changed": []
+}

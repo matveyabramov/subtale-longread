@@ -1,0 +1,244 @@
+.section {
+  background: var(--color-blue);
+  overflow-x: auto;
+}
+
+.canvas {
+  position: relative;
+  isolation: isolate;
+  width: 1920px;
+  height: 1080px;
+  margin-inline: auto;
+  overflow: hidden;
+  color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+.texture {
+  position: absolute;
+  inset: 0;
+  opacity: 0.4;
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 354.9999899864197px 287.9345006942749px;
+  pointer-events: none;
+}
+
+.categories {
+  position: absolute;
+  left: 1210px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 680px;
+  height: 1020px;
+}
+
+.card {
+  position: relative;
+  flex: 1 0 0;
+  min-height: 1px;
+  width: 680px;
+  padding: 30px;
+  border: 1px solid rgb(255 255 255 / 60%);
+  background: rgb(255 255 255 / 20%);
+  backdrop-filter: blur(17px);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 618px;
+  height: 179px;
+}
+
+.cardHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: none;
+  width: 156px;
+  height: 111px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 0.8;
+  letter-spacing: 0;
+  text-transform: lowercase;
+}
+
+.number {
+  flex: none;
+  width: 156px;
+  height: 32px;
+  margin: 0;
+  color: var(--color-yellow);
+  font-size: 40px;
+}
+
+.label {
+  flex: none;
+  height: 64px;
+  margin: 0;
+  font-size: 80px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.description {
+  flex: none;
+  width: 618px;
+  height: 48px;
+  margin: 0;
+  color: var(--color-paper);
+  font: 500 20px/1.2 var(--font-copy);
+  letter-spacing: -0.8px;
+}
+
+/* Match Figma's 20px glyph baseline without moving its 618×48 text box. */
+.description > span {
+  position: relative;
+  top: 1px;
+}
+
+.card[data-active='true'] {
+  background: var(--color-yellow);
+  color: var(--color-ink);
+}
+
+.card[data-active='true'] .number {
+  color: rgb(11 13 15 / 50%);
+}
+
+.card[data-active='true'] .description {
+  color: var(--color-ink);
+}
+
+.title,
+.banner {
+  position: absolute;
+  left: 30px;
+  margin: 0;
+  font: 800 100px/0.8 var(--font-display);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.title {
+  top: 30px;
+  width: 227px;
+  height: 80px;
+}
+
+.banner {
+  top: 125px;
+  width: 596px;
+  height: 120px;
+  padding: 20px;
+  color: var(--color-ink);
+  background: var(--color-yellow);
+}
+
+.banner > span {
+  display: block;
+  width: 556px;
+  height: 80px;
+}
+
+.question {
+  position: absolute;
+  left: 30px;
+  top: 1022px;
+  height: 28px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--color-white);
+  background: none;
+  font: 500 25px/1.1 var(--font-copy);
+  letter-spacing: -0.75px;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-position: from-font;
+  text-underline-offset: 1px;
+  white-space: nowrap;
+}
+
+.ice {
+  position: absolute;
+  overflow: hidden;
+  mask-mode: alpha;
+  mask-size: auto;
+  mask-repeat: no-repeat;
+  mask-position: 0 0;
+}
+
+.ice > img {
+  position: absolute;
+  max-inline-size: none;
+}
+
+.bitmap {
+  position: absolute;
+}
+
+.bitmap > img,
+.bicycle img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-inline-size: none;
+}
+
+.telephone {
+  left: 227px;
+  top: 228px;
+  width: 635px;
+  height: 851px;
+  z-index: 1;
+}
+
+.bicycle {
+  position: absolute;
+  left: 50px;
+  top: 200px;
+  width: 735px;
+  height: 985px;
+  transform-origin: 367.5px 492.5px;
+  z-index: 5;
+}
+
+.bicycleBase,
+.bicycleWheels {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 735px;
+}
+
+.bicycleBase {
+  height: 985px;
+}
+
+.bicycleWheels {
+  height: 984px;
+}
+
+.eye {
+  left: 115px;
+  top: 383px;
+  width: 845px;
+  height: 563px;
+  z-index: 4;
+}
+
+.throne {
+  left: 301px;
+  top: 263px;
+  width: 610px;
+  height: 817px;
+  z-index: 5;
+}

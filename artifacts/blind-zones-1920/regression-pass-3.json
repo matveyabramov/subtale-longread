@@ -1,0 +1,44 @@
+[
+  {
+    "name": "hero",
+    "mae": 0,
+    "pixelsAbove12Percent": 0,
+    "max": 0,
+    "differentChannels": 0
+  },
+  {
+    "name": "instructions",
+    "mae": 0,
+    "pixelsAbove12Percent": 0,
+    "max": 0,
+    "differentChannels": 0
+  },
+  {
+    "name": "target",
+    "mae": 0,
+    "pixelsAbove12Percent": 0,
+    "max": 0,
+    "differentChannels": 0
+  },
+  {
+    "name": "result",
+    "mae": 0,
+    "pixelsAbove12Percent": 0,
+    "max": 0,
+    "differentChannels": 0
+  },
+  {
+    "name": "emptiness",
+    "mae": 0,
+    "pixelsAbove12Percent": 0,
+    "max": 0,
+    "differentChannels": 0
+  },
+  {
+    "name": "elephant",
+    "mae": 0.000005001143118427069,
+    "pixelsAbove12Percent": 0,
+    "max": 1,
+    "differentChannels": 63
+  }
+]

@@ -1,0 +1,714 @@
+[
+  {
+    "name": "idiom-A",
+    "full": {
+      "mae": 1.2748966370884773,
+      "pixelsAbove12Percent": 2.4322434413580245,
+      "max": 243,
+      "differentChannels": 2720443
+    },
+    "regions": {
+      "title": {
+        "mae": 0.8234460547504026,
+        "pixelsAbove12Percent": 3.342995169082126,
+        "max": 49,
+        "differentChannels": 16170
+      },
+      "banner": {
+        "mae": 0.7311381431767338,
+        "pixelsAbove12Percent": 3.317953020134228,
+        "max": 75,
+        "differentChannels": 11253
+      },
+      "question": {
+        "mae": 1.2568462401795735,
+        "pixelsAbove12Percent": 4.0993265993265995,
+        "max": 124,
+        "differentChannels": 15745
+      },
+      "cards": {
+        "mae": 2.236923779315648,
+        "pixelsAbove12Percent": 4.240340253748558,
+        "max": 243,
+        "differentChannels": 901758
+      },
+      "art": {
+        "mae": 0.9051006493506494,
+        "pixelsAbove12Percent": 1.8909090909090909,
+        "max": 72,
+        "differentChannels": 1323377
+      },
+      "background": {
+        "mae": 0.4794871794871795,
+        "pixelsAbove12Percent": 0,
+        "max": 6,
+        "differentChannels": 149692
+      },
+      "number": {
+        "mae": 0.2908017908017908,
+        "pixelsAbove12Percent": 0.6562881562881563,
+        "max": 27,
+        "differentChannels": 2558,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 0.2908017908017908,
+          "pixelsAbove12Percent": 0.6562881562881563,
+          "max": 27,
+          "differentChannels": 2558
+        }
+      },
+      "label": {
+        "mae": 1.1706552706552706,
+        "pixelsAbove12Percent": 4.957264957264957,
+        "max": 105,
+        "differentChannels": 2687,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 1.1706552706552706,
+          "pixelsAbove12Percent": 4.957264957264957,
+          "max": 105,
+          "differentChannels": 2687
+        }
+      },
+      "description": {
+        "mae": 12.227233908665948,
+        "pixelsAbove12Percent": 20.22316612729234,
+        "max": 243,
+        "differentChannels": 19441,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": -1,
+          "mae": 2.8618302768788206,
+          "pixelsAbove12Percent": 11.414509169363539,
+          "max": 143,
+          "differentChannels": 13943
+        }
+      }
+    }
+  },
+  {
+    "name": "idiom-B",
+    "full": {
+      "mae": 1.4613720100308643,
+      "pixelsAbove12Percent": 3.119454089506173,
+      "max": 243,
+      "differentChannels": 2859201
+    },
+    "regions": {
+      "title": {
+        "mae": 0.8234460547504026,
+        "pixelsAbove12Percent": 3.342995169082126,
+        "max": 49,
+        "differentChannels": 16170
+      },
+      "banner": {
+        "mae": 0.7311381431767338,
+        "pixelsAbove12Percent": 3.317953020134228,
+        "max": 75,
+        "differentChannels": 11253
+      },
+      "question": {
+        "mae": 1.2568462401795735,
+        "pixelsAbove12Percent": 4.0993265993265995,
+        "max": 124,
+        "differentChannels": 15745
+      },
+      "cards": {
+        "mae": 2.236923779315648,
+        "pixelsAbove12Percent": 4.240340253748558,
+        "max": 243,
+        "differentChannels": 901758
+      },
+      "art": {
+        "mae": 1.3138921356421356,
+        "pixelsAbove12Percent": 3.3885281385281387,
+        "max": 84,
+        "differentChannels": 1459769
+      },
+      "background": {
+        "mae": 0.4794871794871795,
+        "pixelsAbove12Percent": 0,
+        "max": 6,
+        "differentChannels": 149692
+      },
+      "number": {
+        "mae": 0.2908017908017908,
+        "pixelsAbove12Percent": 0.6562881562881563,
+        "max": 27,
+        "differentChannels": 2558,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 0.2908017908017908,
+          "pixelsAbove12Percent": 0.6562881562881563,
+          "max": 27,
+          "differentChannels": 2558
+        }
+      },
+      "label": {
+        "mae": 1.1706552706552706,
+        "pixelsAbove12Percent": 4.957264957264957,
+        "max": 105,
+        "differentChannels": 2687,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 1.1706552706552706,
+          "pixelsAbove12Percent": 4.957264957264957,
+          "max": 105,
+          "differentChannels": 2687
+        }
+      },
+      "description": {
+        "mae": 12.227233908665948,
+        "pixelsAbove12Percent": 20.22316612729234,
+        "max": 243,
+        "differentChannels": 19441,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": -1,
+          "mae": 2.8618302768788206,
+          "pixelsAbove12Percent": 11.414509169363539,
+          "max": 143,
+          "differentChannels": 13943
+        }
+      }
+    }
+  },
+  {
+    "name": "pun-A",
+    "full": {
+      "mae": 1.2485853909465021,
+      "pixelsAbove12Percent": 2.325665509259259,
+      "max": 200,
+      "differentChannels": 2637411
+    },
+    "regions": {
+      "title": {
+        "mae": 0.8234460547504026,
+        "pixelsAbove12Percent": 3.342995169082126,
+        "max": 49,
+        "differentChannels": 16170
+      },
+      "banner": {
+        "mae": 0.7311661073825504,
+        "pixelsAbove12Percent": 3.317953020134228,
+        "max": 75,
+        "differentChannels": 11258
+      },
+      "question": {
+        "mae": 1.0790123456790124,
+        "pixelsAbove12Percent": 2.878787878787879,
+        "max": 189,
+        "differentChannels": 15643
+      },
+      "cards": {
+        "mae": 2.159555940023068,
+        "pixelsAbove12Percent": 4.241782006920415,
+        "max": 200,
+        "differentChannels": 899210
+      },
+      "art": {
+        "mae": 0.9064145021645021,
+        "pixelsAbove12Percent": 1.6663419913419912,
+        "max": 74,
+        "differentChannels": 1242990
+      },
+      "background": {
+        "mae": 0.4794871794871795,
+        "pixelsAbove12Percent": 0,
+        "max": 6,
+        "differentChannels": 149692
+      },
+      "number": {
+        "mae": 0.9043040293040293,
+        "pixelsAbove12Percent": 1.3736263736263736,
+        "max": 42,
+        "differentChannels": 9336,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 0.9043040293040293,
+          "pixelsAbove12Percent": 1.3736263736263736,
+          "max": 42,
+          "differentChannels": 9336
+        }
+      },
+      "label": {
+        "mae": 1.3231054131054132,
+        "pixelsAbove12Percent": 4.145299145299146,
+        "max": 83,
+        "differentChannels": 13463,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 1.3231054131054132,
+          "pixelsAbove12Percent": 4.145299145299146,
+          "max": 83,
+          "differentChannels": 13463
+        }
+      },
+      "description": {
+        "mae": 9.046577220424307,
+        "pixelsAbove12Percent": 19.053398058252426,
+        "max": 177,
+        "differentChannels": 56139,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": -1,
+          "mae": 2.5136416756562387,
+          "pixelsAbove12Percent": 8.926645091693635,
+          "max": 103,
+          "differentChannels": 51853
+        }
+      }
+    }
+  },
+  {
+    "name": "pun-B",
+    "full": {
+      "mae": 1.2570296424897118,
+      "pixelsAbove12Percent": 2.353298611111111,
+      "max": 200,
+      "differentChannels": 2637633
+    },
+    "regions": {
+      "title": {
+        "mae": 0.8234460547504026,
+        "pixelsAbove12Percent": 3.342995169082126,
+        "max": 49,
+        "differentChannels": 16170
+      },
+      "banner": {
+        "mae": 0.7311381431767338,
+        "pixelsAbove12Percent": 3.317953020134228,
+        "max": 75,
+        "differentChannels": 11253
+      },
+      "question": {
+        "mae": 1.0790123456790124,
+        "pixelsAbove12Percent": 2.878787878787879,
+        "max": 189,
+        "differentChannels": 15643
+      },
+      "cards": {
+        "mae": 2.159555940023068,
+        "pixelsAbove12Percent": 4.241782006920415,
+        "max": 200,
+        "differentChannels": 899210
+      },
+      "art": {
+        "mae": 0.923962481962482,
+        "pixelsAbove12Percent": 1.723809523809524,
+        "max": 77,
+        "differentChannels": 1242701
+      },
+      "background": {
+        "mae": 0.4794871794871795,
+        "pixelsAbove12Percent": 0,
+        "max": 6,
+        "differentChannels": 149692
+      },
+      "number": {
+        "mae": 0.9043040293040293,
+        "pixelsAbove12Percent": 1.3736263736263736,
+        "max": 42,
+        "differentChannels": 9336,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 0.9043040293040293,
+          "pixelsAbove12Percent": 1.3736263736263736,
+          "max": 42,
+          "differentChannels": 9336
+        }
+      },
+      "label": {
+        "mae": 1.3231054131054132,
+        "pixelsAbove12Percent": 4.145299145299146,
+        "max": 83,
+        "differentChannels": 13463,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 1.3231054131054132,
+          "pixelsAbove12Percent": 4.145299145299146,
+          "max": 83,
+          "differentChannels": 13463
+        }
+      },
+      "description": {
+        "mae": 9.046577220424307,
+        "pixelsAbove12Percent": 19.053398058252426,
+        "max": 177,
+        "differentChannels": 56139,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": -1,
+          "mae": 2.5136416756562387,
+          "pixelsAbove12Percent": 8.926645091693635,
+          "max": 103,
+          "differentChannels": 51853
+        }
+      }
+    }
+  },
+  {
+    "name": "doubleMeaning-A",
+    "full": {
+      "mae": 1.2380171360596708,
+      "pixelsAbove12Percent": 2.1927565586419755,
+      "max": 243,
+      "differentChannels": 2748651
+    },
+    "regions": {
+      "title": {
+        "mae": 0.8234460547504026,
+        "pixelsAbove12Percent": 3.342995169082126,
+        "max": 49,
+        "differentChannels": 16170
+      },
+      "banner": {
+        "mae": 0.7311381431767338,
+        "pixelsAbove12Percent": 3.317953020134228,
+        "max": 75,
+        "differentChannels": 11253
+      },
+      "question": {
+        "mae": 2.230078563411897,
+        "pixelsAbove12Percent": 7.744107744107744,
+        "max": 221,
+        "differentChannels": 16078
+      },
+      "cards": {
+        "mae": 2.216935313341023,
+        "pixelsAbove12Percent": 4.260092272202999,
+        "max": 243,
+        "differentChannels": 905530
+      },
+      "art": {
+        "mae": 0.8248286435786436,
+        "pixelsAbove12Percent": 1.2917748917748917,
+        "max": 74,
+        "differentChannels": 1347480
+      },
+      "background": {
+        "mae": 0.4794871794871795,
+        "pixelsAbove12Percent": 0,
+        "max": 6,
+        "differentChannels": 149692
+      },
+      "number": {
+        "mae": 0.9043040293040293,
+        "pixelsAbove12Percent": 1.3736263736263736,
+        "max": 42,
+        "differentChannels": 9336,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 0.9043040293040293,
+          "pixelsAbove12Percent": 1.3736263736263736,
+          "max": 42,
+          "differentChannels": 9336
+        }
+      },
+      "label": {
+        "mae": 1.322934472934473,
+        "pixelsAbove12Percent": 4.145299145299146,
+        "max": 83,
+        "differentChannels": 13457,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 1.322934472934473,
+          "pixelsAbove12Percent": 4.145299145299146,
+          "max": 83,
+          "differentChannels": 13457
+        }
+      },
+      "description": {
+        "mae": 9.046476087738224,
+        "pixelsAbove12Percent": 19.053398058252426,
+        "max": 177,
+        "differentChannels": 56136,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": -1,
+          "mae": 2.5135405429701545,
+          "pixelsAbove12Percent": 8.926645091693635,
+          "max": 103,
+          "differentChannels": 51847
+        }
+      }
+    }
+  },
+  {
+    "name": "doubleMeaning-B",
+    "full": {
+      "mae": 1.1481487911522634,
+      "pixelsAbove12Percent": 1.9733796296296295,
+      "max": 243,
+      "differentChannels": 2547015
+    },
+    "regions": {
+      "title": {
+        "mae": 0.8234460547504026,
+        "pixelsAbove12Percent": 3.342995169082126,
+        "max": 49,
+        "differentChannels": 16170
+      },
+      "banner": {
+        "mae": 0.7311381431767338,
+        "pixelsAbove12Percent": 3.317953020134228,
+        "max": 75,
+        "differentChannels": 11253
+      },
+      "question": {
+        "mae": 2.230078563411897,
+        "pixelsAbove12Percent": 7.744107744107744,
+        "max": 221,
+        "differentChannels": 16078
+      },
+      "cards": {
+        "mae": 2.216935313341023,
+        "pixelsAbove12Percent": 4.260092272202999,
+        "max": 243,
+        "differentChannels": 905530
+      },
+      "art": {
+        "mae": 0.6231500721500721,
+        "pixelsAbove12Percent": 0.7994588744588744,
+        "max": 64,
+        "differentChannels": 1145844
+      },
+      "background": {
+        "mae": 0.4794871794871795,
+        "pixelsAbove12Percent": 0,
+        "max": 6,
+        "differentChannels": 149692
+      },
+      "number": {
+        "mae": 0.9043040293040293,
+        "pixelsAbove12Percent": 1.3736263736263736,
+        "max": 42,
+        "differentChannels": 9336,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 0.9043040293040293,
+          "pixelsAbove12Percent": 1.3736263736263736,
+          "max": 42,
+          "differentChannels": 9336
+        }
+      },
+      "label": {
+        "mae": 1.322934472934473,
+        "pixelsAbove12Percent": 4.145299145299146,
+        "max": 83,
+        "differentChannels": 13457,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 1.322934472934473,
+          "pixelsAbove12Percent": 4.145299145299146,
+          "max": 83,
+          "differentChannels": 13457
+        }
+      },
+      "description": {
+        "mae": 9.046476087738224,
+        "pixelsAbove12Percent": 19.053398058252426,
+        "max": 177,
+        "differentChannels": 56136,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": -1,
+          "mae": 2.5135405429701545,
+          "pixelsAbove12Percent": 8.926645091693635,
+          "max": 103,
+          "differentChannels": 51847
+        }
+      }
+    }
+  },
+  {
+    "name": "reference-A",
+    "full": {
+      "mae": 1.5742164994855967,
+      "pixelsAbove12Percent": 3.513792438271605,
+      "max": 199,
+      "differentChannels": 2766453
+    },
+    "regions": {
+      "title": {
+        "mae": 0.8234460547504026,
+        "pixelsAbove12Percent": 3.342995169082126,
+        "max": 49,
+        "differentChannels": 16170
+      },
+      "banner": {
+        "mae": 0.7311381431767338,
+        "pixelsAbove12Percent": 3.317953020134228,
+        "max": 75,
+        "differentChannels": 11253
+      },
+      "question": {
+        "mae": 1.364786756453423,
+        "pixelsAbove12Percent": 4.486531986531986,
+        "max": 92,
+        "differentChannels": 15779
+      },
+      "cards": {
+        "mae": 2.1654608804306035,
+        "pixelsAbove12Percent": 4.256632064590542,
+        "max": 199,
+        "differentChannels": 913087
+      },
+      "art": {
+        "mae": 1.6250155122655123,
+        "pixelsAbove12Percent": 4.278030303030303,
+        "max": 182,
+        "differentChannels": 1357194
+      },
+      "background": {
+        "mae": 0.6809002849002849,
+        "pixelsAbove12Percent": 1.0017094017094017,
+        "max": 82,
+        "differentChannels": 154328
+      },
+      "number": {
+        "mae": 0.9043040293040293,
+        "pixelsAbove12Percent": 1.3736263736263736,
+        "max": 42,
+        "differentChannels": 9336,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 0.9043040293040293,
+          "pixelsAbove12Percent": 1.3736263736263736,
+          "max": 42,
+          "differentChannels": 9336
+        }
+      },
+      "label": {
+        "mae": 1.322934472934473,
+        "pixelsAbove12Percent": 4.145299145299146,
+        "max": 83,
+        "differentChannels": 13457,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 1.322934472934473,
+          "pixelsAbove12Percent": 4.145299145299146,
+          "max": 83,
+          "differentChannels": 13457
+        }
+      },
+      "description": {
+        "mae": 9.046476087738224,
+        "pixelsAbove12Percent": 19.053398058252426,
+        "max": 177,
+        "differentChannels": 56136,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": -1,
+          "mae": 2.5135405429701545,
+          "pixelsAbove12Percent": 8.926645091693635,
+          "max": 103,
+          "differentChannels": 51847
+        }
+      }
+    }
+  },
+  {
+    "name": "reference-B",
+    "full": {
+      "mae": 1.517259837962963,
+      "pixelsAbove12Percent": 3.3273533950617282,
+      "max": 199,
+      "differentChannels": 2809125
+    },
+    "regions": {
+      "title": {
+        "mae": 0.8234460547504026,
+        "pixelsAbove12Percent": 3.342995169082126,
+        "max": 49,
+        "differentChannels": 16170
+      },
+      "banner": {
+        "mae": 0.7311381431767338,
+        "pixelsAbove12Percent": 3.317953020134228,
+        "max": 75,
+        "differentChannels": 11253
+      },
+      "question": {
+        "mae": 1.470875420875421,
+        "pixelsAbove12Percent": 4.974747474747475,
+        "max": 92,
+        "differentChannels": 15996
+      },
+      "cards": {
+        "mae": 2.1654608804306035,
+        "pixelsAbove12Percent": 4.256632064590542,
+        "max": 199,
+        "differentChannels": 913087
+      },
+      "art": {
+        "mae": 1.4628910533910533,
+        "pixelsAbove12Percent": 3.720887445887446,
+        "max": 88,
+        "differentChannels": 1392614
+      },
+      "background": {
+        "mae": 0.4794871794871795,
+        "pixelsAbove12Percent": 0,
+        "max": 6,
+        "differentChannels": 149692
+      },
+      "number": {
+        "mae": 0.9043040293040293,
+        "pixelsAbove12Percent": 1.3736263736263736,
+        "max": 42,
+        "differentChannels": 9336,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 0.9043040293040293,
+          "pixelsAbove12Percent": 1.3736263736263736,
+          "max": 42,
+          "differentChannels": 9336
+        }
+      },
+      "label": {
+        "mae": 1.322934472934473,
+        "pixelsAbove12Percent": 4.145299145299146,
+        "max": 83,
+        "differentChannels": 13457,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": 0,
+          "mae": 1.322934472934473,
+          "pixelsAbove12Percent": 4.145299145299146,
+          "max": 83,
+          "differentChannels": 13457
+        }
+      },
+      "description": {
+        "mae": 9.046476087738224,
+        "pixelsAbove12Percent": 19.053398058252426,
+        "max": 177,
+        "differentChannels": 56136,
+        "bestSampleOffset": {
+          "dx": 0,
+          "dy": -1,
+          "mae": 2.5135405429701545,
+          "pixelsAbove12Percent": 8.926645091693635,
+          "max": 103,
+          "differentChannels": 51847
+        }
+      }
+    }
+  }
+]

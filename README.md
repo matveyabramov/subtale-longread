@@ -4,7 +4,7 @@ Interactive editorial longread about hidden meanings in English-language film an
 
 ## Status
 
-Stage 0.3 **Approved**, Stage 1A **Completed**, Stages 1B.1–1B.3 **Completed**: Hero, all three Experiment screens, Emptiness and Elephant are implemented at Desktop 1920; the other six sections remain technical placeholders. Matching local IBM Plex Mono Latin/Cyrillic subsets are connected (docs/FONT_ASSETS.md). Comparison screenshots, checks and explicit visual limits: [Hero QA](docs/HERO_DESKTOP_QA.md), [Experiment QA](docs/EXPERIMENT_DESKTOP_QA.md) and [Emptiness + Elephant QA](docs/EMPTINESS_ELEPHANT_DESKTOP_QA.md).
+Stage 0.3 **Approved**, Stage 1A **Completed**, Stages 1B.1–1B.4 **Completed**: Hero, all three Experiment screens, Emptiness, Elephant and eight static Explorer endpoints are implemented at Desktop 1920; the other five sections remain technical placeholders. Explorer is one section, showing Idiom A by default; category/A–B interaction remains Stage 3 work. Matching local IBM Plex Mono Latin/Cyrillic subsets are connected (docs/FONT_ASSETS.md). Comparison screenshots, checks and explicit visual limits: [Hero QA](docs/HERO_DESKTOP_QA.md), [Experiment QA](docs/EXPERIMENT_DESKTOP_QA.md) [Emptiness + Elephant QA](docs/EMPTINESS_ELEPHANT_DESKTOP_QA.md) and [Blind Zones QA](docs/BLIND_ZONES_DESKTOP_QA.md).
 
 ## Run locally
 
@@ -26,11 +26,14 @@ npm run assets:check
 
 `npm run build` refreshes the small runtime URL catalogue, typechecks and builds. `npm run assets:check` verifies the catalogue and runs the existing asset checker. No image optimization runs as part of these commands.
 
+For the eight isolated Explorer production fixtures, use `npm run build:explorer-qa` and `npm run preview -- --outDir dist-explorer-qa --port 4174`; visit `/qa/idiom-A.html` or the other endpoint paths listed in [Blind Zones QA](docs/BLIND_ZONES_DESKTOP_QA.md). This explicit build has a separate ignored output directory. Normal production has no fixture entry or query-based state selection.
+
 ## Structure
 
 - `src/app/`: ordered longread shell and CSS Module scoped to the remaining technical placeholders.
 - `src/sections/`: ten section components; Experiment contains three independently anchored screens in normal flow. Explorer stays one section.
 - `src/sections/{experiment,blind-zones,movies}/model.ts`: identifiers, frame/media mappings and future state types; no reducers or playback logic yet.
+- `qa/` and `vite.explorer-qa.config.ts`: isolated static Explorer fixtures; not imported by the normal application.
 - `src/shared/`: reading-anchor types and a reduced-motion subscription.
 - `src/styles/`: local font faces, verified tokens, reset and base styles.
 - `src/assets/generated.ts`: public delivery URLs, generated from the asset registries. No runtime source-archive imports.
