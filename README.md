@@ -4,7 +4,7 @@ Interactive editorial longread about hidden meanings in English-language film an
 
 ## Status
 
-Stage 0.3 **Approved**. Stage 1A provides a technical React shell, local fonts, scoped design tokens and delivery-asset URLs. The visible screen is a labelled technical structure, not a designed longread. Stage 1B screen implementation has not started. Existing Cyrillic IBM Plex Mono files load; matching Latin coverage remains a documented technical issue before English-copy visual QA.
+Stage 0.3 **Approved**. Stage 1A provides a technical React shell, local fonts, scoped design tokens and delivery-asset URLs. The visible screen is a labelled technical structure, not a designed longread. Stage 1B screen implementation has not started. IBM Plex Mono Latin/Cyrillic coverage is fixed with matching local subsets; see docs/FONT_ASSETS.md.
 
 ## Run locally
 

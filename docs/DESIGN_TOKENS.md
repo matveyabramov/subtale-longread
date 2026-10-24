@@ -39,8 +39,10 @@ These are available measured sizes, **not** h1/h2/body assignments for every sec
 | `--font-display` | `TT Bluescreens Trial ExtraBold.woff2` | `--weight-display-extrabold: 800` |
 | `--font-copy` | `ibm-plex-mono-cyrillic-500-normal.woff2` | `--weight-copy-medium: 500` |
 | `--font-copy` | `ibm-plex-mono-cyrillic-600-normal.woff2` | `--weight-copy-semibold: 600` |
+| `--font-copy` | `ibm-plex-mono-latin-500-normal.woff2` | `--weight-copy-medium: 500` |
+| `--font-copy` | `ibm-plex-mono-latin-600-normal.woff2` | `--weight-copy-semibold: 600` |
 
-All URLs are under `/assets/fonts/`, no Google Fonts/CDN/import. `font-display: swap`; no synthetic weights. Generic `sans-serif`/`monospace` are browser failure fallbacks, not additional chosen font families. Chrome rendered-font inspection confirmed Latin fallback in the existing Cyrillic IBM subsets; see FOUNDATION.md for the scoped technical issue. Historical Inter/Manrope observations are superseded by D11; exact approved-family treatment of those source nodes is checked with the relevant section, without editing text.
+All URLs are under `/assets/fonts/`, no Google Fonts/CDN/import. `font-display: swap`; no synthetic weights. Generic `sans-serif`/`monospace` are browser failure fallbacks, not additional chosen font families. Stage 1B.1 adds matching local Latin 500/600 faces (same internal Version 2.3) with source unicode-range routing. Chrome actual-glyph inspection confirms both scripts use IBM Plex Mono; see FONT_ASSETS.md. Historical Inter/Manrope observations are superseded by D11; exact approved-family treatment of those source nodes is checked with the relevant section, without editing text.
 
 ## Containers, spacing and geometry
 

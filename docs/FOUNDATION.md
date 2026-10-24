@@ -46,7 +46,7 @@ Evidence and deferred values are listed in [DESIGN_TOKENS.md](DESIGN_TOKENS.md).
 
 Four existing WOFF2s are connected through local @font-face rules at weights 700/800 and 500/600. They are not re-encoded or replaced. No external CDN, Google Fonts or @import is used. An empty data favicon avoids a browser request for a nonexistent favicon; it introduces no artwork.
 
-**Open technical issue — IBM Latin coverage:** Chrome's actual rendered-font inspection (CDP CSS.getPlatformFontsForNode) shows that the control string `SUBTALE` uses the browser's generic monospace fallback for the existing Cyrillic IBM Plex Mono subsets; `Пример` uses the local custom IBM face. This is a glyph-coverage issue, not a path/loading failure or a choice of a new font family. Before English IBM-copy fidelity is accepted in Stage 1B, supply/approve the matching local Latin coverage for the same approved family and weights in a separately scoped asset task. Existing font files and editorial texts remain unchanged; no CDN workaround or automatic download was introduced.
+**Historical Stage 1A issue — IBM Latin coverage (resolved in Stage 1B.1; see FONT_ASSETS.md):** Chrome's actual rendered-font inspection (CDP CSS.getPlatformFontsForNode) shows that the control string `SUBTALE` uses the browser's generic monospace fallback for the existing Cyrillic IBM Plex Mono subsets; `Пример` uses the local custom IBM face. This is a glyph-coverage issue, not a path/loading failure or a choice of a new font family. Before English IBM-copy fidelity is accepted in Stage 1B, supply/approve the matching local Latin coverage for the same approved family and weights in a separately scoped asset task. Existing font files and editorial texts remain unchanged; no CDN workaround or automatic download was introduced.
 
 ## Delivery assets
 
@@ -86,6 +86,6 @@ Browser checks used the existing bundled Playwright with local Chrome, not an in
 
 ## Remaining work / stage boundary
 
-No remaining build/startup blocker. Latin font coverage must be resolved before the relevant screen's typography can pass fidelity QA. Section-specific typography/container/radius/layer values and new UI-state visuals are checked during Stage 1B implementation. Captions/transcripts and media behavior remain Stage 3 work under D10. Baseline motion is reserved for Stage 4.
+No remaining build/startup blocker. Latin font coverage was resolved in the separately scoped Stage 1B.1 font commit (FONT_ASSETS.md); the preceding QA table preserves Stage 1A results. Section-specific typography/container/radius/layer values and new UI-state visuals are checked during Stage 1B implementation. Captions/transcripts and media behavior remain Stage 3 work under D10. Baseline motion is reserved for Stage 4.
 
 Next stage, only upon request: Stage 1B static Desktop 1920 sections, starting with Hero. No pixel layout, responsive composition, interaction state machine or animation has started here. Locate the separate Stage 1A commit with `git log -1 --format=%h -- docs/FOUNDATION.md`.

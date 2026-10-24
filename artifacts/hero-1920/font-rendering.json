@@ -1,0 +1,54 @@
+{
+  "result": [
+    {
+      "script": "latin",
+      "weight": 500,
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 29
+        }
+      ]
+    },
+    {
+      "script": "cyrillic",
+      "weight": 500,
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 34
+        }
+      ]
+    },
+    {
+      "script": "latin",
+      "weight": 600,
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono SemiBold",
+          "postScriptName": "IBMPlexMono-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 29
+        }
+      ]
+    },
+    {
+      "script": "cyrillic",
+      "weight": 600,
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono SemiBold",
+          "postScriptName": "IBMPlexMono-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 34
+        }
+      ]
+    }
+  ],
+  "externalRequests": 0,
+  "errors": []
+}
