@@ -1,12 +1,12 @@
 # SUBTALE — execution roadmap (frozen outline)
 
-Work atomically. Current status: Stage 0.1 **structural Figma inventory complete**, Stage 0.2 onward not started.
+Work atomically. Current status: Stage 0.1 **structural Figma inventory complete**, Stage 0.2 inventory underway (asset export pending).
 
 | Stage | Work | Gate |
 |---|---|---|
 | −1 | Clean GitHub repository and Codex skills | Done: independent history, repository rules, pinned skill set |
 | 0.1 | Figma page/frame inventory and preliminary tokens | 19 frames mapped to 10 narrative sections, source IDs recorded |
-| 0.2 | Export/verify necessary graphic, video, font assets | Asset manifest finalized, source/rights/alpha/dimensions reviewed |
+| 0.2 | Export/verify necessary graphic, video, font assets | All necessary sources exported/deduplicated and alpha/dimensions verified |
 | 0.3 | Section contracts, state transitions, and motion spec | Every interaction has approved states/triggers and escape/replay behavior |
 | 1A | Bootstrap Vite + React + TypeScript + style tokens (upon approval) | Static shell builds |
 | 1B | Build 1920px frames individually: Hero → experiment → content → explorer → movies → ending | Each screen screenshot compared with Figma; no complex motion |
