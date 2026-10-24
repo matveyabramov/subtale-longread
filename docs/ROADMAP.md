@@ -1,6 +1,6 @@
 # SUBTALE — execution roadmap (frozen outline)
 
-Work atomically. Current status: Stage 0.1 done; Stage 0.2 original rasters 41/41, 16 SVG, 4 WOFF2; 4/5 videos and 5/5 posters pushed; Stage 0.2H optimization in progress. See docs/ASSET_WEIGHT_AUDIT.md.
+Work atomically. Current status: Stage 0.2 completed — 41 Figma raster masters, optimized delivery, 16 SVGs, 4 WOFF2 fonts, 5/5 films and posters in GitHub. Stage 0.3 Interaction & Motion Contracts next; browser video playback remains an integration QA item.
 
 | Stage | Work | Gate |
 |---|---|---|

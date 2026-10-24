@@ -308,3 +308,7 @@ One complete pass processed all 32 remaining Figma originals and five film poste
 Public images: **62,304,954 → 24,930,276 bytes; 37,374,678 bytes / 37.37 MB / 59.99% saved**. All public assets: **26,477,346 bytes / 26.48 MB**, including unchanged Idiom, SVGs, fonts and four MP4s. No video optimization or application layout/animation. Figma positions/crops/opacity/filters, independent wrappers and masks remain unchanged. `node scripts/check-assets.mjs` → **41 verified / 0 pending / 0 errors**; full decoder check covers 81 master/delivery files.
 
 Original `localPath` and separate `optimizedPath` fields are authoritative in `FIGMA_ASSET_MAP.json`. Complete settings, source-only roles, per-file results, poster mappings, native exceptions and visual QA: `ASSET_DELIVERY.json` and `ASSET_OPTIMIZATION_RESULTS.md`. Earlier section/import tables retain their historical dimensions, bytes and filenames; current runtime paths must be resolved from delivery metadata.
+
+## Stage 0.2G completed — Sherlock video (2026-10-24)
+
+The missing `public/assets/videos/sherlock-sher-locked.mp4` was imported in original quality (1,075,310 bytes, 1920×1080, H.264/AAC, 5.033 seconds). Its Git blob hash matches `case-04.mp4` in legacy `sp-longread` exactly. **5/5 film MP4s and 5/5 posters are now present in the public assets.** The Stage 0.2H.2 public-asset weight snapshot above predates this file; adding it changes the stored total to **27,552,656 bytes**, excluding future code. See `docs/VIDEO_ASSETS.md` for details. Browser playback QA is deferred to integration.
