@@ -22,8 +22,8 @@ export function App() {
         <EmptinessSection />
         <ElephantSection />
         <BlindZonesExplorer />
+        <MoviesSection />
         <div className={styles.foundation}>
-          <MoviesSection />
           <VocabSection />
           <BlindSpotSceneSection />
           <WhatToDoSection />

@@ -1,0 +1,129 @@
+{
+  "pass": "3",
+  "full": {
+    "mae": 0.7287458494236733,
+    "max": 162,
+    "differentChannels": 4576773,
+    "pixelsAbove12Percent": 0.7820728014744602
+  },
+  "regions": {
+    "header": {
+      "mae": 0.7230733333333333,
+      "max": 90,
+      "differentChannels": 271318,
+      "pixelsAbove12Percent": 1.471
+    },
+    "airplane": {
+      "mae": 0.7872484198270127,
+      "max": 155,
+      "differentChannels": 819599,
+      "pixelsAbove12Percent": 0.9028817365269461
+    },
+    "backToTheFuture": {
+      "mae": 0.8116542841094772,
+      "max": 162,
+      "differentChannels": 664138,
+      "pixelsAbove12Percent": 1.0520067401960784
+    },
+    "austinPowers": {
+      "mae": 0.9310329861111111,
+      "max": 156,
+      "differentChannels": 685975,
+      "pixelsAbove12Percent": 1.2879136029411764
+    },
+    "sherlock": {
+      "mae": 0.7239825878267974,
+      "max": 157,
+      "differentChannels": 717663,
+      "pixelsAbove12Percent": 0.5775122549019608
+    },
+    "theShining": {
+      "mae": 0.8491836376404495,
+      "max": 149,
+      "differentChannels": 476383,
+      "pixelsAbove12Percent": 0.9000468164794008
+    },
+    "background": {
+      "mae": 0.48142857142857143,
+      "max": 5,
+      "differentChannels": 183830,
+      "pixelsAbove12Percent": 0
+    },
+    "perforation": {
+      "mae": 0.3474774305555556,
+      "max": 5,
+      "differentChannels": 182178,
+      "pixelsAbove12Percent": 0
+    },
+    "tag": {
+      "mae": 1.4261363636363635,
+      "max": 55,
+      "differentChannels": 9695,
+      "pixelsAbove12Percent": 4.25531914893617,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 1.4261363636363635,
+        "max": 55,
+        "differentChannels": 9695,
+        "pixelsAbove12Percent": 4.25531914893617
+      }
+    },
+    "film": {
+      "mae": 5.972970445192668,
+      "max": 94,
+      "differentChannels": 6301,
+      "pixelsAbove12Percent": 15.039281705948373,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 5.972970445192668,
+        "max": 94,
+        "differentChannels": 6301,
+        "pixelsAbove12Percent": 15.039281705948373
+      }
+    },
+    "quote": {
+      "mae": 1.249438888888889,
+      "max": 96,
+      "differentChannels": 124875,
+      "pixelsAbove12Percent": 2.675,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 1.249438888888889,
+        "max": 96,
+        "differentChannels": 124875,
+        "pixelsAbove12Percent": 2.675
+      }
+    },
+    "reply": {
+      "mae": 3.0580459770114943,
+      "max": 115,
+      "differentChannels": 34073,
+      "pixelsAbove12Percent": 6.564039408866995,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 3.0580459770114943,
+        "max": 115,
+        "differentChannels": 34073,
+        "pixelsAbove12Percent": 6.564039408866995
+      }
+    },
+    "arrow": {
+      "mae": 2.5605554317962427,
+      "max": 155,
+      "differentChannels": 5411,
+      "pixelsAbove12Percent": 2.0717308977500557,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 2.5605554317962427,
+        "max": 155,
+        "differentChannels": 5411,
+        "pixelsAbove12Percent": 2.0717308977500557
+      }
+    }
+  }
+}

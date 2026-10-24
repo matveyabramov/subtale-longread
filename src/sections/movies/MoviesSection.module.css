@@ -1,0 +1,250 @@
+.section {
+  background: var(--color-ink);
+  overflow-x: auto;
+}
+
+.canvas {
+  position: relative;
+  isolation: isolate;
+  width: var(--design-width);
+  height: var(--design-movies-height);
+  margin-inline: auto;
+  overflow: hidden;
+  color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+.texture {
+  position: absolute;
+  inset: 0;
+  opacity: 0.3;
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 354.9999899864197px 287.9345006942749px;
+  pointer-events: none;
+}
+
+.perforation {
+  position: absolute;
+  left: 30px;
+  width: 1860px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.perforation[data-edge='top'] { top: 30px; }
+.perforation[data-edge='bottom'] { bottom: 30px; }
+
+.perforation > span {
+  position: relative;
+  flex: none;
+  width: 50px;
+  height: 50px;
+  clip-path: inset(0);
+}
+
+/* Clip the paint to the exact fractional slot instead of snapping the fill edge. */
+.perforation > span::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: var(--color-white);
+}
+
+.title,
+.banner {
+  position: absolute;
+  left: 30px;
+  margin: 0;
+  font: 800 100px/0.8 var(--font-display);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.title {
+  top: 150px;
+  width: 642px;
+  height: 80px;
+}
+
+.banner {
+  top: 245px;
+  width: 679px;
+  height: 120px;
+  padding: 20px;
+  color: var(--color-ink);
+  background: var(--color-yellow);
+}
+
+.banner > span {
+  display: block;
+  width: 639px;
+  height: 80px;
+}
+
+.cases {
+  position: absolute;
+  left: 0;
+  top: 425px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 1920px;
+  height: 1324px;
+}
+
+.scene {
+  position: relative;
+  flex: none;
+  width: 1920px;
+}
+
+.divider {
+  position: relative;
+  flex: none;
+  width: 1920px;
+  height: 0;
+}
+
+.divider::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 1920px;
+  height: var(--border-divider-width);
+  background: var(--color-white);
+  opacity: var(--opacity-divider);
+}
+
+.sceneBody {
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  width: 1860px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sceneContent {
+  display: flex;
+  flex: none;
+  gap: 125px;
+  align-items: flex-start;
+}
+
+.metadata {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 350px;
+}
+
+.tags {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 6px;
+  width: 350px;
+  height: 44px;
+}
+
+.tag {
+  flex: none;
+  height: 44px;
+  padding: 10px;
+  color: var(--color-paper);
+  background: rgb(255 255 255 / 10%);
+  font: 500 20px/1.2 var(--font-copy);
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tag[data-number='true'] {
+  color: var(--color-ink);
+  background: var(--color-yellow);
+}
+
+.tag > span {
+  display: block;
+  height: 24px;
+}
+
+/* Calibrated glyph baseline; keep the measured outer text boxes in place. */
+.tag > span > span,
+.film > span {
+  position: relative;
+  top: 1px;
+}
+
+.film {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(238 238 231 / 80%);
+  font: 500 18px/1.2 var(--font-copy);
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  white-space: pre;
+}
+
+.quoteGroup {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.quote {
+  flex: none;
+  font: 800 120px/0.8 var(--font-display);
+  letter-spacing: 0;
+  text-transform: lowercase;
+  white-space: pre;
+}
+
+.reply {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-paper);
+  font: 500 25px/1.2 var(--font-copy);
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+
+.arrowFrame {
+  position: relative;
+  flex: none;
+  width: 67px;
+  height: 67px;
+  border: 1px solid #000;
+  background: rgb(255 255 255 / 10%);
+  overflow: hidden;
+}
+
+/* Existing Stage 0.2 SVG: same contour, source white paint and Y reflection. */
+.arrowVector {
+  position: absolute;
+  left: 21px;
+  top: 44px;
+  width: 20px;
+  height: 20px;
+  transform: scaleY(-1);
+  transform-origin: 0 0;
+}
+
+.arrowVector > img {
+  position: absolute;
+  left: -3.53564px;
+  top: -3.53552px;
+  max-inline-size: none;
+  filter: brightness(0) invert(1);
+}

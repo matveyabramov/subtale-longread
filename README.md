@@ -4,7 +4,7 @@ Interactive editorial longread about hidden meanings in English-language film an
 
 ## Status
 
-Stage 0.3 **Approved**, Stage 1A **Completed**, Stages 1B.1–1B.4 **Completed**: Hero, all three Experiment screens, Emptiness, Elephant and eight static Explorer endpoints are implemented at Desktop 1920; the other five sections remain technical placeholders. Explorer is one section, showing Idiom A by default; category/A–B interaction remains Stage 3 work. Matching local IBM Plex Mono Latin/Cyrillic subsets are connected (docs/FONT_ASSETS.md). Comparison screenshots, checks and explicit visual limits: [Hero QA](docs/HERO_DESKTOP_QA.md), [Experiment QA](docs/EXPERIMENT_DESKTOP_QA.md) [Emptiness + Elephant QA](docs/EMPTINESS_ELEPHANT_DESKTOP_QA.md) and [Blind Zones QA](docs/BLIND_ZONES_DESKTOP_QA.md).
+Stage 0.3 **Approved**, Stage 1A **Completed**, Stages 1B.1–1B.5 **Completed**: Hero, all three Experiment screens, Emptiness, Elephant, eight static Explorer endpoints and Movies (1920×1899) are implemented at Desktop 1920; the other four sections remain technical placeholders. Movies retains five text scenes without mounted players or poster substitution. Explorer is one section, showing Idiom A by default; category/A–B interaction remains Stage 3 work. Matching local IBM Plex Mono Latin/Cyrillic subsets are connected (docs/FONT_ASSETS.md). Comparison screenshots, checks and explicit visual limits: [Hero QA](docs/HERO_DESKTOP_QA.md), [Experiment QA](docs/EXPERIMENT_DESKTOP_QA.md), [Emptiness + Elephant QA](docs/EMPTINESS_ELEPHANT_DESKTOP_QA.md), [Blind Zones QA](docs/BLIND_ZONES_DESKTOP_QA.md) and [Movies QA](docs/MOVIES_DESKTOP_QA.md).
 
 ## Run locally
 

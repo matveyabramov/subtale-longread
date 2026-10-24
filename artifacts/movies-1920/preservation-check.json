@@ -1,0 +1,13 @@
+{
+  "algorithm": "SHA256",
+  "filesChecked": 145,
+  "scope": [
+    "public/assets",
+    "source-assets",
+    "src/styles",
+    "all section sources except movies",
+    "package-lock.json",
+    "src/sections/movies/model.ts"
+  ],
+  "changed": []
+}

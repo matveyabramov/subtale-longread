@@ -1,0 +1,20 @@
+[
+  {
+    "name": "elephant",
+    "bounds": {
+      "minX": 1161,
+      "minY": 807,
+      "maxX": 1840,
+      "maxY": 1003
+    }
+  },
+  {
+    "name": "explorer-pun-A",
+    "bounds": {
+      "minX": 105,
+      "minY": 290,
+      "maxX": 767,
+      "maxY": 1069
+    }
+  }
+]

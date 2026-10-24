@@ -1,0 +1,6120 @@
+{
+  "pass": "3",
+  "data": {
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "scrollY": 8667
+    },
+    "section": {
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1899,
+      "documentY": 8667,
+      "scrollWidth": 1920,
+      "scrollHeight": 1899
+    },
+    "narrativeIds": [
+      "hero",
+      "experiment",
+      "emptiness",
+      "elephant",
+      "blind-zones",
+      "movies",
+      "vocab",
+      "blind-spot-scene",
+      "what-to-do",
+      "footer"
+    ],
+    "caseIds": [
+      "airplane",
+      "backToTheFuture",
+      "austinPowers",
+      "sherlock",
+      "theShining"
+    ],
+    "sectionCount": 0,
+    "videoCount": 0,
+    "controls": 0,
+    "documentWidth": 1920,
+    "animations": 0,
+    "geometry": [
+      {
+        "id": "10:1794",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1899,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "hidden"
+      },
+      {
+        "id": "10:1795",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1899,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "0.3",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1796",
+        "x": 30,
+        "y": 30,
+        "w": 1860,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1797",
+        "x": 30,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1798",
+        "x": 120.5,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1799",
+        "x": 211,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1800",
+        "x": 301.5,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1801",
+        "x": 392,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1802",
+        "x": 482.5,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1803",
+        "x": 573,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1804",
+        "x": 663.5,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1805",
+        "x": 754,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1806",
+        "x": 844.5,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1807",
+        "x": 935,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1808",
+        "x": 1025.5,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1809",
+        "x": 1116,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1810",
+        "x": 1206.5,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1811",
+        "x": 1297,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1812",
+        "x": 1387.5,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1813",
+        "x": 1478,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1814",
+        "x": 1568.5,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1815",
+        "x": 1659,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1816",
+        "x": 1749.5,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1817",
+        "x": 1840,
+        "y": 30,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1818",
+        "x": 30,
+        "y": 1819,
+        "w": 1860,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1819",
+        "x": 30,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1820",
+        "x": 120.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1821",
+        "x": 211,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1822",
+        "x": 301.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1823",
+        "x": 392,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1824",
+        "x": 482.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1825",
+        "x": 573,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1826",
+        "x": 663.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1827",
+        "x": 754,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1828",
+        "x": 844.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1829",
+        "x": 935,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1830",
+        "x": 1025.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1831",
+        "x": 1116,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1832",
+        "x": 1206.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1833",
+        "x": 1297,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1834",
+        "x": 1387.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1835",
+        "x": 1478,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1836",
+        "x": 1568.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1837",
+        "x": 1659,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1838",
+        "x": 1749.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1839",
+        "x": 1840,
+        "y": 1819,
+        "w": 50,
+        "h": 50,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1918",
+        "x": 30,
+        "y": 150,
+        "w": 642,
+        "h": 80,
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontWeight": "800",
+        "fontSize": "100px",
+        "lineHeight": "80px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1919",
+        "x": 30,
+        "y": 245,
+        "w": 679,
+        "h": 120,
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontWeight": "800",
+        "fontSize": "100px",
+        "lineHeight": "80px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(11, 13, 15)",
+        "background": "rgb(254, 209, 40)",
+        "border": "0px none rgb(11, 13, 15)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1920",
+        "x": 50,
+        "y": 265,
+        "w": 639,
+        "h": 80,
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontWeight": "800",
+        "fontSize": "100px",
+        "lineHeight": "80px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(11, 13, 15)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(11, 13, 15)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1840",
+        "x": 0,
+        "y": 425,
+        "w": 1920,
+        "h": 1324,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1841",
+        "x": 0,
+        "y": 425,
+        "w": 1920,
+        "h": 292,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1842",
+        "x": 0,
+        "y": 425,
+        "w": 1920,
+        "h": 0,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1843",
+        "x": 30,
+        "y": 465,
+        "w": 1860,
+        "h": 252,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1844",
+        "x": 30,
+        "y": 465,
+        "w": 1036,
+        "h": 252,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1845",
+        "x": 30,
+        "y": 465,
+        "w": 350,
+        "h": 82,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1846",
+        "x": 30,
+        "y": 465,
+        "w": 350,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1847",
+        "x": 30,
+        "y": 465,
+        "w": 44,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(11, 13, 15)",
+        "background": "rgb(254, 209, 40)",
+        "border": "0px none rgb(11, 13, 15)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1848",
+        "x": 40,
+        "y": 475,
+        "w": 24,
+        "h": 24,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(11, 13, 15)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(11, 13, 15)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1849",
+        "x": 80,
+        "y": 465,
+        "w": 55,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(255, 255, 255, 0.1)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1850",
+        "x": 90,
+        "y": 475,
+        "w": 35,
+        "h": 24,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1851",
+        "x": 141,
+        "y": 465,
+        "w": 77,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(255, 255, 255, 0.1)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1852",
+        "x": 151,
+        "y": 475,
+        "w": 57,
+        "h": 24,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1853",
+        "x": 30,
+        "y": 525,
+        "w": 162,
+        "h": 22,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "18px",
+        "lineHeight": "21.6px",
+        "letterSpacing": "-0.72px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgba(238, 238, 231, 0.8)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(238, 238, 231, 0.8)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1854",
+        "x": 505,
+        "y": 465,
+        "w": 561,
+        "h": 252,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1855",
+        "x": 505,
+        "y": 465,
+        "w": 561,
+        "h": 192,
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontWeight": "800",
+        "fontSize": "120px",
+        "lineHeight": "96px",
+        "letterSpacing": "normal",
+        "textTransform": "lowercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1856",
+        "x": 505,
+        "y": 687,
+        "w": 561,
+        "h": 30,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "25px",
+        "lineHeight": "30px",
+        "letterSpacing": "-1px",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1857",
+        "x": 1823,
+        "y": 465,
+        "w": 67,
+        "h": 67,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(255, 255, 255, 0.1)",
+        "border": "1px solid rgb(0, 0, 0)",
+        "overflow": "hidden"
+      },
+      {
+        "id": "10:1858",
+        "x": 1845,
+        "y": 490,
+        "w": 20,
+        "h": 20,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "matrix(1, 0, 0, -1, 0, 0)",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1859",
+        "x": 0,
+        "y": 757,
+        "w": 1920,
+        "h": 232,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1860",
+        "x": 0,
+        "y": 757,
+        "w": 1920,
+        "h": 0,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1861",
+        "x": 30,
+        "y": 797,
+        "w": 1860,
+        "h": 192,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1862",
+        "x": 30,
+        "y": 797,
+        "w": 1111,
+        "h": 192,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1863",
+        "x": 30,
+        "y": 797,
+        "w": 350,
+        "h": 82,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1864",
+        "x": 30,
+        "y": 797,
+        "w": 350,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1865",
+        "x": 30,
+        "y": 797,
+        "w": 44,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(11, 13, 15)",
+        "background": "rgb(254, 209, 40)",
+        "border": "0px none rgb(11, 13, 15)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1866",
+        "x": 40,
+        "y": 807,
+        "w": 24,
+        "h": 24,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(11, 13, 15)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(11, 13, 15)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1867",
+        "x": 80,
+        "y": 797,
+        "w": 156,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(255, 255, 255, 0.1)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1868",
+        "x": 90,
+        "y": 807,
+        "w": 136,
+        "h": 24,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1869",
+        "x": 242,
+        "y": 797,
+        "w": 111,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(255, 255, 255, 0.1)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1870",
+        "x": 252,
+        "y": 807,
+        "w": 91,
+        "h": 24,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1871",
+        "x": 30,
+        "y": 857,
+        "w": 334,
+        "h": 22,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "18px",
+        "lineHeight": "21.6px",
+        "letterSpacing": "-0.72px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgba(238, 238, 231, 0.8)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(238, 238, 231, 0.8)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1872",
+        "x": 505,
+        "y": 797,
+        "w": 636,
+        "h": 192,
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontWeight": "800",
+        "fontSize": "120px",
+        "lineHeight": "96px",
+        "letterSpacing": "normal",
+        "textTransform": "lowercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1873",
+        "x": 1823,
+        "y": 797,
+        "w": 67,
+        "h": 67,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(255, 255, 255, 0.1)",
+        "border": "1px solid rgb(0, 0, 0)",
+        "overflow": "hidden"
+      },
+      {
+        "id": "10:1874",
+        "x": 1845,
+        "y": 822,
+        "w": 20,
+        "h": 20,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "matrix(1, 0, 0, -1, 0, 0)",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1875",
+        "x": 0,
+        "y": 1029,
+        "w": 1920,
+        "h": 232,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1876",
+        "x": 0,
+        "y": 1029,
+        "w": 1920,
+        "h": 0,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1877",
+        "x": 30,
+        "y": 1069,
+        "w": 1860,
+        "h": 192,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1878",
+        "x": 30,
+        "y": 1069,
+        "w": 1218,
+        "h": 192,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1879",
+        "x": 30,
+        "y": 1069,
+        "w": 350,
+        "h": 104,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1880",
+        "x": 30,
+        "y": 1069,
+        "w": 350,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1881",
+        "x": 30,
+        "y": 1069,
+        "w": 44,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(11, 13, 15)",
+        "background": "rgb(254, 209, 40)",
+        "border": "0px none rgb(11, 13, 15)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1882",
+        "x": 40,
+        "y": 1079,
+        "w": 24,
+        "h": 24,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(11, 13, 15)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(11, 13, 15)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1883",
+        "x": 80,
+        "y": 1069,
+        "w": 178,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(255, 255, 255, 0.1)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1884",
+        "x": 90,
+        "y": 1079,
+        "w": 158,
+        "h": 24,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1885",
+        "x": 30,
+        "y": 1129,
+        "w": 283,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "18px",
+        "lineHeight": "21.6px",
+        "letterSpacing": "-0.72px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgba(238, 238, 231, 0.8)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(238, 238, 231, 0.8)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1886",
+        "x": 505,
+        "y": 1069,
+        "w": 743,
+        "h": 192,
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontWeight": "800",
+        "fontSize": "120px",
+        "lineHeight": "96px",
+        "letterSpacing": "normal",
+        "textTransform": "lowercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1887",
+        "x": 1823,
+        "y": 1069,
+        "w": 67,
+        "h": 67,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(255, 255, 255, 0.1)",
+        "border": "1px solid rgb(0, 0, 0)",
+        "overflow": "hidden"
+      },
+      {
+        "id": "10:1888",
+        "x": 1845,
+        "y": 1094,
+        "w": 20,
+        "h": 20,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "matrix(1, 0, 0, -1, 0, 0)",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1889",
+        "x": 0,
+        "y": 1301,
+        "w": 1920,
+        "h": 232,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1890",
+        "x": 0,
+        "y": 1301,
+        "w": 1920,
+        "h": 0,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1891",
+        "x": 30,
+        "y": 1341,
+        "w": 1860,
+        "h": 192,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1892",
+        "x": 30,
+        "y": 1341,
+        "w": 864,
+        "h": 192,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1893",
+        "x": 30,
+        "y": 1341,
+        "w": 350,
+        "h": 82,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1894",
+        "x": 30,
+        "y": 1341,
+        "w": 350,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1895",
+        "x": 30,
+        "y": 1341,
+        "w": 44,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(11, 13, 15)",
+        "background": "rgb(254, 209, 40)",
+        "border": "0px none rgb(11, 13, 15)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1896",
+        "x": 40,
+        "y": 1351,
+        "w": 24,
+        "h": 24,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(11, 13, 15)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(11, 13, 15)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1897",
+        "x": 80,
+        "y": 1341,
+        "w": 189,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(255, 255, 255, 0.1)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1898",
+        "x": 90,
+        "y": 1351,
+        "w": 169,
+        "h": 24,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1899",
+        "x": 30,
+        "y": 1401,
+        "w": 172,
+        "h": 22,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "18px",
+        "lineHeight": "21.6px",
+        "letterSpacing": "-0.72px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgba(238, 238, 231, 0.8)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(238, 238, 231, 0.8)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1900",
+        "x": 505,
+        "y": 1341,
+        "w": 389,
+        "h": 192,
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontWeight": "800",
+        "fontSize": "120px",
+        "lineHeight": "96px",
+        "letterSpacing": "normal",
+        "textTransform": "lowercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1901",
+        "x": 1823,
+        "y": 1341,
+        "w": 67,
+        "h": 67,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(255, 255, 255, 0.1)",
+        "border": "1px solid rgb(0, 0, 0)",
+        "overflow": "hidden"
+      },
+      {
+        "id": "10:1902",
+        "x": 1845,
+        "y": 1366,
+        "w": 20,
+        "h": 20,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "matrix(1, 0, 0, -1, 0, 0)",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1903",
+        "x": 0,
+        "y": 1573,
+        "w": 1920,
+        "h": 136,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1904",
+        "x": 0,
+        "y": 1573,
+        "w": 1920,
+        "h": 0,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1905",
+        "x": 30,
+        "y": 1613,
+        "w": 1860,
+        "h": 96,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1906",
+        "x": 30,
+        "y": 1613,
+        "w": 953,
+        "h": 96,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1907",
+        "x": 30,
+        "y": 1613,
+        "w": 350,
+        "h": 82,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1908",
+        "x": 30,
+        "y": 1613,
+        "w": 350,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1909",
+        "x": 30,
+        "y": 1613,
+        "w": 44,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(11, 13, 15)",
+        "background": "rgb(254, 209, 40)",
+        "border": "0px none rgb(11, 13, 15)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1910",
+        "x": 40,
+        "y": 1623,
+        "w": 24,
+        "h": 24,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(11, 13, 15)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(11, 13, 15)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1911",
+        "x": 80,
+        "y": 1613,
+        "w": 223,
+        "h": 44,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(255, 255, 255, 0.1)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1912",
+        "x": 90,
+        "y": 1623,
+        "w": 203,
+        "h": 24,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(238, 238, 231)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1913",
+        "x": 30,
+        "y": 1673,
+        "w": 183,
+        "h": 22,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "18px",
+        "lineHeight": "21.6px",
+        "letterSpacing": "-0.72px",
+        "textTransform": "uppercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgba(238, 238, 231, 0.8)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(238, 238, 231, 0.8)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1914",
+        "x": 505,
+        "y": 1613,
+        "w": 478,
+        "h": 96,
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontWeight": "800",
+        "fontSize": "120px",
+        "lineHeight": "96px",
+        "letterSpacing": "normal",
+        "textTransform": "lowercase",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1915",
+        "x": 1823,
+        "y": 1613,
+        "w": 67,
+        "h": 67,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(255, 255, 255, 0.1)",
+        "border": "1px solid rgb(0, 0, 0)",
+        "overflow": "hidden"
+      },
+      {
+        "id": "10:1916",
+        "x": 1845,
+        "y": 1638,
+        "w": 20,
+        "h": 20,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "matrix(1, 0, 0, -1, 0, 0)",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      },
+      {
+        "id": "10:1917",
+        "x": 0,
+        "y": 1749,
+        "w": 1920,
+        "h": 0,
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "transform": "none",
+        "opacity": "1",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(255, 255, 255)",
+        "overflow": "visible"
+      }
+    ],
+    "images": [
+      {
+        "src": "http://127.0.0.1:4173/assets/illustrations/hero-cta-arrow.svg",
+        "width": 29,
+        "height": 29,
+        "complete": true,
+        "filter": "brightness(0) invert(1)",
+        "localName": "10:1858"
+      },
+      {
+        "src": "http://127.0.0.1:4173/assets/illustrations/hero-cta-arrow.svg",
+        "width": 29,
+        "height": 29,
+        "complete": true,
+        "filter": "brightness(0) invert(1)",
+        "localName": "10:1874"
+      },
+      {
+        "src": "http://127.0.0.1:4173/assets/illustrations/hero-cta-arrow.svg",
+        "width": 29,
+        "height": 29,
+        "complete": true,
+        "filter": "brightness(0) invert(1)",
+        "localName": "10:1888"
+      },
+      {
+        "src": "http://127.0.0.1:4173/assets/illustrations/hero-cta-arrow.svg",
+        "width": 29,
+        "height": 29,
+        "complete": true,
+        "filter": "brightness(0) invert(1)",
+        "localName": "10:1902"
+      },
+      {
+        "src": "http://127.0.0.1:4173/assets/illustrations/hero-cta-arrow.svg",
+        "width": 29,
+        "height": 29,
+        "complete": true,
+        "filter": "brightness(0) invert(1)",
+        "localName": "10:1916"
+      }
+    ],
+    "wraps": {
+      "10:1855": "Surely you can’t\nbe serious",
+      "10:1872": "Make like a tree\nand get out of here",
+      "10:1885": "Austin Powers: International\nMan of Mystery (1997)",
+      "10:1886": "Who does Number Two\nwork for?",
+      "10:1900": "I am\nSher locked",
+      "10:1914": "Here’s Johnny!"
+    }
+  },
+  "fonts": [
+    {
+      "id": "10:1848",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ]
+    },
+    {
+      "id": "10:1850",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 3
+        }
+      ]
+    },
+    {
+      "id": "10:1852",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ]
+    },
+    {
+      "id": "10:1853",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 16
+        }
+      ]
+    },
+    {
+      "id": "10:1855",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 26
+        }
+      ]
+    },
+    {
+      "id": "10:1856",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 40
+        }
+      ]
+    },
+    {
+      "id": "10:1866",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ]
+    },
+    {
+      "id": "10:1868",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 12
+        }
+      ]
+    },
+    {
+      "id": "10:1870",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "id": "10:1871",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 33
+        }
+      ]
+    },
+    {
+      "id": "10:1872",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 35
+        }
+      ]
+    },
+    {
+      "id": "10:1882",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ]
+    },
+    {
+      "id": "10:1884",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ]
+    },
+    {
+      "id": "10:1885",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 49
+        }
+      ]
+    },
+    {
+      "id": "10:1886",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 28
+        }
+      ]
+    },
+    {
+      "id": "10:1896",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ]
+    },
+    {
+      "id": "10:1898",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 15
+        }
+      ]
+    },
+    {
+      "id": "10:1899",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 17
+        }
+      ]
+    },
+    {
+      "id": "10:1900",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 15
+        }
+      ]
+    },
+    {
+      "id": "10:1910",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ]
+    },
+    {
+      "id": "10:1912",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 18
+        }
+      ]
+    },
+    {
+      "id": "10:1913",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 18
+        }
+      ]
+    },
+    {
+      "id": "10:1914",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ]
+    },
+    {
+      "id": "10:1918",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 17
+        }
+      ]
+    },
+    {
+      "id": "10:1920",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 20
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "10:1794",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1899
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1899
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1795",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1899
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1899
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1796",
+      "expected": {
+        "x": 30,
+        "y": 30,
+        "w": 1860,
+        "h": 50
+      },
+      "actual": {
+        "x": 30,
+        "y": 30,
+        "w": 1860,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1797",
+      "expected": {
+        "x": 30,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 30,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1798",
+      "expected": {
+        "x": 120.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 120.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1799",
+      "expected": {
+        "x": 211,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 211,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1800",
+      "expected": {
+        "x": 301.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 301.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1801",
+      "expected": {
+        "x": 392,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 392,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1802",
+      "expected": {
+        "x": 482.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 482.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1803",
+      "expected": {
+        "x": 573,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 573,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1804",
+      "expected": {
+        "x": 663.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 663.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1805",
+      "expected": {
+        "x": 754,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 754,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1806",
+      "expected": {
+        "x": 844.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 844.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1807",
+      "expected": {
+        "x": 935,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 935,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1808",
+      "expected": {
+        "x": 1025.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1025.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1809",
+      "expected": {
+        "x": 1116,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1116,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1810",
+      "expected": {
+        "x": 1206.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1206.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1811",
+      "expected": {
+        "x": 1297,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1297,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1812",
+      "expected": {
+        "x": 1387.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1387.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1813",
+      "expected": {
+        "x": 1478,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1478,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1814",
+      "expected": {
+        "x": 1568.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1568.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1815",
+      "expected": {
+        "x": 1659,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1659,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1816",
+      "expected": {
+        "x": 1749.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1749.5,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1817",
+      "expected": {
+        "x": 1840,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1840,
+        "y": 30,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1818",
+      "expected": {
+        "x": 30,
+        "y": 1819,
+        "w": 1860,
+        "h": 50
+      },
+      "actual": {
+        "x": 30,
+        "y": 1819,
+        "w": 1860,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1819",
+      "expected": {
+        "x": 30,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 30,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1820",
+      "expected": {
+        "x": 120.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 120.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1821",
+      "expected": {
+        "x": 211,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 211,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1822",
+      "expected": {
+        "x": 301.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 301.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1823",
+      "expected": {
+        "x": 392,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 392,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1824",
+      "expected": {
+        "x": 482.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 482.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1825",
+      "expected": {
+        "x": 573,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 573,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1826",
+      "expected": {
+        "x": 663.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 663.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1827",
+      "expected": {
+        "x": 754,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 754,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1828",
+      "expected": {
+        "x": 844.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 844.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1829",
+      "expected": {
+        "x": 935,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 935,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1830",
+      "expected": {
+        "x": 1025.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1025.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1831",
+      "expected": {
+        "x": 1116,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1116,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1832",
+      "expected": {
+        "x": 1206.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1206.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1833",
+      "expected": {
+        "x": 1297,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1297,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1834",
+      "expected": {
+        "x": 1387.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1387.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1835",
+      "expected": {
+        "x": 1478,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1478,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1836",
+      "expected": {
+        "x": 1568.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1568.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1837",
+      "expected": {
+        "x": 1659,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1659,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1838",
+      "expected": {
+        "x": 1749.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1749.5,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1839",
+      "expected": {
+        "x": 1840,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "actual": {
+        "x": 1840,
+        "y": 1819,
+        "w": 50,
+        "h": 50
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1840",
+      "expected": {
+        "x": 0,
+        "y": 425,
+        "w": 1920,
+        "h": 1324
+      },
+      "actual": {
+        "x": 0,
+        "y": 425,
+        "w": 1920,
+        "h": 1324
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1841",
+      "expected": {
+        "x": 0,
+        "y": 425,
+        "w": 1920,
+        "h": 292
+      },
+      "actual": {
+        "x": 0,
+        "y": 425,
+        "w": 1920,
+        "h": 292
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1842",
+      "expected": {
+        "x": 0,
+        "y": 425,
+        "w": 1920,
+        "h": 0
+      },
+      "actual": {
+        "x": 0,
+        "y": 425,
+        "w": 1920,
+        "h": 0
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1843",
+      "expected": {
+        "x": 30,
+        "y": 465,
+        "w": 1860,
+        "h": 252
+      },
+      "actual": {
+        "x": 30,
+        "y": 465,
+        "w": 1860,
+        "h": 252
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1844",
+      "expected": {
+        "x": 30,
+        "y": 465,
+        "w": 1036,
+        "h": 252
+      },
+      "actual": {
+        "x": 30,
+        "y": 465,
+        "w": 1036,
+        "h": 252
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1845",
+      "expected": {
+        "x": 30,
+        "y": 465,
+        "w": 350,
+        "h": 82
+      },
+      "actual": {
+        "x": 30,
+        "y": 465,
+        "w": 350,
+        "h": 82
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1846",
+      "expected": {
+        "x": 30,
+        "y": 465,
+        "w": 350,
+        "h": 44
+      },
+      "actual": {
+        "x": 30,
+        "y": 465,
+        "w": 350,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1847",
+      "expected": {
+        "x": 30,
+        "y": 465,
+        "w": 44,
+        "h": 44
+      },
+      "actual": {
+        "x": 30,
+        "y": 465,
+        "w": 44,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1848",
+      "expected": {
+        "x": 40,
+        "y": 475,
+        "w": 24,
+        "h": 24
+      },
+      "actual": {
+        "x": 40,
+        "y": 475,
+        "w": 24,
+        "h": 24
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1849",
+      "expected": {
+        "x": 80,
+        "y": 465,
+        "w": 55,
+        "h": 44
+      },
+      "actual": {
+        "x": 80,
+        "y": 465,
+        "w": 55,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1850",
+      "expected": {
+        "x": 90,
+        "y": 475,
+        "w": 35,
+        "h": 24
+      },
+      "actual": {
+        "x": 90,
+        "y": 475,
+        "w": 35,
+        "h": 24
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1851",
+      "expected": {
+        "x": 141,
+        "y": 465,
+        "w": 77,
+        "h": 44
+      },
+      "actual": {
+        "x": 141,
+        "y": 465,
+        "w": 77,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1852",
+      "expected": {
+        "x": 151,
+        "y": 475,
+        "w": 57,
+        "h": 24
+      },
+      "actual": {
+        "x": 151,
+        "y": 475,
+        "w": 57,
+        "h": 24
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1853",
+      "expected": {
+        "x": 30,
+        "y": 525,
+        "w": 162,
+        "h": 22
+      },
+      "actual": {
+        "x": 30,
+        "y": 525,
+        "w": 162,
+        "h": 22
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1854",
+      "expected": {
+        "x": 505,
+        "y": 465,
+        "w": 561,
+        "h": 252
+      },
+      "actual": {
+        "x": 505,
+        "y": 465,
+        "w": 561,
+        "h": 252
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1855",
+      "expected": {
+        "x": 505,
+        "y": 465,
+        "w": 561,
+        "h": 192
+      },
+      "actual": {
+        "x": 505,
+        "y": 465,
+        "w": 561,
+        "h": 192
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1856",
+      "expected": {
+        "x": 505,
+        "y": 687,
+        "w": 561,
+        "h": 30
+      },
+      "actual": {
+        "x": 505,
+        "y": 687,
+        "w": 561,
+        "h": 30
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1857",
+      "expected": {
+        "x": 1823,
+        "y": 465,
+        "w": 67,
+        "h": 67
+      },
+      "actual": {
+        "x": 1823,
+        "y": 465,
+        "w": 67,
+        "h": 67
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1858",
+      "expected": {
+        "x": 1845,
+        "y": 490,
+        "w": 20,
+        "h": 20
+      },
+      "actual": {
+        "x": 1845,
+        "y": 490,
+        "w": 20,
+        "h": 20
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1859",
+      "expected": {
+        "x": 0,
+        "y": 757,
+        "w": 1920,
+        "h": 232
+      },
+      "actual": {
+        "x": 0,
+        "y": 757,
+        "w": 1920,
+        "h": 232
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1860",
+      "expected": {
+        "x": 0,
+        "y": 757,
+        "w": 1920,
+        "h": 0
+      },
+      "actual": {
+        "x": 0,
+        "y": 757,
+        "w": 1920,
+        "h": 0
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1861",
+      "expected": {
+        "x": 30,
+        "y": 797,
+        "w": 1860,
+        "h": 192
+      },
+      "actual": {
+        "x": 30,
+        "y": 797,
+        "w": 1860,
+        "h": 192
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1862",
+      "expected": {
+        "x": 30,
+        "y": 797,
+        "w": 1111,
+        "h": 192
+      },
+      "actual": {
+        "x": 30,
+        "y": 797,
+        "w": 1111,
+        "h": 192
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1863",
+      "expected": {
+        "x": 30,
+        "y": 797,
+        "w": 350,
+        "h": 82
+      },
+      "actual": {
+        "x": 30,
+        "y": 797,
+        "w": 350,
+        "h": 82
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1864",
+      "expected": {
+        "x": 30,
+        "y": 797,
+        "w": 350,
+        "h": 44
+      },
+      "actual": {
+        "x": 30,
+        "y": 797,
+        "w": 350,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1865",
+      "expected": {
+        "x": 30,
+        "y": 797,
+        "w": 44,
+        "h": 44
+      },
+      "actual": {
+        "x": 30,
+        "y": 797,
+        "w": 44,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1866",
+      "expected": {
+        "x": 40,
+        "y": 807,
+        "w": 24,
+        "h": 24
+      },
+      "actual": {
+        "x": 40,
+        "y": 807,
+        "w": 24,
+        "h": 24
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1867",
+      "expected": {
+        "x": 80,
+        "y": 797,
+        "w": 156,
+        "h": 44
+      },
+      "actual": {
+        "x": 80,
+        "y": 797,
+        "w": 156,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1868",
+      "expected": {
+        "x": 90,
+        "y": 807,
+        "w": 136,
+        "h": 24
+      },
+      "actual": {
+        "x": 90,
+        "y": 807,
+        "w": 136,
+        "h": 24
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1869",
+      "expected": {
+        "x": 242,
+        "y": 797,
+        "w": 111,
+        "h": 44
+      },
+      "actual": {
+        "x": 242,
+        "y": 797,
+        "w": 111,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1870",
+      "expected": {
+        "x": 252,
+        "y": 807,
+        "w": 91,
+        "h": 24
+      },
+      "actual": {
+        "x": 252,
+        "y": 807,
+        "w": 91,
+        "h": 24
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1871",
+      "expected": {
+        "x": 30,
+        "y": 857,
+        "w": 334,
+        "h": 22
+      },
+      "actual": {
+        "x": 30,
+        "y": 857,
+        "w": 334,
+        "h": 22
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1872",
+      "expected": {
+        "x": 505,
+        "y": 797,
+        "w": 636,
+        "h": 192
+      },
+      "actual": {
+        "x": 505,
+        "y": 797,
+        "w": 636,
+        "h": 192
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1873",
+      "expected": {
+        "x": 1823,
+        "y": 797,
+        "w": 67,
+        "h": 67
+      },
+      "actual": {
+        "x": 1823,
+        "y": 797,
+        "w": 67,
+        "h": 67
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1874",
+      "expected": {
+        "x": 1845,
+        "y": 822,
+        "w": 20,
+        "h": 20
+      },
+      "actual": {
+        "x": 1845,
+        "y": 822,
+        "w": 20,
+        "h": 20
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1875",
+      "expected": {
+        "x": 0,
+        "y": 1029,
+        "w": 1920,
+        "h": 232
+      },
+      "actual": {
+        "x": 0,
+        "y": 1029,
+        "w": 1920,
+        "h": 232
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1876",
+      "expected": {
+        "x": 0,
+        "y": 1029,
+        "w": 1920,
+        "h": 0
+      },
+      "actual": {
+        "x": 0,
+        "y": 1029,
+        "w": 1920,
+        "h": 0
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1877",
+      "expected": {
+        "x": 30,
+        "y": 1069,
+        "w": 1860,
+        "h": 192
+      },
+      "actual": {
+        "x": 30,
+        "y": 1069,
+        "w": 1860,
+        "h": 192
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1878",
+      "expected": {
+        "x": 30,
+        "y": 1069,
+        "w": 1218,
+        "h": 192
+      },
+      "actual": {
+        "x": 30,
+        "y": 1069,
+        "w": 1218,
+        "h": 192
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1879",
+      "expected": {
+        "x": 30,
+        "y": 1069,
+        "w": 350,
+        "h": 104
+      },
+      "actual": {
+        "x": 30,
+        "y": 1069,
+        "w": 350,
+        "h": 104
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1880",
+      "expected": {
+        "x": 30,
+        "y": 1069,
+        "w": 350,
+        "h": 44
+      },
+      "actual": {
+        "x": 30,
+        "y": 1069,
+        "w": 350,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1881",
+      "expected": {
+        "x": 30,
+        "y": 1069,
+        "w": 44,
+        "h": 44
+      },
+      "actual": {
+        "x": 30,
+        "y": 1069,
+        "w": 44,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1882",
+      "expected": {
+        "x": 40,
+        "y": 1079,
+        "w": 24,
+        "h": 24
+      },
+      "actual": {
+        "x": 40,
+        "y": 1079,
+        "w": 24,
+        "h": 24
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1883",
+      "expected": {
+        "x": 80,
+        "y": 1069,
+        "w": 178,
+        "h": 44
+      },
+      "actual": {
+        "x": 80,
+        "y": 1069,
+        "w": 178,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1884",
+      "expected": {
+        "x": 90,
+        "y": 1079,
+        "w": 158,
+        "h": 24
+      },
+      "actual": {
+        "x": 90,
+        "y": 1079,
+        "w": 158,
+        "h": 24
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1885",
+      "expected": {
+        "x": 30,
+        "y": 1129,
+        "w": 283,
+        "h": 44
+      },
+      "actual": {
+        "x": 30,
+        "y": 1129,
+        "w": 283,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1886",
+      "expected": {
+        "x": 505,
+        "y": 1069,
+        "w": 743,
+        "h": 192
+      },
+      "actual": {
+        "x": 505,
+        "y": 1069,
+        "w": 743,
+        "h": 192
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1887",
+      "expected": {
+        "x": 1823,
+        "y": 1069,
+        "w": 67,
+        "h": 67
+      },
+      "actual": {
+        "x": 1823,
+        "y": 1069,
+        "w": 67,
+        "h": 67
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1888",
+      "expected": {
+        "x": 1845,
+        "y": 1094,
+        "w": 20,
+        "h": 20
+      },
+      "actual": {
+        "x": 1845,
+        "y": 1094,
+        "w": 20,
+        "h": 20
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1889",
+      "expected": {
+        "x": 0,
+        "y": 1301,
+        "w": 1920,
+        "h": 232
+      },
+      "actual": {
+        "x": 0,
+        "y": 1301,
+        "w": 1920,
+        "h": 232
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1890",
+      "expected": {
+        "x": 0,
+        "y": 1301,
+        "w": 1920,
+        "h": 0
+      },
+      "actual": {
+        "x": 0,
+        "y": 1301,
+        "w": 1920,
+        "h": 0
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1891",
+      "expected": {
+        "x": 30,
+        "y": 1341,
+        "w": 1860,
+        "h": 192
+      },
+      "actual": {
+        "x": 30,
+        "y": 1341,
+        "w": 1860,
+        "h": 192
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1892",
+      "expected": {
+        "x": 30,
+        "y": 1341,
+        "w": 864,
+        "h": 192
+      },
+      "actual": {
+        "x": 30,
+        "y": 1341,
+        "w": 864,
+        "h": 192
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1893",
+      "expected": {
+        "x": 30,
+        "y": 1341,
+        "w": 350,
+        "h": 82
+      },
+      "actual": {
+        "x": 30,
+        "y": 1341,
+        "w": 350,
+        "h": 82
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1894",
+      "expected": {
+        "x": 30,
+        "y": 1341,
+        "w": 350,
+        "h": 44
+      },
+      "actual": {
+        "x": 30,
+        "y": 1341,
+        "w": 350,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1895",
+      "expected": {
+        "x": 30,
+        "y": 1341,
+        "w": 44,
+        "h": 44
+      },
+      "actual": {
+        "x": 30,
+        "y": 1341,
+        "w": 44,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1896",
+      "expected": {
+        "x": 40,
+        "y": 1351,
+        "w": 24,
+        "h": 24
+      },
+      "actual": {
+        "x": 40,
+        "y": 1351,
+        "w": 24,
+        "h": 24
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1897",
+      "expected": {
+        "x": 80,
+        "y": 1341,
+        "w": 189,
+        "h": 44
+      },
+      "actual": {
+        "x": 80,
+        "y": 1341,
+        "w": 189,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1898",
+      "expected": {
+        "x": 90,
+        "y": 1351,
+        "w": 169,
+        "h": 24
+      },
+      "actual": {
+        "x": 90,
+        "y": 1351,
+        "w": 169,
+        "h": 24
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1899",
+      "expected": {
+        "x": 30,
+        "y": 1401,
+        "w": 172,
+        "h": 22
+      },
+      "actual": {
+        "x": 30,
+        "y": 1401,
+        "w": 172,
+        "h": 22
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1900",
+      "expected": {
+        "x": 505,
+        "y": 1341,
+        "w": 389,
+        "h": 192
+      },
+      "actual": {
+        "x": 505,
+        "y": 1341,
+        "w": 389,
+        "h": 192
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1901",
+      "expected": {
+        "x": 1823,
+        "y": 1341,
+        "w": 67,
+        "h": 67
+      },
+      "actual": {
+        "x": 1823,
+        "y": 1341,
+        "w": 67,
+        "h": 67
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1902",
+      "expected": {
+        "x": 1845,
+        "y": 1366,
+        "w": 20,
+        "h": 20
+      },
+      "actual": {
+        "x": 1845,
+        "y": 1366,
+        "w": 20,
+        "h": 20
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1903",
+      "expected": {
+        "x": 0,
+        "y": 1573,
+        "w": 1920,
+        "h": 136
+      },
+      "actual": {
+        "x": 0,
+        "y": 1573,
+        "w": 1920,
+        "h": 136
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1904",
+      "expected": {
+        "x": 0,
+        "y": 1573,
+        "w": 1920,
+        "h": 0
+      },
+      "actual": {
+        "x": 0,
+        "y": 1573,
+        "w": 1920,
+        "h": 0
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1905",
+      "expected": {
+        "x": 30,
+        "y": 1613,
+        "w": 1860,
+        "h": 96
+      },
+      "actual": {
+        "x": 30,
+        "y": 1613,
+        "w": 1860,
+        "h": 96
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1906",
+      "expected": {
+        "x": 30,
+        "y": 1613,
+        "w": 953,
+        "h": 96
+      },
+      "actual": {
+        "x": 30,
+        "y": 1613,
+        "w": 953,
+        "h": 96
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1907",
+      "expected": {
+        "x": 30,
+        "y": 1613,
+        "w": 350,
+        "h": 82
+      },
+      "actual": {
+        "x": 30,
+        "y": 1613,
+        "w": 350,
+        "h": 82
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1908",
+      "expected": {
+        "x": 30,
+        "y": 1613,
+        "w": 350,
+        "h": 44
+      },
+      "actual": {
+        "x": 30,
+        "y": 1613,
+        "w": 350,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1909",
+      "expected": {
+        "x": 30,
+        "y": 1613,
+        "w": 44,
+        "h": 44
+      },
+      "actual": {
+        "x": 30,
+        "y": 1613,
+        "w": 44,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1910",
+      "expected": {
+        "x": 40,
+        "y": 1623,
+        "w": 24,
+        "h": 24
+      },
+      "actual": {
+        "x": 40,
+        "y": 1623,
+        "w": 24,
+        "h": 24
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1911",
+      "expected": {
+        "x": 80,
+        "y": 1613,
+        "w": 223,
+        "h": 44
+      },
+      "actual": {
+        "x": 80,
+        "y": 1613,
+        "w": 223,
+        "h": 44
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1912",
+      "expected": {
+        "x": 90,
+        "y": 1623,
+        "w": 203,
+        "h": 24
+      },
+      "actual": {
+        "x": 90,
+        "y": 1623,
+        "w": 203,
+        "h": 24
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1913",
+      "expected": {
+        "x": 30,
+        "y": 1673,
+        "w": 183,
+        "h": 22
+      },
+      "actual": {
+        "x": 30,
+        "y": 1673,
+        "w": 183,
+        "h": 22
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1914",
+      "expected": {
+        "x": 505,
+        "y": 1613,
+        "w": 478,
+        "h": 96
+      },
+      "actual": {
+        "x": 505,
+        "y": 1613,
+        "w": 478,
+        "h": 96
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1915",
+      "expected": {
+        "x": 1823,
+        "y": 1613,
+        "w": 67,
+        "h": 67
+      },
+      "actual": {
+        "x": 1823,
+        "y": 1613,
+        "w": 67,
+        "h": 67
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1916",
+      "expected": {
+        "x": 1845,
+        "y": 1638,
+        "w": 20,
+        "h": 20
+      },
+      "actual": {
+        "x": 1845,
+        "y": 1638,
+        "w": 20,
+        "h": 20
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1917",
+      "expected": {
+        "x": 0,
+        "y": 1749,
+        "w": 1920,
+        "h": 0
+      },
+      "actual": {
+        "x": 0,
+        "y": 1749,
+        "w": 1920,
+        "h": 0
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1918",
+      "expected": {
+        "x": 30,
+        "y": 150,
+        "w": 642,
+        "h": 80
+      },
+      "actual": {
+        "x": 30,
+        "y": 150,
+        "w": 642,
+        "h": 80
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1919",
+      "expected": {
+        "x": 30,
+        "y": 245,
+        "w": 679,
+        "h": 120
+      },
+      "actual": {
+        "x": 30,
+        "y": 245,
+        "w": 679,
+        "h": 120
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1920",
+      "expected": {
+        "x": 50,
+        "y": 265,
+        "w": 639,
+        "h": 80
+      },
+      "actual": {
+        "x": 50,
+        "y": 265,
+        "w": 639,
+        "h": 80
+      },
+      "deltas": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    }
+  ],
+  "fontMetrics": [
+    {
+      "id": "10:1848",
+      "expected": {
+        "size": 20,
+        "lineHeight": 24.000000953674316,
+        "tracking": -0.8,
+        "weight": 500
+      },
+      "actual": {
+        "size": 20,
+        "lineHeight": 24,
+        "tracking": -0.8,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1850",
+      "expected": {
+        "size": 20,
+        "lineHeight": 24.000000953674316,
+        "tracking": -0.8,
+        "weight": 500
+      },
+      "actual": {
+        "size": 20,
+        "lineHeight": 24,
+        "tracking": -0.8,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1852",
+      "expected": {
+        "size": 20,
+        "lineHeight": 24.000000953674316,
+        "tracking": -0.8,
+        "weight": 500
+      },
+      "actual": {
+        "size": 20,
+        "lineHeight": 24,
+        "tracking": -0.8,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1853",
+      "expected": {
+        "size": 18,
+        "lineHeight": 21.600000858306885,
+        "tracking": -0.72,
+        "weight": 500
+      },
+      "actual": {
+        "size": 18,
+        "lineHeight": 21.6,
+        "tracking": -0.72,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1855",
+      "expected": {
+        "size": 120,
+        "lineHeight": 96.00000143051147,
+        "tracking": 0,
+        "weight": 800
+      },
+      "actual": {
+        "size": 120,
+        "lineHeight": 96,
+        "tracking": 0,
+        "weight": 800
+      }
+    },
+    {
+      "id": "10:1856",
+      "expected": {
+        "size": 25,
+        "lineHeight": 30.000001192092896,
+        "tracking": -1,
+        "weight": 500
+      },
+      "actual": {
+        "size": 25,
+        "lineHeight": 30,
+        "tracking": -1,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1866",
+      "expected": {
+        "size": 20,
+        "lineHeight": 24.000000953674316,
+        "tracking": -0.8,
+        "weight": 500
+      },
+      "actual": {
+        "size": 20,
+        "lineHeight": 24,
+        "tracking": -0.8,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1868",
+      "expected": {
+        "size": 20,
+        "lineHeight": 24.000000953674316,
+        "tracking": -0.8,
+        "weight": 500
+      },
+      "actual": {
+        "size": 20,
+        "lineHeight": 24,
+        "tracking": -0.8,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1870",
+      "expected": {
+        "size": 20,
+        "lineHeight": 24.000000953674316,
+        "tracking": -0.8,
+        "weight": 500
+      },
+      "actual": {
+        "size": 20,
+        "lineHeight": 24,
+        "tracking": -0.8,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1871",
+      "expected": {
+        "size": 18,
+        "lineHeight": 21.600000858306885,
+        "tracking": -0.72,
+        "weight": 500
+      },
+      "actual": {
+        "size": 18,
+        "lineHeight": 21.6,
+        "tracking": -0.72,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1872",
+      "expected": {
+        "size": 120,
+        "lineHeight": 96.00000143051147,
+        "tracking": 0,
+        "weight": 800
+      },
+      "actual": {
+        "size": 120,
+        "lineHeight": 96,
+        "tracking": 0,
+        "weight": 800
+      }
+    },
+    {
+      "id": "10:1882",
+      "expected": {
+        "size": 20,
+        "lineHeight": 24.000000953674316,
+        "tracking": -0.8,
+        "weight": 500
+      },
+      "actual": {
+        "size": 20,
+        "lineHeight": 24,
+        "tracking": -0.8,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1884",
+      "expected": {
+        "size": 20,
+        "lineHeight": 24.000000953674316,
+        "tracking": -0.8,
+        "weight": 500
+      },
+      "actual": {
+        "size": 20,
+        "lineHeight": 24,
+        "tracking": -0.8,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1885",
+      "expected": {
+        "size": 18,
+        "lineHeight": 21.600000858306885,
+        "tracking": -0.72,
+        "weight": 500
+      },
+      "actual": {
+        "size": 18,
+        "lineHeight": 21.6,
+        "tracking": -0.72,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1886",
+      "expected": {
+        "size": 120,
+        "lineHeight": 96.00000143051147,
+        "tracking": 0,
+        "weight": 800
+      },
+      "actual": {
+        "size": 120,
+        "lineHeight": 96,
+        "tracking": 0,
+        "weight": 800
+      }
+    },
+    {
+      "id": "10:1896",
+      "expected": {
+        "size": 20,
+        "lineHeight": 24.000000953674316,
+        "tracking": -0.8,
+        "weight": 500
+      },
+      "actual": {
+        "size": 20,
+        "lineHeight": 24,
+        "tracking": -0.8,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1898",
+      "expected": {
+        "size": 20,
+        "lineHeight": 24.000000953674316,
+        "tracking": -0.8,
+        "weight": 500
+      },
+      "actual": {
+        "size": 20,
+        "lineHeight": 24,
+        "tracking": -0.8,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1899",
+      "expected": {
+        "size": 18,
+        "lineHeight": 21.600000858306885,
+        "tracking": -0.72,
+        "weight": 500
+      },
+      "actual": {
+        "size": 18,
+        "lineHeight": 21.6,
+        "tracking": -0.72,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1900",
+      "expected": {
+        "size": 120,
+        "lineHeight": 96.00000143051147,
+        "tracking": 0,
+        "weight": 800
+      },
+      "actual": {
+        "size": 120,
+        "lineHeight": 96,
+        "tracking": 0,
+        "weight": 800
+      }
+    },
+    {
+      "id": "10:1910",
+      "expected": {
+        "size": 20,
+        "lineHeight": 24.000000953674316,
+        "tracking": -0.8,
+        "weight": 500
+      },
+      "actual": {
+        "size": 20,
+        "lineHeight": 24,
+        "tracking": -0.8,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1912",
+      "expected": {
+        "size": 20,
+        "lineHeight": 24.000000953674316,
+        "tracking": -0.8,
+        "weight": 500
+      },
+      "actual": {
+        "size": 20,
+        "lineHeight": 24,
+        "tracking": -0.8,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1913",
+      "expected": {
+        "size": 18,
+        "lineHeight": 21.600000858306885,
+        "tracking": -0.72,
+        "weight": 500
+      },
+      "actual": {
+        "size": 18,
+        "lineHeight": 21.6,
+        "tracking": -0.72,
+        "weight": 500
+      }
+    },
+    {
+      "id": "10:1914",
+      "expected": {
+        "size": 120,
+        "lineHeight": 96.00000143051147,
+        "tracking": 0,
+        "weight": 800
+      },
+      "actual": {
+        "size": 120,
+        "lineHeight": 96,
+        "tracking": 0,
+        "weight": 800
+      }
+    },
+    {
+      "id": "10:1918",
+      "expected": {
+        "size": 100,
+        "lineHeight": 80.0000011920929,
+        "tracking": 0,
+        "weight": 800
+      },
+      "actual": {
+        "size": 100,
+        "lineHeight": 80,
+        "tracking": 0,
+        "weight": 800
+      }
+    },
+    {
+      "id": "10:1920",
+      "expected": {
+        "size": 100,
+        "lineHeight": 80.0000011920929,
+        "tracking": 0,
+        "weight": 800
+      },
+      "actual": {
+        "size": 100,
+        "lineHeight": 80,
+        "tracking": 0,
+        "weight": 800
+      }
+    }
+  ],
+  "network": {
+    "errors": [],
+    "failed": [],
+    "requests": [
+      {
+        "url": "http://127.0.0.1:4173/",
+        "type": "document"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-CsmWuxNa.js",
+        "type": "script"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-DZAMSrPf.css",
+        "type": "stylesheet"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-person-collage.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-cta-arrow.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-film-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/star-accent.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-62.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-43.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-78x79.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-50.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-108.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-man-eye.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/subtale-pixel-mark.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-eye-accent.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-male-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-female-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/elephant-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-upper-left.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-lower-middle.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-upper-right.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-center.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-right-small.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-left-small.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-lower-shared.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/mosaic-texture.png",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-upper-right-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-center-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-right-small-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-left-small-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-lower-left-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-lower-right-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-600-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20Bold.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-600-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20ExtraBold.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-500-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-500-normal.woff2",
+        "type": "font"
+      }
+    ],
+    "mp4Requests": 0,
+    "posterRequests": 0,
+    "externalRequests": 0
+  }
+}

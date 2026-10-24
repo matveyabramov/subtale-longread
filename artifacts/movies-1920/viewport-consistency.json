@@ -1,0 +1,20 @@
+[
+  {
+    "name": "top",
+    "sectionY": 0,
+    "width": 1920,
+    "height": 1080,
+    "mae": 0.0002335712448559671,
+    "max": 1,
+    "differentChannels": 1453
+  },
+  {
+    "name": "bottom",
+    "sectionY": 819,
+    "width": 1920,
+    "height": 1080,
+    "mae": 0.00035734953703703704,
+    "max": 1,
+    "differentChannels": 2223
+  }
+]

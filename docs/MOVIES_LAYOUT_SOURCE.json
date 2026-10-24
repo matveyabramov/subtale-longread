@@ -1,0 +1,3492 @@
+{
+  "frame": "10:1794",
+  "nodes": [
+    {
+      "id": "10:1794",
+      "parent": "0:1",
+      "type": "FRAME",
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1899,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.04313725605607033,
+            "g": 0.05098039284348488,
+            "b": 0.05882352963089943
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1795",
+        "10:1796",
+        "10:1818",
+        "10:1840",
+        "10:1918",
+        "10:1919"
+      ],
+      "clipsContent": true
+    },
+    {
+      "id": "10:1795",
+      "parent": "10:1794",
+      "type": "RECTANGLE",
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1899,
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "scaleMode": "TILE",
+          "scalingFactor": 0.8942065238952637,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e"
+        }
+      ]
+    },
+    {
+      "id": "10:1796",
+      "parent": "10:1794",
+      "type": "FRAME",
+      "x": 30,
+      "y": 30,
+      "w": 1860,
+      "h": 50,
+      "fills": [],
+      "children": [
+        "10:1797",
+        "10:1798",
+        "10:1799",
+        "10:1800",
+        "10:1801",
+        "10:1802",
+        "10:1803",
+        "10:1804",
+        "10:1805",
+        "10:1806",
+        "10:1807",
+        "10:1808",
+        "10:1809",
+        "10:1810",
+        "10:1811",
+        "10:1812",
+        "10:1813",
+        "10:1814",
+        "10:1815",
+        "10:1816",
+        "10:1817"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1797",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 30,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1798",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 120.5,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1799",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 211,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1800",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 301.5,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1801",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 392,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1802",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 482.5,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1803",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 573,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1804",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 663.5,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1805",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 754,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1806",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 844.5,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1807",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 935,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1808",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 1025.5,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1809",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 1116,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1810",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 1206.5,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1811",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 1297,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1812",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 1387.5,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1813",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 1478,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1814",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 1568.5,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1815",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 1659,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1816",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 1749.5,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1817",
+      "parent": "10:1796",
+      "type": "RECTANGLE",
+      "x": 1840,
+      "y": 30,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1818",
+      "parent": "10:1794",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1819,
+      "w": 1860,
+      "h": 50,
+      "fills": [],
+      "children": [
+        "10:1819",
+        "10:1820",
+        "10:1821",
+        "10:1822",
+        "10:1823",
+        "10:1824",
+        "10:1825",
+        "10:1826",
+        "10:1827",
+        "10:1828",
+        "10:1829",
+        "10:1830",
+        "10:1831",
+        "10:1832",
+        "10:1833",
+        "10:1834",
+        "10:1835",
+        "10:1836",
+        "10:1837",
+        "10:1838",
+        "10:1839"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1819",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 30,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1820",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 120.5,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1821",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 211,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1822",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 301.5,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1823",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 392,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1824",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 482.5,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1825",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 573,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1826",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 663.5,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1827",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 754,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1828",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 844.5,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1829",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 935,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1830",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 1025.5,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1831",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 1116,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1832",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 1206.5,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1833",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 1297,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1834",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 1387.5,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1835",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 1478,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1836",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 1568.5,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1837",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 1659,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1838",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 1749.5,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1839",
+      "parent": "10:1818",
+      "type": "RECTANGLE",
+      "x": 1840,
+      "y": 1819,
+      "w": 50,
+      "h": 50,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "10:1840",
+      "parent": "10:1794",
+      "type": "FRAME",
+      "x": 0,
+      "y": 425,
+      "w": 1920,
+      "h": 1324,
+      "fills": [],
+      "children": [
+        "10:1841",
+        "10:1859",
+        "10:1875",
+        "10:1889",
+        "10:1903",
+        "10:1917"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1841",
+      "parent": "10:1840",
+      "type": "FRAME",
+      "x": 0,
+      "y": 425,
+      "w": 1920,
+      "h": 292,
+      "fills": [],
+      "children": [
+        "10:1842",
+        "10:1843"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1842",
+      "parent": "10:1841",
+      "type": "VECTOR",
+      "x": 0,
+      "y": 425,
+      "w": 1920,
+      "h": 0,
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1843",
+      "parent": "10:1841",
+      "type": "FRAME",
+      "x": 30,
+      "y": 465,
+      "w": 1860,
+      "h": 252,
+      "fills": [],
+      "children": [
+        "10:1844",
+        "10:1857"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1844",
+      "parent": "10:1843",
+      "type": "FRAME",
+      "x": 30,
+      "y": 465,
+      "w": 1036,
+      "h": 252,
+      "fills": [],
+      "children": [
+        "10:1845",
+        "10:1854"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1845",
+      "parent": "10:1844",
+      "type": "FRAME",
+      "x": 30,
+      "y": 465,
+      "w": 350,
+      "h": 82,
+      "fills": [],
+      "children": [
+        "10:1846",
+        "10:1853"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1846",
+      "parent": "10:1845",
+      "type": "FRAME",
+      "x": 30,
+      "y": 465,
+      "w": 350,
+      "h": 44,
+      "fills": [],
+      "children": [
+        "10:1847",
+        "10:1849",
+        "10:1851"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1847",
+      "parent": "10:1846",
+      "type": "FRAME",
+      "x": 30,
+      "y": 465,
+      "w": 44,
+      "h": 44,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1848"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1848",
+      "parent": "10:1847",
+      "type": "TEXT",
+      "x": 40,
+      "y": 475,
+      "w": 24,
+      "h": 24,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.04313725605607033,
+            "g": 0.05098039284348488,
+            "b": 0.05882352963089943
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "01",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1849",
+      "parent": "10:1846",
+      "type": "FRAME",
+      "x": 80,
+      "y": 465,
+      "w": 55,
+      "h": 44,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.10000000149011612,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1850"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1850",
+      "parent": "10:1849",
+      "type": "TEXT",
+      "x": 90,
+      "y": 475,
+      "w": 35,
+      "h": 24,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Pun",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1851",
+      "parent": "10:1846",
+      "type": "FRAME",
+      "x": 141,
+      "y": 465,
+      "w": 77,
+      "h": 44,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.10000000149011612,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1852"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1852",
+      "parent": "10:1851",
+      "type": "TEXT",
+      "x": 151,
+      "y": 475,
+      "w": 57,
+      "h": 24,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "SOund",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1853",
+      "parent": "10:1845",
+      "type": "TEXT",
+      "x": 30,
+      "y": 525,
+      "w": 162,
+      "h": 22,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.800000011920929,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Airplane! (1980)",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1854",
+      "parent": "10:1844",
+      "type": "FRAME",
+      "x": 505,
+      "y": 465,
+      "w": 561,
+      "h": 252,
+      "fills": [],
+      "children": [
+        "10:1855",
+        "10:1856"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1855",
+      "parent": "10:1854",
+      "type": "TEXT",
+      "x": 505,
+      "y": 465,
+      "w": 561,
+      "h": 192,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Surely you can’t\nbe serious",
+      "fontName": {
+        "family": "TT Bluescreens Trial",
+        "style": "ExtraBold"
+      },
+      "fontSize": 120,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 80.0000011920929
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "LOWER",
+      "textAlignVertical": "TOP"
+    },
+    {
+      "id": "10:1856",
+      "parent": "10:1854",
+      "type": "TEXT",
+      "x": 505,
+      "y": 687,
+      "w": 561,
+      "h": 30,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "I am serious. And don’t call me Shirley.",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 25,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "ORIGINAL",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1857",
+      "parent": "10:1843",
+      "type": "FRAME",
+      "x": 1823,
+      "y": 465,
+      "w": 67,
+      "h": 67,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.10000000149011612,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1858"
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "clipsContent": true
+    },
+    {
+      "id": "10:1858",
+      "parent": "10:1857",
+      "type": "VECTOR",
+      "x": 1845,
+      "y": 510,
+      "w": 20,
+      "h": 20,
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 10,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1859",
+      "parent": "10:1840",
+      "type": "FRAME",
+      "x": 0,
+      "y": 757,
+      "w": 1920,
+      "h": 232,
+      "fills": [],
+      "children": [
+        "10:1860",
+        "10:1861"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1860",
+      "parent": "10:1859",
+      "type": "VECTOR",
+      "x": 0,
+      "y": 757,
+      "w": 1920,
+      "h": 0,
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1861",
+      "parent": "10:1859",
+      "type": "FRAME",
+      "x": 30,
+      "y": 797,
+      "w": 1860,
+      "h": 192,
+      "fills": [],
+      "children": [
+        "10:1862",
+        "10:1873"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1862",
+      "parent": "10:1861",
+      "type": "FRAME",
+      "x": 30,
+      "y": 797,
+      "w": 1111,
+      "h": 192,
+      "fills": [],
+      "children": [
+        "10:1863",
+        "10:1872"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1863",
+      "parent": "10:1862",
+      "type": "FRAME",
+      "x": 30,
+      "y": 797,
+      "w": 350,
+      "h": 82,
+      "fills": [],
+      "children": [
+        "10:1864",
+        "10:1871"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1864",
+      "parent": "10:1863",
+      "type": "FRAME",
+      "x": 30,
+      "y": 797,
+      "w": 350,
+      "h": 44,
+      "fills": [],
+      "children": [
+        "10:1865",
+        "10:1867",
+        "10:1869"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1865",
+      "parent": "10:1864",
+      "type": "FRAME",
+      "x": 30,
+      "y": 797,
+      "w": 44,
+      "h": 44,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1866"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1866",
+      "parent": "10:1865",
+      "type": "TEXT",
+      "x": 40,
+      "y": 807,
+      "w": 24,
+      "h": 24,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.04313725605607033,
+            "g": 0.05098039284348488,
+            "b": 0.05882352963089943
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "02",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1867",
+      "parent": "10:1864",
+      "type": "FRAME",
+      "x": 80,
+      "y": 797,
+      "w": 156,
+      "h": 44,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.10000000149011612,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1868"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1868",
+      "parent": "10:1867",
+      "type": "TEXT",
+      "x": 90,
+      "y": 807,
+      "w": 136,
+      "h": 24,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Broken idiom",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1869",
+      "parent": "10:1864",
+      "type": "FRAME",
+      "x": 242,
+      "y": 797,
+      "w": 111,
+      "h": 44,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.10000000149011612,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1870"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1870",
+      "parent": "10:1869",
+      "type": "TEXT",
+      "x": 252,
+      "y": 807,
+      "w": 91,
+      "h": 24,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Wordplay",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1871",
+      "parent": "10:1863",
+      "type": "TEXT",
+      "x": 30,
+      "y": 857,
+      "w": 334,
+      "h": 22,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.800000011920929,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Back to the Future Part II (1989)",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1872",
+      "parent": "10:1862",
+      "type": "TEXT",
+      "x": 505,
+      "y": 797,
+      "w": 636,
+      "h": 192,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Make like a tree\nand get out of here",
+      "fontName": {
+        "family": "TT Bluescreens Trial",
+        "style": "ExtraBold"
+      },
+      "fontSize": 120,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 80.0000011920929
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "LOWER",
+      "textAlignVertical": "TOP"
+    },
+    {
+      "id": "10:1873",
+      "parent": "10:1861",
+      "type": "FRAME",
+      "x": 1823,
+      "y": 797,
+      "w": 67,
+      "h": 67,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.10000000149011612,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1874"
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "clipsContent": true
+    },
+    {
+      "id": "10:1874",
+      "parent": "10:1873",
+      "type": "VECTOR",
+      "x": 1845,
+      "y": 842,
+      "w": 20,
+      "h": 20,
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 10,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1875",
+      "parent": "10:1840",
+      "type": "FRAME",
+      "x": 0,
+      "y": 1029,
+      "w": 1920,
+      "h": 232,
+      "fills": [],
+      "children": [
+        "10:1876",
+        "10:1877"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1876",
+      "parent": "10:1875",
+      "type": "VECTOR",
+      "x": 0,
+      "y": 1029,
+      "w": 1920,
+      "h": 0,
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1877",
+      "parent": "10:1875",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1069,
+      "w": 1860,
+      "h": 192,
+      "fills": [],
+      "children": [
+        "10:1878",
+        "10:1887"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1878",
+      "parent": "10:1877",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1069,
+      "w": 1218,
+      "h": 192,
+      "fills": [],
+      "children": [
+        "10:1879",
+        "10:1886"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1879",
+      "parent": "10:1878",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1069,
+      "w": 350,
+      "h": 104,
+      "fills": [],
+      "children": [
+        "10:1880",
+        "10:1885"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1880",
+      "parent": "10:1879",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1069,
+      "w": 350,
+      "h": 44,
+      "fills": [],
+      "children": [
+        "10:1881",
+        "10:1883"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1881",
+      "parent": "10:1880",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1069,
+      "w": 44,
+      "h": 44,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1882"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1882",
+      "parent": "10:1881",
+      "type": "TEXT",
+      "x": 40,
+      "y": 1079,
+      "w": 24,
+      "h": 24,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.04313725605607033,
+            "g": 0.05098039284348488,
+            "b": 0.05882352963089943
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "03",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1883",
+      "parent": "10:1880",
+      "type": "FRAME",
+      "x": 80,
+      "y": 1069,
+      "w": 178,
+      "h": 44,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.10000000149011612,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1884"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1884",
+      "parent": "10:1883",
+      "type": "TEXT",
+      "x": 90,
+      "y": 1079,
+      "w": 158,
+      "h": 24,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Double meaning",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1885",
+      "parent": "10:1879",
+      "type": "TEXT",
+      "x": 30,
+      "y": 1129,
+      "w": 283,
+      "h": 44,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.800000011920929,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Austin Powers: International\nMan of Mystery (1997)",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1886",
+      "parent": "10:1878",
+      "type": "TEXT",
+      "x": 505,
+      "y": 1069,
+      "w": 743,
+      "h": 192,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Who does Number Two\nwork for?",
+      "fontName": {
+        "family": "TT Bluescreens Trial",
+        "style": "ExtraBold"
+      },
+      "fontSize": 120,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 80.0000011920929
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "LOWER",
+      "textAlignVertical": "TOP"
+    },
+    {
+      "id": "10:1887",
+      "parent": "10:1877",
+      "type": "FRAME",
+      "x": 1823,
+      "y": 1069,
+      "w": 67,
+      "h": 67,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.10000000149011612,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1888"
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "clipsContent": true
+    },
+    {
+      "id": "10:1888",
+      "parent": "10:1887",
+      "type": "VECTOR",
+      "x": 1845,
+      "y": 1114,
+      "w": 20,
+      "h": 20,
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 10,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1889",
+      "parent": "10:1840",
+      "type": "FRAME",
+      "x": 0,
+      "y": 1301,
+      "w": 1920,
+      "h": 232,
+      "fills": [],
+      "children": [
+        "10:1890",
+        "10:1891"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1890",
+      "parent": "10:1889",
+      "type": "VECTOR",
+      "x": 0,
+      "y": 1301,
+      "w": 1920,
+      "h": 0,
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1891",
+      "parent": "10:1889",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1341,
+      "w": 1860,
+      "h": 192,
+      "fills": [],
+      "children": [
+        "10:1892",
+        "10:1901"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1892",
+      "parent": "10:1891",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1341,
+      "w": 864,
+      "h": 192,
+      "fills": [],
+      "children": [
+        "10:1893",
+        "10:1900"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1893",
+      "parent": "10:1892",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1341,
+      "w": 350,
+      "h": 82,
+      "fills": [],
+      "children": [
+        "10:1894",
+        "10:1899"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1894",
+      "parent": "10:1893",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1341,
+      "w": 350,
+      "h": 44,
+      "fills": [],
+      "children": [
+        "10:1895",
+        "10:1897"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1895",
+      "parent": "10:1894",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1341,
+      "w": 44,
+      "h": 44,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1896"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1896",
+      "parent": "10:1895",
+      "type": "TEXT",
+      "x": 40,
+      "y": 1351,
+      "w": 24,
+      "h": 24,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.04313725605607033,
+            "g": 0.05098039284348488,
+            "b": 0.05882352963089943
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "04",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1897",
+      "parent": "10:1894",
+      "type": "FRAME",
+      "x": 80,
+      "y": 1341,
+      "w": 189,
+      "h": 44,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.10000000149011612,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1898"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1898",
+      "parent": "10:1897",
+      "type": "TEXT",
+      "x": 90,
+      "y": 1351,
+      "w": 169,
+      "h": 24,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Visual wordplay",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1899",
+      "parent": "10:1893",
+      "type": "TEXT",
+      "x": 30,
+      "y": 1401,
+      "w": 172,
+      "h": 22,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.800000011920929,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Sherlock — S02E01",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1900",
+      "parent": "10:1892",
+      "type": "TEXT",
+      "x": 505,
+      "y": 1341,
+      "w": 389,
+      "h": 192,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "I am\nSher locked",
+      "fontName": {
+        "family": "TT Bluescreens Trial",
+        "style": "ExtraBold"
+      },
+      "fontSize": 120,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 80.0000011920929
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "LOWER",
+      "textAlignVertical": "TOP"
+    },
+    {
+      "id": "10:1901",
+      "parent": "10:1891",
+      "type": "FRAME",
+      "x": 1823,
+      "y": 1341,
+      "w": 67,
+      "h": 67,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.10000000149011612,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1902"
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "clipsContent": true
+    },
+    {
+      "id": "10:1902",
+      "parent": "10:1901",
+      "type": "VECTOR",
+      "x": 1845,
+      "y": 1386,
+      "w": 20,
+      "h": 20,
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 10,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1903",
+      "parent": "10:1840",
+      "type": "FRAME",
+      "x": 0,
+      "y": 1573,
+      "w": 1920,
+      "h": 136,
+      "fills": [],
+      "children": [
+        "10:1904",
+        "10:1905"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1904",
+      "parent": "10:1903",
+      "type": "VECTOR",
+      "x": 0,
+      "y": 1573,
+      "w": 1920,
+      "h": 0,
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1905",
+      "parent": "10:1903",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1613,
+      "w": 1860,
+      "h": 96,
+      "fills": [],
+      "children": [
+        "10:1906",
+        "10:1915"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1906",
+      "parent": "10:1905",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1613,
+      "w": 953,
+      "h": 96,
+      "fills": [],
+      "children": [
+        "10:1907",
+        "10:1914"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1907",
+      "parent": "10:1906",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1613,
+      "w": 350,
+      "h": 82,
+      "fills": [],
+      "children": [
+        "10:1908",
+        "10:1913"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1908",
+      "parent": "10:1907",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1613,
+      "w": 350,
+      "h": 44,
+      "fills": [],
+      "children": [
+        "10:1909",
+        "10:1911"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1909",
+      "parent": "10:1908",
+      "type": "FRAME",
+      "x": 30,
+      "y": 1613,
+      "w": 44,
+      "h": 44,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1910"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1910",
+      "parent": "10:1909",
+      "type": "TEXT",
+      "x": 40,
+      "y": 1623,
+      "w": 24,
+      "h": 24,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.04313725605607033,
+            "g": 0.05098039284348488,
+            "b": 0.05882352963089943
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "05",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1911",
+      "parent": "10:1908",
+      "type": "FRAME",
+      "x": 80,
+      "y": 1613,
+      "w": 223,
+      "h": 44,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.10000000149011612,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1912"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1912",
+      "parent": "10:1911",
+      "type": "TEXT",
+      "x": 90,
+      "y": 1623,
+      "w": 203,
+      "h": 24,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Cultural reference",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1913",
+      "parent": "10:1907",
+      "type": "TEXT",
+      "x": 30,
+      "y": 1673,
+      "w": 183,
+      "h": 22,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.800000011920929,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "The Shining (1980)",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1914",
+      "parent": "10:1906",
+      "type": "TEXT",
+      "x": 505,
+      "y": 1613,
+      "w": 478,
+      "h": 96,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Here’s Johnny!",
+      "fontName": {
+        "family": "TT Bluescreens Trial",
+        "style": "ExtraBold"
+      },
+      "fontSize": 120,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 80.0000011920929
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "LOWER",
+      "textAlignVertical": "TOP"
+    },
+    {
+      "id": "10:1915",
+      "parent": "10:1905",
+      "type": "FRAME",
+      "x": 1823,
+      "y": 1613,
+      "w": 67,
+      "h": 67,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.10000000149011612,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1916"
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "clipsContent": true
+    },
+    {
+      "id": "10:1916",
+      "parent": "10:1915",
+      "type": "VECTOR",
+      "x": 1845,
+      "y": 1658,
+      "w": 20,
+      "h": 20,
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 10,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1917",
+      "parent": "10:1840",
+      "type": "VECTOR",
+      "x": 0,
+      "y": 1749,
+      "w": 1920,
+      "h": 0,
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1918",
+      "parent": "10:1794",
+      "type": "TEXT",
+      "x": 30,
+      "y": 150,
+      "w": 642,
+      "h": 80,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Ты слышишь фразу.",
+      "fontName": {
+        "family": "TT Bluescreens Trial",
+        "style": "ExtraBold"
+      },
+      "fontSize": 100,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 80.0000011920929
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "TOP"
+    },
+    {
+      "id": "10:1919",
+      "parent": "10:1794",
+      "type": "FRAME",
+      "x": 30,
+      "y": 245,
+      "w": 679,
+      "h": 120,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1920"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1920",
+      "parent": "10:1919",
+      "type": "TEXT",
+      "x": 50,
+      "y": 265,
+      "w": 639,
+      "h": 80,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.04313725605607033,
+            "g": 0.05098039284348488,
+            "b": 0.05882352963089943
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Что остаётся за ней?",
+      "fontName": {
+        "family": "TT Bluescreens Trial",
+        "style": "ExtraBold"
+      },
+      "fontSize": 100,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 80.0000011920929
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "TOP"
+    }
+  ],
+  "stage": "1B.5",
+  "fileKey": "H4HI00uGY2UOxpcfHogUat",
+  "sessionId": "ce5b7985-a395-4f25-9603-dee81a09f416",
+  "vectorTransforms": [
+    {
+      "id": "10:1858",
+      "relativeTransform": [
+        [
+          1,
+          0,
+          22
+        ],
+        [
+          0,
+          -1,
+          45
+        ]
+      ],
+      "bounds": {
+        "x": 6119,
+        "y": 13457,
+        "width": 20,
+        "height": 20
+      },
+      "renderBounds": {
+        "x": 6115.46435546875,
+        "y": 13452,
+        "width": 28.53564453125,
+        "height": 28.53515625
+      }
+    },
+    {
+      "id": "10:1874",
+      "relativeTransform": [
+        [
+          1,
+          0,
+          22
+        ],
+        [
+          0,
+          -1,
+          45
+        ]
+      ],
+      "bounds": {
+        "x": 6119,
+        "y": 13789,
+        "width": 20,
+        "height": 20
+      },
+      "renderBounds": {
+        "x": 6115.46435546875,
+        "y": 13784,
+        "width": 28.53564453125,
+        "height": 28.53515625
+      }
+    },
+    {
+      "id": "10:1888",
+      "relativeTransform": [
+        [
+          1,
+          0,
+          22
+        ],
+        [
+          0,
+          -1,
+          45
+        ]
+      ],
+      "bounds": {
+        "x": 6119,
+        "y": 14061,
+        "width": 20,
+        "height": 20
+      },
+      "renderBounds": {
+        "x": 6115.46435546875,
+        "y": 14056,
+        "width": 28.53564453125,
+        "height": 28.53515625
+      }
+    },
+    {
+      "id": "10:1902",
+      "relativeTransform": [
+        [
+          1,
+          0,
+          22
+        ],
+        [
+          0,
+          -1,
+          45
+        ]
+      ],
+      "bounds": {
+        "x": 6119,
+        "y": 14333,
+        "width": 20,
+        "height": 20
+      },
+      "renderBounds": {
+        "x": 6115.46435546875,
+        "y": 14328,
+        "width": 28.53564453125,
+        "height": 28.53515625
+      }
+    },
+    {
+      "id": "10:1916",
+      "relativeTransform": [
+        [
+          1,
+          0,
+          22
+        ],
+        [
+          0,
+          -1,
+          45
+        ]
+      ],
+      "bounds": {
+        "x": 6119,
+        "y": 14605,
+        "width": 20,
+        "height": 20
+      },
+      "renderBounds": {
+        "x": 6115.46435546875,
+        "y": 14600,
+        "width": 28.53564453125,
+        "height": 28.53515625
+      }
+    }
+  ],
+  "vectorTransformSource": "Existing VECTOR_ASSET_SOURCE.json exactVectorMetadata; movie arrows are vertically reflected instances of the existing hero-cta-arrow contour."
+}
