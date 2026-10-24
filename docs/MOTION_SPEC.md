@@ -9,7 +9,7 @@
 | Emptiness | `10:838` | Reconstructed/blocked perception through tiles, possible scroll reveal | Keep layers separate |
 | Elephant | `10:917` | Four conceptual layers revealed in reading order | Static four levels, then motion |
 | Idiom | `10:1431`, `10:1596` | Ice/telephone before ↔ after | Click/hover/touch, replay, reduced motion |
-| Pun | `10:1495`, `10:1981` | Bicycle before ↔ fallen/wordplay | Click/hover/touch, replay, reduced motion |
+| Pun | `10:1495`, `10:1981` | Whole bicycle composite rotates ≈34.37°; verified endpoints below | Click/hover/touch, replay, reduced motion |
 | Double meaning | `10:1528`, `10:2017` | Eye image / two readings | Click/hover/touch with visible alternative |
 | Cultural reference | `10:1560`, `10:2049` | Snowflake → throne | Click/hover/touch, replay, reduced motion |
 | Movies | `10:1794` | Five scene cards with contextual reveal and/or video preview | Video state ownership; pause offscreen, hidden tab, reduced-motion handling |
@@ -80,3 +80,65 @@ The telephone has two original **1792 × 2400** fills: hidden JPEG `bfdc63b7bc0f
 **Feasible:** eight ice wrappers plus one telephone can be transformed independently. Each wrapper must carry its image crop and Boolean mask as one object. Reuse the seven original ice textures and six clipping masks across states; no duplicate state bitmaps are needed. Independent transforms of the two lower objects remain possible despite their shared imageHash.
 
 **Not specified by these frames:** trigger, duration/easing, telephone entry pose/path, transform origins, replay/reset, interruption behavior and when/how the upper-left shard changes stacking relative to the mosaic. Do not infer ice displacement or an explosion from these static endpoints. Decide these in the motion stage before implementation, along with keyboard/touch access and a prefers-reduced-motion alternative that exposes the meaning/state without requiring movement. No scroll hijacking is authorized. No animation, CSS layout or interaction has been implemented in this import stage.
+
+## Stage 0.2D.2 — verified Pun endpoints (2026-10-24)
+
+Scope: illustration layers in **A `10:1495`** and **B `10:1981`**, both 1920 × 1080 with frame clipping enabled. Exact raw coordinates, frame-projected transforms, fills, bounds and source checksums are in `docs/PUN_ASSET_IMPORT.json`. This is endpoint documentation; no transition has been implemented.
+
+**Observed change:** B rotates the entire bicycle composite approximately **34.367141° clockwise** about the initial composite center **(417.5, 692.5)**. Both PNG layers share this transformation; their source hashes, dimensions, FILL settings, opacity, visibility and paint order are unchanged. No wheel detachment, independent wheel rotation, changed drawing or new layer is shown. The upper-left anchor shifts because the composite rotates about its center, not because the two layers move apart. There is no measurable scale change: B/A is 1 × 1, within floating-point tolerance (matrix column lengths ≈1.00000000096).
+
+### Object correspondence and layering
+
+Positions below use the translation of each measured **frame-local transform**, before the axis-aligned rotated bounding box is calculated. All values are in design pixels. Raw node x/y in B are (392.1649169922, 78.5206527710); subtracting absolute frame coordinates yields the translation below, differing by less than 0.00015 px. Both forms are retained in the JSON. Paint paths are zero-based child indices, back to front, from the frame through groups; they remain unchanged in B.
+
+| Object | A node → B node | Frame-local origin A → B | Local dimensions A = B | Figma rotation A → B | Paint path A = B |
+|---|---|---|---|---|---|
+| Composite group | `10:1975` → `10:2012` | (50, 200) → (392.1650390625, 78.5205078125) | 735 × 985 | 0° → -34.3671413753° | 5 |
+| Bicycle subgroup | `10:1976` → `10:2013` | same as composite | 735 × 985 | 0° → -34.3671413753° | 5 / 0 |
+| Whole bicycle bitmap | `10:1977` → `10:2014` | same as composite | 735 × 985 | 0° → -34.3671413753° | 5 / 0 / 0 |
+| Wheel-pair subgroup | `10:1978` → `10:2015` | same as composite | 735 × 984 | 0° → -34.3671413753° | 5 / 1 |
+| Wheel-pair bitmap | `10:1979` → `10:2016` | same as composite | 735 × 984 | 0° → -34.3671413753° | 5 / 1 / 0 |
+| Mosaic | `10:1496` → `10:1982` | (0, 0) → (0, 0) | 1920 × 1080 | 0° → 0° | 0 |
+
+The mosaic remains **below** both image layers. The complete bicycle image is painted first; the extracted wheel pair overlays it. Interface layers occupy frame indices 1–4; the illustration group remains index 5 in both states. The wheel layer's **984px** height differs from the bicycle layer's **985px** height by design; do not normalize these heights when aligning the images.
+
+For either bitmap, using local bitmap-slot coordinates `(u, v)`, the frame projection is:
+
+- A: `x = u + 50`, `y = v + 200`.
+- B: `x = 0.8254373669624329u - 0.564493715763092v + 392.1650390625`, `y = 0.564493715763092u + 0.8254373669624329v + 78.5205078125`.
+
+Figma reports -34.367141°; the positive sine in the y-down frame matrix corresponds to **+34.367141° clockwise in CSS**. Use the measured frame projection once. The API returns repeated group/descendant coordinate transforms here; do not add the translation or apply the rotation once per nested group. For later DOM nesting, derive child-local transforms from the frame matrices, or use a single transformed wrapper containing the two aligned bitmap slots.
+
+B's rotated canvas bounds are approximately:
+
+| Object | Bounding x | Bounding y | Bounding width | Bounding height |
+|---|---:|---:|---:|---:|
+| Composite / bicycle canvas | -163.861271 | 78.520508 | 1162.722775 | 1227.958688 |
+| Wheel-pair canvas | -163.296777 | 78.520508 | 1162.158281 | 1227.133250 |
+
+These are full **transparent-canvas** bounds, not visible silhouette bounds. A's bicycle canvas extends to y=1185 and the wheel canvas to y=1184; both states are clipped by their 1080px frame. Preserve this clipping rather than trimming sources or treating the rotated bounds as slot dimensions. The slightly different wheel canvas center follows the common group pivot; do not rotate the 984px wheel layer around an independently chosen center if reproducing B.
+
+### Sources, fills, transparency and masks
+
+All four originals are **1792 × 2400** and are reused between A and B, one local file per imageHash:
+
+| Object / fill | imageHash | File under `public/assets/images/` | Visibility in A and B |
+|---|---|---|---|
+| Bicycle JPEG | `f896e935d71fd96ad289d93b7e8ce7d177767633` | `pun-bicycle-base.jpg` | Hidden |
+| Bicycle PNG | `062b06beeb916ea58e9db0134f2d6a1ba921958a` | `pun-bicycle-cutout.png` | Visible |
+| Wheel-pair JPEG | `abafb5e224150ff4820d1e37233090f06e1e9689` | `pun-wheels-base.jpg` | Hidden |
+| Wheel-pair PNG | `173aa0acd8edfb44bd3dee924ff505e613162e4f` | `pun-wheels-cutout.png` | Visible |
+
+Each node has hidden JPEG followed by visible PNG; keep the JPEG originals without enabling them behind the transparent artwork. Both visible PNG fills use NORMAL blend, opacity 1, FILL mode, identity imageTransform and stored `scalingFactor: 0.5`. There is no custom CROP transform. Retain the full original canvas and exact slot aspect ratios, including the slight cover crop implicit in FILL. The fill scalingFactor is source metadata, not the endpoint scale change.
+
+There are **no explicit Figma masks, Boolean subtractions or external clipping shapes** in the inspected illustration subtree. PNG alpha provides the silhouette; rectangular slot cover and frame clipping provide the remaining clipping. No additional mask file is needed. Both PNGs have real fully transparent and partially transparent pixels. The bicycle PNG contains 10 faint source-edge samples at alpha 1–3, so its nonzero-alpha bounds technically span the canvas; these original pixels were retained without cleanup. Its alpha>8 bounds are (89, 487)–(1702, 1864). Wheel-pair nonzero-alpha bounds are (89, 914)–(1702, 1864). Do not reposition either layer by visible-content bounds or discard its transparent margins.
+
+### Independent animation feasibility
+
+The existing art supports **two independently transformable bitmap wrappers**, and the complete composite can rotate together as shown by A/B. However:
+
+- The lower PNG already contains the whole bicycle: frame, saddle, handlebar, crank, pedals **and both original wheels** are fused in one image.
+- The upper PNG contains **both extracted wheels together**. There are no independent left/right wheel nodes, masks or files.
+- Moving the wheel-pair overlay away exposes the original wheels underneath. A clean wheel-free frame and independently detached wheels are therefore **not available as supplied**. Such motion requires separately agreed source preparation/masking; it must not be claimed complete from these assets or improvised in this import stage.
+
+The observed endpoints are achievable with existing files. Trigger, duration/easing, path, replay/reset, interruption handling and keyboard/touch controls remain decisions for the motion stage. A prefers-reduced-motion option should expose both states/meaning without requiring rotation. No scroll hijacking is authorized. No layout, animation, new wheel isolation or dependency installation was performed.

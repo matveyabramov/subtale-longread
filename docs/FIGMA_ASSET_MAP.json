@@ -127,7 +127,7 @@
       "sourceWidth": 1792,
       "sourceHeight": 2400,
       "occurrences": 2,
-      "localPath": null
+      "localPath": "public/assets/images/pun-bicycle-base.jpg"
     },
     {
       "hash": "062b06beeb916ea58e9db0134f2d6a1ba921958a",
@@ -136,7 +136,7 @@
       "sourceWidth": 1792,
       "sourceHeight": 2400,
       "occurrences": 2,
-      "localPath": null
+      "localPath": "public/assets/images/pun-bicycle-cutout.png"
     },
     {
       "hash": "abafb5e224150ff4820d1e37233090f06e1e9689",
@@ -145,7 +145,7 @@
       "sourceWidth": 1792,
       "sourceHeight": 2400,
       "occurrences": 2,
-      "localPath": null
+      "localPath": "public/assets/images/pun-wheels-base.jpg"
     },
     {
       "hash": "173aa0acd8edfb44bd3dee924ff505e613162e4f",
@@ -154,7 +154,7 @@
       "sourceWidth": 1792,
       "sourceHeight": 2400,
       "occurrences": 2,
-      "localPath": null
+      "localPath": "public/assets/images/pun-wheels-cutout.png"
     },
     {
       "hash": "a9f463489c07be031417200565743725d6a366ac",

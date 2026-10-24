@@ -1,0 +1,1400 @@
+{
+  "stage": "0.2D.2",
+  "date": "2026-10-24",
+  "figmaFileKey": "H4HI00uGY2UOxpcfHogUat",
+  "frameNodeIds": [
+    "10:1495",
+    "10:1981"
+  ],
+  "newFiles": 4,
+  "newBytes": 6756447,
+  "method": "Original Figma MCP raw image downloads, checked against getImageByHash().getBytesAsync() byte count and FNV-1a. No resize, crop, alpha cleanup or re-encoding of originals.",
+  "assets": [
+    {
+      "hash": "f896e935d71fd96ad289d93b7e8ce7d177767633",
+      "bytes": 1637962,
+      "fnv1a": "65e0a94a",
+      "format": "jpg",
+      "width": 1792,
+      "height": 2400,
+      "nodeId": "10:1977",
+      "localPath": "public/assets/images/pun-bicycle-base.jpg",
+      "sha256": "36102c58ea1e5c1a98465865849c0320b8fd12143c14892668eebff6f6967777",
+      "pixelQA": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "width": 1792,
+        "height": 2400,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0,
+        "transparentEdgePixels": 0,
+        "alphaBounds": [
+          0,
+          0,
+          1792,
+          2400
+        ]
+      }
+    },
+    {
+      "hash": "062b06beeb916ea58e9db0134f2d6a1ba921958a",
+      "bytes": 2600467,
+      "fnv1a": "9943f803",
+      "format": "png",
+      "width": 1792,
+      "height": 2400,
+      "nodeId": "10:1977",
+      "localPath": "public/assets/images/pun-bicycle-cutout.png",
+      "sha256": "47a9262b37bbcbdc9e68da7aa627f3c4ccfe14352252f4dfd8093b31acb3c24f",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1792,
+        "height": 2400,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 3410902,
+        "partialAlphaPixels": 773328,
+        "transparentEdgePixels": 8374,
+        "alphaBounds": [
+          0,
+          0,
+          1792,
+          2400
+        ],
+        "nonzeroEdgeAlphaHistogram": {
+          "1": 5,
+          "2": 2,
+          "3": 3
+        },
+        "alphaBoundsAbove8": [
+          89,
+          487,
+          1702,
+          1864
+        ]
+      }
+    },
+    {
+      "hash": "abafb5e224150ff4820d1e37233090f06e1e9689",
+      "bytes": 1558592,
+      "fnv1a": "ad1020fb",
+      "format": "jpg",
+      "width": 1792,
+      "height": 2400,
+      "nodeId": "10:1979",
+      "localPath": "public/assets/images/pun-wheels-base.jpg",
+      "sha256": "d6cdb153eaaa8bd19132f90f893878d378d5034357fa27047f0bacb477dbdf55",
+      "pixelQA": {
+        "format": "JPEG",
+        "mode": "RGB",
+        "width": 1792,
+        "height": 2400,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0,
+        "transparentEdgePixels": 0,
+        "alphaBounds": [
+          0,
+          0,
+          1792,
+          2400
+        ]
+      }
+    },
+    {
+      "hash": "173aa0acd8edfb44bd3dee924ff505e613162e4f",
+      "bytes": 959426,
+      "fnv1a": "d3b4bb6c",
+      "format": "png",
+      "width": 1792,
+      "height": 2400,
+      "nodeId": "10:1979",
+      "localPath": "public/assets/images/pun-wheels-cutout.png",
+      "sha256": "ab49220c877c0e85abbc83d418cfeafbea3590604fa29657d4191561c1ba2abc",
+      "pixelQA": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "width": 1792,
+        "height": 2400,
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "transparentPixels": 3392054,
+        "partialAlphaPixels": 22290,
+        "transparentEdgePixels": 8384,
+        "alphaBounds": [
+          89,
+          914,
+          1702,
+          1864
+        ]
+      }
+    }
+  ],
+  "reusedTexture": {
+    "hash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
+    "bytes": 43725,
+    "fnv1a": "d0cf41a0",
+    "format": "png",
+    "width": 397,
+    "height": 322,
+    "localPath": "public/assets/images/mosaic-texture.png",
+    "originalBytesVerified": true
+  },
+  "objectMapping": [
+    {
+      "from": "10:1975",
+      "to": "10:2012",
+      "role": "Composite group",
+      "sourceSize": {
+        "width": 735,
+        "height": 985
+      },
+      "A": {
+        "x": 50,
+        "y": 200,
+        "rotation": 0,
+        "paintOrder": 5,
+        "frameTransform": [
+          [
+            1,
+            0,
+            50
+          ],
+          [
+            0,
+            1,
+            200
+          ]
+        ],
+        "bounds": {
+          "x": 50,
+          "y": 200,
+          "width": 735,
+          "height": 985
+        }
+      },
+      "B": {
+        "x": 392.1649169921875,
+        "y": 78.5206527709961,
+        "rotation": -34.36714137526945,
+        "paintOrder": 5,
+        "frameTransform": [
+          [
+            0.8254373669624329,
+            -0.564493715763092,
+            392.1650390625
+          ],
+          [
+            0.564493715763092,
+            0.8254373669624329,
+            78.5205078125
+          ]
+        ],
+        "bounds": {
+          "x": -163.86127096414566,
+          "y": 78.5205078125,
+          "width": 1162.7227747440338,
+          "height": 1227.958687543869
+        }
+      },
+      "scaleBRelativeToA": {
+        "x": 1.0000000009569483,
+        "y": 1.0000000009569483
+      },
+      "imageHashes": []
+    },
+    {
+      "from": "10:1976",
+      "to": "10:2013",
+      "role": "Whole-bicycle subgroup",
+      "sourceSize": {
+        "width": 735,
+        "height": 985
+      },
+      "A": {
+        "x": 50,
+        "y": 200,
+        "rotation": 0,
+        "paintOrder": 0,
+        "frameTransform": [
+          [
+            1,
+            0,
+            50
+          ],
+          [
+            0,
+            1,
+            200
+          ]
+        ],
+        "bounds": {
+          "x": 50,
+          "y": 200,
+          "width": 735,
+          "height": 985
+        }
+      },
+      "B": {
+        "x": 392.1649169921875,
+        "y": 78.5206527709961,
+        "rotation": -34.36714137526945,
+        "paintOrder": 0,
+        "frameTransform": [
+          [
+            0.8254373669624329,
+            -0.564493715763092,
+            392.1650390625
+          ],
+          [
+            0.564493715763092,
+            0.8254373669624329,
+            78.5205078125
+          ]
+        ],
+        "bounds": {
+          "x": -163.86127096414566,
+          "y": 78.5205078125,
+          "width": 1162.7227747440338,
+          "height": 1227.958687543869
+        }
+      },
+      "scaleBRelativeToA": {
+        "x": 1.0000000009569483,
+        "y": 1.0000000009569483
+      },
+      "imageHashes": []
+    },
+    {
+      "from": "10:1977",
+      "to": "10:2014",
+      "role": "Whole bicycle including its original wheels",
+      "sourceSize": {
+        "width": 735,
+        "height": 985
+      },
+      "A": {
+        "x": 50,
+        "y": 200,
+        "rotation": 0,
+        "paintOrder": 0,
+        "frameTransform": [
+          [
+            1,
+            0,
+            50
+          ],
+          [
+            0,
+            1,
+            200
+          ]
+        ],
+        "bounds": {
+          "x": 50,
+          "y": 200,
+          "width": 735,
+          "height": 985
+        }
+      },
+      "B": {
+        "x": 392.1649169921875,
+        "y": 78.5206527709961,
+        "rotation": -34.36714137526945,
+        "paintOrder": 0,
+        "frameTransform": [
+          [
+            0.8254373669624329,
+            -0.564493715763092,
+            392.1650390625
+          ],
+          [
+            0.564493715763092,
+            0.8254373669624329,
+            78.5205078125
+          ]
+        ],
+        "bounds": {
+          "x": -163.86127096414566,
+          "y": 78.5205078125,
+          "width": 1162.7227747440338,
+          "height": 1227.958687543869
+        }
+      },
+      "scaleBRelativeToA": {
+        "x": 1.0000000009569483,
+        "y": 1.0000000009569483
+      },
+      "imageHashes": [
+        "f896e935d71fd96ad289d93b7e8ce7d177767633",
+        "062b06beeb916ea58e9db0134f2d6a1ba921958a"
+      ]
+    },
+    {
+      "from": "10:1978",
+      "to": "10:2015",
+      "role": "Wheel-pair subgroup",
+      "sourceSize": {
+        "width": 735,
+        "height": 984
+      },
+      "A": {
+        "x": 50,
+        "y": 200,
+        "rotation": 0,
+        "paintOrder": 1,
+        "frameTransform": [
+          [
+            1,
+            0,
+            50
+          ],
+          [
+            0,
+            1,
+            200
+          ]
+        ],
+        "bounds": {
+          "x": 50,
+          "y": 200,
+          "width": 735,
+          "height": 984
+        }
+      },
+      "B": {
+        "x": 392.1649169921875,
+        "y": 78.5206527709961,
+        "rotation": -34.36714137526945,
+        "paintOrder": 1,
+        "frameTransform": [
+          [
+            0.8254373669624329,
+            -0.564493715763092,
+            392.1650390625
+          ],
+          [
+            0.564493715763092,
+            0.8254373669624329,
+            78.5205078125
+          ]
+        ],
+        "bounds": {
+          "x": -163.29677724838257,
+          "y": 78.5205078125,
+          "width": 1162.1582810282707,
+          "height": 1227.1332501769066
+        }
+      },
+      "scaleBRelativeToA": {
+        "x": 1.0000000009569483,
+        "y": 1.0000000009569483
+      },
+      "imageHashes": []
+    },
+    {
+      "from": "10:1979",
+      "to": "10:2016",
+      "role": "Both extracted wheels in one bitmap",
+      "sourceSize": {
+        "width": 735,
+        "height": 984
+      },
+      "A": {
+        "x": 50,
+        "y": 200,
+        "rotation": 0,
+        "paintOrder": 0,
+        "frameTransform": [
+          [
+            1,
+            0,
+            50
+          ],
+          [
+            0,
+            1,
+            200
+          ]
+        ],
+        "bounds": {
+          "x": 50,
+          "y": 200,
+          "width": 735,
+          "height": 984
+        }
+      },
+      "B": {
+        "x": 392.1649169921875,
+        "y": 78.5206527709961,
+        "rotation": -34.36714137526945,
+        "paintOrder": 0,
+        "frameTransform": [
+          [
+            0.8254373669624329,
+            -0.564493715763092,
+            392.1650390625
+          ],
+          [
+            0.564493715763092,
+            0.8254373669624329,
+            78.5205078125
+          ]
+        ],
+        "bounds": {
+          "x": -163.29677724838257,
+          "y": 78.5205078125,
+          "width": 1162.1582810282707,
+          "height": 1227.1332501769066
+        }
+      },
+      "scaleBRelativeToA": {
+        "x": 1.0000000009569483,
+        "y": 1.0000000009569483
+      },
+      "imageHashes": [
+        "abafb5e224150ff4820d1e37233090f06e1e9689",
+        "173aa0acd8edfb44bd3dee924ff505e613162e4f"
+      ]
+    },
+    {
+      "from": "10:1496",
+      "to": "10:1982",
+      "role": "Existing mosaic",
+      "sourceSize": {
+        "width": 1920,
+        "height": 1080
+      },
+      "A": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "paintOrder": 0,
+        "frameTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        }
+      },
+      "B": {
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "paintOrder": 0,
+        "frameTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        }
+      },
+      "scaleBRelativeToA": {
+        "x": 1,
+        "y": 1
+      },
+      "imageHashes": [
+        "6be621144e7ecf462b8e2789f21ec8f7499d659e"
+      ]
+    }
+  ],
+  "states": [
+    {
+      "nodeId": "10:1495",
+      "width": 1920,
+      "height": 1080,
+      "clipsContent": true,
+      "nodes": [
+        {
+          "nodeId": "10:1496",
+          "parentId": "10:1495",
+          "type": "RECTANGLE",
+          "name": "Mosaic",
+          "paintOrder": 0,
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 0.4000000059604645,
+              "blendMode": "NORMAL",
+              "scaleMode": "TILE",
+              "scalingFactor": 0.8942065238952637,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e"
+            }
+          ],
+          "isMask": false,
+          "cornerRadius": 0,
+          "strokes": [],
+          "effects": []
+        },
+        {
+          "nodeId": "10:1975",
+          "parentId": "10:1495",
+          "type": "GROUP",
+          "name": "Group 14",
+          "paintOrder": 5,
+          "visible": true,
+          "opacity": 1,
+          "x": 50,
+          "y": 200,
+          "width": 735,
+          "height": 985,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              50
+            ],
+            [
+              0,
+              1,
+              200
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              50
+            ],
+            [
+              0,
+              1,
+              200
+            ]
+          ],
+          "isMask": false,
+          "effects": []
+        },
+        {
+          "nodeId": "10:1976",
+          "parentId": "10:1975",
+          "type": "GROUP",
+          "name": "Group 13",
+          "paintOrder": 0,
+          "visible": true,
+          "opacity": 1,
+          "x": 50,
+          "y": 200,
+          "width": 735,
+          "height": 985,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              50
+            ],
+            [
+              0,
+              1,
+              200
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              50
+            ],
+            [
+              0,
+              1,
+              200
+            ]
+          ],
+          "isMask": false,
+          "effects": []
+        },
+        {
+          "nodeId": "10:1977",
+          "parentId": "10:1976",
+          "type": "RECTANGLE",
+          "name": "Black_bicycle_vector_illustration_2K_20261023164203 1",
+          "paintOrder": 0,
+          "visible": true,
+          "opacity": 1,
+          "x": 50,
+          "y": 200,
+          "width": 735,
+          "height": 985,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              50
+            ],
+            [
+              0,
+              1,
+              200
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              50
+            ],
+            [
+              0,
+              1,
+              200
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": false,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "f896e935d71fd96ad289d93b7e8ce7d177767633"
+            },
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "062b06beeb916ea58e9db0134f2d6a1ba921958a"
+            }
+          ],
+          "isMask": false,
+          "cornerRadius": 0,
+          "strokes": [],
+          "effects": []
+        },
+        {
+          "nodeId": "10:1978",
+          "parentId": "10:1975",
+          "type": "GROUP",
+          "name": "Group 12",
+          "paintOrder": 1,
+          "visible": true,
+          "opacity": 1,
+          "x": 50,
+          "y": 200,
+          "width": 735,
+          "height": 984,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              50
+            ],
+            [
+              0,
+              1,
+              200
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              50
+            ],
+            [
+              0,
+              1,
+              200
+            ]
+          ],
+          "isMask": false,
+          "effects": []
+        },
+        {
+          "nodeId": "10:1979",
+          "parentId": "10:1978",
+          "type": "RECTANGLE",
+          "name": "Isolate_and_extract_only_the_2K_20261023164340 1",
+          "paintOrder": 0,
+          "visible": true,
+          "opacity": 1,
+          "x": 50,
+          "y": 200,
+          "width": 735,
+          "height": 984,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              50
+            ],
+            [
+              0,
+              1,
+              200
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              50
+            ],
+            [
+              0,
+              1,
+              200
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": false,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "abafb5e224150ff4820d1e37233090f06e1e9689"
+            },
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "173aa0acd8edfb44bd3dee924ff505e613162e4f"
+            }
+          ],
+          "isMask": false,
+          "cornerRadius": 0,
+          "strokes": [],
+          "effects": []
+        }
+      ]
+    },
+    {
+      "nodeId": "10:1981",
+      "width": 1920,
+      "height": 1080,
+      "clipsContent": true,
+      "nodes": [
+        {
+          "nodeId": "10:1982",
+          "parentId": "10:1981",
+          "type": "RECTANGLE",
+          "name": "Mosaic",
+          "paintOrder": 0,
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "rotation": 0,
+          "relativeTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "frameTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 0.4000000059604645,
+              "blendMode": "NORMAL",
+              "scaleMode": "TILE",
+              "scalingFactor": 0.8942065238952637,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e"
+            }
+          ],
+          "isMask": false,
+          "cornerRadius": 0,
+          "strokes": [],
+          "effects": []
+        },
+        {
+          "nodeId": "10:2012",
+          "parentId": "10:1981",
+          "type": "GROUP",
+          "name": "Group 14",
+          "paintOrder": 5,
+          "visible": true,
+          "opacity": 1,
+          "x": 392.1649169921875,
+          "y": 78.5206527709961,
+          "width": 735,
+          "height": 985,
+          "rotation": -34.36714137526945,
+          "relativeTransform": [
+            [
+              0.8254373669624329,
+              -0.564493715763092,
+              392.1649169921875
+            ],
+            [
+              0.564493715763092,
+              0.8254373669624329,
+              78.5206527709961
+            ]
+          ],
+          "frameTransform": [
+            [
+              0.8254373669624329,
+              -0.564493715763092,
+              392.1650390625
+            ],
+            [
+              0.564493715763092,
+              0.8254373669624329,
+              78.5205078125
+            ]
+          ],
+          "isMask": false,
+          "effects": []
+        },
+        {
+          "nodeId": "10:2013",
+          "parentId": "10:2012",
+          "type": "GROUP",
+          "name": "Group 13",
+          "paintOrder": 0,
+          "visible": true,
+          "opacity": 1,
+          "x": 392.1649169921875,
+          "y": 78.5206527709961,
+          "width": 735,
+          "height": 985,
+          "rotation": -34.36714137526945,
+          "relativeTransform": [
+            [
+              0.8254373669624329,
+              -0.564493715763092,
+              392.1649169921875
+            ],
+            [
+              0.564493715763092,
+              0.8254373669624329,
+              78.5206527709961
+            ]
+          ],
+          "frameTransform": [
+            [
+              0.8254373669624329,
+              -0.564493715763092,
+              392.1650390625
+            ],
+            [
+              0.564493715763092,
+              0.8254373669624329,
+              78.5205078125
+            ]
+          ],
+          "isMask": false,
+          "effects": []
+        },
+        {
+          "nodeId": "10:2014",
+          "parentId": "10:2013",
+          "type": "RECTANGLE",
+          "name": "Black_bicycle_vector_illustration_2K_20261023164203 1",
+          "paintOrder": 0,
+          "visible": true,
+          "opacity": 1,
+          "x": 392.1649169921875,
+          "y": 78.5206527709961,
+          "width": 735,
+          "height": 985,
+          "rotation": -34.36714137526945,
+          "relativeTransform": [
+            [
+              0.8254373669624329,
+              -0.564493715763092,
+              392.1649169921875
+            ],
+            [
+              0.564493715763092,
+              0.8254373669624329,
+              78.5206527709961
+            ]
+          ],
+          "frameTransform": [
+            [
+              0.8254373669624329,
+              -0.564493715763092,
+              392.1650390625
+            ],
+            [
+              0.564493715763092,
+              0.8254373669624329,
+              78.5205078125
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": false,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "f896e935d71fd96ad289d93b7e8ce7d177767633"
+            },
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "062b06beeb916ea58e9db0134f2d6a1ba921958a"
+            }
+          ],
+          "isMask": false,
+          "cornerRadius": 0,
+          "strokes": [],
+          "effects": []
+        },
+        {
+          "nodeId": "10:2015",
+          "parentId": "10:2012",
+          "type": "GROUP",
+          "name": "Group 12",
+          "paintOrder": 1,
+          "visible": true,
+          "opacity": 1,
+          "x": 392.1649169921875,
+          "y": 78.5206527709961,
+          "width": 735,
+          "height": 984,
+          "rotation": -34.36714137526945,
+          "relativeTransform": [
+            [
+              0.8254373669624329,
+              -0.564493715763092,
+              392.1649169921875
+            ],
+            [
+              0.564493715763092,
+              0.8254373669624329,
+              78.5206527709961
+            ]
+          ],
+          "frameTransform": [
+            [
+              0.8254373669624329,
+              -0.564493715763092,
+              392.1650390625
+            ],
+            [
+              0.564493715763092,
+              0.8254373669624329,
+              78.5205078125
+            ]
+          ],
+          "isMask": false,
+          "effects": []
+        },
+        {
+          "nodeId": "10:2016",
+          "parentId": "10:2015",
+          "type": "RECTANGLE",
+          "name": "Isolate_and_extract_only_the_2K_20261023164340 1",
+          "paintOrder": 0,
+          "visible": true,
+          "opacity": 1,
+          "x": 392.1649169921875,
+          "y": 78.5206527709961,
+          "width": 735,
+          "height": 984,
+          "rotation": -34.36714137526945,
+          "relativeTransform": [
+            [
+              0.8254373669624329,
+              -0.564493715763092,
+              392.1649169921875
+            ],
+            [
+              0.564493715763092,
+              0.8254373669624329,
+              78.5206527709961
+            ]
+          ],
+          "frameTransform": [
+            [
+              0.8254373669624329,
+              -0.564493715763092,
+              392.1650390625
+            ],
+            [
+              0.564493715763092,
+              0.8254373669624329,
+              78.5205078125
+            ]
+          ],
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": false,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "abafb5e224150ff4820d1e37233090f06e1e9689"
+            },
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "scaleMode": "FILL",
+              "scalingFactor": 0.5,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "173aa0acd8edfb44bd3dee924ff505e613162e4f"
+            }
+          ],
+          "isMask": false,
+          "cornerRadius": 0,
+          "strokes": [],
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "masksAndCrop": {
+    "externalMasks": 0,
+    "booleanSubtractions": 0,
+    "sourceAlpha": "PNG alpha is the existing silhouette mask; no extra mask files needed.",
+    "sourceCrop": "IMAGE fills are FILL with identity imageTransform and scalingFactor 0.5 in both states; keep the original canvas and exact 735x985 / 735x984 slots. FILL implies a tiny aspect-ratio cover crop; do not trim transparent margins or force both slots to the same height.",
+    "frameClipping": "Both 1920x1080 endpoint frames clip overflow. Stored rotated bounds extend outside the frame; do not mistake transparent canvas bounds for visible silhouette."
+  },
+  "observedChange": "Both image layers retain the same hashes/fills, slot sizes, opacity and stacking. Entire composite rotates clockwise approximately 34.367141 degrees about the initial group center (417.5,692.5), within floating-point export tolerance; no relative wheel movement is shown.",
+  "transformInterpretation": "Figma rotation is -34.367141 degrees in B; the matrix has positive y-down sine, equivalent to clockwise +34.367141 degrees in CSS. Use each frameTransform once for a flat projection; repeated group/descendant matrices in this read are not three successive rotations. Exact raw relativeTransform and frameTransform are both retained; tiny translation rounding differences come from subtracting frame absolute coordinates.",
+  "independentAnimation": {
+    "available": [
+      "Whole bicycle bitmap wrapper",
+      "One bitmap wrapper containing both extracted wheels",
+      "Complete composite as in endpoints"
+    ],
+    "limitations": [
+      "The base bicycle PNG still contains both original wheels, plus frame, saddle, bars, crank and pedals in one bitmap.",
+      "Both extracted wheels are fused into one wheel-pair image. There are no separate left/right wheel nodes or clean wheel-free frame.",
+      "Two layer wrappers can move separately, but moving the wheel-pair overlay reveals original wheels underneath. Clean detached-wheel/frame animation needs an additional agreed asset/mask preparation stage. No new separation was invented."
+    ]
+  },
+  "checks": {
+    "sourceBytes": "All four downloads and reused texture match Figma byte counts and FNV-1a fingerprints",
+    "dimensions": "All four originals decoded at 1792x2400, matching registry",
+    "alpha": "Both PNGs have fully transparent and partially transparent pixels. Bicycle PNG retains 10 faint edge samples (alpha 1..3); no cleanup was performed.",
+    "visual": "Originals inspected on checkerboard. Temporary affine/cover QA reconstructions of both image layers compared visually with both Figma screenshots, preserving wheel overlay order.",
+    "assetScript": "Verified: 26 | Pending: 15 | Errors: 0"
+  },
+  "openQuestions": [
+    "Trigger, duration/easing, interruption/replay, reduced-motion state access and whether any additional independent wheel motion is desired remain decisions for the motion stage."
+  ]
+}

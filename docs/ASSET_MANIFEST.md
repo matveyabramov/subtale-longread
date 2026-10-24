@@ -150,3 +150,22 @@ Six masks in `public/assets/illustrations/`: `idiom-ice-upper-right-mask.svg`, `
 **Checks:** nine original byte counts and FNV-1a fingerprints match Figma; decoded dimensions match the registry; actual alpha pixels verified. Originals were visually inspected on a checkerboard. Temporary QA reconstructions using the recorded crops, Boolean cutouts and paint order were visually compared with both Figma screenshots. SVGs parse and retain the measured object bounds and cutouts. `node scripts/check-assets.mjs` → **Verified: 22 | Pending: 19 | Errors: 0**; no duplicate raster bytes.
 
 **Animation feasibility:** eight ice wrappers and one telephone can animate independently; each ice crop/mask must move with its wrapper. These endpoints establish no ice movement or explosion. Telephone entry pose, timing, easing, trigger, replay/interruption and stacking transition remain decisions for the motion stage. No source downloads remain for Idiom. No Figma edits, layout/animation implementation, dependency installation or legacy-file changes.
+
+## Stage 0.2D.2 — Pun bicycle originals and state mapping (2026-10-24)
+
+Compared frames A `10:1495` and B `10:1981`. Imported **4 original raster files, 6,756,447 bytes**; updated four `localPath` entries. The same four imageHashes occur in both states and are stored once. Existing `images/mosaic-texture.png` is reused and its original byte fingerprint verified. Detailed source identities, SHA256 checksums, alpha QA and transforms are in `docs/PUN_ASSET_IMPORT.json`; object correspondence is documented in `docs/MOTION_SPEC.md`.
+
+| New file under `public/assets/images/` | Figma imageHash | Original dimensions | Bytes | Role |
+|---|---|---|---:|---|
+| `pun-bicycle-base.jpg` | `f896e935d71fd96ad289d93b7e8ce7d177767633` | 1792 × 2400 | 1,637,962 | Hidden original JPEG of full bicycle |
+| `pun-bicycle-cutout.png` | `062b06beeb916ea58e9db0134f2d6a1ba921958a` | 1792 × 2400 | 2,600,467 | Visible full bicycle PNG, including original wheels |
+| `pun-wheels-base.jpg` | `abafb5e224150ff4820d1e37233090f06e1e9689` | 1792 × 2400 | 1,558,592 | Hidden original JPEG of extracted wheel pair |
+| `pun-wheels-cutout.png` | `173aa0acd8edfb44bd3dee924ff505e613162e4f` | 1792 × 2400 | 959,426 | Visible PNG containing both wheels in one bitmap |
+
+**Real differences:** the complete composite rotates approximately 34.367141° clockwise about initial center (417.5, 692.5). Both layers retain their dimensions, original fills, opacity and relative stacking; no separate wheel motion or new artwork appears. The bicycle slot remains 735 × 985 and the wheel-pair slot 735 × 984. The wheel pair overlays the complete bicycle in both states; the mosaic remains below them. Frame-local transforms, rotated bounds, frame clipping and all group/node mappings are recorded without inferring extra movement.
+
+**Transparency, cropping and masks:** hidden JPEG/visible PNG fill pairs were retained. Both PNGs contain actual transparent and partially transparent pixels. The whole-bicycle PNG includes 10 faint source-edge alpha samples (1–3); they were preserved rather than cleaned up. Both original transparent canvases and the tiny FILL-mode aspect-ratio cover crops are retained. No explicit masks or Boolean geometry exist in this illustration subtree, so no mask exports were needed. No original trimming, resizing or re-encoding.
+
+**Animation limits:** two image wrappers can transform separately, and both can rotate together to reproduce B. The full bicycle source includes its wheels, while the extracted pair is fused into one bitmap. There is no clean wheel-free frame or separate left/right wheel asset. Clean detached-wheel animation would require an additional agreed source-preparation stage; moving only the existing pair exposes the original wheels behind it.
+
+**Checks:** all four original byte counts and FNV-1a fingerprints match Figma; decoded JPEG/PNG dimensions match the registry; pixel alpha checked. Originals inspected on a checkerboard; temporary affine/cover reconstructions of both compositions visually compared with Figma screenshots. `node scripts/check-assets.mjs` → **Verified: 26 | Pending: 15 | Errors: 0**; no duplicate raster bytes. No missing Pun originals. No Figma edits, layout/animation implementation, dependencies or legacy-file changes.
