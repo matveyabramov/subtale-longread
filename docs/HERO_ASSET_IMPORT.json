@@ -13,7 +13,7 @@
       "fnv1a": "fcc78cc",
       "width": 1792,
       "height": 2400,
-      "localPath": "public/assets/images/hero-film-base.jpg",
+      "localPath": "source-assets/images/hero-film-base.jpg",
       "sha256": "f2c16b86e8d58f3672a574ffdadda618bde2f50620dcef3720f17aff46d629c3",
       "pixelQA": {
         "file": "film-base.jpg",
@@ -34,7 +34,8 @@
           1792,
           2400
         ]
-      }
+      },
+      "optimizedPath": null
     },
     {
       "hash": "e652c3e807f5bf1e34657836f066c3b3db9c575c",
@@ -42,7 +43,7 @@
       "fnv1a": "62fc5064",
       "width": 1792,
       "height": 2400,
-      "localPath": "public/assets/images/hero-film-cutout.png",
+      "localPath": "source-assets/images/hero-film-cutout.png",
       "sha256": "bf3934a85b08bb2202d35131b497899edbd5e8a976c4347321cbc519d0e77237",
       "pixelQA": {
         "file": "film-cutout.png",
@@ -63,7 +64,8 @@
           1421,
           2061
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/hero-film-cutout.webp"
     },
     {
       "hash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
@@ -71,7 +73,7 @@
       "fnv1a": "81c5563f",
       "width": 1122,
       "height": 1402,
-      "localPath": "public/assets/images/hero-person-collage.png",
+      "localPath": "source-assets/images/hero-person-collage.png",
       "sha256": "afec175f28f8fb67dd524fa1cd3f32b0c0ed2cc6a1b296a563d3e278e2b3d1ae",
       "pixelQA": {
         "file": "collage.png",
@@ -92,7 +94,8 @@
           1122,
           1402
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/hero-person-collage.webp"
     },
     {
       "hash": "0e552b102cf5a1f06b9c6d961e804df3ec2e4893",
@@ -100,7 +103,7 @@
       "fnv1a": "11d511f9",
       "width": 1698,
       "height": 2122,
-      "localPath": "public/assets/images/hero-man-eye.png",
+      "localPath": "source-assets/images/hero-man-eye.png",
       "sha256": "42f4b70bc8f1445dc0da33c334e39c2048f7b62771bcbcb53c6323aea0177173",
       "pixelQA": {
         "file": "eye.png",
@@ -121,7 +124,8 @@
           785,
           654
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/hero-man-eye.webp"
     },
     {
       "hash": "144a3d120c3632ab1ee03b64c4d9e288a22b8b5a",
@@ -129,7 +133,7 @@
       "fnv1a": "521efecd",
       "width": 1254,
       "height": 1254,
-      "localPath": "public/assets/images/hero-eye-accent.png",
+      "localPath": "source-assets/images/hero-eye-accent.png",
       "sha256": "7779b4ce99d1fad272e4d4290af53354d9d7be5173a1f7b028d185b26038fb93",
       "pixelQA": {
         "file": "eye-accent.png",
@@ -150,7 +154,8 @@
           1226,
           1235
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/hero-eye-accent.webp"
     }
   ],
   "vectors": [
@@ -251,9 +256,10 @@
   ],
   "reused": [
     {
-      "localPath": "public/assets/images/mosaic-texture.png",
+      "localPath": "source-assets/images/mosaic-texture.png",
       "hash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
-      "originalByteFingerprintVerified": true
+      "originalByteFingerprintVerified": true,
+      "optimizedPath": "public/assets/images/mosaic-texture.png"
     },
     {
       "localPath": "public/assets/illustrations/subtale-pixel-mark.svg",
@@ -581,5 +587,7 @@
     "Original eye image retains its large transparent canvas and off-center content; do not trim it.",
     "SVG root geometry follows original Figma SVG_STRING export, including rounded export bounds. No additional bitmap exports of the four Union crops or the whole Hero were saved.",
     "35 pending raster hashes belong to later stages."
-  ]
+  ],
+  "deliveryManifest": "docs/ASSET_DELIVERY.json",
+  "deliveryNote": "Stage 0.2H.2: localPath locates original master; optimizedPath is separate. Original Figma fills/crops/transforms/order/masks and historic import checks remain unchanged."
 }

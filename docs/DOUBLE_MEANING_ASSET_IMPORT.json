@@ -18,7 +18,7 @@
       "width": 3072,
       "height": 2048,
       "nodeId": "10:1558",
-      "localPath": "public/assets/images/double-meaning-eye.png",
+      "localPath": "source-assets/images/double-meaning-eye.png",
       "sha256": "70df22876417d9cbdd1c8c54cb7a8dd89b68bcbcbc7bd567d1e85ae95aaf59f7",
       "pixelQA": {
         "format": "PNG",
@@ -38,7 +38,8 @@
           2998,
           2022
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/double-meaning-eye.webp"
     },
     {
       "hash": "3a4dbff1bde5d50b9dc399bc758f670e1fbee740",
@@ -48,7 +49,7 @@
       "width": 1536,
       "height": 1024,
       "nodeId": "10:1558",
-      "localPath": "public/assets/images/double-meaning-eye-couple.png",
+      "localPath": "source-assets/images/double-meaning-eye-couple.png",
       "sha256": "e796a62b6057c5949804d0dc61165fa72931c57b2fa8a1b1161f256743c9b7cf",
       "pixelQA": {
         "format": "PNG",
@@ -68,7 +69,8 @@
           1499,
           1011
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/double-meaning-eye-couple.webp"
     }
   ],
   "reusedTexture": {
@@ -78,8 +80,9 @@
     "format": "png",
     "width": 397,
     "height": 322,
-    "localPath": "public/assets/images/mosaic-texture.png",
-    "originalBytesVerified": true
+    "localPath": "source-assets/images/mosaic-texture.png",
+    "originalBytesVerified": true,
+    "optimizedPath": "public/assets/images/mosaic-texture.png"
   },
   "objectMapping": [
     {
@@ -883,5 +886,7 @@
     "dimensions": "Decoded PNG sizes match registry: 3072x2048 and 1536x1024",
     "alpha": "Both decoded RGBA images contain real alpha-zero pixels, partial alpha and transparent edges. State A range 0..255, state B 0..254.",
     "visual": "Both originals inspected in the same 845x563 FILL slot on checkerboard; eye silhouette and the couple/empty-center distinction compared with Figma screenshots."
-  }
+  },
+  "deliveryManifest": "docs/ASSET_DELIVERY.json",
+  "deliveryNote": "Stage 0.2H.2: localPath locates original master; optimizedPath is separate. Original Figma fills/crops/transforms/order/masks and historic import checks remain unchanged."
 }

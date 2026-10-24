@@ -1,5 +1,8 @@
 # SUBTALE — preliminary motion / interaction map
 
+**Current raster paths (Stage 0.2H.2):** original Figma sources now live under `source-assets/images/`; source filenames in historical endpoint tables identify those masters. Use each imageHash's separate `optimizedPath` in `FIGMA_ASSET_MAP.json` / `ASSET_DELIVERY.json` for future rendering. Multiply unchanged normalized crops by the selected delivery file's actual dimensions. Hidden/occluded source-only fills have no public derivative unless later approved motion needs one. All positions, transforms, source visibility, ordering, SVG/CSS masks and independent object boundaries below remain unchanged. Idiom WebPs and its shared Mosaic PNG delivery path/bytes are untouched.
+
+
 **Proposed behaviors**, not verified Figma prototypes. Stage 0.3 must reconcile these with approved editorial intent and available layered assets before implementation.
 
 | Area | Figma nodes | Proposed trigger/state | First code pass |

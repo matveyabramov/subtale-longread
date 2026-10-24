@@ -24,7 +24,7 @@
       "width": 1774,
       "height": 887,
       "nodeId": "10:1142",
-      "localPath": "public/assets/images/footer-eye.png",
+      "localPath": "source-assets/images/footer-eye.png",
       "sha256": "dd17ae41f28cf16546e5d4b7c0739be31ec4a55dffab16fc28356d8e8e5011cd",
       "pixelQA": {
         "format": "PNG",
@@ -44,7 +44,8 @@
           1768,
           867
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/footer-eye.webp"
     },
     {
       "hash": "b7079f327ac77217ba31eccfa428d1c9bf81ad54",
@@ -54,7 +55,7 @@
       "width": 2172,
       "height": 724,
       "nodeId": "10:1143",
-      "localPath": "public/assets/images/footer-unsaid-strip.png",
+      "localPath": "source-assets/images/footer-unsaid-strip.png",
       "sha256": "d1e8167844a77ddebfc4fab6e0ac8af63fc7a6632fde774e96597e4ebc48f6a8",
       "pixelQA": {
         "format": "PNG",
@@ -74,7 +75,8 @@
           2150,
           654
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/footer-unsaid-strip.webp"
     },
     {
       "hash": "bd6b5cacdd1170f72989f6b707a0d3eda9355621",
@@ -84,7 +86,7 @@
       "width": 2172,
       "height": 724,
       "nodeId": "10:1144",
-      "localPath": "public/assets/images/footer-between-lines-strip.png",
+      "localPath": "source-assets/images/footer-between-lines-strip.png",
       "sha256": "b0c23a108fa55e7073ef5d6fec16d6827c6af2876bad670f1eb05d906d66d103",
       "pixelQA": {
         "format": "PNG",
@@ -104,7 +106,8 @@
           2045,
           708
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/footer-between-lines-strip.webp"
     },
     {
       "hash": "f4f836747639bb4a43af9d32647b44556507ae72",
@@ -114,7 +117,7 @@
       "width": 2172,
       "height": 724,
       "nodeId": "10:1146",
-      "localPath": "public/assets/images/footer-mouth.png",
+      "localPath": "source-assets/images/footer-mouth.png",
       "sha256": "17e12f17e03327081c6062708df6d02476cbb27a2c5f127f656751293936000f",
       "pixelQA": {
         "format": "PNG",
@@ -134,7 +137,8 @@
           2130,
           714
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/footer-mouth.webp"
     },
     {
       "hash": "c643e024e3da13f99a21672f8a7f13101d606a1c",
@@ -144,7 +148,7 @@
       "width": 640,
       "height": 640,
       "nodeId": "10:1162",
-      "localPath": "public/assets/images/footer-school-logo-base.jpg",
+      "localPath": "source-assets/images/footer-school-logo-base.jpg",
       "sha256": "1121633db4797f953059b3cced3d07e77f71f42ed004bf09adf4ee43af4e8d4e",
       "pixelQA": {
         "format": "JPEG",
@@ -164,7 +168,8 @@
           640,
           640
         ]
-      }
+      },
+      "optimizedPath": null
     },
     {
       "hash": "f9cf72afab8959879ed22d0f0b83522d3b03cbec",
@@ -174,7 +179,7 @@
       "width": 640,
       "height": 640,
       "nodeId": "10:1162",
-      "localPath": "public/assets/images/footer-school-logo-cutout.png",
+      "localPath": "source-assets/images/footer-school-logo-cutout.png",
       "sha256": "59b843dbf21b9cc83efb24e4857ed65eccf54c311a4ea5622175111c78c87303",
       "pixelQA": {
         "format": "PNG",
@@ -194,7 +199,8 @@
           578,
           424
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/footer-school-logo-cutout.webp"
     }
   ],
   "reused": [
@@ -205,8 +211,9 @@
       "format": "jpg",
       "width": 3370,
       "height": 2247,
-      "localPath": "public/assets/images/au-fg-texture4-8k.jpg",
-      "sha256": "a61f3a7ab37031d8f43f76ee858a9b02387830c3edd500979219cda2b493e892"
+      "localPath": "source-assets/images/au-fg-texture4-8k.jpg",
+      "sha256": "a61f3a7ab37031d8f43f76ee858a9b02387830c3edd500979219cda2b493e892",
+      "optimizedPath": "public/assets/images/au-fg-texture4-8k.jpg"
     },
     {
       "hash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
@@ -215,8 +222,9 @@
       "format": "png",
       "width": 1122,
       "height": 1402,
-      "localPath": "public/assets/images/hero-person-collage.png",
-      "sha256": "afec175f28f8fb67dd524fa1cd3f32b0c0ed2cc6a1b296a563d3e278e2b3d1ae"
+      "localPath": "source-assets/images/hero-person-collage.png",
+      "sha256": "afec175f28f8fb67dd524fa1cd3f32b0c0ed2cc6a1b296a563d3e278e2b3d1ae",
+      "optimizedPath": "public/assets/images/hero-person-collage.webp"
     },
     {
       "hash": "144a3d120c3632ab1ee03b64c4d9e288a22b8b5a",
@@ -225,8 +233,9 @@
       "format": "png",
       "width": 1254,
       "height": 1254,
-      "localPath": "public/assets/images/hero-eye-accent.png",
-      "sha256": "7779b4ce99d1fad272e4d4290af53354d9d7be5173a1f7b028d185b26038fb93"
+      "localPath": "source-assets/images/hero-eye-accent.png",
+      "sha256": "7779b4ce99d1fad272e4d4290af53354d9d7be5173a1f7b028d185b26038fb93",
+      "optimizedPath": "public/assets/images/hero-eye-accent.webp"
     }
   ],
   "footerImageHashCount": 9,
@@ -300,7 +309,8 @@
             ]
           ],
           "imageHash": "364855320f08ade1d04f13556e9f3defb0d52bcb",
-          "localPath": "public/assets/images/au-fg-texture4-8k.jpg"
+          "localPath": "source-assets/images/au-fg-texture4-8k.jpg",
+          "optimizedPath": "public/assets/images/au-fg-texture4-8k.jpg"
         }
       ],
       "blendMode": "LIGHTEN",
@@ -388,7 +398,8 @@
             ]
           ],
           "imageHash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
-          "localPath": "public/assets/images/hero-person-collage.png"
+          "localPath": "source-assets/images/hero-person-collage.png",
+          "optimizedPath": "public/assets/images/hero-person-collage.webp"
         }
       ],
       "blendMode": "PASS_THROUGH",
@@ -467,7 +478,8 @@
             ]
           ],
           "imageHash": "a2527d39f79d61137e7c901c1bd8802fb781330d",
-          "localPath": "public/assets/images/footer-eye.png"
+          "localPath": "source-assets/images/footer-eye.png",
+          "optimizedPath": "public/assets/images/footer-eye.webp"
         }
       ],
       "blendMode": "PASS_THROUGH",
@@ -545,7 +557,8 @@
             ]
           ],
           "imageHash": "b7079f327ac77217ba31eccfa428d1c9bf81ad54",
-          "localPath": "public/assets/images/footer-unsaid-strip.png"
+          "localPath": "source-assets/images/footer-unsaid-strip.png",
+          "optimizedPath": "public/assets/images/footer-unsaid-strip.webp"
         }
       ],
       "blendMode": "PASS_THROUGH",
@@ -622,7 +635,8 @@
             ]
           ],
           "imageHash": "bd6b5cacdd1170f72989f6b707a0d3eda9355621",
-          "localPath": "public/assets/images/footer-between-lines-strip.png"
+          "localPath": "source-assets/images/footer-between-lines-strip.png",
+          "optimizedPath": "public/assets/images/footer-between-lines-strip.webp"
         }
       ],
       "blendMode": "PASS_THROUGH",
@@ -699,7 +713,8 @@
             ]
           ],
           "imageHash": "144a3d120c3632ab1ee03b64c4d9e288a22b8b5a",
-          "localPath": "public/assets/images/hero-eye-accent.png"
+          "localPath": "source-assets/images/hero-eye-accent.png",
+          "optimizedPath": "public/assets/images/hero-eye-accent.webp"
         }
       ],
       "blendMode": "PASS_THROUGH",
@@ -775,7 +790,8 @@
             ]
           ],
           "imageHash": "f4f836747639bb4a43af9d32647b44556507ae72",
-          "localPath": "public/assets/images/footer-mouth.png"
+          "localPath": "source-assets/images/footer-mouth.png",
+          "optimizedPath": "public/assets/images/footer-mouth.webp"
         }
       ],
       "blendMode": "PASS_THROUGH",
@@ -851,7 +867,8 @@
             ]
           ],
           "imageHash": "c643e024e3da13f99a21672f8a7f13101d606a1c",
-          "localPath": "public/assets/images/footer-school-logo-base.jpg"
+          "localPath": "source-assets/images/footer-school-logo-base.jpg",
+          "optimizedPath": null
         },
         {
           "type": "IMAGE",
@@ -882,7 +899,8 @@
             ]
           ],
           "imageHash": "f9cf72afab8959879ed22d0f0b83522d3b03cbec",
-          "localPath": "public/assets/images/footer-school-logo-cutout.png"
+          "localPath": "source-assets/images/footer-school-logo-cutout.png",
+          "optimizedPath": "public/assets/images/footer-school-logo-cutout.webp"
         }
       ],
       "blendMode": "PASS_THROUGH",
@@ -1904,7 +1922,7 @@
     ["10:1090","10:1073",[2,16,16],385.71484375,1002.857421875,77.14286041259766,77.14286041259766,0,1491.71484375,1195.857421875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
     ["10:1091","10:1073",[2,16,17],231.4287109375,694.287109375,77.14286041259766,77.14286041259766,0,1337.4287109375,887.287109375,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
     ["10:1092","10:1073",[2,16,18],231.4286346435547,771.4295501708984,77.14286041259766,77.14286041259766,0,1337.4287109375,964.4296875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
-    ["10:1093","10:1073",[2,16,19],0.00006975446740398183,848.5724029541016,77.14286041259766,77.14286041259766,0,1106,1041.572265625,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
+    ["10:1093","10:1073",[2,16,19],6.975446740398183e-05,848.5724029541016,77.14286041259766,77.14286041259766,0,1106,1041.572265625,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
     ["10:1094","10:1073",[2,16,20],462.857421875,694.287109375,77.14286041259766,77.14286041259766,0,1568.857421875,887.287109375,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
     ["10:1095","10:1073",[2,16,21],462.8572082519531,771.4295501708984,77.14286041259766,77.14286041259766,0,1568.857421875,964.4296875,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
     ["10:1096","10:1073",[2,16,22],462.8572082519531,848.5724029541016,77.14286041259766,77.14286041259766,0,1568.857421875,1041.572265625,0,[["SOLID",true,1,[0.8509804010391235,0.8509804010391235,0.8509804010391235]]],0,0,false],
@@ -2063,415 +2081,458 @@
     "files": [
       {
         "hash": "6be621144e7ecf462b8e2789f21ec8f7499d659e",
-        "localPath": "public/assets/images/mosaic-texture.png",
+        "localPath": "source-assets/images/mosaic-texture.png",
         "format": "PNG",
         "width": 397,
         "height": 322,
         "mode": "P",
         "bytes": 43725,
-        "sha256": "0d81abdd30e85743fae712ad94555c45acbd30d069af4ef2f393da32f87bbbf5"
+        "sha256": "0d81abdd30e85743fae712ad94555c45acbd30d069af4ef2f393da32f87bbbf5",
+        "optimizedPath": "public/assets/images/mosaic-texture.png"
       },
       {
         "hash": "b0d17f5142962d3ddc19f08fa9cae9df92eac834",
-        "localPath": "public/assets/images/idiom-ice-lower-shared.png",
+        "localPath": "source-assets/images/idiom-ice-lower-shared.png",
         "format": "PNG",
         "width": 4096,
         "height": 2286,
         "mode": "RGBA",
         "bytes": 6893692,
-        "sha256": "5d7bb3feebd04a69e20e000a1ac20fa019d477acd2f277307111afc016b6f3a1"
+        "sha256": "5d7bb3feebd04a69e20e000a1ac20fa019d477acd2f277307111afc016b6f3a1",
+        "optimizedPath": "public/assets/images/idiom-ice-lower-shared.webp"
       },
       {
         "hash": "a29311f1f1d2be133c14d891089c6650c953c32e",
-        "localPath": "public/assets/images/idiom-ice-center.png",
+        "localPath": "source-assets/images/idiom-ice-center.png",
         "format": "PNG",
         "width": 4096,
         "height": 2286,
         "mode": "RGBA",
         "bytes": 5115592,
-        "sha256": "26bc36f7ab52ca7ccf67f9ea87d34dbafadf70b628ad92a747e2057b1dcb01b7"
+        "sha256": "26bc36f7ab52ca7ccf67f9ea87d34dbafadf70b628ad92a747e2057b1dcb01b7",
+        "optimizedPath": "public/assets/images/idiom-ice-center.webp"
       },
       {
         "hash": "82405a0f66f9cee86dbb6403577b78f20ce30fd4",
-        "localPath": "public/assets/images/idiom-ice-right-small.png",
+        "localPath": "source-assets/images/idiom-ice-right-small.png",
         "format": "PNG",
         "width": 4096,
         "height": 2286,
         "mode": "RGBA",
         "bytes": 5132569,
-        "sha256": "b35c5dbf24f2c9a53b3a024b8bb0988669ef2dbc1646183910c1b64e668fe461"
+        "sha256": "b35c5dbf24f2c9a53b3a024b8bb0988669ef2dbc1646183910c1b64e668fe461",
+        "optimizedPath": "public/assets/images/idiom-ice-right-small.webp"
       },
       {
         "hash": "0cc45628624ce265cbbcc50415fbfab33556f60c",
-        "localPath": "public/assets/images/hero-person-collage.png",
+        "localPath": "source-assets/images/hero-person-collage.png",
         "format": "PNG",
         "width": 1122,
         "height": 1402,
         "mode": "RGBA",
         "bytes": 2380332,
-        "sha256": "afec175f28f8fb67dd524fa1cd3f32b0c0ed2cc6a1b296a563d3e278e2b3d1ae"
+        "sha256": "afec175f28f8fb67dd524fa1cd3f32b0c0ed2cc6a1b296a563d3e278e2b3d1ae",
+        "optimizedPath": "public/assets/images/hero-person-collage.webp"
       },
       {
         "hash": "a3b7ac7e799505da584c86b7c42f8da6723eedbc",
-        "localPath": "public/assets/images/cultural-snowflake-base.jpg",
+        "localPath": "source-assets/images/cultural-snowflake-base.jpg",
         "format": "JPEG",
         "width": 1792,
         "height": 2400,
         "mode": "RGB",
         "bytes": 1752022,
-        "sha256": "0968e1ae99abdcd9814b75ddfd173e040a0a50f5c212f6a2463941466e283852"
+        "sha256": "0968e1ae99abdcd9814b75ddfd173e040a0a50f5c212f6a2463941466e283852",
+        "optimizedPath": null
       },
       {
         "hash": "479c47cbc92ef29bc039dc843d2f7103b80d1391",
-        "localPath": "public/assets/images/cultural-snowflake-cutout.png",
+        "localPath": "source-assets/images/cultural-snowflake-cutout.png",
         "format": "PNG",
         "width": 1792,
         "height": 2400,
         "mode": "RGBA",
         "bytes": 2584249,
-        "sha256": "83779a9d97f2429d1db9f19c6df71c1673a800779d3c6b572342eeecfb021870"
+        "sha256": "83779a9d97f2429d1db9f19c6df71c1673a800779d3c6b572342eeecfb021870",
+        "optimizedPath": "public/assets/images/cultural-snowflake-cutout.webp"
       },
       {
         "hash": "c027bce002d6d9ef41326d8cce3bb29eac6f7e22",
-        "localPath": "public/assets/images/idiom-ice-upper-right.png",
+        "localPath": "source-assets/images/idiom-ice-upper-right.png",
         "format": "PNG",
         "width": 4096,
         "height": 2286,
         "mode": "RGBA",
         "bytes": 5006341,
-        "sha256": "34888d7c2bed6f8f01198691999d249a860751e8b920f5b37f6c5b6a0a0c56fb"
+        "sha256": "34888d7c2bed6f8f01198691999d249a860751e8b920f5b37f6c5b6a0a0c56fb",
+        "optimizedPath": "public/assets/images/idiom-ice-upper-right.webp"
       },
       {
         "hash": "b71b959d5e0c085f6c923f1d4bc1aa9ef978464e",
-        "localPath": "public/assets/images/idiom-ice-left-small.png",
+        "localPath": "source-assets/images/idiom-ice-left-small.png",
         "format": "PNG",
         "width": 4096,
         "height": 2286,
         "mode": "RGBA",
         "bytes": 5129695,
-        "sha256": "fbc67bd83f3b759d685d2713b2d25dacc886bc2aff1ea4029c61bcd94e0acfc9"
+        "sha256": "fbc67bd83f3b759d685d2713b2d25dacc886bc2aff1ea4029c61bcd94e0acfc9",
+        "optimizedPath": "public/assets/images/idiom-ice-left-small.webp"
       },
       {
         "hash": "364855320f08ade1d04f13556e9f3defb0d52bcb",
-        "localPath": "public/assets/images/au-fg-texture4-8k.jpg",
+        "localPath": "source-assets/images/au-fg-texture4-8k.jpg",
         "format": "JPEG",
         "width": 3370,
         "height": 2247,
         "mode": "RGB",
         "bytes": 4242403,
-        "sha256": "a61f3a7ab37031d8f43f76ee858a9b02387830c3edd500979219cda2b493e892"
+        "sha256": "a61f3a7ab37031d8f43f76ee858a9b02387830c3edd500979219cda2b493e892",
+        "optimizedPath": "public/assets/images/au-fg-texture4-8k.jpg"
       },
       {
         "hash": "144a3d120c3632ab1ee03b64c4d9e288a22b8b5a",
-        "localPath": "public/assets/images/hero-eye-accent.png",
+        "localPath": "source-assets/images/hero-eye-accent.png",
         "format": "PNG",
         "width": 1254,
         "height": 1254,
         "mode": "RGBA",
         "bytes": 1050513,
-        "sha256": "7779b4ce99d1fad272e4d4290af53354d9d7be5173a1f7b028d185b26038fb93"
+        "sha256": "7779b4ce99d1fad272e4d4290af53354d9d7be5173a1f7b028d185b26038fb93",
+        "optimizedPath": "public/assets/images/hero-eye-accent.webp"
       },
       {
         "hash": "35938ea29ed9ca1307edc53950674e4c8ebe63d5",
-        "localPath": "public/assets/images/idiom-ice-upper-left.png",
+        "localPath": "source-assets/images/idiom-ice-upper-left.png",
         "format": "PNG",
         "width": 4096,
         "height": 2286,
         "mode": "RGBA",
         "bytes": 4982184,
-        "sha256": "7707f055314d12f2d131c31d685ad4f70b937fc7f8c6c3bc4035b9d0781636bd"
+        "sha256": "7707f055314d12f2d131c31d685ad4f70b937fc7f8c6c3bc4035b9d0781636bd",
+        "optimizedPath": "public/assets/images/idiom-ice-upper-left.webp"
       },
       {
         "hash": "528b075a5c6b35f819c787bff455d9dbd2436c83",
-        "localPath": "public/assets/images/idiom-ice-lower-middle.png",
+        "localPath": "source-assets/images/idiom-ice-lower-middle.png",
         "format": "PNG",
         "width": 4096,
         "height": 2286,
         "mode": "RGBA",
         "bytes": 5104941,
-        "sha256": "9acb5cf2b567fed8a35ac89548a8d40aa9c69dec7260ea556c08a136712f3b74"
+        "sha256": "9acb5cf2b567fed8a35ac89548a8d40aa9c69dec7260ea556c08a136712f3b74",
+        "optimizedPath": "public/assets/images/idiom-ice-lower-middle.webp"
       },
       {
         "hash": "f896e935d71fd96ad289d93b7e8ce7d177767633",
-        "localPath": "public/assets/images/pun-bicycle-base.jpg",
+        "localPath": "source-assets/images/pun-bicycle-base.jpg",
         "format": "JPEG",
         "width": 1792,
         "height": 2400,
         "mode": "RGB",
         "bytes": 1637962,
-        "sha256": "36102c58ea1e5c1a98465865849c0320b8fd12143c14892668eebff6f6967777"
+        "sha256": "36102c58ea1e5c1a98465865849c0320b8fd12143c14892668eebff6f6967777",
+        "optimizedPath": null
       },
       {
         "hash": "062b06beeb916ea58e9db0134f2d6a1ba921958a",
-        "localPath": "public/assets/images/pun-bicycle-cutout.png",
+        "localPath": "source-assets/images/pun-bicycle-cutout.png",
         "format": "PNG",
         "width": 1792,
         "height": 2400,
         "mode": "RGBA",
         "bytes": 2600467,
-        "sha256": "47a9262b37bbcbdc9e68da7aa627f3c4ccfe14352252f4dfd8093b31acb3c24f"
+        "sha256": "47a9262b37bbcbdc9e68da7aa627f3c4ccfe14352252f4dfd8093b31acb3c24f",
+        "optimizedPath": "public/assets/images/pun-bicycle-cutout.webp"
       },
       {
         "hash": "abafb5e224150ff4820d1e37233090f06e1e9689",
-        "localPath": "public/assets/images/pun-wheels-base.jpg",
+        "localPath": "source-assets/images/pun-wheels-base.jpg",
         "format": "JPEG",
         "width": 1792,
         "height": 2400,
         "mode": "RGB",
         "bytes": 1558592,
-        "sha256": "d6cdb153eaaa8bd19132f90f893878d378d5034357fa27047f0bacb477dbdf55"
+        "sha256": "d6cdb153eaaa8bd19132f90f893878d378d5034357fa27047f0bacb477dbdf55",
+        "optimizedPath": null
       },
       {
         "hash": "173aa0acd8edfb44bd3dee924ff505e613162e4f",
-        "localPath": "public/assets/images/pun-wheels-cutout.png",
+        "localPath": "source-assets/images/pun-wheels-cutout.png",
         "format": "PNG",
         "width": 1792,
         "height": 2400,
         "mode": "RGBA",
         "bytes": 959426,
-        "sha256": "ab49220c877c0e85abbc83d418cfeafbea3590604fa29657d4191561c1ba2abc"
+        "sha256": "ab49220c877c0e85abbc83d418cfeafbea3590604fa29657d4191561c1ba2abc",
+        "optimizedPath": "public/assets/images/pun-wheels-cutout.webp"
       },
       {
         "hash": "a9f463489c07be031417200565743725d6a366ac",
-        "localPath": "public/assets/images/double-meaning-eye.png",
+        "localPath": "source-assets/images/double-meaning-eye.png",
         "format": "PNG",
         "width": 3072,
         "height": 2048,
         "mode": "RGBA",
         "bytes": 940785,
-        "sha256": "70df22876417d9cbdd1c8c54cb7a8dd89b68bcbcbc7bd567d1e85ae95aaf59f7"
+        "sha256": "70df22876417d9cbdd1c8c54cb7a8dd89b68bcbcbc7bd567d1e85ae95aaf59f7",
+        "optimizedPath": "public/assets/images/double-meaning-eye.webp"
       },
       {
         "hash": "3a4dbff1bde5d50b9dc399bc758f670e1fbee740",
-        "localPath": "public/assets/images/double-meaning-eye-couple.png",
+        "localPath": "source-assets/images/double-meaning-eye-couple.png",
         "format": "PNG",
         "width": 1536,
         "height": 1024,
         "mode": "RGBA",
         "bytes": 1027282,
-        "sha256": "e796a62b6057c5949804d0dc61165fa72931c57b2fa8a1b1161f256743c9b7cf"
+        "sha256": "e796a62b6057c5949804d0dc61165fa72931c57b2fa8a1b1161f256743c9b7cf",
+        "optimizedPath": "public/assets/images/double-meaning-eye-couple.webp"
       },
       {
         "hash": "7af494cdff7ca99afd79ecd61a707cd7452a7435",
-        "localPath": "public/assets/images/hero-film-base.jpg",
+        "localPath": "source-assets/images/hero-film-base.jpg",
         "format": "JPEG",
         "width": 1792,
         "height": 2400,
         "mode": "RGB",
         "bytes": 1428684,
-        "sha256": "f2c16b86e8d58f3672a574ffdadda618bde2f50620dcef3720f17aff46d629c3"
+        "sha256": "f2c16b86e8d58f3672a574ffdadda618bde2f50620dcef3720f17aff46d629c3",
+        "optimizedPath": null
       },
       {
         "hash": "e652c3e807f5bf1e34657836f066c3b3db9c575c",
-        "localPath": "public/assets/images/hero-film-cutout.png",
+        "localPath": "source-assets/images/hero-film-cutout.png",
         "format": "PNG",
         "width": 1792,
         "height": 2400,
         "mode": "RGBA",
         "bytes": 1711853,
-        "sha256": "bf3934a85b08bb2202d35131b497899edbd5e8a976c4347321cbc519d0e77237"
+        "sha256": "bf3934a85b08bb2202d35131b497899edbd5e8a976c4347321cbc519d0e77237",
+        "optimizedPath": "public/assets/images/hero-film-cutout.webp"
       },
       {
         "hash": "0e552b102cf5a1f06b9c6d961e804df3ec2e4893",
-        "localPath": "public/assets/images/hero-man-eye.png",
+        "localPath": "source-assets/images/hero-man-eye.png",
         "format": "PNG",
         "width": 1698,
         "height": 2122,
         "mode": "RGBA",
         "bytes": 133874,
-        "sha256": "42f4b70bc8f1445dc0da33c334e39c2048f7b62771bcbcb53c6323aea0177173"
+        "sha256": "42f4b70bc8f1445dc0da33c334e39c2048f7b62771bcbcb53c6323aea0177173",
+        "optimizedPath": "public/assets/images/hero-man-eye.webp"
       },
       {
         "hash": "40eccc4ce44ce41732834332152c96e11bfcaabd",
-        "localPath": "public/assets/images/emptiness-male-base.jpg",
+        "localPath": "source-assets/images/emptiness-male-base.jpg",
         "format": "JPEG",
         "width": 2752,
         "height": 1536,
         "mode": "RGB",
         "bytes": 1472785,
-        "sha256": "4983d9ae72f08eed4bf1c5a30d90f0c388b0fda4d81c0361d404680317fb3357"
+        "sha256": "4983d9ae72f08eed4bf1c5a30d90f0c388b0fda4d81c0361d404680317fb3357",
+        "optimizedPath": null
       },
       {
         "hash": "a7989beee0d2ab130f2012d50167c4ed4862f4d0",
-        "localPath": "public/assets/images/emptiness-male-cutout.png",
+        "localPath": "source-assets/images/emptiness-male-cutout.png",
         "format": "PNG",
         "width": 2752,
         "height": 1536,
         "mode": "RGBA",
         "bytes": 1001055,
-        "sha256": "b02c5bede368e85b9d8b93d6be31b5aad19fca1e2ea416344cdb4f656e9c3076"
+        "sha256": "b02c5bede368e85b9d8b93d6be31b5aad19fca1e2ea416344cdb4f656e9c3076",
+        "optimizedPath": "public/assets/images/emptiness-male-cutout.webp"
       },
       {
         "hash": "b7c41bc585e7ce56a516ed7cc7c897a8339c874d",
-        "localPath": "public/assets/images/emptiness-pixel-strip-source.png",
+        "localPath": "source-assets/images/emptiness-pixel-strip-source.png",
         "format": "PNG",
         "width": 1122,
         "height": 1402,
         "mode": "RGBA",
         "bytes": 2798104,
-        "sha256": "10c17957ee73a00edf0a442b26d9d396828ffc4397aca4163081e29c8b8b1131"
+        "sha256": "10c17957ee73a00edf0a442b26d9d396828ffc4397aca4163081e29c8b8b1131",
+        "optimizedPath": null
       },
       {
         "hash": "5117fe324500367f27967d387a1ca2d13f13b5b0",
-        "localPath": "public/assets/images/emptiness-female-base.jpg",
+        "localPath": "source-assets/images/emptiness-female-base.jpg",
         "format": "JPEG",
         "width": 2752,
         "height": 1536,
         "mode": "RGB",
         "bytes": 1402762,
-        "sha256": "04c806e3ae2dc917446ef6487c0b2f047d450149123d78759830b5d79a84f955"
+        "sha256": "04c806e3ae2dc917446ef6487c0b2f047d450149123d78759830b5d79a84f955",
+        "optimizedPath": null
       },
       {
         "hash": "7a1b43ea9e3c8bbaab739debe43323d87d1c550f",
-        "localPath": "public/assets/images/emptiness-female-cutout.png",
+        "localPath": "source-assets/images/emptiness-female-cutout.png",
         "format": "PNG",
         "width": 2752,
         "height": 1536,
         "mode": "RGBA",
         "bytes": 1770817,
-        "sha256": "b223f616cef1838032330a84b3ddccbd37fd9cb9348afc36a5c62966d85179d3"
+        "sha256": "b223f616cef1838032330a84b3ddccbd37fd9cb9348afc36a5c62966d85179d3",
+        "optimizedPath": "public/assets/images/emptiness-female-cutout.webp"
       },
       {
         "hash": "32e0e75e18ed7cf100a240a42dc39d57bdf810d4",
-        "localPath": "public/assets/images/elephant-base.jpg",
+        "localPath": "source-assets/images/elephant-base.jpg",
         "format": "JPEG",
         "width": 2752,
         "height": 1536,
         "mode": "RGB",
         "bytes": 1638136,
-        "sha256": "87e4b1d78c0d0e9fd62708a1ed94a3477ccd8a4f360ee1e1dcf6f6844b09de74"
+        "sha256": "87e4b1d78c0d0e9fd62708a1ed94a3477ccd8a4f360ee1e1dcf6f6844b09de74",
+        "optimizedPath": null
       },
       {
         "hash": "4c9b031136e4b4714ea5f8a5806597a98bfa2d41",
-        "localPath": "public/assets/images/elephant-cutout.png",
+        "localPath": "source-assets/images/elephant-cutout.png",
         "format": "PNG",
         "width": 2752,
         "height": 1536,
         "mode": "RGBA",
         "bytes": 2302668,
-        "sha256": "8f9e9b76d9aac5e41ebb7460c48952e89e023dd24a60c2176ebbc286d7bb8998"
+        "sha256": "8f9e9b76d9aac5e41ebb7460c48952e89e023dd24a60c2176ebbc286d7bb8998",
+        "optimizedPath": "public/assets/images/elephant-cutout.webp"
       },
       {
         "hash": "097adb30ab0ee1356352c1673681a2318d190cad",
-        "localPath": "public/assets/images/blind-spot-circle-source.png",
+        "localPath": "source-assets/images/blind-spot-circle-source.png",
         "format": "PNG",
         "width": 512,
         "height": 512,
         "mode": "RGB",
         "bytes": 222197,
-        "sha256": "99c29196f4a26fd9935c82e59998fc9697545475d90b7b847445a6d39a229312"
+        "sha256": "99c29196f4a26fd9935c82e59998fc9697545475d90b7b847445a6d39a229312",
+        "optimizedPath": null
       },
       {
         "hash": "a3a4fd64ac220162df428e62b8a3cddf755b1fe7",
-        "localPath": "public/assets/images/blind-spot-circle-cutout.png",
+        "localPath": "source-assets/images/blind-spot-circle-cutout.png",
         "format": "PNG",
         "width": 512,
         "height": 512,
         "mode": "RGBA",
         "bytes": 215215,
-        "sha256": "13240a05edccb105d5dee97fc39d9b8ac284cec08234c239ff58cf2b8083f6e3"
+        "sha256": "13240a05edccb105d5dee97fc39d9b8ac284cec08234c239ff58cf2b8083f6e3",
+        "optimizedPath": "public/assets/images/blind-spot-circle-cutout.webp"
       },
       {
         "hash": "a2527d39f79d61137e7c901c1bd8802fb781330d",
-        "localPath": "public/assets/images/footer-eye.png",
+        "localPath": "source-assets/images/footer-eye.png",
         "format": "PNG",
         "width": 1774,
         "height": 887,
         "mode": "RGBA",
         "bytes": 2326187,
-        "sha256": "dd17ae41f28cf16546e5d4b7c0739be31ec4a55dffab16fc28356d8e8e5011cd"
+        "sha256": "dd17ae41f28cf16546e5d4b7c0739be31ec4a55dffab16fc28356d8e8e5011cd",
+        "optimizedPath": "public/assets/images/footer-eye.webp"
       },
       {
         "hash": "b7079f327ac77217ba31eccfa428d1c9bf81ad54",
-        "localPath": "public/assets/images/footer-unsaid-strip.png",
+        "localPath": "source-assets/images/footer-unsaid-strip.png",
         "format": "PNG",
         "width": 2172,
         "height": 724,
         "mode": "RGBA",
         "bytes": 1888868,
-        "sha256": "d1e8167844a77ddebfc4fab6e0ac8af63fc7a6632fde774e96597e4ebc48f6a8"
+        "sha256": "d1e8167844a77ddebfc4fab6e0ac8af63fc7a6632fde774e96597e4ebc48f6a8",
+        "optimizedPath": "public/assets/images/footer-unsaid-strip.webp"
       },
       {
         "hash": "bd6b5cacdd1170f72989f6b707a0d3eda9355621",
-        "localPath": "public/assets/images/footer-between-lines-strip.png",
+        "localPath": "source-assets/images/footer-between-lines-strip.png",
         "format": "PNG",
         "width": 2172,
         "height": 724,
         "mode": "RGBA",
         "bytes": 1448962,
-        "sha256": "b0c23a108fa55e7073ef5d6fec16d6827c6af2876bad670f1eb05d906d66d103"
+        "sha256": "b0c23a108fa55e7073ef5d6fec16d6827c6af2876bad670f1eb05d906d66d103",
+        "optimizedPath": "public/assets/images/footer-between-lines-strip.webp"
       },
       {
         "hash": "f4f836747639bb4a43af9d32647b44556507ae72",
-        "localPath": "public/assets/images/footer-mouth.png",
+        "localPath": "source-assets/images/footer-mouth.png",
         "format": "PNG",
         "width": 2172,
         "height": 724,
         "mode": "RGBA",
         "bytes": 2260107,
-        "sha256": "17e12f17e03327081c6062708df6d02476cbb27a2c5f127f656751293936000f"
+        "sha256": "17e12f17e03327081c6062708df6d02476cbb27a2c5f127f656751293936000f",
+        "optimizedPath": "public/assets/images/footer-mouth.webp"
       },
       {
         "hash": "c643e024e3da13f99a21672f8a7f13101d606a1c",
-        "localPath": "public/assets/images/footer-school-logo-base.jpg",
+        "localPath": "source-assets/images/footer-school-logo-base.jpg",
         "format": "JPEG",
         "width": 640,
         "height": 640,
         "mode": "RGB",
         "bytes": 27132,
-        "sha256": "1121633db4797f953059b3cced3d07e77f71f42ed004bf09adf4ee43af4e8d4e"
+        "sha256": "1121633db4797f953059b3cced3d07e77f71f42ed004bf09adf4ee43af4e8d4e",
+        "optimizedPath": null
       },
       {
         "hash": "f9cf72afab8959879ed22d0f0b83522d3b03cbec",
-        "localPath": "public/assets/images/footer-school-logo-cutout.png",
+        "localPath": "source-assets/images/footer-school-logo-cutout.png",
         "format": "PNG",
         "width": 640,
         "height": 640,
         "mode": "RGBA",
         "bytes": 78077,
-        "sha256": "59b843dbf21b9cc83efb24e4857ed65eccf54c311a4ea5622175111c78c87303"
+        "sha256": "59b843dbf21b9cc83efb24e4857ed65eccf54c311a4ea5622175111c78c87303",
+        "optimizedPath": "public/assets/images/footer-school-logo-cutout.webp"
       },
       {
         "hash": "429921b86495a728937851d97677ae3dcf8c9122",
-        "localPath": "public/assets/images/cultural-iron-throne-base.jpg",
+        "localPath": "source-assets/images/cultural-iron-throne-base.jpg",
         "format": "JPEG",
         "width": 1792,
         "height": 2400,
         "mode": "RGB",
         "bytes": 2262774,
-        "sha256": "db9a7bdcdb137d24d5187778f603c83909725a0b442c4b44faf93377616dec80"
+        "sha256": "db9a7bdcdb137d24d5187778f603c83909725a0b442c4b44faf93377616dec80",
+        "optimizedPath": null
       },
       {
         "hash": "76a447de6eae4a64eca6b2865f63ff9cdb9e566c",
-        "localPath": "public/assets/images/cultural-iron-throne-cutout.png",
+        "localPath": "source-assets/images/cultural-iron-throne-cutout.png",
         "format": "PNG",
         "width": 1792,
         "height": 2400,
         "mode": "RGBA",
         "bytes": 3860281,
-        "sha256": "7733212873f1187b887517ff5a2eb1e4338751d626f8a19807cddd6599703c3d"
+        "sha256": "7733212873f1187b887517ff5a2eb1e4338751d626f8a19807cddd6599703c3d",
+        "optimizedPath": "public/assets/images/cultural-iron-throne-cutout.webp"
       },
       {
         "hash": "bfdc63b7bc0f0d5abbdf1a00f3ec8121daffde5a",
-        "localPath": "public/assets/images/idiom-telephone-base.jpg",
+        "localPath": "source-assets/images/idiom-telephone-base.jpg",
         "format": "JPEG",
         "width": 1792,
         "height": 2400,
         "mode": "RGB",
         "bytes": 1276691,
-        "sha256": "9aa7aac0bb0fc41a6c05e2475918d4b6771be24c631b08c2d7c37d8d73cdc7d8"
+        "sha256": "9aa7aac0bb0fc41a6c05e2475918d4b6771be24c631b08c2d7c37d8d73cdc7d8",
+        "optimizedPath": "public/assets/images/idiom-telephone-base.webp"
       },
       {
         "hash": "be5817d93162046d2b9f3af61b7489db7df1278c",
-        "localPath": "public/assets/images/idiom-telephone-cutout.png",
+        "localPath": "source-assets/images/idiom-telephone-cutout.png",
         "format": "PNG",
         "width": 1792,
         "height": 2400,
         "mode": "RGBA",
         "bytes": 1355612,
-        "sha256": "fe269301ebbb0557b94073032509241fdb8215d00c5346dbb2cfacc410fea689"
+        "sha256": "fe269301ebbb0557b94073032509241fdb8215d00c5346dbb2cfacc410fea689",
+        "optimizedPath": "public/assets/images/idiom-telephone-cutout.webp"
       }
     ],
     "footerSvg": "Parsed 46x68 SVG, 62 rect primitives, no embedded raster"
-  }
+  },
+  "deliveryManifest": "docs/ASSET_DELIVERY.json",
+  "deliveryNote": "Stage 0.2H.2: localPath locates original master; optimizedPath is separate. Original Figma fills/crops/transforms/order/masks and historic import checks remain unchanged."
 }

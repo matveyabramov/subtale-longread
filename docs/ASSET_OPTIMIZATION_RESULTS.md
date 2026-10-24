@@ -86,3 +86,94 @@ Omit `--verify-only` to rebuild public derivatives. The script checks original h
 Delivery was checked for the approved 1920px composition at DPR1 and DPR2. Future larger display sizes or extra zoom would need a new resolution check; original sources are retained. Figma, other-section imagery, layout, animation and application dependencies were not changed.
 
 The completion message records the Git commit hash. To locate the committed report later: `git log -1 --format=%h -- docs/ASSET_OPTIMIZATION_RESULTS.md`.
+
+## Stage 0.2H.2 — all remaining raster assets (2026-10-24)
+
+Started only after merge commit `30a570c`; no active merge, no conflicts and a clean working tree were confirmed. This single stage covers **all 37 remaining public PNG/JPEG files**: **32 Figma sources plus five movie posters**, including Hero, Emptiness, Elephant, Pun, Double Meaning, Cultural Reference, Blind-spot-scene, Footer and both shared textures. Existing Idiom files were not re-encoded or moved again.
+
+### Package totals
+
+| Measurement | Before | After | Saved |
+|---|---:|---:|---:|
+| This stage's 37-file package (excludes unchanged Idiom) | 51,362,478 bytes / 51.362478 MB | 13,987,800 bytes / 13.987800 MB | 37,374,678 bytes / 72.77% |
+| All public raster images, including unchanged Idiom and five posters | **62,304,954 bytes / 62.304954 MB** | **24,930,276 bytes / 24.930276 MB** | **37,374,678 bytes / 37.374678 MB / 59.99%** |
+| All public assets, including unchanged SVG, fonts and MP4 | 63,852,024 bytes / 63.852024 MB | **26,477,346 bytes / 26.477346 MB** | 37,374,678 bytes |
+| Raster delivery files | 46 | 35 | 11 source-only files removed from delivery |
+
+MB means 1,000,000 bytes. These are actual directory sizes after the merge, not browser transfer measurements. The historical weight audit is a different, pre-Idiom snapshot; its totals are not the baseline for this run. Original retention outside public intentionally does not reduce Git storage.
+
+**37 originals archived this stage**, using `git mv` into `source-assets/images/` (posters under `video-posters/`); **46 originals now archived overall**: 41 Figma resources and five posters. All source SHA256 values, byte counts and dimensions remain unchanged. There are **26 delivery results** this stage: **19 lossless WebPs, six JPEGs and one PNG**. Eleven hidden/occluded masters are archived only. Of the 26 delivery results, 24 are smaller; two stay unchanged for the reasons below. Nine existing Idiom WebPs remain byte-identical, giving 35 public images overall.
+
+### Complete per-file decisions
+
+Every original path, SHA256, imageHash, delivery path/hash/dimensions, crop-use metadata, settings, encoder versions, candidate byte sizes and per-slot/background measurements are in `docs/ASSET_DELIVERY.json`. Figma registry `localPath` always locates the original; `optimizedPath` is separate. Hidden helpers explicitly use `deliveryStatus: source-only`; this does not make their original source pending.
+
+| Original filename | Original → delivery dimensions | Original bytes | Delivery bytes | Delivery path | Decision |
+|---|---|---:|---:|---|---|
+| `mosaic-texture.png` | 397×322 → 397×322 | 43,725 | 43,725 | `public/assets/images/mosaic-texture.png` | Unchanged native delivery (exception) |
+| `hero-person-collage.png` | 1122×1402 → 1122×1402 | 2,380,332 | 1,573,184 | `public/assets/images/hero-person-collage.webp` | WebP lossless |
+| `cultural-snowflake-base.jpg` | 1792×2400 | 1,752,022 | 0 | — | Archive only: Hidden auxiliary fill in every recorded state |
+| `cultural-snowflake-cutout.png` | 1792×2400 → 1176×1575 | 2,584,249 | 854,824 | `public/assets/images/cultural-snowflake-cutout.webp` | WebP lossless |
+| `au-fg-texture4-8k.jpg` | 3370×2247 → 3370×2247 | 4,242,403 | 3,536,596 | `public/assets/images/au-fg-texture4-8k.jpg` | JPEG coefficient/Huffman repack |
+| `hero-eye-accent.png` | 1254×1254 → 1254×1254 | 1,050,513 | 673,426 | `public/assets/images/hero-eye-accent.webp` | WebP lossless |
+| `pun-bicycle-base.jpg` | 1792×2400 | 1,637,962 | 0 | — | Archive only: Hidden auxiliary fill in every recorded state |
+| `pun-bicycle-cutout.png` | 1792×2400 → 1624×2175 | 2,600,467 | 538,332 | `public/assets/images/pun-bicycle-cutout.webp` | WebP lossless |
+| `pun-wheels-base.jpg` | 1792×2400 | 1,558,592 | 0 | — | Archive only: Hidden auxiliary fill in every recorded state |
+| `pun-wheels-cutout.png` | 1792×2400 → 1624×2175 | 959,426 | 500,938 | `public/assets/images/pun-wheels-cutout.webp` | WebP lossless |
+| `double-meaning-eye.png` | 3072×2048 → 1860×1240 | 940,785 | 606,452 | `public/assets/images/double-meaning-eye.webp` | WebP lossless |
+| `double-meaning-eye-couple.png` | 1536×1024 → 1536×1024 | 1,027,282 | 518,428 | `public/assets/images/double-meaning-eye-couple.webp` | WebP lossless |
+| `hero-film-base.jpg` | 1792×2400 | 1,428,684 | 0 | — | Archive only: Hidden auxiliary fill in every recorded state |
+| `hero-film-cutout.png` | 1792×2400 → 728×975 | 1,711,853 | 183,840 | `public/assets/images/hero-film-cutout.webp` | WebP lossless |
+| `hero-man-eye.png` | 1698×2122 → 1698×2122 | 133,874 | 51,188 | `public/assets/images/hero-man-eye.webp` | WebP lossless |
+| `emptiness-male-base.jpg` | 2752×1536 | 1,472,785 | 0 | — | Archive only: Hidden auxiliary fill in every recorded state |
+| `emptiness-male-cutout.png` | 2752×1536 → 2752×1536 | 1,001,055 | 517,746 | `public/assets/images/emptiness-male-cutout.webp` | WebP lossless |
+| `emptiness-pixel-strip-source.png` | 1122×1402 | 2,798,104 | 0 | — | Archive only: Occluded by later opaque tiles in the only approved state |
+| `emptiness-female-base.jpg` | 2752×1536 | 1,402,762 | 0 | — | Archive only: Hidden auxiliary fill in every recorded state |
+| `emptiness-female-cutout.png` | 2752×1536 → 1892×1056 | 1,770,817 | 546,618 | `public/assets/images/emptiness-female-cutout.webp` | WebP lossless |
+| `elephant-base.jpg` | 2752×1536 | 1,638,136 | 0 | — | Archive only: Hidden auxiliary fill in every recorded state |
+| `elephant-cutout.png` | 2752×1536 → 1935×1080 | 2,302,668 | 825,916 | `public/assets/images/elephant-cutout.webp` | WebP lossless |
+| `blind-spot-circle-source.png` | 512×512 | 222,197 | 0 | — | Archive only: Hidden auxiliary fill in every recorded state |
+| `blind-spot-circle-cutout.png` | 512×512 → 512×512 | 215,215 | 167,628 | `public/assets/images/blind-spot-circle-cutout.webp` | WebP lossless |
+| `footer-eye.png` | 1774×887 → 570×285 | 2,326,187 | 142,104 | `public/assets/images/footer-eye.webp` | WebP lossless |
+| `footer-unsaid-strip.png` | 2172×724 → 963×321 | 1,888,868 | 240,328 | `public/assets/images/footer-unsaid-strip.webp` | WebP lossless |
+| `footer-between-lines-strip.png` | 2172×724 → 1008×336 | 1,448,962 | 201,510 | `public/assets/images/footer-between-lines-strip.webp` | WebP lossless |
+| `footer-mouth.png` | 2172×724 → 951×317 | 2,260,107 | 259,488 | `public/assets/images/footer-mouth.webp` | WebP lossless |
+| `footer-school-logo-base.jpg` | 640×640 | 27,132 | 0 | — | Archive only: Hidden auxiliary fill in every recorded state |
+| `footer-school-logo-cutout.png` | 640×640 → 640×640 | 78,077 | 40,014 | `public/assets/images/footer-school-logo-cutout.webp` | WebP lossless |
+| `cultural-iron-throne-base.jpg` | 1792×2400 | 2,262,774 | 0 | — | Archive only: Hidden auxiliary fill in every recorded state |
+| `cultural-iron-throne-cutout.png` | 1792×2400 → 1344×1800 | 3,860,281 | 1,631,728 | `public/assets/images/cultural-iron-throne-cutout.webp` | WebP lossless |
+| `austin-powers-number-two.jpg` | 1600×667 → 1600×667 | 58,961 | 58,961 | `public/assets/videos/posters/austin-powers-number-two.jpg` | Unchanged native delivery (exception) |
+| `sherlock-sher-locked.jpg` | 1600×900 → 1600×900 | 55,904 | 55,884 | `public/assets/videos/posters/sherlock-sher-locked.jpg` | JPEG coefficient/Huffman repack |
+| `the-shining-heres-johnny.jpg` | 1600×1200 → 1600×1200 | 95,979 | 95,955 | `public/assets/videos/posters/the-shining-heres-johnny.jpg` | JPEG coefficient/Huffman repack |
+| `back-to-the-future-tree.jpg` | 1600×899 → 1600×899 | 74,618 | 74,551 | `public/assets/videos/posters/back-to-the-future-tree.jpg` | JPEG coefficient/Huffman repack |
+| `airplane-surely.jpg` | 1600×934 → 1600×934 | 48,720 | 48,436 | `public/assets/videos/posters/airplane-surely.jpg` | JPEG coefficient/Huffman repack |
+
+### Method and fidelity decisions
+
+- Every visible candidate was tested as WebP q92, q96 and lossless. Additional q85 poster, native PNG and lossless JPEG repacks were measured. Quality was selected per file; the outcome favors lossless pixels over the smaller lossy variants. No runtime dependencies were installed.
+- Full source canvases and exact original aspect ratios are retained; integer dimensions are multiples of the reduced source ratio. For CROP uses, required full-canvas display size is derived from `slotWidth / cropScaleX` and `slotHeight / cropScaleY`, rather than from the slot alone. FILL uses centered cover; all normalized crop transforms, slot dimensions, rotations/reflections, clipping and paint order stay unchanged.
+- Resized illustrations retain at least approximately 2.2 source samples/CSS pixel at the approved 1920px viewport, capped at the original. Native lower-resolution sources are not upsampled. Both Footer lettering strips retain 3× resolution. `image 22` stays at native resolution so the existing nonlinear Figma filters cannot acquire a new resampling interaction; the school logo also remains native. Originals remain available for future larger sizes or newly approved zoom.
+- All 19 selected WebPs use lossless encoding after alpha-aware Lanczos3 resizing (or without resizing where required). Their **entire alpha plane and RGB wherever alpha is nonzero exactly match the prepared reference**. This is lossless encoding of prepared pixels, not a claim that downsampling preserves every original high-resolution sample.
+- `AU-FG-Texture4-8K` stays **3370×2247** with exactly equal decoded RGB and retained ICC policy. Lossless JPEG coefficient/Huffman progressive repacking is smaller than WebP q96 and avoids adding lossy noise differences. Its CROP mapping, LIGHTEN blend and 0.2/0.4 paint opacity remain source metadata; no filter or blend is baked into the image.
+- Four movie posters use lossless JPEG Huffman optimization, preserve native dimensions and decode to exactly equal RGB. Their reductions are intentionally small. No final poster/video display slot is approved, so none was invented or downscaled. MP4 files were untouched.
+
+### Exceptions and source-only fills
+
+1. **Mosaic:** the 397×322 PNG delivery bytes and path remain unchanged. Tests included native PNG, lossy WebP and lossless WebP. A small additional compression gain did not justify changing the shared texture references of the already verified Idiom work. Its exact repeat period, palette/alpha and TILE settings are preserved. The source master is separately archived; this is one intentional native delivery copy, not duplicate public images.
+2. **Austin Powers poster:** native JPEG delivery remains unchanged. Lossless repacking increased its size; high-quality q92/q96 WebP also grew. q85 was smaller but adds another lossy generation for little absolute benefit. The original format and pixels are retained.
+3. **11 source-only files:** nine hidden JPEG bases, the hidden RGB Blind-spot PNG and the Emptiness portrait strip covered by later opaque tiles. All were decoded, measured and archived unchanged, with no public derivative. Visible/alternate-state fills remain available. The two Double Meaning images are both delivered because each is visible in one state. Hidden sources remain available if a later approved motion decision requires preparing a derivative; no such reveal is inferred now.
+4. **Existing limits remain:** JPEG/PNG pairs do not establish extra independent parts inside a bitmap; wheel pairs and baked paper/letter/photo compositions retain their original independence limits. CSS pixel geometry, Boolean/SVG masks, the five snowflake instances and their shared source relationship are preserved, not flattened. Footer filter conversion and film scene/playback/audio QA remain the earlier implementation/media tasks.
+
+### Checks and visual review
+
+All 37 source files fully decoded before migration. All 26 selected outputs were visually inspected side by side against originals; distinct Figma crop/slot configurations were compared at the 1920px design scale and DPR1/DPR2 over near-black, blue, yellow and white. Additional native DPR2 detail comparisons covered snowflake branches/counters, throne sword tips, Footer paper edges/lettering and logo. No noticeable new halos, blocking, color fringe, missing thin detail or text degradation was observed. Posters were additionally inspected at native resolution; all five selected outputs are pixel-exact to their originals.
+
+Comparison uses SHA-verified originals and the exact Figma source geometry previously audited/imported, not a new Figma read or a browser implementation. No Figma layer, position, crop, mask, blend, source filter, opacity, stacking or animation endpoint was edited. No masks or active fill pairs were merged. Non-Idiom import reports retain their original geometry and now separately record current master/delivery paths. Idiom reports, encoder settings, sources and WebPs remain unchanged; the shared Mosaic path/bytes also remain unchanged.
+
+- `node scripts/check-assets.mjs` → **Verified: 41 | Pending: 0 | Errors: 0**; five poster originals and all 35 delivery paths/hashes/dimensions also verified.
+- The same command with the existing bundled Sharp supplied through `--sharp-module` fully decoded **81 files: 46 masters + 35 delivery files**. No damaged, missing or duplicate delivery images.
+- Validator integrity was strengthened: original SHA256, original JPEG dimensions, delivery SHA256/bytes/dimensions and WebP headers are checked; optional full decoding needs no application dependency. Original checks were not weakened.
+- All 37 archived master hashes/byte lengths match the pre-task snapshot and prior committed originals. All nine Idiom source entries/files and nine existing delivery files match the previous commit exactly. All 16 SVGs, four WOFF2 files and four MP4 files remain byte-identical.
+- Reproduction regenerated all 26 new outputs in memory and matched their selected SHA256/byte counts, checking all 37 master hashes without touching Idiom. Encoder versions/settings are pinned in `ASSET_DELIVERY.json`; script: `scripts/optimize-assets.mjs --sharp-module /path/to/sharp --jpegtran /path/to/jpegtran --verify-only`.
+
+No image-optimization blockers remain. Sherlock MP4 is still absent as before and was not part of image optimization; the total public size includes only the four existing MP4s. Video optimization, layout and animation were not started. This stage completes the remaining raster work in one commit; the earlier separate section-optimization plan is superseded by this requested full pass.

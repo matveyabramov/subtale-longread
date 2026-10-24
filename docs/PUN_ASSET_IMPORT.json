@@ -18,7 +18,7 @@
       "width": 1792,
       "height": 2400,
       "nodeId": "10:1977",
-      "localPath": "public/assets/images/pun-bicycle-base.jpg",
+      "localPath": "source-assets/images/pun-bicycle-base.jpg",
       "sha256": "36102c58ea1e5c1a98465865849c0320b8fd12143c14892668eebff6f6967777",
       "pixelQA": {
         "format": "JPEG",
@@ -38,7 +38,8 @@
           1792,
           2400
         ]
-      }
+      },
+      "optimizedPath": null
     },
     {
       "hash": "062b06beeb916ea58e9db0134f2d6a1ba921958a",
@@ -48,7 +49,7 @@
       "width": 1792,
       "height": 2400,
       "nodeId": "10:1977",
-      "localPath": "public/assets/images/pun-bicycle-cutout.png",
+      "localPath": "source-assets/images/pun-bicycle-cutout.png",
       "sha256": "47a9262b37bbcbdc9e68da7aa627f3c4ccfe14352252f4dfd8093b31acb3c24f",
       "pixelQA": {
         "format": "PNG",
@@ -79,7 +80,8 @@
           1702,
           1864
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/pun-bicycle-cutout.webp"
     },
     {
       "hash": "abafb5e224150ff4820d1e37233090f06e1e9689",
@@ -89,7 +91,7 @@
       "width": 1792,
       "height": 2400,
       "nodeId": "10:1979",
-      "localPath": "public/assets/images/pun-wheels-base.jpg",
+      "localPath": "source-assets/images/pun-wheels-base.jpg",
       "sha256": "d6cdb153eaaa8bd19132f90f893878d378d5034357fa27047f0bacb477dbdf55",
       "pixelQA": {
         "format": "JPEG",
@@ -109,7 +111,8 @@
           1792,
           2400
         ]
-      }
+      },
+      "optimizedPath": null
     },
     {
       "hash": "173aa0acd8edfb44bd3dee924ff505e613162e4f",
@@ -119,7 +122,7 @@
       "width": 1792,
       "height": 2400,
       "nodeId": "10:1979",
-      "localPath": "public/assets/images/pun-wheels-cutout.png",
+      "localPath": "source-assets/images/pun-wheels-cutout.png",
       "sha256": "ab49220c877c0e85abbc83d418cfeafbea3590604fa29657d4191561c1ba2abc",
       "pixelQA": {
         "format": "PNG",
@@ -139,7 +142,8 @@
           1702,
           1864
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/pun-wheels-cutout.webp"
     }
   ],
   "reusedTexture": {
@@ -149,8 +153,9 @@
     "format": "png",
     "width": 397,
     "height": 322,
-    "localPath": "public/assets/images/mosaic-texture.png",
-    "originalBytesVerified": true
+    "localPath": "source-assets/images/mosaic-texture.png",
+    "originalBytesVerified": true,
+    "optimizedPath": "public/assets/images/mosaic-texture.png"
   },
   "objectMapping": [
     {
@@ -1396,5 +1401,7 @@
   },
   "openQuestions": [
     "Trigger, duration/easing, interruption/replay, reduced-motion state access and whether any additional independent wheel motion is desired remain decisions for the motion stage."
-  ]
+  ],
+  "deliveryManifest": "docs/ASSET_DELIVERY.json",
+  "deliveryNote": "Stage 0.2H.2: localPath locates original master; optimizedPath is separate. Original Figma fills/crops/transforms/order/masks and historic import checks remain unchanged."
 }

@@ -20,7 +20,7 @@
       "width": 3370,
       "height": 2247,
       "nodeId": "10:998",
-      "localPath": "public/assets/images/au-fg-texture4-8k.jpg",
+      "localPath": "source-assets/images/au-fg-texture4-8k.jpg",
       "sha256": "a61f3a7ab37031d8f43f76ee858a9b02387830c3edd500979219cda2b493e892",
       "pixelQA": {
         "format": "JPEG",
@@ -46,7 +46,8 @@
           13,
           255
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/au-fg-texture4-8k.jpg"
     },
     {
       "hash": "097adb30ab0ee1356352c1673681a2318d190cad",
@@ -56,7 +57,7 @@
       "width": 512,
       "height": 512,
       "nodeId": "10:1012",
-      "localPath": "public/assets/images/blind-spot-circle-source.png",
+      "localPath": "source-assets/images/blind-spot-circle-source.png",
       "sha256": "99c29196f4a26fd9935c82e59998fc9697545475d90b7b847445a6d39a229312",
       "pixelQA": {
         "format": "PNG",
@@ -82,7 +83,8 @@
           1,
           255
         ]
-      }
+      },
+      "optimizedPath": null
     },
     {
       "hash": "a3a4fd64ac220162df428e62b8a3cddf755b1fe7",
@@ -92,7 +94,7 @@
       "width": 512,
       "height": 512,
       "nodeId": "10:1012",
-      "localPath": "public/assets/images/blind-spot-circle-cutout.png",
+      "localPath": "source-assets/images/blind-spot-circle-cutout.png",
       "sha256": "13240a05edccb105d5dee97fc39d9b8ac284cec08234c239ff58cf2b8083f6e3",
       "pixelQA": {
         "format": "PNG",
@@ -118,12 +120,13 @@
           1,
           255
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/blind-spot-circle-cutout.webp"
     }
   ],
   "sharedTexture": {
     "imageHash": "364855320f08ade1d04f13556e9f3defb0d52bcb",
-    "localPath": "public/assets/images/au-fg-texture4-8k.jpg",
+    "localPath": "source-assets/images/au-fg-texture4-8k.jpg",
     "usages": [
       {
         "frameNodeId": "10:997",
@@ -375,7 +378,8 @@
         "blendMode": "LIGHTEN"
       }
     ],
-    "interpretation": "Same JPEG used once in each of the three named frames. Node LIGHTEN blend; paint NORMAL with opacity 0.4, 0.2, 0.4 respectively. CROP plus identity imageTransform maps the full normalized source into each 1920x1080 texture rectangle. Do not substitute tiled Mosaic, a rendered PNG or a uniform cover assumption. Footer texture rectangle is 1080px high within a 1334px frame."
+    "interpretation": "Same JPEG used once in each of the three named frames. Node LIGHTEN blend; paint NORMAL with opacity 0.4, 0.2, 0.4 respectively. CROP plus identity imageTransform maps the full normalized source into each 1920x1080 texture rectangle. Do not substitute tiled Mosaic, a rendered PNG or a uniform cover assumption. Footer texture rectangle is 1080px high within a 1334px frame.",
+    "optimizedPath": "public/assets/images/au-fg-texture4-8k.jpg"
   },
   "centralIllustration": {
     "nodeId": "10:1012",
@@ -2146,5 +2150,7 @@
     "alpha": "Hidden PNG is RGB/fully opaque; visible PNG RGBA alpha 0..255, 77172 fully transparent and 7049 partial-alpha pixels, 2048 transparent edge samples; center alpha 255.",
     "visual": "Originals inspected on checkerboard. Temporary source-texture LIGHTEN/opacity and measured line/image geometry reconstruction compared visually with Figma screenshot.",
     "assetScript": "Verified: 35 | Pending: 6 | Errors: 0"
-  }
+  },
+  "deliveryManifest": "docs/ASSET_DELIVERY.json",
+  "deliveryNote": "Stage 0.2H.2: localPath locates original master; optimizedPath is separate. Original Figma fills/crops/transforms/order/masks and historic import checks remain unchanged."
 }

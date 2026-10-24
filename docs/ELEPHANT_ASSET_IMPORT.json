@@ -19,7 +19,7 @@
       "width": 2752,
       "height": 1536,
       "nodeId": "10:920",
-      "localPath": "public/assets/images/elephant-base.jpg",
+      "localPath": "source-assets/images/elephant-base.jpg",
       "sha256": "87e4b1d78c0d0e9fd62708a1ed94a3477ccd8a4f360ee1e1dcf6f6844b09de74",
       "pixelQA": {
         "format": "JPEG",
@@ -39,7 +39,8 @@
           2752,
           1536
         ]
-      }
+      },
+      "optimizedPath": null
     },
     {
       "hash": "4c9b031136e4b4714ea5f8a5806597a98bfa2d41",
@@ -49,7 +50,7 @@
       "width": 2752,
       "height": 1536,
       "nodeId": "10:920",
-      "localPath": "public/assets/images/elephant-cutout.png",
+      "localPath": "source-assets/images/elephant-cutout.png",
       "sha256": "8f9e9b76d9aac5e41ebb7460c48952e89e023dd24a60c2176ebbc286d7bb8998",
       "pixelQA": {
         "format": "PNG",
@@ -69,7 +70,8 @@
           2224,
           1486
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/elephant-cutout.webp"
     }
   ],
   "reusedTexture": {
@@ -79,14 +81,15 @@
     "format": "png",
     "width": 397,
     "height": 322,
-    "localPath": "public/assets/images/mosaic-texture.png",
+    "localPath": "source-assets/images/mosaic-texture.png",
     "originalBytesVerified": true,
     "nodeId": "10:918",
     "fillOpacity": 0.4000000059604645,
     "scaleMode": "TILE",
     "scalingFactor": 0.8942065238952637,
     "layerHeight": 2512,
-    "clippedByFrame": true
+    "clippedByFrame": true,
+    "optimizedPath": "public/assets/images/mosaic-texture.png"
   },
   "illustration": {
     "nodeId": "10:920",
@@ -652,5 +655,7 @@
     "visual": "Original JPEG and PNG inspected on checkerboard; visible cutout artwork matches the Figma screenshot. Transparent margins retained; full elephant silhouette is within canvas.",
     "assetScript": "Verified: 13 | Pending: 28 | Errors: 0"
   },
-  "openQuestions": []
+  "openQuestions": [],
+  "deliveryManifest": "docs/ASSET_DELIVERY.json",
+  "deliveryNote": "Stage 0.2H.2: localPath locates original master; optimizedPath is separate. Original Figma fills/crops/transforms/order/masks and historic import checks remain unchanged."
 }

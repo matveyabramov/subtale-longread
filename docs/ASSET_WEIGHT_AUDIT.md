@@ -1,6 +1,6 @@
 # SUBTALE — asset weight and delivery audit
 
-**Snapshot:** current remote `main` at `d64a173bf42a` (2026-10-24). Measured from committed Git tree file sizes, not browser network requests.
+**Historical snapshot (before Stages 0.2H.1/H.2):** remote `main` at `d64a173bf42a` (2026-10-24). Measured from committed Git tree file sizes, not browser network requests.
 
 ## Baseline
 
@@ -29,7 +29,7 @@ Image-heavy sections (includes stored original JPEG bases and PNG cutouts, not n
 | Film posters | 5 | 0.33 |
 | Shared mosaic | 1 | 0.04 |
 
-The **seven ice PNGs** alone weigh **0.00 MB**. The late shared texture is 4.24 MB. Source assets are intentionally unoptimized; no claim is made about their simultaneous browser download.
+The **seven original ice PNGs** alone weigh **37.37 MB** (37,365,014 bytes; corrected erroneous 0.00 MB subtotal). The late shared texture is 4.24 MB. Source assets are intentionally unoptimized; no claim is made about their simultaneous browser download.
 
 ## Required delivery architecture
 
@@ -54,3 +54,9 @@ The **seven ice PNGs** alone weigh **0.00 MB**. The late shared texture is 4.24 
 ## Current blocker
 
 Remote `main` contains 4/5 MP4s; `sherlock-sher-locked.mp4` still needs local copy from legacy `case-04.mp4`. Font files (both TT Bluescreens Trial weights and both IBM Plex Mono weights) are present.
+
+## Stage 0.2H.2 — current measured delivery
+
+The user's full-pass scope supersedes the separate remaining-illustration / Hero / Footer / texture stages above: all remaining 37 PNG/JPEG files, including all five posters, were handled together after merge completion. The baseline at this stage start was 62,304,954 bytes of public images and 63,852,024 bytes of all public assets. Public images are now **24,930,276 bytes**, saving **37,374,678 bytes / 37.37 MB / 59.99%** this stage; all public assets total **26,477,346 bytes / 26.48 MB**. These measurements include unchanged Idiom and four MP4s; they are directory weights, not browser page-transfer measurements.
+
+All 41 Figma masters and five poster masters are archived with original checksums/dimensions. There are 35 public raster delivery files; 11 hidden/occluded masters are archive-only. Mosaic PNG and Austin Powers poster are unchanged native-format delivery exceptions. All SVG, font and MP4 bytes remain unchanged. Runtime loading and video QA/optimization remain separate work; Sherlock MP4 is still absent. Full file-level decisions/checks: `ASSET_DELIVERY.json`, `ASSET_OPTIMIZATION_RESULTS.md`.

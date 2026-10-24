@@ -15,7 +15,7 @@
       "width": 2752,
       "height": 1536,
       "nodeId": "10:864",
-      "localPath": "public/assets/images/emptiness-male-base.jpg",
+      "localPath": "source-assets/images/emptiness-male-base.jpg",
       "sha256": "4983d9ae72f08eed4bf1c5a30d90f0c388b0fda4d81c0361d404680317fb3357",
       "pixelQA": {
         "format": "JPEG",
@@ -35,7 +35,8 @@
           2752,
           1536
         ]
-      }
+      },
+      "optimizedPath": null
     },
     {
       "hash": "a7989beee0d2ab130f2012d50167c4ed4862f4d0",
@@ -45,7 +46,7 @@
       "width": 2752,
       "height": 1536,
       "nodeId": "10:864",
-      "localPath": "public/assets/images/emptiness-male-cutout.png",
+      "localPath": "source-assets/images/emptiness-male-cutout.png",
       "sha256": "b02c5bede368e85b9d8b93d6be31b5aad19fca1e2ea416344cdb4f656e9c3076",
       "pixelQA": {
         "format": "PNG",
@@ -65,7 +66,8 @@
           2077,
           1536
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/emptiness-male-cutout.webp"
     },
     {
       "hash": "5117fe324500367f27967d387a1ca2d13f13b5b0",
@@ -75,7 +77,7 @@
       "width": 2752,
       "height": 1536,
       "nodeId": "10:899",
-      "localPath": "public/assets/images/emptiness-female-base.jpg",
+      "localPath": "source-assets/images/emptiness-female-base.jpg",
       "sha256": "04c806e3ae2dc917446ef6487c0b2f047d450149123d78759830b5d79a84f955",
       "pixelQA": {
         "format": "JPEG",
@@ -95,7 +97,8 @@
           2752,
           1536
         ]
-      }
+      },
+      "optimizedPath": null
     },
     {
       "hash": "7a1b43ea9e3c8bbaab739debe43323d87d1c550f",
@@ -105,7 +108,7 @@
       "width": 2752,
       "height": 1536,
       "nodeId": "10:899",
-      "localPath": "public/assets/images/emptiness-female-cutout.png",
+      "localPath": "source-assets/images/emptiness-female-cutout.png",
       "sha256": "b223f616cef1838032330a84b3ddccbd37fd9cb9348afc36a5c62966d85179d3",
       "pixelQA": {
         "format": "PNG",
@@ -125,7 +128,8 @@
           2503,
           1536
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/emptiness-female-cutout.webp"
     },
     {
       "hash": "b7c41bc585e7ce56a516ed7cc7c897a8339c874d",
@@ -135,7 +139,7 @@
       "width": 1122,
       "height": 1402,
       "nodeId": "10:875",
-      "localPath": "public/assets/images/emptiness-pixel-strip-source.png",
+      "localPath": "source-assets/images/emptiness-pixel-strip-source.png",
       "sha256": "10c17957ee73a00edf0a442b26d9d396828ffc4397aca4163081e29c8b8b1131",
       "pixelQA": {
         "format": "PNG",
@@ -155,7 +159,8 @@
           1122,
           1402
         ]
-      }
+      },
+      "optimizedPath": null
     }
   ],
   "reusedTexture": {
@@ -165,8 +170,9 @@
     "format": "png",
     "width": 397,
     "height": 322,
-    "localPath": "public/assets/images/mosaic-texture.png",
-    "originalBytesVerified": true
+    "localPath": "source-assets/images/mosaic-texture.png",
+    "originalBytesVerified": true,
+    "optimizedPath": "public/assets/images/mosaic-texture.png"
   },
   "characterFills": [
     {
@@ -883,5 +889,7 @@
   },
   "openQuestions": [
     "Future motion/reveal behavior for the occluded portrait strip is not specified by this static frame. Keep source; decide only in the motion stage."
-  ]
+  ],
+  "deliveryManifest": "docs/ASSET_DELIVERY.json",
+  "deliveryNote": "Stage 0.2H.2: localPath locates original master; optimizedPath is separate. Original Figma fills/crops/transforms/order/masks and historic import checks remain unchanged."
 }

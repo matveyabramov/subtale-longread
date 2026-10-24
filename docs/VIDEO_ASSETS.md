@@ -34,3 +34,7 @@ Then verify original vs copy with `shasum`, check with `ffprobe`, and commit/pus
 ## Sources and status
 
 This is the legacy prototype source, not an external downloaded scene search. The new app should use `/assets/videos/<file>.mp4` paths, not legacy `/public/media/cases/` URLs. Do not treat five thumbnails as five substitute videos.
+
+## Stage 0.2H.2 — poster master/delivery paths
+
+The migration table above records the original transfer, not current poster bitstream sizes. All five original JPEGs are now preserved unchanged under `source-assets/images/video-posters/`, with SHA256 and dimensions in `docs/ASSET_DELIVERY.json`. Current poster delivery paths remain `public/assets/videos/posters/<name>.jpg`: four have lossless JPEG Huffman repacking, and Austin Powers retains its original bytes. All five decode pixel-identically at native resolution. No poster was downscaled or given a new lossy generation; MP4 bytes and the pending Sherlock video status are unchanged. Current per-file bytes and checks are in `docs/ASSET_OPTIMIZATION_RESULTS.md`.

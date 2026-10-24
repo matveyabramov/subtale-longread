@@ -18,7 +18,7 @@
       "width": 1792,
       "height": 2400,
       "nodeId": "10:2087",
-      "localPath": "public/assets/images/cultural-iron-throne-base.jpg",
+      "localPath": "source-assets/images/cultural-iron-throne-base.jpg",
       "sha256": "db9a7bdcdb137d24d5187778f603c83909725a0b442c4b44faf93377616dec80",
       "pixelQA": {
         "format": "JPEG",
@@ -38,7 +38,8 @@
           1792,
           2400
         ]
-      }
+      },
+      "optimizedPath": null
     },
     {
       "hash": "a3b7ac7e799505da584c86b7c42f8da6723eedbc",
@@ -48,7 +49,7 @@
       "width": 1792,
       "height": 2400,
       "nodeId": "10:1591",
-      "localPath": "public/assets/images/cultural-snowflake-base.jpg",
+      "localPath": "source-assets/images/cultural-snowflake-base.jpg",
       "sha256": "0968e1ae99abdcd9814b75ddfd173e040a0a50f5c212f6a2463941466e283852",
       "pixelQA": {
         "format": "JPEG",
@@ -68,7 +69,8 @@
           1792,
           2400
         ]
-      }
+      },
+      "optimizedPath": null
     },
     {
       "hash": "76a447de6eae4a64eca6b2865f63ff9cdb9e566c",
@@ -78,7 +80,7 @@
       "width": 1792,
       "height": 2400,
       "nodeId": "10:2087",
-      "localPath": "public/assets/images/cultural-iron-throne-cutout.png",
+      "localPath": "source-assets/images/cultural-iron-throne-cutout.png",
       "sha256": "7733212873f1187b887517ff5a2eb1e4338751d626f8a19807cddd6599703c3d",
       "pixelQA": {
         "format": "PNG",
@@ -98,7 +100,8 @@
           1714,
           2302
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/cultural-iron-throne-cutout.webp"
     },
     {
       "hash": "479c47cbc92ef29bc039dc843d2f7103b80d1391",
@@ -108,7 +111,7 @@
       "width": 1792,
       "height": 2400,
       "nodeId": "10:1591",
-      "localPath": "public/assets/images/cultural-snowflake-cutout.png",
+      "localPath": "source-assets/images/cultural-snowflake-cutout.png",
       "sha256": "83779a9d97f2429d1db9f19c6df71c1673a800779d3c6b572342eeecfb021870",
       "pixelQA": {
         "format": "PNG",
@@ -128,7 +131,8 @@
           1761,
           2233
         ]
-      }
+      },
+      "optimizedPath": "public/assets/images/cultural-snowflake-cutout.webp"
     }
   ],
   "reusedTexture": {
@@ -138,8 +142,9 @@
     "format": "png",
     "width": 397,
     "height": 322,
-    "localPath": "public/assets/images/mosaic-texture.png",
-    "originalBytesVerified": true
+    "localPath": "source-assets/images/mosaic-texture.png",
+    "originalBytesVerified": true,
+    "optimizedPath": "public/assets/images/mosaic-texture.png"
   },
   "snowflakeInstances": [
     {
@@ -1333,5 +1338,7 @@
     "transparency": "Both PNGs retain true zero-alpha pixels, partial alpha and all transparent canvas-edge samples; alpha 0..255",
     "visual": "JPEG/PNG originals inspected on checkerboard. Temporary reconstructions using the five measured FILL slots and the throne slot visually compared with both Figma screenshots.",
     "assetScript": "Verified: 32 | Pending: 9 | Errors: 0"
-  }
+  },
+  "deliveryManifest": "docs/ASSET_DELIVERY.json",
+  "deliveryNote": "Stage 0.2H.2: localPath locates original master; optimizedPath is separate. Original Figma fills/crops/transforms/order/masks and historic import checks remain unchanged."
 }
