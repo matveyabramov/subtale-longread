@@ -19,9 +19,9 @@ export function App() {
       <main id="main-content" tabIndex={-1}>
         <HeroSection />
         <ExperimentSection />
+        <EmptinessSection />
+        <ElephantSection />
         <div className={styles.foundation}>
-          <EmptinessSection />
-          <ElephantSection />
           <BlindZonesExplorer />
           <MoviesSection />
           <VocabSection />

@@ -1,0 +1,13 @@
+{
+  "filesChecked": 137,
+  "algorithm": "SHA256",
+  "scope": [
+    "public/assets",
+    "source-assets",
+    "src/styles",
+    "src/sections except emptiness and elephant",
+    "package.json",
+    "package-lock.json"
+  ],
+  "changed": []
+}

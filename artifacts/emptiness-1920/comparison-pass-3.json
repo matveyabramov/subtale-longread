@@ -1,0 +1,114 @@
+{
+  "name": "emptiness",
+  "dimensions": {
+    "w": 1920,
+    "h": 1080
+  },
+  "full": {
+    "mae": 0.6625053047839506,
+    "pixelsAbove12Percent": 0.7614293981481481,
+    "max": 132,
+    "exactPercent": 32.949363425925924
+  },
+  "regions": {
+    "title": {
+      "mae": 0.8420071684587813,
+      "pixelsAbove12Percent": 2.848267622461171,
+      "max": 60,
+      "exactPercent": 53.132616487455195,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 0.8420071684587813,
+        "pixelsAbove12Percent": 2.848267622461171,
+        "max": 60,
+        "exactPercent": 53.132616487455195
+      }
+    },
+    "banner": {
+      "mae": 0.3355015987210232,
+      "pixelsAbove12Percent": 1.273980815347722,
+      "max": 66,
+      "exactPercent": 95.12589928057554,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 0.3355015987210232,
+        "pixelsAbove12Percent": 1.273980815347722,
+        "max": 66,
+        "exactPercent": 95.12589928057554
+      }
+    },
+    "copy": {
+      "mae": 2.4253156565656564,
+      "pixelsAbove12Percent": 8.138111888111888,
+      "max": 132,
+      "exactPercent": 23.238636363636363,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 2.4253156565656564,
+        "pixelsAbove12Percent": 8.138111888111888,
+        "max": 132,
+        "exactPercent": 23.238636363636363
+      }
+    },
+    "firstLabel": {
+      "mae": 0.9208819143995502,
+      "pixelsAbove12Percent": 2.4037544914570654,
+      "max": 104,
+      "exactPercent": 30.64017012539415,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 0.9208819143995502,
+        "pixelsAbove12Percent": 2.4037544914570654,
+        "max": 104,
+        "exactPercent": 30.64017012539415
+      }
+    },
+    "lastLabel": {
+      "mae": 1.137723350688079,
+      "pixelsAbove12Percent": 3.5213023392241696,
+      "max": 109,
+      "exactPercent": 34.93583632763804,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 1.137723350688079,
+        "pixelsAbove12Percent": 3.5213023392241696,
+        "max": 109,
+        "exactPercent": 34.93583632763804
+      }
+    },
+    "artwork": {
+      "mae": 0.8092237315962292,
+      "pixelsAbove12Percent": 0.9028439783921195,
+      "max": 101,
+      "exactPercent": 54.5600969176994
+    },
+    "male": {
+      "mae": 1.289411089238845,
+      "pixelsAbove12Percent": 1.8056922572178478,
+      "max": 101,
+      "exactPercent": 48.885744750656166
+    },
+    "female": {
+      "mae": 0.5139488840892729,
+      "pixelsAbove12Percent": 0.09416319865142496,
+      "max": 28,
+      "exactPercent": 48.075910024759
+    },
+    "background": {
+      "mae": 0.4909094017094017,
+      "pixelsAbove12Percent": 0,
+      "max": 8,
+      "exactPercent": 20.105641025641027
+    }
+  },
+  "geometry": {
+    "count": 64,
+    "maxDelta": 0,
+    "above1over64": []
+  }
+}

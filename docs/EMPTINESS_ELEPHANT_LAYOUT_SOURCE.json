@@ -1,0 +1,3484 @@
+{
+  "stage": "1B.3",
+  "fileKey": "H4HI00uGY2UOxpcfHogUat",
+  "sessionId": "9f834ce7-5496-40b0-8c66-4686c3449b2f",
+  "frames": [
+    {
+      "id": "10:838",
+      "nodes": [
+        {
+          "id": "10:838",
+          "parent": "0:1",
+          "type": "FRAME",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080,
+          "matrix": [
+            [
+              1,
+              0,
+              4276
+            ],
+            [
+              0,
+              1,
+              4720
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:839",
+            "10:840",
+            "10:841",
+            "10:843",
+            "10:844"
+          ],
+          "clip": true,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.003921568859368563,
+                "g": 0.18039216101169586,
+                "b": 0.843137264251709
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:839",
+          "parent": "10:838",
+          "type": "RECTANGLE",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 0.4000000059604645,
+              "blendMode": "NORMAL",
+              "scaleMode": "TILE",
+              "scalingFactor": 0.8942065238952637,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e"
+            }
+          ]
+        },
+        {
+          "id": "10:840",
+          "parent": "10:838",
+          "type": "TEXT",
+          "x": 30,
+          "y": 30,
+          "w": 454,
+          "h": 80,
+          "matrix": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              30
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "Мозг не любит",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 100,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "horizontal": "LEFT",
+          "vertical": "TOP",
+          "segments": [
+            {
+              "text": "Мозг не любит",
+              "start": 0,
+              "end": 13,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:841",
+          "parent": "10:838",
+          "type": "FRAME",
+          "x": 30,
+          "y": 125,
+          "w": 278,
+          "h": 120,
+          "matrix": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              125
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:842"
+          ],
+          "clip": false
+        },
+        {
+          "id": "10:842",
+          "parent": "10:841",
+          "type": "TEXT",
+          "x": 50,
+          "y": 145,
+          "w": 238,
+          "h": 80,
+          "matrix": [
+            [
+              1,
+              0,
+              20
+            ],
+            [
+              0,
+              1,
+              20
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "Пустоту",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 100,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "horizontal": "LEFT",
+          "vertical": "TOP",
+          "segments": [
+            {
+              "text": "Пустоту",
+              "start": 0,
+              "end": 7,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.04313725605607033,
+                    "g": 0.05098039284348488,
+                    "b": 0.05882352963089943
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:843",
+          "parent": "10:838",
+          "type": "TEXT",
+          "x": 30,
+          "y": 930,
+          "w": 572,
+          "h": 120,
+          "matrix": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              930
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "В области слепого пятна глаза нет светочувствительных клеток. Но обычно ты не видишь «дыру»: восприятие достраивает окружающую картину",
+          "font": {
+            "family": "IBM Plex Mono",
+            "style": "Medium"
+          },
+          "size": 25,
+          "line": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": -4
+          },
+          "textCase": "ORIGINAL",
+          "horizontal": "LEFT",
+          "vertical": "CENTER",
+          "segments": [
+            {
+              "text": "В области слепого пятна глаза нет светочувствительных клеток. Но обычно ты не видишь «дыру»: восприятие достраивает окружающую картину",
+              "start": 0,
+              "end": 134,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.9333333373069763,
+                    "g": 0.9333333373069763,
+                    "b": 0.9058823585510254
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:844",
+          "parent": "10:838",
+          "type": "FRAME",
+          "x": 761,
+          "y": 30,
+          "w": 1129,
+          "h": 1020,
+          "matrix": [
+            [
+              1,
+              0,
+              761
+            ],
+            [
+              0,
+              1,
+              30
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:845",
+            "10:846",
+            "10:907"
+          ],
+          "clip": false
+        },
+        {
+          "id": "10:845",
+          "parent": "10:844",
+          "type": "TEXT",
+          "x": 801,
+          "y": 70,
+          "w": 1049,
+          "h": 56,
+          "matrix": [
+            [
+              1,
+              0,
+              40
+            ],
+            [
+              0,
+              1,
+              40
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "Слова знакомы",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 70,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "horizontal": "LEFT",
+          "vertical": "TOP",
+          "segments": [
+            {
+              "text": "Слова знакомы",
+              "start": 0,
+              "end": 13,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:846",
+          "parent": "10:844",
+          "type": "GROUP",
+          "x": 801,
+          "y": 300,
+          "w": 1049,
+          "h": 480,
+          "matrix": [
+            [
+              1,
+              0,
+              40
+            ],
+            [
+              0,
+              1,
+              270
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:847",
+            "10:848",
+            "10:849",
+            "10:850",
+            "10:851",
+            "10:852",
+            "10:853",
+            "10:854",
+            "10:855",
+            "10:856",
+            "10:857",
+            "10:858",
+            "10:859",
+            "10:860",
+            "10:861",
+            "10:862",
+            "10:863",
+            "10:864",
+            "10:865",
+            "10:866",
+            "10:867",
+            "10:868",
+            "10:869",
+            "10:870",
+            "10:871",
+            "10:872",
+            "10:873",
+            "10:874",
+            "10:875",
+            "10:879",
+            "10:880",
+            "10:881",
+            "10:882",
+            "10:886",
+            "10:887",
+            "10:888",
+            "10:889",
+            "10:890",
+            "10:891",
+            "10:892",
+            "10:893",
+            "10:894",
+            "10:895",
+            "10:896",
+            "10:897",
+            "10:898",
+            "10:899",
+            "10:900",
+            "10:901",
+            "10:902",
+            "10:903",
+            "10:904",
+            "10:905",
+            "10:906"
+          ]
+        },
+        {
+          "id": "10:847",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1270,
+          "y": 626,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              509
+            ],
+            [
+              0,
+              1,
+              596
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:848",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1193,
+          "y": 549,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              432
+            ],
+            [
+              0,
+              1,
+              519
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:849",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1116,
+          "y": 626,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              355
+            ],
+            [
+              0,
+              1,
+              596
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:850",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1578,
+          "y": 703,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              817
+            ],
+            [
+              0,
+              1,
+              673
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:851",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1193,
+          "y": 626,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              432
+            ],
+            [
+              0,
+              1,
+              596
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:852",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1116,
+          "y": 472,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              355
+            ],
+            [
+              0,
+              1,
+              442
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:853",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1116,
+          "y": 395,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              355
+            ],
+            [
+              0,
+              1,
+              365
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:854",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1347,
+          "y": 395,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              586
+            ],
+            [
+              0,
+              1,
+              365
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:855",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1347,
+          "y": 472,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              586
+            ],
+            [
+              0,
+              1,
+              442
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:856",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1193,
+          "y": 395,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              432
+            ],
+            [
+              0,
+              1,
+              365
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:857",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1193,
+          "y": 472,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              432
+            ],
+            [
+              0,
+              1,
+              442
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:858",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1270,
+          "y": 395,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              509
+            ],
+            [
+              0,
+              1,
+              365
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:859",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1270,
+          "y": 472,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              509
+            ],
+            [
+              0,
+              1,
+              442
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:860",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1347,
+          "y": 703,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              586
+            ],
+            [
+              0,
+              1,
+              673
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:861",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1347,
+          "y": 549,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              586
+            ],
+            [
+              0,
+              1,
+              519
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:862",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1270,
+          "y": 703,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              509
+            ],
+            [
+              0,
+              1,
+              673
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:863",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1193,
+          "y": 703,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              432
+            ],
+            [
+              0,
+              1,
+              673
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:864",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 801,
+          "y": 300,
+          "w": 508,
+          "h": 480,
+          "matrix": [
+            [
+              1,
+              0,
+              40
+            ],
+            [
+              0,
+              1,
+              270
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:865",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1501,
+          "y": 395,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              740
+            ],
+            [
+              0,
+              1,
+              365
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:866",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1424,
+          "y": 395,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              663
+            ],
+            [
+              0,
+              1,
+              365
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:867",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1424,
+          "y": 472,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              663
+            ],
+            [
+              0,
+              1,
+              442
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:868",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1578,
+          "y": 472,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              817
+            ],
+            [
+              0,
+              1,
+              442
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:869",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1501,
+          "y": 549,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              740
+            ],
+            [
+              0,
+              1,
+              519
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:870",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1655,
+          "y": 472,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              894
+            ],
+            [
+              0,
+              1,
+              442
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:871",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1655,
+          "y": 549,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              894
+            ],
+            [
+              0,
+              1,
+              519
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:872",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1655,
+          "y": 626,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              894
+            ],
+            [
+              0,
+              1,
+              596
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:873",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1424,
+          "y": 318,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              663
+            ],
+            [
+              0,
+              1,
+              288
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:874",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1424,
+          "y": 549,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              663
+            ],
+            [
+              0,
+              1,
+              519
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:875",
+          "parent": "10:846",
+          "type": "BOOLEAN_OPERATION",
+          "x": 1424,
+          "y": 626,
+          "w": 231,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              663
+            ],
+            [
+              0,
+              1,
+              596
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:876",
+            "10:877",
+            "10:878"
+          ]
+        },
+        {
+          "id": "10:876",
+          "parent": "10:875",
+          "type": "RECTANGLE",
+          "x": 1424,
+          "y": 626,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              663
+            ],
+            [
+              0,
+              1,
+              596
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:877",
+          "parent": "10:875",
+          "type": "RECTANGLE",
+          "x": 1501,
+          "y": 626,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              740
+            ],
+            [
+              0,
+              1,
+              596
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:878",
+          "parent": "10:875",
+          "type": "RECTANGLE",
+          "x": 1578,
+          "y": 626,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              817
+            ],
+            [
+              0,
+              1,
+              596
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:879",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1501,
+          "y": 703,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              740
+            ],
+            [
+              0,
+              1,
+              673
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:880",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1501,
+          "y": 626,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              740
+            ],
+            [
+              0,
+              1,
+              596
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:881",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1424,
+          "y": 626,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              663
+            ],
+            [
+              0,
+              1,
+              596
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:882",
+          "parent": "10:846",
+          "type": "BOOLEAN_OPERATION",
+          "x": 1424,
+          "y": 472,
+          "w": 231,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              663
+            ],
+            [
+              0,
+              1,
+              442
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:883",
+            "10:884",
+            "10:885"
+          ]
+        },
+        {
+          "id": "10:883",
+          "parent": "10:882",
+          "type": "RECTANGLE",
+          "x": 1424,
+          "y": 472,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              663
+            ],
+            [
+              0,
+              1,
+              442
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:884",
+          "parent": "10:882",
+          "type": "RECTANGLE",
+          "x": 1501,
+          "y": 472,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              740
+            ],
+            [
+              0,
+              1,
+              442
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:885",
+          "parent": "10:882",
+          "type": "RECTANGLE",
+          "x": 1578,
+          "y": 472,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              817
+            ],
+            [
+              0,
+              1,
+              442
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:886",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1039,
+          "y": 703,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              278
+            ],
+            [
+              0,
+              1,
+              673
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:887",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 962,
+          "y": 703,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              201
+            ],
+            [
+              0,
+              1,
+              673
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:888",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 885,
+          "y": 626,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              124
+            ],
+            [
+              0,
+              1,
+              596
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:889",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 808,
+          "y": 703,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              47
+            ],
+            [
+              0,
+              1,
+              673
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:890",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 808,
+          "y": 549,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              47
+            ],
+            [
+              0,
+              1,
+              519
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:891",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1270,
+          "y": 549,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              509
+            ],
+            [
+              0,
+              1,
+              519
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:892",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1193,
+          "y": 318,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              432
+            ],
+            [
+              0,
+              1,
+              288
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:893",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1039,
+          "y": 318,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              278
+            ],
+            [
+              0,
+              1,
+              288
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:894",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 962,
+          "y": 395,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              201
+            ],
+            [
+              0,
+              1,
+              365
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:895",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1039,
+          "y": 549,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              278
+            ],
+            [
+              0,
+              1,
+              519
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:896",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1116,
+          "y": 549,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              355
+            ],
+            [
+              0,
+              1,
+              519
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:897",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1578,
+          "y": 395,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              817
+            ],
+            [
+              0,
+              1,
+              365
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:898",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1655,
+          "y": 395,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              894
+            ],
+            [
+              0,
+              1,
+              365
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:899",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1522,
+          "y": 317,
+          "w": 328,
+          "h": 463,
+          "matrix": [
+            [
+              1,
+              0,
+              761
+            ],
+            [
+              0,
+              1,
+              287
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:900",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1578,
+          "y": 318,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              817
+            ],
+            [
+              0,
+              1,
+              288
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:901",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1655,
+          "y": 395,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              894
+            ],
+            [
+              0,
+              1,
+              365
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:902",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1732,
+          "y": 472,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              971
+            ],
+            [
+              0,
+              1,
+              442
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:903",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1655,
+          "y": 318,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              894
+            ],
+            [
+              0,
+              1,
+              288
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:904",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1578,
+          "y": 626,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              817
+            ],
+            [
+              0,
+              1,
+              596
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:905",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1655,
+          "y": 703,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              894
+            ],
+            [
+              0,
+              1,
+              673
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:906",
+          "parent": "10:846",
+          "type": "RECTANGLE",
+          "x": 1732,
+          "y": 626,
+          "w": 77,
+          "h": 77,
+          "matrix": [
+            [
+              1,
+              0,
+              971
+            ],
+            [
+              0,
+              1,
+              596
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:907",
+          "parent": "10:844",
+          "type": "TEXT",
+          "x": 801,
+          "y": 954,
+          "w": 1049,
+          "h": 56,
+          "matrix": [
+            [
+              1,
+              0,
+              40
+            ],
+            [
+              0,
+              1,
+              924
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "Сюжет продолжается",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 70,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "horizontal": "RIGHT",
+          "vertical": "TOP",
+          "segments": [
+            {
+              "text": "Сюжет продолжается",
+              "start": 0,
+              "end": 18,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10:917",
+      "nodes": [
+        {
+          "id": "10:917",
+          "parent": "0:1",
+          "type": "FRAME",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 2187,
+          "matrix": [
+            [
+              1,
+              0,
+              4274
+            ],
+            [
+              0,
+              1,
+              5900
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:918",
+            "10:919",
+            "10:921",
+            "10:922",
+            "10:944",
+            "10:945",
+            "10:947",
+            "10:948",
+            "10:949",
+            "10:950",
+            "10:951",
+            "10:952",
+            "10:953",
+            "10:954",
+            "10:955",
+            "10:956"
+          ],
+          "clip": true,
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.003921568859368563,
+                "g": 0.18039216101169586,
+                "b": 0.843137264251709
+              },
+              "boundVariables": {}
+            }
+          ]
+        },
+        {
+          "id": "10:918",
+          "parent": "10:917",
+          "type": "RECTANGLE",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 2512,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "visible": true,
+              "opacity": 0.4000000059604645,
+              "blendMode": "NORMAL",
+              "scaleMode": "TILE",
+              "scalingFactor": 0.8942065238952637,
+              "rotation": 0,
+              "filters": {
+                "exposure": 0,
+                "contrast": 0,
+                "saturation": 0,
+                "temperature": 0,
+                "tint": 0,
+                "highlights": 0,
+                "shadows": 0
+              },
+              "imageTransform": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e"
+            }
+          ]
+        },
+        {
+          "id": "10:919",
+          "parent": "10:917",
+          "type": "FRAME",
+          "x": 30,
+          "y": 383.75390625,
+          "w": 749.2565307617188,
+          "h": 666.5664672851562,
+          "matrix": [
+            [
+              0.9993908405303955,
+              0.03489949554204941,
+              30
+            ],
+            [
+              -0.03489949554204941,
+              0.9993908405303955,
+              383.75390625
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:920"
+          ],
+          "clip": false
+        },
+        {
+          "id": "10:920",
+          "parent": "10:919",
+          "type": "RECTANGLE",
+          "x": 22.599609375,
+          "y": 463,
+          "w": 864.4822387695312,
+          "h": 482.4964904785156,
+          "matrix": [
+            [
+              0.9993906617164612,
+              -0.03489517420530319,
+              -10.161287307739258
+            ],
+            [
+              0.034903813153505325,
+              0.9993909597396851,
+              78.93955993652344
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:921",
+          "parent": "10:917",
+          "type": "TEXT",
+          "x": 975,
+          "y": 619,
+          "w": 883,
+          "h": 400,
+          "matrix": [
+            [
+              1,
+              0,
+              975
+            ],
+            [
+              0,
+              1,
+              619
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "the elephant\nin the room",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 250,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "LOWER",
+          "horizontal": "LEFT",
+          "vertical": "TOP",
+          "segments": [
+            {
+              "text": "the ",
+              "start": 0,
+              "end": 4,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            },
+            {
+              "text": "elephant\n",
+              "start": 4,
+              "end": 13,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.9960784316062927,
+                    "g": 0.8196078538894653,
+                    "b": 0.1568627506494522
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            },
+            {
+              "text": "in the room",
+              "start": 13,
+              "end": 24,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:922",
+          "parent": "10:917",
+          "type": "FRAME",
+          "x": -0.5,
+          "y": 1130,
+          "w": 1920,
+          "h": 960,
+          "matrix": [
+            [
+              1,
+              0,
+              -0.5
+            ],
+            [
+              0,
+              1,
+              1130
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:923",
+            "10:928",
+            "10:933",
+            "10:938",
+            "10:943"
+          ],
+          "clip": false
+        },
+        {
+          "id": "10:923",
+          "parent": "10:922",
+          "type": "FRAME",
+          "x": -0.5,
+          "y": 1130,
+          "w": 1920,
+          "h": 200,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:924",
+            "10:925"
+          ],
+          "clip": false
+        },
+        {
+          "id": "10:924",
+          "parent": "10:923",
+          "type": "VECTOR",
+          "x": -0.5,
+          "y": 1130,
+          "w": 1920,
+          "h": 0,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:925",
+          "parent": "10:923",
+          "type": "FRAME",
+          "x": -0.5,
+          "y": 1170,
+          "w": 592,
+          "h": 160,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              40
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:926",
+            "10:927"
+          ],
+          "clip": false
+        },
+        {
+          "id": "10:926",
+          "parent": "10:925",
+          "type": "TEXT",
+          "x": 19.5,
+          "y": 1170,
+          "w": 204,
+          "h": 80,
+          "matrix": [
+            [
+              1,
+              0,
+              20
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "Words",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 100,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "horizontal": "LEFT",
+          "vertical": "TOP",
+          "segments": [
+            {
+              "text": "Words",
+              "start": 0,
+              "end": 5,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:927",
+          "parent": "10:925",
+          "type": "TEXT",
+          "x": 19.5,
+          "y": 1270,
+          "w": 572,
+          "h": 60,
+          "matrix": [
+            [
+              1,
+              0,
+              20
+            ],
+            [
+              0,
+              1,
+              100
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "Elephant — слон. Room — комната. Отдельные слова знакомы",
+          "font": {
+            "family": "IBM Plex Mono",
+            "style": "Medium"
+          },
+          "size": 25,
+          "line": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": -4
+          },
+          "textCase": "ORIGINAL",
+          "horizontal": "LEFT",
+          "vertical": "CENTER",
+          "segments": [
+            {
+              "text": "Elephant — слон. Room — комната. Отдельные слова знакомы",
+              "start": 0,
+              "end": 56,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.9333333373069763,
+                    "g": 0.9333333373069763,
+                    "b": 0.9058823585510254
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:928",
+          "parent": "10:922",
+          "type": "FRAME",
+          "x": -0.5,
+          "y": 1370,
+          "w": 1920,
+          "h": 200,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              240
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:929",
+            "10:930"
+          ],
+          "clip": false
+        },
+        {
+          "id": "10:929",
+          "parent": "10:928",
+          "type": "VECTOR",
+          "x": -0.5,
+          "y": 1370,
+          "w": 1920,
+          "h": 0,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:930",
+          "parent": "10:928",
+          "type": "FRAME",
+          "x": -0.5,
+          "y": 1410,
+          "w": 884,
+          "h": 160,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              40
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:931",
+            "10:932"
+          ],
+          "clip": false
+        },
+        {
+          "id": "10:931",
+          "parent": "10:930",
+          "type": "TEXT",
+          "x": 266.5,
+          "y": 1410,
+          "w": 416,
+          "h": 80,
+          "matrix": [
+            [
+              1,
+              0,
+              267
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "Construction",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 100,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "horizontal": "LEFT",
+          "vertical": "TOP",
+          "segments": [
+            {
+              "text": "Construction",
+              "start": 0,
+              "end": 12,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:932",
+          "parent": "10:930",
+          "type": "TEXT",
+          "x": 266.5,
+          "y": 1510,
+          "w": 617,
+          "h": 60,
+          "matrix": [
+            [
+              1,
+              0,
+              267
+            ],
+            [
+              0,
+              1,
+              100
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "Вместе они работают как идиома: очевидная проблема, которую избегают обсуждать",
+          "font": {
+            "family": "IBM Plex Mono",
+            "style": "Medium"
+          },
+          "size": 25,
+          "line": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": -4
+          },
+          "textCase": "ORIGINAL",
+          "horizontal": "LEFT",
+          "vertical": "CENTER",
+          "segments": [
+            {
+              "text": "Вместе они работают как идиома: очевидная проблема, которую избегают обсуждать",
+              "start": 0,
+              "end": 78,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.9333333373069763,
+                    "g": 0.9333333373069763,
+                    "b": 0.9058823585510254
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:933",
+          "parent": "10:922",
+          "type": "FRAME",
+          "x": -0.5,
+          "y": 1610,
+          "w": 1920,
+          "h": 200,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              480
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:934",
+            "10:935"
+          ],
+          "clip": false
+        },
+        {
+          "id": "10:934",
+          "parent": "10:933",
+          "type": "VECTOR",
+          "x": -0.5,
+          "y": 1610,
+          "w": 1920,
+          "h": 0,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:935",
+          "parent": "10:933",
+          "type": "FRAME",
+          "x": -0.5,
+          "y": 1650,
+          "w": 1121,
+          "h": 160,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              40
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:936",
+            "10:937"
+          ],
+          "clip": false
+        },
+        {
+          "id": "10:936",
+          "parent": "10:935",
+          "type": "TEXT",
+          "x": 503.5,
+          "y": 1650,
+          "w": 240,
+          "h": 80,
+          "matrix": [
+            [
+              1,
+              0,
+              504
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "Context",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 100,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "horizontal": "LEFT",
+          "vertical": "TOP",
+          "segments": [
+            {
+              "text": "Context",
+              "start": 0,
+              "end": 7,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:937",
+          "parent": "10:935",
+          "type": "TEXT",
+          "x": 503.5,
+          "y": 1750,
+          "w": 617,
+          "h": 60,
+          "matrix": [
+            [
+              1,
+              0,
+              504
+            ],
+            [
+              0,
+              1,
+              100
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "Какая именно проблема? Почему о ней молчат? Ответ находится в ситуации",
+          "font": {
+            "family": "IBM Plex Mono",
+            "style": "Medium"
+          },
+          "size": 25,
+          "line": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": -4
+          },
+          "textCase": "ORIGINAL",
+          "horizontal": "LEFT",
+          "vertical": "CENTER",
+          "segments": [
+            {
+              "text": "Какая именно проблема? Почему о ней молчат? Ответ находится в ситуации",
+              "start": 0,
+              "end": 70,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.9333333373069763,
+                    "g": 0.9333333373069763,
+                    "b": 0.9058823585510254
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:938",
+          "parent": "10:922",
+          "type": "FRAME",
+          "x": -0.5,
+          "y": 1850,
+          "w": 1920,
+          "h": 200,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              720
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:939",
+            "10:940"
+          ],
+          "clip": false
+        },
+        {
+          "id": "10:939",
+          "parent": "10:938",
+          "type": "VECTOR",
+          "x": -0.5,
+          "y": 1850,
+          "w": 1920,
+          "h": 0,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:940",
+          "parent": "10:938",
+          "type": "FRAME",
+          "x": -0.5,
+          "y": 1890,
+          "w": 1357,
+          "h": 160,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              40
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:941",
+            "10:942"
+          ],
+          "clip": false
+        },
+        {
+          "id": "10:941",
+          "parent": "10:940",
+          "type": "TEXT",
+          "x": 739.5,
+          "y": 1890,
+          "w": 617,
+          "h": 80,
+          "matrix": [
+            [
+              1,
+              0,
+              740
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "Cultural knowledge",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 100,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "horizontal": "LEFT",
+          "vertical": "TOP",
+          "segments": [
+            {
+              "text": "Cultural knowledge",
+              "start": 0,
+              "end": 18,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:942",
+          "parent": "10:940",
+          "type": "TEXT",
+          "x": 739.5,
+          "y": 1990,
+          "w": 617,
+          "h": 60,
+          "matrix": [
+            [
+              1,
+              0,
+              740
+            ],
+            [
+              0,
+              1,
+              100
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "А иногда нужен ещё один ключ — история, образ или отсылка за пределами самой фразы",
+          "font": {
+            "family": "IBM Plex Mono",
+            "style": "Medium"
+          },
+          "size": 25,
+          "line": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": -4
+          },
+          "textCase": "ORIGINAL",
+          "horizontal": "LEFT",
+          "vertical": "CENTER",
+          "segments": [
+            {
+              "text": "А иногда нужен ещё один ключ — история, образ или отсылка за пределами самой фразы",
+              "start": 0,
+              "end": 82,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.9333333373069763,
+                    "g": 0.9333333373069763,
+                    "b": 0.9058823585510254
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:943",
+          "parent": "10:922",
+          "type": "VECTOR",
+          "x": -0.5,
+          "y": 2090,
+          "w": 1920,
+          "h": 0,
+          "matrix": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              960
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:944",
+          "parent": "10:917",
+          "type": "TEXT",
+          "x": 30,
+          "y": 30,
+          "w": 216,
+          "h": 80,
+          "matrix": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              30
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "Смысл",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 100,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "horizontal": "LEFT",
+          "vertical": "TOP",
+          "segments": [
+            {
+              "text": "Смысл",
+              "start": 0,
+              "end": 5,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:945",
+          "parent": "10:917",
+          "type": "FRAME",
+          "x": 30,
+          "y": 125,
+          "w": 496,
+          "h": 120,
+          "matrix": [
+            [
+              1,
+              0,
+              30
+            ],
+            [
+              0,
+              1,
+              125
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "children": [
+            "10:946"
+          ],
+          "clip": false
+        },
+        {
+          "id": "10:946",
+          "parent": "10:945",
+          "type": "TEXT",
+          "x": 50,
+          "y": 145,
+          "w": 456,
+          "h": 80,
+          "matrix": [
+            [
+              1,
+              0,
+              20
+            ],
+            [
+              0,
+              1,
+              20
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "не сумма слов",
+          "font": {
+            "family": "TT Bluescreens Trial",
+            "style": "ExtraBold"
+          },
+          "size": 100,
+          "line": {
+            "unit": "PERCENT",
+            "value": 80.0000011920929
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "textCase": "UPPER",
+          "horizontal": "LEFT",
+          "vertical": "TOP",
+          "segments": [
+            {
+              "text": "не сумма слов",
+              "start": 0,
+              "end": 13,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.04313725605607033,
+                    "g": 0.05098039284348488,
+                    "b": 0.05882352963089943
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:947",
+          "parent": "10:917",
+          "type": "TEXT",
+          "x": 975,
+          "y": 559,
+          "w": 267,
+          "h": 30,
+          "matrix": [
+            [
+              1,
+              0,
+              975
+            ],
+            [
+              0,
+              1,
+              559
+            ]
+          ],
+          "visible": true,
+          "opacity": 1,
+          "text": "Разберем одну фразу",
+          "font": {
+            "family": "IBM Plex Mono",
+            "style": "Medium"
+          },
+          "size": 25,
+          "line": {
+            "unit": "PERCENT",
+            "value": 120.00000476837158
+          },
+          "tracking": {
+            "unit": "PERCENT",
+            "value": -4
+          },
+          "textCase": "ORIGINAL",
+          "horizontal": "LEFT",
+          "vertical": "CENTER",
+          "segments": [
+            {
+              "text": "Разберем одну фразу",
+              "start": 0,
+              "end": 19,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.9333333373069763,
+                    "g": 0.9333333373069763,
+                    "b": 0.9058823585510254
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10:948",
+          "parent": "10:917",
+          "type": "RECTANGLE",
+          "x": 1768.142578125,
+          "y": 308,
+          "w": 77.14286041259766,
+          "h": 77.14286041259766,
+          "matrix": [
+            [
+              1,
+              0,
+              1768.142578125
+            ],
+            [
+              0,
+              1,
+              308
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:949",
+          "parent": "10:917",
+          "type": "RECTANGLE",
+          "x": 1845.2861328125,
+          "y": 308,
+          "w": 77.14286041259766,
+          "h": 77.14286041259766,
+          "matrix": [
+            [
+              1,
+              0,
+              1845.2861328125
+            ],
+            [
+              0,
+              1,
+              308
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:950",
+          "parent": "10:917",
+          "type": "RECTANGLE",
+          "x": 1691,
+          "y": 385.142578125,
+          "w": 77.14286041259766,
+          "h": 77.14286041259766,
+          "matrix": [
+            [
+              1,
+              0,
+              1691
+            ],
+            [
+              0,
+              1,
+              385.142578125
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:951",
+          "parent": "10:917",
+          "type": "RECTANGLE",
+          "x": 1845.2861328125,
+          "y": 385.142578125,
+          "w": 77.14286041259766,
+          "h": 77.14286041259766,
+          "matrix": [
+            [
+              1,
+              0,
+              1845.2861328125
+            ],
+            [
+              0,
+              1,
+              385.142578125
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:952",
+          "parent": "10:917",
+          "type": "RECTANGLE",
+          "x": 1768.142578125,
+          "y": 0,
+          "w": 77.14286041259766,
+          "h": 77.14286041259766,
+          "matrix": [
+            [
+              1,
+              0,
+              1768.142578125
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:953",
+          "parent": "10:917",
+          "type": "RECTANGLE",
+          "x": 1845.2861328125,
+          "y": 0,
+          "w": 77.14286041259766,
+          "h": 77.14286041259766,
+          "matrix": [
+            [
+              1,
+              0,
+              1845.2861328125
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:954",
+          "parent": "10:917",
+          "type": "RECTANGLE",
+          "x": 1691,
+          "y": 77.142578125,
+          "w": 77.14286041259766,
+          "h": 77.14286041259766,
+          "matrix": [
+            [
+              1,
+              0,
+              1691
+            ],
+            [
+              0,
+              1,
+              77.142578125
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:955",
+          "parent": "10:917",
+          "type": "RECTANGLE",
+          "x": 1845.2861328125,
+          "y": 77.142578125,
+          "w": 77.14286041259766,
+          "h": 77.14286041259766,
+          "matrix": [
+            [
+              1,
+              0,
+              1845.2861328125
+            ],
+            [
+              0,
+              1,
+              77.142578125
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        },
+        {
+          "id": "10:956",
+          "parent": "10:917",
+          "type": "RECTANGLE",
+          "x": 1845.2861328125,
+          "y": 231.4296875,
+          "w": 77.14286041259766,
+          "h": 77.14286041259766,
+          "matrix": [
+            [
+              1,
+              0,
+              1845.2861328125
+            ],
+            [
+              0,
+              1,
+              231.4296875
+            ]
+          ],
+          "visible": true,
+          "opacity": 1
+        }
+      ]
+    }
+  ]
+}

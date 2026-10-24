@@ -1,0 +1,156 @@
+{
+  "name": "elephant",
+  "dimensions": {
+    "w": 1920,
+    "h": 2187
+  },
+  "full": {
+    "mae": 1.0167678802773967,
+    "pixelsAbove12Percent": 1.5245865721688767,
+    "max": 242,
+    "exactPercent": 25.671677335771985
+  },
+  "regions": {
+    "title": {
+      "mae": 1.0125532612258277,
+      "pixelsAbove12Percent": 4.400196656833825,
+      "max": 54,
+      "exactPercent": 53.4464110127827,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 1.0125532612258277,
+        "pixelsAbove12Percent": 4.400196656833825,
+        "max": 54,
+        "exactPercent": 53.4464110127827
+      }
+    },
+    "banner": {
+      "mae": 0.8539650537634409,
+      "pixelsAbove12Percent": 3.400537634408602,
+      "max": 96,
+      "exactPercent": 94.43380376344086,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 0.8539650537634409,
+        "pixelsAbove12Percent": 3.400537634408602,
+        "max": 96,
+        "exactPercent": 94.43380376344086
+      }
+    },
+    "illustration": {
+      "mae": 1.7024408983451538,
+      "pixelsAbove12Percent": 3.7893294648613796,
+      "max": 147,
+      "exactPercent": 21.101225016118633
+    },
+    "phrase": {
+      "mae": 2.8298833430010406,
+      "pixelsAbove12Percent": 4.580559622130763,
+      "max": 242,
+      "exactPercent": 52.29041792116676,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 2.8298833430010406,
+        "pixelsAbove12Percent": 4.580559622130763,
+        "max": 242,
+        "exactPercent": 52.29041792116676
+      }
+    },
+    "introduction": {
+      "mae": 2.3978776529338326,
+      "pixelsAbove12Percent": 10.436953807740325,
+      "max": 86,
+      "exactPercent": 23.857677902621724,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 2.3978776529338326,
+        "pixelsAbove12Percent": 10.436953807740325,
+        "max": 86,
+        "exactPercent": 23.857677902621724
+      }
+    },
+    "words": {
+      "mae": 1.0607234617985124,
+      "pixelsAbove12Percent": 2.746450304259635,
+      "max": 104,
+      "exactPercent": 27.220081135902635,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 1.0607234617985124,
+        "pixelsAbove12Percent": 2.746450304259635,
+        "max": 104,
+        "exactPercent": 27.220081135902635
+      }
+    },
+    "construction": {
+      "mae": 1.5802101960784314,
+      "pixelsAbove12Percent": 4.851764705882353,
+      "max": 128,
+      "exactPercent": 32.76141176470588,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 1.5802101960784314,
+        "pixelsAbove12Percent": 4.851764705882353,
+        "max": 128,
+        "exactPercent": 32.76141176470588
+      }
+    },
+    "context": {
+      "mae": 1.4153380392156862,
+      "pixelsAbove12Percent": 4.014117647058823,
+      "max": 127,
+      "exactPercent": 26.37929411764706,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 1.4153380392156862,
+        "pixelsAbove12Percent": 4.014117647058823,
+        "max": 127,
+        "exactPercent": 26.37929411764706
+      }
+    },
+    "cultural": {
+      "mae": 2.0059482352941176,
+      "pixelsAbove12Percent": 6.4,
+      "max": 133,
+      "exactPercent": 37.96141176470588,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 2.0059482352941176,
+        "pixelsAbove12Percent": 6.4,
+        "max": 133,
+        "exactPercent": 37.96141176470588
+      }
+    },
+    "dividers": {
+      "mae": 0.4395833333333333,
+      "pixelsAbove12Percent": 0.052083333333333336,
+      "max": 38,
+      "exactPercent": 22.34375
+    },
+    "background": {
+      "mae": 0.47936666666666666,
+      "pixelsAbove12Percent": 0,
+      "max": 6,
+      "exactPercent": 20.241785714285715
+    },
+    "pixels": {
+      "mae": 0.6638366838086334,
+      "pixelsAbove12Percent": 1.1435250116877045,
+      "max": 121,
+      "exactPercent": 58.83777466105657
+    }
+  },
+  "geometry": {
+    "count": 40,
+    "maxDelta": 0.013498392580345353,
+    "above1over64": []
+  }
+}

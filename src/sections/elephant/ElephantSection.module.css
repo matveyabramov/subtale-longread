@@ -1,0 +1,189 @@
+.section {
+  background: var(--color-blue);
+  overflow-x: auto;
+}
+
+.canvas {
+  position: relative;
+  isolation: isolate;
+  width: 1920px;
+  height: 2187px;
+  margin-inline: auto;
+  overflow: hidden;
+  color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+.texture {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 2512px;
+  opacity: 0.4;
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 354.9999899864197px 287.9345006942749px;
+  pointer-events: none;
+}
+
+.artFrame {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+  overflow: visible;
+}
+
+.artBorder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-inline-size: none;
+  pointer-events: none;
+}
+
+.illustration {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+  object-fit: cover;
+  max-inline-size: none;
+}
+
+.title,
+.banner {
+  position: absolute;
+  left: 30px;
+  margin: 0;
+  font: 800 100px/0.8 var(--font-display);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.title {
+  top: 30px;
+  width: 216px;
+  height: 80px;
+}
+
+.banner {
+  top: 125px;
+  width: 496px;
+  height: 120px;
+  padding: 20px;
+  color: var(--color-ink);
+  background: var(--color-yellow);
+}
+
+.banner > span {
+  display: block;
+  width: 456px;
+  height: 80px;
+}
+
+.introduction {
+  position: absolute;
+  left: 975px;
+  top: 559px;
+  width: 267px;
+  height: 30px;
+  margin: 0;
+  color: var(--color-paper);
+  font: 500 25px/1.2 var(--font-copy);
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+
+.phrase {
+  position: absolute;
+  left: 975px;
+  top: 619px;
+  width: 883px;
+  height: 400px;
+  margin: 0;
+  font: 800 250px/0.8 var(--font-display);
+  letter-spacing: 0;
+  text-transform: lowercase;
+  white-space: pre;
+}
+
+.phraseGlyphs {
+  position: relative;
+  top: 1px;
+}
+
+.phraseAccent {
+  color: var(--color-yellow);
+}
+
+.levels {
+  position: absolute;
+  left: -0.5px;
+  top: 1130px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 1920px;
+  height: 960px;
+}
+
+.level {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: none;
+  width: 1920px;
+  height: 200px;
+}
+
+.divider {
+  position: relative;
+  flex: none;
+  width: 1920px;
+  height: 0;
+}
+
+.divider::before {
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 1920px;
+  height: 4px;
+  content: '';
+  background: var(--color-white);
+  opacity: 0.3;
+}
+
+.levelContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 160px;
+}
+
+.levelContent > h3 {
+  flex: none;
+  height: 80px;
+  margin: 0;
+  font: 800 100px/0.8 var(--font-display);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.levelContent > p {
+  flex: none;
+  height: 60px;
+  margin: 0;
+  color: var(--color-paper);
+  font: 500 25px/1.2 var(--font-copy);
+  letter-spacing: -1px;
+}
+
+.pixel {
+  position: absolute;
+  background: var(--color-yellow);
+}

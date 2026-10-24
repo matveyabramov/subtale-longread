@@ -1,0 +1,24 @@
+[
+  {
+    "selector": "[data-node-id=\"10:921\"] > span",
+    "fonts": [
+      {
+        "familyName": "TT Bluescreens Trial",
+        "postScriptName": "TTBluescreensTrial-XBd",
+        "isCustomFont": true,
+        "glyphCount": 23
+      }
+    ]
+  },
+  {
+    "selector": "[data-node-id=\"10:921\"] > span > span",
+    "fonts": [
+      {
+        "familyName": "TT Bluescreens Trial",
+        "postScriptName": "TTBluescreensTrial-XBd",
+        "isCustomFont": true,
+        "glyphCount": 8
+      }
+    ]
+  }
+]

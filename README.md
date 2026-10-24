@@ -4,7 +4,7 @@ Interactive editorial longread about hidden meanings in English-language film an
 
 ## Status
 
-Stage 0.3 **Approved**, Stage 1A **Completed**, Stages 1B.1 and 1B.2 **Completed**: Hero and all three Experiment screens are implemented at Desktop 1920; the other eight sections remain technical placeholders. Matching local IBM Plex Mono Latin/Cyrillic subsets are connected (docs/FONT_ASSETS.md). Comparison screenshots, checks and explicit visual limits: [HERO_DESKTOP_QA.md](docs/HERO_DESKTOP_QA.md) and [EXPERIMENT_DESKTOP_QA.md](docs/EXPERIMENT_DESKTOP_QA.md).
+Stage 0.3 **Approved**, Stage 1A **Completed**, Stages 1B.1–1B.3 **Completed**: Hero, all three Experiment screens, Emptiness and Elephant are implemented at Desktop 1920; the other six sections remain technical placeholders. Matching local IBM Plex Mono Latin/Cyrillic subsets are connected (docs/FONT_ASSETS.md). Comparison screenshots, checks and explicit visual limits: [Hero QA](docs/HERO_DESKTOP_QA.md), [Experiment QA](docs/EXPERIMENT_DESKTOP_QA.md) and [Emptiness + Elephant QA](docs/EMPTINESS_ELEPHANT_DESKTOP_QA.md).
 
 ## Run locally
 

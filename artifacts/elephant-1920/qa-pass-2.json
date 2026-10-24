@@ -1,0 +1,966 @@
+{
+  "pass": "2",
+  "base": "http://127.0.0.1:4173",
+  "sequence": [
+    {
+      "id": "hero",
+      "x": 0,
+      "top": 0,
+      "w": 1920,
+      "h": 1080
+    },
+    {
+      "id": "experiment",
+      "x": 0,
+      "top": 1080,
+      "w": 1920,
+      "h": 3240
+    },
+    {
+      "id": "emptiness",
+      "x": 0,
+      "top": 4320,
+      "w": 1920,
+      "h": 1080
+    },
+    {
+      "id": "elephant",
+      "x": 0,
+      "top": 5400,
+      "w": 1920,
+      "h": 2187
+    },
+    {
+      "id": "blind-zones",
+      "x": 30,
+      "top": 7617,
+      "w": 1860,
+      "h": 35
+    },
+    {
+      "id": "movies",
+      "x": 30,
+      "top": 7672,
+      "w": 1860,
+      "h": 35
+    },
+    {
+      "id": "vocab",
+      "x": 30,
+      "top": 7727,
+      "w": 1860,
+      "h": 35
+    },
+    {
+      "id": "blind-spot-scene",
+      "x": 30,
+      "top": 7782,
+      "w": 1860,
+      "h": 35
+    },
+    {
+      "id": "what-to-do",
+      "x": 30,
+      "top": 7837,
+      "w": 1860,
+      "h": 35
+    },
+    {
+      "id": "footer",
+      "x": 30,
+      "top": 7962,
+      "w": 1860,
+      "h": 35
+    }
+  ],
+  "regression": [
+    {
+      "name": "hero",
+      "path": "artifacts/emptiness-1920/hero-regression-pass-2.png"
+    },
+    {
+      "name": "instructions",
+      "path": "artifacts/emptiness-1920/instructions-regression-pass-2.png"
+    },
+    {
+      "name": "target",
+      "path": "artifacts/emptiness-1920/target-regression-pass-2.png"
+    },
+    {
+      "name": "result",
+      "path": "artifacts/emptiness-1920/result-regression-pass-2.png"
+    }
+  ],
+  "anchors": [
+    {
+      "from": "experiment-instructions",
+      "to": "emptiness",
+      "passed": true
+    },
+    {
+      "from": "experiment-result",
+      "to": "emptiness",
+      "passed": true
+    }
+  ],
+  "network": {
+    "errors": [],
+    "failed": [],
+    "externalRequests": 0,
+    "requests": [
+      {
+        "url": "http://127.0.0.1:4173/",
+        "type": "document"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-BYF8fQo9.js",
+        "type": "script"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-D8BRwSnP.css",
+        "type": "stylesheet"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-person-collage.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-cta-arrow.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-film-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/star-accent.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-62.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-43.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-78x79.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-50.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-108.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-man-eye.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/subtale-pixel-mark.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-eye-accent.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-male-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-female-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/elephant-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/mosaic-texture.png",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-600-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20Bold.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-600-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20ExtraBold.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-500-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-500-normal.woff2",
+        "type": "font"
+      }
+    ],
+    "responses": [
+      {
+        "url": "http://127.0.0.1:4173/",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-D8BRwSnP.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-BYF8fQo9.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-cta-arrow.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-person-collage.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-film-cutout.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/star-accent.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-78x79.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-62.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-43.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-50.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-108.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-man-eye.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/subtale-pixel-mark.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-eye-accent.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-male-cutout.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-female-cutout.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/elephant-cutout.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/mosaic-texture.png",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-600-normal.woff2",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20Bold.woff2",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-600-normal.woff2",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20ExtraBold.woff2",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-500-normal.woff2",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-500-normal.woff2",
+        "status": 200
+      }
+    ]
+  },
+  "name": "elephant",
+  "frame": "10:917",
+  "textChecks": [
+    {
+      "id": "10:921",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 15
+        }
+      ]
+    },
+    {
+      "id": "10:926",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ]
+    },
+    {
+      "id": "10:927",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 55
+        }
+      ]
+    },
+    {
+      "id": "10:931",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 12
+        }
+      ]
+    },
+    {
+      "id": "10:932",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 77
+        }
+      ]
+    },
+    {
+      "id": "10:936",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "id": "10:937",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 69
+        }
+      ]
+    },
+    {
+      "id": "10:941",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 18
+        }
+      ]
+    },
+    {
+      "id": "10:942",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 81
+        }
+      ]
+    },
+    {
+      "id": "10:944",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ]
+    },
+    {
+      "id": "10:946",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 13
+        }
+      ]
+    },
+    {
+      "id": "10:947",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 19
+        }
+      ]
+    }
+  ],
+  "geometry": [
+    {
+      "id": "10:918",
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 2512,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "0.4",
+      "transform": "none"
+    },
+    {
+      "id": "10:919",
+      "x": 30,
+      "y": 357.60546875,
+      "w": 772.0562744140625,
+      "h": 692.304931640625,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "matrix(0.999391, -0.0348995, 0.0348995, 0.999391, 30, 383.754)"
+    },
+    {
+      "id": "10:920",
+      "x": 22.599853515625,
+      "y": 463,
+      "w": 864.4708251953125,
+      "h": 482.48809814453125,
+      "overflowX": "clip",
+      "overflowY": "clip",
+      "opacity": "1",
+      "transform": "matrix(0.999391, 0.0349038, -0.0348952, 0.999391, -10.1613, 78.9396)"
+    },
+    {
+      "id": "10:944",
+      "x": 30,
+      "y": 30,
+      "w": 216,
+      "h": 80,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:945",
+      "x": 30,
+      "y": 125,
+      "w": 496,
+      "h": 120,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:946",
+      "x": 50,
+      "y": 145,
+      "w": 456,
+      "h": 80,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:947",
+      "x": 975,
+      "y": 559,
+      "w": 267,
+      "h": 30,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:921",
+      "x": 975,
+      "y": 619,
+      "w": 883,
+      "h": 400,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:922",
+      "x": -0.5,
+      "y": 1130,
+      "w": 1920,
+      "h": 960,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:923",
+      "x": -0.5,
+      "y": 1130,
+      "w": 1920,
+      "h": 200,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:924",
+      "x": -0.5,
+      "y": 1130,
+      "w": 1920,
+      "h": 0,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:925",
+      "x": -0.5,
+      "y": 1170,
+      "w": 592,
+      "h": 160,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:926",
+      "x": 19.5,
+      "y": 1170,
+      "w": 204,
+      "h": 80,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:927",
+      "x": 19.5,
+      "y": 1270,
+      "w": 572,
+      "h": 60,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:928",
+      "x": -0.5,
+      "y": 1370,
+      "w": 1920,
+      "h": 200,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:929",
+      "x": -0.5,
+      "y": 1370,
+      "w": 1920,
+      "h": 0,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:930",
+      "x": -0.5,
+      "y": 1410,
+      "w": 884,
+      "h": 160,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:931",
+      "x": 266.5,
+      "y": 1410,
+      "w": 416,
+      "h": 80,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:932",
+      "x": 266.5,
+      "y": 1510,
+      "w": 617,
+      "h": 60,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:933",
+      "x": -0.5,
+      "y": 1610,
+      "w": 1920,
+      "h": 200,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:934",
+      "x": -0.5,
+      "y": 1610,
+      "w": 1920,
+      "h": 0,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:935",
+      "x": -0.5,
+      "y": 1650,
+      "w": 1121,
+      "h": 160,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:936",
+      "x": 503.5,
+      "y": 1650,
+      "w": 240,
+      "h": 80,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:937",
+      "x": 503.5,
+      "y": 1750,
+      "w": 617,
+      "h": 60,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:938",
+      "x": -0.5,
+      "y": 1850,
+      "w": 1920,
+      "h": 200,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:939",
+      "x": -0.5,
+      "y": 1850,
+      "w": 1920,
+      "h": 0,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:940",
+      "x": -0.5,
+      "y": 1890,
+      "w": 1357,
+      "h": 160,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:941",
+      "x": 739.5,
+      "y": 1890,
+      "w": 617,
+      "h": 80,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:942",
+      "x": 739.5,
+      "y": 1990,
+      "w": 617,
+      "h": 60,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:943",
+      "x": -0.5,
+      "y": 2090,
+      "w": 1920,
+      "h": 0,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:948",
+      "x": 1768.140625,
+      "y": 308,
+      "w": 77.140625,
+      "h": 77.140625,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:949",
+      "x": 1845.28125,
+      "y": 308,
+      "w": 77.140625,
+      "h": 77.140625,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:950",
+      "x": 1691,
+      "y": 385.140625,
+      "w": 77.140625,
+      "h": 77.140625,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:951",
+      "x": 1845.28125,
+      "y": 385.140625,
+      "w": 77.140625,
+      "h": 77.140625,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:952",
+      "x": 1768.140625,
+      "y": 0,
+      "w": 77.140625,
+      "h": 77.140625,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:953",
+      "x": 1845.28125,
+      "y": 0,
+      "w": 77.140625,
+      "h": 77.140625,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:954",
+      "x": 1691,
+      "y": 77.140625,
+      "w": 77.140625,
+      "h": 77.140625,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:955",
+      "x": 1845.28125,
+      "y": 77.140625,
+      "w": 77.140625,
+      "h": 77.140625,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:956",
+      "x": 1845.28125,
+      "y": 231.421875,
+      "w": 77.140625,
+      "h": 77.140625,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:917",
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 2187,
+      "overflowX": "hidden",
+      "overflowY": "hidden",
+      "opacity": "1",
+      "transform": "none"
+    }
+  ],
+  "wraps": {
+    "10:921": [
+      "the elephant",
+      "in the room"
+    ],
+    "10:926": [
+      "Words"
+    ],
+    "10:927": [
+      "Elephant — слон. Room — комната.",
+      "Отдельные слова знакомы"
+    ],
+    "10:931": [
+      "Construction"
+    ],
+    "10:932": [
+      "Вместе они работают как идиома: очевидная",
+      "проблема, которую избегают обсуждать"
+    ],
+    "10:936": [
+      "Context"
+    ],
+    "10:937": [
+      "Какая именно проблема? Почему о ней молчат?",
+      "Ответ находится в ситуации"
+    ],
+    "10:941": [
+      "Cultural knowledge"
+    ],
+    "10:942": [
+      "А иногда нужен ещё один ключ — история,",
+      "образ или отсылка за пределами самой фразы"
+    ],
+    "10:944": [
+      "Смысл"
+    ],
+    "10:946": [
+      "не сумма слов"
+    ],
+    "10:947": [
+      "Разберем одну фразу"
+    ]
+  },
+  "viewport": {
+    "w": 1920,
+    "h": 2187,
+    "dpr": 1,
+    "documentWidth": 1920,
+    "scrollY": 5400
+  },
+  "boundaries": {
+    "section": {
+      "width": 1920,
+      "height": 2187,
+      "scrollWidth": 1920,
+      "scrollHeight": 2187
+    },
+    "canvas": {
+      "width": 1920,
+      "height": 2187,
+      "overflow": "hidden"
+    }
+  },
+  "animations": 0,
+  "images": [
+    {
+      "url": "http://127.0.0.1:4173/assets/images/elephant-cutout.webp",
+      "complete": true,
+      "naturalWidth": 1935,
+      "naturalHeight": 1080
+    }
+  ],
+  "artworkOrder": null
+}

@@ -1,0 +1,1353 @@
+{
+  "pass": "1",
+  "base": "http://127.0.0.1:4173",
+  "sequence": [
+    {
+      "id": "hero",
+      "x": 0,
+      "top": 0,
+      "w": 1920,
+      "h": 1080
+    },
+    {
+      "id": "experiment",
+      "x": 0,
+      "top": 1080,
+      "w": 1920,
+      "h": 3240
+    },
+    {
+      "id": "emptiness",
+      "x": 0,
+      "top": 4320,
+      "w": 1920,
+      "h": 1080
+    },
+    {
+      "id": "elephant",
+      "x": 0,
+      "top": 5400,
+      "w": 1920,
+      "h": 2187
+    },
+    {
+      "id": "blind-zones",
+      "x": 30,
+      "top": 7617,
+      "w": 1860,
+      "h": 35
+    },
+    {
+      "id": "movies",
+      "x": 30,
+      "top": 7672,
+      "w": 1860,
+      "h": 35
+    },
+    {
+      "id": "vocab",
+      "x": 30,
+      "top": 7727,
+      "w": 1860,
+      "h": 35
+    },
+    {
+      "id": "blind-spot-scene",
+      "x": 30,
+      "top": 7782,
+      "w": 1860,
+      "h": 35
+    },
+    {
+      "id": "what-to-do",
+      "x": 30,
+      "top": 7837,
+      "w": 1860,
+      "h": 35
+    },
+    {
+      "id": "footer",
+      "x": 30,
+      "top": 7962,
+      "w": 1860,
+      "h": 35
+    }
+  ],
+  "regression": [
+    {
+      "name": "hero",
+      "path": "artifacts/emptiness-1920/hero-regression-pass-1.png"
+    },
+    {
+      "name": "instructions",
+      "path": "artifacts/emptiness-1920/instructions-regression-pass-1.png"
+    },
+    {
+      "name": "target",
+      "path": "artifacts/emptiness-1920/target-regression-pass-1.png"
+    },
+    {
+      "name": "result",
+      "path": "artifacts/emptiness-1920/result-regression-pass-1.png"
+    }
+  ],
+  "anchors": [
+    {
+      "from": "experiment-instructions",
+      "to": "emptiness",
+      "passed": true
+    },
+    {
+      "from": "experiment-result",
+      "to": "emptiness",
+      "passed": true
+    }
+  ],
+  "network": {
+    "errors": [],
+    "failed": [],
+    "externalRequests": 0,
+    "requests": [
+      {
+        "url": "http://127.0.0.1:4173/",
+        "type": "document"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-Cpf54buT.js",
+        "type": "script"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-CCbrOh2H.css",
+        "type": "stylesheet"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-person-collage.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-cta-arrow.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-film-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/star-accent.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-62.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-43.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-78x79.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-50.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-108.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-man-eye.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/subtale-pixel-mark.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-eye-accent.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-male-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-female-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/elephant-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/mosaic-texture.png",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-600-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20Bold.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-600-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20ExtraBold.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-500-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-500-normal.woff2",
+        "type": "font"
+      }
+    ],
+    "responses": [
+      {
+        "url": "http://127.0.0.1:4173/",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-CCbrOh2H.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-Cpf54buT.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-cta-arrow.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-person-collage.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-film-cutout.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/star-accent.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-78x79.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-62.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-43.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-50.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-108.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-man-eye.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/subtale-pixel-mark.svg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-eye-accent.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-male-cutout.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-female-cutout.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/elephant-cutout.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/mosaic-texture.png",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-500-normal.woff2",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20Bold.woff2",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-500-normal.woff2",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20ExtraBold.woff2",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-600-normal.woff2",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-600-normal.woff2",
+        "status": 200
+      }
+    ]
+  },
+  "name": "emptiness",
+  "frame": "10:838",
+  "textChecks": [
+    {
+      "id": "10:840",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 13
+        }
+      ]
+    },
+    {
+      "id": "10:842",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "id": "10:843",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 131
+        }
+      ]
+    },
+    {
+      "id": "10:845",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 13
+        }
+      ]
+    },
+    {
+      "id": "10:907",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 18
+        }
+      ]
+    }
+  ],
+  "geometry": [
+    {
+      "id": "10:839",
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1080,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "0.4",
+      "transform": "none"
+    },
+    {
+      "id": "10:840",
+      "x": 30,
+      "y": 30,
+      "w": 454,
+      "h": 80,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:841",
+      "x": 30,
+      "y": 125,
+      "w": 278,
+      "h": 120,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:842",
+      "x": 50,
+      "y": 145,
+      "w": 238,
+      "h": 80,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:843",
+      "x": 30,
+      "y": 930,
+      "w": 572,
+      "h": 120,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:844",
+      "x": 761,
+      "y": 30,
+      "w": 1129,
+      "h": 1020,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:845",
+      "x": 801,
+      "y": 70,
+      "w": 1049,
+      "h": 56,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:846",
+      "x": 801,
+      "y": 300,
+      "w": 1049,
+      "h": 480,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:847",
+      "x": 1270,
+      "y": 626,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:848",
+      "x": 1193,
+      "y": 549,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:849",
+      "x": 1116,
+      "y": 626,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:850",
+      "x": 1578,
+      "y": 703,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:851",
+      "x": 1193,
+      "y": 626,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:852",
+      "x": 1116,
+      "y": 472,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:853",
+      "x": 1116,
+      "y": 395,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:854",
+      "x": 1347,
+      "y": 395,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:855",
+      "x": 1347,
+      "y": 472,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:856",
+      "x": 1193,
+      "y": 395,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:857",
+      "x": 1193,
+      "y": 472,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:858",
+      "x": 1270,
+      "y": 395,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:859",
+      "x": 1270,
+      "y": 472,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:860",
+      "x": 1347,
+      "y": 703,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:861",
+      "x": 1347,
+      "y": 549,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:862",
+      "x": 1270,
+      "y": 703,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:863",
+      "x": 1193,
+      "y": 703,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:864",
+      "x": 801,
+      "y": 300,
+      "w": 508,
+      "h": 480,
+      "overflowX": "hidden",
+      "overflowY": "hidden",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:865",
+      "x": 1501,
+      "y": 395,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:866",
+      "x": 1424,
+      "y": 395,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:867",
+      "x": 1424,
+      "y": 472,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:868",
+      "x": 1578,
+      "y": 472,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:869",
+      "x": 1501,
+      "y": 549,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:870",
+      "x": 1655,
+      "y": 472,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:871",
+      "x": 1655,
+      "y": 549,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:872",
+      "x": 1655,
+      "y": 626,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:873",
+      "x": 1424,
+      "y": 318,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:874",
+      "x": 1424,
+      "y": 549,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:875",
+      "x": 1424,
+      "y": 626,
+      "w": 231,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:879",
+      "x": 1501,
+      "y": 703,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:880",
+      "x": 1501,
+      "y": 626,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:881",
+      "x": 1424,
+      "y": 626,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:882",
+      "x": 1424,
+      "y": 472,
+      "w": 231,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:886",
+      "x": 1039,
+      "y": 703,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:887",
+      "x": 962,
+      "y": 703,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:888",
+      "x": 885,
+      "y": 626,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:889",
+      "x": 808,
+      "y": 703,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:890",
+      "x": 808,
+      "y": 549,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:891",
+      "x": 1270,
+      "y": 549,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:892",
+      "x": 1193,
+      "y": 318,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:893",
+      "x": 1039,
+      "y": 318,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:894",
+      "x": 962,
+      "y": 395,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:895",
+      "x": 1039,
+      "y": 549,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:896",
+      "x": 1116,
+      "y": 549,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:897",
+      "x": 1578,
+      "y": 395,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:898",
+      "x": 1655,
+      "y": 395,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:899",
+      "x": 1522,
+      "y": 317,
+      "w": 328,
+      "h": 463,
+      "overflowX": "hidden",
+      "overflowY": "hidden",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:900",
+      "x": 1578,
+      "y": 318,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:901",
+      "x": 1655,
+      "y": 395,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:902",
+      "x": 1732,
+      "y": 472,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:903",
+      "x": 1655,
+      "y": 318,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:904",
+      "x": 1578,
+      "y": 626,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:905",
+      "x": 1655,
+      "y": 703,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:906",
+      "x": 1732,
+      "y": 626,
+      "w": 77,
+      "h": 77,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:907",
+      "x": 801,
+      "y": 954,
+      "w": 1049,
+      "h": 56,
+      "overflowX": "visible",
+      "overflowY": "visible",
+      "opacity": "1",
+      "transform": "none"
+    },
+    {
+      "id": "10:838",
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1080,
+      "overflowX": "hidden",
+      "overflowY": "hidden",
+      "opacity": "1",
+      "transform": "none"
+    }
+  ],
+  "wraps": {
+    "10:840": [
+      "Мозг не любит"
+    ],
+    "10:842": [
+      "Пустоту"
+    ],
+    "10:843": [
+      "В области слепого пятна глаза нет",
+      "светочувствительных клеток. Но обычно ты",
+      "не видишь «дыру»: восприятие достраивает",
+      "окружающую картину"
+    ],
+    "10:845": [
+      "Слова знакомы"
+    ],
+    "10:907": [
+      "Сюжет продолжается"
+    ]
+  },
+  "viewport": {
+    "w": 1920,
+    "h": 1080,
+    "dpr": 1,
+    "documentWidth": 1920,
+    "scrollY": 4320
+  },
+  "boundaries": {
+    "section": {
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollHeight": 1080
+    },
+    "canvas": {
+      "width": 1920,
+      "height": 1080,
+      "overflow": "hidden"
+    }
+  },
+  "animations": 0,
+  "images": [
+    {
+      "url": "http://127.0.0.1:4173/assets/images/emptiness-male-cutout.webp",
+      "complete": true,
+      "naturalWidth": 2752,
+      "naturalHeight": 1536
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/images/emptiness-female-cutout.webp",
+      "complete": true,
+      "naturalWidth": 1892,
+      "naturalHeight": 1056
+    }
+  ],
+  "artworkOrder": [
+    {
+      "id": "10:847",
+      "kind": "square"
+    },
+    {
+      "id": "10:848",
+      "kind": "square"
+    },
+    {
+      "id": "10:849",
+      "kind": "square"
+    },
+    {
+      "id": "10:850",
+      "kind": "square"
+    },
+    {
+      "id": "10:851",
+      "kind": "square"
+    },
+    {
+      "id": "10:852",
+      "kind": "square"
+    },
+    {
+      "id": "10:853",
+      "kind": "square"
+    },
+    {
+      "id": "10:854",
+      "kind": "square"
+    },
+    {
+      "id": "10:855",
+      "kind": "square"
+    },
+    {
+      "id": "10:856",
+      "kind": "square"
+    },
+    {
+      "id": "10:857",
+      "kind": "square"
+    },
+    {
+      "id": "10:858",
+      "kind": "square"
+    },
+    {
+      "id": "10:859",
+      "kind": "square"
+    },
+    {
+      "id": "10:860",
+      "kind": "square"
+    },
+    {
+      "id": "10:861",
+      "kind": "square"
+    },
+    {
+      "id": "10:862",
+      "kind": "square"
+    },
+    {
+      "id": "10:863",
+      "kind": "square"
+    },
+    {
+      "id": "10:864",
+      "kind": "male"
+    },
+    {
+      "id": "10:865",
+      "kind": "square"
+    },
+    {
+      "id": "10:866",
+      "kind": "square"
+    },
+    {
+      "id": "10:867",
+      "kind": "square"
+    },
+    {
+      "id": "10:868",
+      "kind": "square"
+    },
+    {
+      "id": "10:869",
+      "kind": "square"
+    },
+    {
+      "id": "10:870",
+      "kind": "square"
+    },
+    {
+      "id": "10:871",
+      "kind": "square"
+    },
+    {
+      "id": "10:872",
+      "kind": "square"
+    },
+    {
+      "id": "10:873",
+      "kind": "square"
+    },
+    {
+      "id": "10:874",
+      "kind": "square"
+    },
+    {
+      "id": "10:875",
+      "kind": "union"
+    },
+    {
+      "id": "10:879",
+      "kind": "square"
+    },
+    {
+      "id": "10:880",
+      "kind": "square"
+    },
+    {
+      "id": "10:881",
+      "kind": "square"
+    },
+    {
+      "id": "10:882",
+      "kind": "union"
+    },
+    {
+      "id": "10:886",
+      "kind": "square"
+    },
+    {
+      "id": "10:887",
+      "kind": "square"
+    },
+    {
+      "id": "10:888",
+      "kind": "square"
+    },
+    {
+      "id": "10:889",
+      "kind": "square"
+    },
+    {
+      "id": "10:890",
+      "kind": "square"
+    },
+    {
+      "id": "10:891",
+      "kind": "square"
+    },
+    {
+      "id": "10:892",
+      "kind": "square"
+    },
+    {
+      "id": "10:893",
+      "kind": "square"
+    },
+    {
+      "id": "10:894",
+      "kind": "square"
+    },
+    {
+      "id": "10:895",
+      "kind": "square"
+    },
+    {
+      "id": "10:896",
+      "kind": "square"
+    },
+    {
+      "id": "10:897",
+      "kind": "square"
+    },
+    {
+      "id": "10:898",
+      "kind": "square"
+    },
+    {
+      "id": "10:899",
+      "kind": "female"
+    },
+    {
+      "id": "10:900",
+      "kind": "square"
+    },
+    {
+      "id": "10:901",
+      "kind": "square"
+    },
+    {
+      "id": "10:902",
+      "kind": "square"
+    },
+    {
+      "id": "10:903",
+      "kind": "square"
+    },
+    {
+      "id": "10:904",
+      "kind": "square"
+    },
+    {
+      "id": "10:905",
+      "kind": "square"
+    },
+    {
+      "id": "10:906",
+      "kind": "square"
+    }
+  ]
+}

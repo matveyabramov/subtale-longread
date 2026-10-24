@@ -1,0 +1,34 @@
+[
+  {
+    "name": "hero",
+    "baseline": "artifacts/hero-1920/browser-pass-production.png",
+    "mae": 0,
+    "pixelsAbove12Percent": 0,
+    "max": 0,
+    "exactPercent": 100
+  },
+  {
+    "name": "instructions",
+    "baseline": "artifacts/experiment-1920/instructions-production-pass-2.png",
+    "mae": 0,
+    "pixelsAbove12Percent": 0,
+    "max": 0,
+    "exactPercent": 100
+  },
+  {
+    "name": "target",
+    "baseline": "artifacts/experiment-1920/target-production-pass-2.png",
+    "mae": 0,
+    "pixelsAbove12Percent": 0,
+    "max": 0,
+    "exactPercent": 100
+  },
+  {
+    "name": "result",
+    "baseline": "artifacts/experiment-1920/result-production-pass-2.png",
+    "mae": 0,
+    "pixelsAbove12Percent": 0,
+    "max": 0,
+    "exactPercent": 100
+  }
+]
