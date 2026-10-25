@@ -1,0 +1,347 @@
+{
+  "checks": [
+    {
+      "id": "10:1142",
+      "optimizedPath": "public/assets/images/footer-eye.webp",
+      "imageHash": "a2527d39f79d61137e7c901c1bd8802fb781330d",
+      "naturalSize": [
+        570,
+        285
+      ],
+      "sourceMatrix": [
+        [
+          0.9659258127212524,
+          0.258819043636322,
+          396
+        ],
+        [
+          -0.258819043636322,
+          0.9659258127212524,
+          201.92578125
+        ]
+      ],
+      "actualBox": {
+        "id": "10:1142",
+        "expected": {
+          "x": 1502,
+          "y": 328.0008224351659,
+          "w": 283.22982390541256,
+          "h": 191.80863106383185
+        },
+        "actual": {
+          "x": 1502,
+          "y": 328.0008544921875,
+          "w": 283.227783203125,
+          "h": 191.801025390625
+        },
+        "delta": {
+          "x": 0,
+          "y": 0.00003205702159903012,
+          "w": -0.0020407022875588154,
+          "h": -0.00760567320685368
+        },
+        "maxDelta": 0.00760567320685368
+      },
+      "filter": "none"
+    },
+    {
+      "id": "10:1143",
+      "optimizedPath": "public/assets/images/footer-unsaid-strip.webp",
+      "imageHash": "b7079f327ac77217ba31eccfa428d1c9bf81ad54",
+      "naturalSize": [
+        963,
+        321
+      ],
+      "sourceMatrix": [
+        [
+          1,
+          0,
+          142
+        ],
+        [
+          0,
+          1,
+          23
+        ]
+      ],
+      "actualBox": {
+        "id": "10:1143",
+        "expected": {
+          "x": 1248,
+          "y": 216,
+          "w": 321,
+          "h": 107
+        },
+        "actual": {
+          "x": 1248,
+          "y": 216,
+          "w": 321,
+          "h": 107
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        "maxDelta": 0
+      },
+      "filter": "none"
+    },
+    {
+      "id": "10:1144",
+      "optimizedPath": "public/assets/images/footer-between-lines-strip.webp",
+      "imageHash": "bd6b5cacdd1170f72989f6b707a0d3eda9355621",
+      "naturalSize": [
+        1008,
+        336
+      ],
+      "sourceMatrix": [
+        [
+          0.9659258127212524,
+          0.258819043636322,
+          440
+        ],
+        [
+          -0.258819043636322,
+          0.9659258127212524,
+          626.962890625
+        ]
+      ],
+      "actualBox": {
+        "id": "10:1144",
+        "expected": {
+          "x": 1546,
+          "y": 732.9996919631958,
+          "w": 353.5388059616089,
+          "h": 195.14688968658447
+        },
+        "actual": {
+          "x": 1546,
+          "y": 732.9996948242188,
+          "w": 353.538818359375,
+          "h": 195.14691162109375
+        },
+        "delta": {
+          "x": 0,
+          "y": 0.00000286102294921875,
+          "w": 0.00001239776611328125,
+          "h": 0.00002193450927734375
+        },
+        "maxDelta": 0.00002193450927734375
+      },
+      "filter": "none"
+    },
+    {
+      "id": "10:1145",
+      "optimizedPath": "public/assets/images/hero-eye-accent.webp",
+      "imageHash": "144a3d120c3632ab1ee03b64c4d9e288a22b8b5a",
+      "naturalSize": [
+        1254,
+        1254
+      ],
+      "sourceMatrix": [
+        [
+          -1,
+          0,
+          438
+        ],
+        [
+          0,
+          1,
+          62
+        ]
+      ],
+      "actualBox": {
+        "id": "10:1145",
+        "expected": {
+          "x": 1207,
+          "y": 255,
+          "w": 337,
+          "h": 337
+        },
+        "actual": {
+          "x": 1207,
+          "y": 255,
+          "w": 337,
+          "h": 337
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        "maxDelta": 0
+      },
+      "filter": "grayscale(0.8) brightness(5)"
+    },
+    {
+      "id": "10:1146",
+      "optimizedPath": "public/assets/images/footer-mouth.webp",
+      "imageHash": "f4f836747639bb4a43af9d32647b44556507ae72",
+      "naturalSize": [
+        951,
+        317
+      ],
+      "sourceMatrix": [
+        [
+          1,
+          0,
+          1329
+        ],
+        [
+          0,
+          1,
+          568
+        ]
+      ],
+      "actualBox": {
+        "id": "10:1146",
+        "expected": {
+          "x": 1329,
+          "y": 568,
+          "w": 432,
+          "h": 144
+        },
+        "actual": {
+          "x": 1329,
+          "y": 568,
+          "w": 432,
+          "h": 144
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        "maxDelta": 0
+      },
+      "filter": "none"
+    },
+    {
+      "id": "10:1162",
+      "optimizedPath": "public/assets/images/footer-school-logo-cutout.webp",
+      "imageHash": "f9cf72afab8959879ed22d0f0b83522d3b03cbec",
+      "naturalSize": [
+        640,
+        640
+      ],
+      "sourceMatrix": [
+        [
+          1,
+          0,
+          1679
+        ],
+        [
+          0,
+          1,
+          1120
+        ]
+      ],
+      "actualBox": {
+        "id": "10:1162",
+        "expected": {
+          "x": 1679,
+          "y": 1120,
+          "w": 201,
+          "h": 80
+        },
+        "actual": {
+          "x": 1679,
+          "y": 1120,
+          "w": 201,
+          "h": 80
+        },
+        "delta": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        "maxDelta": 0
+      },
+      "filter": "none",
+      "crop": {
+        "source": [
+          [
+            0.8072287440299988,
+            0,
+            0.09638551622629166
+          ],
+          [
+            0,
+            0.3212851583957672,
+            0.3413654565811157
+          ]
+        ],
+        "expectedImage": {
+          "x": 1655.0000013567844,
+          "y": 1035.000006029382,
+          "width": 249.00005294228015,
+          "height": 248.99998617880124
+        },
+        "actualImage": {
+          "x": 1655.015625,
+          "y": 1035.015625,
+          "width": 249,
+          "height": 248.984375
+        },
+        "delta": {
+          "x": 0.015623643215576521,
+          "y": 0.015618970618106687,
+          "width": -0.0000529422801491819,
+          "height": -0.015611178801236747
+        }
+      }
+    }
+  ],
+  "clippedPortraitVisibleHeight": 0,
+  "footerPixelWrappers": 90,
+  "visiblePortraitImages": 0,
+  "independentLineGaps": [
+    {
+      "id": "10:1000",
+      "x": 356,
+      "y": 509,
+      "width": 284,
+      "circleGap": 30
+    },
+    {
+      "id": "10:1001",
+      "x": 1281,
+      "y": 509,
+      "width": 146,
+      "circleGap": 30
+    },
+    {
+      "id": "10:1002",
+      "x": 1281,
+      "y": 626,
+      "width": 146,
+      "circleGap": 30
+    },
+    {
+      "id": "10:1003",
+      "x": 1281,
+      "y": 743,
+      "width": 29,
+      "circleGap": 30
+    },
+    {
+      "id": "10:1006",
+      "x": 317,
+      "y": 626,
+      "width": 323,
+      "circleGap": 30
+    },
+    {
+      "id": "10:1009",
+      "x": 297,
+      "y": 743,
+      "width": 343,
+      "circleGap": 30
+    }
+  ]
+}

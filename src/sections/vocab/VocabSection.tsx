@@ -1,7 +1,25 @@
+import { imageAssets, vectorAssets } from '../../assets/generated';
+import { copy } from './copy';
+import styles from './VocabSection.module.css';
+
 export function VocabSection() {
   return (
-    <section id="vocab" aria-labelledby="vocab-title" data-narrative-section>
-      <h2 id="vocab-title" tabIndex={-1}>Vocab</h2>
+    <section id="vocab" aria-labelledby="vocab-title" data-narrative-section className={styles.section}>
+      <div className={styles.canvas} data-node-id="10:966">
+        <div className={`${styles.texture} ${styles.mosaic}`} data-node-id="10:967" aria-hidden="true"
+          style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
+        <div className={styles.statistic} data-node-id="10:968">
+          <div className={styles.artwork} data-node-id="10:969">
+            <img src={vectorAssets['vocab-illustration']} alt="98%" />
+          </div>
+          <p className={styles.text} data-node-id="10:971"><span>{copy['10:971']}</span></p>
+        </div>
+        <h2 id="vocab-title" tabIndex={-1} className={styles.text} data-node-id="10:973"><span>{copy['10:973']}</span></h2>
+        <div className={styles.banner} data-node-id="10:974">
+          <p className={styles.text} data-node-id="10:975"><span>{copy['10:975']}</span></p>
+        </div>
+        <p className={styles.text} data-node-id="10:972"><span>{copy['10:972']}</span></p>
+      </div>
     </section>
   );
 }

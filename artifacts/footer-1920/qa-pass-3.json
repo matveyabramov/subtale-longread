@@ -1,0 +1,5482 @@
+{
+  "name": "footer",
+  "pass": "3",
+  "browser": "156.0.8078.47",
+  "data": {
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "scrollY": 13806
+    },
+    "bounds": {
+      "w": 1920,
+      "h": 1334,
+      "y": 13806,
+      "scrollWidth": 1920,
+      "scrollHeight": 1334
+    },
+    "narrativeIds": [
+      "hero",
+      "experiment",
+      "emptiness",
+      "elephant",
+      "blind-zones",
+      "movies",
+      "vocab",
+      "blind-spot-scene",
+      "what-to-do",
+      "footer"
+    ],
+    "nestedNarrative": 0,
+    "documentWidth": 1920,
+    "videos": 0,
+    "animations": 0,
+    "controls": 0,
+    "geometry": [
+      {
+        "id": "10:1016",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1334,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(1, 46, 215)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "hidden",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1017",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "lighten"
+      },
+      {
+        "id": "10:1018",
+        "x": 30,
+        "y": 30,
+        "w": 1002,
+        "h": 288,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontSize": "120px",
+        "fontWeight": "800",
+        "lineHeight": "96px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1019",
+        "x": 1106,
+        "y": 193,
+        "w": 771,
+        "h": 694,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "hidden",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1020",
+        "x": 1106,
+        "y": 502,
+        "w": 771,
+        "h": 154,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "hidden",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1021",
+        "x": 1260.28125,
+        "y": 193,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1022",
+        "x": 1260.28125,
+        "y": 270.15625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1023",
+        "x": 1260.28125,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1024",
+        "x": 1260.28125,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1025",
+        "x": 1260.28125,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1026",
+        "x": 1183.140625,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1027",
+        "x": 1106,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1028",
+        "x": 1337.421875,
+        "y": 270.15625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1029",
+        "x": 1337.421875,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1030",
+        "x": 1337.421875,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1031",
+        "x": 1337.421875,
+        "y": 501.578125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1032",
+        "x": 1414.5625,
+        "y": 270.15625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1033",
+        "x": 1414.5625,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1034",
+        "x": 1414.5625,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1035",
+        "x": 1414.5625,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1036",
+        "x": 1414.5625,
+        "y": 501.578125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1037",
+        "x": 1491.703125,
+        "y": 270.15625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1038",
+        "x": 1491.703125,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1039",
+        "x": 1491.703125,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1040",
+        "x": 1491.703125,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1041",
+        "x": 1491.703125,
+        "y": 501.578125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1042",
+        "x": 1568.84375,
+        "y": 270.15625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1043",
+        "x": 1646,
+        "y": 193,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1044",
+        "x": 1568.84375,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1045",
+        "x": 1568.84375,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1046",
+        "x": 1568.84375,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1047",
+        "x": 1568.84375,
+        "y": 501.578125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1048",
+        "x": 1646,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1049",
+        "x": 1646,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1050",
+        "x": 1646,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1051",
+        "x": 1646,
+        "y": 501.578125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1052",
+        "x": 1723.140625,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1053",
+        "x": 1723.140625,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1054",
+        "x": 1723.140625,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1055",
+        "x": 1800.28125,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1056",
+        "x": 1800.28125,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1057",
+        "x": 1491.703125,
+        "y": 193,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1058",
+        "x": 1337,
+        "y": 655.84375,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1059",
+        "x": 1414.140625,
+        "y": 655.84375,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1060",
+        "x": 1414.140625,
+        "y": 733,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1061",
+        "x": 1414.140625,
+        "y": 810.140625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1062",
+        "x": 1491.28125,
+        "y": 655.84375,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1063",
+        "x": 1491.28125,
+        "y": 733,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1064",
+        "x": 1491.28125,
+        "y": 810.140625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1065",
+        "x": 1568.421875,
+        "y": 655.84375,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1066",
+        "x": 1568.421875,
+        "y": 733,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1067",
+        "x": 1568.421875,
+        "y": 810.140625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1068",
+        "x": 1645.5625,
+        "y": 655.84375,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1069",
+        "x": 1645.5625,
+        "y": 733,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1070",
+        "x": 1645.5625,
+        "y": 810.140625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1071",
+        "x": 1722.703125,
+        "y": 733,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1072",
+        "x": 1722.703125,
+        "y": 810.140625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1073",
+        "x": 1106,
+        "y": 887.28125,
+        "w": 617.140625,
+        "h": 385.703125,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1103",
+        "x": 1106,
+        "y": 193,
+        "w": 771,
+        "h": 309,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "hidden",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1104",
+        "x": 1260.28125,
+        "y": 193,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1105",
+        "x": 1260.28125,
+        "y": 270.140625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1106",
+        "x": 1260.28125,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1107",
+        "x": 1260.28125,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1108",
+        "x": 1260.28125,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1109",
+        "x": 1183.140625,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1110",
+        "x": 1106,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1111",
+        "x": 1337.421875,
+        "y": 270.140625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1112",
+        "x": 1337.421875,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1113",
+        "x": 1337.421875,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1114",
+        "x": 1337.421875,
+        "y": 501.5625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1115",
+        "x": 1414.5625,
+        "y": 270.140625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1116",
+        "x": 1414.5625,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1117",
+        "x": 1414.5625,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1118",
+        "x": 1415,
+        "y": 424,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1119",
+        "x": 1414.5625,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1120",
+        "x": 1414.5625,
+        "y": 501.5625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1121",
+        "x": 1491.703125,
+        "y": 270.140625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1122",
+        "x": 1491.703125,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1123",
+        "x": 1491.703125,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1124",
+        "x": 1491.703125,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1125",
+        "x": 1491.703125,
+        "y": 501.5625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1126",
+        "x": 1568.84375,
+        "y": 270.140625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1127",
+        "x": 1646,
+        "y": 193,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1128",
+        "x": 1568.84375,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1129",
+        "x": 1568.84375,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1130",
+        "x": 1568.84375,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1131",
+        "x": 1568.84375,
+        "y": 501.5625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1132",
+        "x": 1646,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1133",
+        "x": 1646,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1134",
+        "x": 1646,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1135",
+        "x": 1646,
+        "y": 501.5625,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1136",
+        "x": 1723.140625,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1137",
+        "x": 1723.140625,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1138",
+        "x": 1723.140625,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1139",
+        "x": 1800.28125,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1140",
+        "x": 1800.28125,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1141",
+        "x": 1491.703125,
+        "y": 193,
+        "w": 77.140625,
+        "h": 77.140625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1142",
+        "x": 1502,
+        "y": 328.0008544921875,
+        "w": 283.227783203125,
+        "h": 191.801025390625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "matrix(0.965926, -0.258819, 0.258819, 0.965926, 396, 201.926)",
+        "filter": "none",
+        "overflow": "hidden",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1143",
+        "x": 1248,
+        "y": 216,
+        "w": 321,
+        "h": 107,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "matrix(1, 0, 0, 1, 142, 23)",
+        "filter": "none",
+        "overflow": "hidden",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1144",
+        "x": 1546,
+        "y": 732.9996948242188,
+        "w": 353.538818359375,
+        "h": 195.14691162109375,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "matrix(0.965926, -0.258819, 0.258819, 0.965926, 440, 626.963)",
+        "filter": "none",
+        "overflow": "hidden",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1145",
+        "x": 1207,
+        "y": 255,
+        "w": 337,
+        "h": 337,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "matrix(-1, 0, 0, 1, 438, 62)",
+        "filter": "none",
+        "overflow": "hidden",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1146",
+        "x": 1329,
+        "y": 568,
+        "w": 432,
+        "h": 144,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "matrix(1, 0, 0, 1, 1329, 568)",
+        "filter": "none",
+        "overflow": "hidden",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1147",
+        "x": 30,
+        "y": 818,
+        "w": 832,
+        "h": 232,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1148",
+        "x": 50,
+        "y": 838,
+        "w": 792,
+        "h": 192,
+        "color": "rgb(11, 13, 15)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontSize": "120px",
+        "fontWeight": "800",
+        "lineHeight": "96px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1149",
+        "x": 0,
+        "y": 1080,
+        "w": 1920,
+        "h": 254,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(11, 13, 15)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "hidden",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:2092",
+        "x": 40,
+        "y": 1120,
+        "w": 160,
+        "h": 66.65625,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:2093",
+        "x": 40,
+        "y": 1119.359375,
+        "w": 45.265625,
+        "h": 67.3125,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:2156",
+        "x": 96.2926025390625,
+        "y": 1135.609130859375,
+        "w": 104,
+        "h": 51.046875,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "matrix(1, 0, 0, 1, 56.2926, 15.6091)",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:2157",
+        "x": 96.2926025390625,
+        "y": 1135.609130859375,
+        "w": 63,
+        "h": 11,
+        "color": "rgb(254, 209, 40)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "13.9224px",
+        "fontWeight": "600",
+        "lineHeight": "11.1379px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:2158",
+        "x": 96.2926025390625,
+        "y": 1153.656005859375,
+        "w": 104,
+        "h": 33,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontSize": "41.6328px",
+        "fontWeight": "800",
+        "lineHeight": "33.3062px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1152",
+        "x": 40,
+        "y": 1225,
+        "w": 790,
+        "h": 69,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1153",
+        "x": 40,
+        "y": 1225,
+        "w": 233,
+        "h": 69,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:2161",
+        "x": 40,
+        "y": 1225,
+        "w": 57,
+        "h": 24,
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1155",
+        "x": 40,
+        "y": 1254,
+        "w": 233,
+        "h": 40,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontSize": "50px",
+        "fontWeight": "800",
+        "lineHeight": "40px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1156",
+        "x": 373,
+        "y": 1225,
+        "w": 224,
+        "h": 69,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:2163",
+        "x": 373,
+        "y": 1225,
+        "w": 80,
+        "h": 24,
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1158",
+        "x": 373,
+        "y": 1254,
+        "w": 224,
+        "h": 40,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontSize": "50px",
+        "fontWeight": "800",
+        "lineHeight": "40px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1159",
+        "x": 697,
+        "y": 1225,
+        "w": 133,
+        "h": 69,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:2165",
+        "x": 697,
+        "y": 1225,
+        "w": 68,
+        "h": 24,
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.8px",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1161",
+        "x": 697,
+        "y": 1254,
+        "w": 133,
+        "h": 40,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontSize": "50px",
+        "fontWeight": "800",
+        "lineHeight": "40px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:1162",
+        "x": 1679,
+        "y": 1120,
+        "w": 201,
+        "h": 80,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "matrix(1, 0, 0, 1, 1679, 1120)",
+        "filter": "none",
+        "overflow": "hidden",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      }
+    ],
+    "images": [
+      {
+        "url": "http://127.0.0.1:4173/assets/images/au-fg-texture4-8k.jpg",
+        "naturalWidth": 3370,
+        "naturalHeight": 2247,
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "filter": "none",
+        "complete": true
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-eye.webp",
+        "naturalWidth": 570,
+        "naturalHeight": 285,
+        "x": 1502,
+        "y": 328.0008544921875,
+        "width": 283.227783203125,
+        "height": 191.801025390625,
+        "filter": "none",
+        "complete": true
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-unsaid-strip.webp",
+        "naturalWidth": 963,
+        "naturalHeight": 321,
+        "x": 1248,
+        "y": 216,
+        "width": 321,
+        "height": 107,
+        "filter": "none",
+        "complete": true
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-between-lines-strip.webp",
+        "naturalWidth": 1008,
+        "naturalHeight": 336,
+        "x": 1546,
+        "y": 732.9996948242188,
+        "width": 353.538818359375,
+        "height": 195.14691162109375,
+        "filter": "none",
+        "complete": true
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-eye-accent.webp",
+        "naturalWidth": 1254,
+        "naturalHeight": 1254,
+        "x": 1207,
+        "y": 255,
+        "width": 337,
+        "height": 337,
+        "filter": "grayscale(0.8) brightness(5)",
+        "complete": true
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-mouth.webp",
+        "naturalWidth": 951,
+        "naturalHeight": 317,
+        "x": 1329,
+        "y": 568,
+        "width": 432,
+        "height": 144,
+        "filter": "none",
+        "complete": true
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/footer-pixel-mark.svg",
+        "naturalWidth": 46,
+        "naturalHeight": 68,
+        "x": 40,
+        "y": 1119.359375,
+        "width": 46,
+        "height": 68,
+        "filter": "none",
+        "complete": true
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-school-logo-cutout.webp",
+        "naturalWidth": 640,
+        "naturalHeight": 640,
+        "x": 1655.015625,
+        "y": 1035.015625,
+        "width": 249,
+        "height": 248.984375,
+        "filter": "none",
+        "complete": true
+      }
+    ]
+  },
+  "fonts": [
+    {
+      "id": "10:1018",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 39
+        }
+      ]
+    },
+    {
+      "id": "10:1148",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 31
+        }
+      ]
+    },
+    {
+      "id": "10:2157",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono SemiBold",
+          "postScriptName": "IBMPlexMono-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "id": "10:2158",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "id": "10:2161",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ]
+    },
+    {
+      "id": "10:1155",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ]
+    },
+    {
+      "id": "10:2163",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "id": "10:1158",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ]
+    },
+    {
+      "id": "10:2165",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "id": "10:1161",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "10:1016",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1334
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1334
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1017",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1018",
+      "expected": {
+        "x": 30,
+        "y": 30,
+        "w": 1002,
+        "h": 288
+      },
+      "actual": {
+        "x": 30,
+        "y": 30,
+        "w": 1002,
+        "h": 288
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1019",
+      "expected": {
+        "x": 1106,
+        "y": 193,
+        "w": 771,
+        "h": 694
+      },
+      "actual": {
+        "x": 1106,
+        "y": 193,
+        "w": 771,
+        "h": 694
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1020",
+      "expected": {
+        "x": 1106,
+        "y": 502,
+        "w": 771,
+        "h": 154
+      },
+      "actual": {
+        "x": 1106,
+        "y": 502,
+        "w": 771,
+        "h": 154
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1021",
+      "expected": {
+        "x": 1260.2861328125,
+        "y": 193,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1260.28125,
+        "y": 193,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0048828125,
+        "y": 0,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0048828125
+    },
+    {
+      "id": "10:1022",
+      "expected": {
+        "x": 1260.2861328125,
+        "y": 270.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1260.28125,
+        "y": 270.15625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0048828125,
+        "y": 0.013671875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1023",
+      "expected": {
+        "x": 1260.2861328125,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1260.28125,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0048828125,
+        "y": 0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1024",
+      "expected": {
+        "x": 1260.2861328125,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1260.28125,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0048828125,
+        "y": 0.009765625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.009765625
+    },
+    {
+      "id": "10:1025",
+      "expected": {
+        "x": 1260.2861328125,
+        "y": 578.71484375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1260.28125,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0048828125,
+        "y": -0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1026",
+      "expected": {
+        "x": 1183.142578125,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1183.140625,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.001953125,
+        "y": 0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1027",
+      "expected": {
+        "x": 1106,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1106,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": 0,
+        "y": 0.009765625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.009765625
+    },
+    {
+      "id": "10:1028",
+      "expected": {
+        "x": 1337.4287109375,
+        "y": 270.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1337.421875,
+        "y": 270.15625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0068359375,
+        "y": 0.013671875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1029",
+      "expected": {
+        "x": 1337.4287109375,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1337.421875,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0068359375,
+        "y": 0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1030",
+      "expected": {
+        "x": 1337.4287109375,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1337.421875,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0068359375,
+        "y": 0.009765625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.009765625
+    },
+    {
+      "id": "10:1031",
+      "expected": {
+        "x": 1337.4287109375,
+        "y": 501.572265625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1337.421875,
+        "y": 501.578125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0068359375,
+        "y": 0.005859375,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0068359375
+    },
+    {
+      "id": "10:1032",
+      "expected": {
+        "x": 1414.5712890625,
+        "y": 270.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1414.5625,
+        "y": 270.15625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0087890625,
+        "y": 0.013671875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1033",
+      "expected": {
+        "x": 1414.5712890625,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1414.5625,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0087890625,
+        "y": 0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1034",
+      "expected": {
+        "x": 1414.5712890625,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1414.5625,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0087890625,
+        "y": 0.009765625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.009765625
+    },
+    {
+      "id": "10:1035",
+      "expected": {
+        "x": 1414.5712890625,
+        "y": 578.71484375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1414.5625,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0087890625,
+        "y": -0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1036",
+      "expected": {
+        "x": 1414.5712890625,
+        "y": 501.572265625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1414.5625,
+        "y": 501.578125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0087890625,
+        "y": 0.005859375,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0087890625
+    },
+    {
+      "id": "10:1037",
+      "expected": {
+        "x": 1491.71484375,
+        "y": 270.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.703125,
+        "y": 270.15625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.01171875,
+        "y": 0.013671875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1038",
+      "expected": {
+        "x": 1491.71484375,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.703125,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.01171875,
+        "y": 0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1039",
+      "expected": {
+        "x": 1491.71484375,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.703125,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.01171875,
+        "y": 0.009765625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1040",
+      "expected": {
+        "x": 1491.71484375,
+        "y": 578.71484375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.703125,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.01171875,
+        "y": -0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1041",
+      "expected": {
+        "x": 1491.71484375,
+        "y": 501.572265625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.703125,
+        "y": 501.578125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.01171875,
+        "y": 0.005859375,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1042",
+      "expected": {
+        "x": 1568.857421875,
+        "y": 270.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1568.84375,
+        "y": 270.15625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.013671875,
+        "y": 0.013671875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1043",
+      "expected": {
+        "x": 1646,
+        "y": 193,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1646,
+        "y": 193,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.00223541259765625
+    },
+    {
+      "id": "10:1044",
+      "expected": {
+        "x": 1568.857421875,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1568.84375,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.013671875,
+        "y": 0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1045",
+      "expected": {
+        "x": 1568.857421875,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1568.84375,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.013671875,
+        "y": 0.009765625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1046",
+      "expected": {
+        "x": 1568.857421875,
+        "y": 578.71484375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1568.84375,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.013671875,
+        "y": -0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1047",
+      "expected": {
+        "x": 1568.857421875,
+        "y": 501.572265625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1568.84375,
+        "y": 501.578125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.013671875,
+        "y": 0.005859375,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1048",
+      "expected": {
+        "x": 1646,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1646,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": 0,
+        "y": 0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1049",
+      "expected": {
+        "x": 1646,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1646,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": 0,
+        "y": 0.009765625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.009765625
+    },
+    {
+      "id": "10:1050",
+      "expected": {
+        "x": 1646,
+        "y": 578.71484375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1646,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": 0,
+        "y": -0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1051",
+      "expected": {
+        "x": 1646,
+        "y": 501.572265625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1646,
+        "y": 501.578125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": 0,
+        "y": 0.005859375,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.005859375
+    },
+    {
+      "id": "10:1052",
+      "expected": {
+        "x": 1723.142578125,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1723.140625,
+        "y": 347.296875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.001953125,
+        "y": 0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1053",
+      "expected": {
+        "x": 1723.142578125,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1723.140625,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.001953125,
+        "y": 0.009765625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.009765625
+    },
+    {
+      "id": "10:1054",
+      "expected": {
+        "x": 1723.142578125,
+        "y": 578.71484375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1723.140625,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.001953125,
+        "y": -0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1055",
+      "expected": {
+        "x": 1800.28515625,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1800.28125,
+        "y": 424.4375,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.00390625,
+        "y": 0.009765625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.009765625
+    },
+    {
+      "id": "10:1056",
+      "expected": {
+        "x": 1800.28515625,
+        "y": 578.71484375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1800.28125,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.00390625,
+        "y": -0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1057",
+      "expected": {
+        "x": 1491.71484375,
+        "y": 193,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.703125,
+        "y": 193,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.01171875,
+        "y": 0,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1058",
+      "expected": {
+        "x": 1337,
+        "y": 655.857421875,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1337,
+        "y": 655.84375,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": 0,
+        "y": -0.013671875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1059",
+      "expected": {
+        "x": 1414.142578125,
+        "y": 655.857421875,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1414.140625,
+        "y": 655.84375,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.001953125,
+        "y": -0.013671875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1060",
+      "expected": {
+        "x": 1414.142578125,
+        "y": 733,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1414.140625,
+        "y": 733,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.001953125,
+        "y": 0,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.00223541259765625
+    },
+    {
+      "id": "10:1061",
+      "expected": {
+        "x": 1414.142578125,
+        "y": 810.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1414.140625,
+        "y": 810.140625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.001953125,
+        "y": -0.001953125,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.00223541259765625
+    },
+    {
+      "id": "10:1062",
+      "expected": {
+        "x": 1491.28515625,
+        "y": 655.857421875,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.28125,
+        "y": 655.84375,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.00390625,
+        "y": -0.013671875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1063",
+      "expected": {
+        "x": 1491.28515625,
+        "y": 733,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.28125,
+        "y": 733,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.00390625,
+        "y": 0,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.00390625
+    },
+    {
+      "id": "10:1064",
+      "expected": {
+        "x": 1491.28515625,
+        "y": 810.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.28125,
+        "y": 810.140625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.00390625,
+        "y": -0.001953125,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.00390625
+    },
+    {
+      "id": "10:1065",
+      "expected": {
+        "x": 1568.4287109375,
+        "y": 655.857421875,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1568.421875,
+        "y": 655.84375,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0068359375,
+        "y": -0.013671875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1066",
+      "expected": {
+        "x": 1568.4287109375,
+        "y": 733,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1568.421875,
+        "y": 733,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0068359375,
+        "y": 0,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0068359375
+    },
+    {
+      "id": "10:1067",
+      "expected": {
+        "x": 1568.4287109375,
+        "y": 810.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1568.421875,
+        "y": 810.140625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0068359375,
+        "y": -0.001953125,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0068359375
+    },
+    {
+      "id": "10:1068",
+      "expected": {
+        "x": 1645.5712890625,
+        "y": 655.857421875,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1645.5625,
+        "y": 655.84375,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0087890625,
+        "y": -0.013671875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1069",
+      "expected": {
+        "x": 1645.5712890625,
+        "y": 733,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1645.5625,
+        "y": 733,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0087890625,
+        "y": 0,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0087890625
+    },
+    {
+      "id": "10:1070",
+      "expected": {
+        "x": 1645.5712890625,
+        "y": 810.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1645.5625,
+        "y": 810.140625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0087890625,
+        "y": -0.001953125,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0087890625
+    },
+    {
+      "id": "10:1071",
+      "expected": {
+        "x": 1722.7138671875,
+        "y": 733,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1722.703125,
+        "y": 733,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0107421875,
+        "y": 0,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0107421875
+    },
+    {
+      "id": "10:1072",
+      "expected": {
+        "x": 1722.7138671875,
+        "y": 810.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1722.703125,
+        "y": 810.140625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0107421875,
+        "y": -0.001953125,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0107421875
+    },
+    {
+      "id": "10:1073",
+      "expected": {
+        "x": 1106,
+        "y": 887.287109375,
+        "w": 617.142578125,
+        "h": 385.712890625
+      },
+      "actual": {
+        "x": 1106,
+        "y": 887.28125,
+        "w": 617.140625,
+        "h": 385.703125
+      },
+      "delta": {
+        "x": 0,
+        "y": -0.005859375,
+        "w": -0.001953125,
+        "h": -0.009765625
+      },
+      "maxDelta": 0.009765625
+    },
+    {
+      "id": "10:1103",
+      "expected": {
+        "x": 1106,
+        "y": 193,
+        "w": 771,
+        "h": 309
+      },
+      "actual": {
+        "x": 1106,
+        "y": 193,
+        "w": 771,
+        "h": 309
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1104",
+      "expected": {
+        "x": 1260.2861328125,
+        "y": 193,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1260.28125,
+        "y": 193,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0048828125,
+        "y": 0,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0048828125
+    },
+    {
+      "id": "10:1105",
+      "expected": {
+        "x": 1260.2861328125,
+        "y": 270.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1260.28125,
+        "y": 270.140625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0048828125,
+        "y": -0.001953125,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0048828125
+    },
+    {
+      "id": "10:1106",
+      "expected": {
+        "x": 1260.2861328125,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1260.28125,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0048828125,
+        "y": -0.00390625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0048828125
+    },
+    {
+      "id": "10:1107",
+      "expected": {
+        "x": 1260.2861328125,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1260.28125,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0048828125,
+        "y": -0.005859375,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.005859375
+    },
+    {
+      "id": "10:1108",
+      "expected": {
+        "x": 1260.2861328125,
+        "y": 578.71484375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1260.28125,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0048828125,
+        "y": -0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1109",
+      "expected": {
+        "x": 1183.142578125,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1183.140625,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.001953125,
+        "y": -0.00390625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.00390625
+    },
+    {
+      "id": "10:1110",
+      "expected": {
+        "x": 1106,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1106,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": 0,
+        "y": -0.005859375,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.005859375
+    },
+    {
+      "id": "10:1111",
+      "expected": {
+        "x": 1337.4287109375,
+        "y": 270.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1337.421875,
+        "y": 270.140625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0068359375,
+        "y": -0.001953125,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0068359375
+    },
+    {
+      "id": "10:1112",
+      "expected": {
+        "x": 1337.4287109375,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1337.421875,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0068359375,
+        "y": -0.00390625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0068359375
+    },
+    {
+      "id": "10:1113",
+      "expected": {
+        "x": 1337.4287109375,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1337.421875,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0068359375,
+        "y": -0.005859375,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0068359375
+    },
+    {
+      "id": "10:1114",
+      "expected": {
+        "x": 1337.4287109375,
+        "y": 501.572265625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1337.421875,
+        "y": 501.5625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0068359375,
+        "y": -0.009765625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.009765625
+    },
+    {
+      "id": "10:1115",
+      "expected": {
+        "x": 1414.5712890625,
+        "y": 270.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1414.5625,
+        "y": 270.140625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0087890625,
+        "y": -0.001953125,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0087890625
+    },
+    {
+      "id": "10:1116",
+      "expected": {
+        "x": 1414.5712890625,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1414.5625,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0087890625,
+        "y": -0.00390625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0087890625
+    },
+    {
+      "id": "10:1117",
+      "expected": {
+        "x": 1414.5712890625,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1414.5625,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0087890625,
+        "y": -0.005859375,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.0087890625
+    },
+    {
+      "id": "10:1118",
+      "expected": {
+        "x": 1415,
+        "y": 424,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1415,
+        "y": 424,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.00223541259765625
+    },
+    {
+      "id": "10:1119",
+      "expected": {
+        "x": 1414.5712890625,
+        "y": 578.71484375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1414.5625,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0087890625,
+        "y": -0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1120",
+      "expected": {
+        "x": 1414.5712890625,
+        "y": 501.572265625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1414.5625,
+        "y": 501.5625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.0087890625,
+        "y": -0.009765625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.009765625
+    },
+    {
+      "id": "10:1121",
+      "expected": {
+        "x": 1491.71484375,
+        "y": 270.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.703125,
+        "y": 270.140625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.01171875,
+        "y": -0.001953125,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1122",
+      "expected": {
+        "x": 1491.71484375,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.703125,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.01171875,
+        "y": -0.00390625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1123",
+      "expected": {
+        "x": 1491.71484375,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.703125,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.01171875,
+        "y": -0.005859375,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1124",
+      "expected": {
+        "x": 1491.71484375,
+        "y": 578.71484375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.703125,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.01171875,
+        "y": -0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1125",
+      "expected": {
+        "x": 1491.71484375,
+        "y": 501.572265625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.703125,
+        "y": 501.5625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.01171875,
+        "y": -0.009765625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1126",
+      "expected": {
+        "x": 1568.857421875,
+        "y": 270.142578125,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1568.84375,
+        "y": 270.140625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.013671875,
+        "y": -0.001953125,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1127",
+      "expected": {
+        "x": 1646,
+        "y": 193,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1646,
+        "y": 193,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.00223541259765625
+    },
+    {
+      "id": "10:1128",
+      "expected": {
+        "x": 1568.857421875,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1568.84375,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.013671875,
+        "y": -0.00390625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1129",
+      "expected": {
+        "x": 1568.857421875,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1568.84375,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.013671875,
+        "y": -0.005859375,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1130",
+      "expected": {
+        "x": 1568.857421875,
+        "y": 578.71484375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1568.84375,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.013671875,
+        "y": -0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1131",
+      "expected": {
+        "x": 1568.857421875,
+        "y": 501.572265625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1568.84375,
+        "y": 501.5625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.013671875,
+        "y": -0.009765625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.013671875
+    },
+    {
+      "id": "10:1132",
+      "expected": {
+        "x": 1646,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1646,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": 0,
+        "y": -0.00390625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.00390625
+    },
+    {
+      "id": "10:1133",
+      "expected": {
+        "x": 1646,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1646,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": 0,
+        "y": -0.005859375,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.005859375
+    },
+    {
+      "id": "10:1134",
+      "expected": {
+        "x": 1646,
+        "y": 578.71484375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1646,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": 0,
+        "y": -0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1135",
+      "expected": {
+        "x": 1646,
+        "y": 501.572265625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1646,
+        "y": 501.5625,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": 0,
+        "y": -0.009765625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.009765625
+    },
+    {
+      "id": "10:1136",
+      "expected": {
+        "x": 1723.142578125,
+        "y": 347.28515625,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1723.140625,
+        "y": 347.28125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.001953125,
+        "y": -0.00390625,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.00390625
+    },
+    {
+      "id": "10:1137",
+      "expected": {
+        "x": 1723.142578125,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1723.140625,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.001953125,
+        "y": -0.005859375,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.005859375
+    },
+    {
+      "id": "10:1138",
+      "expected": {
+        "x": 1723.142578125,
+        "y": 578.71484375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1723.140625,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.001953125,
+        "y": -0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1139",
+      "expected": {
+        "x": 1800.28515625,
+        "y": 424.427734375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1800.28125,
+        "y": 424.421875,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.00390625,
+        "y": -0.005859375,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.005859375
+    },
+    {
+      "id": "10:1140",
+      "expected": {
+        "x": 1800.28515625,
+        "y": 578.71484375,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1800.28125,
+        "y": 578.703125,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.00390625,
+        "y": -0.01171875,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1141",
+      "expected": {
+        "x": 1491.71484375,
+        "y": 193,
+        "w": 77.14286041259766,
+        "h": 77.14286041259766
+      },
+      "actual": {
+        "x": 1491.703125,
+        "y": 193,
+        "w": 77.140625,
+        "h": 77.140625
+      },
+      "delta": {
+        "x": -0.01171875,
+        "y": 0,
+        "w": -0.00223541259765625,
+        "h": -0.00223541259765625
+      },
+      "maxDelta": 0.01171875
+    },
+    {
+      "id": "10:1142",
+      "expected": {
+        "x": 1502,
+        "y": 328.0008224351659,
+        "w": 283.22982390541256,
+        "h": 191.80863106383185
+      },
+      "actual": {
+        "x": 1502,
+        "y": 328.0008544921875,
+        "w": 283.227783203125,
+        "h": 191.801025390625
+      },
+      "delta": {
+        "x": 0,
+        "y": 0.00003205702159903012,
+        "w": -0.0020407022875588154,
+        "h": -0.00760567320685368
+      },
+      "maxDelta": 0.00760567320685368
+    },
+    {
+      "id": "10:1143",
+      "expected": {
+        "x": 1248,
+        "y": 216,
+        "w": 321,
+        "h": 107
+      },
+      "actual": {
+        "x": 1248,
+        "y": 216,
+        "w": 321,
+        "h": 107
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1144",
+      "expected": {
+        "x": 1546,
+        "y": 732.9996919631958,
+        "w": 353.5388059616089,
+        "h": 195.14688968658447
+      },
+      "actual": {
+        "x": 1546,
+        "y": 732.9996948242188,
+        "w": 353.538818359375,
+        "h": 195.14691162109375
+      },
+      "delta": {
+        "x": 0,
+        "y": 0.00000286102294921875,
+        "w": 0.00001239776611328125,
+        "h": 0.00002193450927734375
+      },
+      "maxDelta": 0.00002193450927734375
+    },
+    {
+      "id": "10:1145",
+      "expected": {
+        "x": 1207,
+        "y": 255,
+        "w": 337,
+        "h": 337
+      },
+      "actual": {
+        "x": 1207,
+        "y": 255,
+        "w": 337,
+        "h": 337
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1146",
+      "expected": {
+        "x": 1329,
+        "y": 568,
+        "w": 432,
+        "h": 144
+      },
+      "actual": {
+        "x": 1329,
+        "y": 568,
+        "w": 432,
+        "h": 144
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1147",
+      "expected": {
+        "x": 30,
+        "y": 818,
+        "w": 832,
+        "h": 232
+      },
+      "actual": {
+        "x": 30,
+        "y": 818,
+        "w": 832,
+        "h": 232
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1148",
+      "expected": {
+        "x": 50,
+        "y": 838,
+        "w": 792,
+        "h": 192
+      },
+      "actual": {
+        "x": 50,
+        "y": 838,
+        "w": 792,
+        "h": 192
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1149",
+      "expected": {
+        "x": 0,
+        "y": 1080,
+        "w": 1920,
+        "h": 254
+      },
+      "actual": {
+        "x": 0,
+        "y": 1080,
+        "w": 1920,
+        "h": 254
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:2092",
+      "expected": {
+        "x": 40,
+        "y": 1120,
+        "w": 160,
+        "h": 66.66667175292969
+      },
+      "actual": {
+        "x": 40,
+        "y": 1120,
+        "w": 160,
+        "h": 66.65625
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": -0.0104217529296875
+      },
+      "maxDelta": 0.0104217529296875
+    },
+    {
+      "id": "10:2093",
+      "expected": {
+        "x": 40,
+        "y": 1119.349609375,
+        "w": 45.2786865234375,
+        "h": 67.31619262695312
+      },
+      "actual": {
+        "x": 40,
+        "y": 1119.359375,
+        "w": 45.265625,
+        "h": 67.3125
+      },
+      "delta": {
+        "x": 0,
+        "y": 0.009765625,
+        "w": -0.0130615234375,
+        "h": -0.003692626953125
+      },
+      "maxDelta": 0.0130615234375
+    },
+    {
+      "id": "10:2156",
+      "expected": {
+        "x": 96.29248046875,
+        "y": 1135.609375,
+        "w": 104,
+        "h": 51.05759811401367
+      },
+      "actual": {
+        "x": 96.2926025390625,
+        "y": 1135.609130859375,
+        "w": 104,
+        "h": 51.046875
+      },
+      "delta": {
+        "x": 0.0001220703125,
+        "y": -0.000244140625,
+        "w": 0,
+        "h": -0.010723114013671875
+      },
+      "maxDelta": 0.010723114013671875
+    },
+    {
+      "id": "10:2157",
+      "expected": {
+        "x": 96.29248046875,
+        "y": 1135.609375,
+        "w": 63,
+        "h": 11
+      },
+      "actual": {
+        "x": 96.2926025390625,
+        "y": 1135.609130859375,
+        "w": 63,
+        "h": 11
+      },
+      "delta": {
+        "x": 0.0001220703125,
+        "y": -0.000244140625,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0.000244140625
+    },
+    {
+      "id": "10:2158",
+      "expected": {
+        "x": 96.29248046875,
+        "y": 1153.666015625,
+        "w": 104,
+        "h": 33
+      },
+      "actual": {
+        "x": 96.2926025390625,
+        "y": 1153.656005859375,
+        "w": 104,
+        "h": 33
+      },
+      "delta": {
+        "x": 0.0001220703125,
+        "y": -0.010009765625,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0.010009765625
+    },
+    {
+      "id": "10:1152",
+      "expected": {
+        "x": 40,
+        "y": 1225,
+        "w": 790,
+        "h": 69
+      },
+      "actual": {
+        "x": 40,
+        "y": 1225,
+        "w": 790,
+        "h": 69
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1153",
+      "expected": {
+        "x": 40,
+        "y": 1225,
+        "w": 233,
+        "h": 69
+      },
+      "actual": {
+        "x": 40,
+        "y": 1225,
+        "w": 233,
+        "h": 69
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:2161",
+      "expected": {
+        "x": 40,
+        "y": 1225,
+        "w": 57,
+        "h": 24
+      },
+      "actual": {
+        "x": 40,
+        "y": 1225,
+        "w": 57,
+        "h": 24
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1155",
+      "expected": {
+        "x": 40,
+        "y": 1254,
+        "w": 233,
+        "h": 40
+      },
+      "actual": {
+        "x": 40,
+        "y": 1254,
+        "w": 233,
+        "h": 40
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1156",
+      "expected": {
+        "x": 373,
+        "y": 1225,
+        "w": 224,
+        "h": 69
+      },
+      "actual": {
+        "x": 373,
+        "y": 1225,
+        "w": 224,
+        "h": 69
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:2163",
+      "expected": {
+        "x": 373,
+        "y": 1225,
+        "w": 80,
+        "h": 24
+      },
+      "actual": {
+        "x": 373,
+        "y": 1225,
+        "w": 80,
+        "h": 24
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1158",
+      "expected": {
+        "x": 373,
+        "y": 1254,
+        "w": 224,
+        "h": 40
+      },
+      "actual": {
+        "x": 373,
+        "y": 1254,
+        "w": 224,
+        "h": 40
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1159",
+      "expected": {
+        "x": 697,
+        "y": 1225,
+        "w": 133,
+        "h": 69
+      },
+      "actual": {
+        "x": 697,
+        "y": 1225,
+        "w": 133,
+        "h": 69
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:2165",
+      "expected": {
+        "x": 697,
+        "y": 1225,
+        "w": 68,
+        "h": 24
+      },
+      "actual": {
+        "x": 697,
+        "y": 1225,
+        "w": 68,
+        "h": 24
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1161",
+      "expected": {
+        "x": 697,
+        "y": 1254,
+        "w": 133,
+        "h": 40
+      },
+      "actual": {
+        "x": 697,
+        "y": 1254,
+        "w": 133,
+        "h": 40
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:1162",
+      "expected": {
+        "x": 1679,
+        "y": 1120,
+        "w": 201,
+        "h": 80
+      },
+      "actual": {
+        "x": 1679,
+        "y": 1120,
+        "w": 201,
+        "h": 80
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    }
+  ],
+  "typeMetrics": [
+    {
+      "id": "10:1018",
+      "sourceFamily": "TT Bluescreens Trial",
+      "sizeDelta": 0,
+      "weight": 800,
+      "lineHeightDelta": -0.000001430511474609375,
+      "trackingDelta": 0
+    },
+    {
+      "id": "10:1148",
+      "sourceFamily": "TT Bluescreens Trial",
+      "sizeDelta": 0,
+      "weight": 800,
+      "lineHeightDelta": -0.000001430511474609375,
+      "trackingDelta": 0
+    },
+    {
+      "id": "10:2157",
+      "sourceFamily": "Inter",
+      "sizeDelta": -0.000046250915527679126,
+      "weight": 600,
+      "lineHeightDelta": -0.000057166700914379476,
+      "trackingDelta": 0
+    },
+    {
+      "id": "10:2158",
+      "sourceFamily": "TT Bluescreens Trial",
+      "sizeDelta": 0.00003709106445626276,
+      "weight": 800,
+      "lineHeightDelta": -0.000010823449649421946,
+      "trackingDelta": 0
+    },
+    {
+      "id": "10:2161",
+      "sourceFamily": "IBM Plex Mono",
+      "sizeDelta": 0,
+      "weight": 500,
+      "lineHeightDelta": -9.5367431640625e-7,
+      "trackingDelta": 0
+    },
+    {
+      "id": "10:1155",
+      "sourceFamily": "TT Bluescreens Trial",
+      "sizeDelta": 0,
+      "weight": 800,
+      "lineHeightDelta": -5.960464477539062e-7,
+      "trackingDelta": 0
+    },
+    {
+      "id": "10:2163",
+      "sourceFamily": "IBM Plex Mono",
+      "sizeDelta": 0,
+      "weight": 500,
+      "lineHeightDelta": -9.5367431640625e-7,
+      "trackingDelta": 0
+    },
+    {
+      "id": "10:1158",
+      "sourceFamily": "TT Bluescreens Trial",
+      "sizeDelta": 0,
+      "weight": 800,
+      "lineHeightDelta": -5.960464477539062e-7,
+      "trackingDelta": 0
+    },
+    {
+      "id": "10:2165",
+      "sourceFamily": "IBM Plex Mono",
+      "sizeDelta": 0,
+      "weight": 500,
+      "lineHeightDelta": -9.5367431640625e-7,
+      "trackingDelta": 0
+    },
+    {
+      "id": "10:1161",
+      "sourceFamily": "TT Bluescreens Trial",
+      "sizeDelta": 0,
+      "weight": 800,
+      "lineHeightDelta": -5.960464477539062e-7,
+      "trackingDelta": 0
+    }
+  ],
+  "network": {
+    "errors": [],
+    "failed": [],
+    "externalRequests": [],
+    "mp4Requests": [],
+    "requests": [
+      {
+        "url": "http://127.0.0.1:4173/",
+        "type": "document"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-0SzH1iJL.js",
+        "type": "script"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-CgS57Exh.css",
+        "type": "stylesheet"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-person-collage.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-cta-arrow.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-film-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/star-accent.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-62.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-43.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-78x79.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-50.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-108.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-man-eye.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/subtale-pixel-mark.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-eye-accent.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-male-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-female-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/elephant-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-upper-left.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-lower-middle.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-upper-right.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-center.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-right-small.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-left-small.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-lower-shared.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/vocab-illustration.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/au-fg-texture4-8k.jpg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/blind-spot-circle-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-eye.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-unsaid-strip.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-between-lines-strip.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-mouth.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/footer-pixel-mark.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-school-logo-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/mosaic-texture.png",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-upper-right-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-center-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-right-small-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-left-small-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-lower-left-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-lower-right-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-600-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20Bold.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-600-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20ExtraBold.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-500-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-500-normal.woff2",
+        "type": "font"
+      }
+    ]
+  }
+}

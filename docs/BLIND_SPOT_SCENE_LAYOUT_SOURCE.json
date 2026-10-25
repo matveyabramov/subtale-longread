@@ -1,0 +1,926 @@
+{
+  "frame": "10:997",
+  "nodes": [
+    {
+      "id": "10:997",
+      "parent": "0:1",
+      "type": "FRAME",
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1080,
+      "m": [
+        [
+          1,
+          0,
+          4274
+        ],
+        [
+          0,
+          1,
+          16215
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.003921568859368563,
+            "g": 0.18039216101169586,
+            "b": 0.843137264251709
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:998",
+        "10:999",
+        "10:1000",
+        "10:1001",
+        "10:1002",
+        "10:1003",
+        "10:1004",
+        "10:1005",
+        "10:1006",
+        "10:1007",
+        "10:1008",
+        "10:1009",
+        "10:1010",
+        "10:1011",
+        "10:1012",
+        "10:1013",
+        "10:1014"
+      ],
+      "clipsContent": true
+    },
+    {
+      "id": "10:998",
+      "parent": "10:997",
+      "type": "RECTANGLE",
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1080,
+      "m": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 0.4000000059604645,
+          "blendMode": "NORMAL",
+          "scaleMode": "CROP",
+          "scalingFactor": 0.5,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "364855320f08ade1d04f13556e9f3defb0d52bcb"
+        }
+      ]
+    },
+    {
+      "id": "10:999",
+      "parent": "10:997",
+      "type": "TEXT",
+      "x": 30,
+      "y": 488,
+      "w": 296,
+      "h": 42,
+      "m": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          488
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Все слова понял",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 35,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "ORIGINAL",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1000",
+      "parent": "10:997",
+      "type": "VECTOR",
+      "x": 356,
+      "y": 509,
+      "w": 284,
+      "h": 0,
+      "m": [
+        [
+          1,
+          0,
+          356
+        ],
+        [
+          0,
+          1,
+          509
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1001",
+      "parent": "10:997",
+      "type": "VECTOR",
+      "x": 1281,
+      "y": 509,
+      "w": 146,
+      "h": 0,
+      "m": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          509
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1002",
+      "parent": "10:997",
+      "type": "VECTOR",
+      "x": 1281,
+      "y": 626,
+      "w": 146,
+      "h": 0,
+      "m": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          626
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1003",
+      "parent": "10:997",
+      "type": "VECTOR",
+      "x": 1281,
+      "y": 743,
+      "w": 29,
+      "h": 0,
+      "m": [
+        [
+          1,
+          0,
+          1281
+        ],
+        [
+          0,
+          1,
+          743
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1004",
+      "parent": "10:997",
+      "type": "TEXT",
+      "x": 1457,
+      "y": 488,
+      "w": 433,
+      "h": 42,
+      "m": [
+        [
+          1,
+          0,
+          1457
+        ],
+        [
+          0,
+          1,
+          488
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Но почему они смеются?",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 35,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "ORIGINAL",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1005",
+      "parent": "10:997",
+      "type": "TEXT",
+      "x": 30,
+      "y": 605,
+      "w": 257,
+      "h": 42,
+      "m": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          605
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Сюжет понятен",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 35,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "ORIGINAL",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1006",
+      "parent": "10:997",
+      "type": "VECTOR",
+      "x": 317,
+      "y": 626,
+      "w": 323,
+      "h": 0,
+      "m": [
+        [
+          1,
+          0,
+          317
+        ],
+        [
+          0,
+          1,
+          626
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1007",
+      "parent": "10:997",
+      "type": "TEXT",
+      "x": 1457,
+      "y": 605,
+      "w": 433,
+      "h": 42,
+      "m": [
+        [
+          1,
+          0,
+          1457
+        ],
+        [
+          0,
+          1,
+          605
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Но почему он обиделся?",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 35,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "ORIGINAL",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1008",
+      "parent": "10:997",
+      "type": "TEXT",
+      "x": 30,
+      "y": 722,
+      "w": 237,
+      "h": 42,
+      "m": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          722
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Ответ знаком",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 35,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "ORIGINAL",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1009",
+      "parent": "10:997",
+      "type": "VECTOR",
+      "x": 297,
+      "y": 743,
+      "w": 343,
+      "h": 0,
+      "m": [
+        [
+          1,
+          0,
+          297
+        ],
+        [
+          0,
+          1,
+          743
+        ]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.30000001192092896,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "strokeWeight": 4,
+      "strokeAlign": "CENTER"
+    },
+    {
+      "id": "10:1010",
+      "parent": "10:997",
+      "type": "TEXT",
+      "x": 1340,
+      "y": 722,
+      "w": 550,
+      "h": 42,
+      "m": [
+        [
+          1,
+          0,
+          1340
+        ],
+        [
+          0,
+          1,
+          722
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Но почему он звучит странно?",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 35,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "ORIGINAL",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1011",
+      "parent": "10:997",
+      "type": "TEXT",
+      "x": 1435,
+      "y": 30,
+      "w": 455,
+      "h": 90,
+      "m": [
+        [
+          1,
+          0,
+          1435
+        ],
+        [
+          0,
+          1,
+          30
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Ты можешь не заметить сам пробел. Но можешь услышать его эхо — реакцию, которой не ожидал",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 25,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "ORIGINAL",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:1012",
+      "parent": "10:997",
+      "type": "RECTANGLE",
+      "x": 670,
+      "y": 336,
+      "w": 581,
+      "h": 581,
+      "m": [
+        [
+          1,
+          0,
+          670
+        ],
+        [
+          0,
+          1,
+          336
+        ]
+      ],
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": false,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "097adb30ab0ee1356352c1673681a2318d190cad"
+        },
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FILL",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "a3a4fd64ac220162df428e62b8a3cddf755b1fe7"
+        }
+      ]
+    },
+    {
+      "id": "10:1013",
+      "parent": "10:997",
+      "type": "TEXT",
+      "x": 30,
+      "y": 30,
+      "w": 614,
+      "h": 80,
+      "m": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          30
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Сцена сама выдаёт,",
+      "fontName": {
+        "family": "TT Bluescreens Trial",
+        "style": "ExtraBold"
+      },
+      "fontSize": 100,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 80.0000011920929
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "TOP"
+    },
+    {
+      "id": "10:1014",
+      "parent": "10:997",
+      "type": "FRAME",
+      "x": 30,
+      "y": 125,
+      "w": 734,
+      "h": 120,
+      "m": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          125
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:1015"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:1015",
+      "parent": "10:1014",
+      "type": "TEXT",
+      "x": 50,
+      "y": 145,
+      "w": 694,
+      "h": 80,
+      "m": [
+        [
+          1,
+          0,
+          20
+        ],
+        [
+          0,
+          1,
+          20
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.04313725605607033,
+            "g": 0.05098039284348488,
+            "b": 0.05882352963089943
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "что что-то не сошлось",
+      "fontName": {
+        "family": "TT Bluescreens Trial",
+        "style": "ExtraBold"
+      },
+      "fontSize": 100,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 80.0000011920929
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "TOP"
+    }
+  ],
+  "stage": "1B.6",
+  "fileKey": "H4HI00uGY2UOxpcfHogUat"
+}

@@ -1,0 +1,413 @@
+{
+  "frame": "10:966",
+  "nodes": [
+    {
+      "id": "10:966",
+      "parent": "0:1",
+      "type": "FRAME",
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1080,
+      "m": [
+        [
+          1,
+          0,
+          4274
+        ],
+        [
+          0,
+          1,
+          15001
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.003921568859368563,
+            "g": 0.18039216101169586,
+            "b": 0.843137264251709
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:967",
+        "10:968",
+        "10:972",
+        "10:973",
+        "10:974"
+      ],
+      "clipsContent": true
+    },
+    {
+      "id": "10:967",
+      "parent": "10:966",
+      "type": "RECTANGLE",
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1080,
+      "m": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 0.4000000059604645,
+          "blendMode": "NORMAL",
+          "scaleMode": "TILE",
+          "scalingFactor": 0.8942065238952637,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "6be621144e7ecf462b8e2789f21ec8f7499d659e"
+        }
+      ]
+    },
+    {
+      "id": "10:968",
+      "parent": "10:966",
+      "type": "FRAME",
+      "x": 30,
+      "y": 30,
+      "w": 679,
+      "h": 525,
+      "m": [
+        [
+          1,
+          0,
+          30
+        ],
+        [
+          0,
+          1,
+          30
+        ]
+      ],
+      "fills": [],
+      "children": [
+        "10:969",
+        "10:971"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:969",
+      "parent": "10:968",
+      "type": "FRAME",
+      "x": 30,
+      "y": 30,
+      "w": 679,
+      "h": 395,
+      "m": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": false,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:970"
+      ],
+      "clipsContent": true
+    },
+    {
+      "id": "10:971",
+      "parent": "10:968",
+      "type": "TEXT",
+      "x": 30,
+      "y": 465,
+      "w": 608,
+      "h": 90,
+      "m": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          435
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "слов могут быть знакомы — и этого всё равно недостаточно, чтобы автоматически считывать идиомы, второй смысл и культурные отсылки",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 25,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "ORIGINAL",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:972",
+      "parent": "10:966",
+      "type": "TEXT",
+      "x": 975,
+      "y": 872,
+      "w": 676,
+      "h": 120,
+      "m": [
+        [
+          1,
+          0,
+          975
+        ],
+        [
+          0,
+          1,
+          872
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.9333333373069763,
+            "b": 0.9058823585510254
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Знакомая лексика помогает следить за содержанием. Но сама по себе не гарантирует, что ты узнаешь идиому, второй смысл или культурную отсылку",
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 25,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -4
+      },
+      "textCase": "ORIGINAL",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "10:973",
+      "parent": "10:966",
+      "type": "TEXT",
+      "x": 739,
+      "y": 615,
+      "w": 931,
+      "h": 80,
+      "m": [
+        [
+          1,
+          0,
+          739
+        ],
+        [
+          0,
+          1,
+          615
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "Можно знать почти все слова",
+      "fontName": {
+        "family": "TT Bluescreens Trial",
+        "style": "ExtraBold"
+      },
+      "fontSize": 100,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 80.0000011920929
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "TOP"
+    },
+    {
+      "id": "10:974",
+      "parent": "10:966",
+      "type": "FRAME",
+      "x": 739,
+      "y": 710,
+      "w": 932,
+      "h": 120,
+      "m": [
+        [
+          1,
+          0,
+          739
+        ],
+        [
+          0,
+          1,
+          710
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9960784316062927,
+            "g": 0.8196078538894653,
+            "b": 0.1568627506494522
+          },
+          "boundVariables": {}
+        }
+      ],
+      "children": [
+        "10:975"
+      ],
+      "clipsContent": false
+    },
+    {
+      "id": "10:975",
+      "parent": "10:974",
+      "type": "TEXT",
+      "x": 759,
+      "y": 730,
+      "w": 892,
+      "h": 80,
+      "m": [
+        [
+          1,
+          0,
+          20
+        ],
+        [
+          0,
+          1,
+          20
+        ]
+      ],
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.04313725605607033,
+            "g": 0.05098039284348488,
+            "b": 0.05882352963089943
+          },
+          "boundVariables": {}
+        }
+      ],
+      "text": "И все равно не понять шутку",
+      "fontName": {
+        "family": "TT Bluescreens Trial",
+        "style": "ExtraBold"
+      },
+      "fontSize": 100,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 80.0000011920929
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "UPPER",
+      "textAlignVertical": "TOP"
+    }
+  ],
+  "stage": "1B.6",
+  "fileKey": "H4HI00uGY2UOxpcfHogUat"
+}

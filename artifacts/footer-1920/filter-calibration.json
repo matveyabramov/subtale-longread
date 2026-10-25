@@ -1,0 +1,47 @@
+{
+  "method": "Compare runtime CSS transforms of the unchanged original against the source image22 region; calibration is an approximation, not a recovered Figma algorithm.",
+  "results": [
+    {
+      "filter": "brightness(4)",
+      "mae": 9.012623750025682,
+      "max": 248,
+      "pixelsAbove12Percent": 21.335927938081696
+    },
+    {
+      "filter": "brightness(5.5)",
+      "mae": 8.557881111923148,
+      "max": 248,
+      "pixelsAbove12Percent": 17.28816842624308
+    },
+    {
+      "filter": "grayscale(1) brightness(5.5)",
+      "mae": 5.128151168012398,
+      "max": 204,
+      "pixelsAbove12Percent": 11.94692213544189
+    },
+    {
+      "filter": "grayscale(.8) brightness(5.5)",
+      "mae": 5.092991925613504,
+      "max": 171,
+      "pixelsAbove12Percent": 11.518988456356928
+    },
+    {
+      "filter": "grayscale(.8) brightness(6)",
+      "mae": 6.296008006879812,
+      "max": 189,
+      "pixelsAbove12Percent": 14.301437892382603
+    },
+    {
+      "filter": "grayscale(.8) brightness(5)",
+      "mae": 4.33378826968627,
+      "max": 159,
+      "pixelsAbove12Percent": 10.036189453107802
+    },
+    {
+      "filter": "grayscale(.8) brightness(5.5) contrast(.9)",
+      "mae": 5.514712054639324,
+      "max": 160,
+      "pixelsAbove12Percent": 18.085921334166894
+    }
+  ]
+}

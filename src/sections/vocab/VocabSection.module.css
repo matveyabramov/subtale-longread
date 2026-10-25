@@ -1,0 +1,19 @@
+.section { background: var(--color-blue); overflow-x: auto; }
+.canvas { position: relative; isolation: isolate; width: 1920px; height: 1080px; margin-inline: auto; overflow: hidden; color: var(--color-white); -webkit-font-smoothing: antialiased; }
+.texture { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; pointer-events: none; }
+.text { position: absolute; margin: 0; white-space: pre-wrap; }
+.text > span { display: block; }
+
+.text[data-node-id='10:971'] { left: 30px; top: 465px; width: 608px; height: 90px; font: 500 25px/1.2 var(--font-copy); letter-spacing: -1.0px; color: rgb(238 238 231); text-transform: none; display: flex; flex-direction: column; justify-content: center; }
+
+.text[data-node-id='10:972'] { left: 975px; top: 872px; width: 676px; height: 120px; font: 500 25px/1.2 var(--font-copy); letter-spacing: -1.0px; color: rgb(238 238 231); text-transform: none; display: flex; flex-direction: column; justify-content: center; }
+
+.text[data-node-id='10:973'] { left: 739px; top: 615px; width: 931px; height: 80px; font: 800 100px/0.8 var(--font-display); letter-spacing: 0.0px; color: rgb(255 255 255); text-transform: uppercase;  }
+
+.text[data-node-id='10:975'] { left: 20px; top: 20px; width: 892px; height: 80px; font: 800 100px/0.8 var(--font-display); letter-spacing: 0.0px; color: rgb(11 13 15); text-transform: uppercase;  }
+.mosaic { opacity: 0.4; background-repeat: repeat; background-position: 0 0; background-size: 354.9999899864197px 287.9345006942749px; }
+.statistic { position: absolute; left: 30px; top: 30px; width: 679px; height: 525px; }
+.artwork { position: absolute; left: 0; top: 0; width: 679px; height: 395px; }
+.artwork > img { max-inline-size: none; }
+.statistic .text { left: 0; top: 435px; }
+.banner { position: absolute; left: 739px; top: 710px; width: 932px; height: 120px; background: var(--color-yellow); }

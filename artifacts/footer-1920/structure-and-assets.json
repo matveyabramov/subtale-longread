@@ -1,0 +1,196 @@
+{
+  "data": {
+    "duplicates": [],
+    "brokenHashes": [],
+    "anchors": [
+      {
+        "id": "main-content",
+        "exists": true
+      },
+      {
+        "id": "experiment-instructions",
+        "exists": true
+      },
+      {
+        "id": "experiment-target",
+        "exists": true
+      },
+      {
+        "id": "experiment-result",
+        "exists": true
+      },
+      {
+        "id": "vocab",
+        "exists": true
+      },
+      {
+        "id": "blind-spot-scene",
+        "exists": true
+      },
+      {
+        "id": "what-to-do",
+        "exists": true
+      },
+      {
+        "id": "footer",
+        "exists": true
+      }
+    ],
+    "sections": [
+      {
+        "id": "hero",
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "id": "experiment",
+        "y": 1080,
+        "w": 1920,
+        "h": 3240
+      },
+      {
+        "id": "emptiness",
+        "y": 4320,
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "id": "elephant",
+        "y": 5400,
+        "w": 1920,
+        "h": 2187
+      },
+      {
+        "id": "blind-zones",
+        "y": 7587,
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "id": "movies",
+        "y": 8667,
+        "w": 1920,
+        "h": 1899
+      },
+      {
+        "id": "vocab",
+        "y": 10566,
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "id": "blind-spot-scene",
+        "y": 11646,
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "id": "what-to-do",
+        "y": 12726,
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "id": "footer",
+        "y": 13806,
+        "w": 1920,
+        "h": 1334
+      }
+    ],
+    "pageHeight": 15140,
+    "width": 1920,
+    "footerImages": [
+      {
+        "url": "http://127.0.0.1:4173/assets/images/au-fg-texture4-8k.jpg",
+        "w": 1920,
+        "h": 1080,
+        "filter": "none"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-eye.webp",
+        "w": 259,
+        "h": 129,
+        "filter": "none"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-unsaid-strip.webp",
+        "w": 321,
+        "h": 107,
+        "filter": "none"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-between-lines-strip.webp",
+        "w": 336,
+        "h": 112,
+        "filter": "none"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-eye-accent.webp",
+        "w": 337,
+        "h": 337,
+        "filter": "grayscale(0.8) brightness(5)"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-mouth.webp",
+        "w": 432,
+        "h": 144,
+        "filter": "none"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/footer-pixel-mark.svg",
+        "w": 46,
+        "h": 68,
+        "filter": "none"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-school-logo-cutout.webp",
+        "w": 249,
+        "h": 249,
+        "filter": "none"
+      }
+    ],
+    "clips": [
+      {
+        "id": "10:1019",
+        "overflow": "hidden"
+      },
+      {
+        "id": "10:1020",
+        "overflow": "hidden"
+      },
+      {
+        "id": "10:1103",
+        "overflow": "hidden"
+      },
+      {
+        "id": "10:1149",
+        "overflow": "hidden"
+      }
+    ],
+    "hiddenPortraitImages": 0,
+    "circleMask": "none",
+    "steps": [
+      3,
+      3
+    ]
+  },
+  "circleCenterRgba": [
+    1,
+    1,
+    1,
+    255
+  ],
+  "svgChecks": [
+    {
+      "path": "public/assets/illustrations/vocab-illustration.svg",
+      "root": "<svg width=\"679\" height=\"395\" viewBox=\"0 0 679 395\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">",
+      "sha256": "6c52c7b82ce8d1e44747e0b5e0159f8d7f38df7f056dda3c3059b0c0ae0ad09c"
+    },
+    {
+      "path": "public/assets/illustrations/footer-pixel-mark.svg",
+      "root": "<svg width=\"46\" height=\"68\" viewBox=\"0 0 46 68\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">",
+      "sha256": "062cc7927700dad6a1c52317e155b956a07e625d031bcf4a96766bdfcd5b0bbf"
+    }
+  ]
+}

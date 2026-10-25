@@ -1,0 +1,248 @@
+{
+  "name": "footer",
+  "pass": "3",
+  "full": {
+    "mae": 1.0005048257121438,
+    "max": 243,
+    "pixelsAbove12Percent": 1.4556784107946028
+  },
+  "regions": {
+    "collage": {
+      "mae": 1.992798503882952,
+      "max": 159,
+      "pixelsAbove12Percent": 3.7981662349506795
+    },
+    "accent": {
+      "mae": 4.3338029450524935,
+      "max": 159,
+      "pixelsAbove12Percent": 10.036189453107802
+    },
+    "credit": {
+      "mae": 1.4725983000061151,
+      "max": 80,
+      "pixelsAbove12Percent": 4.8578242524307464
+    },
+    "logo": {
+      "mae": 2.958271144278607,
+      "max": 37,
+      "pixelsAbove12Percent": 8.737562189054726
+    },
+    "brand": {
+      "mae": 8.611305147058824,
+      "max": 243,
+      "pixelsAbove12Percent": 15.625
+    },
+    "latin": {
+      "mae": 50.06547619047619,
+      "max": 243,
+      "pixelsAbove12Percent": 61.049107142857146
+    },
+    "texture": {
+      "mae": 0.7557833333333334,
+      "max": 10,
+      "pixelsAbove12Percent": 0
+    }
+  },
+  "texts": [
+    {
+      "id": "10:1018",
+      "sourceFamily": "TT Bluescreens Trial",
+      "region": {
+        "x": 30,
+        "y": 30,
+        "w": 1002,
+        "h": 288
+      },
+      "mae": 1.1421439528350705,
+      "max": 89,
+      "pixelsAbove12Percent": 2.340457972943003,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 1.1421439528350705,
+        "max": 89,
+        "pixelsAbove12Percent": 2.340457972943003
+      }
+    },
+    {
+      "id": "10:1148",
+      "sourceFamily": "TT Bluescreens Trial",
+      "region": {
+        "x": 50,
+        "y": 838,
+        "w": 792,
+        "h": 192
+      },
+      "mae": 0.5489464962121212,
+      "max": 71,
+      "pixelsAbove12Percent": 2.9014099326599325,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 0.5489464962121212,
+        "max": 71,
+        "pixelsAbove12Percent": 2.9014099326599325
+      }
+    },
+    {
+      "id": "10:2157",
+      "sourceFamily": "Inter",
+      "region": {
+        "x": 96,
+        "y": 1135,
+        "w": 63,
+        "h": 11
+      },
+      "mae": 60.13323713323713,
+      "max": 243,
+      "pixelsAbove12Percent": 73.01587301587301,
+      "bestSampleOffset": {
+        "dx": -1,
+        "dy": -1,
+        "mae": 57.474747474747474,
+        "max": 243,
+        "pixelsAbove12Percent": 69.98556998556998
+      }
+    },
+    {
+      "id": "10:2158",
+      "sourceFamily": "TT Bluescreens Trial",
+      "region": {
+        "x": 96,
+        "y": 1153,
+        "w": 104,
+        "h": 33
+      },
+      "mae": 7.631895881895882,
+      "max": 122,
+      "pixelsAbove12Percent": 15.355477855477856,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 7.631895881895882,
+        "max": 122,
+        "pixelsAbove12Percent": 15.355477855477856
+      }
+    },
+    {
+      "id": "10:2161",
+      "sourceFamily": "IBM Plex Mono",
+      "region": {
+        "x": 40,
+        "y": 1225,
+        "w": 57,
+        "h": 24
+      },
+      "mae": 3.314083820662768,
+      "max": 67,
+      "pixelsAbove12Percent": 11.476608187134502,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 3.314083820662768,
+        "max": 67,
+        "pixelsAbove12Percent": 11.476608187134502
+      }
+    },
+    {
+      "id": "10:1155",
+      "sourceFamily": "TT Bluescreens Trial",
+      "region": {
+        "x": 40,
+        "y": 1254,
+        "w": 233,
+        "h": 40
+      },
+      "mae": 2.7507510729613736,
+      "max": 80,
+      "pixelsAbove12Percent": 8.798283261802576,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 2.7507510729613736,
+        "max": 80,
+        "pixelsAbove12Percent": 8.798283261802576
+      }
+    },
+    {
+      "id": "10:2163",
+      "sourceFamily": "IBM Plex Mono",
+      "region": {
+        "x": 373,
+        "y": 1225,
+        "w": 80,
+        "h": 24
+      },
+      "mae": 3.181423611111111,
+      "max": 60,
+      "pixelsAbove12Percent": 11.458333333333334,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 3.181423611111111,
+        "max": 60,
+        "pixelsAbove12Percent": 11.458333333333334
+      }
+    },
+    {
+      "id": "10:1158",
+      "sourceFamily": "TT Bluescreens Trial",
+      "region": {
+        "x": 373,
+        "y": 1254,
+        "w": 224,
+        "h": 40
+      },
+      "mae": 2.636904761904762,
+      "max": 63,
+      "pixelsAbove12Percent": 8.549107142857142,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 2.636904761904762,
+        "max": 63,
+        "pixelsAbove12Percent": 8.549107142857142
+      }
+    },
+    {
+      "id": "10:2165",
+      "sourceFamily": "IBM Plex Mono",
+      "region": {
+        "x": 697,
+        "y": 1225,
+        "w": 68,
+        "h": 24
+      },
+      "mae": 2.897671568627451,
+      "max": 54,
+      "pixelsAbove12Percent": 11.519607843137255,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 2.897671568627451,
+        "max": 54,
+        "pixelsAbove12Percent": 11.519607843137255
+      }
+    },
+    {
+      "id": "10:1161",
+      "sourceFamily": "TT Bluescreens Trial",
+      "region": {
+        "x": 697,
+        "y": 1254,
+        "w": 133,
+        "h": 40
+      },
+      "mae": 2.93922305764411,
+      "max": 66,
+      "pixelsAbove12Percent": 9.342105263157896,
+      "bestSampleOffset": {
+        "dx": 0,
+        "dy": 0,
+        "mae": 2.93922305764411,
+        "max": 66,
+        "pixelsAbove12Percent": 9.342105263157896
+      }
+    }
+  ]
+}

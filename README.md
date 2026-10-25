@@ -4,7 +4,7 @@ Interactive editorial longread about hidden meanings in English-language film an
 
 ## Status
 
-Stage 0.3 **Approved**, Stage 1A **Completed**, Stages 1B.1–1B.5 **Completed**: Hero, all three Experiment screens, Emptiness, Elephant, eight static Explorer endpoints and Movies (1920×1899) are implemented at Desktop 1920; the other four sections remain technical placeholders. Movies retains five text scenes without mounted players or poster substitution. Explorer is one section, showing Idiom A by default; category/A–B interaction remains Stage 3 work. Matching local IBM Plex Mono Latin/Cyrillic subsets are connected (docs/FONT_ASSETS.md). Comparison screenshots, checks and explicit visual limits: [Hero QA](docs/HERO_DESKTOP_QA.md), [Experiment QA](docs/EXPERIMENT_DESKTOP_QA.md), [Emptiness + Elephant QA](docs/EMPTINESS_ELEPHANT_DESKTOP_QA.md), [Blind Zones QA](docs/BLIND_ZONES_DESKTOP_QA.md) and [Movies QA](docs/MOVIES_DESKTOP_QA.md).
+Stage 0.3 **Approved**, Stage 1A **Completed**, Stages 1B.1–1B.6 **Completed**: all ten narrative sections have static Desktop 1920 compositions, including three Experiment screens, eight Explorer endpoints, Movies (1920×1899) and Footer (1920×1334). Stage 1C integration QA is pending a separate request. Movies retains five text scenes without mounted players or poster substitution. Explorer is one section, showing Idiom A by default; category/A–B interaction remains Stage 3 work. Matching local IBM Plex Mono Latin/Cyrillic subsets are connected (docs/FONT_ASSETS.md). Comparison screenshots, checks and explicit visual limits: [Hero QA](docs/HERO_DESKTOP_QA.md), [Experiment QA](docs/EXPERIMENT_DESKTOP_QA.md), [Emptiness + Elephant QA](docs/EMPTINESS_ELEPHANT_DESKTOP_QA.md), [Blind Zones QA](docs/BLIND_ZONES_DESKTOP_QA.md), [Movies QA](docs/MOVIES_DESKTOP_QA.md) and [Final sections QA](docs/FINAL_SECTIONS_DESKTOP_QA.md); the latter explicitly records Footer filter/font exceptions.
 
 ## Run locally
 
@@ -30,7 +30,7 @@ For the eight isolated Explorer production fixtures, use `npm run build:explorer
 
 ## Structure
 
-- `src/app/`: ordered longread shell and CSS Module scoped to the remaining technical placeholders.
+- `src/app/`: ordered longread shell; the former technical-scaffold CSS remains unused.
 - `src/sections/`: ten section components; Experiment contains three independently anchored screens in normal flow. Explorer stays one section.
 - `src/sections/{experiment,blind-zones,movies}/model.ts`: identifiers, frame/media mappings and future state types; no reducers or playback logic yet.
 - `qa/` and `vite.explorer-qa.config.ts`: isolated static Explorer fixtures; not imported by the normal application.

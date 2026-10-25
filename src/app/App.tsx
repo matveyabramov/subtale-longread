@@ -9,7 +9,6 @@ import { BlindSpotSceneSection } from '../sections/blind-spot-scene/BlindSpotSce
 import { WhatToDoSection } from '../sections/what-to-do/WhatToDoSection';
 import { FooterSection } from '../sections/footer/FooterSection';
 import { useReducedMotion } from '../shared/useReducedMotion';
-import styles from './App.module.css';
 
 export function App() {
   const reducedMotion = useReducedMotion();
@@ -23,15 +22,11 @@ export function App() {
         <ElephantSection />
         <BlindZonesExplorer />
         <MoviesSection />
-        <div className={styles.foundation}>
-          <VocabSection />
-          <BlindSpotSceneSection />
-          <WhatToDoSection />
-        </div>
+        <VocabSection />
+        <BlindSpotSceneSection />
+        <WhatToDoSection />
       </main>
-      <div className={styles.foundation}>
-        <FooterSection />
-      </div>
+      <FooterSection />
     </div>
   );
 }

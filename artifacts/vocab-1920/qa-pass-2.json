@@ -1,0 +1,699 @@
+{
+  "name": "vocab",
+  "pass": "2",
+  "browser": "156.0.8078.47",
+  "data": {
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "scrollY": 10566
+    },
+    "bounds": {
+      "w": 1920,
+      "h": 1080,
+      "y": 10566,
+      "scrollWidth": 1920,
+      "scrollHeight": 1080
+    },
+    "narrativeIds": [
+      "hero",
+      "experiment",
+      "emptiness",
+      "elephant",
+      "blind-zones",
+      "movies",
+      "vocab",
+      "blind-spot-scene",
+      "what-to-do",
+      "footer"
+    ],
+    "nestedNarrative": 0,
+    "documentWidth": 1920,
+    "videos": 0,
+    "animations": 0,
+    "controls": 0,
+    "geometry": [
+      {
+        "id": "10:966",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "hidden",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:967",
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "0.4",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:968",
+        "x": 30,
+        "y": 30,
+        "w": 679,
+        "h": 525,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:969",
+        "x": 30,
+        "y": 30,
+        "w": 679,
+        "h": 395,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:971",
+        "x": 30,
+        "y": 465,
+        "w": 608,
+        "h": 90,
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "25px",
+        "fontWeight": "500",
+        "lineHeight": "30px",
+        "letterSpacing": "-1px",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:973",
+        "x": 739,
+        "y": 615,
+        "w": 931,
+        "h": 80,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontSize": "100px",
+        "fontWeight": "800",
+        "lineHeight": "80px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:974",
+        "x": 739,
+        "y": 710,
+        "w": 932,
+        "h": 120,
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(254, 209, 40)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:975",
+        "x": 759,
+        "y": 730,
+        "w": 892,
+        "h": 80,
+        "color": "rgb(11, 13, 15)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"TT Bluescreens Trial\", sans-serif",
+        "fontSize": "100px",
+        "fontWeight": "800",
+        "lineHeight": "80px",
+        "letterSpacing": "normal",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      },
+      {
+        "id": "10:972",
+        "x": 975,
+        "y": 872,
+        "w": 676,
+        "h": 120,
+        "color": "rgb(238, 238, 231)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"IBM Plex Mono\", monospace",
+        "fontSize": "25px",
+        "fontWeight": "500",
+        "lineHeight": "30px",
+        "letterSpacing": "-1px",
+        "transform": "none",
+        "filter": "none",
+        "overflow": "visible",
+        "opacity": "1",
+        "mixBlendMode": "normal"
+      }
+    ],
+    "images": [
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/vocab-illustration.svg",
+        "naturalWidth": 679,
+        "naturalHeight": 395,
+        "x": 30,
+        "y": 30,
+        "width": 679,
+        "height": 395,
+        "filter": "none",
+        "complete": true
+      }
+    ]
+  },
+  "fonts": [
+    {
+      "id": "10:971",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 129
+        }
+      ]
+    },
+    {
+      "id": "10:972",
+      "fonts": [
+        {
+          "familyName": "IBM Plex Mono Medium",
+          "postScriptName": "IBMPlexMono-Medium",
+          "isCustomFont": true,
+          "glyphCount": 140
+        }
+      ]
+    },
+    {
+      "id": "10:973",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    },
+    {
+      "id": "10:975",
+      "fonts": [
+        {
+          "familyName": "TT Bluescreens Trial",
+          "postScriptName": "TTBluescreensTrial-XBd",
+          "isCustomFont": true,
+          "glyphCount": 27
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "10:966",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:967",
+      "expected": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "actual": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:968",
+      "expected": {
+        "x": 30,
+        "y": 30,
+        "w": 679,
+        "h": 525
+      },
+      "actual": {
+        "x": 30,
+        "y": 30,
+        "w": 679,
+        "h": 525
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:969",
+      "expected": {
+        "x": 30,
+        "y": 30,
+        "w": 679,
+        "h": 395
+      },
+      "actual": {
+        "x": 30,
+        "y": 30,
+        "w": 679,
+        "h": 395
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:971",
+      "expected": {
+        "x": 30,
+        "y": 465,
+        "w": 608,
+        "h": 90
+      },
+      "actual": {
+        "x": 30,
+        "y": 465,
+        "w": 608,
+        "h": 90
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:972",
+      "expected": {
+        "x": 975,
+        "y": 872,
+        "w": 676,
+        "h": 120
+      },
+      "actual": {
+        "x": 975,
+        "y": 872,
+        "w": 676,
+        "h": 120
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:973",
+      "expected": {
+        "x": 739,
+        "y": 615,
+        "w": 931,
+        "h": 80
+      },
+      "actual": {
+        "x": 739,
+        "y": 615,
+        "w": 931,
+        "h": 80
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:974",
+      "expected": {
+        "x": 739,
+        "y": 710,
+        "w": 932,
+        "h": 120
+      },
+      "actual": {
+        "x": 739,
+        "y": 710,
+        "w": 932,
+        "h": 120
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    },
+    {
+      "id": "10:975",
+      "expected": {
+        "x": 759,
+        "y": 730,
+        "w": 892,
+        "h": 80
+      },
+      "actual": {
+        "x": 759,
+        "y": 730,
+        "w": 892,
+        "h": 80
+      },
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "maxDelta": 0
+    }
+  ],
+  "typeMetrics": [
+    {
+      "id": "10:971",
+      "sourceFamily": "IBM Plex Mono",
+      "sizeDelta": 0,
+      "weight": 500,
+      "lineHeightDelta": -0.0000011920928955078125,
+      "trackingDelta": 0
+    },
+    {
+      "id": "10:972",
+      "sourceFamily": "IBM Plex Mono",
+      "sizeDelta": 0,
+      "weight": 500,
+      "lineHeightDelta": -0.0000011920928955078125,
+      "trackingDelta": 0
+    },
+    {
+      "id": "10:973",
+      "sourceFamily": "TT Bluescreens Trial",
+      "sizeDelta": 0,
+      "weight": 800,
+      "lineHeightDelta": -0.0000011920928955078125,
+      "trackingDelta": 0
+    },
+    {
+      "id": "10:975",
+      "sourceFamily": "TT Bluescreens Trial",
+      "sizeDelta": 0,
+      "weight": 800,
+      "lineHeightDelta": -0.0000011920928955078125,
+      "trackingDelta": 0
+    }
+  ],
+  "network": {
+    "errors": [],
+    "failed": [],
+    "externalRequests": [],
+    "mp4Requests": [],
+    "requests": [
+      {
+        "url": "http://127.0.0.1:4173/",
+        "type": "document"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-BRWmhdIy.js",
+        "type": "script"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-CRlGMipx.css",
+        "type": "stylesheet"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-person-collage.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-cta-arrow.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-film-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/star-accent.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-62.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-43.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-78x79.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-50.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/hero-star-108.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-man-eye.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/subtale-pixel-mark.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/hero-eye-accent.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-male-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/emptiness-female-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/elephant-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-upper-left.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-lower-middle.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-upper-right.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-center.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-right-small.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-left-small.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/idiom-ice-lower-shared.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/vocab-illustration.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/au-fg-texture4-8k.jpg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/blind-spot-circle-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-eye.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-unsaid-strip.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-between-lines-strip.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-mouth.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/footer-pixel-mark.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/footer-school-logo-cutout.webp",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/images/mosaic-texture.png",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-upper-right-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-center-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-right-small-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-left-small-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-lower-left-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/illustrations/idiom-ice-lower-right-mask.svg",
+        "type": "image"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-600-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20Bold.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-600-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/TT%20Bluescreens%20Trial%20ExtraBold.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-cyrillic-500-normal.woff2",
+        "type": "font"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fonts/ibm-plex-mono-latin-500-normal.woff2",
+        "type": "font"
+      }
+    ]
+  }
+}
