@@ -12,13 +12,18 @@ function EmptinessArtwork() {
         return (
           <div key={layer.id} data-node-id={layer.id} data-art-kind={layer.kind}
             className={image ? styles.character : styles.pixel}
-            style={{ left: layer.x, top: layer.y, width: layer.width, height: layer.height }}>
+            style={{
+              left: `calc(var(--artwork-unit) * ${layer.x})`,
+              top: `calc(var(--artwork-unit) * ${layer.y})`,
+              width: `calc(var(--artwork-unit) * ${layer.width})`,
+              height: `calc(var(--artwork-unit) * ${layer.height})`,
+            }}>
             {image && crop && (
               <img src={image} alt="" style={{
-                width: layer.width / crop.matrix[0][0],
-                height: layer.height / crop.matrix[1][1],
-                left: -crop.matrix[0][2] * layer.width / crop.matrix[0][0],
-                top: -crop.matrix[1][2] * layer.height / crop.matrix[1][1],
+                width: `calc(var(--artwork-unit) * ${layer.width / crop.matrix[0][0]})`,
+                height: `calc(var(--artwork-unit) * ${layer.height / crop.matrix[1][1]})`,
+                left: `calc(var(--artwork-unit) * ${-crop.matrix[0][2] * layer.width / crop.matrix[0][0]})`,
+                top: `calc(var(--artwork-unit) * ${-crop.matrix[1][2] * layer.height / crop.matrix[1][1]})`,
               }} />
             )}
             {/* Union 10:875's source-only portrait is fully covered by 881/880/904.

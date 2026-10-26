@@ -104,6 +104,7 @@
 }
 
 .artwork {
+  --artwork-unit: 1px;
   position: relative;
   flex: none;
   width: 1049px;
@@ -126,4 +127,135 @@
 .character img {
   position: absolute;
   max-inline-size: none;
+}
+
+/* Approved frames: 69:2525 (1440), 76:7776 (768), 79:12937 (390).
+   The collage alone keeps Figma's proportional layer geometry and crop matrices;
+   the heading, frame, labels and description have their own responsive slots. */
+@media (width < 1920px) {
+  .section { overflow-x: clip; }
+
+  .canvas {
+    --gutter: clamp(20px, calc(2.083333vw - 10px), 30px);
+    --heading-size: clamp(63px, calc(4.166667vw + 20px), 100px);
+    --frame-left: calc(43.333333vw - 71px);
+    --frame-inset: 40px;
+    /* The 1440 collage is 13px wider than its label slot in Figma. */
+    --artwork-overhang: clamp(0px, calc(52px - 2.708333vw), 13px);
+    --artwork-width: calc(100vw - var(--frame-left) - var(--gutter) - var(--frame-inset) * 2 + var(--artwork-overhang));
+    width: 100%;
+    height: max(810px, 56.25vw, 100dvh);
+  }
+
+  .texture { z-index: -1; }
+
+  .title,
+  .banner {
+    left: var(--gutter);
+    width: auto;
+    height: auto;
+    font-size: var(--heading-size);
+  }
+
+  .title { top: var(--gutter); }
+  .banner {
+    top: calc(var(--gutter) + var(--heading-size) * 0.8 + clamp(12px, calc(0.625vw + 3px), 15px));
+    padding: clamp(16px, calc(0.833333vw + 4px), 20px);
+  }
+  .banner > span { width: auto; height: auto; }
+
+  .copy {
+    left: var(--gutter);
+    top: auto;
+    bottom: var(--gutter);
+    width: min(calc(21.666667vw + 156px), calc(var(--frame-left) - var(--gutter) - 40px));
+    height: auto;
+    padding-right: 0.04em;
+    font-size: clamp(20px, calc(0.625vw + 13px), 25px);
+    font-weight: 600;
+    letter-spacing: -0.04em;
+  }
+
+  .artFrame {
+    left: var(--frame-left);
+    top: var(--gutter);
+    right: var(--gutter);
+    bottom: var(--gutter);
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+
+  .artLabel {
+    width: 100%;
+    height: auto;
+    font-size: clamp(50px, calc(2.083333vw + 30px), 70px);
+  }
+
+  .artwork {
+    --artwork-unit: calc(var(--artwork-width) / 1049);
+    width: var(--artwork-width);
+    height: calc(var(--artwork-unit) * 480);
+  }
+}
+
+/* When the left text column becomes too narrow, the approved tablet/phone
+   composition places the full-width frame between the heading and description. */
+@media (width <= 1100px) {
+  .canvas {
+    --gutter: clamp(15px, calc(1.322751vw + 9.84127px), 20px);
+    --heading-size: clamp(34px, calc(6.084656vw + 16.269841px), 80px);
+    --frame-border: clamp(6px, calc(0.529101vw + 3.936508px), 8px);
+    --frame-padding: clamp(15px, calc(1.322751vw + 9.84127px), 20px);
+    --frame-inset: calc(var(--frame-border) + var(--frame-padding));
+    --artwork-width: calc(100vw - var(--gutter) * 2 - var(--frame-inset) * 2 - 4px);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: max(clamp(844px, calc(47.619048vw + 658.285714px), 1024px), 100dvh);
+    padding: var(--gutter);
+    overflow: visible;
+  }
+
+  .title,
+  .banner { position: relative; inset: auto; flex: none; }
+  .title { width: 100%; white-space: normal; }
+  .banner {
+    align-self: flex-start;
+    margin-top: clamp(10px, calc(0.42328vw + 8.349206px), 12px);
+    padding: clamp(10px, calc(1.058201vw + 5.873016px), 14px);
+  }
+
+  .artFrame {
+    order: 1;
+    position: relative;
+    inset: auto;
+    flex: none;
+    width: 100%;
+    height: clamp(340px, calc(69.312169vw + 135.68254px), 800px);
+    margin-top: clamp(50px, calc(171.904762px - 15.873016vw), 110px);
+    padding: var(--frame-padding);
+    border-width: var(--frame-border);
+  }
+
+  .artLabel { font-size: clamp(30px, calc(3.968254vw + 19.52381px), 50px); }
+
+  .copy {
+    order: 2;
+    position: relative;
+    inset: auto;
+    flex: none;
+    width: min(100%, 446px);
+    margin-top: auto;
+    padding-top: clamp(30px, calc(229.111111px - 25.925926vw), 128px);
+    font-size: clamp(16px, calc(1.058201vw + 11.873016px), 20px);
+  }
+}
+
+@media (width <= 600px) {
+  .canvas {
+    padding-top: max(var(--gutter), env(safe-area-inset-top, 0px));
+    padding-bottom: max(var(--gutter), env(safe-area-inset-bottom, 0px));
+  }
+  .copy { font-weight: 500; }
 }
