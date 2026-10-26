@@ -32,23 +32,34 @@ function Mosaic({ nodeId, result = false }: { nodeId: string; result?: boolean }
 
 function Instructions() {
   return (
-    <section id={experimentSteps[0].anchor} className={styles.screen}
+    <section id={experimentSteps[0].anchor} className={`${styles.screen} ${styles.instructionsScreen}`}
       aria-labelledby="experiment-instructions-title" data-node-id={experimentSteps[0].frame}>
       <Mosaic nodeId="10:719" />
-      <h2 id="experiment-instructions-title" className={styles.instructionTitle} data-node-id="10:720" tabIndex={-1}>Закрой левый глаз</h2>
-      <p className={styles.instructionBanner} data-node-id="10:721">
-        <span data-node-id="10:722">Правым смотри только на крестик</span>
-      </p>
-      <p className={`${styles.copy} ${styles.scrollInstruction}`} data-node-id="10:723">Прокрути вниз — на следующем экране появятся крестик и точка</p>
-      <p className={`${styles.copy} ${styles.distanceInstruction}`} data-node-id="10:724">Не отводя взгляд от крестика, медленно приближайся к экрану или отдаляйся от него, пока точка не исчезнет</p>
-      <NextScreenLink href="#experiment-target" label="К крестику и точке" textWidth={194}
-        nodes={['10:725', '10:726', '10:727', '10:728']} />
-      <a className={`${styles.bottomLink} ${styles.skipLink}`} href="#emptiness" data-node-id="10:729">Пропустить эксперимент</a>
+      <div className={styles.instructionBody}>
+        <h2 id="experiment-instructions-title" className={styles.instructionTitle} data-node-id="10:720" tabIndex={-1}>Закрой левый глаз</h2>
+        <p className={styles.instructionBanner} data-node-id="10:721">
+          <span data-node-id="10:722">Правым смотри только на крестик</span>
+        </p>
+        <p className={`${styles.copy} ${styles.scrollInstruction}`} data-node-id="10:723">Прокрути вниз — на следующем экране появятся крестик и точка</p>
+        <p className={`${styles.copy} ${styles.distanceInstruction}`} data-node-id="10:724">
+          <span className={styles.desktopCopyPrefix}>Не</span>
+          <span className={styles.mobileCopyPrefix}>Переверни экран и, не</span>
+          {' отводя взгляд от крестика, медленно приближайся к экрану или отдаляйся от него, пока точка не исчезнет'}
+        </p>
+      </div>
+      <div className={styles.screenFooter}>
+        <NextScreenLink href="#experiment-target" label="К крестику и точке" textWidth={194}
+          nodes={['10:725', '10:726', '10:727', '10:728']} />
+        <a className={`${styles.bottomLink} ${styles.skipLink}`} href="#emptiness" data-node-id="10:729">Пропустить эксперимент</a>
+      </div>
     </section>
   );
 }
 
 function Target() {
+  // Visual fixture only; production starts closed. Stage 3 owns disclosure/focus.
+  const helpPreview = import.meta.env.DEV
+    && new URLSearchParams(window.location.search).get('experiment-help') === 'open';
   return (
     <section id={experimentSteps[1].anchor} className={styles.screen}
       aria-label="Крестик и точка" data-node-id={experimentSteps[1].frame}>
@@ -62,9 +73,13 @@ function Target() {
           stroke="#fff" strokeWidth="10" strokeLinecap="butt" fill="none" data-node-id="10:734" />
       </svg>
       <div className={styles.targetDot} data-node-id="10:735" aria-hidden="true" />
-      <button type="button" className={`${styles.bottomLink} ${styles.helpTrigger}`} data-node-id="10:736">Не получается?</button>
+      <div className={styles.screenFooter}>
+        <button type="button" className={`${styles.bottomLink} ${styles.helpTrigger}`} data-node-id="10:736">Не получается?</button>
+        <NextScreenLink href="#experiment-result" label="Я попробовал" textWidth={143}
+          nodes={['10:742', '10:743', '10:744', '10:745']} />
+      </div>
       {/* Static Figma reference state. Disclosure behavior belongs to Stage 3. */}
-      <aside id="experiment-help" className={styles.help} data-node-id="10:737" aria-labelledby="experiment-help-title">
+      <aside id="experiment-help" hidden={!helpPreview} className={styles.help} data-node-id="10:737" aria-labelledby="experiment-help-title">
         <div className={styles.helpInterior} data-node-id="10:738">
           <div className={styles.helpContent} data-node-id="10:739">
             <h3 id="experiment-help-title" className={styles.helpTitle} data-node-id="10:740"><span>Не получается?</span></h3>
@@ -76,25 +91,27 @@ function Target() {
           </div>
         </div>
       </aside>
-      <NextScreenLink href="#experiment-result" label="Я попробовал" textWidth={143}
-        nodes={['10:742', '10:743', '10:744', '10:745']} />
     </section>
   );
 }
 
 function Result() {
   return (
-    <section id={experimentSteps[2].anchor} className={styles.screen}
+    <section id={experimentSteps[2].anchor} className={`${styles.screen} ${styles.resultScreen}`}
       aria-labelledby="experiment-result-title" data-node-id={experimentSteps[2].frame}>
       <Mosaic nodeId="10:761" result />
-      <p className={styles.resultBanner} data-node-id="10:762"><span data-node-id="10:763">Просто исчезла.</span></p>
+      <div className={styles.resultHeading}>
+        <h2 id="experiment-result-title" className={styles.resultTitle} data-node-id="10:766" tabIndex={-1}>Она не мигнула.</h2>
+        <p className={styles.resultSecondLine} data-node-id="10:767">Не потускнела.</p>
+        <p className={styles.resultBanner} data-node-id="10:762"><span data-node-id="10:763">Просто исчезла.</span></p>
+      </div>
       <p className={`${styles.copy} ${styles.dotExplanation}`} data-node-id="10:764">Точка всё это время оставалась на экране</p>
-      <p className={`${styles.copy} ${styles.resultNote}`} data-node-id="10:765">{'Не увидел исчезновения?\nЭто нормально: результат зависит от расстояния и условий просмотра'}</p>
-      <h2 id="experiment-result-title" className={styles.resultTitle} data-node-id="10:766" tabIndex={-1}>Она не мигнула.</h2>
-      <p className={styles.resultSecondLine} data-node-id="10:767">Не потускнела.</p>
+      <div className={styles.screenFooter}>
+        <p className={`${styles.copy} ${styles.resultNote}`} data-node-id="10:765">{'Не увидел исчезновения?\nЭто нормально: результат зависит от расстояния и условий просмотра'}</p>
+        <NextScreenLink href="#emptiness" label="Что это значит?" textWidth={163}
+          nodes={['10:769', '10:770', '10:771', '10:772']} />
+      </div>
       <div className={styles.resultDot} data-node-id="10:768" aria-hidden="true" />
-      <NextScreenLink href="#emptiness" label="Что это значит?" textWidth={163}
-        nodes={['10:769', '10:770', '10:771', '10:772']} />
     </section>
   );
 }

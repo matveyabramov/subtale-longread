@@ -218,6 +218,7 @@
 }
 
 .helpList {
+  list-style: none;
   width: 705px;
   height: 180px;
   margin: 0;
@@ -286,4 +287,265 @@
   top: 960px;
   width: 473px;
   height: 90px;
+}
+
+.instructionBody,
+.resultHeading,
+.screenFooter {
+  display: contents;
+}
+
+.mobileCopyPrefix {
+  display: none;
+}
+
+/* Source frames: 69:2167/2464/2493, 73:7375/7634/7663,
+   79:12569/12855/12816; help states 85:1249/779 and 79:12811.
+   Keep the original 1920 geometry above; reflow individual content slots below. */
+@media (width < 1920px) {
+  .experiment { overflow-x: clip; }
+
+  .screen {
+    --screen-height: max(810px, 56.25vw, 100dvh);
+    --gutter: clamp(20px, calc(2.083333vw - 10px), 30px);
+    --display-size: clamp(63px, calc(4.166667vw + 20px), 100px);
+    --marker-size: clamp(60px, calc(4.166667vw + 20px), 100px);
+    --banner-padding: clamp(16px, calc(0.833333vw + 4px), 20px);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: var(--screen-height);
+    overflow: visible;
+  }
+
+  .texture { z-index: -1; }
+  .resultTexture { opacity: 0.2; }
+
+  .instructionBody {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: clamp(209px, calc(25.208333vw - 154px), 330px);
+    padding-bottom: 70px;
+  }
+
+  .instructionTitle,
+  .instructionBanner {
+    position: static;
+    width: auto;
+    height: auto;
+    margin-left: calc(12.5% + 18px);
+  }
+
+  .instructionTitle,
+  .resultTitle,
+  .resultSecondLine,
+  .instructionBanner,
+  .resultBanner { font-size: var(--display-size); }
+
+  .instructionBanner,
+  .resultBanner { padding: var(--banner-padding); }
+  .instructionBanner { margin-top: clamp(12px, calc(0.625vw + 3px), 15px); }
+  .instructionBanner > span,
+  .resultBanner > span { height: auto; }
+
+  .copy {
+    height: auto;
+    font-size: clamp(20px, calc(0.625vw + 13px), 25px);
+    letter-spacing: -0.04em;
+  }
+
+  .instructionBody .copy {
+    position: static;
+    font-weight: 600;
+    /* Figma includes trailing tracking in its rounded text container. */
+    padding-right: 0.04em;
+  }
+
+  .scrollInstruction {
+    margin-top: 60px;
+    margin-left: calc(37.5% + 13px);
+    width: clamp(450px, calc(702px - 13.125vw), 513px);
+  }
+
+  .distanceInstruction {
+    margin-top: 29.2px;
+    margin-left: clamp(0px, calc(100.625vw - 718px), 1214px);
+    width: clamp(430px, calc(7.5vw + 405px), 549px);
+  }
+
+  .screenFooter {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: auto;
+    padding: 0 var(--gutter) var(--gutter);
+  }
+
+  .instructionsScreen .screenFooter { flex-direction: row-reverse; }
+
+  .nextLink {
+    position: relative;
+    inset: auto;
+    flex: none;
+    width: clamp(300px, calc(22.291667vw + 14px), 442px);
+    height: clamp(80px, calc(1.25vw + 62px), 86px);
+    gap: 16px;
+  }
+
+  .nextLabel {
+    width: auto !important;
+    height: auto;
+    font-size: clamp(28px, calc(1.041667vw + 15px), 35px);
+  }
+
+  .arrowBox { flex: none; width: auto; height: 100%; aspect-ratio: 1; }
+  .arrowBox img { left: calc(50% - 14.53564453125px); top: calc(50% - 14.53564453125px); }
+
+  .bottomLink {
+    position: relative;
+    inset: auto;
+    width: auto;
+    height: auto;
+    flex: none;
+    font-size: clamp(20px, calc(0.625vw + 13px), 25px);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+  }
+
+  .skipLink { margin-bottom: 8px; }
+  .bottomLink::after { content: ''; position: absolute; inset: -12px 0; }
+
+  .cross,
+  .targetDot,
+  .resultDot { top: calc(50% - var(--marker-size) / 2); width: var(--marker-size); height: var(--marker-size); }
+  .cross { left: calc(32.708333vw - 18px); }
+  .targetDot { left: calc(62.5% + 8px); }
+
+  .help {
+    z-index: 2;
+    left: calc(50% + 0.5px);
+    top: auto;
+    bottom: var(--gutter);
+    transform: translateX(-50%);
+    width: min(785px, calc(100% - var(--gutter) * 2));
+    height: auto;
+  }
+
+  .helpInterior { width: 100%; height: auto; }
+  .helpContent { width: 100%; height: auto; }
+  .helpTitle { width: auto; height: auto; font-size: clamp(40px, calc(2.083333vw + 10px), 50px); }
+  .helpList { width: 100%; height: auto; font-size: clamp(20px, calc(0.625vw + 13px), 25px); padding-left: 1.5em; }
+  .helpList li::before { left: -1.5em; }
+
+  .resultTitle { left: var(--gutter); top: clamp(280px, calc(12.708333vw + 97px), 341px); width: auto; height: auto; }
+  .resultSecondLine { left: calc(12.5% + 18px); top: clamp(356px, calc(15.625vw + 131px), 431px); width: auto; height: auto; }
+  .resultBanner { left: calc(12.5% + 18px); top: clamp(434px, calc(19.166667vw + 158px), 526px); width: auto; height: auto; }
+  .resultDot { left: calc(62.5% + 8px); }
+  .dotExplanation { left: calc(62.5% + 8px); top: calc(50% + var(--marker-size) / 2 + 30px); width: 310px; }
+  .resultNote { position: relative; inset: auto; width: clamp(473px, calc(633px - 8.333333vw), 513px); font-weight: 600; }
+
+  .screen :is(a, button):focus-visible { outline-color: var(--color-white); outline-offset: 4px; }
+}
+
+/* The long instruction banner no longer fits beside the desktop inset. */
+@media (width <= 1100px) {
+  .screen {
+    --screen-height: max(1024px, 100dvh);
+    --gutter: 20px;
+    --display-size: clamp(52px, 8.203125vw, 80px);
+    --marker-size: 60px;
+    --banner-padding: 14px;
+  }
+
+  .instructionBody { padding-top: 295px; }
+  .instructionTitle,
+  .instructionBanner { margin-left: var(--gutter); }
+  .instructionBanner { margin-top: 11.6px; max-width: calc(100% - var(--gutter) * 2); white-space: normal; }
+  .scrollInstruction { margin-top: 29.6px; margin-left: calc(25% + 15px); width: min(381px, calc(75% - 35px)); }
+  .distanceInstruction { margin-top: 20px; margin-left: calc(50% + 14px); width: calc(50% - 34px); }
+  .copy { font-size: 20px; }
+
+  .nextLink { width: calc(50% - 10px); height: 80px; }
+  .nextLabel { font-size: 28px; }
+  .bottomLink { font-size: 20px; line-height: 1.2; letter-spacing: -0.04em; }
+  .skipLink { margin-bottom: 0; }
+  .screenFooter { gap: 20px; }
+
+  .cross { left: calc(25% + 15px); }
+  .targetDot,
+  .resultDot { left: calc(65.234375%); }
+
+  .help { left: 50%; }
+  .helpInterior { padding: 20px; }
+  .helpTitle { margin-bottom: 15px; font-size: 35px; }
+  .helpList { font-size: 20px; }
+
+  .resultTitle { top: 20px; }
+  .resultSecondLine { left: calc(25% + 15px); top: calc(20px + var(--display-size) * 0.8 + 11.6px); }
+  .resultBanner { left: calc(25% + 15px); top: calc(20px + var(--display-size) * 1.6 + 23.2px); }
+  .dotExplanation { left: 65.234375%; top: calc(50% + 50px); width: calc(34.765625% - 20px); font-weight: 600; }
+  .resultNote { width: calc(50% - 87px); }
+}
+
+/* The phone frame stacks the targets vertically and the footer links above
+   a full-width CTA. Content can grow beyond the visible viewport. */
+@media (width <= 600px) {
+  .screen {
+    --gutter: max(15px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px));
+    --footer-inset: max(15px, env(safe-area-inset-bottom, 0px));
+    --display-size: clamp(34px, 10.25641vw, 46px);
+    --marker-size: 40px;
+    --banner-padding: 10px;
+    --screen-height: max(620px, 100dvh);
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  .instructionBody { padding-top: clamp(90px, 22.867299dvh, 193px); padding-bottom: 60px; }
+  .instructionTitle { margin-left: var(--gutter); white-space: normal; max-width: calc(100% - var(--gutter) * 2); }
+  .instructionBanner { margin-top: 10px; margin-left: 14.615385%; width: min(314px, calc(85.384615% - var(--gutter))); max-width: none; }
+  .copy { font-size: 16px; }
+  .scrollInstruction { margin-top: 50px; margin-left: var(--gutter); width: calc(100% - var(--gutter) * 2); }
+  .distanceInstruction { margin-top: 20px; margin-left: var(--gutter); width: calc(100% - var(--gutter) * 2); }
+  .desktopCopyPrefix { display: none; }
+  .mobileCopyPrefix { display: inline; }
+
+  .screenFooter,
+  .instructionsScreen .screenFooter { flex-direction: column; align-items: stretch; gap: 20px; padding-bottom: var(--footer-inset); }
+  .instructionsScreen .screenFooter { flex-direction: column-reverse; }
+  .nextLink { width: 100%; height: 70px; gap: 12px; }
+  .nextLabel { font-size: 25px; }
+  .arrowBox img { transform: scale(0.862069); transform-origin: center; }
+  .bottomLink { align-self: flex-start; font-size: 16px; font-weight: 500; line-height: 1.1; letter-spacing: -0.03em; }
+  .helpTrigger { margin-bottom: 10px; }
+
+  .cross { left: calc(50% - 20px); top: calc(50% - 139px); transform: rotate(90deg); }
+  .targetDot,
+  .resultDot { left: calc(50% - 20px); top: calc(50% + 99px); }
+
+  .help {
+    bottom: var(--footer-inset);
+    /* On short Safari viewports the panel scrolls within its frame, while
+       both targets keep exactly the same coordinates in either state. */
+    max-height: calc(50% - 155px - var(--footer-inset));
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+  }
+  .helpTitle { font-size: 30px; }
+  .helpList { font-size: 16px; padding-left: 1.2em; }
+  .helpList li::before { left: -1.5em; }
+
+  .resultHeading { display: block; padding-top: var(--gutter); }
+  .resultTitle,
+  .resultSecondLine,
+  .resultBanner { position: relative; inset: auto; width: max-content; height: auto; }
+  .resultTitle { margin-left: var(--gutter); }
+  .resultSecondLine,
+  .resultBanner { margin-left: calc(25% + 11.5px); margin-top: 10px; }
+  .resultScreen .screenFooter { display: contents; }
+  .resultNote { margin-top: 30px; margin-left: calc(25% + 11.5px); width: calc(75% - 11.5px - var(--gutter)); }
+  .dotExplanation { left: calc(50% - 20px); top: calc(50% + 149px); width: calc(50% - 9px); }
+  .resultScreen .nextLink { margin: auto var(--gutter) var(--footer-inset); width: calc(100% - var(--gutter) * 2); }
 }
