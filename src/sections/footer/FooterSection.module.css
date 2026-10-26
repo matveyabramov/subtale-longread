@@ -54,3 +54,24 @@
 .text[data-node-id='10:1161'] > span { position: relative; top: 1px; }
 /* Retain the fractional nested brand translation without accumulated layout snapping. */
 .brandName { left: 0; top: 0; transform: translate(56.29256057739258px, 15.609073638916016px); }
+
+@media (width <= 600px) {
+  .text[data-node-id='10:1018'],
+  .text[data-node-id='10:1148'] {
+    width: calc(100vw - 30px);
+    height: auto;
+    font: 800 45px/0.8 var(--font-display);
+  }
+  .text[data-node-id='10:1018'] { left: 15px; }
+  .banner {
+    left: 15px;
+    width: calc(100vw - 30px);
+    height: auto;
+    padding: 10px;
+  }
+  .banner > .text[data-node-id='10:1148'] {
+    position: relative;
+    inset: auto;
+    width: 100%;
+  }
+}

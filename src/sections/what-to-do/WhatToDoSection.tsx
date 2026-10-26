@@ -10,8 +10,10 @@ export function WhatToDoSection() {
     <section id="what-to-do" aria-labelledby="what-to-do-title" data-narrative-section className={styles.section}>
       <div className={styles.canvas} data-node-id="10:1272">
         <div className={`${styles.texture} ${styles.grain}`} data-node-id="10:1273" aria-hidden="true"><img src={imageAssets['au-fg-texture4-8k']} alt="" /></div>
-        <h2 id="what-to-do-title" tabIndex={-1} className={styles.text} data-node-id="10:1276"><span>{copy['10:1276']}</span></h2>
-        <div className={styles.banner} data-node-id="10:1274"><p className={styles.text} data-node-id="10:1275"><span>{copy['10:1275']}</span></p></div>
+        <div className={styles.sectionHeading}>
+          <h2 id="what-to-do-title" tabIndex={-1} className={styles.text} data-node-id="10:1276"><span>{copy['10:1276']}</span></h2>
+          <div className={styles.banner} data-node-id="10:1274"><p className={styles.text} data-node-id="10:1275"><span>{copy['10:1275']}</span></p></div>
+        </div>
         <p className={styles.text} data-node-id="10:1277"><span>{copy['10:1277']}</span></p>
         {panels.map(panel => <AdvicePanel key={panel.id} panel={panel} />)}
       </div>

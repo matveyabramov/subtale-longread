@@ -14,9 +14,11 @@ export function VocabSection() {
           </div>
           <p className={styles.text} data-node-id="10:971"><span>{copy['10:971']}</span></p>
         </div>
-        <h2 id="vocab-title" tabIndex={-1} className={styles.text} data-node-id="10:973"><span>{copy['10:973']}</span></h2>
-        <div className={styles.banner} data-node-id="10:974">
-          <p className={styles.text} data-node-id="10:975"><span>{copy['10:975']}</span></p>
+        <div className={styles.sectionHeading}>
+          <h2 id="vocab-title" tabIndex={-1} className={styles.text} data-node-id="10:973"><span>{copy['10:973']}</span></h2>
+          <div className={styles.banner} data-node-id="10:974">
+            <p className={styles.text} data-node-id="10:975"><span>{copy['10:975']}</span></p>
+          </div>
         </div>
         <p className={styles.text} data-node-id="10:972"><span>{copy['10:972']}</span></p>
       </div>

@@ -357,3 +357,7 @@
   .levelContent > h3 { font-size: 46px; line-height: 0.8; }
   .canvas { padding-bottom: max(29px, env(safe-area-inset-bottom, 0px)); }
 }
+
+@media (width <= 600px) {
+  .title, .banner { font-size: 45px; }
+}

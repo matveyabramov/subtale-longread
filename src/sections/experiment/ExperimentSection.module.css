@@ -549,3 +549,9 @@
   .dotExplanation { left: calc(50% - 20px); top: calc(50% + 149px); width: calc(50% - 9px); }
   .resultScreen .nextLink { margin: auto var(--gutter) var(--footer-inset); width: calc(100% - var(--gutter) * 2); }
 }
+
+@media (width <= 600px) {
+  .instructionTitle, .instructionBanner, .resultTitle, .resultSecondLine, .resultBanner { font-size: 45px; }
+  .resultSecondLine,
+  .resultBanner { max-width: calc(75% - 11.5px - var(--gutter)); white-space: normal; }
+}

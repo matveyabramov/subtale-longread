@@ -36,11 +36,13 @@ export function BlindZonesExplorer({ category = 'idiom', meaning = 'A' }: BlindZ
             );
           })}
         </div>
-        <h2 id="blind-zones-title" tabIndex={-1} className={styles.title} data-node-id={visual.title}
-          style={{ zIndex: visual.order.title }}>Слепые</h2>
-        <p className={styles.banner} data-node-id={visual.banner} style={{ zIndex: visual.order.banner }}>
-          <span data-node-id={visual.bannerText}>зоны восприятия</span>
-        </p>
+        <div className={styles.sectionHeading}>
+          <h2 id="blind-zones-title" tabIndex={-1} className={styles.title} data-node-id={visual.title}
+            style={{ zIndex: visual.order.title }}>Слепые</h2>
+          <p className={styles.banner} data-node-id={visual.banner} style={{ zIndex: visual.order.banner }}>
+            <span data-node-id={visual.bannerText}>зоны восприятия</span>
+          </p>
+        </div>
         <button type="button" className={styles.question} data-node-id={visual.question}
           style={{ zIndex: visual.order.question, width: visual.questionWidth }}>{visual.questionText}</button>
         {category === 'idiom' && <IdiomArtwork meaning={meaning} />}

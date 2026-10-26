@@ -12,8 +12,10 @@ export function MoviesSection() {
           style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
         <FilmPerforation edge="top" />
         <FilmPerforation edge="bottom" />
-        <h2 id="movies-title" tabIndex={-1} className={styles.title} data-node-id="10:1918">Ты слышишь фразу.</h2>
-        <p className={styles.banner} data-node-id="10:1919"><span data-node-id="10:1920">Что остаётся за ней?</span></p>
+        <div className={styles.sectionHeading}>
+          <h2 id="movies-title" tabIndex={-1} className={styles.title} data-node-id="10:1918">Ты слышишь фразу.</h2>
+          <p className={styles.banner} data-node-id="10:1919"><span data-node-id="10:1920">Что остаётся за ней?</span></p>
+        </div>
         <div className={styles.cases} data-node-id="10:1840">
           {movieCases.map((media) => <MovieCase key={media.id} media={media} />)}
           <div className={styles.divider} data-node-id="10:1917" aria-hidden="true" />

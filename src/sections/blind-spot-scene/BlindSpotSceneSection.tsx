@@ -16,8 +16,10 @@ export function BlindSpotSceneSection() {
         <div className={`${styles.texture} ${styles.grain}`} data-node-id="10:998" aria-hidden="true">
           <img src={imageAssets['au-fg-texture4-8k']} alt="" />
         </div>
-        <h2 id="blind-spot-scene-title" tabIndex={-1} className={styles.text} data-node-id="10:1013"><span>{copy['10:1013']}</span></h2>
-        <div className={styles.banner} data-node-id="10:1014"><p className={styles.text} data-node-id="10:1015"><span>{copy['10:1015']}</span></p></div>
+        <div className={styles.sectionHeading}>
+          <h2 id="blind-spot-scene-title" tabIndex={-1} className={styles.text} data-node-id="10:1013"><span>{copy['10:1013']}</span></h2>
+          <div className={styles.banner} data-node-id="10:1014"><p className={styles.text} data-node-id="10:1015"><span>{copy['10:1015']}</span></p></div>
+        </div>
         <p className={styles.text} data-node-id="10:1011"><span>{copy['10:1011']}</span></p>
         {pairs.map(([statement, reaction]) => <div key={statement} className={styles.pair}>
           <p className={styles.text} data-node-id={statement}><span>{copy[statement]}</span></p>

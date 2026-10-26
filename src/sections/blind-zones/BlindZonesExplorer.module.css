@@ -242,3 +242,32 @@
   height: 817px;
   z-index: 5;
 }
+
+/* Only the section heading adapts here; the remaining composition is unchanged. */
+.sectionHeading { display: contents; }
+@media (width <= 600px) {
+  .sectionHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: absolute;
+    left: 15px;
+    top: 30px;
+    width: calc(100vw - 30px);
+  }
+  .sectionHeading > h2,
+  .sectionHeading > .banner,
+  .sectionHeading > .banner > p {
+    position: relative;
+    inset: auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    font: 800 45px/0.8 var(--font-display);
+    white-space: normal;
+  }
+  .sectionHeading > .banner { padding: 10px; }
+  .sectionHeading > .banner > span { width: auto; height: auto; }
+}
