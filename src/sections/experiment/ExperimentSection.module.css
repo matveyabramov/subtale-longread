@@ -552,6 +552,7 @@
 
 @media (width <= 600px) {
   .instructionTitle, .instructionBanner, .resultTitle, .resultSecondLine, .resultBanner { font-size: 45px; }
+  .instructionBanner, .resultBanner { margin-top: 8px; }
   .resultSecondLine,
   .resultBanner { max-width: calc(75% - 11.5px - var(--gutter)); white-space: normal; }
 }

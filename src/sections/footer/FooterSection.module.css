@@ -64,6 +64,7 @@
   }
   .text[data-node-id='10:1018'] { left: 15px; }
   .banner {
+    top: 816px;
     left: 15px;
     width: calc(100vw - 30px);
     height: auto;
