@@ -1,29 +1,36 @@
 import { imageAssets, vectorAssets } from '../../assets/generated';
 import type { MeaningState } from './model';
 import { iceFragments, punLayers, punMatrices, snowflakes } from './explorerArtworkData';
+import { responsiveArtStyle } from './explorerResponsiveData';
 import styles from './BlindZonesExplorer.module.css';
 
 export function IdiomArtwork({ meaning }: { meaning: MeaningState }) {
   return (
     <>
-      {iceFragments.map((fragment) => {
+      {iceFragments.map((fragment, index) => {
         const [[sx, , tx], [, sy, ty]] = fragment.crop;
         return (
           <div key={fragment.ids.A} data-node-id={fragment.ids[meaning]} data-art-layer="ice"
             className={styles.ice} aria-hidden="true" style={{
-              left: fragment.x, top: fragment.y, width: fragment.width, height: fragment.height,
+              ...responsiveArtStyle(`idiom${meaning}-${meaning === 'B' && index > 0 ? index + 1 : index}`,
+                [fragment.x, fragment.y, fragment.width, fragment.height]),
+              left: `var(--art-x, ${fragment.x}px)`, top: `var(--art-y, ${fragment.y}px)`,
+              width: `var(--art-width, ${fragment.width}px)`, height: `var(--art-height, ${fragment.height}px)`,
               zIndex: fragment.order[meaning],
               maskImage: fragment.mask ? `url("${vectorAssets[fragment.mask]}")` : 'none',
             }}>
             <img src={imageAssets[fragment.asset]} alt="" style={{
-              width: fragment.width / sx, height: fragment.height / sy,
-              left: -tx * fragment.width / sx, top: -ty * fragment.height / sy,
+              width: `var(--ice-image-width, ${fragment.width / sx}px)`, height: `var(--ice-image-height, ${fragment.height / sy}px)`,
+              left: `var(--ice-image-left, ${-tx * fragment.width / sx}px)`, top: `var(--ice-image-top, ${-ty * fragment.height / sy}px)`,
+              ...{ '--crop-width': `${100 / sx}%`, '--crop-height': `${100 / sy}%`,
+                '--crop-left': `${-tx * 100 / sx}%`, '--crop-top': `${-ty * 100 / sy}%` },
             }} />
           </div>
         );
       })}
       {meaning === 'B' && (
-        <div className={`${styles.bitmap} ${styles.telephone}`} data-node-id="10:1598" data-art-layer="telephone" aria-hidden="true">
+        <div className={`${styles.bitmap} ${styles.telephone}`} data-node-id="10:1598" data-art-layer="telephone" aria-hidden="true"
+          style={responsiveArtStyle('idiomB-1', [227, 228, 635, 851])}>
           <img src={imageAssets['idiom-telephone-cutout']} alt="" />
         </div>
       )}
@@ -39,7 +46,10 @@ export function PunArtwork({ meaning }: { meaning: MeaningState }) {
   const ty = y - 200 - 492.5 + b * 367.5 + d * 492.5;
   return (
     <div className={styles.bicycle} data-node-id={punLayers[0].ids[meaning]} data-art-layer="bicycle" aria-hidden="true"
-      style={{ transform: `matrix(${a},${b},${c},${d},${tx},${ty})` }}>
+      style={{
+        ...responsiveArtStyle(`pun${meaning}-0`, [x, y, 735, 985]),
+        transform: `var(--bicycle-transform, matrix(${a},${b},${c},${d},${tx},${ty}))`,
+      }}>
       <div className={styles.bicycleBase} data-node-id={punLayers[1].ids[meaning]}>
         <img src={imageAssets['pun-bicycle-cutout']} alt="" data-node-id={punLayers[2].ids[meaning]} />
       </div>
@@ -53,7 +63,8 @@ export function PunArtwork({ meaning }: { meaning: MeaningState }) {
 export function DoubleMeaningArtwork({ meaning }: { meaning: MeaningState }) {
   return (
     <div className={`${styles.bitmap} ${styles.eye}`} data-node-id={meaning === 'A' ? '10:1558' : '10:2047'}
-      data-art-layer="eye" aria-hidden="true">
+      data-art-layer="eye" aria-hidden="true"
+      style={responsiveArtStyle(`doubleMeaning${meaning}-0`, [115, 383, 845, 563])}>
       <img src={meaning === 'A' ? imageAssets['double-meaning-eye'] : imageAssets['double-meaning-eye-couple']} alt="" />
     </div>
   );
@@ -62,14 +73,20 @@ export function DoubleMeaningArtwork({ meaning }: { meaning: MeaningState }) {
 export function CulturalReferenceArtwork({ meaning }: { meaning: MeaningState }) {
   if (meaning === 'B') {
     return (
-      <div className={`${styles.bitmap} ${styles.throne}`} data-node-id="10:2087" data-art-layer="throne" aria-hidden="true">
+      <div className={`${styles.bitmap} ${styles.throne}`} data-node-id="10:2087" data-art-layer="throne" aria-hidden="true"
+        style={responsiveArtStyle('referenceB-0', [301, 263, 610, 817])}>
         <img src={imageAssets['cultural-iron-throne-cutout']} alt="" />
       </div>
     );
   }
-  return snowflakes.map((snowflake) => (
+  return snowflakes.map((snowflake, index) => (
     <div key={snowflake.id} className={styles.bitmap} data-node-id={snowflake.id} data-art-layer="snowflake" aria-hidden="true"
-      style={{ left: snowflake.x, top: snowflake.y, width: snowflake.width, height: snowflake.height, zIndex: snowflake.order }}>
+      style={{
+        ...responsiveArtStyle(`referenceA-${index}`, [snowflake.x, snowflake.y, snowflake.width, snowflake.height]),
+        left: `var(--art-x, ${snowflake.x}px)`, top: `var(--art-y, ${snowflake.y}px)`,
+        width: `var(--art-width, ${snowflake.width}px)`, height: `var(--art-height, ${snowflake.height}px)`,
+        zIndex: snowflake.order,
+      }}>
       <img src={imageAssets['cultural-snowflake-cutout']} alt="" />
     </div>
   ));

@@ -13,12 +13,13 @@ interface BlindZonesExplorerProps {
 // Controlled visual endpoints only. Stage 3 owns selection and per-category memory.
 export function BlindZonesExplorer({ category = 'idiom', meaning = 'A' }: BlindZonesExplorerProps) {
   const visual = explorerVisuals[category][meaning];
+  const activeCopy = explorerCopy.find((copy) => copy.category === category)!;
   return (
     <section id="blind-zones" aria-labelledby="blind-zones-title" data-narrative-section
       className={styles.section} data-category-count={explorerCategories.length} data-category={category} data-meaning={meaning}>
       <div className={styles.canvas} data-node-id={visual.frame}>
         <div className={styles.texture} data-node-id={visual.texture} aria-hidden="true"
-          style={{ zIndex: visual.order.texture, backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
+          style={{ zIndex: `var(--texture-order, ${visual.order.texture})`, backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
         <div className={styles.categories} data-node-id={visual.panel} style={{ zIndex: visual.order.panel }}>
           {explorerCopy.map((copy, index) => {
             const ids = visual.cards[index];
@@ -28,7 +29,7 @@ export function BlindZonesExplorer({ category = 'idiom', meaning = 'A' }: BlindZ
                 <div className={styles.cardContent} data-node-id={ids.content}>
                   <div className={styles.cardHeading} data-node-id={ids.heading}>
                     <p className={styles.number} data-node-id={ids.number}>{copy.number}</p>
-                    <h3 className={styles.label} data-node-id={ids.label} style={{ width: copy.labelWidth }}>{copy.label}</h3>
+                    <h3 className={styles.label} data-node-id={ids.label} style={{ width: `var(--category-label-width, ${copy.labelWidth}px)` }}>{copy.label}</h3>
                   </div>
                   <p className={styles.description} data-node-id={ids.description}><span>{copy.description}</span></p>
                 </div>
@@ -43,12 +44,15 @@ export function BlindZonesExplorer({ category = 'idiom', meaning = 'A' }: BlindZ
             <span data-node-id={visual.bannerText}>зоны восприятия</span>
           </p>
         </div>
+        <p className={styles.activeDescription}>{activeCopy.description}</p>
         <button type="button" className={styles.question} data-node-id={visual.question}
-          style={{ zIndex: visual.order.question, width: visual.questionWidth }}>{visual.questionText}</button>
-        {category === 'idiom' && <IdiomArtwork meaning={meaning} />}
-        {category === 'pun' && <PunArtwork meaning={meaning} />}
-        {category === 'doubleMeaning' && <DoubleMeaningArtwork meaning={meaning} />}
-        {category === 'reference' && <CulturalReferenceArtwork meaning={meaning} />}
+          style={{ zIndex: visual.order.question, width: `var(--question-width, ${visual.questionWidth}px)` }}>{visual.questionText}</button>
+        <div className={styles.artworkStage} aria-hidden="true">
+          {category === 'idiom' && <IdiomArtwork meaning={meaning} />}
+          {category === 'pun' && <PunArtwork meaning={meaning} />}
+          {category === 'doubleMeaning' && <DoubleMeaningArtwork meaning={meaning} />}
+          {category === 'reference' && <CulturalReferenceArtwork meaning={meaning} />}
+        </div>
       </div>
     </section>
   );
