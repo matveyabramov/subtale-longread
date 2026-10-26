@@ -1,9 +1,11 @@
 .hero {
   background: var(--color-blue);
-  overflow-x: auto;
+  overflow-x: clip;
 }
 
 .canvas {
+  --portrait-top: 357px;
+  --hero-gutter: 30px;
   position: relative;
   isolation: isolate;
   -webkit-font-smoothing: antialiased;
@@ -80,6 +82,8 @@
 
 .star {
   position: absolute;
+  left: var(--star-left);
+  top: var(--star-top);
   max-inline-size: none;
   pointer-events: none;
 }
@@ -115,71 +119,21 @@
 
 .portrait {
   position: absolute;
-  left: 574px;
-  top: 357px;
-  width: 771px;
-  height: 694px;
-  overflow: hidden;
+  display: block;
+  top: var(--portrait-top);
+  bottom: var(--hero-gutter);
+  left: 50%;
+  width: auto;
+  height: calc(100% - var(--portrait-top) - var(--hero-gutter));
+  aspect-ratio: 771 / 694;
+  transform: translateX(-50%);
 }
 
-.portraitFragment {
-  position: absolute;
-  left: 0;
-  top: 0;
+.portraitImage {
+  display: block;
+  width: 100%;
+  height: 100%;
   max-inline-size: none;
-  overflow: hidden;
-}
-
-.middleBand {
-  position: absolute;
-  left: 0;
-  top: 309px;
-  width: 771px;
-  height: 154px;
-  overflow: hidden;
-}
-
-.middleBand .portraitFragment {
-  top: -309px;
-}
-
-.lowerBand {
-  position: absolute;
-  left: 231px;
-  top: 462.857421875px;
-}
-
-.clippedBand {
-  position: absolute;
-  left: 0;
-  top: 694.287109375px;
-}
-
-.upperBand {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 771px;
-  height: 309px;
-  overflow: hidden;
-}
-
-.eyeCrop {
-  position: absolute;
-  left: 195px;
-  top: 208px;
-  width: 187px;
-  height: 93px;
-  overflow: hidden;
-}
-
-.eyeCrop img {
-  position: absolute;
-  max-inline-size: none;
-  width: 595.6159932745996%;
-  height: 1502.683402243875%;
-  left: -175.03674403149122%;
-  top: -361.71041450446546%;
 }
 
 .brand {
@@ -296,15 +250,6 @@
   top: 14px;
 }
 
-.accent {
-  position: absolute;
-  left: 935px;
-  top: 532px;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
-
 .hint {
   position: absolute;
   left: 482px;
@@ -416,4 +361,255 @@
 .hintCopy h2 > span {
   position: relative;
   top: 1px;
+}
+
+.artwork {
+  display: contents;
+}
+
+/* Approved Hero frames supply the artwork and type. Review corrections align
+   the portrait from the question banner to the CTA bottom. Each image is a
+   single Figma export; only individual composition slots respond to width. */
+@media (width < 1920px) {
+  .hero { overflow-x: clip; }
+  .texture { z-index: -1; }
+
+  .canvas {
+    --hero-gutter: clamp(20px, calc(2.083333vw - 10px), 30px);
+    --headline-size: clamp(72px, calc(7.14vw - 2.816px), 100px);
+    --banner-top: clamp(221px, calc(249px - 1.458333vw), 228px);
+    --portrait-top: calc(var(--banner-top) + var(--headline-size) * 0.8 + 40px);
+    width: 100%;
+    height: max(810px, 56.25vw, 100svh);
+  }
+
+  .introduction {
+    left: var(--hero-gutter);
+    top: auto;
+    bottom: var(--hero-gutter);
+    width: clamp(381px, 35.625vw, 680px);
+  }
+
+  .introCopy {
+    height: auto;
+    font-size: clamp(20px, calc(0.625vw + 13px), 25px);
+    letter-spacing: -0.04em;
+  }
+
+  .primaryCta {
+    margin-top: clamp(20px, calc(2.083333vw - 10px), 30px);
+    width: 100%;
+    height: clamp(80px, calc(1.25vw + 62px), 86px);
+    font-size: clamp(30px, calc(1.041667vw + 15px), 35px);
+    gap: 16px;
+  }
+
+  .primaryCta > span:first-child { width: auto; }
+
+  .primaryArrowBox {
+    flex: none;
+    width: auto;
+    height: 100%;
+    aspect-ratio: 1;
+  }
+
+  .primaryArrowBox img {
+    left: calc(50% - 14.53564453125px);
+    top: calc(50% - 14.5355224609375px);
+  }
+
+  .brand { left: var(--hero-gutter); }
+  .brandMark { top: -0.31618499755859375px; }
+  .brandName { top: 15.942401885986328px; }
+
+  .contents {
+    left: auto;
+    right: var(--hero-gutter);
+    width: 178px;
+    height: 24px;
+    font: 500 22px/1.1 var(--font-copy);
+    letter-spacing: -0.03em;
+  }
+
+  .contents > span:first-child { width: 126px; height: 24px; }
+
+  /* Keep the drawn header geometry, with a 44px touch target. */
+  .contents::after { content: ''; position: absolute; inset: -10px 0; }
+
+  .headline { font-size: var(--headline-size); }
+  .headlineFirst {
+    left: var(--hero-gutter);
+    top: clamp(115px, calc(187px - 3.75vw), 133px);
+    width: auto;
+    height: auto;
+  }
+
+  .headlineBanner {
+    left: var(--hero-gutter);
+    top: var(--banner-top);
+    width: auto;
+    height: auto;
+  }
+
+  .headlineBanner > span { width: auto; height: auto; }
+
+  .film {
+    left: calc(69.08772786vw + 123.515225px);
+    top: calc(24.87272898vw + 285.246703px);
+    width: clamp(260px, calc(8.91210556vw + 154.493713px), 325.60614px);
+    height: auto;
+    aspect-ratio: 325.60614 / 436.07968;
+  }
+
+  .filmBacking { display: none; }
+  .filmImage { left: 0; top: 0; width: 100%; height: 100%; }
+
+  /* Reuse the original SVGs at native root dimensions; transforms resize the
+     existing star shapes to their approved 1440 slots and render offsets. */
+  .star { transform-origin: 0 0; }
+  .star[data-node-id='10:474'] { left: calc(20.833333vw - 107.53125px); top: calc(25.833333vw + 139px); transform: scale(0.75949367); }
+  .star[data-node-id='10:479'] { left: calc(-5.340229vw + 167.04969px); top: calc(23.75vw + 139px); transform: scale(0.75806452); }
+  .star[data-node-id='10:480'] { left: calc(6.118063vw + 172.05028px); top: calc(20.625vw + 137px); transform: scale(0.75806452); }
+  .star[data-node-id='10:481'] { left: calc(-2.235616vw + 169.97507px); top: calc(18.333333vw + 138px); transform: scale(0.74418605); }
+  .star[data-node-id='10:478'] { left: calc(61.987203vw + 250.96279px); top: calc(25.625076vw + 305.99890px); transform: scale(0.64516129, 0.62903226); }
+  .star[data-node-id='10:482'] { left: calc(62.902119vw + 272.18799px); top: calc(15.833409vw + 342.99890px); transform: scale(0.51282051, 0.53164557); }
+  .star[data-node-id='10:483'] { left: calc(75.279744vw + 298.85254px); top: calc(20.000076vw + 277.99890px); transform: scale(0.72, 0.74); }
+  .star[data-node-id='10:687'] { display: none; }
+
+  .canvas :is(a, button):focus-visible { outline-color: var(--color-white); outline-offset: 4px; }
+}
+
+/* Interpolate the two approved wide compositions above 1440. */
+@media (1440px < width < 1920px) {
+  .canvas { --headline-size: calc(4.166667vw + 40px); }
+}
+
+/* The portrait and CTA share the same bottom baseline on tablet. */
+@media (width <= 1100px) {
+  .canvas {
+    --headline-size: clamp(66px, 11.1979167vw, 100px);
+    display: grid;
+    grid-template-areas: 'headline' 'artwork';
+    grid-template-rows: auto minmax(400px, 1fr);
+    height: auto;
+    min-height: max(1024px, 100dvh);
+    padding-bottom: 20px;
+  }
+
+  .headline {
+    grid-area: headline;
+    position: relative;
+    margin-inline: 20px;
+    padding-top: 141px;
+    z-index: 2;
+  }
+
+  .headlineFirst {
+    position: static;
+    display: block;
+    width: calc(100% - 52px);
+    min-height: calc(var(--headline-size) * 1.6 + 0.4px);
+    white-space: normal;
+  }
+
+  .headlineBanner {
+    position: relative;
+    inset: auto;
+    display: block;
+    width: 100%;
+    min-height: calc(var(--headline-size) * 1.6 + 40.4px);
+    margin-top: 16px;
+    white-space: normal;
+  }
+
+  .artwork {
+    grid-area: artwork;
+    display: block;
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .portrait {
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 36.8489583%;
+    transform: none;
+  }
+
+  .film, .star { display: none; }
+
+  .introduction {
+    z-index: 2;
+    left: 20px;
+    bottom: 20px;
+    width: clamp(381px, calc(51.5625vw - 15px), 513px);
+  }
+
+  /* Reserve Figma's trailing tracking when wrapping the tablet copy. */
+  .introCopy { font-size: 20px; white-space: normal; padding-right: 0.04em; }
+  .primaryCta { margin-top: 20px; height: 80px; font-size: 28px; }
+  .brand { left: 20px; }
+  .contents { right: 20px; }
+}
+
+/* On phones the header, editorial text and CTA keep their readable sizes;
+   the portrait receives the remaining viewport height. Browser chrome changes
+   redistribute that space through dvh without a fixed 844px minimum. */
+@media (width <= 600px) {
+  .canvas {
+    --hero-gutter: max(15px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px));
+    --headline-size: min(clamp(37px, calc(14.285714vw - 8.714286px), 64px), clamp(34px, 7dvh, 64px));
+    --mobile-footer: max(12px, env(safe-area-inset-bottom, 0px));
+    grid-template-areas: 'headline' 'artwork' 'intro';
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 0;
+    padding-top: calc(env(safe-area-inset-top, 0px) + clamp(82px, 12dvh, 100px));
+    padding-bottom: var(--mobile-footer);
+  }
+
+  .headline { margin-inline: var(--hero-gutter); padding-top: 0; z-index: 3; }
+  .headlineFirst { width: calc(100% - 24px); min-height: 0; padding-bottom: 0.8px; }
+  .headlineBanner { padding: clamp(10px, 2dvh, 15px); min-height: 0; margin-top: clamp(8px, 1.5dvh, 12px); }
+  .headlineBanner > span { padding-bottom: 0.8px; white-space: pre-line; }
+
+  .artwork { display: flex; justify-content: center; align-items: flex-start; z-index: 1; }
+  .portrait {
+    position: relative;
+    inset: auto;
+    height: 100%;
+    max-height: calc(100vw * 694 / 771);
+    max-width: 100%;
+    width: auto;
+    flex: none;
+  }
+  .portraitImage { object-fit: contain; object-position: top; }
+
+  .introduction {
+    grid-area: intro;
+    position: relative;
+    inset: auto;
+    justify-self: center;
+    width: calc(100% - var(--hero-gutter) * 2);
+    margin-top: clamp(8px, 1.5dvh, 14px);
+    z-index: 3;
+  }
+
+  .introCopy { width: min(100%, 316px); font-size: 16px; }
+  .primaryCta { margin-top: clamp(10px, 1.8dvh, 18px); height: auto; min-height: clamp(54px, 9dvh, 70px); font-size: 25px; gap: 12px; }
+  .primaryArrowBox { width: clamp(44px, 8dvh, 60px); height: clamp(44px, 8dvh, 60px); }
+  .primaryArrowBox img { transform: scale(0.86); transform-origin: center; }
+
+  .brand { left: var(--hero-gutter); top: calc(env(safe-area-inset-top, 0px) + 12px); width: 140px; height: 58px; z-index: 3; }
+  .brandMark { top: -0.90166092px; transform: scale(0.875); transform-origin: 0 0; }
+  .brandName { left: 49.25608826px; top: 12.82460022px; width: 91px; height: 45.17539978px; }
+  .brandLatin { width: 55px; height: 10px; font-size: 12.18214035px; }
+  .brandCyrillic { top: 16.17539787px; width: 91px; height: 29px; font-size: 36.42866898px; }
+  .contents { right: var(--hero-gutter); top: calc(env(safe-area-inset-top, 0px) + 31px); width: clamp(140px, 38.974359vw, 152px); height: 20px; gap: 16px; font-size: clamp(16px, 4.615385vw, 18px); z-index: 3; }
+  .contents > span:first-child { width: calc(100% - 48px); height: 20px; }
+  .contents::after { inset-block: -12px; }
 }

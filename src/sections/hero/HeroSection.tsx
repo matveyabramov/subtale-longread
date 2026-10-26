@@ -17,9 +17,11 @@ export function HeroSection() {
         </div>
         <div className={styles.texture} data-node-id="10:473" aria-hidden="true"
           style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
-        <HeroFilm />
-        <HeroStars />
-        <HeroPortrait />
+        <div className={styles.artwork} aria-hidden="true">
+          <HeroFilm />
+          <HeroStars />
+          <HeroPortrait />
+        </div>
         <div className={styles.brand} data-node-id="10:611">
           <img className={styles.brandMark} src={vectorAssets['subtale-pixel-mark']} alt="" data-node-id="10:612" />
           <div className={styles.brandName} data-node-id="10:675">
@@ -30,15 +32,14 @@ export function HeroSection() {
         <h1 id="hero-title" className={styles.headline} tabIndex={-1}>
           <span className={styles.headlineFirst} data-node-id="10:685">Ты смотришь сериалы без перевода</span>
           <span className={styles.headlineBanner} data-node-id="10:678">
-            <span data-node-id="10:679">Сколько шуток из них Ты правда понял?</span>
+            <span data-node-id="10:679">{'Сколько шуток из них\nТы правда понял?'}</span>
           </span>
         </h1>
         <button type="button" className={styles.contents} data-node-id="10:680">
           <span data-node-id="10:681">Оглавление</span>
           <span className={styles.contentsIcon} data-node-id="10:682" aria-hidden="true"><i /><i /></span>
         </button>
-        <img className={styles.accent} data-node-id="10:686" src={imageAssets['hero-eye-accent']} alt="" />
-        <aside className={styles.hint} data-node-id="10:688" aria-labelledby="hero-hint-title">
+        <aside hidden className={styles.hint} data-node-id="10:688" aria-labelledby="hero-hint-title">
           <div className={styles.hintInterior} data-node-id="10:689">
             <div className={styles.hintCopy} data-node-id="10:690">
               <h2 id="hero-hint-title" data-node-id="10:691"><span>Сначала — небольшой эксперимент</span></h2>
