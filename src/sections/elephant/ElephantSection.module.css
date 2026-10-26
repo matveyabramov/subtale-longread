@@ -344,15 +344,15 @@
   .level:nth-child(4) .levelContent { --level-copy-width: min(100%, 538px); }
 }
 
-/* Phone copy shares fixed 10px gutters across all four levels. */
+/* Phone copy shares fixed 15px gutters across all four levels. */
 @media (width <= 600px) {
   .pixel { display: none; }
   .level:nth-child(n) .levelContent {
-    --level-inset: 10px;
+    --level-inset: 15px;
     --level-width: 100%;
     --level-title-width: 100%;
     --level-copy-width: 100%;
-    padding-right: 10px;
+    padding-right: 15px;
   }
   .levelContent > h3 { font-size: 45px; line-height: 0.8; }
   .canvas { padding-bottom: max(29px, env(safe-area-inset-bottom, 0px)); }
