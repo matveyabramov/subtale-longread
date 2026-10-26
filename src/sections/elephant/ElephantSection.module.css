@@ -187,3 +187,166 @@
   position: absolute;
   background: var(--color-yellow);
 }
+
+.artworkSlot,
+.heading,
+.phraseBlock {
+  display: contents;
+}
+
+/* Approved sources: 72:3066 (1440), 76:8060 (768), 79:13520 (390).
+   Frame and image dimensions/offsets interpolate independently, as in Figma;
+   the original 1920 matrices and geometry above remain the default. */
+@media (width < 1920px) {
+  .section { overflow-x: clip; }
+
+  .canvas {
+    --gutter: clamp(20px, calc(2.083333vw - 10px), 30px);
+    --display-size: clamp(63px, calc(4.166667vw + 20px), 100px);
+    --copy-size: clamp(20px, calc(0.625vw + 13px), 25px);
+    --row-space: clamp(30px, 2.083333vw, 40px);
+    --phrase-size: clamp(140px, calc(12.5vw + 10px), 250px);
+    --phrase-gap: clamp(25.314844px, calc(0.976074vw + 11.259375px), 30px);
+    --frame-width: calc(34.361254vw + 89.520447px);
+    --frame-height: calc(var(--frame-width) * 666.5664672851562 / 749.2565307617188);
+    --frame-offset: clamp(0px, calc(10.238281px - 0.533244vw), 2.55957px);
+    --frame-stroke: 10px;
+    --frame-transform: matrix(0.9993908405303955, -0.03489949554204941, 0.03489949554204941, 0.9993908405303955, 0, 0);
+    --image-width: calc(var(--frame-width) * 674.1835327148438 / 584.322509765625);
+    --image-height: calc(var(--frame-width) * 376.2884826660156 / 584.322509765625);
+    --image-x: calc(var(--frame-width) * -7.924098968505859 / 584.322509765625);
+    --image-y: calc(7.128071vw - 57.919403px);
+    --image-transform: matrix(0.9993906617164612, 0.03490418940782547, -0.03489479795098305, 0.9993909597396851, 0, 0);
+    --pixel-size: clamp(49px, calc(3.988096vw + 0.571429px), 77.14286px);
+    display: grid;
+    grid-template-columns: calc(50% + var(--gutter) / 2) minmax(0, 1fr);
+    grid-template-areas: 'heading heading' 'art phrase' 'levels levels';
+    width: 100%;
+    height: auto;
+    padding-top: var(--gutter);
+    padding-bottom: clamp(41px, calc(11.666667vw - 127px), 97px);
+  }
+
+  .texture { inset: 0; width: 100%; height: 100%; z-index: -1; }
+
+  .heading { grid-area: heading; display: block; margin-left: var(--gutter); }
+  .title,
+  .banner { position: relative; inset: auto; width: max-content; height: auto; font-size: var(--display-size); }
+  .banner { margin-top: clamp(12px, calc(0.625vw + 3px), 15px); padding: clamp(16px, calc(0.833333vw + 4px), 20px); }
+  .banner > span { width: auto; height: auto; }
+
+  .artworkSlot {
+    grid-area: art;
+    display: block;
+    position: relative;
+    width: calc(var(--frame-width) * 0.9993908405303955 + var(--frame-height) * 0.03489949554204941 + var(--frame-offset));
+    height: calc(var(--frame-height) * 0.9993908405303955 + var(--frame-width) * 0.03489949554204941);
+    margin-left: var(--gutter);
+    margin-top: clamp(58px, calc(11.37609vw - 105.815694px), 112.605231px);
+    /* The cutout has transparent padding beyond the tilted frame. Keep that
+       padding from enlarging the page's scrollable width. */
+    overflow: clip;
+    overflow-clip-margin: 1px;
+  }
+
+  .artFrame { left: var(--frame-offset); top: calc(var(--frame-width) * 0.03489949554204941); }
+  .artBorder { display: none; }
+  .artFrame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: var(--frame-stroke) solid var(--color-yellow);
+    pointer-events: none;
+  }
+  .illustration { left: var(--image-x); top: var(--image-y); }
+
+  .phraseBlock { grid-area: phrase; display: block; align-self: end; min-width: 0; padding-right: var(--gutter); }
+  .introduction {
+    position: static;
+    width: auto;
+    height: auto;
+    margin-bottom: var(--phrase-gap);
+    font-size: var(--copy-size);
+    font-weight: 600;
+    letter-spacing: -0.04em;
+  }
+  .phrase { position: static; width: auto; height: auto; font-size: var(--phrase-size); }
+
+  .levels {
+    grid-area: levels;
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    gap: var(--row-space);
+    margin-top: clamp(60px, 4.166667vw, 80px);
+  }
+  .level { width: 100%; height: auto; gap: var(--row-space); }
+  .divider,
+  .divider::before { width: 100%; }
+  .levelContent {
+    --level-inset: 20px;
+    --level-width: 100%;
+    --level-title-width: auto;
+    --level-copy-width: min(100%, calc(28.541667vw + 24px));
+    height: auto;
+    padding-right: var(--gutter);
+  }
+  .level:nth-child(2) .levelContent { --level-inset: calc(14.375vw - 9px); --level-copy-width: min(100%, calc(20.625vw + 221px)); }
+  .level:nth-child(3) .levelContent { --level-inset: calc(26.875vw - 12px); --level-copy-width: min(100%, calc(29.791667vw + 45px)); }
+  .level:nth-child(4) .levelContent { --level-inset: calc(38.958333vw - 8px); --level-copy-width: min(100%, calc(16.458333vw + 301px)); }
+  .levelContent > h3 { height: auto; font-size: var(--display-size); white-space: normal; }
+  .levelContent > p { height: auto; font-size: var(--copy-size); letter-spacing: -0.04em; }
+
+  .pixel {
+    --pixel-left: calc(100% - var(--pixel-size) * (3 - var(--pixel-column)));
+    --pixel-top: calc(var(--pixel-size) * var(--pixel-row));
+  }
+  .pixel[data-node-id='10:948'] { --pixel-column: 2; --pixel-row: 0; }
+  .pixel[data-node-id='10:949'] { --pixel-column: 2; --pixel-row: 4; }
+  .pixel[data-node-id='10:950'] { --pixel-column: 2; --pixel-row: 3; }
+  .pixel[data-node-id='10:951'] { --pixel-column: 2; --pixel-row: 1; }
+  .pixel[data-node-id='10:952'] { --pixel-column: 2; --pixel-row: 5; }
+  .pixel[data-node-id='10:953'] { --pixel-column: 1; --pixel-row: 0; }
+  .pixel[data-node-id='10:954'] { --pixel-column: 1; --pixel-row: 4; }
+  .pixel[data-node-id='10:955'] { --pixel-column: 0; --pixel-row: 1; }
+  .pixel[data-node-id='10:956'] { --pixel-column: 0; --pixel-row: 5; }
+}
+
+/* The phrase moves below the art and all four levels share the left inset. */
+@media (width <= 1100px) {
+  .canvas {
+    --gutter: clamp(15px, calc(1.322751vw + 9.84127px), 20px);
+    --display-size: clamp(34px, calc(6.084656vw + 16.269841px), 80px);
+    --copy-size: clamp(16px, calc(1.058201vw + 11.873016px), 20px);
+    --row-space: clamp(20px, calc(2.645503vw + 9.68254px), 30px);
+    --phrase-size: calc(15.873016vw + 28.095238px);
+    --phrase-gap: clamp(14.8px, calc(1.375661vw + 9.434921px), 20px);
+    --frame-width: min(calc(45.43964vw + 172.234804px), calc((100vw - var(--gutter) * 2 + 1px) / 1.03044));
+    --frame-offset: clamp(0px, calc(0.259383vw - 1.011px), 0.980469px);
+    --frame-stroke: clamp(6px, calc(0.529101vw + 3.936508px), 8px);
+    --image-x: min(calc(4.974643px - 1.568078vw), calc(var(--frame-width) * -1.1408624649047852 / 349.44940185546875));
+    --image-y: min(calc(33.481439px - 0.208054vw), calc(var(--frame-width) * 32.67002868652344 / 349.44940185546875));
+    --pixel-size: 49px;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'heading' 'art' 'phrase' 'levels';
+    padding-bottom: clamp(29px, calc(3.703704vw + 14.555556px), 43px);
+  }
+
+  .banner { margin-top: clamp(10px, calc(0.42328vw + 8.349206px), 12px); padding: clamp(10px, calc(1.058201vw + 5.873016px), 14px); }
+  .artworkSlot { margin-top: 50px; }
+  .phraseBlock { margin-top: 50px; margin-left: var(--gutter); }
+  .levels { margin-top: 50px; }
+  .levelContent,
+  .level:nth-child(n) .levelContent { --level-inset: var(--gutter); --level-copy-width: min(100%, 435px); }
+  .level:nth-child(2) .levelContent { --level-copy-width: min(100%, 518px); }
+  .level:nth-child(3) .levelContent { --level-copy-width: min(100%, 474px); }
+  .level:nth-child(4) .levelContent { --level-copy-width: min(100%, 538px); }
+}
+
+/* Phone source removes the corner pixels and lets copy use the full line. */
+@media (width <= 600px) {
+  .pixel { display: none; }
+  .levelContent { padding-right: 0; }
+  .canvas { padding-bottom: max(29px, env(safe-area-inset-bottom, 0px)); }
+}

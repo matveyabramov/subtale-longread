@@ -17,16 +17,26 @@ function ElephantArtwork() {
   const [[a, c, x], [b, d, y]] = elephantArtFrame.matrix;
   const [[ia, ic, ix], [ib, id, iy]] = elephantImage.matrix;
   return (
-    <div className={styles.artFrame} data-node-id="10:919" aria-hidden="true"
-      style={{ width: elephantArtFrame.width, height: elephantArtFrame.height, transform: `matrix(${a},${b},${c},${d},${x},${y})` }}>
-      {/* A 10px inside stroke without CSS border's whole-pixel paint snapping. */}
-      <svg className={styles.artBorder} width={elephantArtFrame.width} height={elephantArtFrame.height}
-        viewBox={`0 0 ${elephantArtFrame.width} ${elephantArtFrame.height}`}>
-        <rect x="5" y="5" width={elephantArtFrame.width - 10} height={elephantArtFrame.height - 10}
-          fill="none" stroke="var(--color-yellow)" strokeWidth="10" />
-      </svg>
-      <img src={imageAssets['elephant-cutout']} alt="" className={styles.illustration} data-node-id="10:920"
-        style={{ width: elephantImage.width, height: elephantImage.height, transform: `matrix(${ia},${ib},${ic},${id},${ix},${iy})` }} />
+    <div className={styles.artworkSlot} aria-hidden="true">
+      <div className={styles.artFrame} data-node-id="10:919"
+        style={{
+          width: `var(--frame-width, ${elephantArtFrame.width}px)`,
+          height: `var(--frame-height, ${elephantArtFrame.height}px)`,
+          transform: `var(--frame-transform, matrix(${a},${b},${c},${d},${x},${y}))`,
+        }}>
+        {/* A 10px inside stroke without CSS border's whole-pixel paint snapping. */}
+        <svg className={styles.artBorder} width={elephantArtFrame.width} height={elephantArtFrame.height}
+          viewBox={`0 0 ${elephantArtFrame.width} ${elephantArtFrame.height}`}>
+          <rect x="5" y="5" width={elephantArtFrame.width - 10} height={elephantArtFrame.height - 10}
+            fill="none" stroke="var(--color-yellow)" strokeWidth="10" />
+        </svg>
+        <img src={imageAssets['elephant-cutout']} alt="" className={styles.illustration} data-node-id="10:920"
+          style={{
+            width: `var(--image-width, ${elephantImage.width}px)`,
+            height: `var(--image-height, ${elephantImage.height}px)`,
+            transform: `var(--image-transform, matrix(${ia},${ib},${ic},${id},${ix},${iy}))`,
+          }} />
+      </div>
     </div>
   );
 }
@@ -38,18 +48,25 @@ export function ElephantSection() {
         <div className={styles.texture} data-node-id="10:918" aria-hidden="true"
           style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
         <ElephantArtwork />
-        <h2 id="elephant-title" tabIndex={-1} className={styles.title} data-node-id="10:944">Смысл</h2>
-        <p className={styles.banner} data-node-id="10:945"><span data-node-id="10:946">не сумма слов</span></p>
-        <p className={styles.introduction} data-node-id="10:947">Разберем одну фразу</p>
-        <p className={styles.phrase} data-node-id="10:921"><span className={styles.phraseGlyphs}>the <span className={styles.phraseAccent}>elephant</span>{'\n'}in the room</span></p>
+        <div className={styles.heading}>
+          <h2 id="elephant-title" tabIndex={-1} className={styles.title} data-node-id="10:944">Смысл</h2>
+          <p className={styles.banner} data-node-id="10:945"><span data-node-id="10:946">не сумма слов</span></p>
+        </div>
+        <div className={styles.phraseBlock}>
+          <p className={styles.introduction} data-node-id="10:947">Разберем одну фразу</p>
+          <p className={styles.phrase} data-node-id="10:921"><span className={styles.phraseGlyphs}>the <span className={styles.phraseAccent}>elephant</span>{'\n'}in the room</span></p>
+        </div>
         <div className={styles.levels} data-node-id="10:922">
           {levels.map((level) => (
             <div key={level.frame} className={styles.level} data-node-id={level.frame}>
               <div className={styles.divider} data-node-id={level.divider} aria-hidden="true" />
               <div className={styles.levelContent} data-node-id={level.content}
-                style={{ paddingLeft: level.inset, width: level.inset + level.width }}>
-                <h3 data-node-id={level.heading} style={{ width: level.titleWidth }}>{level.title}</h3>
-                <p data-node-id={level.copy} style={{ width: level.width }}>{level.text}</p>
+                style={{
+                  paddingLeft: `var(--level-inset, ${level.inset}px)`,
+                  width: `var(--level-width, ${level.inset + level.width}px)`,
+                }}>
+                <h3 data-node-id={level.heading} style={{ width: `var(--level-title-width, ${level.titleWidth}px)` }}>{level.title}</h3>
+                <p data-node-id={level.copy} style={{ width: `var(--level-copy-width, ${level.width}px)` }}>{level.text}</p>
               </div>
             </div>
           ))}
@@ -57,7 +74,12 @@ export function ElephantSection() {
         </div>
         {elephantPixels.map((pixel) => (
           <div key={pixel.id} className={styles.pixel} data-node-id={pixel.id} aria-hidden="true"
-            style={{ left: pixel.x, top: pixel.y, width: pixel.width, height: pixel.height }} />
+            style={{
+              left: `var(--pixel-left, ${pixel.x}px)`,
+              top: `var(--pixel-top, ${pixel.y}px)`,
+              width: `var(--pixel-size, ${pixel.width}px)`,
+              height: `var(--pixel-size, ${pixel.height}px)`,
+            }} />
         ))}
       </div>
     </section>
