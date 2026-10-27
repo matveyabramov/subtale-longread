@@ -17,7 +17,7 @@ export function VocabSection() {
         <div className={styles.sectionHeading}>
           <h2 id="vocab-title" tabIndex={-1} className={styles.text} data-node-id="10:973"><span>{copy['10:973']}</span></h2>
           <div className={styles.banner} data-node-id="10:974">
-            <p className={styles.text} data-node-id="10:975"><span>{copy['10:975']}</span></p>
+            <p className={styles.text} data-node-id="10:975"><span className={styles.regularBanner}>{copy['10:975']}</span><span className={styles.mobileBanner}>{copy['10:975'].replace('равно не', 'равно\nне')}</span></p>
           </div>
         </div>
         <p className={styles.text} data-node-id="10:972"><span>{copy['10:972']}</span></p>
