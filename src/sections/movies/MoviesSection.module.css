@@ -249,31 +249,180 @@
   filter: brightness(0) invert(1);
 }
 
-/* Only the section heading adapts here; the remaining composition is unchanged. */
 .sectionHeading { display: contents; }
-@media (width <= 600px) {
+.mobileQuote { display: none; }
+
+/* 1440 keeps the metadata and quote in two columns, within an inset film strip. */
+@media (width < 1920px) {
+  .section { overflow-x: clip; }
+  .canvas {
+    --gutter: clamp(20px, calc(2.083333vw - 10px), 30px);
+    --heading-size: clamp(63px, calc(4.166667vw + 20px), 100px);
+    --quote-size: clamp(80px, calc(4.166667vw + 40px), 120px);
+    --tag-size: clamp(16px, calc(0.416667vw + 12px), 20px);
+    --film-size: clamp(14px, calc(0.416667vw + 10px), 18px);
+    --reply-size: clamp(20px, calc(0.625vw + 13px), 25px);
+    --metadata-width: clamp(280px, calc(7.291667vw + 210px), 350px);
+    --content-gap: clamp(100px, calc(177px - 2.708333vw), 138px);
+    --case-inset: clamp(0px, calc(80px - 4.166667vw), 20px);
+    --film-gap: clamp(50px, calc(4.166667vw - 10px), 70px);
+    --perforation-size: 50px;
+    --row-space: 40px;
+    --arrow-size: 67px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-block: var(--gutter);
+  }
+  .texture { opacity: 0.2; z-index: -1; }
+  .perforation {
+    position: relative;
+    left: auto;
+    width: calc(100% - var(--gutter) * 2);
+    height: var(--perforation-size);
+    margin-inline: var(--gutter);
+  }
+  .perforation[data-edge] { top: auto; bottom: auto; }
+  .perforation[data-edge='top'] { order: 0; }
+  .perforation > span { width: var(--perforation-size); height: var(--perforation-size); }
+  .perforation > span:nth-child(n + 19) { display: none; }
+  .perforation[data-edge='bottom'] { order: 3; margin-top: var(--film-gap); }
+
   .sectionHeading {
+    order: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
-    position: absolute;
-    left: 15px;
-    top: 150px;
-    width: calc(100vw - 30px);
+    gap: clamp(12px, calc(0.625vw + 3px), 15px);
+    margin: var(--film-gap) var(--gutter) 0;
   }
-  .sectionHeading > h2,
-  .sectionHeading > .banner,
-  .sectionHeading > .banner > p {
+  .title, .banner {
     position: relative;
     inset: auto;
-    width: auto;
+    width: max-content;
     max-width: 100%;
     height: auto;
-    margin: 0;
-    font: 800 45px/0.8 var(--font-display);
+    font-size: var(--heading-size);
     white-space: normal;
   }
-  .sectionHeading > .banner { padding: 10px; }
-  .sectionHeading > .banner > span { width: auto; height: auto; }
+  .banner { padding: clamp(16px, calc(0.833333vw + 4px), 20px); }
+  .banner > span { width: auto; height: auto; }
+  .cases {
+    order: 2;
+    position: relative;
+    inset: auto;
+    width: calc(100% - var(--case-inset) * 2);
+    height: auto;
+    gap: var(--row-space);
+    margin: clamp(50px, calc(2.083333vw + 20px), 60px) var(--case-inset) 0;
+  }
+  .scene {
+    --scene-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--row-space);
+    width: 100%;
+  }
+  .divider, .divider::after { width: 100%; }
+  .sceneBody {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    gap: 30px;
+    padding-inline: var(--gutter);
+  }
+  .sceneContent {
+    --scene-content-width: 100%;
+    display: grid;
+    grid-template-columns: var(--metadata-width) minmax(0, 1fr);
+    gap: var(--content-gap);
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .metadata {
+    --meta-height: auto;
+    width: 100%;
+    min-width: 0;
+  }
+  .tags { width: 100%; height: auto; flex-wrap: wrap; }
+  .tag {
+    --tag-width: auto;
+    max-width: 100%;
+    height: auto;
+    font-size: var(--tag-size);
+    letter-spacing: -0.04em;
+    white-space: normal;
+  }
+  .tag > span { --tag-copy-width: auto; height: auto; }
+  .film {
+    --film-width: 100%;
+    --film-height: auto;
+    font-size: var(--film-size);
+    letter-spacing: -0.04em;
+    white-space: pre-line;
+  }
+  .quoteGroup { min-width: 0; }
+  .quote {
+    --quote-width: 100%;
+    --quote-height: auto;
+    min-width: 0;
+    font-size: var(--quote-size);
+    white-space: pre-line;
+  }
+  .reply {
+    --reply-width: 100%;
+    --reply-height: auto;
+    font-size: var(--reply-size);
+    letter-spacing: -0.04em;
+    white-space: normal;
+  }
+  .arrowFrame { width: var(--arrow-size); height: var(--arrow-size); }
+}
+
+/* Tablet stacks the quote below the metadata, with the arrow in the top right. */
+@media (width <= 1100px) {
+  .canvas {
+    --gutter: clamp(15px, calc(1.322751vw + 9.84127px), 20px);
+    --heading-size: clamp(45px, calc(4.761905vw + 26.428571px), 63px);
+    --quote-size: clamp(60px, calc(5.291005vw + 39.365079px), 80px);
+    --tag-size: 16px;
+    --film-size: 14px;
+    --reply-size: clamp(16px, calc(1.058201vw + 11.873016px), 20px);
+    --case-inset: 0px;
+    --film-gap: clamp(40px, calc(5.291005vw + 19.365079px), 60px);
+    --perforation-size: clamp(35px, calc(3.968254vw + 19.52381px), 50px);
+    --row-space: clamp(30px, calc(2.645503vw + 19.68254px), 40px);
+    --arrow-size: 60px;
+  }
+  .perforation > span:nth-child(n + 11) { display: none; }
+  .perforation[data-edge='bottom'] { margin-top: clamp(40px, calc(2.645503vw + 29.68254px), 50px); }
+  .sectionHeading { gap: 12px; }
+  .banner { padding: clamp(10px, calc(1.058201vw + 5.873016px), 14px); }
+  .cases { margin-top: 50px; }
+  .sceneBody {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) var(--arrow-size);
+    gap: 20px;
+    align-items: start;
+  }
+  .sceneContent { display: contents; }
+  .metadata { grid-column: 1; grid-row: 1; max-width: 315px; gap: 12px; }
+  .quoteGroup, .sceneContent > .quote { grid-column: 1 / -1; grid-row: 2; }
+  .quoteGroup { gap: 20px; }
+  .arrowFrame { grid-column: 2; grid-row: 1; }
+  .arrowVector {
+    left: calc(var(--arrow-size) * 22 / 67 - 1px);
+    top: calc(var(--arrow-size) * 45 / 67 - 1px);
+    transform: scaleY(-1) scale(0.8955223881);
+  }
+}
+
+@media (width <= 600px) {
+  .canvas { padding-bottom: max(var(--gutter), env(safe-area-inset-bottom, 0px)); }
+  .perforation > span:nth-child(n + 8) { display: none; }
+  .sectionHeading { gap: 8px; }
+  .title, .banner { font-size: 45px; }
+  .standardQuote { display: none; }
+  .mobileQuote { display: inline; }
 }
