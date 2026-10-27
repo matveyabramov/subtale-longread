@@ -55,24 +55,66 @@
 /* Retain the fractional nested brand translation without accumulated layout snapping. */
 .brandName { left: 0; top: 0; transform: translate(56.29256057739258px, 15.609073638916016px); }
 
+.ending, .collageSlot, .collageBoard, .brandSlot, .schoolLogo { display: contents; }
+
+@media (width < 1920px) {
+  .section { overflow-x: clip; }
+  .canvas {
+    --gutter: clamp(20px, calc(2.083333vw - 10px), 30px);
+    --heading-size: clamp(63px, calc(8.333333vw - 40px), 120px);
+    --collage-width: min(calc(16.875vw + 447px), calc(50vw - var(--gutter)));
+    --brand-width: 160px;
+    --school-width: clamp(170px, calc(6.458333vw + 77px), 201px);
+    --credit-name-size: clamp(30px, calc(2.083333vw + 10px), 50px);
+    width: 100%; height: auto;
+  }
+  .texture { inset: 0; width: 100%; height: 100%; z-index: -1; mix-blend-mode: normal; opacity: 0.4; background: var(--responsive-mosaic) 0 0 / 354.99999px 287.9345px repeat; }
+  .texture > img { display: none; }
+  .ending { display: block; position: relative; min-height: 56.25vw; }
+  .ending > .text[data-node-id='10:1018'] { left: var(--gutter); top: var(--gutter); width: calc(50% - var(--gutter) * 2); height: auto; font-size: var(--heading-size); }
+  .banner { left: var(--gutter); top: auto; bottom: var(--gutter); width: calc(66.25vw - 440px); max-width: calc(100% - var(--gutter) * 2); height: auto; padding: clamp(16px, calc(0.833333vw + 4px), 20px); }
+  .banner > .text[data-node-id='10:1148'] { position: relative; inset: auto; width: 100%; height: auto; font-size: var(--heading-size); }
+  .collageSlot { display: block; position: absolute; right: clamp(20px, calc(4.791667vw - 49px), 43px); top: calc(20.625vw - 203px); width: var(--collage-width); height: calc(var(--collage-width) * 694 / 771); }
+  .collageBoard { display: block; position: relative; width: 771px; height: 694px; transform: scale(tan(atan2(var(--collage-width), 771px))); transform-origin: 0 0; }
+  .collage { left: 0; top: 0; }
+  /* Overlap paint at fractional pixel edges without moving the source boxes. */
+  .pixel::before { content: ''; position: absolute; inset: -0.5px; background: inherit; }
+  .collageBoard > .imageLayer[data-node-id='10:1146'] { --image-transform: matrix(1, 0, 0, 1, 223, 375); }
+  .information { display: grid; grid-template-areas: 'brand school' 'credits credits'; grid-template-columns: minmax(0, 1fr) auto; row-gap: clamp(30px, calc(1.736111vw + 5px), 38.333px); position: relative; inset: auto; width: 100%; height: auto; padding: 40px 40px clamp(40px, calc(92px - 2.708333vw), 53px); }
+  .brandSlot { display: block; grid-area: brand; position: relative; width: var(--brand-width); height: calc(var(--brand-width) * 67 / 160); }
+  .brand { left: 0; top: 0; transform: scale(tan(atan2(var(--brand-width), 160px))); transform-origin: 0 0; }
+  .schoolLogo { display: block; grid-area: school; position: relative; width: var(--school-width); height: calc(var(--school-width) * 80 / 201); }
+  .schoolLogo > .imageLayer { --image-transform: scale(tan(atan2(var(--school-width), 201px))); }
+  .credits { grid-area: credits; position: relative; inset: auto; display: flex; flex-wrap: wrap; gap: 60px; width: 100%; height: auto; }
+  .credit { --credit-left: auto; --credit-width: auto; position: relative; inset: auto; height: auto; display: flex; flex-direction: column; gap: 5px; }
+  .credit > .text { position: relative; inset: auto; width: auto; height: auto; }
+  .credit > .text:nth-child(2) { font-size: var(--credit-name-size); }
+}
+
+@media (width <= 1100px) {
+  .canvas {
+    --gutter: clamp(15px, calc(1.322751vw + 9.84127px), 20px);
+    --heading-size: clamp(45px, calc(4.761905vw + 26.428571px), 63px);
+    --collage-width: min(100vw, calc(42.601502vw + 223.854762px));
+    --brand-width: 140px;
+    --school-width: 120px;
+    --credit-name-size: 30px;
+  }
+  .ending { display: flex; flex-direction: column; min-height: clamp(844px, calc(47.619048vw + 658.285714px), 1024px); padding-block: var(--gutter); }
+  .ending > .text[data-node-id='10:1018'] { position: relative; inset: auto; width: calc(100% - var(--gutter) * 2); margin-inline: var(--gutter); }
+  .collageSlot { position: relative; inset: auto; flex: none; align-self: center; margin-top: clamp(93px, calc(231.714286px - 18.518519vw), 159px); }
+  .banner { position: relative; inset: auto; flex: none; align-self: flex-end; width: max-content; max-width: calc(100% - var(--gutter) * 2); margin: auto var(--gutter) 0; padding: clamp(10px, calc(1.058201vw + 5.873016px), 14px); }
+  .banner > .text[data-node-id='10:1148'] { width: calc(27.777778vw + 165.666667px); max-width: 100%; }
+  .information { row-gap: 20px; padding: var(--gutter); margin-top: 12px; }
+  .credit > .text:first-child { font-size: 18px; letter-spacing: -0.04em; }
+}
+
 @media (width <= 600px) {
-  .text[data-node-id='10:1018'],
-  .text[data-node-id='10:1148'] {
-    width: calc(100vw - 30px);
-    height: auto;
-    font: 800 45px/0.8 var(--font-display);
-  }
-  .text[data-node-id='10:1018'] { left: 15px; }
-  .banner {
-    top: 816px;
-    left: 15px;
-    width: calc(100vw - 30px);
-    height: auto;
-    padding: 10px;
-  }
-  .banner > .text[data-node-id='10:1148'] {
-    position: relative;
-    inset: auto;
-    width: 100%;
-  }
+  .canvas { --heading-size: 45px; }
+  .ending { min-height: 844px; }
+  .collageSlot { margin-top: 123px; }
+  .banner { margin-top: 146px; }
+  .banner > .text[data-node-id='10:1148'] { width: 271px; }
+  .information { row-gap: 35px; margin-top: 0; padding-bottom: max(var(--gutter), env(safe-area-inset-bottom, 0px)); }
+  .credits { flex-direction: column; gap: 20px; }
 }

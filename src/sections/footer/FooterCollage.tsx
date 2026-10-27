@@ -17,7 +17,7 @@ export function FooterImage({ id }: { id: ImageLayer['id'] }) {
   const crop = layer.crop;
   return (
     <div className={styles.imageLayer} data-node-id={id} data-filtered={id === '10:1145'} style={{
-      width: layer.width, height: layer.height, transform: `matrix(${a},${b},${c},${d},${tx},${ty})`,
+      width: layer.width, height: layer.height, transform: `var(--image-transform, matrix(${a},${b},${c},${d},${tx},${id === '10:1162' ? ty - 1080 : ty}))`,
     }}>
       <img src={imageAssets[layer.asset]} alt={id === '10:1162' ? 'HSE ART AND DESIGN SCHOOL' : ''} style={crop ? {
         width: layer.width / crop[0][0], height: layer.height / crop[1][1],
