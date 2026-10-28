@@ -2,6 +2,7 @@ import { useState, type MouseEvent } from 'react';
 import { createPortal } from 'react-dom';
 import { imageAssets, vectorAssets } from '../../assets/generated';
 import type { ReadingHref } from '../../shared/navigation';
+import { scrollToReadingTarget } from '../../shared/readingViewport';
 import { experimentSteps, type ExperimentOutcome } from './model';
 import { useExperimentHelp } from './useExperimentHelp';
 import { useExperimentNavigation } from './useExperimentNavigation';
@@ -33,7 +34,7 @@ function BackLink({ href, nodeId }: { href: ReadingHref; nodeId: string }) {
       <span className={styles.backArrow} aria-hidden="true">
         <span>
           <picture>
-            <source media="(width <= 600px)" srcSet={vectorAssets['experiment-back-arrow-mobile']} />
+            <source media="(max-width: 600px)" srcSet={vectorAssets['experiment-back-arrow-mobile']} />
             <img src={vectorAssets['experiment-back-arrow']} alt="" />
           </picture>
         </span>
@@ -172,7 +173,7 @@ export function ExperimentSection() {
     if (id === 'experiment-result') setOutcome('attempted');
     else if (id === 'emptiness' && !anchor.closest('#experiment-result')) setOutcome('skipped');
     if (location.hash !== anchor.hash) history.pushState(null, '', anchor.hash);
-    target.scrollIntoView({ behavior: 'instant', block: 'start' });
+    scrollToReadingTarget(target);
     const heading = target.getAttribute('aria-labelledby');
     (heading ? document.getElementById(heading) : target)?.focus({ preventScroll: true });
   };

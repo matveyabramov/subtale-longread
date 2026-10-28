@@ -2,6 +2,7 @@ import { useEffect, useRef, type RefObject } from 'react';
 import { createPortal } from 'react-dom';
 import { imageAssets, vectorAssets } from '../../assets/generated';
 import { sectionIds } from '../../shared/navigation';
+import { scrollToReadingTarget } from '../../shared/readingViewport';
 import { useCurrentSection } from './useCurrentSection';
 import control from './HeaderControl.module.css';
 import styles from './Contents.module.css';
@@ -82,7 +83,7 @@ export function Contents({ open, onClose, triggerRef }: Props) {
                   onClose();
                   const section = document.getElementById(id);
                   if (window.location.hash !== `#${id}`) window.history.pushState(null, '', `#${id}`);
-                  section?.scrollIntoView({ behavior: 'instant', block: 'start' });
+                  if (section) scrollToReadingTarget(section);
                   const headingId = section?.getAttribute('aria-labelledby');
                   if (headingId) document.getElementById(headingId)?.focus({ preventScroll: true });
                 }}>

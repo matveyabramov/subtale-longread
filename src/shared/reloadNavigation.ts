@@ -1,4 +1,5 @@
 import { experimentAnchorIds, sectionIds } from './navigation';
+import { scrollToReadingTarget } from './readingViewport';
 
 const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined;
 export const isPageReload = navigation?.type === 'reload';
@@ -9,7 +10,7 @@ export function positionInitialReadingAnchor() {
   if (![...sectionIds, ...experimentAnchorIds].some((anchor) => anchor === id)) return;
   const target = document.getElementById(id);
   if (!target) return;
-  target.scrollIntoView({ behavior: 'instant', block: 'start' });
+  scrollToReadingTarget(target);
   const url = location.href;
   let cancelled = false;
   let frame = 0;
@@ -22,7 +23,7 @@ export function positionInitialReadingAnchor() {
   document.fonts.ready.then(() => {
     if (cancelled) return;
     frame = requestAnimationFrame(() => {
-      if (!cancelled && location.href === url) target.scrollIntoView({ behavior: 'instant', block: 'start' });
+      if (!cancelled && location.href === url) scrollToReadingTarget(target);
       cleanup();
     });
   });

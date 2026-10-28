@@ -1,4 +1,4 @@
-# Stage 3.3 — Experiment Navigation Fix
+# Stage 3.3 — Experiment Layout & Viewport Fix
 
 Status: **Awaiting Review**, 2026-10-28. Explorer work has not started.
 
@@ -24,3 +24,11 @@ The single fixed contents button is hidden and inert throughout all Experiment s
 Navigation Fix checks: Chrome and WebKit at 390×844, 768×1024, 1440×810 and 1920×1080; Back rectangles/fonts compared with Figma, all forward/back routes, three repeated Emptiness→Result→Emptiness cycles per width, hidden/inert contents including help, Escape/outside dismissal and focus return passed. Additional 390×664/568/320 checks retain reachable controls/local overflow. Native Chrome touch covered repeated return cycles and a fast fling starting 450px into Emptiness; residual momentum is held at Result rather than reaching Target. Resizing the active Result from 844px to 664px keeps it aligned and one viewport tall.
 
 Fresh direct links through Footer, real reload at a nested path with encoded query/hash, reset Hero gate/outcome, and subsequent ordinary hash/Back/Forward passed in both engines. Initial anchor positioning settles once after local fonts, cancels on reader input and never runs for back/forward navigation. No runtime errors; `npm run build` passed. WebKit is an emulation check, not a physical iPhone Safari test.
+
+## Layout & Viewport Fix — 2026-10-28
+
+Figma session `c852f2e0-8880-4a08-b43f-6f10b7acf6e5`: current design context and screenshots read for all 12 frames (1920 `10:718/730/760`, 1440 `69:2167/2464/2493`, 768 `73:7375/7634/7663`, 390 `79:12569/12855/12816`). Mobile Back is a normal first grid row, 360×70 at (15,15); the lower groups keep 20px/30px gaps. No negative margins or transformed Back positioning. Existing local texture/arrows and static stimuli are retained.
+
+Experiment media/picture queries use compatible min/max syntax. Frames retain dvh/vh fallback; measured mobile visual viewport height also drives compact/low-height layout. Visible viewport resize/offset events realign only the active Experiment frame, with no added document lock. One shared reading-target helper handles explicit links, direct anchors, history and boundary alignment; WebKit's fractional scroll destination is rounded towards the new frame to exclude preceding content. Geometry is set before paint while input listeners retain their original order after Hero gate listeners.
+
+Checks: Figma Back/CTA positions and single-screen height at 390×844, 768×1024, 1440×810 and 1920×1080; standalone link fonts match Contents at 18px/20px, mobile remains 16px. Chrome and WebKit checks cover modeled visible heights 844/724/664/568/320px and offsets, safe-area variables, forward/back/history, help/Escape/focus, local short-screen overflow and Hero's first fast gesture/return route. Chrome additionally checks native touch momentum and repeated Emptiness→Result cycles. Build passed without runtime errors. Actual Safari toolbar motion on iPhone hardware remains untested; WebKit viewport changes and measured visualViewport variations were emulated. Explorer functionality was not extended.

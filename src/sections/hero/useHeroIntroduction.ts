@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState, type MouseEvent } from 'react';
 import type { ReadingAnchorId } from '../../shared/navigation';
 import { isPageReload } from '../../shared/reloadNavigation';
+import { scrollToReadingTarget } from '../../shared/readingViewport';
 
 type IntroState = 'unseen' | 'open' | 'resolved';
 
@@ -136,7 +137,7 @@ export function useHeroIntroduction(contentsOpen: boolean) {
     finish();
     if (location.hash !== `#${id}`) history.pushState(null, '', `#${id}`);
     const target = document.getElementById(id);
-    target?.scrollIntoView({ behavior: 'instant', block: 'start' });
+    if (target) scrollToReadingTarget(target);
     const heading = target?.getAttribute('aria-labelledby');
     if (heading) document.getElementById(heading)?.focus({ preventScroll: true });
   };

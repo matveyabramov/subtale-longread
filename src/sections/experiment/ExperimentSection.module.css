@@ -1,6 +1,6 @@
 .experiment { background: var(--color-ink); }
 .screen {
-  --viewport: 100vh;
+  --viewport: var(--experiment-viewport-height, 100vh);
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --gutter: clamp(20px, calc(2.083333vw - 10px), 30px);
@@ -23,7 +23,7 @@
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
-@supports (height: 100dvh) { .screen { --viewport: 100dvh; } }
+@supports (height: 100dvh) { .screen { --viewport: var(--experiment-viewport-height, 100dvh); } }
 .texture { position: absolute; inset: 0; z-index: -1; opacity: 0.2; background: repeat 0 0 / 355px 288px; pointer-events: none; }
 .resultTexture { opacity: 0.3; }
 .instructionBody { display: flex; flex-direction: column; align-items: flex-start; padding-top: clamp(24px, calc(var(--viewport) * 0.42962963 - 134px), 330px); padding-bottom: clamp(16px, calc(var(--viewport) * 0.25 - 200px), 70px); }
@@ -58,7 +58,7 @@
 .dotExplanation { margin-top: 30px; }
 .resultNote { width: clamp(473px, calc(633px - 8.333333vw), 513px); margin-top: clamp(35px, calc(1.041667vw + 20px), 40px); margin-left: calc(12.5% + 18px); }
 .screen :is(a, button):focus-visible { outline-color: #fff; outline-offset: 4px; }
-@media (width >= 1920px) {
+@media (min-width: 1920px) {
   .instructionTitle, .instructionBanner { margin-left: 266px; }
   .scrollInstruction { margin-left: 739px; }
   .distanceInstruction { margin-left: 1214px; margin-top: -3px; }
@@ -67,8 +67,8 @@
   .resultStimulus { left: 1206px; }
   .dotExplanation { margin-left: 3.5px; }
 }
-@media (width < 1920px) { .resultTexture { opacity: 0.2; } .instructionBody .copy, .resultNote, .bottomLink { font-weight: 600; } }
-@media (width <= 1100px) {
+@media (max-width: 1919.98px) { .resultTexture { opacity: 0.2; } .instructionBody .copy, .resultNote, .bottomLink { font-weight: 600; } }
+@media (max-width: 1100px) {
   .screen { --gutter: 20px; --display-size: clamp(52px, 8.203125vw, 80px); --marker-size: 60px; --banner-padding: 14px; }
   .instructionBody { padding-top: clamp(60px, calc(var(--viewport) * 0.5 - 217px), 295px); }
   .instructionTitle, .instructionBanner { margin-left: var(--gutter); }
@@ -88,7 +88,7 @@
   .dotExplanation { margin-top: 20px; font-weight: 600; }
   .resultNote { width: min(386px, calc(75% - 35px)); margin-top: 30px; margin-left: calc(25% + 15px); }
 }
-@media (height <= 700px) and (width > 600px) {
+@media (max-height: 700px) and (min-width: 600.01px) {
   .screen { --display-size: min(64px, clamp(52px, 8.203125vw, 80px)); }
   .instructionCopy { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px var(--gutter) 0; }
   .instructionCopy .copy { width: auto; max-width: none; margin: 0; font-size: 20px; }
@@ -97,43 +97,36 @@
   .resultSecondLine, .resultBanner { margin-left: calc(12.5% + 18px); }
   .resultNote { font-size: 20px; }
 }
-@media (width <= 600px) {
-  .screen { --gutter: max(15px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px)); --footer-inset: max(15px, var(--safe-bottom)); --display-size: 40px; --marker-size: 40px; --banner-padding: 10px; }
-  .instructionBody { padding-top: clamp(109px, calc(var(--viewport) * 0.5 - 287px), 135px); padding-bottom: clamp(12px, calc(var(--viewport) * 0.25 - 151px), 60px); }
-  .instructionTitle { max-width: calc(100% - var(--gutter) * 2); }
-  .instructionBanner { margin-top: 10px; margin-left: 14.615385%; width: min(314px, calc(85.384615% - var(--gutter))); max-width: none; }
+@media (max-width: 600px) {
+  .screen { --gutter: max(15px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px)); --footer-inset: max(15px, var(--safe-bottom)); --header-inset: max(15px, var(--safe-top)); --header-bottom: calc(var(--header-inset) + 70px); --display-size: 40px; --marker-size: 40px; --banner-padding: 10px; display: grid; grid-template-rows: 70px minmax(min-content, 1fr) auto; padding: var(--header-inset) var(--gutter) var(--footer-inset); }
+  .instructionBody { grid-row: 2; min-width: 0; padding-top: clamp(24px, calc(var(--viewport) * 0.5 - 372px), 50px); padding-bottom: 24px; }
+  .instructionTitle { margin-left: 0; max-width: 100%; }
+  .instructionBanner { margin-top: 10px; margin-left: 11.666667%; width: min(314px, 88.333333%); max-width: none; }
   .copy { font-size: 16px; }
-  .scrollInstruction { margin-top: clamp(16px, calc((var(--viewport) - 600px) * 0.205), 50px); margin-left: var(--gutter); width: calc(100% - var(--gutter) * 2); }
-  .distanceInstruction { margin-top: 20px; margin-left: var(--gutter); width: calc(100% - var(--gutter) * 2); }
+  .scrollInstruction { margin-top: clamp(16px, calc((var(--viewport) - 600px) * 0.205), 50px); margin-left: 0; width: 100%; }
+  .distanceInstruction { margin-top: 20px; margin-left: 0; width: 100%; }
   .desktopCopyPrefix { display: none; }
   .mobileCopyPrefix { display: inline; }
-  .screenFooter { flex-direction: column; align-items: stretch; }
+  .screenFooter { grid-row: 3; flex-direction: column; align-items: stretch; margin: 0; padding: 0; }
   .nextLink { width: 100%; height: 70px; gap: 12px; }
   .nextLabel { font-size: 25px; }
   .arrowBox img { transform: scale(0.862069); transform-origin: center; }
   .bottomLink { align-self: flex-start; min-height: 18px; font-size: 16px; font-weight: 500; line-height: 1.1; letter-spacing: -0.03em; }
-  .targetStage { --separation: min(238px, calc(var(--stage-viewport) * 0.5 - 90px)); min-height: max(180px, calc(var(--stage-viewport) * 0.5 + var(--separation) / 2 + 40px)); }
-  .cross { left: calc(50% - 20px); top: calc(var(--stage-viewport) * 0.5 - var(--separation) / 2 - 20px); transform: rotate(90deg); }
-  .targetDot { left: calc(50% - 20px); top: calc(var(--stage-viewport) * 0.5 + var(--separation) / 2 - 20px); }
-  .resultScreen { display: grid; grid-template-rows: auto auto minmax(160px, 1fr) auto; padding: calc(clamp(109px, calc(var(--viewport) * 0.5 - 287px), 135px) + var(--safe-top)) var(--gutter) var(--footer-inset); }
-  .resultBody { display: contents; }
-  .resultScreen .screenFooter { display: contents; }
-  .resultHeading { grid-row: 1; padding: 0; }
+  .targetStage { grid-row: 2; --separation: min(238px, calc(var(--stage-viewport) * 0.5 - 90px)); min-height: max(180px, calc(var(--stage-viewport) * 0.5 + var(--separation) / 2 + 40px - var(--header-bottom))); }
+  .cross { left: calc(50% - 20px); top: max(16px, calc(var(--stage-viewport) * 0.5 - var(--separation) / 2 - 20px - var(--header-bottom))); transform: rotate(90deg); }
+  .targetDot { left: calc(50% - 20px); top: max(96px, calc(var(--stage-viewport) * 0.5 + var(--separation) / 2 - 20px - var(--header-bottom))); }
+  .resultBody { grid-row: 2; display: flex; flex-direction: column; min-height: 0; padding-top: clamp(24px, calc(var(--viewport) * 0.5 - 372px), 50px); padding-bottom: 24px; }
+  .resultHeading { padding: 0; }
   .resultTitle { margin-left: 0; }
   .resultSecondLine, .resultBanner { margin-left: calc(25% + 4px); margin-top: 10px; }
   .resultBanner { max-width: calc(75% - 4px); }
-  .resultNote { grid-row: 2; width: calc(75% - 4px); margin-top: 30px; margin-left: calc(25% + 4px); }
-  .resultStimulus { grid-row: auto; position: absolute; left: calc(50% - 20px); top: calc(var(--viewport) * 0.5 + 99px); width: calc(50% - 9px); margin: 0; }
+  .resultNote { width: calc(75% - 4px); margin-top: 30px; margin-left: calc(25% + 4px); }
+  .resultStimulus { position: absolute; left: calc(50% - 20px); top: calc(var(--viewport) * 0.5 + 99px - var(--header-bottom)); width: calc(50% + 6px); margin: 0; }
   .dotExplanation { margin-top: 10px; }
-  .resultScreen .nextLink { grid-row: 4; }
 }
-@media (width <= 600px) and (height <= 700px) {
-  .screen { --display-size: 40px; }
-  .nextLink { height: 60px; }
-  .screenFooter { gap: 12px; }
-  .resultScreen { grid-template-rows: auto auto minmax(110px, 1fr) auto; }
-  .resultNote { width: 100%; margin-left: 0; margin-top: 12px; }
-
+@media (max-width: 600px) {
+  .experiment:is([data-viewport-size='compact'], [data-viewport-size='low']) .nextLink { height: 60px; }
+  .experiment:is([data-viewport-size='compact'], [data-viewport-size='low']) .resultNote { width: 100%; margin-left: 0; margin-top: 12px; }
 }
 
 /* Current Figma back controls: 153:6/23/52/73, reused for all three steps. */
@@ -145,18 +138,18 @@
 .forwardActions { display: flex; flex-direction: column; align-items: flex-start; gap: 30px; width: clamp(300px, calc(22.291667vw + 14px), 442px); }
 .forwardActions .nextLink { width: 100%; }
 .forwardActions .bottomLink { height: 28px; min-height: 0; }
-@media (600px < width < 1920px) {
+@media (min-width: 600.01px) and (max-width: 1919.98px) {
   .backLink { width: 158px; height: 80px; padding-left: 25px; }
   .backLabel { width: 53px; font-size: 30px; }
   .forwardActions { gap: 25px; }
   .forwardActions .bottomLink { height: 24px; }
 }
-@media (600px < width <= 1100px) {
+@media (min-width: 600.01px) and (max-width: 1100px) {
   .backLabel { width: 50px; font-size: 28px; }
   .forwardActions { width: calc(50% - 10px); }
 }
-@media (width <= 600px) {
-  .backLink { top: calc(15px + var(--safe-top)); bottom: auto; width: calc(100% - var(--gutter) * 2); height: 70px; padding-left: 25px; }
+@media (max-width: 600px) {
+  .backLink { grid-row: 1; position: relative; inset: auto; width: 100%; height: 70px; padding-left: 25px; }
   .backArrow { width: 22.627417px; height: 22.627417px; }
   .backArrow > span { width: 16px; height: 16px; }
   .backLabel { width: 44px; font-size: 25px; }
@@ -164,6 +157,10 @@
   .targetScreen .forwardActions { gap: 30px; }
   .forwardActions .bottomLink { height: 18px; }
 }
-@media (width <= 600px) and (height <= 550px) {
-  .resultStimulus { grid-row: 3; position: static; align-self: center; margin: 8px 0 8px calc(50% - 20px); }
+@media (max-width: 600px) {
+  .experiment[data-viewport-size='low'] .resultStimulus { position: static; margin: 8px 0 8px calc(50% - 20px); }
+}
+
+@media (min-width: 600.01px) {
+  .bottomLink { font-size: var(--font-size-link-control); }
 }

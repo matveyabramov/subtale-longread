@@ -418,3 +418,7 @@
 
 /* This blue tail belongs to Explorer, before Movies' black film surface starts. */
 .section { padding-bottom: max(0px, calc(var(--reading-gap, 135px) - var(--reading-inset, 30px))); }
+
+@media (min-width: 600.01px) {
+  .question { font-size: var(--font-size-link-control); }
+}

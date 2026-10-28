@@ -1,12 +1,43 @@
-import { useEffect } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
+import { readingViewportTop, scrollToReadingTarget } from '../../shared/readingViewport';
 import { experimentSteps } from './model';
+
+function updateViewportHeight(experiment: HTMLElement | null) {
+  const viewport = window.visualViewport;
+  if (!experiment || (viewport && Math.abs(viewport.scale - 1) >= 0.01)) return;
+  if (window.matchMedia('(max-width: 600px)').matches) {
+    const height = viewport?.height ?? window.innerHeight;
+    experiment.style.setProperty('--experiment-viewport-height', `${height}px`);
+    experiment.dataset.viewportSize = height <= 550 ? 'low' : height <= 700 ? 'compact' : 'regular';
+  } else {
+    experiment.style.removeProperty('--experiment-viewport-height');
+    delete experiment.dataset.viewportSize;
+  }
+}
 
 /** Keep document anchors/history native; constrain only user scroll gestures. */
 export function useExperimentNavigation() {
+  useLayoutEffect(() => {
+    const experiment = document.getElementById('experiment');
+    const previousHeight = experiment?.style.getPropertyValue('--experiment-viewport-height') ?? '';
+    const previousSize = experiment?.dataset.viewportSize;
+    updateViewportHeight(experiment);
+    return () => {
+      if (!experiment) return;
+      if (previousHeight) experiment.style.setProperty('--experiment-viewport-height', previousHeight);
+      else experiment.style.removeProperty('--experiment-viewport-height');
+      if (previousSize === undefined) delete experiment.dataset.viewportSize;
+      else experiment.dataset.viewportSize = previousSize;
+    };
+  }, []);
+
+  // Keep input listeners after Hero's gate listeners; a first large gesture
+  // must open the introduction before Experiment considers its boundary.
   useEffect(() => {
     const screens = experimentSteps.map(({ anchor }) => document.getElementById(anchor))
       .filter((screen): screen is HTMLElement => screen !== null);
     const experiment = document.getElementById('experiment');
+    const viewport = window.visualViewport;
     const previousInert = screens.map((screen) => screen.inert);
     const contentsTrigger = document.querySelector<HTMLButtonElement>('[aria-controls="contents-panel"]');
     const previousContentsInert = contentsTrigger?.inert ?? false;
@@ -31,14 +62,16 @@ export function useExperimentNavigation() {
     };
     const atReadingPosition = () => screens.find((screen) => {
       const bounds = screen.getBoundingClientRect();
-      return bounds.top <= 0.5 && bounds.bottom > 0.5;
+      const top = readingViewportTop();
+      return bounds.top <= top + 0.5 && bounds.bottom > top + 0.5;
     }) ?? null;
     const sync = () => {
       frame = 0;
       if (gestureBoundary) {
         const { screen, from } = gestureBoundary;
         const bounds = screen.getBoundingClientRect();
-        if (from === null || (from === 'above' ? bounds.top <= 0.5 : bounds.bottom > 0.5)) {
+        const top = readingViewportTop();
+        if (from === null || (from === 'above' ? bounds.top <= top + 0.5 : bounds.bottom > top + 0.5)) {
           if (from !== null) {
             screen.scrollTop = 0;
             if (location.hash !== `#${screen.id}`) history.replaceState(history.state, '', `#${screen.id}`);
@@ -46,7 +79,7 @@ export function useExperimentNavigation() {
           gestureBoundary.from = null;
           // Native touch momentum can continue after touchend. Hold only the
           // Experiment boundary reached by that gesture, never other sections.
-          if (Math.abs(bounds.top) > 0.5) screen.scrollIntoView({ behavior: 'instant', block: 'start' });
+          if (Math.abs(bounds.top - top) > 0.5) scrollToReadingTarget(screen);
           activate(screen);
           return;
         }
@@ -58,9 +91,10 @@ export function useExperimentNavigation() {
       const screen = atReadingPosition();
       const first = screens[0];
       const last = screens[screens.length - 1];
+      const top = readingViewportTop();
       gestureBoundary = screen ? { screen, from: null }
-        : delta > 0 && first && first.getBoundingClientRect().top > 0.5 ? { screen: first, from: 'above' }
-          : delta < 0 && last && last.getBoundingClientRect().bottom <= 1 ? { screen: last, from: 'below' } : null;
+        : delta > 0 && first && first.getBoundingClientRect().top > top + 0.5 ? { screen: first, from: 'above' }
+          : delta < 0 && last && last.getBoundingClientRect().bottom <= top + 1 ? { screen: last, from: 'below' } : null;
     };
     const screenForHash = (hash: string) => {
       const id = hash.slice(1);
@@ -83,15 +117,26 @@ export function useExperimentNavigation() {
       // Capture runs before existing link handlers move focus to the target.
       schedule();
     };
-    const historyNavigation = () => { returnFromHero = false; gestureBoundary = null; activate(screenForHash(location.hash)); schedule(); };
+    const historyNavigation = () => {
+      returnFromHero = false;
+      gestureBoundary = null;
+      const screen = screenForHash(location.hash);
+      activate(screen);
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        if (screen) scrollToReadingTarget(screen);
+        sync();
+      });
+    };
     const overlayOpen = () => document.querySelector('dialog[open], #contents-panel') !== null;
 
     const enterFromOutside = (delta: number) => {
       const first = screens[0];
       const last = screens[screens.length - 1];
       if (!first || !last) return false;
-      const firstTop = first.getBoundingClientRect().top;
-      const lastBottom = last.getBoundingClientRect().bottom;
+      const top = readingViewportTop();
+      const firstTop = first.getBoundingClientRect().top - top;
+      const lastBottom = last.getBoundingClientRect().bottom - top;
       const hero = document.getElementById('hero')?.getBoundingClientRect();
       const returning = returnFromHero && delta > 0 && hero !== undefined && hero.bottom > 0 && hero.top < window.innerHeight;
       // A fragment boundary can differ by a fraction of a CSS pixel in WebKit.
@@ -106,7 +151,7 @@ export function useExperimentNavigation() {
         if (returning) history.pushState(null, '', `#${target.id}`);
         else history.replaceState(history.state, '', `#${target.id}`);
       }
-      target.scrollIntoView({ behavior: 'instant', block: 'start' });
+      scrollToReadingTarget(target);
       return true;
     };
     const mayScrollLocally = (screen: HTMLElement, delta: number, target: EventTarget | null) => {
@@ -171,14 +216,17 @@ export function useExperimentNavigation() {
       if (!mayScrollLocally(screen, delta, event.target)) event.preventDefault();
     };
     const resize = () => {
+      if (viewport && Math.abs(viewport.scale - 1) >= 0.01) return;
+      updateViewportHeight(experiment);
       cancelAnimationFrame(frame);
       frame = requestAnimationFrame(() => {
-        if (current) current.scrollIntoView({ behavior: 'instant', block: 'start' });
+        if (current) scrollToReadingTarget(current);
         sync();
       });
     };
     const pagehide = () => { returnFromHero = false; gestureBoundary = null; cancelAnimationFrame(frame); frame = 0; };
 
+    updateViewportHeight(experiment);
     activate(screenForHash(location.hash));
     schedule();
     document.addEventListener('click', anchorClick, true);
@@ -188,10 +236,12 @@ export function useExperimentNavigation() {
     document.addEventListener('touchmove', touchmove, { passive: false });
     window.addEventListener('scroll', schedule, { passive: true });
     window.addEventListener('resize', resize);
+    viewport?.addEventListener('resize', resize);
+    viewport?.addEventListener('scroll', resize);
     window.addEventListener('hashchange', historyNavigation);
     window.addEventListener('popstate', historyNavigation);
     window.addEventListener('pagehide', pagehide);
-    window.addEventListener('pageshow', schedule);
+    window.addEventListener('pageshow', resize);
     return () => {
       cancelAnimationFrame(frame);
       document.removeEventListener('click', anchorClick, true);
@@ -201,10 +251,12 @@ export function useExperimentNavigation() {
       document.removeEventListener('touchmove', touchmove);
       window.removeEventListener('scroll', schedule);
       window.removeEventListener('resize', resize);
+      viewport?.removeEventListener('resize', resize);
+      viewport?.removeEventListener('scroll', resize);
       window.removeEventListener('hashchange', historyNavigation);
       window.removeEventListener('popstate', historyNavigation);
       window.removeEventListener('pagehide', pagehide);
-      window.removeEventListener('pageshow', schedule);
+      window.removeEventListener('pageshow', resize);
       screens.forEach((screen, index) => { screen.inert = previousInert[index] ?? false; });
       if (contentsTrigger) {
         contentsTrigger.inert = previousContentsInert;
