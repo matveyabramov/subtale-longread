@@ -54,8 +54,7 @@ function Mosaic({ nodeId, result = false }: { nodeId?: string | undefined; resul
 function DistanceInstruction({ hidden = false }: { hidden?: boolean }) {
   return (
     <p id="experiment-distance-instruction" className={hidden ? styles.targetDescription : `${styles.copy} ${styles.distanceInstruction}`} data-node-id="10:724">
-      <span className={styles.desktopCopyPrefix}>Не</span>
-      <span className={styles.mobileCopyPrefix}>Переверни экран и, не</span>
+      Не
       {' отводя взгляд от крестика, медленно приближайся к экрану или отдаляйся от него, пока точка не исчезнет'}
     </p>
   );
