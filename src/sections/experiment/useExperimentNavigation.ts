@@ -13,6 +13,7 @@ export function useExperimentNavigation() {
     const previousContentsHidden = contentsTrigger?.dataset.experimentHidden;
     let current: HTMLElement | null = null;
     let frame = 0;
+    let returnFromHero = false;
     let gestureBoundary: { screen: HTMLElement; from: 'above' | 'below' | null } | null = null;
 
     const activate = (screen: HTMLElement | null) => {
@@ -73,6 +74,8 @@ export function useExperimentNavigation() {
       if (!link || link.target === '_blank' || link.hasAttribute('download')) return;
       const url = new URL(link.href);
       if (url.origin !== location.origin || url.pathname !== location.pathname || !url.hash) return;
+      returnFromHero = url.hash === '#hero' && link.hasAttribute('data-back-link') &&
+        link.closest('#experiment-instructions') !== null;
       gestureBoundary = null;
       const next = screenForHash(url.hash);
       activate(next);
@@ -80,7 +83,7 @@ export function useExperimentNavigation() {
       // Capture runs before existing link handlers move focus to the target.
       schedule();
     };
-    const historyNavigation = () => { gestureBoundary = null; activate(screenForHash(location.hash)); schedule(); };
+    const historyNavigation = () => { returnFromHero = false; gestureBoundary = null; activate(screenForHash(location.hash)); schedule(); };
     const overlayOpen = () => document.querySelector('dialog[open], #contents-panel') !== null;
 
     const enterFromOutside = (delta: number) => {
@@ -89,14 +92,20 @@ export function useExperimentNavigation() {
       if (!first || !last) return false;
       const firstTop = first.getBoundingClientRect().top;
       const lastBottom = last.getBoundingClientRect().bottom;
+      const hero = document.getElementById('hero')?.getBoundingClientRect();
+      const returning = returnFromHero && delta > 0 && hero !== undefined && hero.bottom > 0 && hero.top < window.innerHeight;
       // A fragment boundary can differ by a fraction of a CSS pixel in WebKit.
-      const target = delta > 0 && firstTop > 0.5 && delta >= firstTop ? first
+      const target = returning || (delta > 0 && firstTop > 0.5 && delta >= firstTop) ? first
         : delta < 0 && lastBottom <= 1 && -delta >= Math.max(0, -lastBottom - 1) ? last : null;
       if (!target) return false;
+      returnFromHero = false;
       gestureBoundary = { screen: target, from: null };
       activate(target);
       target.scrollTop = 0;
-      if (location.hash !== `#${target.id}`) history.replaceState(history.state, '', `#${target.id}`);
+      if (location.hash !== `#${target.id}`) {
+        if (returning) history.pushState(null, '', `#${target.id}`);
+        else history.replaceState(history.state, '', `#${target.id}`);
+      }
       target.scrollIntoView({ behavior: 'instant', block: 'start' });
       return true;
     };
@@ -131,7 +140,8 @@ export function useExperimentNavigation() {
         : event.key === 'PageUp' || (event.key === ' ' && event.shiftKey) ? -page : page;
       if (screen || (event.key !== 'Home' && event.key !== 'End')) rememberGesture(delta);
       else gestureBoundary = null;
-      if (event.key !== 'Home' && event.key !== 'End' && enterFromOutside(delta)) { event.preventDefault(); return; }
+      const boundaryKey = event.key !== 'Home' && (event.key !== 'End' || returnFromHero);
+      if (boundaryKey && enterFromOutside(delta)) { event.preventDefault(); return; }
       if (!screen) {
         return;
       }
@@ -167,7 +177,7 @@ export function useExperimentNavigation() {
         sync();
       });
     };
-    const pagehide = () => { gestureBoundary = null; cancelAnimationFrame(frame); frame = 0; };
+    const pagehide = () => { returnFromHero = false; gestureBoundary = null; cancelAnimationFrame(frame); frame = 0; };
 
     activate(screenForHash(location.hash));
     schedule();
