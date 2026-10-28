@@ -128,6 +128,7 @@
 
 @media (width <= 600px) {
   .canvas { padding-top: max(var(--gutter), calc(env(safe-area-inset-top, 0px) - var(--boundary-space, 0px))); }
+  .canvas { padding-bottom: 100px; }
   .illustration, .pairs {
     margin-top: clamp(18px, calc((var(--mobile-viewport, 100vh) - 844px) * 0.5 + 18px), 40px);
   }

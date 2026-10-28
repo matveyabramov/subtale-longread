@@ -419,6 +419,8 @@
 }
 
 @media (width <= 600px) {
+  .section, .canvas { background-color: var(--color-blue); }
+  .texture { opacity: 0.4; }
   .canvas { padding-bottom: max(var(--gutter), env(safe-area-inset-bottom, 0px)); }
   .perforation > span:nth-child(n + 8) { display: none; }
   .sectionHeading { gap: 8px; }
