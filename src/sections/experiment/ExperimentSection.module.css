@@ -152,6 +152,8 @@
 .forwardActions .nextLink { width: 100%; }
 .forwardActions .bottomLink { height: 28px; min-height: 0; }
 @media (min-width: 1100.01px) {
+  /* Match Target's centered text line, then move only the Instructions link. */
+  .instructionBody + .screenFooter .bottomLink { display: flex; align-items: center; top: 5px; }
   .targetScreen .forwardActions { gap: 20px; }
 }
 @media (min-width: 1920px) {
