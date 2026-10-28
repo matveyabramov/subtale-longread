@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState, type MouseEvent, type PointerEvent } from 'react';
+import { lockPageScroll } from '../../shared/lockPageScroll';
 
 export function useExperimentHelp() {
   const [helpOpen, setHelpOpen] = useState(false);
@@ -22,19 +23,7 @@ export function useExperimentHelp() {
     if (!dialog || openRef.current) return;
     try {
       dialog.showModal();
-      const root = document.documentElement;
-      const properties = ['overflow', 'padding-right'] as const;
-      const previous = properties.map((name) => ({ name, value: root.style.getPropertyValue(name), priority: root.style.getPropertyPriority(name) }));
-      const gutter = window.innerWidth - root.clientWidth;
-      const padding = getComputedStyle(root).paddingRight;
-      root.style.setProperty('overflow', 'hidden');
-      // Preserve the reading width on platforms with a classic scrollbar:
-      // opening help must not shift either stimulus horizontally.
-      if (gutter) root.style.setProperty('padding-right', `calc(${padding} + ${gutter}px)`);
-      unlockRef.current = () => previous.forEach(({ name, value, priority }) => {
-        if (value) root.style.setProperty(name, value, priority);
-        else root.style.removeProperty(name);
-      });
+      unlockRef.current = lockPageScroll();
       openRef.current = true;
       setHelpOpen(true);
       dialog.querySelector<HTMLButtonElement>('button')?.focus({ preventScroll: true });
@@ -46,13 +35,7 @@ export function useExperimentHelp() {
     window.addEventListener('hashchange', leave);
     window.addEventListener('popstate', leave);
     window.addEventListener('pagehide', leave);
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry && !entry.isIntersecting && openRef.current) close(false);
-    });
-    const target = document.getElementById('experiment-target');
-    if (target) observer.observe(target);
     return () => {
-      observer.disconnect();
       window.removeEventListener('hashchange', leave);
       window.removeEventListener('popstate', leave);
       window.removeEventListener('pagehide', leave);

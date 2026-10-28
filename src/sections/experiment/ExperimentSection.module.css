@@ -1,6 +1,19 @@
-.experiment { background: var(--color-ink); }
+/* Only this zero-height reading anchor remains in document flow. */
+.experiment { height: 0; }
+.layer {
+  --viewport: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  width: 100%;
+  height: var(--viewport);
+  overflow: hidden;
+  container-type: size;
+  background: var(--color-ink);
+}
+@supports (height: 100dvh) { .layer { --viewport: 100dvh; } }
+.targetDescription { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 .screen {
-  --viewport: var(--experiment-viewport-height, 100vh);
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --gutter: clamp(20px, calc(2.083333vw - 10px), 30px);
@@ -13,7 +26,7 @@
   display: flex;
   flex-direction: column;
   width: min(100%, 1920px);
-  height: var(--viewport);
+  height: 100%;
   min-height: 0;
   overflow-x: hidden;
   overflow-y: auto;
@@ -23,7 +36,6 @@
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
-@supports (height: 100dvh) { .screen { --viewport: var(--experiment-viewport-height, 100dvh); } }
 .texture { position: absolute; inset: 0; z-index: -1; opacity: 0.2; background: repeat 0 0 / 355px 288px; pointer-events: none; }
 .resultTexture { opacity: 0.3; }
 .instructionBody { display: flex; flex-direction: column; align-items: flex-start; padding-top: clamp(24px, calc(var(--viewport) * 0.42962963 - 134px), 330px); padding-bottom: clamp(16px, calc(var(--viewport) * 0.25 - 200px), 70px); }
@@ -58,6 +70,9 @@
 .dotExplanation { margin-top: 30px; }
 .resultNote { width: clamp(473px, calc(633px - 8.333333vw), 513px); margin-top: clamp(35px, calc(1.041667vw + 20px), 40px); margin-left: calc(12.5% + 18px); }
 .screen :is(a, button):focus-visible { outline-color: #fff; outline-offset: 4px; }
+/* Named, noninteractive focus destinations announce each state; only controls
+   need a visible keyboard ring. */
+.screen:focus, .screen h2:focus { outline: none; }
 @media (min-width: 1920px) {
   .instructionTitle, .instructionBanner { margin-left: 266px; }
   .scrollInstruction { margin-left: 739px; }
@@ -124,10 +139,6 @@
   .resultStimulus { position: absolute; left: calc(50% - 20px); top: calc(var(--viewport) * 0.5 + 99px - var(--header-bottom)); width: calc(50% + 6px); margin: 0; }
   .dotExplanation { margin-top: 10px; }
 }
-@media (max-width: 600px) {
-  .experiment:is([data-viewport-size='compact'], [data-viewport-size='low']) .nextLink { height: 60px; }
-  .experiment:is([data-viewport-size='compact'], [data-viewport-size='low']) .resultNote { width: 100%; margin-left: 0; margin-top: 12px; }
-}
 
 /* Current Figma back controls: 153:6/23/52/73, reused for all three steps. */
 .backLink { position: absolute; z-index: 1; left: var(--gutter); bottom: var(--footer-inset); display: flex; align-items: center; justify-content: space-between; width: 206px; height: 86px; padding: 5px 20px 5px 30px; border: 2px solid #fed128; color: #fed128; background: transparent; text-decoration: none; }
@@ -157,8 +168,23 @@
   .targetScreen .forwardActions { gap: 30px; }
   .forwardActions .bottomLink { height: 18px; }
 }
+/* Container height follows the layer's dvh as Safari's controls change.
+   Media fallbacks also keep older browsers' short screens scrollable. */
+@media (max-width: 600px) and (max-height: 700px) {
+  .nextLink { height: 60px; }
+  .resultNote { width: 100%; margin-left: 0; margin-top: 12px; }
+}
+@media (max-width: 600px) and (max-height: 550px) {
+  .resultStimulus { position: static; margin: 8px 0 8px calc(50% - 20px); }
+}
 @media (max-width: 600px) {
-  .experiment[data-viewport-size='low'] .resultStimulus { position: static; margin: 8px 0 8px calc(50% - 20px); }
+  @container (max-height: 700px) {
+    .nextLink { height: 60px; }
+    .resultNote { width: 100%; margin-left: 0; margin-top: 12px; }
+  }
+  @container (max-height: 550px) {
+    .resultStimulus { position: static; margin: 8px 0 8px calc(50% - 20px); }
+  }
 }
 
 @media (min-width: 600.01px) {

@@ -1,11 +1,13 @@
 import { useCallback, useEffect, useRef, useState, type MouseEvent } from 'react';
 import type { ReadingAnchorId } from '../../shared/navigation';
 import { isPageReload } from '../../shared/reloadNavigation';
-import { scrollToReadingTarget } from '../../shared/readingViewport';
+import { useReadingNavigation } from '../../shared/ReadingNavigation';
+import { experimentAnchorIds, sectionIds } from '../../shared/navigation';
 
 type IntroState = 'unseen' | 'open' | 'resolved';
 
 export function useHeroIntroduction(contentsOpen: boolean) {
+  const navigateReading = useReadingNavigation();
   const [state, setState] = useState<IntroState>('unseen');
   const stateRef = useRef<IntroState>('unseen');
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -61,7 +63,7 @@ export function useHeroIntroduction(contentsOpen: boolean) {
       if (!anchor || anchor.target === '_blank' || anchor.hasAttribute('download')) return;
       const url = new URL(anchor.href);
       if (url.origin === location.origin && url.pathname === location.pathname && url.hash &&
-        document.getElementById(decodeURIComponent(url.hash.slice(1)))) finish();
+        [...sectionIds, ...experimentAnchorIds].some((id) => url.hash === `#${id}`)) finish();
     };
     if ((location.hash && location.hash !== '#hero') || (!isPageReload && !location.hash && outsideHero())) finish();
     window.addEventListener('hashchange', hashchange);
@@ -135,11 +137,7 @@ export function useHeroIntroduction(contentsOpen: boolean) {
     if (event.button !== 0 || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return;
     event.preventDefault();
     finish();
-    if (location.hash !== `#${id}`) history.pushState(null, '', `#${id}`);
-    const target = document.getElementById(id);
-    if (target) scrollToReadingTarget(target);
-    const heading = target?.getAttribute('aria-labelledby');
-    if (heading) document.getElementById(heading)?.focus({ preventScroll: true });
+    navigateReading(id);
   };
 
   const onClose = () => {

@@ -1,5 +1,4 @@
 import { experimentAnchorIds, sectionIds } from './navigation';
-import { scrollToReadingTarget } from './readingViewport';
 
 const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined;
 export const isPageReload = navigation?.type === 'reload';
@@ -7,10 +6,12 @@ export const isPageReload = navigation?.type === 'reload';
 export function positionInitialReadingAnchor() {
   if (isPageReload || navigation?.type === 'back_forward') return;
   const id = location.hash.slice(1);
+  // Experiment owns its stateful layer and never scrolls between step anchors.
+  if (id === 'experiment' || experimentAnchorIds.some((anchor) => anchor === id)) return;
   if (![...sectionIds, ...experimentAnchorIds].some((anchor) => anchor === id)) return;
   const target = document.getElementById(id);
   if (!target) return;
-  scrollToReadingTarget(target);
+  target.scrollIntoView({ behavior: 'instant', block: 'start' });
   const url = location.href;
   let cancelled = false;
   let frame = 0;
@@ -23,7 +24,7 @@ export function positionInitialReadingAnchor() {
   document.fonts.ready.then(() => {
     if (cancelled) return;
     frame = requestAnimationFrame(() => {
-      if (!cancelled && location.href === url) scrollToReadingTarget(target);
+      if (!cancelled && location.href === url) target.scrollIntoView({ behavior: 'instant', block: 'start' });
       cleanup();
     });
   });

@@ -9,8 +9,7 @@ export const experimentSteps = [
 export type ExperimentStep = (typeof experimentSteps)[number]['id'];
 export type ExperimentOutcome = 'unattempted' | 'attempted' | 'skipped';
 
-// Screens remain in document flow; gestures stay local to the active frame.
-export interface ExperimentState {
-  outcome: ExperimentOutcome;
-  helpOpen: boolean;
+export function experimentStepForHash(hash: string): ExperimentStep | null {
+  if (hash === '#experiment') return 'instructions';
+  return experimentSteps.find(({ anchor }) => hash === `#${anchor}`)?.id ?? null;
 }

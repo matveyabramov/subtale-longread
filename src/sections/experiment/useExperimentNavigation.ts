@@ -1,202 +1,165 @@
-import { useEffect, useLayoutEffect } from 'react';
-import { readingViewportTop, scrollToReadingTarget } from '../../shared/readingViewport';
-import { experimentSteps } from './model';
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { experimentAnchorIds, sectionIds, type ReadingAnchorId } from '../../shared/navigation';
+import { lockPageScroll } from '../../shared/lockPageScroll';
+import { experimentStepForHash, experimentSteps, type ExperimentStep } from './model';
 
-function updateViewportHeight(experiment: HTMLElement | null) {
-  const viewport = window.visualViewport;
-  if (!experiment || (viewport && Math.abs(viewport.scale - 1) >= 0.01)) return;
-  if (window.matchMedia('(max-width: 600px)').matches) {
-    const height = viewport?.height ?? window.innerHeight;
-    experiment.style.setProperty('--experiment-viewport-height', `${height}px`);
-    experiment.dataset.viewportSize = height <= 550 ? 'low' : height <= 700 ? 'compact' : 'regular';
-  } else {
-    experiment.style.removeProperty('--experiment-viewport-height');
-    delete experiment.dataset.viewportSize;
-  }
+type Destination = { id: string; focus: boolean };
+
+function goToDocument({ id, focus }: Destination) {
+  const target = document.getElementById(id);
+  target?.scrollIntoView({ behavior: 'instant', block: 'start' });
+  if (!focus || !target) return;
+  const heading = target.getAttribute('aria-labelledby');
+  (heading ? document.getElementById(heading) : target)?.focus({ preventScroll: true });
 }
 
-/** Keep document anchors/history native; constrain only user scroll gestures. */
+function focusActiveScreen(step: ExperimentStep) {
+  const screen = document.getElementById(experimentSteps.find((item) => item.id === step)!.anchor);
+  const heading = screen?.getAttribute('aria-labelledby');
+  (heading ? document.getElementById(heading) : screen)?.focus({ preventScroll: true });
+}
+
+/** Steps are React state. Document scrolling is used only to enter/leave reading. */
 export function useExperimentNavigation() {
-  useLayoutEffect(() => {
-    const experiment = document.getElementById('experiment');
-    const previousHeight = experiment?.style.getPropertyValue('--experiment-viewport-height') ?? '';
-    const previousSize = experiment?.dataset.viewportSize;
-    updateViewportHeight(experiment);
-    return () => {
-      if (!experiment) return;
-      if (previousHeight) experiment.style.setProperty('--experiment-viewport-height', previousHeight);
-      else experiment.style.removeProperty('--experiment-viewport-height');
-      if (previousSize === undefined) delete experiment.dataset.viewportSize;
-      else experiment.dataset.viewportSize = previousSize;
+  const [step, setStep] = useState<ExperimentStep | null>(() => experimentStepForHash(location.hash));
+  const active = useRef(step);
+  const pendingExit = useRef<Destination | null>(null);
+  const returnFromHero = useRef(false);
+  const boundary = useRef<{ direction: number } | null>(null);
+  const releasePage = useRef<(() => void) | null>(null);
+
+  const engage = useCallback(() => {
+    if (releasePage.current) return;
+    const unlock = lockPageScroll();
+    const background = ['main-content', 'footer'].map((id) => document.getElementById(id))
+      .filter((element): element is HTMLElement => element !== null);
+    const inert = background.map((element) => element.inert);
+    const contents = document.querySelector<HTMLButtonElement>('[aria-controls="contents-panel"]');
+    const contentsInert = contents?.inert ?? false;
+    const contentsHidden = contents?.dataset.experimentHidden;
+    background.forEach((element) => { element.inert = true; });
+    if (contents) { contents.inert = true; contents.dataset.experimentHidden = 'true'; }
+    releasePage.current = () => {
+      releasePage.current = null;
+      background.forEach((element, index) => { element.inert = inert[index] ?? false; });
+      if (contents) {
+        contents.inert = contentsInert;
+        if (contentsHidden === undefined) delete contents.dataset.experimentHidden;
+        else contents.dataset.experimentHidden = contentsHidden;
+      }
+      unlock();
     };
   }, []);
 
-  // Keep input listeners after Hero's gate listeners; a first large gesture
-  // must open the introduction before Experiment considers its boundary.
+  const applyRoute = useCallback((id: string, focus: boolean) => {
+    const next = experimentStepForHash(`#${id}`);
+    const previous = active.current;
+    boundary.current = null;
+    active.current = next;
+    if (next) {
+      pendingExit.current = null;
+      setStep(next);
+    } else if (previous) {
+      pendingExit.current = { id, focus };
+      setStep(null);
+    } else if (focus) goToDocument({ id, focus });
+  }, []);
+
+  const navigate = useCallback((id: ReadingAnchorId) => {
+    returnFromHero.current = id === 'hero' && active.current === 'instructions';
+    if (location.hash !== `#${id}`) history.pushState(null, '', `#${id}`);
+    applyRoute(id, true);
+  }, [applyRoute]);
+
+  useLayoutEffect(() => {
+    if (step) {
+      engage();
+      const screen = document.getElementById(experimentSteps.find((item) => item.id === step)!.anchor);
+      if (screen) {
+        screen.scrollTop = 0;
+        focusActiveScreen(step);
+      }
+    } else {
+      releasePage.current?.();
+      if (pendingExit.current) {
+        goToDocument(pendingExit.current);
+        pendingExit.current = null;
+      }
+    }
+  }, [step, engage]);
+
+  useLayoutEffect(() => () => releasePage.current?.(), []);
+
+  // One listener set for the lifetime of the reader, never one set per step.
   useEffect(() => {
-    const screens = experimentSteps.map(({ anchor }) => document.getElementById(anchor))
-      .filter((screen): screen is HTMLElement => screen !== null);
-    const experiment = document.getElementById('experiment');
-    const viewport = window.visualViewport;
-    const previousInert = screens.map((screen) => screen.inert);
-    const contentsTrigger = document.querySelector<HTMLButtonElement>('[aria-controls="contents-panel"]');
-    const previousContentsInert = contentsTrigger?.inert ?? false;
-    const previousContentsHidden = contentsTrigger?.dataset.experimentHidden;
-    let current: HTMLElement | null = null;
-    let frame = 0;
-    let returnFromHero = false;
-    let gestureBoundary: { screen: HTMLElement; from: 'above' | 'below' | null } | null = null;
-
-    const activate = (screen: HTMLElement | null) => {
-      current = screen;
-      // Keep inactive frames and the hidden contents control out of Tab order.
-      screens.forEach((item) => { item.inert = screen !== null && item !== screen; });
-      if (contentsTrigger) {
-        contentsTrigger.inert = screen !== null;
-        contentsTrigger.dataset.experimentHidden = String(screen !== null);
+    let touch: { x: number; y: number } | null = null;
+    let historyFocus = 0;
+    const help = () => document.querySelector<HTMLDialogElement>('#experiment-help[open]');
+    const frame = () => document.querySelector<HTMLElement>('#experiment-layer > section');
+    const openAtBoundary = (next: ExperimentStep, replace: boolean) => {
+      const id = experimentSteps.find((item) => item.id === next)!.anchor;
+      returnFromHero.current = false;
+      if (location.hash !== `#${id}`) {
+        if (replace) history.replaceState(history.state, '', `#${id}`);
+        else history.pushState(null, '', `#${id}`);
       }
-      if (experiment) {
-        if (screen) experiment.dataset.activeStep = screen.id;
-        else delete experiment.dataset.activeStep;
-      }
+      applyRoute(id, false);
     };
-    const atReadingPosition = () => screens.find((screen) => {
-      const bounds = screen.getBoundingClientRect();
-      const top = readingViewportTop();
-      return bounds.top <= top + 0.5 && bounds.bottom > top + 0.5;
-    }) ?? null;
-    const sync = () => {
-      frame = 0;
-      if (gestureBoundary) {
-        const { screen, from } = gestureBoundary;
-        const bounds = screen.getBoundingClientRect();
-        const top = readingViewportTop();
-        if (from === null || (from === 'above' ? bounds.top <= top + 0.5 : bounds.bottom > top + 0.5)) {
-          if (from !== null) {
-            screen.scrollTop = 0;
-            if (location.hash !== `#${screen.id}`) history.replaceState(history.state, '', `#${screen.id}`);
-          }
-          gestureBoundary.from = null;
-          // Native touch momentum can continue after touchend. Hold only the
-          // Experiment boundary reached by that gesture, never other sections.
-          if (Math.abs(bounds.top - top) > 0.5) scrollToReadingTarget(screen);
-          activate(screen);
-          return;
-        }
-      }
-      activate(atReadingPosition());
-    };
-    const schedule = () => { if (!frame) frame = requestAnimationFrame(sync); };
-    const rememberGesture = (delta: number) => {
-      const screen = atReadingPosition();
-      const first = screens[0];
-      const last = screens[screens.length - 1];
-      const top = readingViewportTop();
-      gestureBoundary = screen ? { screen, from: null }
-        : delta > 0 && first && first.getBoundingClientRect().top > top + 0.5 ? { screen: first, from: 'above' }
-          : delta < 0 && last && last.getBoundingClientRect().bottom <= top + 1 ? { screen: last, from: 'below' } : null;
-    };
-    const screenForHash = (hash: string) => {
-      const id = hash.slice(1);
-      if (id === 'experiment') return screens[0] ?? null;
-      const target = document.getElementById(id);
-      return target ? screens.find((screen) => screen === target || screen.contains(target)) ?? null : null;
-    };
-    const anchorClick = (event: MouseEvent) => {
-      if (event.button !== 0 || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return;
-      const link = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[href]') : null;
-      if (!link || link.target === '_blank' || link.hasAttribute('download')) return;
-      const url = new URL(link.href);
-      if (url.origin !== location.origin || url.pathname !== location.pathname || !url.hash) return;
-      returnFromHero = url.hash === '#hero' && link.hasAttribute('data-back-link') &&
-        link.closest('#experiment-instructions') !== null;
-      gestureBoundary = null;
-      const next = screenForHash(url.hash);
-      activate(next);
-      if (next) next.scrollTop = 0;
-      // Capture runs before existing link handlers move focus to the target.
-      schedule();
-    };
-    const historyNavigation = () => {
-      returnFromHero = false;
-      gestureBoundary = null;
-      const screen = screenForHash(location.hash);
-      activate(screen);
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        if (screen) scrollToReadingTarget(screen);
-        sync();
-      });
-    };
-    const overlayOpen = () => document.querySelector('dialog[open], #contents-panel') !== null;
-
-    const enterFromOutside = (delta: number) => {
-      const first = screens[0];
-      const last = screens[screens.length - 1];
-      if (!first || !last) return false;
-      const top = readingViewportTop();
-      const firstTop = first.getBoundingClientRect().top - top;
-      const lastBottom = last.getBoundingClientRect().bottom - top;
+    const enter = (delta: number) => {
+      const marker = document.getElementById('experiment');
+      if (!marker) return false;
+      const top = marker.getBoundingClientRect().top;
       const hero = document.getElementById('hero')?.getBoundingClientRect();
-      const returning = returnFromHero && delta > 0 && hero !== undefined && hero.bottom > 0 && hero.top < window.innerHeight;
-      // A fragment boundary can differ by a fraction of a CSS pixel in WebKit.
-      const target = returning || (delta > 0 && firstTop > 0.5 && delta >= firstTop) ? first
-        : delta < 0 && lastBottom <= 1 && -delta >= Math.max(0, -lastBottom - 1) ? last : null;
-      if (!target) return false;
-      returnFromHero = false;
-      gestureBoundary = { screen: target, from: null };
-      activate(target);
-      target.scrollTop = 0;
-      if (location.hash !== `#${target.id}`) {
-        if (returning) history.pushState(null, '', `#${target.id}`);
-        else history.replaceState(history.state, '', `#${target.id}`);
+      // Hero listeners may be rebound after opening Contents. The first gate
+      // still owns this gesture regardless of document listener order.
+      if (hero && hero.bottom > 0 && (!location.hash || location.hash === '#hero') &&
+        document.querySelector('dialog[aria-labelledby="hero-hint-title"]')?.getAttribute('data-intro-state') === 'unseen') return false;
+      if (delta > 0 && returnFromHero.current && hero && hero.bottom > 0) {
+        openAtBoundary('instructions', false);
+        return true;
       }
-      scrollToReadingTarget(target);
-      return true;
+      if (delta > 0 && top > 0 && delta >= top) {
+        openAtBoundary('instructions', true);
+        return true;
+      }
+      if (delta < 0 && top <= 1 && -delta >= Math.max(0, -top - 1)) {
+        openAtBoundary('result', true);
+        return true;
+      }
+      boundary.current = delta > 0 && top > 0 ? { direction: 1 }
+        : delta < 0 && top <= 1 ? { direction: -1 } : null;
+      return false;
     };
-    const mayScrollLocally = (screen: HTMLElement, delta: number, target: EventTarget | null) => {
-      if (!(target instanceof Node) || !screen.contains(target)) return false;
-      const remaining = screen.scrollHeight - screen.clientHeight - screen.scrollTop;
-      return delta > 0 ? remaining > 1 : screen.scrollTop > 1;
+    const mayScroll = (scroller: HTMLElement | null, delta: number, target: EventTarget | null) => {
+      if (!scroller || !(target instanceof Node) || !scroller.contains(target)) return false;
+      return delta > 0 ? scroller.scrollHeight - scroller.clientHeight - scroller.scrollTop > 1 : scroller.scrollTop > 1;
     };
+    const overlay = () => document.querySelector('dialog[open], #contents-panel') !== null;
     const wheel = (event: WheelEvent) => {
       if (event.defaultPrevented || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey ||
-        !event.deltaY || Math.abs(event.deltaX) > Math.abs(event.deltaY) || overlayOpen()) return;
+        !event.deltaY || Math.abs(event.deltaX) > Math.abs(event.deltaY)) return;
       const delta = event.deltaY * (event.deltaMode === 1 ? 20 : event.deltaMode === 2 ? window.innerHeight : 1);
-      rememberGesture(delta);
-      if (enterFromOutside(delta)) { event.preventDefault(); return; }
-      const screen = atReadingPosition();
-      if (!screen) return;
-      activate(screen);
-      // The frame's overscroll containment also stops a large native wheel
-      // packet from chaining into the next document screen at its local edge.
-      if (!mayScrollLocally(screen, delta, event.target)) event.preventDefault();
+      if (active.current) {
+        if (!mayScroll(help() ?? frame(), delta, event.target)) event.preventDefault();
+      } else if (!overlay() && enter(delta)) event.preventDefault();
     };
     const keydown = (event: KeyboardEvent) => {
-      if (event.defaultPrevented || event.ctrlKey || event.metaKey || event.altKey || overlayOpen() ||
-        (event.shiftKey && event.key !== ' ')) return;
+      if (event.defaultPrevented || event.ctrlKey || event.metaKey || event.altKey ||
+        (event.shiftKey && event.key !== ' ') || overlay()) return;
       if (!['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' ', 'Home', 'End'].includes(event.key)) return;
-      if (event.target instanceof Element &&
-        (event.target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])') ||
-          (event.key === ' ' && event.target.closest('button, summary, [role="button"]')))) return;
-      const screen = atReadingPosition();
+      if (event.target instanceof Element && (event.target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])') ||
+        (event.key === ' ' && event.target.closest('button, summary, [role="button"]')))) return;
+      const screen = frame();
       const page = (screen?.clientHeight ?? window.innerHeight) * 0.9;
       const delta = event.key === 'ArrowDown' ? 40 : event.key === 'ArrowUp' ? -40
         : event.key === 'PageUp' || (event.key === ' ' && event.shiftKey) ? -page : page;
-      if (screen || (event.key !== 'Home' && event.key !== 'End')) rememberGesture(delta);
-      else gestureBoundary = null;
-      const boundaryKey = event.key !== 'Home' && (event.key !== 'End' || returnFromHero);
-      if (boundaryKey && enterFromOutside(delta)) { event.preventDefault(); return; }
-      if (!screen) {
-        return;
-      }
-      event.preventDefault();
-      activate(screen);
-      if (event.key === 'Home') screen.scrollTop = 0;
-      else if (event.key === 'End') screen.scrollTop = screen.scrollHeight;
-      else screen.scrollTop += delta;
+      if (active.current && screen) {
+        event.preventDefault();
+        if (event.key === 'Home') screen.scrollTop = 0;
+        else if (event.key === 'End') screen.scrollTop = screen.scrollHeight;
+        else screen.scrollTop += delta;
+      } else if (event.key !== 'Home' && (event.key !== 'End' || returnFromHero.current) && enter(delta)) event.preventDefault();
     };
-    let touch: { x: number; y: number } | null = null;
     const touchstart = (event: TouchEvent) => {
       const point = event.touches.length === 1 ? event.touches[0] : null;
       touch = point ? { x: point.clientX, y: point.clientY } : null;
@@ -205,65 +168,70 @@ export function useExperimentNavigation() {
       const point = event.touches.length === 1 ? event.touches[0] : null;
       const previous = touch;
       touch = point ? { x: point.clientX, y: point.clientY } : null;
-      if (!point || !previous || event.defaultPrevented || overlayOpen()) return;
+      if (!point || !previous || event.defaultPrevented) return;
       const delta = previous.y - point.clientY;
       if (!delta || Math.abs(previous.x - point.clientX) >= Math.abs(delta)) return;
-      rememberGesture(delta);
-      if (enterFromOutside(delta)) { event.preventDefault(); return; }
-      const screen = atReadingPosition();
-      if (!screen) return;
-      activate(screen);
-      if (!mayScrollLocally(screen, delta, event.target)) event.preventDefault();
+      if (active.current) {
+        if (!mayScroll(help() ?? frame(), delta, event.target)) event.preventDefault();
+      } else if (!overlay() && enter(delta)) event.preventDefault();
     };
-    const resize = () => {
-      if (viewport && Math.abs(viewport.scale - 1) >= 0.01) return;
-      updateViewportHeight(experiment);
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        if (current) scrollToReadingTarget(current);
-        sync();
+    const scroll = () => {
+      if (active.current || !boundary.current || overlay()) return;
+      const top = document.getElementById('experiment')?.getBoundingClientRect().top;
+      if (top === undefined) return;
+      if (boundary.current.direction > 0 ? top <= 0 : top > 0) {
+        openAtBoundary(boundary.current.direction > 0 ? 'instructions' : 'result', true);
+      }
+    };
+    const anchorClick = (event: MouseEvent) => {
+      if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return;
+      const link = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[href]') : null;
+      if (!link || link.target === '_blank' || link.hasAttribute('download')) return;
+      const url = new URL(link.href);
+      if (url.origin !== location.origin || url.pathname !== location.pathname || url.search !== location.search) return;
+      const id = url.hash.slice(1);
+      if (![...sectionIds, ...experimentAnchorIds].some((anchor) => anchor === id)) return;
+      event.preventDefault();
+      navigate(id as ReadingAnchorId);
+    };
+    const historyNavigation = () => {
+      returnFromHero.current = false;
+      boundary.current = null;
+      if (active.current || experimentStepForHash(location.hash)) applyRoute(location.hash.slice(1) || 'hero', true);
+      cancelAnimationFrame(historyFocus);
+      // Chrome may restore the old element's focus after popstate. Focus the
+      // mounted state after native traversal, without moving the document.
+      historyFocus = requestAnimationFrame(() => {
+        historyFocus = 0;
+        if (active.current && !help()) focusActiveScreen(active.current);
       });
     };
-    const pagehide = () => { returnFromHero = false; gestureBoundary = null; cancelAnimationFrame(frame); frame = 0; };
-
-    updateViewportHeight(experiment);
-    activate(screenForHash(location.hash));
-    schedule();
-    document.addEventListener('click', anchorClick, true);
+    const pagehide = () => { cancelAnimationFrame(historyFocus); boundary.current = null; releasePage.current?.(); };
+    const pageshow = () => { if (active.current) engage(); };
+    document.addEventListener('click', anchorClick);
     document.addEventListener('wheel', wheel, { passive: false });
     document.addEventListener('keydown', keydown);
     document.addEventListener('touchstart', touchstart, { passive: true });
     document.addEventListener('touchmove', touchmove, { passive: false });
-    window.addEventListener('scroll', schedule, { passive: true });
-    window.addEventListener('resize', resize);
-    viewport?.addEventListener('resize', resize);
-    viewport?.addEventListener('scroll', resize);
+    window.addEventListener('scroll', scroll, { passive: true });
     window.addEventListener('hashchange', historyNavigation);
     window.addEventListener('popstate', historyNavigation);
     window.addEventListener('pagehide', pagehide);
-    window.addEventListener('pageshow', resize);
+    window.addEventListener('pageshow', pageshow);
     return () => {
-      cancelAnimationFrame(frame);
-      document.removeEventListener('click', anchorClick, true);
+      cancelAnimationFrame(historyFocus);
+      document.removeEventListener('click', anchorClick);
       document.removeEventListener('wheel', wheel);
       document.removeEventListener('keydown', keydown);
       document.removeEventListener('touchstart', touchstart);
       document.removeEventListener('touchmove', touchmove);
-      window.removeEventListener('scroll', schedule);
-      window.removeEventListener('resize', resize);
-      viewport?.removeEventListener('resize', resize);
-      viewport?.removeEventListener('scroll', resize);
+      window.removeEventListener('scroll', scroll);
       window.removeEventListener('hashchange', historyNavigation);
       window.removeEventListener('popstate', historyNavigation);
       window.removeEventListener('pagehide', pagehide);
-      window.removeEventListener('pageshow', resize);
-      screens.forEach((screen, index) => { screen.inert = previousInert[index] ?? false; });
-      if (contentsTrigger) {
-        contentsTrigger.inert = previousContentsInert;
-        if (previousContentsHidden === undefined) delete contentsTrigger.dataset.experimentHidden;
-        else contentsTrigger.dataset.experimentHidden = previousContentsHidden;
-      }
-      if (experiment) delete experiment.dataset.activeStep;
+      window.removeEventListener('pageshow', pageshow);
     };
-  }, []);
+  }, [applyRoute, engage, navigate]);
+
+  return { step, navigate };
 }

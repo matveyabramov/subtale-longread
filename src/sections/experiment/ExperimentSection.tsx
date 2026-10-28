@@ -1,11 +1,10 @@
-import { useState, type MouseEvent } from 'react';
+import { useLayoutEffect, useState, type MouseEvent } from 'react';
 import { createPortal } from 'react-dom';
 import { imageAssets, vectorAssets } from '../../assets/generated';
-import type { ReadingHref } from '../../shared/navigation';
-import { scrollToReadingTarget } from '../../shared/readingViewport';
+import type { ReadingAnchorId, ReadingHref } from '../../shared/navigation';
 import { experimentSteps, type ExperimentOutcome } from './model';
 import { useExperimentHelp } from './useExperimentHelp';
-import { useExperimentNavigation } from './useExperimentNavigation';
+import type { useExperimentNavigation } from './useExperimentNavigation';
 import helpStyles from './ExperimentHelp.module.css';
 import styles from './ExperimentSection.module.css';
 
@@ -52,6 +51,16 @@ function Mosaic({ nodeId, result = false }: { nodeId: string; result?: boolean }
   );
 }
 
+function DistanceInstruction({ hidden = false }: { hidden?: boolean }) {
+  return (
+    <p id="experiment-distance-instruction" className={hidden ? styles.targetDescription : `${styles.copy} ${styles.distanceInstruction}`} data-node-id="10:724">
+      <span className={styles.desktopCopyPrefix}>Не</span>
+      <span className={styles.mobileCopyPrefix}>Переверни экран и, не</span>
+      {' отводя взгляд от крестика, медленно приближайся к экрану или отдаляйся от него, пока точка не исчезнет'}
+    </p>
+  );
+}
+
 function Instructions() {
   return (
     <section id={experimentSteps[0].anchor} className={styles.screen}
@@ -65,11 +74,7 @@ function Instructions() {
         </p>
         <div className={styles.instructionCopy}>
           <p className={`${styles.copy} ${styles.scrollInstruction}`} data-node-id="10:723">Прокрути вниз — на следующем экране появятся крестик и точка</p>
-          <p id="experiment-distance-instruction" className={`${styles.copy} ${styles.distanceInstruction}`} data-node-id="10:724">
-            <span className={styles.desktopCopyPrefix}>Не</span>
-            <span className={styles.mobileCopyPrefix}>Переверни экран и, не</span>
-            {' отводя взгляд от крестика, медленно приближайся к экрану или отдаляйся от него, пока точка не исчезнет'}
-          </p>
+          <DistanceInstruction />
         </div>
       </div>
       <div className={styles.screenFooter}>
@@ -89,6 +94,7 @@ function Target({ help }: { help: ReturnType<typeof useExperimentHelp> }) {
       aria-label="Крестик и точка" aria-describedby="experiment-distance-instruction"
       tabIndex={-1} data-node-id={experimentSteps[1].frame}>
       <Mosaic nodeId="10:731" />
+      <DistanceInstruction hidden />
       <BackLink href="#experiment-instructions" nodeId="153:2" />
       <div className={styles.targetStage}>
         <svg className={styles.cross} width="100" height="100" viewBox="0 0 100 100"
@@ -157,32 +163,35 @@ function Result() {
   );
 }
 
-export function ExperimentSection() {
-  useExperimentNavigation();
+export function ExperimentSection({ navigation }: { navigation: ReturnType<typeof useExperimentNavigation> }) {
   const help = useExperimentHelp();
   const [outcome, setOutcome] = useState<ExperimentOutcome>('unattempted');
+  const { step } = navigation;
+  useLayoutEffect(() => { help.close(false); }, [step, help.close]);
   const navigate = (event: MouseEvent<HTMLElement>) => {
     if (event.button !== 0 || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return;
     const anchor = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[href^="#"]') : null;
     if (!anchor) return;
     const id = anchor.hash.slice(1);
-    const target = document.getElementById(id);
-    if (!target) return;
     event.preventDefault();
     help.close(false);
     if (id === 'experiment-result') setOutcome('attempted');
     else if (id === 'emptiness' && !anchor.closest('#experiment-result')) setOutcome('skipped');
-    if (location.hash !== anchor.hash) history.pushState(null, '', anchor.hash);
-    scrollToReadingTarget(target);
-    const heading = target.getAttribute('aria-labelledby');
-    (heading ? document.getElementById(heading) : target)?.focus({ preventScroll: true });
+    navigation.navigate(id as ReadingAnchorId);
   };
   return (
-    <section id="experiment" aria-labelledby="experiment-instructions-title"
-      data-narrative-section data-outcome={outcome} className={styles.experiment} onClick={navigate}>
-      <Instructions />
-      <Target help={help} />
-      <Result />
-    </section>
+    <>
+      <section id="experiment" aria-label="Эксперимент" data-narrative-section data-outcome={outcome}
+        data-active-step={step ? experimentSteps.find((item) => item.id === step)?.anchor : undefined}
+        className={styles.experiment} />
+      {step && createPortal(
+        <div id="experiment-layer" role="dialog" aria-modal="true" aria-label="Эксперимент"
+          className={styles.layer} onClick={navigate}>
+          {step === 'instructions' && <Instructions />}
+          {step === 'target' && <Target help={help} />}
+          {step === 'result' && <Result />}
+        </div>, document.body,
+      )}
+    </>
   );
 }

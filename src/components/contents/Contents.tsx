@@ -2,7 +2,7 @@ import { useEffect, useRef, type RefObject } from 'react';
 import { createPortal } from 'react-dom';
 import { imageAssets, vectorAssets } from '../../assets/generated';
 import { sectionIds } from '../../shared/navigation';
-import { scrollToReadingTarget } from '../../shared/readingViewport';
+import { useReadingNavigation } from '../../shared/ReadingNavigation';
 import { useCurrentSection } from './useCurrentSection';
 import control from './HeaderControl.module.css';
 import styles from './Contents.module.css';
@@ -20,6 +20,7 @@ type Props = {
 };
 
 export function Contents({ open, onClose, triggerRef }: Props) {
+  const navigate = useReadingNavigation();
   const current = useCurrentSection();
   const closeRef = useRef<HTMLButtonElement>(null);
 
@@ -81,11 +82,7 @@ export function Contents({ open, onClose, triggerRef }: Props) {
                   if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
                   event.preventDefault();
                   onClose();
-                  const section = document.getElementById(id);
-                  if (window.location.hash !== `#${id}`) window.history.pushState(null, '', `#${id}`);
-                  if (section) scrollToReadingTarget(section);
-                  const headingId = section?.getAttribute('aria-labelledby');
-                  if (headingId) document.getElementById(headingId)?.focus({ preventScroll: true });
+                  navigate(id);
                 }}>
                 <span className={styles.number}>{String(index).padStart(2, '0')}</span>
                 <span className={styles.title}>{titles[index]}</span>
