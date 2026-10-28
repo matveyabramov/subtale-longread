@@ -41,9 +41,42 @@
   min-height: 1px;
   width: 680px;
   padding: 30px;
-  border: 1px solid rgb(255 255 255 / 60%);
+  border: 1px solid transparent;
   background: rgb(255 255 255 / 20%);
   backdrop-filter: blur(17px);
+}
+
+.categoryTab {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.categoryTab:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: -4px;
+}
+
+.card[data-active='true'] .categoryTab:focus-visible {
+  outline-color: var(--color-ink);
+}
+
+.panel { display: contents; }
+
+.artworkDescription {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .cardContent {
@@ -113,6 +146,16 @@
 
 .card[data-active='true'] .description {
   color: var(--color-ink);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:has(.categoryTab:hover) {
+    background: var(--color-yellow);
+    color: var(--color-ink);
+  }
+  .card:has(.categoryTab:hover) .number { color: rgb(11 13 15 / 50%); }
+  .card:has(.categoryTab:hover) .description { color: var(--color-ink); }
+  .card:has(.categoryTab:hover) .categoryTab:focus-visible { outline-color: var(--color-ink); }
 }
 
 .title,
@@ -246,7 +289,7 @@
 .sectionHeading { display: contents; }
 
 /* The wrappers generate no box in the approved 1920 composition. */
-.artworkStage { display: contents; }
+.artworkStage { display: contents; pointer-events: none; }
 .activeDescription { display: none; }
 
 /* The 1440 composition keeps a compact category column on the right. */

@@ -8,9 +8,17 @@ export const explorerCategories = [
 export type ExplorerCategoryId = (typeof explorerCategories)[number]['id'];
 export type MeaningState = 'A' | 'B';
 
+// Accessible visual descriptions, separate from the editorial explanation pop-ups.
+export const explorerArtworkDescriptions = {
+  idiom: { A: 'Восемь фрагментов льда', B: 'Телефонная трубка среди фрагментов льда' },
+  pun: { A: 'Велосипед', B: 'Наклонённый велосипед' },
+  doubleMeaning: { A: 'Глаз', B: 'Глаз с силуэтом пары' },
+  reference: { A: 'Пять снежинок', B: 'Железный трон' },
+} satisfies Record<ExplorerCategoryId, Record<MeaningState, string>>;
+
 export interface ExplorerState {
   category: ExplorerCategoryId;
   stateByCategory: Record<ExplorerCategoryId, MeaningState>;
 }
 
-// State persistence belongs to this section, in memory until reload. No reducer yet.
+// Section-local memory until reload. A/B controls are reserved for a later stage.
