@@ -12,12 +12,12 @@ const lines = [
 
 export function BlindSpotSceneSection() {
   return (
-    <section id="blind-spot-scene" aria-labelledby="blind-spot-scene-title" data-narrative-section className={styles.section}>
-      <div className={styles.canvas} data-node-id="10:997">
-        <div className={`${styles.texture} ${styles.grain}`} data-node-id="10:998" aria-hidden="true"
-          style={{ '--responsive-mosaic': `url("${imageAssets['mosaic-texture']}")` } as CSSProperties}>
-          <img src={imageAssets['au-fg-texture4-8k']} alt="" />
-        </div>
+    <section id="blind-spot-scene" aria-labelledby="blind-spot-scene-title" data-narrative-section data-section-surface className={styles.section}>
+      <div className={`${styles.texture} ${styles.grain}`} data-section-texture data-node-id="10:998" aria-hidden="true"
+        style={{ '--responsive-mosaic': `url("${imageAssets['mosaic-texture']}")` } as CSSProperties}>
+        <img src={imageAssets['au-fg-texture4-8k']} alt="" />
+      </div>
+      <div className={styles.canvas} data-section-canvas data-node-id="10:997">
         <div className={styles.sectionHeading}>
           <h2 id="blind-spot-scene-title" tabIndex={-1} className={styles.text} data-node-id="10:1013"><span>{copy['10:1013']}</span></h2>
           <div className={styles.banner} data-node-id="10:1014"><p className={styles.text} data-node-id="10:1015"><span>{copy['10:1015']}</span></p></div>

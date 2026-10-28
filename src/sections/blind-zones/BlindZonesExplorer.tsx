@@ -15,11 +15,11 @@ export function BlindZonesExplorer({ category = 'idiom', meaning = 'A' }: BlindZ
   const visual = explorerVisuals[category][meaning];
   const activeCopy = explorerCopy.find((copy) => copy.category === category)!;
   return (
-    <section id="blind-zones" aria-labelledby="blind-zones-title" data-narrative-section
+    <section id="blind-zones" aria-labelledby="blind-zones-title" data-narrative-section data-section-surface
       className={styles.section} data-category-count={explorerCategories.length} data-category={category} data-meaning={meaning}>
-      <div className={styles.canvas} data-node-id={visual.frame}>
-        <div className={styles.texture} data-node-id={visual.texture} aria-hidden="true"
-          style={{ zIndex: `var(--texture-order, ${visual.order.texture})`, backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
+      <div className={styles.texture} data-section-texture data-node-id={visual.texture} aria-hidden="true"
+        style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
+      <div className={styles.canvas} data-section-canvas data-node-id={visual.frame}>
         <div className={styles.categories} data-node-id={visual.panel} style={{ zIndex: visual.order.panel }}>
           {explorerCopy.map((copy, index) => {
             const ids = visual.cards[index];

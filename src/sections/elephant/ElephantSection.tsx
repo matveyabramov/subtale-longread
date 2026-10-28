@@ -43,10 +43,10 @@ function ElephantArtwork() {
 
 export function ElephantSection() {
   return (
-    <section id="elephant" aria-labelledby="elephant-title" data-narrative-section className={styles.section}>
-      <div className={styles.canvas} data-node-id="10:917">
-        <div className={styles.texture} data-node-id="10:918" aria-hidden="true"
-          style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
+    <section id="elephant" aria-labelledby="elephant-title" data-narrative-section data-section-surface className={styles.section}>
+      <div className={styles.texture} data-section-texture data-node-id="10:918" aria-hidden="true"
+        style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
+      <div className={styles.canvas} data-section-canvas data-node-id="10:917">
         <ElephantArtwork />
         <div className={styles.heading}>
           <h2 id="elephant-title" tabIndex={-1} className={styles.title} data-node-id="10:944">Смысл</h2>

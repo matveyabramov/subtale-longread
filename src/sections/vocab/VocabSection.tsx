@@ -4,10 +4,10 @@ import styles from './VocabSection.module.css';
 
 export function VocabSection() {
   return (
-    <section id="vocab" aria-labelledby="vocab-title" data-narrative-section className={styles.section}>
-      <div className={styles.canvas} data-node-id="10:966">
-        <div className={`${styles.texture} ${styles.mosaic}`} data-node-id="10:967" aria-hidden="true"
-          style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
+    <section id="vocab" aria-labelledby="vocab-title" data-narrative-section data-section-surface className={styles.section}>
+      <div className={`${styles.texture} ${styles.mosaic}`} data-section-texture data-node-id="10:967" aria-hidden="true"
+        style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
+      <div className={styles.canvas} data-section-canvas data-node-id="10:966">
         <div className={styles.statistic} data-node-id="10:968">
           <div className={styles.artwork} data-node-id="10:969">
             <img src={vectorAssets['vocab-illustration']} alt="98%" />

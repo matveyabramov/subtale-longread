@@ -157,22 +157,11 @@
 }
 
 @media (width <= 600px) {
-  .section {
-    position: relative;
-    isolation: isolate;
-    /* Count the canvas's existing top gutter in the 100px black lead-in. */
-    padding-top: calc(100px - var(--reading-inset, 15px));
-  }
-  .section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    opacity: 0.2;
-    background: url('/assets/images/mosaic-texture.png') 0 0 / 354.99999px 287.9345px repeat;
-  }
-  /* One continuous texture behind the content and both outer black fields. */
-  .canvas { background: transparent; }
-  .texture { display: none; }
+  .section { padding-top: calc(100px - var(--reading-inset, 15px)); }
 }
+
+.texture {
+  display: block; opacity: 0.2; mix-blend-mode: normal;
+  background: var(--responsive-mosaic) 0 0 / 354.99999px 287.9345px repeat;
+}
+.texture > img { display: none; }

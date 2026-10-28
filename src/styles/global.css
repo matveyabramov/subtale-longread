@@ -1,4 +1,6 @@
 html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   background: var(--color-ink);
 }
 
@@ -20,3 +22,13 @@ a {
   outline: var(--border-divider-width) solid var(--color-blue);
   outline-offset: var(--space-10);
 }
+
+
+/* A section owns its whole textured surface, including flow spacers and padding.
+   Canvas isolation still protects the collage's original clipping and layering. */
+[data-section-surface] { position: relative; isolation: isolate; }
+[data-section-surface] > [data-section-texture] {
+  position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1;
+  pointer-events: none;
+}
+[data-section-surface] > [data-section-canvas] { background: transparent; }

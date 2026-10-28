@@ -51,7 +51,6 @@
 
 .longread :global(#emptiness),
 .longread :global(#elephant),
-.longread :global(#movies),
 .longread :global(#vocab) {
   --boundary-space: max(0px, calc(var(--reading-gap) - var(--reading-inset) * 2));
 }
@@ -65,7 +64,6 @@
 .longread :global(#emptiness)::before,
 .longread :global(#elephant)::before,
 .longread :global(#blind-zones)::before,
-.longread :global(#movies)::before,
 .longread :global(#vocab)::before,
 .longread :global(#blind-spot-scene)::before {
   content: '';
@@ -73,8 +71,6 @@
   width: min(100%, 1920px);
   height: var(--boundary-space);
   margin-inline: auto;
-  background: linear-gradient(rgb(1 46 215 / 60%), rgb(1 46 215 / 60%)),
-    url('/assets/images/mosaic-texture.png') 0 0 / 354.99999px 287.9345px repeat;
 }
 
 @media (width <= 1100px) {

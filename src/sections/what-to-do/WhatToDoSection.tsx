@@ -8,10 +8,10 @@ type Panel = (typeof panels)[number];
 
 export function WhatToDoSection() {
   return (
-    <section id="what-to-do" aria-labelledby="what-to-do-title" data-narrative-section className={styles.section}>
-      <div className={styles.canvas} data-node-id="10:1272">
-        <div className={`${styles.texture} ${styles.grain}`} data-node-id="10:1273" aria-hidden="true"
-          style={{ '--responsive-mosaic': `url("${imageAssets['mosaic-texture']}")` } as CSSProperties}><img src={imageAssets['au-fg-texture4-8k']} alt="" /></div>
+    <section id="what-to-do" aria-labelledby="what-to-do-title" data-narrative-section data-section-surface className={styles.section}>
+      <div className={`${styles.texture} ${styles.grain}`} data-section-texture data-node-id="10:1273" aria-hidden="true"
+        style={{ '--responsive-mosaic': `url("${imageAssets['mosaic-texture']}")` } as CSSProperties}><img src={imageAssets['au-fg-texture4-8k']} alt="" /></div>
+      <div className={styles.canvas} data-section-canvas data-node-id="10:1272">
         <div className={styles.sectionHeading}>
           <h2 id="what-to-do-title" tabIndex={-1} className={styles.text} data-node-id="10:1276"><span>{copy['10:1276']}</span></h2>
           <div className={styles.banner} data-node-id="10:1274"><p className={styles.text} data-node-id="10:1275"><span>{copy['10:1275']}</span></p></div>

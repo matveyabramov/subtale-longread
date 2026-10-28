@@ -37,10 +37,10 @@ function EmptinessArtwork() {
 
 export function EmptinessSection() {
   return (
-    <section id="emptiness" aria-labelledby="emptiness-title" data-narrative-section className={styles.section}>
-      <div className={styles.canvas} data-node-id="10:838">
-        <div className={styles.texture} data-node-id="10:839" aria-hidden="true"
-          style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
+    <section id="emptiness" aria-labelledby="emptiness-title" data-narrative-section data-section-surface className={styles.section}>
+      <div className={styles.texture} data-section-texture data-node-id="10:839" aria-hidden="true"
+        style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
+      <div className={styles.canvas} data-section-canvas data-node-id="10:838">
         <h2 id="emptiness-title" tabIndex={-1} className={styles.title} data-node-id="10:840">Мозг не любит</h2>
         <p className={styles.banner} data-node-id="10:841"><span data-node-id="10:842">Пустоту</span></p>
         <p className={styles.copy} data-node-id="10:843">В области слепого пятна глаза нет светочувствительных клеток. Но обычно ты не видишь «дыру»: восприятие достраивает окружающую картину</p>

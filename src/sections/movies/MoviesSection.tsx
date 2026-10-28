@@ -5,11 +5,11 @@ import styles from './MoviesSection.module.css';
 
 export function MoviesSection() {
   return (
-    <section id="movies" aria-labelledby="movies-title" data-narrative-section
+    <section id="movies" aria-labelledby="movies-title" data-narrative-section data-section-surface
       data-case-count={movieCases.length} className={styles.section}>
-      <div className={styles.canvas} data-node-id="10:1794">
-        <div className={styles.texture} data-node-id="10:1795" aria-hidden="true"
-          style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
+      <div className={styles.texture} data-section-texture data-node-id="10:1795" aria-hidden="true"
+        style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
+      <div className={styles.canvas} data-section-canvas data-node-id="10:1794">
         <FilmPerforation edge="top" />
         <FilmPerforation edge="bottom" />
         <div className={styles.sectionHeading}>

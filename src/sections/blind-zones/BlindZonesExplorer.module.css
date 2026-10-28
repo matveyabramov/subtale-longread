@@ -414,3 +414,7 @@
   .activeDescription { min-height: 57.6px; color: var(--color-paper); }
   .question { font-size: 16px; font-weight: 500; line-height: 1.1; letter-spacing: -0.03em; }
 }
+
+
+/* This blue tail belongs to Explorer, before Movies' black film surface starts. */
+.section { padding-bottom: max(0px, calc(var(--reading-gap, 135px) - var(--reading-inset, 30px))); }
