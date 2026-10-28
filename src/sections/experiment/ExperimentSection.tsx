@@ -27,6 +27,22 @@ function NextScreenLink({ href, label, textWidth, nodes }: NextScreenLinkProps) 
   );
 }
 
+function BackLink({ href, nodeId }: { href: ReadingHref; nodeId: string }) {
+  return (
+    <a className={styles.backLink} href={href} data-back-link data-node-id={nodeId}>
+      <span className={styles.backArrow} aria-hidden="true">
+        <span>
+          <picture>
+            <source media="(width <= 600px)" srcSet={vectorAssets['experiment-back-arrow-mobile']} />
+            <img src={vectorAssets['experiment-back-arrow']} alt="" />
+          </picture>
+        </span>
+      </span>
+      <span className={styles.backLabel}>Назад</span>
+    </a>
+  );
+}
+
 function Mosaic({ nodeId, result = false }: { nodeId: string; result?: boolean }) {
   return (
     <div className={`${styles.texture} ${result ? styles.resultTexture : ''}`}
@@ -40,6 +56,7 @@ function Instructions() {
     <section id={experimentSteps[0].anchor} className={styles.screen}
       aria-labelledby="experiment-instructions-title" data-node-id={experimentSteps[0].frame}>
       <Mosaic nodeId="10:719" />
+      <BackLink href="#hero" nodeId="153:6" />
       <div className={styles.instructionBody}>
         <h2 id="experiment-instructions-title" className={styles.instructionTitle} data-node-id="10:720" tabIndex={-1}>Закрой левый глаз</h2>
         <p className={styles.instructionBanner} data-node-id="10:721">
@@ -55,9 +72,11 @@ function Instructions() {
         </div>
       </div>
       <div className={styles.screenFooter}>
-        <a className={styles.bottomLink} href="#emptiness" data-node-id="10:729">Пропустить эксперимент</a>
-        <NextScreenLink href="#experiment-target" label="К крестику и точке" textWidth={194}
-          nodes={['10:725', '10:726', '10:727', '10:728']} />
+        <div className={styles.forwardActions}>
+          <a className={styles.bottomLink} href="#emptiness" data-node-id="10:729">Пропустить эксперимент</a>
+          <NextScreenLink href="#experiment-target" label="К крестику и точке" textWidth={194}
+            nodes={['10:725', '10:726', '10:727', '10:728']} />
+        </div>
       </div>
     </section>
   );
@@ -65,10 +84,11 @@ function Instructions() {
 
 function Target({ help }: { help: ReturnType<typeof useExperimentHelp> }) {
   return (
-    <section id={experimentSteps[1].anchor} className={styles.screen}
+    <section id={experimentSteps[1].anchor} className={`${styles.screen} ${styles.targetScreen}`}
       aria-label="Крестик и точка" aria-describedby="experiment-distance-instruction"
       tabIndex={-1} data-node-id={experimentSteps[1].frame}>
       <Mosaic nodeId="10:731" />
+      <BackLink href="#experiment-instructions" nodeId="153:2" />
       <div className={styles.targetStage}>
         <svg className={styles.cross} width="100" height="100" viewBox="0 0 100 100"
           data-node-id="10:732" aria-hidden="true">
@@ -81,11 +101,13 @@ function Target({ help }: { help: ReturnType<typeof useExperimentHelp> }) {
         <div className={styles.targetDot} data-node-id="10:735" aria-hidden="true" />
       </div>
       <div className={styles.screenFooter}>
-        <button ref={help.triggerRef} type="button" className={styles.bottomLink} data-node-id="10:736"
-          aria-haspopup="dialog" aria-controls="experiment-help" aria-expanded={help.helpOpen}
-          onClick={help.open}>Не получается?</button>
-        <NextScreenLink href="#experiment-result" label="Я попробовал" textWidth={143}
-          nodes={['10:742', '10:743', '10:744', '10:745']} />
+        <div className={styles.forwardActions}>
+          <button ref={help.triggerRef} type="button" className={styles.bottomLink} data-node-id="10:736"
+            aria-haspopup="dialog" aria-controls="experiment-help" aria-expanded={help.helpOpen}
+            onClick={help.open}>Не получается?</button>
+          <NextScreenLink href="#experiment-result" label="Я попробовал" textWidth={143}
+            nodes={['10:742', '10:743', '10:744', '10:745']} />
+        </div>
       </div>
       {createPortal(
         <dialog id="experiment-help" ref={help.dialogRef} className={helpStyles.dialog}
@@ -113,19 +135,20 @@ function Result() {
     <section id={experimentSteps[2].anchor} className={`${styles.screen} ${styles.resultScreen}`}
       aria-labelledby="experiment-result-title" data-node-id={experimentSteps[2].frame}>
       <Mosaic nodeId="10:761" result />
+      <BackLink href="#experiment-target" nodeId="153:10" />
       <div className={styles.resultBody}>
         <div className={styles.resultHeading}>
           <h2 id="experiment-result-title" className={styles.resultTitle} data-node-id="10:766" tabIndex={-1}>Она не мигнула.</h2>
           <p className={styles.resultSecondLine} data-node-id="10:767">Не потускнела.</p>
           <p className={styles.resultBanner} data-node-id="10:762"><span data-node-id="10:763">Просто исчезла.</span></p>
         </div>
+        <p className={`${styles.copy} ${styles.resultNote}`} data-node-id="10:765">{'Не увидел исчезновения?\nЭто нормально: результат зависит от расстояния и условий просмотра'}</p>
         <div className={styles.resultStimulus}>
           <div className={styles.resultDot} data-node-id="10:768" aria-hidden="true" />
           <p className={`${styles.copy} ${styles.dotExplanation}`} data-node-id="10:764">Точка всё это время оставалась на экране</p>
         </div>
       </div>
       <div className={styles.screenFooter}>
-        <p className={`${styles.copy} ${styles.resultNote}`} data-node-id="10:765">{'Не увидел исчезновения?\nЭто нормально: результат зависит от расстояния и условий просмотра'}</p>
         <NextScreenLink href="#emptiness" label="Что это значит?" textWidth={163}
           nodes={['10:769', '10:770', '10:771', '10:772']} />
       </div>

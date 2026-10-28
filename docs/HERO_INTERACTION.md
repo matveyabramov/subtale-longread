@@ -17,3 +17,7 @@ Next: user review; no Experiment interaction work.
 ## Stage 3.3 UX Fix — 2026-10-28
 
 Load/reload of `#hero` now preserves the initial gate; an initial fragment event must not count as a completed introduction. Explicit later-section links and history remain exits. Input modality is recorded without changing focus movement: wheel/touch/click suppress incidental programmatic rings, keyboard navigation restores visible `focus-visible`. The mobile intro bottom now matches the Hero CTA's `max(12px, safe-area-inset-bottom)` instead of leaving a 3px extra strip. These changes were checked in Chrome and WebKit 26.5, including mobile emulation. No opening animation or editorial/artwork change.
+
+## Stage 3.3 Navigation Fix — 2026-10-28
+
+Supersedes the earlier reload behavior: an actual reload now removes the hash, preserves path/query, returns Hero and resets introduction/Experiment state. Initial Safari restoration cannot resolve or bypass the gate. A fresh direct link and Back/Forward preserve their destinations/state. Back from Experiment Instructions is an ordinary #hero link, so it does not replay the already resolved introduction.

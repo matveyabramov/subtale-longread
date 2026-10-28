@@ -26,6 +26,7 @@
 .cross i { top: 8px; transform: rotate(45deg); }
 .cross i:last-child { top: 8px; transform: rotate(-45deg); }
 .trigger { z-index: 50; }
+.trigger[data-experiment-hidden='true'] { visibility: hidden; pointer-events: none; }
 @media (hover: hover) {
   .control:hover { color: #fed128; }
 }

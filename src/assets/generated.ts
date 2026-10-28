@@ -77,6 +77,8 @@ export const posterAssets = {
 } as const;
 
 export const vectorAssets = {
+  "experiment-back-arrow": assetUrl("assets/illustrations/experiment-back-arrow.svg"),
+  "experiment-back-arrow-mobile": assetUrl("assets/illustrations/experiment-back-arrow-mobile.svg"),
   "footer-pixel-mark": assetUrl("assets/illustrations/footer-pixel-mark.svg"),
   "hero-cta-arrow": assetUrl("assets/illustrations/hero-cta-arrow.svg"),
   "hero-intro-arrow-12": assetUrl("assets/illustrations/hero-intro-arrow-12.svg"),

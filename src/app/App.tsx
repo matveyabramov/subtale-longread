@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import { Contents, ContentsTrigger } from '../components/contents/Contents';
 import { HeroSection } from '../sections/hero/HeroSection';
 import { ExperimentSection } from '../sections/experiment/ExperimentSection';
@@ -12,9 +12,11 @@ import { WhatToDoSection } from '../sections/what-to-do/WhatToDoSection';
 import { FooterSection } from '../sections/footer/FooterSection';
 import { useReducedMotion } from '../shared/useReducedMotion';
 import { useInputModality } from '../shared/useInputModality';
+import { positionInitialReadingAnchor } from '../shared/reloadNavigation';
 import styles from './App.module.css';
 
 export function App() {
+  useLayoutEffect(positionInitialReadingAnchor, []);
   useInputModality();
   const reducedMotion = useReducedMotion();
   const [contentsOpen, setContentsOpen] = useState(false);

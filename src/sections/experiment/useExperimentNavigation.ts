@@ -8,14 +8,21 @@ export function useExperimentNavigation() {
       .filter((screen): screen is HTMLElement => screen !== null);
     const experiment = document.getElementById('experiment');
     const previousInert = screens.map((screen) => screen.inert);
+    const contentsTrigger = document.querySelector<HTMLButtonElement>('[aria-controls="contents-panel"]');
+    const previousContentsInert = contentsTrigger?.inert ?? false;
+    const previousContentsHidden = contentsTrigger?.dataset.experimentHidden;
     let current: HTMLElement | null = null;
     let frame = 0;
+    let gestureBoundary: { screen: HTMLElement; from: 'above' | 'below' | null } | null = null;
 
     const activate = (screen: HTMLElement | null) => {
       current = screen;
-      // Keep Tab in the current screen's controls, without trapping the global
-      // contents button or removing any screen/anchor from document flow.
+      // Keep inactive frames and the hidden contents control out of Tab order.
       screens.forEach((item) => { item.inert = screen !== null && item !== screen; });
+      if (contentsTrigger) {
+        contentsTrigger.inert = screen !== null;
+        contentsTrigger.dataset.experimentHidden = String(screen !== null);
+      }
       if (experiment) {
         if (screen) experiment.dataset.activeStep = screen.id;
         else delete experiment.dataset.activeStep;
@@ -25,8 +32,35 @@ export function useExperimentNavigation() {
       const bounds = screen.getBoundingClientRect();
       return bounds.top <= 0.5 && bounds.bottom > 0.5;
     }) ?? null;
-    const sync = () => { frame = 0; activate(atReadingPosition()); };
+    const sync = () => {
+      frame = 0;
+      if (gestureBoundary) {
+        const { screen, from } = gestureBoundary;
+        const bounds = screen.getBoundingClientRect();
+        if (from === null || (from === 'above' ? bounds.top <= 0.5 : bounds.bottom > 0.5)) {
+          if (from !== null) {
+            screen.scrollTop = 0;
+            if (location.hash !== `#${screen.id}`) history.replaceState(history.state, '', `#${screen.id}`);
+          }
+          gestureBoundary.from = null;
+          // Native touch momentum can continue after touchend. Hold only the
+          // Experiment boundary reached by that gesture, never other sections.
+          if (Math.abs(bounds.top) > 0.5) screen.scrollIntoView({ behavior: 'instant', block: 'start' });
+          activate(screen);
+          return;
+        }
+      }
+      activate(atReadingPosition());
+    };
     const schedule = () => { if (!frame) frame = requestAnimationFrame(sync); };
+    const rememberGesture = (delta: number) => {
+      const screen = atReadingPosition();
+      const first = screens[0];
+      const last = screens[screens.length - 1];
+      gestureBoundary = screen ? { screen, from: null }
+        : delta > 0 && first && first.getBoundingClientRect().top > 0.5 ? { screen: first, from: 'above' }
+          : delta < 0 && last && last.getBoundingClientRect().bottom <= 1 ? { screen: last, from: 'below' } : null;
+    };
     const screenForHash = (hash: string) => {
       const id = hash.slice(1);
       if (id === 'experiment') return screens[0] ?? null;
@@ -39,13 +73,14 @@ export function useExperimentNavigation() {
       if (!link || link.target === '_blank' || link.hasAttribute('download')) return;
       const url = new URL(link.href);
       if (url.origin !== location.origin || url.pathname !== location.pathname || !url.hash) return;
+      gestureBoundary = null;
       const next = screenForHash(url.hash);
       activate(next);
       if (next) next.scrollTop = 0;
       // Capture runs before existing link handlers move focus to the target.
       schedule();
     };
-    const historyNavigation = () => { activate(screenForHash(location.hash)); schedule(); };
+    const historyNavigation = () => { gestureBoundary = null; activate(screenForHash(location.hash)); schedule(); };
     const overlayOpen = () => document.querySelector('dialog[open], #contents-panel') !== null;
 
     const enterFromOutside = (delta: number) => {
@@ -54,11 +89,14 @@ export function useExperimentNavigation() {
       if (!first || !last) return false;
       const firstTop = first.getBoundingClientRect().top;
       const lastBottom = last.getBoundingClientRect().bottom;
-      const target = delta > 0 && firstTop > 0 && delta >= firstTop ? first
-        : delta < 0 && lastBottom <= 0 && -delta >= -lastBottom ? last : null;
+      // A fragment boundary can differ by a fraction of a CSS pixel in WebKit.
+      const target = delta > 0 && firstTop > 0.5 && delta >= firstTop ? first
+        : delta < 0 && lastBottom <= 1 && -delta >= Math.max(0, -lastBottom - 1) ? last : null;
       if (!target) return false;
+      gestureBoundary = { screen: target, from: null };
       activate(target);
       target.scrollTop = 0;
+      if (location.hash !== `#${target.id}`) history.replaceState(history.state, '', `#${target.id}`);
       target.scrollIntoView({ behavior: 'instant', block: 'start' });
       return true;
     };
@@ -71,11 +109,10 @@ export function useExperimentNavigation() {
       if (event.defaultPrevented || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey ||
         !event.deltaY || Math.abs(event.deltaX) > Math.abs(event.deltaY) || overlayOpen()) return;
       const delta = event.deltaY * (event.deltaMode === 1 ? 20 : event.deltaMode === 2 ? window.innerHeight : 1);
+      rememberGesture(delta);
+      if (enterFromOutside(delta)) { event.preventDefault(); return; }
       const screen = atReadingPosition();
-      if (!screen) {
-        if (enterFromOutside(delta)) event.preventDefault();
-        return;
-      }
+      if (!screen) return;
       activate(screen);
       // The frame's overscroll containment also stops a large native wheel
       // packet from chaining into the next document screen at its local edge.
@@ -92,8 +129,10 @@ export function useExperimentNavigation() {
       const page = (screen?.clientHeight ?? window.innerHeight) * 0.9;
       const delta = event.key === 'ArrowDown' ? 40 : event.key === 'ArrowUp' ? -40
         : event.key === 'PageUp' || (event.key === ' ' && event.shiftKey) ? -page : page;
+      if (screen || (event.key !== 'Home' && event.key !== 'End')) rememberGesture(delta);
+      else gestureBoundary = null;
+      if (event.key !== 'Home' && event.key !== 'End' && enterFromOutside(delta)) { event.preventDefault(); return; }
       if (!screen) {
-        if (event.key !== 'Home' && event.key !== 'End' && enterFromOutside(delta)) event.preventDefault();
         return;
       }
       event.preventDefault();
@@ -114,11 +153,10 @@ export function useExperimentNavigation() {
       if (!point || !previous || event.defaultPrevented || overlayOpen()) return;
       const delta = previous.y - point.clientY;
       if (!delta || Math.abs(previous.x - point.clientX) >= Math.abs(delta)) return;
+      rememberGesture(delta);
+      if (enterFromOutside(delta)) { event.preventDefault(); return; }
       const screen = atReadingPosition();
-      if (!screen) {
-        if (enterFromOutside(delta)) event.preventDefault();
-        return;
-      }
+      if (!screen) return;
       activate(screen);
       if (!mayScrollLocally(screen, delta, event.target)) event.preventDefault();
     };
@@ -129,15 +167,9 @@ export function useExperimentNavigation() {
         sync();
       });
     };
-    const pagehide = () => { cancelAnimationFrame(frame); frame = 0; activate(null); };
+    const pagehide = () => { gestureBoundary = null; cancelAnimationFrame(frame); frame = 0; };
 
-    const initial = screenForHash(location.hash);
-    activate(initial);
-    // React creates these anchors after the browser's initial fragment lookup.
-    // Resolve a direct/reloaded Experiment link once, but preserve Back/Forward
-    // scroll restoration when this document is restored by the browser.
-    const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined;
-    if (initial && navigation?.type !== 'back_forward') initial.scrollIntoView({ behavior: 'instant', block: 'start' });
+    activate(screenForHash(location.hash));
     schedule();
     document.addEventListener('click', anchorClick, true);
     document.addEventListener('wheel', wheel, { passive: false });
@@ -164,6 +196,11 @@ export function useExperimentNavigation() {
       window.removeEventListener('pagehide', pagehide);
       window.removeEventListener('pageshow', schedule);
       screens.forEach((screen, index) => { screen.inert = previousInert[index] ?? false; });
+      if (contentsTrigger) {
+        contentsTrigger.inert = previousContentsInert;
+        if (previousContentsHidden === undefined) delete contentsTrigger.dataset.experimentHidden;
+        else contentsTrigger.dataset.experimentHidden = previousContentsHidden;
+      }
       if (experiment) delete experiment.dataset.activeStep;
     };
   }, []);

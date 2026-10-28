@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState, type MouseEvent } from 'react';
 import type { ReadingAnchorId } from '../../shared/navigation';
+import { isPageReload } from '../../shared/reloadNavigation';
 
 type IntroState = 'unseen' | 'open' | 'resolved';
 
@@ -61,7 +62,7 @@ export function useHeroIntroduction(contentsOpen: boolean) {
       if (url.origin === location.origin && url.pathname === location.pathname && url.hash &&
         document.getElementById(decodeURIComponent(url.hash.slice(1)))) finish();
     };
-    if ((location.hash && location.hash !== '#hero') || (!location.hash && outsideHero())) finish();
+    if ((location.hash && location.hash !== '#hero') || (!isPageReload && !location.hash && outsideHero())) finish();
     window.addEventListener('hashchange', hashchange);
     window.addEventListener('popstate', navigation);
     window.addEventListener('pagehide', navigation);
