@@ -48,6 +48,7 @@ export function responsiveSlotStyle(wide: ArtSlot, [desktop, tablet, phone]: rea
   const axes = ['x', 'y', 'width', 'height'] as const;
   for (const index of [0, 1, 2, 3] as const) {
     const axis = axes[index];
+    properties[`--desktop-${axis}`] = `${wide[index]}px`;
     const slope = (wide[index] - desktop[index]) / 480;
     properties[`--wide-${axis}`] = `calc(${desktop[index]} * var(--wide-unit) + ${slope} * var(--wide-growth))`;
     // The stacked art region starts after a common description slot in Figma.

@@ -1,15 +1,30 @@
 .section {
   background: var(--color-blue);
-  overflow-x: auto;
+  overflow-x: clip;
 }
 
+/* Explorer owns a viewport, including its insets; no extra narrative tail. */
+.section::before { max-height: 0; }
+
 .canvas {
+  --gutter: clamp(20px, calc(2.083333vw - 10px), 30px);
+  --heading-size: clamp(63px, calc(4.166667vw + 20px), 100px);
+  --wide-unit: min(1px, calc(100vw / 1440));
+  --wide-growth: max(0px, calc(100vw - 1440px));
   position: relative;
   isolation: isolate;
-  width: 1920px;
-  height: 1080px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) min(680px, calc(35vw + 8px));
+  grid-template-rows: auto minmax(240px, 1fr) auto;
+  column-gap: var(--gutter);
+  row-gap: 16px;
+  width: min(100%, 1920px);
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
   margin-inline: auto;
-  overflow: hidden;
+  padding: max(var(--gutter), env(safe-area-inset-top, 0px)) max(var(--gutter), env(safe-area-inset-right, 0px))
+    max(var(--gutter), env(safe-area-inset-bottom, 0px)) max(var(--gutter), env(safe-area-inset-left, 0px));
   color: var(--color-white);
   -webkit-font-smoothing: antialiased;
 }
@@ -18,29 +33,24 @@
   position: absolute;
   inset: 0;
   opacity: 0.4;
-  background-repeat: repeat;
-  background-position: 0 0;
-  background-size: 354.9999899864197px 287.9345006942749px;
+  background: repeat 0 0 / 354.9999899864197px 287.9345006942749px;
   pointer-events: none;
 }
 
 .categories {
-  position: absolute;
-  left: 1210px;
-  top: 30px;
+  grid-column: 2;
+  grid-row: 1 / -1;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  width: 680px;
-  height: 1020px;
+  gap: clamp(20px, calc(2.083333vw - 10px), 30px);
+  min-width: 0;
 }
 
 .card {
   position: relative;
-  flex: 1 0 0;
-  min-height: 1px;
-  width: 680px;
-  padding: 30px;
+  flex: 1 0 auto;
+  min-width: 0;
+  padding: clamp(20px, 1.5vw, 28px);
   border: 1px solid transparent;
   background: rgb(255 255 255 / 20%);
   backdrop-filter: blur(17px);
@@ -59,15 +69,12 @@
   cursor: pointer;
 }
 
-.categoryTab:focus-visible {
+.categoryTab:focus-visible,
+.artworkReveal:focus-visible {
   outline: 2px solid var(--color-white);
   outline-offset: -4px;
 }
-
-.card[data-active='true'] .categoryTab:focus-visible {
-  outline-color: var(--color-ink);
-}
-
+.card[data-active='true'] .categoryTab:focus-visible { outline-color: var(--color-ink); }
 .panel { display: contents; }
 
 .artworkDescription {
@@ -79,136 +86,109 @@
   white-space: nowrap;
 }
 
-.cardContent {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 618px;
-  height: 179px;
-}
-
+.cardContent { display: flex; flex-direction: column; gap: 14px; }
 .cardHeading {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  flex: none;
-  width: 156px;
-  height: 111px;
+  gap: 12px;
   font-family: var(--font-display);
   font-weight: 800;
   line-height: 0.8;
-  letter-spacing: 0;
   text-transform: lowercase;
 }
-
-.number {
-  flex: none;
-  width: 156px;
-  height: 32px;
-  margin: 0;
-  color: var(--color-yellow);
-  font-size: 40px;
-}
-
+.number { margin: 0; color: var(--color-yellow); font-size: clamp(35px, calc(1.041667vw + 20px), 40px); }
 .label {
-  flex: none;
-  height: 64px;
+  --category-label-width: 100%;
   margin: 0;
-  font-size: 80px;
+  font-size: clamp(60px, 4.166667vw, 80px);
   font-weight: 800;
   white-space: nowrap;
 }
-
 .description {
-  flex: none;
-  width: 618px;
-  height: 48px;
   margin: 0;
   color: var(--color-paper);
-  font: 500 20px/1.2 var(--font-copy);
-  letter-spacing: -0.8px;
+  font: 500 clamp(18px, calc(0.416667vw + 12px), 20px)/1.2 var(--font-copy);
+  letter-spacing: -0.04em;
 }
-
-/* Match Figma's 20px glyph baseline without moving its 618×48 text box. */
-.description > span {
-  position: relative;
-  top: 1px;
-}
-
-.card[data-active='true'] {
-  background: var(--color-yellow);
-  color: var(--color-ink);
-}
-
-.card[data-active='true'] .number {
-  color: rgb(11 13 15 / 50%);
-}
-
-.card[data-active='true'] .description {
-  color: var(--color-ink);
-}
+.description > span { position: relative; top: 1px; }
+.card[data-active='true'] { background: var(--color-yellow); color: var(--color-ink); }
+.card[data-active='true'] .number { color: rgb(11 13 15 / 50%); }
+.card[data-active='true'] .description { color: var(--color-ink); }
 
 @media (hover: hover) and (pointer: fine) {
-  .card:has(.categoryTab:hover) {
-    background: var(--color-yellow);
-    color: var(--color-ink);
-  }
+  .card:has(.categoryTab:hover) { background: var(--color-yellow); color: var(--color-ink); }
   .card:has(.categoryTab:hover) .number { color: rgb(11 13 15 / 50%); }
   .card:has(.categoryTab:hover) .description { color: var(--color-ink); }
   .card:has(.categoryTab:hover) .categoryTab:focus-visible { outline-color: var(--color-ink); }
 }
 
-.title,
-.banner {
-  position: absolute;
-  left: 30px;
+.sectionHeading {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(12px, calc(0.625vw + 3px), 15px);
+  min-width: 0;
+}
+.title, .banner {
+  position: relative;
   margin: 0;
-  font: 800 100px/0.8 var(--font-display);
-  letter-spacing: 0;
+  font: 800 var(--heading-size)/0.8 var(--font-display);
   text-transform: uppercase;
-  white-space: nowrap;
 }
-
-.title {
-  top: 30px;
-  width: 227px;
-  height: 80px;
-}
-
 .banner {
-  top: 125px;
-  width: 596px;
-  height: 120px;
-  padding: 20px;
+  max-width: 100%;
+  padding: clamp(16px, calc(0.833333vw + 4px), 20px);
   color: var(--color-ink);
   background: var(--color-yellow);
 }
-
-.banner > span {
-  display: block;
-  width: 556px;
-  height: 80px;
-}
+.banner > span { display: block; }
+.activeDescription { display: none; }
 
 .question {
-  position: absolute;
-  left: 30px;
-  top: 1022px;
-  height: 28px;
+  --question-width: auto;
+  position: relative;
+  grid-column: 1;
+  grid-row: 3;
+  justify-self: start;
+  align-self: end;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  max-width: 100%;
   margin: 0;
   padding: 0;
   border: 0;
   color: var(--color-white);
   background: none;
-  font: 500 25px/1.1 var(--font-copy);
-  letter-spacing: -0.75px;
+  font: 500 var(--font-size-link-control)/1.2 var(--font-copy);
+  letter-spacing: -0.03em;
   text-align: left;
   text-decoration: underline;
   text-underline-position: from-font;
   text-underline-offset: 1px;
-  white-space: nowrap;
 }
+.question:focus-visible { outline-color: var(--color-white); outline-offset: 3px; }
 
+.artworkStage {
+  grid-column: 1;
+  grid-row: 2;
+  position: relative;
+  min-width: 0;
+  min-height: 240px;
+  pointer-events: none;
+}
+.artworkReveal {
+  position: absolute;
+  z-index: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  pointer-events: auto;
+  cursor: pointer;
+}
 .ice {
   position: absolute;
   overflow: hidden;
@@ -250,7 +230,7 @@
   top: 200px;
   width: 735px;
   height: 985px;
-  transform-origin: 367.5px 492.5px;
+  transform-origin: 50% 50%;
   z-index: 5;
 }
 
@@ -259,15 +239,15 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 735px;
+  width: 100%;
 }
 
 .bicycleBase {
-  height: 985px;
+  height: 100%;
 }
 
 .bicycleWheels {
-  height: 984px;
+  height: calc(100% * 984 / 985);
 }
 
 .eye {
@@ -286,115 +266,44 @@
   z-index: 5;
 }
 
-.sectionHeading { display: contents; }
 
-/* The wrappers generate no box in the approved 1920 composition. */
-.artworkStage { display: contents; pointer-events: none; }
-.artworkReveal {
-  position: absolute;
-  left: var(--reveal-x);
-  top: var(--reveal-y);
-  width: var(--reveal-width);
-  height: var(--reveal-height);
-  z-index: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  pointer-events: auto;
-  cursor: pointer;
+/* Every layer stays in the canvas stacking context. Scale coordinates/sizes
+   rather than transforming the stage, which would trap the phone below text. */
+.canvas :is(.ice, .bitmap, .bicycle, .artworkReveal) {
+  --slot-x: var(--desktop-x);
+  --slot-y: var(--desktop-y);
+  --slot-width: var(--desktop-width);
+  --slot-height: var(--desktop-height);
+  --art-x: calc(var(--fit-left, 0px) + (var(--slot-x) - var(--fit-origin-x, 0px)) * var(--fit-scale, 1));
+  --art-y: calc(var(--fit-top, 0px) + (var(--slot-y) - var(--fit-origin-y, 0px)) * var(--fit-scale, 1));
+  --art-width: calc(var(--slot-width) * var(--fit-scale, 1));
+  --art-height: calc(var(--slot-height) * var(--fit-scale, 1));
+  left: var(--art-x);
+  top: var(--art-y);
+  width: var(--art-width);
+  height: var(--art-height);
 }
-.artworkReveal:focus-visible {
-  outline: 2px solid var(--color-white);
-  outline-offset: -4px;
+.canvas .ice { mask-size: 100% 100%; }
+.canvas .ice > img {
+  --ice-image-width: var(--crop-width);
+  --ice-image-height: var(--crop-height);
+  --ice-image-left: var(--crop-left);
+  --ice-image-top: var(--crop-top);
 }
-.activeDescription { display: none; }
 
-/* The 1440 composition keeps a compact category column on the right. */
 @media (width < 1920px) {
-  .section { overflow-x: clip; }
-  .canvas {
-    --gutter: clamp(20px, calc(2.083333vw - 10px), 30px);
-    --heading-size: clamp(63px, calc(4.166667vw + 20px), 100px);
-    --wide-unit: min(1px, calc(100vw / 1440));
-    --wide-growth: max(0px, calc(100vw - 1440px));
-    width: 100%;
-    height: auto;
-    min-height: 56.25vw;
-    padding-block: var(--gutter);
-  }
-  .texture { --texture-order: -1; }
-  .sectionHeading {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: clamp(12px, calc(0.625vw + 3px), 15px);
-    position: absolute;
-    left: var(--gutter);
-    top: var(--gutter);
-    max-width: calc(62.5% - var(--gutter) * 2);
-  }
-  .sectionHeading > .title,
-  .sectionHeading > .banner {
-    position: relative;
-    inset: auto;
-    width: max-content;
-    max-width: 100%;
-    height: auto;
-    font-size: var(--heading-size);
-    white-space: normal;
-  }
-  .sectionHeading > .banner { padding: clamp(16px, calc(0.833333vw + 4px), 20px); }
-  .banner > span { width: auto; height: auto; }
-  .categories {
-    position: relative;
-    inset: auto;
-    width: calc(35vw + 8px);
-    height: auto;
-    margin-left: calc(65vw - 8px - var(--gutter));
-    gap: clamp(20px, calc(2.083333vw - 10px), 30px);
-  }
-  .card { flex: none; width: 100%; padding: clamp(25px, calc(1.041667vw + 10px), 30px); }
-  .cardContent { width: 100%; height: auto; }
-  .cardHeading { width: 100%; height: auto; }
-  .number { width: 100%; height: auto; font-size: clamp(35px, calc(1.041667vw + 20px), 40px); }
-  .label { --category-label-width: 100%; height: auto; font-size: clamp(60px, calc(4.166667vw + 0px), 80px); }
-  .description { display: none; width: 100%; height: auto; font-size: clamp(18px, calc(0.416667vw + 12px), 20px); letter-spacing: -0.04em; }
+  .card .description { display: none; }
   .card[data-active='true'] .description { display: block; }
-  .question { --question-width: auto; left: var(--gutter); top: auto; bottom: var(--gutter); height: auto; max-width: calc(62.5% - var(--gutter) * 2); font-size: clamp(22px, calc(0.625vw + 13px), 25px); font-weight: 600; white-space: normal; }
-
-  .artworkStage { display: block; position: absolute; inset: 0; pointer-events: none; }
-  .artworkReveal {
-    left: var(--wide-x);
-    top: var(--wide-y);
-    width: var(--wide-width);
-    height: var(--wide-height);
-  }
-  .ice, .bitmap, .bicycle {
-    --art-x: var(--wide-x);
-    --art-y: var(--wide-y);
-    --art-width: var(--wide-width);
-    --art-height: var(--wide-height);
-    left: var(--art-x);
-    top: var(--art-y);
-    width: var(--art-width);
-    height: var(--art-height);
-  }
-  .ice { mask-size: 100% 100%; }
-  .ice > img {
-    --ice-image-width: var(--crop-width);
-    --ice-image-height: var(--crop-height);
-    --ice-image-left: var(--crop-left);
-    --ice-image-top: var(--crop-top);
+  .canvas :is(.ice, .bitmap, .bicycle, .artworkReveal) {
+    --slot-x: var(--wide-x);
+    --slot-y: var(--wide-y);
+    --slot-width: var(--wide-width);
+    --slot-height: var(--wide-height);
   }
   .bicycle { --bicycle-transform: none; transform-origin: 0 0; }
-  /* tan(atan2()) provides a unitless CSS progress ratio without resize logic. */
   .section[data-meaning='B'] .bicycle { --bicycle-transform: rotate(calc(30deg + 4.36975deg * tan(atan2(var(--wide-growth), 480px)))); }
-  .bicycleBase { width: 100%; height: 100%; }
-  .bicycleWheels { width: 100%; height: calc(100% * 984 / 985); }
 }
 
-/* Below the category column's comfortable width the approved 2 × 2 grid takes over. */
 @media (width <= 1100px) {
   .canvas {
     --gutter: clamp(15px, calc(1.322751vw + 9.84127px), 20px);
@@ -404,94 +313,54 @@
     --copy-size: clamp(16px, calc(0.529101vw + 13.936508px), 18px);
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    min-height: clamp(844px, calc(47.619048vw + 658.285714px), 1024px);
+    gap: 0;
   }
-  .sectionHeading {
-    order: 0;
-    position: relative;
-    inset: auto;
-    width: auto;
-    max-width: none;
-    margin-inline: var(--gutter);
-    gap: clamp(8px, calc(1.058201vw + 3.873016px), 12px);
-  }
-  .sectionHeading > .banner { padding: clamp(10px, calc(1.058201vw + 5.873016px), 14px); }
+  .sectionHeading { order: 0; flex: none; gap: clamp(8px, calc(1.058201vw + 3.873016px), 12px); }
+  .banner { padding: clamp(10px, calc(1.058201vw + 5.873016px), 14px); }
   .categories {
     order: 1;
     display: grid;
+    flex: none;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: clamp(10px, calc(1.322751vw + 4.84127px), 15px);
-    width: auto;
-    margin: clamp(30px, calc(5.291005vw + 9.365079px), 50px) var(--gutter) 0;
+    margin-top: clamp(20px, 3vw, 30px);
   }
-  .card { min-width: 0; padding: clamp(15px, calc(1.322751vw + 9.84127px), 20px); }
+  .card { padding: clamp(12px, calc(1.322751vw + 6.84127px), 17px); }
   .cardHeading { gap: clamp(6px, calc(1.058201vw + 1.873016px), 10px); }
   .number { font-size: clamp(18px, calc(1.851852vw + 10.777778px), 25px); }
   .label { font-size: clamp(27px, calc(3.439153vw + 13.587302px), 40px); white-space: normal; }
-  .card .description,
-  .card[data-active='true'] .description { display: none; }
+  .card .description, .card[data-active='true'] .description { display: none; }
   .activeDescription {
     order: 2;
     display: block;
     flex: none;
-    width: min(calc(100% - var(--gutter) * 2), 460px);
-    min-height: calc(var(--copy-size) * 1.2 * 2);
-    margin: clamp(12px, calc(2.116402vw + 3.746032px), 20px) var(--gutter) 0;
-    color: var(--color-white);
+    width: min(100%, 476px);
+    min-height: calc(var(--copy-size) * 1.2 * 3);
+    margin: clamp(12px, 2vw, 20px) 0 0;
+    color: var(--color-paper);
     font: 500 var(--copy-size)/1.2 var(--font-copy);
     letter-spacing: -0.04em;
   }
-  .section[data-category='pun'] .activeDescription { width: min(calc(100% - var(--gutter) * 2), 476px); }
   .artworkStage {
     order: 3;
-    flex: 1 0 auto;
-    position: relative;
-    inset: auto;
-    width: 100%;
-    max-width: 768px;
-    min-height: clamp(445px, calc(10.05291vw + 405.79365px), 483px);
-    margin-inline: auto;
+    flex: 1 0 160px;
+    min-height: 160px;
+    margin-block: 12px;
   }
-  .ice, .bitmap, .bicycle {
-    --art-x: var(--stack-x);
-    --art-y: var(--stack-y);
-    --art-width: var(--stack-width);
-    --art-height: var(--stack-height);
-  }
-  .artworkReveal {
-    left: var(--stack-x);
-    top: max(0px, var(--stack-y));
-    width: var(--stack-width);
-    height: min(var(--stack-height), calc(100% - max(0px, var(--stack-y))));
-  }
-  .question {
-    order: 4;
-    position: relative;
-    inset: auto;
-    flex: none;
-    align-self: flex-start;
-    max-width: calc(100% - var(--gutter) * 2);
-    margin-inline: var(--gutter);
-    font-size: clamp(16px, calc(1.058201vw + 11.873016px), 20px);
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -0.04em;
+  .question { order: 4; flex: none; align-self: flex-start; font-size: var(--copy-size); }
+  .canvas :is(.ice, .bitmap, .bicycle, .artworkReveal) {
+    --slot-x: var(--stack-x);
+    --slot-y: var(--stack-y);
+    --slot-width: var(--stack-width);
+    --slot-height: var(--stack-height);
   }
 }
 
-@media (width <= 600px) {
-  .canvas { padding-bottom: max(15px, env(safe-area-inset-bottom, 0px)); }
-  .sectionHeading { gap: 8px; }
-  .sectionHeading > .title, .sectionHeading > .banner { font-size: 45px; }
-  .activeDescription { min-height: 57.6px; color: var(--color-paper); }
-  .question { font-size: 16px; font-weight: 500; line-height: 1.1; letter-spacing: -0.03em; }
-}
-
-
-/* This blue tail belongs to Explorer, before Movies' black film surface starts. */
-.section { padding-bottom: max(0px, calc(var(--reading-gap, 135px) - var(--reading-inset, 30px))); }
-
-@media (min-width: 600.01px) {
-  .question { font-size: var(--font-size-link-control); }
+/* Short phones trade empty space for a useful illustration, never smaller copy. */
+@media (width <= 600px) and (height <= 740px) {
+  .canvas { --heading-size: 40px; }
+  .categories { margin-top: 12px; }
+  .card { padding: 10px; }
+  .activeDescription { margin-top: 10px; }
+  .artworkStage { margin-block: 8px; }
 }

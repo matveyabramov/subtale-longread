@@ -6,6 +6,7 @@ import type { ExplorerCategoryId, ExplorerState, MeaningState } from './model';
 import { explorerCopy, explorerVisuals } from './explorerVisualData';
 import { CulturalReferenceArtwork, DoubleMeaningArtwork, IdiomArtwork, PunArtwork } from './ExplorerArtwork';
 import { explorerRevealStyle } from './explorerRevealBounds';
+import { useExplorerViewportFit } from './useExplorerViewportFit';
 import styles from './BlindZonesExplorer.module.css';
 
 interface BlindZonesExplorerProps {
@@ -23,6 +24,7 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
   const [mousePreview, setMousePreview] = useState<{ category: ExplorerCategoryId; meaning: MeaningState } | null>(null);
   const revealPointer = useRef<string | null>(null);
   const tabs = useRef<(HTMLButtonElement | null)[]>([]);
+  const artworkStage = useExplorerViewportFit(state.category);
   const { category, stateByCategory } = state;
   const meaning = mousePreview?.category === category ? mousePreview.meaning : stateByCategory[category];
   const visual = explorerVisuals[category][meaning];
@@ -113,7 +115,7 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
           <p className={styles.activeDescription}>{activeCopy.description}</p>
           <button type="button" className={styles.question} data-node-id={visual.question}
             style={{ zIndex: visual.order.question, width: `var(--question-width, ${visual.questionWidth}px)` }}>{visual.questionText}</button>
-          <div className={styles.artworkStage}>
+          <div ref={artworkStage} className={styles.artworkStage}>
             <span id="explorer-artwork-description" className={styles.artworkDescription} role="img" aria-label={explorerArtworkDescriptions[category][meaning]} />
             <button type="button" className={styles.artworkReveal} data-explorer-reveal
               style={explorerRevealStyle(category)}

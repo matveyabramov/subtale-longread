@@ -51,6 +51,7 @@ export function PunArtwork({ meaning }: { meaning: MeaningState }) {
     <div className={styles.bicycle} data-node-id={punLayers[0].ids[meaning]} data-art-layer="bicycle" aria-hidden="true"
       style={{
         ...responsiveArtStyle(`pun${meaning}-0`, [x, y, 735, 985]),
+        ...{ '--desktop-x': '50px', '--desktop-y': '200px' },
         transform: `var(--bicycle-transform, matrix(${a},${b},${c},${d},${tx},${ty}))`,
       }}>
       <div className={styles.bicycleBase} data-node-id={punLayers[1].ids[meaning]}>

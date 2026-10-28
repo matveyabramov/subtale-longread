@@ -147,5 +147,5 @@ try {
     }
   }
   assert.deepEqual(errors, []);
-  console.log('All 32 original A/B endpoint geometries preserved; no browser errors.');
+  console.log(baseline ? 'All 32 A/B endpoint geometries match the supplied baseline; no browser errors.' : 'All 32 A/B endpoints render; no browser errors.');
 } finally { await browser.close(); }
