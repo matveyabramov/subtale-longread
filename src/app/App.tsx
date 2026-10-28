@@ -22,7 +22,7 @@ export function App() {
   return (
     <div className={styles.longread} data-reduced-motion={reducedMotion}>
       <main id="main-content" tabIndex={-1}>
-        <HeroSection />
+        <HeroSection contentsOpen={contentsOpen} />
         <ExperimentSection />
         <EmptinessSection />
         <ElephantSection />

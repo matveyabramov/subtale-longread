@@ -1,14 +1,19 @@
+import { createPortal } from 'react-dom';
+import { useHeroIntroduction } from './useHeroIntroduction';
+import introStyles from './HeroIntroduction.module.css';
 import { imageAssets, vectorAssets } from '../../assets/generated';
 import { HeroFilm, HeroPortrait, HeroStars } from './HeroArtwork';
 import styles from './HeroSection.module.css';
 
-export function HeroSection() {
+export function HeroSection({ contentsOpen = false }: { contentsOpen?: boolean }) {
+  const intro = useHeroIntroduction(contentsOpen);
   return (
     <section id="hero" aria-labelledby="hero-title" data-narrative-section className={styles.hero}>
       <div className={styles.canvas} data-node-id="10:472">
         <div className={styles.introduction} data-node-id="10:1928">
           <p className={styles.introCopy} data-node-id="10:1929">{'Слова знакомы. Сюжет продолжается.\nНо весь ли смысл остаётся с тобой?'}</p>
-          <a className={styles.primaryCta} href="#experiment-instructions" data-node-id="10:1930">
+          <a ref={intro.ctaRef} className={styles.primaryCta} href="#experiment-instructions" data-node-id="10:1930"
+            onClick={(event) => intro.navigate(event, 'experiment-instructions')}>
             <span data-node-id="10:1931">Начни с одного эксперимента</span>
             <span className={styles.primaryArrowBox} data-node-id="10:1932">
               <img src={vectorAssets['hero-cta-arrow']} alt="" data-node-id="10:1933" />
@@ -35,24 +40,34 @@ export function HeroSection() {
             <span data-node-id="10:679">{'Сколько шуток из них\nТы правда понял?'}</span>
           </span>
         </h1>
-        <aside hidden className={styles.hint} data-node-id="10:688" aria-labelledby="hero-hint-title">
-          <div className={styles.hintInterior} data-node-id="10:689">
-            <div className={styles.hintCopy} data-node-id="10:690">
-              <h2 id="hero-hint-title" data-node-id="10:691"><span>Сначала — небольшой эксперимент</span></h2>
-              <p data-node-id="10:692">Нажми “Начни с одного эксперимента, чтобы продолжить историю</p>
+      </div>
+      {createPortal(
+        <dialog ref={intro.dialogRef} className={introStyles.dialog} aria-labelledby="hero-hint-title"
+          aria-describedby="hero-hint-description" data-intro-state={intro.state}
+          onCancel={(event) => { event.preventDefault(); intro.finish(true); }}
+          onClose={intro.onClose}>
+          <div className={introStyles.interior}>
+            <div className={introStyles.copy}>
+              <h2 id="hero-hint-title"><span>Сначала — небольшой эксперимент</span></h2>
+              <p id="hero-hint-description">Нажми “Начни с одного эксперимента, чтобы продолжить историю</p>
             </div>
-            <div className={styles.hintActions} data-node-id="10:693">
-              <a className={styles.hintStart} href="#experiment-instructions" data-node-id="10:694">
-                <span data-node-id="10:695">Начать</span>
-                <span className={styles.hintArrowBox} data-node-id="10:696">
-                  <img src={vectorAssets['hero-cta-arrow']} alt="" data-node-id="10:697" />
+            <div className={introStyles.actions}>
+              <a className={introStyles.start} href="#experiment-instructions"
+                onClick={(event) => intro.navigate(event, 'experiment-instructions')}>
+                <span>Начать</span>
+                <span className={introStyles.arrow}>
+                  <picture>
+                    <source media="(width <= 600px)" srcSet={vectorAssets['hero-intro-arrow-12']} />
+                    <source media="(width < 1920px)" srcSet={vectorAssets['hero-intro-arrow-16']} />
+                    <img src={vectorAssets['hero-cta-arrow']} alt="" />
+                  </picture>
                 </span>
               </a>
-              <a className={styles.hintSkip} href="#emptiness" data-node-id="10:698">Пропустить</a>
+              <a className={introStyles.skip} href="#emptiness" onClick={(event) => intro.navigate(event, 'emptiness')}>Пропустить</a>
             </div>
           </div>
-        </aside>
-      </div>
+        </dialog>, document.body,
+      )}
     </section>
   );
 }
