@@ -1,0 +1,57 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "scrollable": false,
+      "bad": 0,
+      "bodyOverflow": ""
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "scrollable": false,
+      "bad": 0,
+      "bodyOverflow": ""
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "scrollable": false,
+      "bad": 0,
+      "bodyOverflow": ""
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "scrollable": false,
+      "bad": 0,
+      "bodyOverflow": ""
+    },
+    {
+      "width": 390,
+      "height": 480,
+      "overflow": false,
+      "scrollable": true,
+      "bad": 0,
+      "bodyOverflow": ""
+    }
+  ],
+  "anchors": [
+    "hero",
+    "experiment",
+    "emptiness",
+    "elephant",
+    "blind-zones",
+    "movies",
+    "vocab",
+    "blind-spot-scene",
+    "what-to-do",
+    "footer"
+  ],
+  "errors": []
+}

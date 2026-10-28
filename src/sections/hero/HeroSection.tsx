@@ -1,8 +1,13 @@
+import type { RefObject } from 'react';
 import { imageAssets, vectorAssets } from '../../assets/generated';
 import { HeroFilm, HeroPortrait, HeroStars } from './HeroArtwork';
 import styles from './HeroSection.module.css';
 
-export function HeroSection() {
+export function HeroSection({ contentsOpen = false, contentsTrigger, onToggleContents }: {
+  contentsOpen?: boolean;
+  contentsTrigger?: RefObject<HTMLButtonElement | null>;
+  onToggleContents?: () => void;
+}) {
   return (
     <section id="hero" aria-labelledby="hero-title" data-narrative-section className={styles.hero}>
       <div className={styles.canvas} data-node-id="10:472">
@@ -35,7 +40,8 @@ export function HeroSection() {
             <span data-node-id="10:679">{'Сколько шуток из них\nТы правда понял?'}</span>
           </span>
         </h1>
-        <button type="button" className={styles.contents} data-node-id="10:680">
+        <button type="button" className={styles.contents} data-node-id="10:680"
+          ref={contentsTrigger} aria-expanded={contentsOpen} aria-controls="contents-panel" onClick={onToggleContents}>
           <span data-node-id="10:681">Оглавление</span>
           <span className={styles.contentsIcon} data-node-id="10:682" aria-hidden="true"><i /><i /></span>
         </button>

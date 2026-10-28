@@ -1,3 +1,5 @@
+import { useCallback, useRef, useState } from 'react';
+import { Contents } from '../components/contents/Contents';
 import { HeroSection } from '../sections/hero/HeroSection';
 import { ExperimentSection } from '../sections/experiment/ExperimentSection';
 import { EmptinessSection } from '../sections/emptiness/EmptinessSection';
@@ -13,11 +15,15 @@ import styles from './App.module.css';
 
 export function App() {
   const reducedMotion = useReducedMotion();
+  const [contentsOpen, setContentsOpen] = useState(false);
+  const contentsTrigger = useRef<HTMLButtonElement>(null);
+  const closeContents = useCallback(() => setContentsOpen(false), []);
 
   return (
     <div className={styles.longread} data-reduced-motion={reducedMotion}>
       <main id="main-content" tabIndex={-1}>
-        <HeroSection />
+        <HeroSection contentsOpen={contentsOpen} contentsTrigger={contentsTrigger}
+          onToggleContents={() => setContentsOpen((open) => !open)} />
         <ExperimentSection />
         <EmptinessSection />
         <ElephantSection />
@@ -28,6 +34,7 @@ export function App() {
         <WhatToDoSection />
       </main>
       <FooterSection />
+      <Contents open={contentsOpen} onClose={closeContents} triggerRef={contentsTrigger} />
     </div>
   );
 }

@@ -207,6 +207,7 @@
 }
 
 .contents {
+  z-index: 4;
   position: absolute;
   left: 1719px;
   top: 20px;
