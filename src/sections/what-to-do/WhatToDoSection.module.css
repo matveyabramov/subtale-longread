@@ -140,3 +140,18 @@
   .line::after { height: 2px; top: -1px; }
   .panel[data-after='true'] .pixel:nth-child(10) { display: block; }
 }
+
+
+/* Black breathing room belongs to this section, around both complete panels. */
+.section {
+  padding-top: calc(var(--dark-section-inset, 120px) - 20px);
+  padding-bottom: var(--dark-section-inset, 120px);
+}
+@media (width >= 1920px) {
+  /* The last source panel ends at 887px; its internal geometry stays intact. */
+  .canvas { height: 887px; }
+}
+@media (width < 1920px) {
+  .section { padding-block: calc(var(--dark-section-inset, 120px) - var(--reading-inset)); }
+  .canvas { min-height: 0; }
+}

@@ -1,10 +1,10 @@
-.section { background: var(--color-blue); overflow-x: auto; }
+.section { background: var(--color-ink); overflow-x: auto; }
 .canvas { position: relative; isolation: isolate; width: 1920px; height: 1080px; margin-inline: auto; overflow: hidden; color: var(--color-white); -webkit-font-smoothing: antialiased; }
 .texture { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; pointer-events: none; }
 .text { position: absolute; margin: 0; white-space: pre-wrap; }
 .text > span { display: block; }
 
-.canvas { height: 1334px; }
+.canvas { height: auto; }
 
 .text[data-node-id='10:1018'] { left: 30px; top: 30px; width: 1002px; height: 288px; font: 800 120px/0.8 var(--font-display); letter-spacing: 0.0px; color: rgb(255 255 255); text-transform: uppercase;  }
 
@@ -37,7 +37,12 @@
 .imageLayer > img { display: block; width: 100%; height: 100%; object-fit: cover; max-inline-size: none; position: absolute; }
 /* Calibrated approximation of image22 source filters; measured limits are in FINAL_SECTIONS_DESKTOP_QA. */
 .imageLayer[data-filtered='true'] > img { filter: grayscale(0.8) brightness(5); }
-.information { position: absolute; left: 0; top: 1080px; width: 1920px; height: 254px; background: var(--color-ink); overflow: hidden; }
+.information {
+  display: grid; grid-template-areas: 'brand school' 'credits credits';
+  grid-template-columns: minmax(0, 1fr) auto; row-gap: 25px;
+  position: relative; width: 100%; padding: 60px 40px 80px;
+  background: var(--color-ink); overflow: hidden;
+}
 .brand { position: absolute; left: 40px; top: 40px; width: 160px; height: 66.66667175292969px; }
 .brandMark { position: absolute; left: 0; top: -0.6495208740234375px; width: 45.2786865234375px; height: 67.31619262695312px; }
 .brandMark > img { max-inline-size: none; }
@@ -55,7 +60,22 @@
 /* Retain the fractional nested brand translation without accumulated layout snapping. */
 .brandName { left: 0; top: 0; transform: translate(56.29256057739258px, 15.609073638916016px); }
 
-.ending, .collageSlot, .collageBoard, .brandSlot, .schoolLogo { display: contents; }
+.collageSlot, .collageBoard { display: contents; }
+.ending { display: block; position: relative; height: 1080px; }
+.brandSlot { grid-area: brand; position: relative; width: 160px; height: 67px; }
+.brandSlot > .brand { left: 0; top: 0; }
+.schoolLogo { grid-area: school; position: relative; width: 201px; height: 80px; }
+.schoolLogo > .imageLayer { --image-transform: scale(1); }
+.information > .credits {
+  grid-area: credits; position: relative; inset: auto;
+  display: flex; flex-wrap: wrap; gap: 100px; width: 100%; height: auto;
+}
+.credits > .credit {
+  --credit-left: auto; --credit-width: auto;
+  position: relative; inset: auto; height: auto;
+  display: flex; flex-direction: column; gap: 5px;
+}
+.credit > .text { position: relative; inset: auto; width: auto; height: auto; }
 
 @media (width < 1920px) {
   .section { overflow-x: clip; }
@@ -70,7 +90,7 @@
   }
   .texture { inset: 0; width: 100%; height: 100%; z-index: -1; mix-blend-mode: normal; opacity: 0.4; background: var(--responsive-mosaic) 0 0 / 354.99999px 287.9345px repeat; }
   .texture > img { display: none; }
-  .ending { display: block; position: relative; min-height: 56.25vw; }
+  .ending { display: block; position: relative; height: auto; min-height: 56.25vw; }
   .ending > .text[data-node-id='10:1018'] { left: var(--gutter); top: var(--gutter); width: calc(50% - var(--gutter) * 2); height: auto; font-size: var(--heading-size); }
   .banner { left: var(--gutter); top: auto; bottom: var(--gutter); width: calc(66.25vw - 440px); max-width: calc(100% - var(--gutter) * 2); height: auto; padding: clamp(16px, calc(0.833333vw + 4px), 20px); }
   .banner > .text[data-node-id='10:1148'] { position: relative; inset: auto; width: 100%; height: auto; font-size: var(--heading-size); }
@@ -85,7 +105,7 @@
   .brand { left: 0; top: 0; transform: scale(var(--footer-artwork-scale, 1)); transform-origin: 0 0; }
   .schoolLogo { display: block; grid-area: school; position: relative; width: var(--school-width); height: calc(var(--school-width) * 80 / 201); }
   .schoolLogo > .imageLayer { --image-transform: scale(var(--footer-artwork-scale, 1)); }
-  .credits { grid-area: credits; position: relative; inset: auto; display: flex; flex-wrap: wrap; gap: 60px; width: 100%; height: auto; }
+  .information > .credits { grid-area: credits; position: relative; inset: auto; display: flex; flex-wrap: wrap; gap: 60px; width: 100%; height: auto; }
   .credit { --credit-left: auto; --credit-width: auto; position: relative; inset: auto; height: auto; display: flex; flex-direction: column; gap: 5px; }
   .credit > .text { position: relative; inset: auto; width: auto; height: auto; }
   .credit > .text:nth-child(2) { font-size: var(--credit-name-size); }
@@ -116,5 +136,12 @@
   .banner { margin-top: 146px; }
   .banner > .text[data-node-id='10:1148'] { width: 271px; }
   .information { row-gap: 35px; margin-top: 0; padding-bottom: max(var(--gutter), env(safe-area-inset-bottom, 0px)); }
-  .credits { flex-direction: column; gap: 20px; }
+  .information > .credits { flex-direction: column; gap: 20px; }
+}
+
+
+/* The information block grows with its credits and the Safari safe area. */
+.information {
+  padding-top: clamp(30px, calc(2.645503vw + 19.68254px), 60px);
+  padding-bottom: calc(clamp(48px, 4.166667vw, 80px) + env(safe-area-inset-bottom, 0px));
 }

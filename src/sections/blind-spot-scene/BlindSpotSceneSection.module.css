@@ -112,3 +112,15 @@
   .pair > .text:first-child::before { content: ''; position: absolute; left: 0; top: 50%; width: 18px; height: 2px; background: rgb(255 255 255 / 30%); }
   .pair > .text:last-child { border-top: 0; border-bottom: 2px solid rgb(255 255 255 / 30%); padding: 0 0 16px; font-size: 20px; }
 }
+
+
+/* Let the following black section supply the transition's breathing room. */
+@media (width >= 1920px) {
+  .canvas { height: 947px; }
+}
+@media (1100px < width < 1920px) {
+  .canvas { min-height: 0; height: calc(0.416667vw + 328px + var(--art-size) + var(--gutter)); }
+}
+@media (width <= 1100px) {
+  .canvas { min-height: 0; }
+}

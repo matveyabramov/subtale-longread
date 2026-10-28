@@ -1,5 +1,9 @@
+html {
+  background: var(--color-ink);
+}
+
 body {
-  background: var(--color-paper);
+  background: var(--color-ink);
   color: var(--color-ink);
   font-family: var(--font-copy);
   font-size: var(--font-size-copy-20);

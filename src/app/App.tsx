@@ -9,12 +9,13 @@ import { BlindSpotSceneSection } from '../sections/blind-spot-scene/BlindSpotSce
 import { WhatToDoSection } from '../sections/what-to-do/WhatToDoSection';
 import { FooterSection } from '../sections/footer/FooterSection';
 import { useReducedMotion } from '../shared/useReducedMotion';
+import styles from './App.module.css';
 
 export function App() {
   const reducedMotion = useReducedMotion();
 
   return (
-    <div data-reduced-motion={reducedMotion}>
+    <div className={styles.longread} data-reduced-motion={reducedMotion}>
       <main id="main-content" tabIndex={-1}>
         <HeroSection />
         <ExperimentSection />

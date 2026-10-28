@@ -37,3 +37,50 @@
 .foundation h3 {
   margin-inline-start: var(--space-30);
 }
+
+
+/* Boundary spacing counts the empty space already present inside each frame.
+   Hero/Experiment retain their existing viewport compositions and long lead-in. */
+.longread {
+  --reading-gap: clamp(100px, calc(3.333333vw + 87px), 135px);
+  --reading-inset: clamp(20px, calc(2.083333vw - 10px), 30px);
+  --dark-section-inset: clamp(100px, calc(1.904762vw + 92.571429px), 120px);
+  --elephant-tail: clamp(41px, calc(11.666667vw - 127px), 97px);
+  --vocab-tail: clamp(41px, calc(9.791667vw - 100px), 88px);
+}
+
+.longread :global(#emptiness),
+.longread :global(#elephant),
+.longread :global(#movies),
+.longread :global(#vocab) {
+  --boundary-space: max(0px, calc(var(--reading-gap) - var(--reading-inset) * 2));
+}
+.longread :global(#blind-zones) {
+  --boundary-space: max(0px, calc(var(--reading-gap) - var(--elephant-tail) - var(--reading-inset)));
+}
+.longread :global(#blind-spot-scene) {
+  --boundary-space: max(0px, calc(var(--reading-gap) - var(--vocab-tail) - var(--reading-inset)));
+}
+
+.longread :global(#emptiness)::before,
+.longread :global(#elephant)::before,
+.longread :global(#blind-zones)::before,
+.longread :global(#movies)::before,
+.longread :global(#vocab)::before,
+.longread :global(#blind-spot-scene)::before {
+  content: '';
+  display: block;
+  width: min(100%, 1920px);
+  height: var(--boundary-space);
+  margin-inline: auto;
+  background: linear-gradient(rgb(1 46 215 / 60%), rgb(1 46 215 / 60%)),
+    url('/assets/images/mosaic-texture.png') 0 0 / 354.99999px 287.9345px repeat;
+}
+
+@media (width <= 1100px) {
+  .longread {
+    --reading-inset: clamp(15px, calc(1.322751vw + 9.84127px), 20px);
+    --elephant-tail: clamp(29px, calc(3.703704vw + 14.555556px), 43px);
+    --vocab-tail: var(--reading-inset);
+  }
+}
