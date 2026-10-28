@@ -22,7 +22,7 @@ try {
     const section = page.locator('#blind-zones');
     const tabs = section.getByRole('tab');
     const panel = section.getByRole('tabpanel');
-    const question = panel.getByRole('button');
+    const question = panel.locator('button:not([data-explorer-reveal])');
     const select = async (index) => width <= 768 ? tabs.nth(index).tap() : tabs.nth(index).click();
     const settle = () => section.evaluate(async (s) => Promise.all([...s.querySelectorAll('img')].map((i) => i.decode())));
     const heightBefore = await section.evaluate((s) => s.getBoundingClientRect().height);
@@ -54,7 +54,7 @@ try {
       if (baseline) {
         const actual = await section.evaluate((s) => {
           const root = s.getBoundingClientRect();
-          const nodes = [...s.querySelectorAll('[data-section-canvas], [data-active], [data-art-layer], button')].filter((n) => n.role !== 'tab');
+          const nodes = [...s.querySelectorAll('[data-section-canvas], [data-active], [data-art-layer], button')].filter((n) => n.role !== 'tab' && !n.hasAttribute('data-explorer-reveal'));
           return nodes.map((n) => { const r = n.getBoundingClientRect(); return { x: r.x - root.x, y: r.y - root.y, w: r.width, h: r.height }; });
         });
         const expected = baseline[`${width}-${categories[index]}`];
@@ -112,7 +112,7 @@ try {
     await context.close();
     console.log(`${width}: categories, images, copy, geometry, URL/scroll, touch/click, keyboard/focus, persistence/reload passed`);
   }
-  // Seed B only through the existing isolated visual fixture; no runtime A/B trigger.
+  // Seed B through the isolated fixture to verify per-category memory independently of input.
   const page = await browser.newPage();
   await page.route('**/qa/explorer.html?*', async (route) => {
     const response = await route.fetch();

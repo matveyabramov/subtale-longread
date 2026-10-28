@@ -21,4 +21,4 @@ export interface ExplorerState {
   stateByCategory: Record<ExplorerCategoryId, MeaningState>;
 }
 
-// Section-local memory until reload. A/B controls are reserved for a later stage.
+// Section-local memory until reload. Mouse hover previews do not overwrite it.

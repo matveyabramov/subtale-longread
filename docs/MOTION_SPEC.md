@@ -5,6 +5,8 @@
 **Current raster paths (Stage 0.2H.2):** original Figma sources now live under `source-assets/images/`; source filenames in historical endpoint tables identify those masters. Use each imageHash's separate `optimizedPath` in `FIGMA_ASSET_MAP.json` / `ASSET_DELIVERY.json` for future rendering. Multiply unchanged normalized crops by the selected delivery file's actual dimensions. Hidden/occluded source-only fills have no public derivative unless later approved motion needs one. All positions, transforms, source visibility, ordering, SVG/CSS masks and independent object boundaries below remain unchanged. Idiom WebPs and its shared Mosaic PNG delivery path/bytes are untouched.
 
 
+**Stage 3.4B (2026-10-28), Awaiting Review:** пользователь утвердил триггер A/B на области иллюстрации: mouse hover→B / leave→A; touch/pen tap и Enter/Space→toggle сохранённого состояния категории. Отдельного видимого переключателя нет; нижняя ссылка и hover карточек не раскрывают B. Все четыре пары сейчас меняются мгновенно (0ms). M07–M10 ниже описывают будущие варианты Stage 4, а не включённые анимации; их старое обозначение reveal-кнопки не означает нижнюю ссылку.
+
 ## Stage 0.3 — назначение и характер движения
 
 SUBTALE строится на резкой типографике, контрасте синего/жёлтого, зерне, пикселях и коллаже. Рекомендация: движение отмечает **изменение прочтения**, не добавляет самостоятельное шоу. Не анимировать каждый заголовок, не раскладывать текст по буквам, не вводить cursor-follow, floating loop, glitch, bounce, auto-carousel, zoom камеры или parallax только ради стиля. Статические композиции остаются полноценным результатом.

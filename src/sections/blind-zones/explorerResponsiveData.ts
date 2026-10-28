@@ -38,6 +38,12 @@ export function responsiveArtStyle(
   wide: readonly [number, number, number, number],
 ) {
   const [desktop, tablet, phone] = responsiveArtSlots[key as keyof typeof responsiveArtSlots];
+  return responsiveSlotStyle(wide, [desktop, tablet, phone]);
+}
+
+type ArtSlot = readonly [number, number, number, number];
+
+export function responsiveSlotStyle(wide: ArtSlot, [desktop, tablet, phone]: readonly [ArtSlot, ArtSlot, ArtSlot]) {
   const properties: Record<string, string> = {};
   const axes = ['x', 'y', 'width', 'height'] as const;
   for (const index of [0, 1, 2, 3] as const) {

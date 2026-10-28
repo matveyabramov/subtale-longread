@@ -1,10 +1,11 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { KeyboardEvent } from 'react';
 import { imageAssets } from '../../assets/generated';
 import { explorerArtworkDescriptions, explorerCategories } from './model';
 import type { ExplorerCategoryId, ExplorerState, MeaningState } from './model';
 import { explorerCopy, explorerVisuals } from './explorerVisualData';
 import { CulturalReferenceArtwork, DoubleMeaningArtwork, IdiomArtwork, PunArtwork } from './ExplorerArtwork';
+import { explorerRevealStyle } from './explorerRevealBounds';
 import styles from './BlindZonesExplorer.module.css';
 
 interface BlindZonesExplorerProps {
@@ -19,13 +20,36 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
     stateByCategory: { idiom: 'A', pun: 'A', doubleMeaning: 'A', reference: 'A', [initialCategory]: initialMeaning },
   }));
   const [focusedCategory, setFocusedCategory] = useState(initialCategory);
+  const [mousePreview, setMousePreview] = useState<{ category: ExplorerCategoryId; meaning: MeaningState } | null>(null);
+  const revealPointer = useRef<string | null>(null);
   const tabs = useRef<(HTMLButtonElement | null)[]>([]);
   const { category, stateByCategory } = state;
-  const meaning = stateByCategory[category];
+  const meaning = mousePreview?.category === category ? mousePreview.meaning : stateByCategory[category];
   const visual = explorerVisuals[category][meaning];
   const activeCopy = explorerCopy.find((copy) => copy.category === category)!;
 
+  useEffect(() => {
+    const clearPreview = () => setMousePreview(null);
+    const hover = window.matchMedia('(any-hover: hover) and (any-pointer: fine)');
+    const visibility = () => { if (document.hidden) clearPreview(); };
+    hover.addEventListener('change', clearPreview);
+    document.addEventListener('visibilitychange', visibility);
+    window.addEventListener('pagehide', clearPreview);
+    return () => {
+      hover.removeEventListener('change', clearPreview);
+      document.removeEventListener('visibilitychange', visibility);
+      window.removeEventListener('pagehide', clearPreview);
+    };
+  }, []);
+
+  function toggleMeaning() {
+    const next = meaning === 'A' ? 'B' : 'A';
+    setMousePreview(null);
+    setState((current) => ({ ...current, stateByCategory: { ...current.stateByCategory, [category]: next } }));
+  }
+
   function selectCategory(next: ExplorerCategoryId) {
+    if (next !== category) setMousePreview(null);
     setFocusedCategory(next);
     setState((current) => current.category === next ? current : { ...current, category: next });
   }
@@ -90,7 +114,32 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
           <button type="button" className={styles.question} data-node-id={visual.question}
             style={{ zIndex: visual.order.question, width: `var(--question-width, ${visual.questionWidth}px)` }}>{visual.questionText}</button>
           <div className={styles.artworkStage}>
-            <span className={styles.artworkDescription} role="img" aria-label={explorerArtworkDescriptions[category][meaning]} />
+            <span id="explorer-artwork-description" className={styles.artworkDescription} role="img" aria-label={explorerArtworkDescriptions[category][meaning]} />
+            <button type="button" className={styles.artworkReveal} data-explorer-reveal
+              style={explorerRevealStyle(category)}
+              aria-label={`Изменить прочтение иллюстрации: ${activeCopy.label}`}
+              aria-describedby="explorer-reveal-instructions explorer-artwork-description"
+              aria-pressed={meaning === 'B'}
+              onPointerEnter={(event) => {
+                if (event.pointerType === 'mouse' && window.matchMedia('(any-hover: hover) and (any-pointer: fine)').matches) {
+                  setMousePreview({ category, meaning: 'B' });
+                }
+              }}
+              onPointerLeave={(event) => {
+                if (event.pointerType === 'mouse') setMousePreview({ category, meaning: 'A' });
+              }}
+              onPointerDown={(event) => {
+                revealPointer.current = event.pointerType;
+                if (event.pointerType !== 'mouse') setMousePreview(null);
+              }}
+              onPointerCancel={() => { revealPointer.current = null; setMousePreview(null); }}
+              onClick={(event) => {
+                if (event.detail === 0 || revealPointer.current === 'touch' || revealPointer.current === 'pen') toggleMeaning();
+                revealPointer.current = null;
+              }} />
+            <span id="explorer-reveal-instructions" className={styles.artworkDescription}>
+              Нажмите Enter, пробел или коснитесь иллюстрации, чтобы изменить её прочтение.
+            </span>
             {category === 'idiom' && <IdiomArtwork meaning={meaning} />}
             {category === 'pun' && <PunArtwork meaning={meaning} />}
             {category === 'doubleMeaning' && <DoubleMeaningArtwork meaning={meaning} />}

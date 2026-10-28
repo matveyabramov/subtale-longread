@@ -290,6 +290,24 @@
 
 /* The wrappers generate no box in the approved 1920 composition. */
 .artworkStage { display: contents; pointer-events: none; }
+.artworkReveal {
+  position: absolute;
+  left: var(--reveal-x);
+  top: var(--reveal-y);
+  width: var(--reveal-width);
+  height: var(--reveal-height);
+  z-index: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.artworkReveal:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: -4px;
+}
 .activeDescription { display: none; }
 
 /* The 1440 composition keeps a compact category column on the right. */
@@ -346,6 +364,12 @@
   .question { --question-width: auto; left: var(--gutter); top: auto; bottom: var(--gutter); height: auto; max-width: calc(62.5% - var(--gutter) * 2); font-size: clamp(22px, calc(0.625vw + 13px), 25px); font-weight: 600; white-space: normal; }
 
   .artworkStage { display: block; position: absolute; inset: 0; pointer-events: none; }
+  .artworkReveal {
+    left: var(--wide-x);
+    top: var(--wide-y);
+    width: var(--wide-width);
+    height: var(--wide-height);
+  }
   .ice, .bitmap, .bicycle {
     --art-x: var(--wide-x);
     --art-y: var(--wide-y);
@@ -434,6 +458,12 @@
     --art-y: var(--stack-y);
     --art-width: var(--stack-width);
     --art-height: var(--stack-height);
+  }
+  .artworkReveal {
+    left: var(--stack-x);
+    top: max(0px, var(--stack-y));
+    width: var(--stack-width);
+    height: min(var(--stack-height), calc(100% - max(0px, var(--stack-y))));
   }
   .question {
     order: 4;
