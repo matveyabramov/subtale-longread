@@ -4,6 +4,7 @@ import { imageAssets, vectorAssets } from '../../assets/generated';
 import type { ReadingHref } from '../../shared/navigation';
 import { experimentSteps, type ExperimentOutcome } from './model';
 import { useExperimentHelp } from './useExperimentHelp';
+import { useExperimentNavigation } from './useExperimentNavigation';
 import helpStyles from './ExperimentHelp.module.css';
 import styles from './ExperimentSection.module.css';
 
@@ -88,7 +89,8 @@ function Target({ help }: { help: ReturnType<typeof useExperimentHelp> }) {
       </div>
       {createPortal(
         <dialog id="experiment-help" ref={help.dialogRef} className={helpStyles.dialog}
-          aria-labelledby="experiment-help-title" onCancel={(event) => { event.preventDefault(); help.close(); }} onClose={help.onClose}>
+          aria-labelledby="experiment-help-title" onCancel={(event) => { event.preventDefault(); help.close(); }} onClose={help.onClose}
+          onPointerDown={help.onPointerDown} onPointerCancel={help.onPointerCancel} onClick={help.onBackdropClick}>
           <div className={helpStyles.interior}>
             <div className={helpStyles.header}>
               <h3 id="experiment-help-title" className={helpStyles.title}><span>Не получается?</span></h3>
@@ -132,6 +134,7 @@ function Result() {
 }
 
 export function ExperimentSection() {
+  useExperimentNavigation();
   const help = useExperimentHelp();
   const [outcome, setOutcome] = useState<ExperimentOutcome>('unattempted');
   const navigate = (event: MouseEvent<HTMLElement>) => {

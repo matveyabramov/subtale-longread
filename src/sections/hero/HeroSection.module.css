@@ -48,6 +48,8 @@
   padding: 5px 5px 5px 20px;
 }
 
+.primaryCta:focus-visible { outline-color: #fff; outline-offset: 4px; }
+
 .primaryCta {
   position: relative;
   margin-top: 30px;

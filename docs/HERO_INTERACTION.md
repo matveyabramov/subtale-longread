@@ -13,3 +13,7 @@ Checks: production Chrome at 390×844, 768×1024, 1440×810, 1920×1080 and shor
 Additional `npm run assets:check` reports four pre-existing unregistered tracked rasters: `public/assets/images/hero/portrait-{1440,1920,390,768}.png`. The new SVG delivery catalogue verifies; the existing raster registry issue is outside this stage.
 
 Next: user review; no Experiment interaction work.
+
+## Stage 3.3 UX Fix — 2026-10-28
+
+Load/reload of `#hero` now preserves the initial gate; an initial fragment event must not count as a completed introduction. Explicit later-section links and history remain exits. Input modality is recorded without changing focus movement: wheel/touch/click suppress incidental programmatic rings, keyboard navigation restores visible `focus-visible`. The mobile intro bottom now matches the Hero CTA's `max(12px, safe-area-inset-bottom)` instead of leaving a 3px extra strip. These changes were checked in Chrome and WebKit 26.5, including mobile emulation. No opening animation or editorial/artwork change.

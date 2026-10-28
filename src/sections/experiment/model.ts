@@ -9,7 +9,7 @@ export const experimentSteps = [
 export type ExperimentStep = (typeof experimentSteps)[number]['id'];
 export type ExperimentOutcome = 'unattempted' | 'attempted' | 'skipped';
 
-// Reading position is not a gate: all three screens remain in document flow.
+// Screens remain in document flow; gestures stay local to the active frame.
 export interface ExperimentState {
   outcome: ExperimentOutcome;
   helpOpen: boolean;

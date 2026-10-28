@@ -40,7 +40,7 @@
   .start { font-size: 28px; }
 }
 @media (width <= 600px) {
-  .dialog { left: max(15px, env(safe-area-inset-left, 0px)); right: max(15px, env(safe-area-inset-right, 0px)); bottom: max(15px, env(safe-area-inset-bottom, 0px)); transform: none; width: auto; max-height: calc(100dvh - max(15px, env(safe-area-inset-top, 0px)) - max(15px, env(safe-area-inset-bottom, 0px))); }
+  .dialog { left: max(15px, env(safe-area-inset-left, 0px)); right: max(15px, env(safe-area-inset-right, 0px)); bottom: max(12px, env(safe-area-inset-bottom, 0px)); transform: none; width: auto; max-height: calc(100dvh - max(15px, env(safe-area-inset-top, 0px)) - max(12px, env(safe-area-inset-bottom, 0px))); }
   .copy h2 { margin-bottom: 16px; font-size: 30px; line-height: 1; }
   .copy p { min-height: 54px; font-size: 16px; font-weight: 600; }
   .actions { gap: 16px; }

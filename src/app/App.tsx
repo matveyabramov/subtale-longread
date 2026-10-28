@@ -11,9 +11,11 @@ import { BlindSpotSceneSection } from '../sections/blind-spot-scene/BlindSpotSce
 import { WhatToDoSection } from '../sections/what-to-do/WhatToDoSection';
 import { FooterSection } from '../sections/footer/FooterSection';
 import { useReducedMotion } from '../shared/useReducedMotion';
+import { useInputModality } from '../shared/useInputModality';
 import styles from './App.module.css';
 
 export function App() {
+  useInputModality();
   const reducedMotion = useReducedMotion();
   const [contentsOpen, setContentsOpen] = useState(false);
   const contentsTrigger = useRef<HTMLButtonElement>(null);

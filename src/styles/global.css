@@ -38,6 +38,10 @@ a {
   outline-offset: var(--space-10);
 }
 
+/* Programmatic focus still moves for accessibility. Only actual keyboard input
+   paints its ring; wheel and touch must not inherit a dialog's keyboard state. */
+:root[data-input-modality='pointer'] :focus-visible { outline: none; }
+
 
 /* A section owns its whole textured surface, including flow spacers and padding.
    Canvas isolation still protects the collage's original clipping and layering. */

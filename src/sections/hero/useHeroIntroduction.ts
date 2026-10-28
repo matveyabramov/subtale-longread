@@ -48,6 +48,11 @@ export function useHeroIntroduction(contentsOpen: boolean) {
       return !hero || hero.getBoundingClientRect().bottom <= 0;
     };
     const navigation = () => finish();
+    const hashchange = () => {
+      // Loading/reloading #hero can emit the initial hash event after mount.
+      // An explicit Hero link is already handled by anchorClick below.
+      if (location.hash !== '#hero' || stateRef.current === 'open') finish();
+    };
     const anchorClick = (event: globalThis.MouseEvent) => {
       if (event.button !== 0 || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return;
       const anchor = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[href]') : null;
@@ -56,13 +61,13 @@ export function useHeroIntroduction(contentsOpen: boolean) {
       if (url.origin === location.origin && url.pathname === location.pathname && url.hash &&
         document.getElementById(decodeURIComponent(url.hash.slice(1)))) finish();
     };
-    if ((location.hash && location.hash !== '#hero') || outsideHero()) finish();
-    window.addEventListener('hashchange', navigation);
+    if ((location.hash && location.hash !== '#hero') || (!location.hash && outsideHero())) finish();
+    window.addEventListener('hashchange', hashchange);
     window.addEventListener('popstate', navigation);
     window.addEventListener('pagehide', navigation);
     document.addEventListener('click', anchorClick, true);
     return () => {
-      window.removeEventListener('hashchange', navigation);
+      window.removeEventListener('hashchange', hashchange);
       window.removeEventListener('popstate', navigation);
       window.removeEventListener('pagehide', navigation);
       document.removeEventListener('click', anchorClick, true);
