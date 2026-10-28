@@ -613,3 +613,19 @@
   .contents > span:first-child { width: calc(100% - 48px); height: 20px; }
   .contents::after { inset-block: -12px; }
 }
+
+/* Keep the label's right edge and line box when reducing its type size.
+   Offsets equal the lost advance of «Оглавление» in the bundled mono font. */
+@media (600px < width < 1920px) {
+  .contents > span:first-child {
+    font-size: 20px;
+    line-height: 24.2px;
+    transform: translateX(12px);
+  }
+}
+@media (width >= 1920px) {
+  .contents > span:first-child {
+    font-size: 18px;
+    transform: translateX(12px);
+  }
+}
