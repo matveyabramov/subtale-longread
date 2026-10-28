@@ -1,9 +1,11 @@
 const locks = new Set<symbol>();
-let restore: (() => void) | null = null;
+let restore: ((position: boolean) => void) | null = null;
+let restorePosition = true;
 
 /** One iOS-safe page lock, shared by the Experiment layer and its help dialog. */
 export function lockPageScroll() {
   if (locks.size === 0) {
+    restorePosition = true;
     const root = document.documentElement;
     const body = document.body;
     const x = window.scrollX;
@@ -25,20 +27,22 @@ export function lockPageScroll() {
     body.style.setProperty('width', '100%');
     body.style.setProperty('overflow', 'hidden');
     if (gutter) body.style.setProperty('padding-right', `calc(${padding} + ${gutter}px)`);
-    restore = () => {
+    restore = (position) => {
       previous.forEach(({ element, name, value, priority }) => {
         if (value) element.style.setProperty(name, value, priority);
         else element.style.removeProperty(name);
       });
-      window.scrollTo({ left: x, top: y, behavior: 'instant' });
+      if (position) window.scrollTo({ left: x, top: y, behavior: 'instant' });
     };
   }
   const token = Symbol('page-scroll-lock');
   locks.add(token);
-  return () => {
-    if (!locks.delete(token) || locks.size) return;
+  return (position = true) => {
+    if (!locks.delete(token)) return;
+    restorePosition &&= position;
+    if (locks.size) return;
     const release = restore;
     restore = null;
-    release?.();
+    release?.(restorePosition);
   };
 }

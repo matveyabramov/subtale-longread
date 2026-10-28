@@ -43,7 +43,7 @@ function BackLink({ href, nodeId }: { href: ReadingHref; nodeId: string }) {
   );
 }
 
-function Mosaic({ nodeId, result = false }: { nodeId?: string | undefined; result?: boolean }) {
+function Mosaic({ nodeId, result = false }: { nodeId: string; result?: boolean }) {
   return (
     <div className={`${styles.texture} ${result ? styles.resultTexture : ''}`}
       data-node-id={nodeId} aria-hidden="true"
@@ -136,23 +136,20 @@ function Target({ help }: { help: ReturnType<typeof useExperimentHelp> }) {
   );
 }
 
-function ResultVisual({ decorative = false }: { decorative?: boolean }) {
-  const Title = decorative ? 'p' : 'h2';
-  const node = (id: string) => decorative ? undefined : id;
+function ResultVisual() {
   return (
     <>
-      <Mosaic nodeId={node('10:761')} result />
+      <Mosaic nodeId="10:761" result />
       <div className={styles.resultBody}>
         <div className={styles.resultHeading}>
-          <Title id={decorative ? undefined : 'experiment-result-title'} className={styles.resultTitle}
-            data-node-id={node('10:766')} tabIndex={decorative ? undefined : -1}>Она не мигнула.</Title>
-          <p className={styles.resultSecondLine} data-node-id={node('10:767')}>Не потускнела.</p>
-          <p className={styles.resultBanner} data-node-id={node('10:762')}><span data-node-id={node('10:763')}>Просто исчезла.</span></p>
+          <h2 id="experiment-result-title" className={styles.resultTitle} data-node-id="10:766" tabIndex={-1}>Она не мигнула.</h2>
+          <p className={styles.resultSecondLine} data-node-id="10:767">Не потускнела.</p>
+          <p className={styles.resultBanner} data-node-id="10:762"><span data-node-id="10:763">Просто исчезла.</span></p>
         </div>
-        <p className={`${styles.copy} ${styles.resultNote}`} data-node-id={node('10:765')}>{'Не увидел исчезновения?\nЭто нормально: результат зависит от расстояния и условий просмотра'}</p>
+        <p className={`${styles.copy} ${styles.resultNote}`} data-node-id="10:765">{'Не увидел исчезновения?\nЭто нормально: результат зависит от расстояния и условий просмотра'}</p>
         <div className={styles.resultStimulus}>
-          <div className={styles.resultDot} data-node-id={node('10:768')} aria-hidden="true" />
-          <p className={`${styles.copy} ${styles.dotExplanation}`} data-node-id={node('10:764')}>Точка всё это время оставалась на экране</p>
+          <div className={styles.resultDot} data-node-id="10:768" aria-hidden="true" />
+          <p className={`${styles.copy} ${styles.dotExplanation}`} data-node-id="10:764">Точка всё это время оставалась на экране</p>
         </div>
       </div>
     </>
@@ -189,23 +186,18 @@ export function ExperimentSection({ navigation }: { navigation: ReturnType<typeo
     else if (id === 'emptiness' && !anchor.closest('#experiment-result')) setOutcome('skipped');
     navigation.navigate(id as ReadingAnchorId);
   };
-  return (
-    <>
-      <section id="experiment" aria-label="Эксперимент" data-narrative-section data-outcome={outcome}
-        data-active-step={step ? experimentSteps.find((item) => item.id === step)?.anchor : undefined}
-        className={styles.experiment}>
-        <div className={`${styles.screen} ${styles.resultScreen} ${styles.slotPreview}`} aria-hidden="true" inert>
-          <ResultVisual decorative />
-        </div>
-      </section>
-      {step && createPortal(
+  return createPortal(
+    <section id="experiment" aria-label="Эксперимент" data-narrative-section data-outcome={outcome}
+      data-active-step={step ? experimentSteps.find((item) => item.id === step)?.anchor : undefined}
+      className={styles.experiment} hidden={!step} inert={!step}>
+      {step && (
         <div id="experiment-layer" role="dialog" aria-modal="true" aria-label="Эксперимент"
           className={styles.layer} onClick={navigate}>
           {step === 'instructions' && <Instructions />}
           {step === 'target' && <Target help={help} />}
           {step === 'result' && <Result />}
-        </div>, document.body,
+        </div>
       )}
-    </>
+    </section>, document.body,
   );
 }

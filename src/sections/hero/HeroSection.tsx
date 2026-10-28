@@ -5,10 +5,10 @@ import { imageAssets, vectorAssets } from '../../assets/generated';
 import { HeroFilm, HeroPortrait, HeroStars } from './HeroArtwork';
 import styles from './HeroSection.module.css';
 
-export function HeroSection({ contentsOpen = false }: { contentsOpen?: boolean }) {
+export function HeroSection({ contentsOpen = false, hidden = false }: { contentsOpen?: boolean; hidden?: boolean }) {
   const intro = useHeroIntroduction(contentsOpen);
   return (
-    <section id="hero" aria-labelledby="hero-title" data-narrative-section className={styles.hero}>
+    <section id="hero" aria-labelledby="hero-title" data-narrative-section className={styles.hero} hidden={hidden} inert={hidden}>
       <div className={styles.canvas} data-node-id="10:472">
         <div className={styles.introduction} data-node-id="10:1928">
           <p className={styles.introCopy} data-node-id="10:1929">{'Слова знакомы. Сюжет продолжается.\nНо весь ли смысл остаётся с тобой?'}</p>

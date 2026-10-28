@@ -11,6 +11,7 @@ export function useCurrentSection() {
     const update = () => {
       let active: SectionId = 'hero';
       for (const section of sections) {
+        if (!section.getClientRects().length) continue;
         if (section.getBoundingClientRect().top <= window.innerHeight * 0.3) active = section.id as SectionId;
       }
       // A short final chapter may never reach the reading line at maximum scroll.

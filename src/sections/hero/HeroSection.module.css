@@ -2,6 +2,7 @@
   background: var(--color-blue);
   overflow-x: clip;
 }
+.hero[hidden] { display: none; }
 
 .canvas {
   --portrait-top: 357px;

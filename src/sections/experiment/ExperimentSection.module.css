@@ -1,13 +1,4 @@
-/* One persistent reading slot separates Hero from Emptiness. */
-.experiment {
-  --viewport: 100vh;
-  position: relative;
-  height: var(--viewport);
-  overflow: hidden;
-  container-type: size;
-  background: var(--color-ink);
-}
-.slotPreview { pointer-events: none; user-select: none; }
+.experiment[hidden] { display: none; }
 .layer {
   --viewport: 100vh;
   position: fixed;
@@ -19,7 +10,7 @@
   container-type: size;
   background: var(--color-ink);
 }
-@supports (height: 100dvh) { .layer, .experiment { --viewport: 100dvh; } }
+@supports (height: 100dvh) { .layer { --viewport: 100dvh; } }
 .targetDescription { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 .screen {
   --safe-top: env(safe-area-inset-top, 0px);

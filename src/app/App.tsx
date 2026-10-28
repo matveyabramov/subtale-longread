@@ -28,9 +28,9 @@ export function App() {
 
   return (
     <ReadingNavigation value={experiment.navigate}>
-      <div className={styles.longread} data-reduced-motion={reducedMotion}>
+      <div className={styles.longread} data-reduced-motion={reducedMotion} data-reading-mode={experiment.mode}>
         <main id="main-content" tabIndex={-1}>
-          <HeroSection contentsOpen={contentsOpen} />
+          <HeroSection contentsOpen={contentsOpen} hidden={experiment.mode === 'reading' || experiment.step !== null} />
           <ExperimentSection navigation={experiment} />
           <EmptinessSection />
           <ElephantSection />
