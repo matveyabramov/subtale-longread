@@ -1,0 +1,17 @@
+.dialog { position: fixed; inset: auto auto max(30px, env(safe-area-inset-bottom, 0px)) 50%; transform: translateX(-50%); width: 785px; max-width: calc(100% - 30px); max-height: calc(100vh - 60px); max-height: calc(100dvh - max(30px, env(safe-area-inset-bottom, 0px)) - max(15px, env(safe-area-inset-top, 0px))); margin: 0; border: 5px solid #012ed7; padding: 5px; overflow-y: auto; overscroll-behavior: contain; background: #fff; color: #fff; }
+.dialog::backdrop { background: transparent; }
+.interior { padding: 30px; background: #012ed7; }
+.header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.title { margin: 0; font: 800 50px/0.8 var(--font-display); text-transform: uppercase; }
+.title span { position: relative; top: 1px; }
+.close { position: relative; display: block; flex: none; width: 28px; height: 28px; padding: 0; border: 0; color: #fff; background: transparent; font: 500 28px/1 var(--font-copy); cursor: pointer; }
+.close::after { content: ''; position: absolute; inset: -8px; }
+.list { list-style: none; margin: 0; padding: 0 0 0 1.2em; font: 500 25px/1.2 var(--font-copy); letter-spacing: -0.03em; }
+.list li { position: relative; }
+.list li::before { position: absolute; left: -1.5em; content: counter(list-item) '.'; }
+.list a { text-underline-position: from-font; }
+.dialog :focus-visible { outline: 2px solid #fed128; outline-offset: 4px; }
+@media (hover: hover) { .close:hover { color: #fed128; } }
+@media (width < 1920px) { .dialog { bottom: max(20px, env(safe-area-inset-bottom, 0px)); } .title { font-size: 40px; } .list { font-size: 22px; } }
+@media (width <= 1100px) { .dialog { width: calc(100% - 40px); } .interior { padding: 20px; } .header { margin-bottom: 15px; } .title { font-size: 35px; } .list { font-size: 20px; } }
+@media (width <= 600px) { .dialog { bottom: max(15px, env(safe-area-inset-bottom, 0px)); width: calc(100% - max(15px, env(safe-area-inset-left, 0px)) - max(15px, env(safe-area-inset-right, 0px))); max-height: calc(100vh - 30px); max-height: calc(100dvh - max(15px, env(safe-area-inset-top, 0px)) - max(15px, env(safe-area-inset-bottom, 0px))); } .title { font-size: 30px; } .list { font-size: 16px; } }
