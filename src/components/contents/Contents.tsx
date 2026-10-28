@@ -74,11 +74,17 @@ export function Contents({ open, onClose, triggerRef }: Props) {
         style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
       <header className={styles.header}>
         <div className={styles.brand}>
-          <img src={vectorAssets['subtale-pixel-mark']} alt="" />
-          <span>SUBTALE</span><span className={styles.label}>/ ОГЛАВЛЕНИЕ</span>
+          <div className={styles.brandLogo}>
+            <img src={vectorAssets['subtale-pixel-mark']} alt="" />
+            <div className={styles.brandName}>
+              <span className={styles.brandLatin}>subtale</span>
+              <span className={styles.brandCyrillic}>cабтейл</span>
+            </div>
+          </div>
+          <span className={styles.label}>/ ОГЛАВЛЕНИЕ</span>
         </div>
         <button ref={closeRef} type="button" className={styles.close} onClick={closeAndRestore}>
-          <span>Закрыть</span><span className={styles.cross} aria-hidden="true">×</span>
+          <span>Закрыть</span><span className={styles.cross} aria-hidden="true" />
         </button>
       </header>
       <nav className={styles.navigation} aria-label="Оглавление">
@@ -104,7 +110,6 @@ export function Contents({ open, onClose, triggerRef }: Props) {
           ))}
         </ol>
       </nav>
-      <p className={styles.footer}>Одна история / Десять глав</p>
     </div>, document.body,
   );
 }
