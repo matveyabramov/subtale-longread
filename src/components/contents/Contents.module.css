@@ -73,7 +73,7 @@
   .label { font-size: 10px; }
   .navigation { padding: 16px 4px; }
   .list a { grid-template-columns: 24px minmax(0, 1fr) 6px; gap: 10px; min-height: 56px; padding-block: 8px; }
-  .title { font-size: 36px; line-height: 1; }
+  .title { font-size: clamp(24px, calc(11vw - 11px), 36px); line-height: 1; }
   .number { font-size: 11px; }
   .marker { width: 6px; height: 6px; }
 }
