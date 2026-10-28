@@ -206,52 +206,6 @@
   white-space: nowrap;
 }
 
-.contents {
-  cursor: pointer;
-  z-index: 4;
-  position: absolute;
-  left: 1719px;
-  top: 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  width: 171px;
-  height: 27px;
-  padding: 0;
-  border: 0;
-  background: none;
-  color: var(--color-white);
-  font: 600 20px/26.100000381469727px var(--font-copy);
-}
-
-.contents > span:first-child {
-  display: block;
-  width: 119px;
-  flex: none;
-  white-space: nowrap;
-}
-
-.contentsIcon {
-  position: relative;
-  display: block;
-  flex: none;
-  width: 32px;
-  height: 17px;
-}
-
-.contentsIcon i {
-  position: absolute;
-  left: 0;
-  top: 4px;
-  width: 32px;
-  height: 3px;
-  background: var(--color-white);
-}
-
-.contentsIcon i:last-child {
-  top: 14px;
-}
-
 .hint {
   position: absolute;
   left: 482px;
@@ -329,7 +283,6 @@
   text-underline-position: from-font;
 }
 
-
 /* Figma text boxes are rounded containers, not intrinsic browser glyph widths. */
 .primaryCta > span:first-child {
   display: block;
@@ -351,13 +304,6 @@
   width: 115px;
   text-align: center;
 }
-
-.contents > span:first-child {
-  height: 27px;
-  display: flex;
-  align-items: center;
-}
-
 
 /* Figma cap-height alignment for the 50px/40px hint title; outer box stays measured. */
 .hintCopy h2 > span {
@@ -423,20 +369,6 @@
   .brand { left: var(--hero-gutter); }
   .brandMark { top: -0.31618499755859375px; }
   .brandName { top: 15.942401885986328px; }
-
-  .contents {
-    left: auto;
-    right: var(--hero-gutter);
-    width: 178px;
-    height: 24px;
-    font: 500 22px/1.1 var(--font-copy);
-    letter-spacing: -0.03em;
-  }
-
-  .contents > span:first-child { width: 126px; height: 24px; }
-
-  /* Keep the drawn header geometry, with a 44px touch target. */
-  .contents::after { content: ''; position: absolute; inset: -10px 0; }
 
   .headline { font-size: var(--headline-size); }
   .headlineFirst {
@@ -554,7 +486,7 @@
   .introCopy { font-size: 20px; white-space: normal; padding-right: 0.04em; }
   .primaryCta { margin-top: 20px; height: 80px; font-size: 28px; }
   .brand { left: 20px; }
-  .contents { right: 20px; }
+
 }
 
 /* On phones the header, editorial text and CTA keep their readable sizes;
@@ -611,23 +543,5 @@
   .brandName { left: 49.25608826px; top: 12.82460022px; width: 91px; height: 45.17539978px; }
   .brandLatin { width: 55px; height: 10px; font-size: 12.18214035px; }
   .brandCyrillic { top: 16.17539787px; width: 91px; height: 29px; font-size: 36.42866898px; }
-  .contents { right: var(--hero-gutter); top: calc(env(safe-area-inset-top, 0px) + 31px); width: clamp(140px, 38.974359vw, 152px); height: 20px; gap: 16px; font-size: clamp(16px, 4.615385vw, 18px); z-index: 3; }
-  .contents > span:first-child { width: calc(100% - 48px); height: 20px; }
-  .contents::after { inset-block: -12px; }
-}
 
-/* Keep the label's right edge and line box when reducing its type size.
-   Offsets equal the lost advance of «Оглавление» in the bundled mono font. */
-@media (600px < width < 1920px) {
-  .contents > span:first-child {
-    font-size: 20px;
-    line-height: 24.2px;
-    transform: translateX(12px);
-  }
-}
-@media (width >= 1920px) {
-  .contents > span:first-child {
-    font-size: 18px;
-    transform: translateX(12px);
-  }
 }

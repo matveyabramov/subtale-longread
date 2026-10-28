@@ -1,7 +1,9 @@
-import { useEffect, useRef, useState, type RefObject } from 'react';
+import { useEffect, useRef, type RefObject } from 'react';
 import { createPortal } from 'react-dom';
 import { imageAssets, vectorAssets } from '../../assets/generated';
-import { sectionIds, type SectionId } from '../../shared/navigation';
+import { sectionIds } from '../../shared/navigation';
+import { useCurrentSection } from './useCurrentSection';
+import control from './HeaderControl.module.css';
 import styles from './Contents.module.css';
 
 const titles = [
@@ -17,24 +19,12 @@ type Props = {
 };
 
 export function Contents({ open, onClose, triggerRef }: Props) {
-  const [current, setCurrent] = useState<SectionId>('hero');
+  const current = useCurrentSection();
   const closeRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (!open) return;
     closeRef.current?.focus({ preventScroll: true });
-    let frame = 0;
-    const update = () => {
-      const line = window.innerHeight * 0.3;
-      let active: SectionId = 'hero';
-      for (const id of sectionIds) {
-        const section = document.getElementById(id);
-        if (section && section.getBoundingClientRect().top <= line) active = id;
-      }
-      setCurrent(active);
-      frame = 0;
-    };
-    const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
     const keydown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         event.preventDefault();
@@ -42,15 +32,9 @@ export function Contents({ open, onClose, triggerRef }: Props) {
         triggerRef.current?.focus({ preventScroll: true });
       }
     };
-    update();
     document.addEventListener('keydown', keydown);
-    window.addEventListener('scroll', schedule, { passive: true });
-    window.addEventListener('resize', schedule);
     return () => {
-      cancelAnimationFrame(frame);
       document.removeEventListener('keydown', keydown);
-      window.removeEventListener('scroll', schedule);
-      window.removeEventListener('resize', schedule);
     };
   }, [open, onClose, triggerRef]);
 
@@ -83,8 +67,8 @@ export function Contents({ open, onClose, triggerRef }: Props) {
           </div>
           <span className={styles.label}>/ ОГЛАВЛЕНИЕ</span>
         </div>
-        <button ref={closeRef} type="button" className={styles.close} onClick={closeAndRestore}>
-          <span>Закрыть</span><span className={styles.cross} aria-hidden="true" />
+        <button ref={closeRef} type="button" className={`${control.control} ${control.close}`} onClick={closeAndRestore}>
+          <span>Закрыть</span><span className={`${control.icon} ${control.cross}`} aria-hidden="true"><i /><i /></span>
         </button>
       </header>
       <nav className={styles.navigation} aria-label="Оглавление">
@@ -111,5 +95,20 @@ export function Contents({ open, onClose, triggerRef }: Props) {
         </ol>
       </nav>
     </div>, document.body,
+  );
+}
+
+export function ContentsTrigger({ open, onToggle, triggerRef }: {
+  open: boolean;
+  onToggle: () => void;
+  triggerRef: RefObject<HTMLButtonElement | null>;
+}) {
+  return createPortal(
+    <button type="button" className={`${control.control} ${control.trigger}`} data-node-id="10:680"
+      ref={triggerRef} aria-expanded={open} aria-hidden={open || undefined} tabIndex={open ? -1 : undefined}
+      aria-controls="contents-panel" onClick={onToggle}>
+      <span data-node-id="10:681">Оглавление</span>
+      <span className={control.icon} data-node-id="10:682" aria-hidden="true"><i /><i /></span>
+    </button>, document.body,
   );
 }

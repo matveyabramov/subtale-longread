@@ -1,5 +1,5 @@
 import { useCallback, useRef, useState } from 'react';
-import { Contents } from '../components/contents/Contents';
+import { Contents, ContentsTrigger } from '../components/contents/Contents';
 import { HeroSection } from '../sections/hero/HeroSection';
 import { ExperimentSection } from '../sections/experiment/ExperimentSection';
 import { EmptinessSection } from '../sections/emptiness/EmptinessSection';
@@ -22,8 +22,7 @@ export function App() {
   return (
     <div className={styles.longread} data-reduced-motion={reducedMotion}>
       <main id="main-content" tabIndex={-1}>
-        <HeroSection contentsOpen={contentsOpen} contentsTrigger={contentsTrigger}
-          onToggleContents={() => setContentsOpen((open) => !open)} />
+        <HeroSection />
         <ExperimentSection />
         <EmptinessSection />
         <ElephantSection />
@@ -34,6 +33,8 @@ export function App() {
         <WhatToDoSection />
       </main>
       <FooterSection />
+      <ContentsTrigger open={contentsOpen} triggerRef={contentsTrigger}
+        onToggle={() => setContentsOpen((open) => !open)} />
       <Contents open={contentsOpen} onClose={closeContents} triggerRef={contentsTrigger} />
     </div>
   );
