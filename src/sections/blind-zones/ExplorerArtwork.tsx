@@ -9,14 +9,17 @@ export function IdiomArtwork({ meaning }: { meaning: MeaningState }) {
     <>
       {iceFragments.map((fragment, index) => {
         const [[sx, , tx], [, sy, ty]] = fragment.crop;
+        // A owns the fixed ice geometry in both states. B only adds the phone
+        // above the banner (5), below the seven foreground fragments (7–13).
+        const order = fragment.order[meaning] + (meaning === 'B' && index > 0 ? 1 : 0);
         return (
           <div key={fragment.ids.A} data-node-id={fragment.ids[meaning]} data-art-layer="ice"
             className={styles.ice} aria-hidden="true" style={{
-              ...responsiveArtStyle(`idiom${meaning}-${meaning === 'B' && index > 0 ? index + 1 : index}`,
+              ...responsiveArtStyle(`idiomA-${index}`,
                 [fragment.x, fragment.y, fragment.width, fragment.height]),
               left: `var(--art-x, ${fragment.x}px)`, top: `var(--art-y, ${fragment.y}px)`,
               width: `var(--art-width, ${fragment.width}px)`, height: `var(--art-height, ${fragment.height}px)`,
-              zIndex: fragment.order[meaning],
+              zIndex: order,
               maskImage: fragment.mask ? `url("${vectorAssets[fragment.mask]}")` : 'none',
             }}>
             <img src={imageAssets[fragment.asset]} alt="" style={{
