@@ -1,13 +1,15 @@
 import { vectorAssets } from '../../assets/generated';
 import { movieVisuals } from './moviesVisualData';
-import type { movieCases } from './model';
+import type { MovieMedia } from './model';
 import styles from './MoviesSection.module.css';
 
-type MovieMedia = (typeof movieCases)[number];
-
-// A scene owns its text and stable media identity. Stage 3 can add a media layer
-// after its slot is approved; the static Figma row reserves no player rectangle.
-export function MovieCase({ media }: { media: MovieMedia }) {
+// The transparent button covers the original row without moving its Figma slots.
+export function MovieCase({ media, onOpen, onPreview, onPreviewEnd }: {
+  media: MovieMedia;
+  onOpen: (media: MovieMedia, trigger: HTMLButtonElement) => void;
+  onPreview: (media: MovieMedia, row: HTMLElement) => void;
+  onPreviewEnd: () => void;
+}) {
   const visual = movieVisuals[media.id];
   const quote = <p className={styles.quote} data-node-id={visual.quote.id}
     style={{ width: `var(--quote-width, ${visual.quote.w}px)`, height: `var(--quote-height, ${visual.quote.h}px)` }}>
@@ -18,7 +20,11 @@ export function MovieCase({ media }: { media: MovieMedia }) {
   </p>;
   return (
     <article id={`movie-${media.id}`} data-movie-case={media.id} aria-labelledby={`movie-${media.id}-title`}
+      onPointerEnter={(event) => { if (event.pointerType === 'mouse') onPreview(media, event.currentTarget); }}
+      onPointerLeave={onPreviewEnd}
       className={styles.scene} data-node-id={visual.id} style={{ height: `var(--scene-height, ${visual.h}px)` }}>
+      <button type="button" className={styles.openCase} aria-label={`Разобрать сцену: ${visual.film.text.replaceAll('\n', ' ')}`}
+        aria-haspopup="dialog" aria-controls="movie-analysis" onClick={(event) => onOpen(media, event.currentTarget)} />
       <div className={styles.divider} data-node-id={visual.divider} aria-hidden="true" />
       <div className={styles.sceneBody} data-node-id={visual.body}>
         <div className={styles.sceneContent} data-node-id={visual.content} style={{ width: `var(--scene-content-width, ${visual.contentWidth}px)` }}>

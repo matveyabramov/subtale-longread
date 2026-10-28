@@ -431,3 +431,33 @@
 @media (width < 1920px) {
   .film, .quote, .reply { overflow-wrap: anywhere; }
 }
+
+/* Stage 3.6: idle Figma geometry is unchanged; no preview creates a layout slot. */
+.openCase {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.openCase:focus-visible { outline: 3px solid var(--color-yellow); outline-offset: -8px; }
+.scene:has(.openCase:hover) .arrowFrame,
+.scene:has(.openCase:focus-visible) .arrowFrame { background: var(--color-blue); }
+.preview {
+  position: fixed;
+  z-index: 10;
+  right: max(110px, calc((100vw - 1920px) / 2 + 110px));
+  width: 320px;
+  border: 2px solid var(--color-yellow);
+  background: var(--color-ink);
+  pointer-events: none;
+}
+.preview[hidden] { display: none; }
+.preview video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; }
+@media (width <= 1600px) {
+  .preview { width: clamp(100px, calc(87.5vw - 1040px), 320px); right: 100px; }
+}
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) { .preview { display: none; } }

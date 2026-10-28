@@ -8,6 +8,7 @@ export const movieCases = [
   { id: 'theShining', video: videoAssets['the-shining-heres-johnny'], poster: posterAssets['the-shining-heres-johnny'] },
 ] as const;
 
+export type MovieMedia = (typeof movieCases)[number];
 export type MovieCaseId = (typeof movieCases)[number]['id'];
 export type PlaybackStatus = 'poster' | 'loading' | 'playing' | 'paused' | 'buffering' | 'ended' | 'error';
 
@@ -21,5 +22,4 @@ export interface MediaCoordinatorState {
   activeCaseId: MovieCaseId | null;
 }
 
-// Stage 3: first explicit Play has sound; respect a subsequent manual mute.
-// Stage 1A does not mount video elements, load MP4s or implement a coordinator.
+// Stage 3.6: hover preview is silent; explicit dialog playback uses native audio controls.
