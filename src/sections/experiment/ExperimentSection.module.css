@@ -556,3 +556,17 @@
   .resultSecondLine,
   .resultBanner { max-width: calc(75% - 11.5px - var(--gutter)); white-space: normal; }
 }
+
+
+@media (width <= 600px) {
+  .screen { --screen-height: max(620px, var(--mobile-viewport, 100vh)); }
+  /* Reserve the three-line explanation above the CTA when the home-indicator
+     inset raises that CTA. Shorter windows retain natural document scrolling. */
+  .resultScreen {
+    --screen-height: max(var(--mobile-viewport, 100vh), calc(620px + (var(--footer-inset) - 15px) * 2));
+  }
+  .instructionBody {
+    padding-top: clamp(24px, calc(var(--mobile-viewport, 100vh) * 0.5 - 229px), 193px);
+    padding-bottom: clamp(24px, calc(var(--mobile-viewport, 100vh) * 0.25 - 151px), 60px);
+  }
+}

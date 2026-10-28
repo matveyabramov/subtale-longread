@@ -264,3 +264,12 @@
   .title, .banner { font-size: 45px; }
   .banner { margin-top: calc(clamp(10px, calc(0.42328vw + 8.349206px), 12px) - 2px); }
 }
+
+
+@media (width <= 600px) {
+  .canvas { min-height: max(0px, calc(var(--mobile-viewport, 100vh) - var(--boundary-space, 0px))); }
+  /* Two auto margins share spare height, with a readable minimum at each gap. */
+  .banner { margin-bottom: 24px; }
+  .artFrame { margin-top: auto; }
+  .copy { padding-top: 24px; }
+}

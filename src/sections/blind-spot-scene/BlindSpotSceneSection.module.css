@@ -124,3 +124,11 @@
 @media (width <= 1100px) {
   .canvas { min-height: 0; }
 }
+
+
+@media (width <= 600px) {
+  .canvas { padding-top: max(var(--gutter), calc(env(safe-area-inset-top, 0px) - var(--boundary-space, 0px))); }
+  .illustration, .pairs {
+    margin-top: clamp(18px, calc((var(--mobile-viewport, 100vh) - 844px) * 0.5 + 18px), 40px);
+  }
+}

@@ -92,3 +92,12 @@
   .text > .regularBanner { display: none; }
   .text > .mobileBanner { display: block; }
 }
+
+
+@media (width <= 600px) {
+  .canvas {
+    min-height: max(0px, calc(var(--mobile-viewport, 100vh) - var(--boundary-space, 0px)));
+    padding-top: max(var(--gutter), calc(env(safe-area-inset-top, 0px) - var(--boundary-space, 0px)));
+  }
+  .sectionHeading { padding-top: 24px; }
+}

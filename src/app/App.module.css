@@ -84,3 +84,15 @@
     --vocab-tail: var(--reading-inset);
   }
 }
+
+
+/* Share the visible mobile height without changing Hero's own viewport rules. */
+@media (width <= 600px) {
+  .longread { --mobile-viewport: 100vh; }
+  @supports (height: 100svh) {
+    .longread { --mobile-viewport: 100svh; }
+  }
+  @supports (height: 100dvh) {
+    .longread { --mobile-viewport: 100dvh; }
+  }
+}
