@@ -25,10 +25,9 @@
 .icon i:last-child { top: 14px; }
 .cross i { top: 8px; transform: rotate(45deg); }
 .cross i:last-child { top: 8px; transform: rotate(-45deg); }
-.trigger { z-index: 50; color: #012ed7; background: var(--color-paper); box-shadow: 0 0 0 6px var(--color-paper); }
-.trigger:focus-visible { color: #fed128; background: var(--color-ink); box-shadow: 0 0 0 6px var(--color-ink); }
+.trigger { z-index: 50; color: #ffffff; background: transparent; }
 @media (hover: hover) {
-  .trigger:hover { color: #fed128; background: var(--color-ink); box-shadow: 0 0 0 6px var(--color-ink); }
+  .trigger:hover { color: #fed128; }
 }
 .trigger[aria-expanded='true'] { opacity: 0; pointer-events: none; }
 .close { position: absolute; }
