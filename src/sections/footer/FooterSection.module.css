@@ -75,16 +75,16 @@
   .banner { left: var(--gutter); top: auto; bottom: var(--gutter); width: calc(66.25vw - 440px); max-width: calc(100% - var(--gutter) * 2); height: auto; padding: clamp(16px, calc(0.833333vw + 4px), 20px); }
   .banner > .text[data-node-id='10:1148'] { position: relative; inset: auto; width: 100%; height: auto; font-size: var(--heading-size); }
   .collageSlot { display: block; position: absolute; right: clamp(20px, calc(4.791667vw - 49px), 43px); top: calc(20.625vw - 203px); width: var(--collage-width); height: calc(var(--collage-width) * 694 / 771); }
-  .collageBoard { display: block; position: relative; width: 771px; height: 694px; transform: scale(tan(atan2(var(--collage-width), 771px))); transform-origin: 0 0; }
+  .collageBoard { display: block; position: relative; width: 771px; height: 694px; transform: scale(var(--footer-artwork-scale, 1)); transform-origin: 0 0; }
   .collage { left: 0; top: 0; }
   /* Overlap paint at fractional pixel edges without moving the source boxes. */
   .pixel::before { content: ''; position: absolute; inset: -0.5px; background: inherit; }
   .collageBoard > .imageLayer[data-node-id='10:1146'] { --image-transform: matrix(1, 0, 0, 1, 223, 375); }
   .information { display: grid; grid-template-areas: 'brand school' 'credits credits'; grid-template-columns: minmax(0, 1fr) auto; row-gap: clamp(30px, calc(1.736111vw + 5px), 38.333px); position: relative; inset: auto; width: 100%; height: auto; padding: 40px 40px clamp(40px, calc(92px - 2.708333vw), 53px); }
   .brandSlot { display: block; grid-area: brand; position: relative; width: var(--brand-width); height: calc(var(--brand-width) * 67 / 160); }
-  .brand { left: 0; top: 0; transform: scale(tan(atan2(var(--brand-width), 160px))); transform-origin: 0 0; }
+  .brand { left: 0; top: 0; transform: scale(var(--footer-artwork-scale, 1)); transform-origin: 0 0; }
   .schoolLogo { display: block; grid-area: school; position: relative; width: var(--school-width); height: calc(var(--school-width) * 80 / 201); }
-  .schoolLogo > .imageLayer { --image-transform: scale(tan(atan2(var(--school-width), 201px))); }
+  .schoolLogo > .imageLayer { --image-transform: scale(var(--footer-artwork-scale, 1)); }
   .credits { grid-area: credits; position: relative; inset: auto; display: flex; flex-wrap: wrap; gap: 60px; width: 100%; height: auto; }
   .credit { --credit-left: auto; --credit-width: auto; position: relative; inset: auto; height: auto; display: flex; flex-direction: column; gap: 5px; }
   .credit > .text { position: relative; inset: auto; width: auto; height: auto; }

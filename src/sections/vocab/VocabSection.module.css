@@ -38,9 +38,9 @@
     margin: var(--gutter); padding-top: calc(var(--art-height) + clamp(34px, calc(1.25vw + 16px), 40px));
   }
   .artwork {
-    transform: scale(tan(atan2(var(--art-width), 679px)), tan(atan2(var(--art-height), 395px)));
-    transform-origin: 0 0;
+    width: var(--art-width); height: var(--art-height);
   }
+  .artwork > img { width: 100%; height: 100%; }
   .statistic .text { position: relative; inset: auto; width: calc(19.791667vw + 228px); height: auto; font-size: var(--copy-size); letter-spacing: -0.04em; }
   .sectionHeading {
     display: flex; flex-direction: column; align-items: flex-start; gap: var(--heading-gap);
