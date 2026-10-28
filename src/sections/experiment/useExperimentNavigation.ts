@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { flushSync } from 'react-dom';
 import { experimentAnchorIds, sectionIds, type ReadingAnchorId } from '../../shared/navigation';
 import { lockPageScroll } from '../../shared/lockPageScroll';
 import { experimentStepForHash, experimentSteps, type ExperimentStep } from './model';
@@ -7,7 +8,11 @@ type Destination = { id: string; focus: boolean };
 
 function goToDocument({ id, focus }: Destination) {
   const target = document.getElementById(id);
-  target?.scrollIntoView({ behavior: 'instant', block: 'start' });
+  if (target && id === 'emptiness') {
+    // Resolve the real flow boundary after unlocking. WebKit can quantize the
+    // destination to CSS pixels; never leave a fractional strip of the slot.
+    window.scrollTo({ top: Math.ceil(window.scrollY + target.getBoundingClientRect().top), behavior: 'instant' });
+  } else target?.scrollIntoView({ behavior: 'instant', block: 'start' });
   if (!focus || !target) return;
   const heading = target.getAttribute('aria-labelledby');
   (heading ? document.getElementById(heading) : target)?.focus({ preventScroll: true });
@@ -96,38 +101,43 @@ export function useExperimentNavigation() {
     let historyFocus = 0;
     const help = () => document.querySelector<HTMLDialogElement>('#experiment-help[open]');
     const frame = () => document.querySelector<HTMLElement>('#experiment-layer > section');
-    const openAtBoundary = (next: ExperimentStep, replace: boolean) => {
+    const openAtBoundary = (next: ExperimentStep, replace: boolean, event?: Event) => {
+      if (active.current) return;
+      if (event?.cancelable) event.preventDefault();
       const id = experimentSteps.find((item) => item.id === next)!.anchor;
       returnFromHero.current = false;
       if (location.hash !== `#${id}`) {
         if (replace) history.replaceState(history.state, '', `#${id}`);
         else history.pushState(null, '', `#${id}`);
       }
-      applyRoute(id, false);
+      // Native input handlers must mount the layer and lock the page before
+      // the browser performs this gesture's default scrolling (not next paint).
+      flushSync(() => applyRoute(id, false));
     };
-    const enter = (delta: number) => {
+    const enter = (delta: number, event: Event) => {
       const marker = document.getElementById('experiment');
       if (!marker) return false;
-      const top = marker.getBoundingClientRect().top;
+      const { top, bottom } = marker.getBoundingClientRect();
+      const insideSlot = top <= 0 && bottom > 1;
       const hero = document.getElementById('hero')?.getBoundingClientRect();
       // Hero listeners may be rebound after opening Contents. The first gate
       // still owns this gesture regardless of document listener order.
       if (hero && hero.bottom > 0 && (!location.hash || location.hash === '#hero') &&
         document.querySelector('dialog[aria-labelledby="hero-hint-title"]')?.getAttribute('data-intro-state') === 'unseen') return false;
       if (delta > 0 && returnFromHero.current && hero && hero.bottom > 0) {
-        openAtBoundary('instructions', false);
+        openAtBoundary('instructions', false, event);
         return true;
       }
-      if (delta > 0 && top > 0 && delta >= top) {
-        openAtBoundary('instructions', true);
+      if (delta > 0 && (insideSlot || (top > 0 && delta >= top))) {
+        openAtBoundary('instructions', true, event);
         return true;
       }
-      if (delta < 0 && top <= 1 && -delta >= Math.max(0, -top - 1)) {
-        openAtBoundary('result', true);
+      if (delta < 0 && (insideSlot || (bottom <= 1 && -delta >= Math.max(0, -bottom - 1)))) {
+        openAtBoundary('result', true, event);
         return true;
       }
       boundary.current = delta > 0 && top > 0 ? { direction: 1 }
-        : delta < 0 && top <= 1 ? { direction: -1 } : null;
+        : delta < 0 && bottom <= 1 ? { direction: -1 } : null;
       return false;
     };
     const mayScroll = (scroller: HTMLElement | null, delta: number, target: EventTarget | null) => {
@@ -141,7 +151,7 @@ export function useExperimentNavigation() {
       const delta = event.deltaY * (event.deltaMode === 1 ? 20 : event.deltaMode === 2 ? window.innerHeight : 1);
       if (active.current) {
         if (!mayScroll(help() ?? frame(), delta, event.target)) event.preventDefault();
-      } else if (!overlay() && enter(delta)) event.preventDefault();
+      } else if (!overlay()) enter(delta, event);
     };
     const keydown = (event: KeyboardEvent) => {
       if (event.defaultPrevented || event.ctrlKey || event.metaKey || event.altKey ||
@@ -151,14 +161,16 @@ export function useExperimentNavigation() {
         (event.key === ' ' && event.target.closest('button, summary, [role="button"]')))) return;
       const screen = frame();
       const page = (screen?.clientHeight ?? window.innerHeight) * 0.9;
-      const delta = event.key === 'ArrowDown' ? 40 : event.key === 'ArrowUp' ? -40
+      const delta = event.key === 'Home' ? -Math.max(window.scrollY, 1)
+        : event.key === 'End' ? document.documentElement.scrollHeight - window.innerHeight - window.scrollY
+        : event.key === 'ArrowDown' ? 40 : event.key === 'ArrowUp' ? -40
         : event.key === 'PageUp' || (event.key === ' ' && event.shiftKey) ? -page : page;
       if (active.current && screen) {
         event.preventDefault();
         if (event.key === 'Home') screen.scrollTop = 0;
         else if (event.key === 'End') screen.scrollTop = screen.scrollHeight;
         else screen.scrollTop += delta;
-      } else if (event.key !== 'Home' && (event.key !== 'End' || returnFromHero.current) && enter(delta)) event.preventDefault();
+      } else enter(delta, event);
     };
     const touchstart = (event: TouchEvent) => {
       const point = event.touches.length === 1 ? event.touches[0] : null;
@@ -173,13 +185,15 @@ export function useExperimentNavigation() {
       if (!delta || Math.abs(previous.x - point.clientX) >= Math.abs(delta)) return;
       if (active.current) {
         if (!mayScroll(help() ?? frame(), delta, event.target)) event.preventDefault();
-      } else if (!overlay() && enter(delta)) event.preventDefault();
+      } else if (!overlay()) enter(delta, event);
     };
     const scroll = () => {
       if (active.current || !boundary.current || overlay()) return;
-      const top = document.getElementById('experiment')?.getBoundingClientRect().top;
-      if (top === undefined) return;
-      if (boundary.current.direction > 0 ? top <= 0 : top > 0) {
+      const slot = document.getElementById('experiment')?.getBoundingClientRect();
+      if (!slot) return;
+      // Safety for momentum that reaches the slot after touchend. Its opaque
+      // surface separates Emptiness from Hero even before this callback runs.
+      if (boundary.current.direction > 0 ? slot.top <= 0 : slot.bottom > 0) {
         openAtBoundary(boundary.current.direction > 0 ? 'instructions' : 'result', true);
       }
     };
