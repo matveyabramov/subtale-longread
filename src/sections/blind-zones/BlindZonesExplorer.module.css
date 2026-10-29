@@ -250,6 +250,15 @@
   height: calc(100% * 984 / 985);
 }
 
+@media (width > 1100px) {
+  /* Enlarge paint only: keep responsive slots, A/B rotation and hit area intact.
+     Both layers share the full bicycle frame's center (wheels are 1px shorter). */
+  .bicycleBase, .bicycleWheels {
+    scale: 1.225;
+    transform-origin: 50% calc(var(--art-height) / 2);
+  }
+}
+
 .eye {
   left: 115px;
   top: 383px;
