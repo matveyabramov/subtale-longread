@@ -3,6 +3,7 @@ import { flushSync } from 'react-dom';
 import { experimentAnchorIds, sectionIds, type ReadingAnchorId } from '../../shared/navigation';
 import { lockPageScroll } from '../../shared/lockPageScroll';
 import { experimentSteps, readingViewForHash, type ExperimentStep } from './model';
+import { useSceneTransition } from './useSceneTransition';
 
 type Destination = { id: string; focus: boolean };
 type NavigationSource = 'navigate' | 'gesture' | 'pop' | 'hash';
@@ -24,6 +25,7 @@ function focusActiveScreen(step: ExperimentStep) {
 
 /** Two explicit modes; only Experiment's selected state is mounted fullscreen. */
 export function useExperimentNavigation() {
+  const presentScene = useSceneTransition();
   const [view, setView] = useState(() => readingViewForHash(location.hash));
   const current = useRef(view);
   const pendingDocument = useRef<Destination | null>(null);
@@ -60,6 +62,7 @@ export function useExperimentNavigation() {
   const applyRoute = useCallback((id: string, source: NavigationSource) => {
     const next = readingViewForHash(`#${id}`);
     const previous = current.current;
+    presentScene(previous, next, source, id);
     current.current = next;
     // Navigation starts a new reading session. Queued restoration/bounce events
     // cannot reopen Result until fresh input or actual forward reading occurs.
@@ -68,7 +71,7 @@ export function useExperimentNavigation() {
     pendingDocument.current = !next.step && (source !== 'pop' || previous.step !== null || previous.mode !== next.mode)
       ? { id, focus: source !== 'pop' } : null;
     setView(next);
-  }, []);
+  }, [presentScene]);
 
   const navigate = useCallback((id: ReadingAnchorId) => {
     returnFromHero.current = id === 'hero' && current.current.step === 'instructions';

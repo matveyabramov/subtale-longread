@@ -1,0 +1,24 @@
+.snapshot {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  overflow: hidden;
+  contain: strict;
+  pointer-events: none;
+}
+.snapshot,
+.snapshot * { pointer-events: none !important; }
+.snapshot *::before {
+  animation: none !important;
+  transition: none !important;
+  border-color: var(--scene-before-border) !important;
+}
+.snapshot *::after {
+  animation: none !important;
+  transition: none !important;
+  border-color: var(--scene-after-border) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .snapshot { display: none; }
+}
