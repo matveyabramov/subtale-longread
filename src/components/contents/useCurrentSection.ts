@@ -5,6 +5,7 @@ export function useCurrentSection() {
   const [current, setCurrent] = useState<SectionId>('hero');
 
   useEffect(() => {
+    if (typeof IntersectionObserver === 'undefined') return;
     const sections = sectionIds.map((id) => document.getElementById(id)).filter((section) => section !== null);
     let observer: IntersectionObserver;
     let frame = 0;

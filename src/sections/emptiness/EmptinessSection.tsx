@@ -7,11 +7,11 @@ import styles from './EmptinessSection.module.css';
 // Diagonals follow the actual 77px source grid, independently of paint order.
 const firstPixelDiagonal = Math.min(...emptinessLayers
   .filter(({ kind }) => kind === 'square' || kind === 'union').map(({ x, y }) => x + y));
-const pixelWave = (x: number, y: number) => Math.max(0, Math.min(4, Math.floor((x + y - firstPixelDiagonal) / (77 * 3)))) * 75;
+const pixelWave = (x: number, y: number) => Math.max(0, Math.min(4, Math.floor((x + y - firstPixelDiagonal) / (77 * 3)))) * 120;
 
 function EmptinessArtwork() {
   return (
-    <div className={styles.artwork} data-node-id="10:846" aria-hidden="true">
+    <div className={styles.artwork} data-node-id="10:846" data-editorial-reveal="scroll" aria-hidden="true">
       {emptinessLayers.map((layer) => {
         const crop = characterCrops.find((entry) => entry.id === layer.id);
         const image = layer.kind === 'male' ? imageAssets['emptiness-male-cutout']
@@ -47,7 +47,7 @@ export function EmptinessSection() {
   const sectionRef = useRef<HTMLElement>(null);
   useEditorialEntrance(sectionRef);
   return (
-    <section ref={sectionRef} id="emptiness" aria-labelledby="emptiness-title" data-narrative-section data-section-surface data-editorial-reveal="scroll" className={styles.section}>
+    <section ref={sectionRef} id="emptiness" aria-labelledby="emptiness-title" data-narrative-section data-section-surface className={styles.section}>
       <div className={styles.texture} data-section-texture data-node-id="10:839" aria-hidden="true"
         style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
       <div className={styles.canvas} data-section-canvas data-node-id="10:838">

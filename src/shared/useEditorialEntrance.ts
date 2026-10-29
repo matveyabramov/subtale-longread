@@ -1,7 +1,7 @@
 import { useLayoutEffect, type RefObject } from 'react';
 
-/** Progressive enhancement: nothing is hidden while waiting for the observer.
- * CSS owns the finite entrance; removing the attribute restores the exact art. */
+/** Progressive enhancement: only a successfully armed observer can prepare an
+ * offscreen target. Static HTML, restored reading and failures stay visible. */
 export function useEditorialEntrance(scopeRef: RefObject<HTMLElement | null>) {
   useLayoutEffect(() => {
     const scope = scopeRef.current;
@@ -14,6 +14,7 @@ export function useEditorialEntrance(scopeRef: RefObject<HTMLElement | null>) {
     let observer: IntersectionObserver | undefined;
     let mutations: MutationObserver | undefined;
     let frame = 0;
+    let ready = false;
 
     const finish = (target: HTMLElement) => {
       clearTimeout(active.get(target));
@@ -22,7 +23,20 @@ export function useEditorialEntrance(scopeRef: RefObject<HTMLElement | null>) {
       observer?.unobserve(target);
     };
     const unavailable = () => scope.hidden || !!scope.closest('[inert]');
+    const start = (target: HTMLElement) => {
+      target.dataset.editorialState = 'entering';
+      try {
+        // Some compositions animate siblings or a scaled outer slot. Read the
+        // scope's actual CSS timings instead of cutting every reveal at 700ms.
+        const durations = scope.getAnimations({ subtree: true }).map((animation) => {
+          const end = Number(animation.effect?.getComputedTiming().endTime ?? 0);
+          return Number.isFinite(end) ? end : 0;
+        });
+        active.set(target, window.setTimeout(() => finish(target), Math.max(0, ...durations) + 50));
+      } catch { finish(target); }
+    };
     const check = () => {
+      if (!ready) return;
       for (const target of targets) {
         if (target.dataset.editorialState === 'done') continue;
         if (media.matches || document.hidden) { finish(target); continue; }
@@ -36,9 +50,10 @@ export function useEditorialEntrance(scopeRef: RefObject<HTMLElement | null>) {
         const visible = rect.top < window.innerHeight && rect.bottom > 0;
         if (active.has(target)) {
           if (!visible) finish(target);
-        } else if (visible) {
-          target.dataset.editorialState = 'entering';
-          active.set(target, window.setTimeout(() => finish(target), 700));
+        } else if (rect.top < 0) {
+          finish(target); // A jump already passed the reading position.
+        } else if (rect.top <= window.innerHeight * 0.6) {
+          start(target);
         }
       }
     };
@@ -48,34 +63,36 @@ export function useEditorialEntrance(scopeRef: RefObject<HTMLElement | null>) {
     const focus = (event: FocusEvent) => {
       if (!(event.target instanceof Node)) return;
       for (const target of targets) {
-        if (target.dataset.editorialReveal === 'load' && target.contains(event.target)) finish(target);
+        if (target.contains(event.target) && (target.dataset.editorialReveal === 'load' ||
+          (event.target instanceof Element && event.target.closest('a, button, input, select, textarea, [role="button"]')))) finish(target);
       }
     };
 
     try {
       if (!('IntersectionObserver' in window)) { targets.forEach(finish); return; }
-      observer = new IntersectionObserver(check, { threshold: 0 });
+      // Pixel margins use viewport height; percentage IO margins use root width.
+      // The existing scroll/resize check also measures the live 60% attention line.
+      observer = new IntersectionObserver(check, { rootMargin: `0px 0px -${window.innerHeight * 0.4}px 0px`, threshold: 0 });
       for (const target of targets) {
         if (target.dataset.editorialState === 'done') continue;
         if (target.dataset.editorialReveal === 'load') {
           if (unavailable() || media.matches || document.hidden || (initialHash && initialHash !== '#hero')) finish(target);
           else {
             // Layout effect arms Hero before its first paint, including StrictMode.
-            target.dataset.editorialState = 'entering';
-            active.set(target, window.setTimeout(() => finish(target), 700));
+            start(target);
           }
         } else observer.observe(target);
       }
       // Parent layout effects settle direct anchors and Experiment's inert state.
       frame = requestAnimationFrame(() => {
         frame = 0;
-        if (!unavailable()) {
-          for (const target of targets) {
-            if (target.dataset.editorialReveal === 'load') continue;
-            const rect = target.getBoundingClientRect();
-            if (initialHash === `#${scope.id}` || (rect.top < innerHeight && rect.bottom > 0)) finish(target);
-          }
+        for (const target of targets) {
+          if (target.dataset.editorialReveal === 'load' || target.dataset.editorialState === 'done') continue;
+          const rect = target.getBoundingClientRect();
+          if (!unavailable() && (initialHash === `#${scope.id}` || (rect.top < innerHeight && rect.bottom > 0))) finish(target);
+          else target.dataset.editorialState = 'pending';
         }
+        ready = true;
         check();
       });
       mutations = new MutationObserver(schedule);
@@ -96,9 +113,9 @@ export function useEditorialEntrance(scopeRef: RefObject<HTMLElement | null>) {
       observer?.disconnect();
       mutations?.disconnect();
       cancelAnimationFrame(frame);
-      active.forEach((timer, target) => {
-        clearTimeout(timer);
-        delete target.dataset.editorialState;
+      active.forEach((timer) => clearTimeout(timer));
+      targets.forEach((target) => {
+        if (target.dataset.editorialState !== 'done') delete target.dataset.editorialState;
       });
       media.removeEventListener('change', check);
       document.removeEventListener('visibilitychange', check);

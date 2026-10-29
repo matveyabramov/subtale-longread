@@ -7,6 +7,7 @@ import { explorerCopy, explorerVisuals } from './explorerVisualData';
 import { CulturalReferenceArtwork, DoubleMeaningArtwork, IdiomArtwork, PunArtwork } from './ExplorerArtwork';
 import { explorerRevealStyle } from './explorerRevealBounds';
 import { useExplorerViewportFit } from './useExplorerViewportFit';
+import { useEditorialEntrance } from '../../shared/useEditorialEntrance';
 import { ExplorerExplanationDialog } from './ExplorerExplanationDialog';
 import styles from './BlindZonesExplorer.module.css';
 
@@ -17,6 +18,8 @@ interface BlindZonesExplorerProps {
 
 // Optional initial endpoints keep the isolated A/B visual QA fixtures available.
 export function BlindZonesExplorer({ category: initialCategory = 'idiom', meaning: initialMeaning = 'A' }: BlindZonesExplorerProps) {
+  const sectionRef = useRef<HTMLElement>(null);
+  useEditorialEntrance(sectionRef);
   const [state, setState] = useState<ExplorerState>(() => ({
     category: initialCategory,
     stateByCategory: { idiom: 'A', pun: 'A', doubleMeaning: 'A', reference: 'A', [initialCategory]: initialMeaning },
@@ -95,7 +98,7 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
   }
 
   return (
-    <section id="blind-zones" aria-labelledby="blind-zones-title" data-narrative-section data-section-surface
+    <section ref={sectionRef} id="blind-zones" aria-labelledby="blind-zones-title" data-narrative-section data-section-surface
       className={styles.section} data-category-count={explorerCategories.length} data-category={category} data-meaning={meaning}>
       <div className={styles.texture} data-section-texture data-node-id={visual.texture} aria-hidden="true"
         style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
@@ -109,7 +112,7 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
             const ids = visual.cards[index];
             if (!ids) return null;
             return (
-              <div key={copy.category} data-node-id={ids.card} data-active={category === copy.category} className={styles.card}>
+              <div key={copy.category} data-node-id={ids.card} data-active={category === copy.category} className={styles.card} data-editorial-reveal="scroll">
                 <button type="button" role="tab" id={`explorer-tab-${copy.category}`} className={styles.categoryTab}
                   ref={(node) => { tabs.current[index] = node; }}
                   aria-labelledby={`explorer-label-${copy.category}`}
@@ -131,7 +134,7 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
         </div>
         <div className={styles.sectionHeading}>
           <h2 id="blind-zones-title" tabIndex={-1} className={styles.title} data-node-id={visual.title}
-            style={{ zIndex: visual.order.title }}>Слепые</h2>
+            data-editorial-reveal="scroll" style={{ zIndex: visual.order.title }}>Слепые</h2>
           <p className={styles.banner} data-node-id={visual.banner} style={{ zIndex: visual.order.banner }}>
             <span data-node-id={visual.bannerText}>зоны восприятия</span>
           </p>

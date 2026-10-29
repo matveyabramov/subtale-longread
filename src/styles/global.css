@@ -51,3 +51,9 @@ a {
   pointer-events: none;
 }
 [data-section-surface] > [data-section-canvas] { background: transparent; }
+
+/* Armed by the shared hook only after setup. No-JS/failure defaults remain
+   visible; preparing opacity alone keeps trigger measurements in Figma space. */
+@media (prefers-reduced-motion: no-preference) {
+  [data-editorial-state='pending'] { opacity: 0; }
+}

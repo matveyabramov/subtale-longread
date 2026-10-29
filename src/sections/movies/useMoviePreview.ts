@@ -40,7 +40,7 @@ export function useMoviePreview(sectionRef: RefObject<HTMLElement | null>, listR
   useEffect(() => {
     const section = sectionRef.current;
     const list = listRef.current;
-    if (!section || !list) return;
+    if (!section || !list || typeof IntersectionObserver === 'undefined') return;
     const hover = window.matchMedia(hoverQuery);
     const motion = window.matchMedia(motionQuery);
     let point: { x: number; y: number } | null = null;

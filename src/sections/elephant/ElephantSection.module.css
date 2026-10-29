@@ -367,17 +367,17 @@
    Only level content enters; dividers retain their original paint and geometry. */
 @media (prefers-reduced-motion: no-preference) {
   .artFrame[data-editorial-state='entering'] {
-    animation: elephantEntrance 450ms var(--ease-out) backwards;
+    animation: elephantEntrance var(--duration-ending) var(--ease-out) backwards;
   }
   .levelContent[data-editorial-state='entering'] {
-    animation: elephantEntrance 330ms var(--ease-out) backwards;
+    animation: elephantEntrance 780ms var(--ease-out) backwards;
   }
 
   @media (width < 1920px) {
     /* Move the existing clip together with the frame, never through it. */
     .artFrame[data-editorial-state='entering'] { animation: none; }
     .artworkSlot:has(> .artFrame[data-editorial-state='entering']) {
-      animation: elephantEntrance 450ms var(--ease-out) backwards;
+      animation: elephantEntrance var(--duration-ending) var(--ease-out) backwards;
     }
   }
   @media (width <= 600px) {
@@ -387,11 +387,11 @@
   }
 }
 @keyframes elephantEntrance {
-  from { opacity: 0; translate: 18px 0; }
+  from { opacity: 0; translate: 18px 28px; }
   to { opacity: 1; translate: 0 0; }
 }
 @keyframes phoneFrameEntrance {
   /* Stay within the approved 15px phone gutter throughout the entrance. */
-  from { opacity: 0; translate: 12px 0; }
+  from { opacity: 0; translate: 12px 24px; }
   to { opacity: 1; translate: 0 0; }
 }

@@ -106,27 +106,34 @@
    Each target is observed separately so the mobile sequence follows reading. */
 @media (prefers-reduced-motion: no-preference) {
   .artwork[data-editorial-state='entering'] {
-    animation: statisticEntrance 350ms var(--ease-out) backwards;
+    animation: statisticEntrance var(--duration-illustration) var(--ease-out) backwards;
   }
   .text[data-node-id='10:973'][data-editorial-state='entering'] {
-    animation: vocabFade 350ms var(--ease-out) 60ms backwards;
+    animation: vocabHeadingEntrance var(--duration-editorial) var(--ease-out) var(--stagger-editorial) backwards;
   }
   .banner[data-editorial-state='entering'] {
-    animation: vocabBannerEntrance 350ms var(--ease-out) 120ms backwards;
+    animation: vocabBannerEntrance var(--duration-editorial) var(--ease-out) 240ms backwards;
   }
   .text[data-node-id='10:972'][data-editorial-state='entering'] {
-    animation: vocabFade 350ms var(--ease-out) 180ms backwards;
+    animation: vocabFade var(--duration-editorial) var(--ease-out) 360ms backwards;
+  }
+  .text[data-node-id='10:971'][data-editorial-state='entering'] {
+    animation: vocabFade var(--duration-editorial) var(--ease-out) var(--stagger-editorial) backwards;
   }
 }
 @keyframes statisticEntrance {
-  from { opacity: 0; translate: 0 16px; }
-  to { opacity: 1; translate: 0 0; }
+  from { opacity: 0; translate: 0 44px; scale: 0.96; }
+  to { opacity: 1; translate: 0 0; scale: 1; }
 }
 @keyframes vocabFade {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+@keyframes vocabHeadingEntrance {
+  from { opacity: 0; translate: 0 30px; }
+  to { opacity: 1; translate: 0 0; }
+}
 @keyframes vocabBannerEntrance {
-  from { clip-path: inset(0 100% 0 0); }
-  to { clip-path: inset(0 0 0 0); }
+  from { opacity: 0; clip-path: inset(0 100% 0 0); }
+  to { opacity: 1; clip-path: inset(0 0 0 0); }
 }

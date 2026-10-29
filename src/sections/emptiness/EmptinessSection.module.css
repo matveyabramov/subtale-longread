@@ -321,11 +321,11 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .section[data-editorial-state='entering'] .pixel {
-    animation: assemblyFade 280ms var(--ease-out) var(--assembly-delay) backwards;
+  .artwork[data-editorial-state='entering'] .pixel {
+    animation: assemblyFade 430ms var(--ease-out) var(--assembly-delay) backwards;
   }
-  .section[data-editorial-state='entering'] .character {
-    animation: assemblyFade 440ms var(--ease-out) 180ms backwards;
+  .artwork[data-editorial-state='entering'] .character {
+    animation: assemblyFade 700ms var(--ease-out) 240ms backwards;
   }
 }
 @keyframes assemblyFade {

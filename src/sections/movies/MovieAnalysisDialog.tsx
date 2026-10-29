@@ -39,8 +39,9 @@ export function MovieAnalysisDialog({ media, trigger, onDismiss }: {
     const pause = () => video.pause();
     const visibility = () => { if (document.hidden) pause(); };
     const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const observer = new IntersectionObserver(([entry]) => { if (!entry?.isIntersecting) pause(); });
-    observer.observe(video);
+    const observer = typeof IntersectionObserver === 'undefined' ? null
+      : new IntersectionObserver(([entry]) => { if (!entry?.isIntersecting) pause(); });
+    observer?.observe(video);
     document.addEventListener('visibilitychange', visibility);
     window.addEventListener('pagehide', onDismiss);
     window.addEventListener('hashchange', onDismiss);
@@ -49,7 +50,7 @@ export function MovieAnalysisDialog({ media, trigger, onDismiss }: {
     return () => {
       pause();
       video.removeAttribute('src');
-      observer.disconnect();
+      observer?.disconnect();
       document.removeEventListener('visibilitychange', visibility);
       window.removeEventListener('pagehide', onDismiss);
       window.removeEventListener('hashchange', onDismiss);

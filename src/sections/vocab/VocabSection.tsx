@@ -16,7 +16,7 @@ export function VocabSection() {
           <div className={styles.artwork} data-node-id="10:969" data-editorial-reveal="scroll">
             <img src={vectorAssets['vocab-illustration']} alt="98%" />
           </div>
-          <p className={styles.text} data-node-id="10:971"><span>{copy['10:971']}</span></p>
+          <p className={styles.text} data-node-id="10:971" data-editorial-reveal="scroll"><span>{copy['10:971']}</span></p>
         </div>
         <div className={styles.sectionHeading}>
           <h2 id="vocab-title" tabIndex={-1} className={styles.text} data-node-id="10:973" data-editorial-reveal="scroll"><span>{copy['10:973']}</span></h2>
