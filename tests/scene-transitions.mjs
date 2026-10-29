@@ -47,10 +47,14 @@ try {
     const presentation = await page.locator(cover).evaluate(node => ({
       inert: node.inert, hidden: node.getAttribute('aria-hidden'), ids: node.querySelectorAll('[id]').length,
       pointer: getComputedStyle(node).pointerEvents,
+      background: getComputedStyle(node).backgroundColor,
+      sceneBackground: getComputedStyle(node.firstElementChild).backgroundColor,
       timing: node.getAnimations()[0].effect.getTiming(),
     }));
     assert.equal(presentation.inert, true); assert.equal(presentation.hidden, 'true');
     assert.equal(presentation.ids, 0); assert.equal(presentation.pointer, 'none');
+    assert.equal(presentation.background, 'rgb(11, 13, 15)');
+    assert.equal(presentation.sceneBackground, 'rgb(1, 46, 215)');
     assert.equal(presentation.timing.duration, 580);
     assert.equal(presentation.timing.easing, 'cubic-bezier(0.4, 0, 0.2, 1)');
     const instructionRect = await page.locator('#experiment-instructions').boundingBox();

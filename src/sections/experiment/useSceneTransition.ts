@@ -96,7 +96,6 @@ export function useSceneTransition() {
       node.dataset.sceneTransition = entering ? 'hero-instructions' : 'result-emptiness';
       node.setAttribute('aria-hidden', 'true');
       node.inert = true;
-      node.style.backgroundColor = getComputedStyle(scene).backgroundColor;
       const snapshot = copyScene(scene);
       node.append(snapshot.copy);
       document.body.append(node);

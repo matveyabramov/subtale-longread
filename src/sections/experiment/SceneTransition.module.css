@@ -5,6 +5,9 @@
   overflow: hidden;
   contain: strict;
   pointer-events: none;
+  /* Safari samples viewport-fixed backgrounds for browser chrome. The outgoing
+     scene paints its own unchanged colors inside this Experiment-colored shell. */
+  background: var(--color-ink);
 }
 .snapshot,
 .snapshot * { pointer-events: none !important; }
