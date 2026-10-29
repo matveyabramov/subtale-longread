@@ -93,7 +93,6 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
 
   function toggleMeaning() {
     const next = meaning === 'A' ? 'B' : 'A';
-    reachGoal('explorer_reveal', { category, meaning: next });
     setMousePreview(null);
     setState((current) => ({ ...current, stateByCategory: { ...current.stateByCategory, [category]: next } }));
   }
@@ -165,9 +164,11 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
           <button ref={questionTrigger} type="button" className={styles.question} data-node-id={visual.question}
             aria-haspopup="dialog" aria-controls="explorer-explanation" aria-expanded={explanationCategory !== null}
             onClick={() => {
+              if (explanationOpen.current) return;
               explanationOpen.current = true;
               hoverBlocked.current = true;
               setExplanationCategory(category);
+              reachGoal('explorer_reveal', { category });
             }}
             style={{ zIndex: visual.order.question, width: `var(--question-width, ${visual.questionWidth}px)` }}>{visual.questionText}</button>
           <div ref={artworkStage} className={styles.artworkStage}>

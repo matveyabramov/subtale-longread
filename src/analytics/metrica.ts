@@ -1,4 +1,4 @@
-import type { ExplorerCategoryId, MeaningState } from '../sections/blind-zones/model';
+import type { ExplorerCategoryId } from '../sections/blind-zones/model';
 import type { MovieCaseId } from '../sections/movies/model';
 
 export const COUNTER_ID = 113892269;
@@ -11,7 +11,7 @@ export const goals = {
 } as const;
 type GoalParams = {
   explorer_select: { category: ExplorerCategoryId };
-  explorer_reveal: { category: ExplorerCategoryId; meaning: MeaningState };
+  explorer_reveal: { category: ExplorerCategoryId };
   movie_analysis_open: { movie_id: MovieCaseId };
   movie_video_play: { movie_id: MovieCaseId };
 };

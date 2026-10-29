@@ -34,7 +34,7 @@ for(const engine of ['chrome','webkit']) for(const width of [1440,390]) {
  await p.locator('#explorer-tab-pun').click({force:true});
  assert.equal((await goals()).filter(c=>c[2]==='explorer_select').length,1);
  await p.locator('[data-explorer-reveal]').focus();await p.keyboard.press('Enter');
- assert.equal((await goals()).filter(c=>c[2]==='explorer_reveal').length,1);
+ assert.equal((await goals()).filter(c=>c[2]==='explorer_reveal').length,0);
  for (const category of ['doubleMeaning','reference','idiom']) {
    await p.locator('#explorer-tab-'+category).click({force:true});
    assert.deepEqual((await goals()).filter(c=>c[2]==='explorer_select').at(-1)[3],{category});
@@ -44,7 +44,19 @@ for(const engine of ['chrome','webkit']) for(const width of [1440,390]) {
  assert.equal((await goals()).filter(c=>c[2]==='explorer_reveal').length,beforeHover);
  if(width===390) {
    await p.locator('[data-explorer-reveal]').tap({force:true});
-   assert.equal((await goals()).filter(c=>c[2]==='explorer_reveal').length,beforeHover+1);
+   assert.equal((await goals()).filter(c=>c[2]==='explorer_reveal').length,beforeHover);
+ }
+ for(const category of ['idiom','pun','doubleMeaning','reference','reference']) {
+   await p.locator('#explorer-tab-'+category).click({force:true});
+   const before=(await goals()).filter(c=>c[2]==='explorer_reveal').length;
+   await p.locator('button[aria-controls="explorer-explanation"]').click({force:true});
+   await p.waitForSelector('#explorer-explanation[open]');
+   const reveals=(await goals()).filter(c=>c[2]==='explorer_reveal');
+   assert.equal(reveals.length,before+1);
+   assert.deepEqual(reveals.at(-1),[113892269,'reachGoal','explorer_reveal',{category}]);
+   await p.getByRole('button',{name:'Закрыть объяснение',exact:true}).click();
+   await p.waitForSelector('#explorer-explanation',{state:'detached'});
+   assert.equal((await goals()).filter(c=>c[2]==='explorer_reveal').length,before+1);
  }
  await p.locator('#movie-airplane button').hover({force:true});await p.waitForTimeout(250);
  assert(!(await goals()).some(c=>c[2]==='movie_video_play'));

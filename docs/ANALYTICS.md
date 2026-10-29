@@ -23,7 +23,7 @@ In counter settings create **JavaScript event** goals with these exact IDs
 | `experiment_skip` | First Skip activation, including the help dialog link |
 | `reading_start` | First active Reading mode |
 | `explorer_select` | Intentional changed category; `category`: idiom, pun, doubleMeaning, reference |
-| `explorer_reveal` | Intentional A/B toggle; `category`, `meaning`: A or B |
+| `explorer_reveal` | Each explicit explanation dialog open; `category`: idiom, pun, doubleMeaning, reference |
 | `movie_analysis_open` | Each explicit analysis open; `movie_id` from MovieMedia |
 | `movie_video_play` | First actual `playing` per opened analysis; `movie_id` |
 | `read_50` | Reading viewport bottom reaches 50% |
@@ -33,7 +33,7 @@ In counter settings create **JavaScript event** goals with these exact IDs
 Experiment, Reading and depth milestones send once per document, including
 StrictMode/remounts and Back/Forward. Explorer interactions and analysis opens
 may repeat on genuine new actions. Mouse hover remains the existing passive
-preview, not an A/B goal; touch/keyboard toggles are counted. No interaction
+preview. A/B toggles send no goals; opening an explanation sends `explorer_reveal`. No interaction
 semantics or motion were changed.
 
 Depth uses document geometry from Emptiness start to Footer start, excluding
@@ -47,7 +47,7 @@ https://matveyabramov.github.io/subtale-longread/?utm_source=dzen&utm_medium=art
 
 ## Privacy / release readiness
 
-Goal parameters are fixed category/meaning/movie identifiers, with no user input,
+Goal parameters are fixed category/movie identifiers, with no user input,
 email, names or other personal fields. Standard Metrica collection (including
 cookies, URL/referrer and Webvisor) is enabled as requested; this is not a claim
 that Metrica itself collects no personal data.
