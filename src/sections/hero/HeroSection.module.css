@@ -1,6 +1,11 @@
 .hero {
   background: var(--color-blue);
-  overflow-x: clip;
+  /* One scene per visible viewport. Short windows scroll the unchanged canvas
+     natively, rather than exposing the reading document beneath it. */
+  height: 100vh;
+  height: 100dvh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .hero[hidden] { display: none; }
 

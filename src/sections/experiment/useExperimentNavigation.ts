@@ -10,6 +10,7 @@ type NavigationSource = 'navigate' | 'gesture' | 'pop' | 'hash';
 
 function goToDocument({ id, focus }: Destination) {
   const target = document.getElementById(id);
+  if (id === 'hero' && target) target.scrollTop = 0;
   if (id === 'emptiness') window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   else target?.scrollIntoView({ behavior: 'instant', block: 'start' });
   if (!focus || !target) return;
@@ -29,7 +30,6 @@ export function useExperimentNavigation() {
   const [view, setView] = useState(() => readingViewForHash(location.hash));
   const current = useRef(view);
   const pendingDocument = useRef<Destination | null>(null);
-  const returnFromHero = useRef(false);
   const returnArmed = useRef(false);
   const lastScrollY = useRef(window.scrollY);
   const direction = useRef(0);
@@ -74,7 +74,6 @@ export function useExperimentNavigation() {
   }, [presentScene]);
 
   const navigate = useCallback((id: ReadingAnchorId) => {
-    returnFromHero.current = id === 'hero' && current.current.step === 'instructions';
     if (location.hash !== `#${id}`) history.pushState(null, '', `#${id}`);
     handledURL.current = location.href;
     applyRoute(id, 'navigate');
@@ -106,29 +105,22 @@ export function useExperimentNavigation() {
     const help = () => document.querySelector<HTMLDialogElement>('#experiment-help[open]');
     const frame = () => document.querySelector<HTMLElement>('#experiment-layer > section');
     const overlay = () => document.querySelector('dialog[open], #contents-panel') !== null;
-    const heroGatePending = () => document.querySelector('dialog[aria-labelledby="hero-hint-title"]')
-      ?.getAttribute('data-intro-state') === 'unseen';
     const openStep = (next: ExperimentStep, event?: Event) => {
       if (current.current.step) return;
       if (event?.cancelable) event.preventDefault();
       const id = experimentSteps.find((item) => item.id === next)!.anchor;
-      returnFromHero.current = false;
       if (location.hash !== `#${id}`) history.pushState(null, '', `#${id}`);
       handledURL.current = location.href;
       flushSync(() => applyRoute(id, 'gesture'));
     };
     const input = (delta: number, event: Event, arm = true) => {
-      if (!delta) return;
-      if (current.current.mode === 'experiment' && heroGatePending()) return;
+      // Hero gestures belong only to the introduction gate. Returning readers
+      // explicitly enter via CTA/contents; Safari bounce never selects a route.
+      if (!delta || current.current.mode !== 'reading') return;
       if (arm) returnArmed.current = true;
       direction.current = Math.sign(delta);
       lastScrollY.current = window.scrollY;
-      if (current.current.mode === 'reading') {
-        if (returnArmed.current && delta < 0 && window.scrollY <= 0) openStep('result', event);
-      } else if (delta > 0) {
-        const hero = document.getElementById('hero')?.getBoundingClientRect();
-        if (hero && (returnFromHero.current || hero.bottom <= delta)) openStep('instructions', event);
-      }
+      if (returnArmed.current && delta < 0 && window.scrollY <= 0) openStep('result', event);
     };
     const mayScroll = (scroller: HTMLElement | null, delta: number, target: EventTarget | null) => {
       if (!scroller || !(target instanceof Node) || !scroller.contains(target)) return false;
@@ -164,7 +156,7 @@ export function useExperimentNavigation() {
     const touchstart = (event: TouchEvent) => {
       const point = event.touches.length === 1 ? event.touches[0] : null;
       touch = point ? { x: point.clientX, y: point.clientY } : null;
-      if (point && !current.current.step && !overlay()) {
+      if (point && current.current.mode === 'reading' && !overlay()) {
         returnArmed.current = true;
         direction.current = 0;
         lastScrollY.current = window.scrollY;
@@ -186,17 +178,12 @@ export function useExperimentNavigation() {
       const y = window.scrollY;
       const movement = y - lastScrollY.current;
       lastScrollY.current = y;
-      if (current.current.step) return;
+      if (current.current.step || current.current.mode !== 'reading') return;
       if (overlay()) { returnArmed.current = false; direction.current = 0; return; }
       if (movement) direction.current = Math.sign(movement);
       if (movement > 0 && y > 0) returnArmed.current = true;
       if (!returnArmed.current) return;
-      if (current.current.mode === 'reading') {
-        if (y <= 0 && direction.current < 0) openStep('result');
-      } else if (direction.current > 0 && !heroGatePending()) {
-        const hero = document.getElementById('hero');
-        if (hero && hero.getBoundingClientRect().bottom <= 0) openStep('instructions');
-      }
+      if (y <= 0 && direction.current < 0) openStep('result');
     };
     const anchorClick = (event: MouseEvent) => {
       if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return;
@@ -212,7 +199,6 @@ export function useExperimentNavigation() {
     const historyNavigation = (event: PopStateEvent | HashChangeEvent) => {
       if (event.type === 'hashchange' && handledURL.current === location.href) return;
       handledURL.current = location.href;
-      returnFromHero.current = false;
       flushSync(() => applyRoute(location.hash.slice(1) || 'hero', event.type === 'popstate' ? 'pop' : 'hash'));
       cancelAnimationFrame(historyFocus);
       historyFocus = requestAnimationFrame(() => {

@@ -32,15 +32,19 @@ export function App() {
         <main id="main-content" tabIndex={-1}>
           <HeroSection contentsOpen={contentsOpen} hidden={experiment.mode === 'reading' || experiment.step !== null} />
           <ExperimentSection navigation={experiment} />
-          <EmptinessSection />
-          <ElephantSection />
-          <BlindZonesExplorer />
-          <MoviesSection />
-          <VocabSection />
-          <BlindSpotSceneSection />
-          <WhatToDoSection />
+          <div className={styles.readingContent} hidden={experiment.mode !== 'reading'} inert={experiment.mode !== 'reading'}>
+            <EmptinessSection />
+            <ElephantSection />
+            <BlindZonesExplorer />
+            <MoviesSection />
+            <VocabSection />
+            <BlindSpotSceneSection />
+            <WhatToDoSection />
+          </div>
         </main>
-        <FooterSection />
+        <div className={styles.readingContent} hidden={experiment.mode !== 'reading'} inert={experiment.mode !== 'reading'}>
+          <FooterSection />
+        </div>
         <ContentsTrigger open={contentsOpen} triggerRef={contentsTrigger}
           onToggle={() => setContentsOpen((open) => !open)} />
         <Contents open={contentsOpen} onClose={closeContents} triggerRef={contentsTrigger} />

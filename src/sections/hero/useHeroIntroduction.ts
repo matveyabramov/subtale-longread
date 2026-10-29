@@ -107,25 +107,33 @@ export function useHeroIntroduction(contentsOpen: boolean) {
       event.preventDefault();
       open();
     };
-    let touch: { x: number; y: number } | null = null;
+    let touch: { x: number; y: number; pulling: boolean } | null = null;
     const touchstart = (event: TouchEvent) => {
       const point = event.touches.length === 1 ? event.touches[0] : null;
-      touch = point ? { x: point.clientX, y: point.clientY } : null;
+      touch = point ? { x: point.clientX, y: point.clientY, pulling: false } : null;
     };
     const touchmove = (event: TouchEvent) => {
       const point = event.touches.length === 1 ? event.touches[0] : null;
       if (!point || !touch) return;
       const down = touch.y - point.clientY;
+      // A pull-down gesture stays native even if the finger reverses direction.
+      if (down < -2) touch.pulling = true;
+      if (touch.pulling) return;
       if (down <= 2 || down <= Math.abs(touch.x - point.clientX) || !canOpen()) return;
       event.preventDefault();
       touch = null;
       open();
     };
+    const touchend = () => { touch = null; };
+    document.addEventListener('touchend', touchend, { passive: true });
+    document.addEventListener('touchcancel', touchend, { passive: true });
     document.addEventListener('wheel', wheel, { passive: false });
     document.addEventListener('keydown', keydown);
     document.addEventListener('touchstart', touchstart, { passive: true });
     document.addEventListener('touchmove', touchmove, { passive: false });
     return () => {
+      document.removeEventListener('touchend', touchend);
+      document.removeEventListener('touchcancel', touchend);
       document.removeEventListener('wheel', wheel);
       document.removeEventListener('keydown', keydown);
       document.removeEventListener('touchstart', touchstart);

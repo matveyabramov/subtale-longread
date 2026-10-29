@@ -17,7 +17,7 @@ export function useCurrentSection() {
       }
       // A short final chapter may never reach the reading line at maximum scroll.
       const footer = document.getElementById('footer');
-      if (footer && footer.getBoundingClientRect().top < window.innerHeight &&
+      if (footer?.getClientRects().length && footer.getBoundingClientRect().top < window.innerHeight &&
         window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) active = 'footer';
       setCurrent(active);
     };
