@@ -102,8 +102,8 @@ export function useSceneTransition() {
       document.body.append(node);
       snapshot.restoreScroll();
       const animation = node.animate([{ clipPath: opening }, { clipPath: opened }], {
-        duration: entering ? 450 : 500,
-        easing: getComputedStyle(document.documentElement).getPropertyValue('--ease-out').trim(),
+        duration: entering ? 580 : 620,
+        easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
         fill: 'both',
       });
       active.current = { node, animation };

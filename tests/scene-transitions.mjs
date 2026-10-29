@@ -51,10 +51,10 @@ try {
     }));
     assert.equal(presentation.inert, true); assert.equal(presentation.hidden, 'true');
     assert.equal(presentation.ids, 0); assert.equal(presentation.pointer, 'none');
-    assert.equal(presentation.timing.duration, 450);
-    assert.equal(presentation.timing.easing, 'cubic-bezier(0.23, 1, 0.32, 1)');
+    assert.equal(presentation.timing.duration, 580);
+    assert.equal(presentation.timing.easing, 'cubic-bezier(0.4, 0, 0.2, 1)');
     const instructionRect = await page.locator('#experiment-instructions').boundingBox();
-    for (const time of [1, 90, 225, 449]) {
+    for (const time of [1, 116, 290, 579]) {
       await page.locator(cover).evaluate((node, time) => { node.getAnimations()[0].currentTime = time; }, time);
       assert.deepEqual(await page.locator('#experiment-instructions').boundingBox(), instructionRect);
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
@@ -86,7 +86,7 @@ try {
       assert.deepEqual(await state(page), { hash: '#emptiness', focus: 'emptiness-title', lock: '', inert: false, y: 0 });
       assert.equal(await page.locator(cover).getAttribute('data-scene-transition'), 'result-emptiness');
       assert.equal(await page.locator(`${cover} > div > section`).evaluate(n => n.scrollTop), screenScroll);
-      assert.equal(await page.locator(cover).evaluate(n => n.getAnimations()[0].effect.getTiming().duration), 500);
+      assert.equal(await page.locator(cover).evaluate(n => n.getAnimations()[0].effect.getTiming().duration), 620);
       // Back to Result via each existing input path, without awaiting the effect.
       if (cycle === 0) await page.keyboard.press('ArrowUp');
       else if (cycle === 1) await touchUp(page);
@@ -97,7 +97,7 @@ try {
     }
     // Natural completion removes its cover; assembly is still owned by Emptiness.
     await page.locator('#experiment-result a[href="#emptiness"]').click();
-    await page.waitForTimeout(600);
+    await page.waitForTimeout(720);
     await assertNoCover(page);
     assert.equal((await state(page)).lock, '');
     await page.waitForTimeout(500);
