@@ -1,4 +1,5 @@
-import type { CSSProperties } from 'react';
+import { useRef, type CSSProperties } from 'react';
+import { useEditorialEntrance } from '../../shared/useEditorialEntrance';
 import { imageAssets } from '../../assets/generated';
 import { copy } from './copy';
 import { panels } from './panelData';
@@ -7,8 +8,10 @@ import styles from './WhatToDoSection.module.css';
 type Panel = (typeof panels)[number];
 
 export function WhatToDoSection() {
+  const sectionRef = useRef<HTMLElement>(null);
+  useEditorialEntrance(sectionRef);
   return (
-    <section id="what-to-do" aria-labelledby="what-to-do-title" data-narrative-section data-section-surface className={styles.section}>
+    <section ref={sectionRef} id="what-to-do" aria-labelledby="what-to-do-title" data-narrative-section data-section-surface className={styles.section}>
       <div className={`${styles.texture} ${styles.grain}`} data-section-texture data-node-id="10:1273" aria-hidden="true"
         style={{ '--responsive-mosaic': `url("${imageAssets['mosaic-texture']}")` } as CSSProperties}><img src={imageAssets['au-fg-texture4-8k']} alt="" /></div>
       <div className={styles.canvas} data-section-canvas data-node-id="10:1272">
@@ -26,7 +29,7 @@ export function WhatToDoSection() {
 function AdvicePanel({ panel }: { panel: Panel }) {
   const after = panel.id === '10:1326';
   return (
-    <div className={styles.panel} data-after={after} data-node-id={panel.id} style={{ left: `var(--panel-left, ${panel.x}px)`, top: `var(--panel-top, ${panel.y}px)` }}>
+    <div className={styles.panel} data-after={after} data-node-id={panel.id} data-editorial-reveal="scroll" style={{ left: `var(--panel-left, ${panel.x}px)`, top: `var(--panel-top, ${panel.y}px)` }}>
       {panel.columns.map(column => <div key={column.id} className={styles.column} data-node-id={column.id}
         style={{ left: `var(--column-left, ${column.x}px)`, top: `var(--column-top, ${column.y}px)`, width: `var(--pixel-size, ${column.width}px)`, height: `var(--column-height, ${column.height}px)` }} aria-hidden="true">
         {column.pixels.map(pixel => <span key={pixel.id} data-node-id={pixel.id} className={styles.pixel} style={{ top: `var(--pixel-top, ${pixel.y}px)` }} />)}

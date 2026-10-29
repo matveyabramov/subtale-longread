@@ -145,3 +145,23 @@
   padding-top: clamp(30px, calc(2.645503vw + 19.68254px), 60px);
   padding-bottom: calc(clamp(48px, 4.166667vw, 80px) + env(safe-area-inset-bottom, 0px));
 }
+
+/* Keep the ResizeObserver scale and all source transforms on their owners.
+   At 1920 the slot is display:contents; move its two visible siblings together. */
+@media (prefers-reduced-motion: no-preference) {
+  @media (width >= 1920px) {
+    .collage[data-editorial-state='entering'],
+    .collageBoard:has(> .collage[data-editorial-state='entering']) > .imageLayer[data-node-id='10:1146'] {
+      animation: footerEntrance 400ms var(--ease-out) backwards;
+    }
+  }
+  @media (width < 1920px) {
+    .collageSlot:has(.collage[data-editorial-state='entering']) {
+      animation: footerEntrance 400ms var(--ease-out) backwards;
+    }
+  }
+}
+@keyframes footerEntrance {
+  from { opacity: 0; translate: 0 12px; }
+  to { opacity: 1; translate: 0 0; }
+}

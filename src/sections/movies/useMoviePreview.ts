@@ -81,8 +81,8 @@ export function useMoviePreview(sectionRef: RefObject<HTMLElement | null>, listR
       if (hover.matches && !motion.matches) {
         // Time-based exponential ease: retarget from the current pose, no overshoot.
         const blend = 1 - Math.exp(-dt / 80);
-        x += (target * 6 - x) * blend;
-        rotation += (target * 0.35 - rotation) * blend;
+        x += (target * 12 - x) * blend;
+        rotation += (target * 0.7 - rotation) * blend;
         target *= Math.exp(-dt / 90);
         list.style.transform = `translateX(${x.toFixed(3)}px) rotate(${rotation.toFixed(4)}deg)`;
       } else resetMotion();

@@ -142,3 +142,24 @@
   background: var(--responsive-mosaic) 0 0 / 354.99999px 287.9345px repeat;
 }
 .texture > img { display: none; }
+
+/* Observe the statement, which has a box at every breakpoint. The existing
+   display:contents pair and separate connector nodes retain their geometry. */
+@media (prefers-reduced-motion: no-preference) {
+  .sectionHeading:has(> [data-editorial-state='entering']) > *,
+  .illustration[data-editorial-state='entering'],
+  .pair:has(> [data-editorial-state='entering']) > .text,
+  .canvas:has(.pair:nth-child(1) > [data-editorial-state='entering']) > .line[data-pair='0'],
+  .canvas:has(.pair:nth-child(2) > [data-editorial-state='entering']) > .line[data-pair='1'],
+  .canvas:has(.pair:nth-child(3) > [data-editorial-state='entering']) > .line[data-pair='2'] {
+    animation: connectionFade 350ms var(--ease-out) var(--connection-delay, 0ms) backwards;
+  }
+  .pair:nth-child(2) > .text,
+  .line[data-pair='1'] { --connection-delay: 60ms; }
+  .pair:nth-child(3) > .text,
+  .line[data-pair='2'] { --connection-delay: 120ms; }
+}
+@keyframes connectionFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

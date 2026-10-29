@@ -29,7 +29,7 @@ export function FooterImage({ id }: { id: ImageLayer['id'] }) {
 
 export function FooterCollage() {
   return (
-    <div className={styles.collage} data-node-id="10:1019" aria-hidden="true">
+    <div className={styles.collage} data-node-id="10:1019" data-editorial-reveal="scroll" aria-hidden="true">
       <div className={styles.middleClip} data-node-id="10:1020"><FooterPixels parent="10:1020" /></div>
       <FooterPixels parent="10:1019" />
       {/* The source portrait starts below the outer clip. Keep its bounds, not its hidden bitmap. */}

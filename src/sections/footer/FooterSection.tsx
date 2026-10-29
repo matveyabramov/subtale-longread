@@ -1,4 +1,5 @@
 import { useLayoutEffect, useRef, type CSSProperties } from 'react';
+import { useEditorialEntrance } from '../../shared/useEditorialEntrance';
 import { imageAssets, vectorAssets } from '../../assets/generated';
 import { FooterCollage, FooterImage } from './FooterCollage';
 import { copy } from './copy';
@@ -32,11 +33,13 @@ function useArtworkScale(sourceWidth: number) {
 }
 
 export function FooterSection() {
+  const sectionRef = useRef<HTMLElement>(null);
+  useEditorialEntrance(sectionRef);
   const collageSlot = useArtworkScale(771);
   const brandSlot = useArtworkScale(160);
   const schoolSlot = useArtworkScale(201);
   return (
-    <footer id="footer" aria-labelledby="footer-title" data-narrative-section className={styles.section}>
+    <footer ref={sectionRef} id="footer" aria-labelledby="footer-title" data-narrative-section className={styles.section}>
       <div className={styles.canvas} data-node-id="10:1016">
         <div className={`${styles.texture} ${styles.grain}`} data-node-id="10:1017" aria-hidden="true"
           style={{ '--responsive-mosaic': `url("${imageAssets['mosaic-texture']}")` } as CSSProperties}><img src={imageAssets['au-fg-texture4-8k']} alt="" /></div>
