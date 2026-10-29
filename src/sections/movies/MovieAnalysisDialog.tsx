@@ -73,10 +73,12 @@ export function MovieAnalysisDialog({ media, trigger, onDismiss }: {
     return !!bounds && (x < bounds.left || x > bounds.right || y < bounds.top || y > bounds.bottom);
   };
 
+  // StrictMode cleanup queues close before showModal reopens the same element.
+  // Only dismiss a genuinely closed dialog, not that stale close event.
   return createPortal(
     <dialog ref={dialogRef} id="movie-analysis" className={styles.dialog} aria-labelledby="movie-analysis-title"
       onCancel={(event) => { event.preventDefault(); onDismiss(); }}
-      onClose={onDismiss}
+      onClose={(event) => { if (!event.currentTarget.open) onDismiss(); }}
       onPointerDown={(event) => { backdropPress.current = event.target === event.currentTarget && outside(event.clientX, event.clientY); }}
       onPointerCancel={() => { backdropPress.current = false; }}
       onClick={(event) => {

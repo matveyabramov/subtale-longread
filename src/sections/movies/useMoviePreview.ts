@@ -3,7 +3,7 @@ import { movieCases, type MovieMedia } from './model';
 
 const hoverQuery = '(hover: hover) and (pointer: fine)';
 const motionQuery = '(prefers-reduced-motion: reduce)';
-type Selection = { media: MovieMedia; autoplay: boolean; source: 'pointer' | 'explicit' | 'focus' };
+type Selection = { media: MovieMedia; autoplay: boolean; source: 'pointer' | 'focus' };
 
 /** Native scrolling changes the hit target, never the permission to preview. */
 export function useMoviePreview(sectionRef: RefObject<HTMLElement | null>, listRef: RefObject<HTMLDivElement | null>) {
@@ -26,10 +26,6 @@ export function useMoviePreview(sectionRef: RefObject<HTMLElement | null>, listR
     selected.current = { media, autoplay, source };
     setPreview(selected.current);
   }, [pause]);
-  const toggle = (media: MovieMedia) => {
-    if (selected.current?.media.id === media.id && selected.current.source === 'explicit') stop();
-    else select(media, 'explicit');
-  };
   const focus = (media: MovieMedia) => {
     if (selected.current?.media.id !== media.id) select(media, 'focus');
   };
@@ -65,7 +61,7 @@ export function useMoviePreview(sectionRef: RefObject<HTMLElement | null>, listR
     };
     const hitTest = () => {
       if (!visible || blocked()) { stop(); return; }
-      if (selected.current?.source === 'explicit' || selected.current?.source === 'focus') {
+      if (selected.current?.source === 'focus') {
         const row = section.querySelector(`[data-movie-case="${selected.current.media.id}"]`);
         if (!row || !rowVisible(row)) stop();
         return;
@@ -98,7 +94,7 @@ export function useMoviePreview(sectionRef: RefObject<HTMLElement | null>, listR
     const onPointer = (event: PointerEvent) => {
       if (event.pointerType !== 'mouse') return;
       point = { x: event.clientX, y: event.clientY };
-      if (selected.current?.source === 'explicit' || selected.current?.source === 'focus') stop();
+      if (selected.current?.source === 'focus') stop();
       if (visible) schedule();
     };
     const onScroll = () => {
@@ -157,5 +153,5 @@ export function useMoviePreview(sectionRef: RefObject<HTMLElement | null>, listR
     };
   }, [sectionRef, listRef, pause, select, stop]);
 
-  return { videos, preview, stop, toggle, focus, blur, guardPlayback };
+  return { videos, preview, stop, focus, blur, guardPlayback };
 }

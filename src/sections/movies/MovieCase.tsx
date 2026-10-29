@@ -4,12 +4,10 @@ import type { MovieMedia } from './model';
 import styles from './MoviesSection.module.css';
 
 // The transparent button covers the original row without moving its Figma slots.
-export function MovieCase({ media, onOpen, active, requested, onPreview, onFocus, onBlur }: {
+export function MovieCase({ media, onOpen, active, onFocus, onBlur }: {
   media: MovieMedia;
   onOpen: (media: MovieMedia, trigger: HTMLButtonElement) => void;
   active: boolean;
-  requested: boolean;
-  onPreview: (media: MovieMedia) => void;
   onFocus: (media: MovieMedia) => void;
   onBlur: () => void;
 }) {
@@ -29,9 +27,6 @@ export function MovieCase({ media, onOpen, active, requested, onPreview, onFocus
       className={styles.scene} data-node-id={visual.id} style={{ height: `var(--scene-height, ${visual.h}px)` }}>
       <button type="button" className={styles.openCase} aria-label={`Разобрать сцену: ${visual.film.text.replaceAll('\n', ' ')}`}
         aria-haspopup="dialog" aria-controls="movie-analysis" onClick={(event) => onOpen(media, event.currentTarget)} />
-      <button type="button" className={styles.previewAction} data-preview-action aria-pressed={requested}
-        aria-label={`${requested ? 'Скрыть' : 'Показать'} превью: ${visual.film.text.replaceAll('\n', ' ')}`}
-        onClick={() => onPreview(media)}><span aria-hidden="true">{requested ? '■' : '▶'}</span></button>
       <div className={styles.divider} data-node-id={visual.divider} aria-hidden="true" />
       <div className={styles.sceneBody} data-node-id={visual.body}>
         <div className={styles.sceneContent} data-node-id={visual.content} style={{ width: `var(--scene-content-width, ${visual.contentWidth}px)` }}>

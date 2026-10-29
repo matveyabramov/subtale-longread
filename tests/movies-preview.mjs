@@ -1,4 +1,4 @@
-// Run against npm run preview (production); reuse Playwright via PLAYWRIGHT_MODULE.
+// Run against dev (StrictMode) or preview; reuse Playwright via PLAYWRIGHT_MODULE.
 import assert from 'node:assert/strict';
 import { mkdir, writeFile } from 'node:fs/promises';
 const { chromium, webkit } = await import(process.env.PLAYWRIGHT_MODULE || 'playwright');
@@ -55,12 +55,17 @@ try {
       assert.equal((await playing(page)).length, 1);
       if (output && index === 0) await page.screenshot({ path: `${output}/movies-${width}.png` });
       // The existing arrow and row button still open the corresponding analysis.
+      const position = await page.evaluate(() => scrollY);
       await row.locator('button[aria-haspopup="dialog"]').click({ position: { x: width - 45, y: 55 } });
       await page.locator('#movie-analysis[open]').waitFor();
       assert.equal(await page.locator('#movie-analysis video').getAttribute('poster'), await row.evaluate((_, id) => document.querySelector(`[data-preview-film="${id}"]`).style.backgroundImage.slice(5, -2), id));
       assert.deepEqual(await playing(page), []);
-      await page.keyboard.press('Escape');
+      if (index === 0) await page.getByRole('button', { name: 'Закрыть разбор' }).click();
+      else if (index === 1) await page.mouse.click(1, 1);
+      else await page.keyboard.press('Escape');
       await page.locator('#movie-analysis').waitFor({ state: 'detached' });
+      assert.equal(await row.locator('[aria-haspopup="dialog"]').evaluate(el => el === document.activeElement), true);
+      assert.equal(await page.evaluate(() => scrollY), position);
     }
     // Geometry changes beneath an unmoving pointer must select the new row.
     const first = page.locator('#movie-airplane');
@@ -151,58 +156,36 @@ try {
     page.on('request', r => { if (r.url().endsWith('.mp4')) requests.push(r.url()); });
     await page.goto(`${origin}/#movies`);
     await page.evaluate(() => document.fonts.ready);
-    const overlaps = await page.locator('#movies').evaluate(section => {
-      const collisions = [];
-      for (const row of section.querySelectorAll('[data-movie-case]')) {
-        const button = row.querySelector('[data-preview-action]').getBoundingClientRect();
-        const text = document.createTreeWalker(row, NodeFilter.SHOW_TEXT);
-        while (text.nextNode()) {
-          if (text.currentNode.parentElement.closest('button, [aria-hidden="true"]')) continue;
-          if (getComputedStyle(text.currentNode.parentElement).display === 'none') continue;
-          const range = document.createRange();
-          range.selectNodeContents(text.currentNode);
-          for (const rect of range.getClientRects()) {
-            if (rect.width && rect.height && rect.left < button.right && rect.right > button.left &&
-              rect.top < button.bottom && rect.bottom > button.top) collisions.push(row.id);
-          }
-        }
-      }
-      return collisions;
-    });
-    assert.deepEqual(overlaps, [], 'Preview actions must not cover the existing copy');
-    const row = page.locator('#movie-airplane');
-    const action = row.locator('[data-preview-action]');
-    await action.tap();
-    await wait(page, () => document.querySelector('#movie-airplane').dataset.previewActive === 'true');
-    if (reducedMotion === 'reduce') {
-      await page.waitForTimeout(400);
-      assert.deepEqual(requests, []);
+    assert.equal(await page.locator('[data-preview-action]').count(), 0);
+    assert.deepEqual(requests, []);
+    for (const [index, id] of films.entries()) {
+      const button = page.locator(`#movie-${id} [aria-haspopup="dialog"]`);
+      await button.scrollIntoViewIfNeeded();
+      const position = await page.evaluate(() => scrollY);
+      await button.tap({ position: { x: 10, y: 100 } });
+      await page.locator('#movie-analysis[open]').waitFor();
       assert.deepEqual(await playing(page), []);
-    } else {
-      await wait(page, () => document.querySelector('[data-preview-film="airplane"] video').currentTime > 0.1);
-      assert.equal((await playing(page)).length, 1);
+      await page.getByRole('button', { name: 'Смотреть сцену' }).tap();
+      await wait(page, () => document.querySelector('#movie-analysis video').currentTime > 0.1);
+      assert((await page.locator('#movie-analysis video').getAttribute('src')).endsWith(`${files[index]}.mp4`));
+      await page.getByRole('button', { name: 'Закрыть разбор' }).tap();
+      await page.locator('#movie-analysis').waitFor({ state: 'detached' });
+      assert.equal(await button.evaluate(el => el === document.activeElement), true);
+      assert.equal(await page.evaluate(() => scrollY), position);
     }
-    assert.equal(await page.locator('[data-movie-list]').evaluate(el => el.style.transform), '');
-    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
-    if (output) await page.screenshot({ path: `${output}/movies-390-${reducedMotion}.png` });
-    await action.tap();
-    await stopped(page);
-    await row.locator('[aria-haspopup="dialog"]').tap({ position: { x: 10, y: 200 } });
-    await page.locator('#movie-analysis[open]').waitFor();
-    await page.getByRole('button', { name: 'Смотреть сцену' }).tap();
-    await wait(page, () => document.querySelector('#movie-analysis video').currentTime > 0.1);
-    await page.getByRole('button', { name: 'Закрыть разбор' }).tap();
-    console.log(`390/${reducedMotion}: explicit preview, poster fallback, analysis and explicit Play passed`);
+    console.log(`390/${reducedMotion}: all five dialogs, explicit Play, focus and scroll restoration passed`);
     await context.close();
   }
   // Keyboard and preference changes on desktop.
   const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, reducedMotion: 'reduce' });
   await page.goto(`${origin}/#movies`);
-  const action = page.locator('#movie-airplane [data-preview-action]');
+  const action = page.locator('#movie-airplane [aria-haspopup="dialog"]');
   await page.keyboard.press('Tab');
   await action.focus();
   await page.keyboard.press('Enter');
-  await page.waitForTimeout(300);
+  await page.locator('#movie-analysis[open]').waitFor();
+  await page.keyboard.press('Escape');
+  await page.locator('#movie-analysis').waitFor({ state: 'detached' });
   assert.equal(await action.evaluate(el => el.matches(':focus-visible')), true);
   assert.equal(await page.locator('#movies video[src]').count(), 0);
   await page.emulateMedia({ reducedMotion: 'no-preference' });

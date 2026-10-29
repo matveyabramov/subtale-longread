@@ -488,32 +488,6 @@
 .previewShade { background: rgb(0 0 0 / 40%); }
 .scene { transition: opacity var(--duration-ui) var(--ease-out); }
 .cases[data-preview-active='true'] .scene:not([data-preview-active='true']) { opacity: 0.4; }
-.previewAction {
-  position: absolute;
-  z-index: 3;
-  top: var(--row-space, 40px);
-  right: calc(var(--gutter, 30px) + var(--arrow-size, 67px) + 12px);
-  display: grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  border: 1px solid rgb(255 255 255 / 40%);
-  color: var(--color-white);
-  background: var(--color-ink);
-  cursor: pointer;
-}
-.previewAction:focus-visible { outline: 3px solid var(--color-yellow); outline-offset: 3px; }
-@media (hover: hover) and (pointer: fine) {
-  .previewAction { opacity: 0; pointer-events: none; }
-  .scene:focus-within .previewAction { opacity: 1; pointer-events: auto; }
-}
-@media (width <= 1100px) {
-  .previewAction {
-    top: calc(var(--row-space) + var(--arrow-size) + 12px);
-    right: var(--gutter);
-  }
-}
 @media (prefers-reduced-motion: reduce) {
   .preview, .previewLayer, .preview video, .scene { transition: none; }
   .preview video[data-playing] { opacity: 0; }

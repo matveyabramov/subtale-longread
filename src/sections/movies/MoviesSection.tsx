@@ -34,7 +34,7 @@ export function MoviesSection() {
         <div ref={listRef} className={styles.cases} data-node-id="10:1840" data-movie-list data-preview-active={!!preview.preview}>
           {movieCases.map((media) => <MovieCase key={media.id} media={media} onOpen={open}
             active={preview.preview?.media.id === media.id}
-            requested={preview.preview?.media.id === media.id && preview.preview.source === 'explicit'} onPreview={preview.toggle} onFocus={preview.focus} onBlur={preview.blur} />)}
+            onFocus={preview.focus} onBlur={preview.blur} />)}
           <div className={styles.divider} data-node-id="10:1917" aria-hidden="true" />
         </div>
       </div>
