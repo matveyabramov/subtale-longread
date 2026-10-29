@@ -2,6 +2,27 @@ import type { ExplorerCategoryId } from '../sections/blind-zones/model';
 import type { MovieCaseId } from '../sections/movies/model';
 
 export const COUNTER_ID = 113892269;
+
+const CONSENT_STORAGE_KEY = 'subtale.analytics.consent.v1';
+export type AnalyticsConsentChoice = 'accepted' | 'rejected';
+let sessionConsent: AnalyticsConsentChoice | null = null;
+
+/** Analytics are strictly opt-in. If storage is blocked, respect the user's choice for this page load. */
+export function getAnalyticsConsent(): AnalyticsConsentChoice | null {
+  try {
+    const stored = localStorage.getItem(CONSENT_STORAGE_KEY);
+    if (stored === 'accepted' || stored === 'rejected') return stored;
+  } catch { /* Private browsing may disable persistent storage. */ }
+  return sessionConsent;
+}
+
+export function setAnalyticsConsent(choice: AnalyticsConsentChoice) {
+  sessionConsent = choice;
+  try { localStorage.setItem(CONSENT_STORAGE_KEY, choice); } catch { /* Session-only fallback. */ }
+  // The documented Yandex opt-out flag also stops an already initialized counter.
+  (window as Window & Record<string, unknown>)[`disableYaCounter${COUNTER_ID}`] = choice !== 'accepted';
+}
+
 export const goals = {
   experiment_start: null, experiment_attempt: null, experiment_result: null,
   experiment_skip: null, reading_start: null,
@@ -28,7 +49,8 @@ export function analyticsEnabled() {
   const host = location.hostname.toLowerCase();
   // An explicit production hostname also supports a future custom domain.
   // IP literals (including LAN), localhost and all dev builds are always excluded.
-  return import.meta.env.PROD && host !== 'localhost' && !host.endsWith('.localhost')
+  return getAnalyticsConsent() === 'accepted'
+    && import.meta.env.PROD && host !== 'localhost' && !host.endsWith('.localhost')
     && !host.includes(':') && !/^\[|^[\d.]+$/.test(host)
     && host === (import.meta.env.VITE_ANALYTICS_HOSTNAME || 'matveyabramov.github.io');
 }

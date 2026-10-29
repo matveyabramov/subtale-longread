@@ -32,7 +32,7 @@ function useArtworkScale(sourceWidth: number) {
   return ref;
 }
 
-export function FooterSection() {
+export function FooterSection({ onOpenPrivacy }: { onOpenPrivacy: () => void }) {
   const sectionRef = useRef<HTMLElement>(null);
   useEditorialEntrance(sectionRef);
   const collageSlot = useArtworkScale(771);
@@ -70,6 +70,10 @@ export function FooterSection() {
             </div>)}
           </div>
           <div ref={schoolSlot} className={styles.schoolLogo}><FooterImage id="10:1162" /></div>
+          <div className={styles.privacyActions}>
+            <button type="button" onClick={onOpenPrivacy}>Настройки аналитики</button>
+            <a href={`${import.meta.env.BASE_URL}privacy.html`} target="_blank" rel="noopener noreferrer">Статистика и cookies</a>
+          </div>
         </div>
       </div>
     </footer>

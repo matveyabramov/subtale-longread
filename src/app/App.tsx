@@ -1,4 +1,6 @@
 import { useReadingAnalytics } from '../analytics/useReadingAnalytics';
+import { getAnalyticsConsent } from '../analytics/metrica';
+import { AnalyticsConsent } from '../components/privacy/AnalyticsConsent';
 import { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import { Contents, ContentsTrigger } from '../components/contents/Contents';
 import { HeroSection } from '../sections/hero/HeroSection';
@@ -25,6 +27,7 @@ export function App() {
   useInputModality();
   const reducedMotion = useReducedMotion();
   const [contentsOpen, setContentsOpen] = useState(false);
+  const [privacyOpen, setPrivacyOpen] = useState(() => getAnalyticsConsent() === null);
   const contentsTrigger = useRef<HTMLButtonElement>(null);
   const closeContents = useCallback(() => setContentsOpen(false), []);
 
@@ -45,12 +48,13 @@ export function App() {
           </div>
         </main>
         <div className={styles.readingContent} hidden={experiment.mode !== 'reading'} inert={experiment.mode !== 'reading'}>
-          <FooterSection />
+          <FooterSection onOpenPrivacy={() => setPrivacyOpen(true)} />
         </div>
         <ContentsTrigger open={contentsOpen} triggerRef={contentsTrigger}
           onToggle={() => setContentsOpen((open) => !open)} />
         <Contents open={contentsOpen} onClose={closeContents} triggerRef={contentsTrigger} />
       </div>
+      <AnalyticsConsent open={privacyOpen} onClose={() => setPrivacyOpen(false)} />
     </ReadingNavigation>
   );
 }

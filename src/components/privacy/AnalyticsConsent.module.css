@@ -1,0 +1,35 @@
+.notice {
+  position: fixed;
+  z-index: 20000;
+  inset: auto max(14px, env(safe-area-inset-right, 0px)) max(14px, env(safe-area-inset-bottom, 0px)) auto;
+  box-sizing: border-box;
+  width: min(480px, calc(100vw - 28px));
+  padding: 20px;
+  color: var(--color-paper, #eeeee7);
+  background: var(--color-ink, #0b0d0f);
+  border: 2px solid var(--color-yellow, #fed128);
+  box-shadow: 0 12px 36px #0009;
+  font: 500 14px/1.5 var(--font-copy, monospace);
+}
+.heading {
+  margin: 0 0 8px;
+  font: 800 25px/1 var(--font-display, sans-serif);
+  color: var(--color-yellow, #fed128);
+  letter-spacing: .01em;
+}
+.description { margin: 0 0 16px; }
+.description a { text-decoration: underline; text-underline-offset: 3px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.actions button {
+  min-height: 42px; padding: 9px 12px; border: 2px solid var(--color-yellow, #fed128);
+  cursor: pointer; font: 600 13px/1.2 var(--font-copy, monospace);
+}
+.accept { background: var(--color-yellow, #fed128); color: var(--color-ink, #0b0d0f); }
+.reject, .close { background: transparent; color: var(--color-paper, #eeeee7); }
+.close { border-color: var(--color-paper, #eeeee7) !important; }
+.actions button:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+@media (max-width: 600px) {
+  .notice { inset-inline: 14px; width: auto; padding: 16px; font-size: 12px; }
+  .heading { font-size: 23px; }
+  .actions button { flex: 1 1 auto; font-size: 12px; }
+}
