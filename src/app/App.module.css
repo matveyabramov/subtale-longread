@@ -92,3 +92,7 @@
     .longread { --mobile-viewport: 100dvh; }
   }
 }
+
+/* Emptiness is the first reading screen after the fullscreen Experiment.
+   It has no preceding reading chapter whose boundary needs spacing. */
+.longread[data-reading-mode='reading'] :global(#emptiness)::before { display: none; }

@@ -273,3 +273,49 @@
   .artFrame { margin-top: auto; }
   .copy { padding-top: 24px; }
 }
+
+/* Fit the available browser height, keeping a content-sized floor instead of
+   clipping on unusually short screens. Only vertical layout adapts here. */
+.canvas {
+  --emptiness-viewport: 100vh;
+  height: max(760px, var(--emptiness-viewport));
+}
+@supports (height: 100dvh) {
+  .canvas { --emptiness-viewport: 100dvh; }
+}
+@media (width >= 1920px) {
+  .copy { top: auto; bottom: 30px; }
+  .artFrame { height: auto; bottom: 30px; }
+}
+@media (1100px < width < 1920px) {
+  .canvas {
+    height: max(640px, var(--emptiness-viewport), calc(var(--artwork-width) * 480 / 1049 + clamp(50px, calc(2.083333vw + 30px), 70px) * 1.6 + 80px + var(--gutter) * 2 + 24px));
+  }
+}
+@media (width <= 1100px) {
+  .canvas {
+    height: auto;
+    min-height: var(--emptiness-viewport);
+    padding-top: max(var(--gutter), env(safe-area-inset-top, 0px));
+    padding-bottom: max(var(--gutter), env(safe-area-inset-bottom, 0px));
+  }
+  .banner { margin-bottom: 0; }
+  .artFrame {
+    flex: 1 0 auto;
+    height: auto;
+    /* Two label lines, proportional collage, border/padding and two gaps. */
+    min-height: calc(var(--artwork-width) * 480 / 1049 + clamp(30px, calc(3.968254vw + 19.52381px), 50px) * 1.6 + var(--frame-inset) * 2 + 24px);
+    margin-top: clamp(16px, 3vh, 30px);
+    margin-top: clamp(16px, 3dvh, 30px);
+  }
+  .copy {
+    margin-top: 0;
+    padding-top: clamp(16px, 3vh, 30px);
+    padding-top: clamp(16px, 3dvh, 30px);
+  }
+}
+@media (width <= 360px) {
+  /* At the narrowest widths the unchanged fixed contents control needs its
+     own header row; allow natural scrolling rather than overlap the title. */
+  .canvas { padding-top: calc(64px + env(safe-area-inset-top, 0px)); }
+}
