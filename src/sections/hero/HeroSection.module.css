@@ -223,6 +223,8 @@
 
 .artwork {
   display: contents;
+  /* Transparent portrait pixels overlap the CTA; decoration must not hit-test. */
+  pointer-events: none;
 }
 
 /* Approved Hero frames supply the artwork and type. Review corrections align
@@ -470,4 +472,11 @@
 @media (hover: hover) and (pointer: fine) {
   .primaryCta:hover { background-color: transparent; color: var(--color-yellow); }
   .primaryCta:hover::before { border-color: var(--color-yellow); }
+}
+
+.primaryArrowBox { transition: background-color var(--duration-feedback) var(--ease-out); }
+.primaryArrowBox img { transition: filter var(--duration-feedback) var(--ease-out); }
+@media (hover: hover) and (pointer: fine) {
+  .primaryCta:hover .primaryArrowBox { background-color: var(--color-yellow); }
+  .primaryCta:hover .primaryArrowBox img { filter: brightness(0); }
 }
