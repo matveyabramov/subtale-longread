@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type { KeyboardEvent } from 'react';
 import { imageAssets } from '../../assets/generated';
 import { explorerArtworkDescriptions, explorerCategories } from './model';
@@ -7,6 +7,7 @@ import { explorerCopy, explorerVisuals } from './explorerVisualData';
 import { CulturalReferenceArtwork, DoubleMeaningArtwork, IdiomArtwork, PunArtwork } from './ExplorerArtwork';
 import { explorerRevealStyle } from './explorerRevealBounds';
 import { useExplorerViewportFit } from './useExplorerViewportFit';
+import { ExplorerExplanationDialog } from './ExplorerExplanationDialog';
 import styles from './BlindZonesExplorer.module.css';
 
 interface BlindZonesExplorerProps {
@@ -23,6 +24,11 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
   const [focusedCategory, setFocusedCategory] = useState(initialCategory);
   const [mousePreview, setMousePreview] = useState<{ category: ExplorerCategoryId; meaning: MeaningState } | null>(null);
   const revealPointer = useRef<string | null>(null);
+  const [explanationCategory, setExplanationCategory] = useState<ExplorerCategoryId | null>(null);
+  const explanationOpen = useRef(false);
+  const hoverBlocked = useRef(false);
+  const pointerInArtwork = useRef(false);
+  const questionTrigger = useRef<HTMLButtonElement>(null);
   const tabs = useRef<(HTMLButtonElement | null)[]>([]);
   const artworkStage = useExplorerViewportFit(state.category);
   const { category, stateByCategory } = state;
@@ -34,14 +40,33 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
     const clearPreview = () => setMousePreview(null);
     const hover = window.matchMedia('(any-hover: hover) and (any-pointer: fine)');
     const visibility = () => { if (document.hidden) clearPreview(); };
+    const resumeHover = (event: PointerEvent) => {
+      // Modal removal can synthesize hover events over the underlying artwork.
+      // Resume only after deliberate movement, preserving the open/close state.
+      if (!hoverBlocked.current || explanationOpen.current || event.pointerType !== 'mouse' ||
+        (!event.movementX && !event.movementY)) return;
+      hoverBlocked.current = false;
+      if (!hover.matches) return;
+      const target = event.target instanceof Element ? event.target.closest('[data-explorer-reveal]') : null;
+      const wasInside = pointerInArtwork.current;
+      pointerInArtwork.current = target !== null;
+      if (target || wasInside) setMousePreview({ category, meaning: target ? 'B' : 'A' });
+    };
     hover.addEventListener('change', clearPreview);
     document.addEventListener('visibilitychange', visibility);
     window.addEventListener('pagehide', clearPreview);
+    document.addEventListener('pointermove', resumeHover, true);
     return () => {
       hover.removeEventListener('change', clearPreview);
       document.removeEventListener('visibilitychange', visibility);
       window.removeEventListener('pagehide', clearPreview);
+      document.removeEventListener('pointermove', resumeHover, true);
     };
+  }, [category]);
+
+  const closeExplanation = useCallback(() => {
+    explanationOpen.current = false;
+    setExplanationCategory(null);
   }, []);
 
   function toggleMeaning() {
@@ -51,7 +76,7 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
   }
 
   function selectCategory(next: ExplorerCategoryId) {
-    if (next !== category) setMousePreview(null);
+    if (next !== category) { pointerInArtwork.current = false; setMousePreview(null); }
     setFocusedCategory(next);
     setState((current) => current.category === next ? current : { ...current, category: next });
   }
@@ -113,7 +138,13 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
         </div>
         <div id="explorer-panel" role="tabpanel" aria-labelledby={`explorer-tab-${category}`} className={styles.panel}>
           <p className={styles.activeDescription}>{activeCopy.description}</p>
-          <button type="button" className={styles.question} data-node-id={visual.question}
+          <button ref={questionTrigger} type="button" className={styles.question} data-node-id={visual.question}
+            aria-haspopup="dialog" aria-controls="explorer-explanation" aria-expanded={explanationCategory !== null}
+            onClick={() => {
+              explanationOpen.current = true;
+              hoverBlocked.current = true;
+              setExplanationCategory(category);
+            }}
             style={{ zIndex: visual.order.question, width: `var(--question-width, ${visual.questionWidth}px)` }}>{visual.questionText}</button>
           <div ref={artworkStage} className={styles.artworkStage}>
             <span id="explorer-artwork-description" className={styles.artworkDescription} role="img" aria-label={explorerArtworkDescriptions[category][meaning]} />
@@ -123,14 +154,18 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
               aria-describedby="explorer-reveal-instructions explorer-artwork-description"
               aria-pressed={meaning === 'B'}
               onPointerEnter={(event) => {
+                if (hoverBlocked.current) return;
                 if (event.pointerType === 'mouse' && window.matchMedia('(any-hover: hover) and (any-pointer: fine)').matches) {
+                  pointerInArtwork.current = true;
                   setMousePreview({ category, meaning: 'B' });
                 }
               }}
               onPointerLeave={(event) => {
-                if (event.pointerType === 'mouse') setMousePreview({ category, meaning: 'A' });
+                if (hoverBlocked.current) return;
+                if (event.pointerType === 'mouse') { pointerInArtwork.current = false; setMousePreview({ category, meaning: 'A' }); }
               }}
               onPointerDown={(event) => {
+                if (event.pointerType !== 'mouse') hoverBlocked.current = false;
                 revealPointer.current = event.pointerType;
                 if (event.pointerType !== 'mouse') setMousePreview(null);
               }}
@@ -149,6 +184,8 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
           </div>
         </div>
       </div>
+      {explanationCategory && <ExplorerExplanationDialog category={explanationCategory}
+        trigger={questionTrigger.current} onClose={closeExplanation} />}
     </section>
   );
 }

@@ -70,6 +70,8 @@ try {
       await question.scrollIntoViewIfNeeded();
       const questionScroll = await page.evaluate(() => scrollY);
       if (width <= 768) await question.tap(); else await question.click();
+      await page.keyboard.press('Escape');
+      await page.locator('#explorer-explanation').waitFor({ state: 'detached' });
       assert.equal(await section.getAttribute('data-meaning'), 'A');
       assert.equal(page.url(), url);
       assert.equal(await page.evaluate(() => scrollY), questionScroll);

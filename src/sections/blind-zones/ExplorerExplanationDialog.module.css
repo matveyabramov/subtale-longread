@@ -1,0 +1,83 @@
+.dialog {
+  --inset-top: max(20px, env(safe-area-inset-top, 0px));
+  --inset-bottom: max(20px, env(safe-area-inset-bottom, 0px));
+  --inset-left: max(20px, env(safe-area-inset-left, 0px));
+  --inset-right: max(20px, env(safe-area-inset-right, 0px));
+  position: fixed;
+  inset: var(--inset-top) var(--inset-right) var(--inset-bottom) var(--inset-left);
+  width: 900px;
+  max-width: calc(100vw - var(--inset-left) - var(--inset-right));
+  max-height: calc(100vh - var(--inset-top) - var(--inset-bottom));
+  max-height: calc(100svh - var(--inset-top) - var(--inset-bottom));
+  max-height: calc(100dvh - var(--inset-top) - var(--inset-bottom));
+  margin: auto;
+  border: 5px solid var(--color-ink);
+  padding: 5px;
+  overflow: hidden;
+  background: var(--color-white);
+  color: var(--color-white);
+}
+.dialog[open] { display: flex; flex-direction: column; }
+.dialog::backdrop { background: rgb(11 13 15 / 55%); }
+.interior {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 30px;
+  background: var(--color-ink);
+}
+.header { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex: none; margin-bottom: 24px; }
+.title {
+  min-width: 0;
+  margin: 0;
+  font: 800 60px/0.95 var(--font-display);
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+.close {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  margin: -8px -8px 0 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--color-white);
+  font: 500 28px/1 var(--font-copy);
+  cursor: pointer;
+}
+.body {
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  font: 500 25px/1.35 var(--font-copy);
+  letter-spacing: -0.03em;
+  overflow-wrap: break-word;
+}
+.body p { margin: 0; }
+.body p + p { margin-top: 20px; }
+.body strong, .quote { font-weight: 600; }
+.quote { margin: 0 0 24px; }
+.dialog :focus-visible { outline: 2px solid var(--color-yellow); outline-offset: 3px; }
+.body:focus-visible { outline-offset: -2px; }
+@media (hover: hover) { .close:hover { color: var(--color-yellow); } }
+@media (width < 1920px) { .title { font-size: 50px; } .body { font-size: 22px; } }
+@media (width <= 1100px) { .interior { padding: 24px; } .title { font-size: 44px; } .body { font-size: 20px; } }
+@media (width <= 600px) {
+  .dialog {
+    --inset-top: max(15px, env(safe-area-inset-top, 0px));
+    --inset-bottom: max(15px, env(safe-area-inset-bottom, 0px));
+    --inset-left: max(15px, env(safe-area-inset-left, 0px));
+    --inset-right: max(15px, env(safe-area-inset-right, 0px));
+  }
+  .interior { padding: 20px; }
+  .header { gap: 12px; margin-bottom: 20px; }
+  .title { font-size: 36px; }
+  .body { font-size: 16px; }
+  .body p + p { margin-top: 16px; }
+  .quote { margin-bottom: 20px; }
+}
+@media (height <= 450px) { .interior { padding: 16px; } .header { margin-bottom: 12px; } .title { font-size: 30px; } }

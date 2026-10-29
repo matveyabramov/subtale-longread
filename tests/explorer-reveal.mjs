@@ -60,6 +60,8 @@ try {
         await control.tap();
         await check('B');
         await question.tap();
+        await page.keyboard.press('Escape');
+        await page.locator('#explorer-explanation').waitFor({ state: 'detached' });
         await check('B'); // Lower question cannot reset/toggle the artwork.
         await select((index + 1) % 4);
         await select(index);
