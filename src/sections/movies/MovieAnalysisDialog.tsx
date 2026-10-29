@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { lockPageScroll } from '../../shared/lockPageScroll';
 import type { MovieMedia } from './model';
 import { movieAnalysis } from './movieAnalysis';
+import { useArticleNavigation } from './useArticleNavigation';
 import styles from './MovieAnalysisDialog.module.css';
 
 export function MovieAnalysisDialog({ media, trigger, onDismiss }: {
@@ -14,6 +15,7 @@ export function MovieAnalysisDialog({ media, trigger, onDismiss }: {
   const [requested, setRequested] = useState(false);
   const [error, setError] = useState(false);
   const analysis = movieAnalysis[media.id];
+  const navigation = useArticleNavigation(dialogRef, media.id);
 
   useLayoutEffect(() => {
     const dialog = dialogRef.current;
@@ -86,14 +88,27 @@ export function MovieAnalysisDialog({ media, trigger, onDismiss }: {
         backdropPress.current = false;
         if (dismiss) onDismiss();
       }}>
-      <header className={styles.header}>
+      <header className={styles.header} data-article-header>
         <p className={styles.category}>{analysis.category}</p>
         <button type="button" className={styles.close} data-close onClick={onDismiss} aria-label="Закрыть разбор">Закрыть <span aria-hidden="true">×</span></button>
       </header>
+      <div className={styles.compact} data-article-compact>
+        <div className={styles.compactRow}>
+          <p><span>{String(navigation.active + 1).padStart(2, '0')}</span> {navigation.items[navigation.active]?.title || 'Сцена'}</p>
+          <button type="button" aria-expanded={navigation.expanded} aria-controls="article-compact-list"
+            onClick={() => navigation.setExpanded(!navigation.expanded)}>Все разделы <span aria-hidden="true">{navigation.expanded ? '−' : '+'}</span></button>
+        </div>
+        <p className={styles.compactHint} data-hidden={navigation.active !== 0}>ЛИСТАЙ НИЖЕ — ТАМ РАЗБОР <span aria-hidden="true">↓</span></p>
+        <nav id="article-compact-list" aria-label="Разделы разбора" hidden={!navigation.expanded} className={styles.compactList}>
+          <ArticleLinks navigation={navigation} />
+        </nav>
+      </div>
       <div className={styles.interior}>
+        <article className={styles.article}>
         <h2 id="movie-analysis-title" className={styles.title} lang="en">{analysis.title}</h2>
         <p className={styles.film}>{analysis.film}</p>
-        <div className={styles.media}>
+        <p className={styles.continueHint} data-hidden={navigation.active !== 0}>ЛИСТАЙ НИЖЕ — ТАМ РАЗБОР <span aria-hidden="true">↓</span></p>
+        <div className={styles.media} data-article-scene>
           <video ref={videoRef} poster={media.poster} preload="none" playsInline controls={requested} tabIndex={0}
             aria-label={`Сцена: ${analysis.film}`} onError={() => setError(true)}
             onPlay={(event) => { if (document.hidden) event.currentTarget.pause(); }} />
@@ -102,8 +117,22 @@ export function MovieAnalysisDialog({ media, trigger, onDismiss }: {
           </button>}
         </div>
         {error && <p role="status" className={styles.error}>Не удалось воспроизвести видео. Разбор доступен ниже.</p>}
-        <div className={styles.body}>{analysis.content}</div>
+        <div className={styles.body} data-article-body>{analysis.content}</div>
+        </article>
+        <nav className={styles.contents} aria-label="Содержание разбора">
+          <h2>В ЭТОМ РАЗБОРЕ</h2>
+          <ArticleLinks navigation={navigation} />
+        </nav>
       </div>
     </dialog>, document.body,
   );
+}
+
+function ArticleLinks({ navigation }: { navigation: ReturnType<typeof useArticleNavigation> }) {
+  return <ol className={styles.articleLinks}>{navigation.items.map((item, index) => <li key={item.id}>
+    <button type="button" aria-current={navigation.active === index ? 'location' : undefined}
+      aria-controls={item.id} onClick={() => navigation.jump(index)}>
+      <span>{String(index + 1).padStart(2, '0')}</span><span>{item.title}</span>
+    </button>
+  </li>)}</ol>;
 }
