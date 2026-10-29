@@ -445,9 +445,9 @@
 }
 .openCase:focus-visible { outline: 3px solid var(--color-yellow); outline-offset: -8px; }
 .arrowFrame { transition: background-color var(--duration-feedback) var(--ease-out); }
-.scene:has(.openCase:focus-visible) .arrowFrame { background: var(--color-blue); }
+:root:not([data-input-modality='pointer']) .scene:has(.openCase:focus-visible) .arrowFrame { background: var(--color-blue); }
 @media (hover: hover) and (pointer: fine) {
-  .scene:has(.openCase:hover) .arrowFrame { background: var(--color-blue); }
+  .section[data-mouse-hover='true'] .scene:has(.openCase:hover) .arrowFrame { background: var(--color-blue); }
 }
 /* The clip owns Movies' bounds; the fixed child still uses the visible viewport. */
 .previewClip {
@@ -490,7 +490,9 @@
 .preview video[data-playing='true'] { opacity: 1; }
 .previewShade { background: rgb(0 0 0 / 40%); }
 .scene { transition: opacity var(--duration-ui) var(--ease-out); }
-.cases[data-preview-active='true'] .scene:not([data-preview-active='true']) { opacity: 0.4; }
+@media (hover: hover) and (pointer: fine) {
+  .cases[data-preview-active='true'] .scene:not([data-preview-active='true']) { opacity: 0.4; }
+}
 @media (prefers-reduced-motion: reduce) {
   .preview, .previewLayer, .preview video, .scene { transition: none; }
   .preview video[data-playing] { opacity: 0; }

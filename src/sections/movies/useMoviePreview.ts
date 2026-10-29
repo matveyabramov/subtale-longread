@@ -27,7 +27,8 @@ export function useMoviePreview(sectionRef: RefObject<HTMLElement | null>, listR
     setPreview(selected.current);
   }, [pause]);
   const focus = (media: MovieMedia) => {
-    if (selected.current?.media.id !== media.id) select(media, 'focus');
+    if (document.documentElement.dataset.inputModality !== 'pointer' &&
+      selected.current?.media.id !== media.id) select(media, 'focus');
   };
   const blur = () => { if (selected.current?.source === 'focus') stop(); };
   const guardPlayback = (video: HTMLVideoElement, media: MovieMedia) => {
@@ -92,7 +93,9 @@ export function useMoviePreview(sectionRef: RefObject<HTMLElement | null>, listR
     };
     const schedule = () => { if (!frame) frame = requestAnimationFrame(tick); };
     const onPointer = (event: PointerEvent) => {
-      if (event.pointerType !== 'mouse') return;
+      if (event.pointerType !== 'mouse') { suspend(); return; }
+      if (!hover.matches) return;
+      section.dataset.mouseHover = 'true';
       point = { x: event.clientX, y: event.clientY };
       if (selected.current?.source === 'focus') stop();
       if (visible) schedule();
@@ -101,12 +104,13 @@ export function useMoviePreview(sectionRef: RefObject<HTMLElement | null>, listR
       const delta = window.scrollY - lastScroll;
       lastScroll = window.scrollY;
       if (!visible) return;
-      if (hover.matches && !motion.matches && !blocked() && Math.abs(delta) > 0.1) {
+      if (hover.matches && point && !motion.matches && !blocked() && Math.abs(delta) > 0.1) {
         target = Math.max(-1, Math.min(1, delta / 50));
       }
       schedule();
     };
     const suspend = () => {
+      delete section.dataset.mouseHover;
       point = null;
       cancelAnimationFrame(frame);
       frame = 0;
@@ -129,6 +133,7 @@ export function useMoviePreview(sectionRef: RefObject<HTMLElement | null>, listR
     hover.addEventListener('change', suspend);
     motion.addEventListener('change', suspend);
     document.addEventListener('pointermove', onPointer, { passive: true });
+    document.addEventListener('pointerdown', onPointer, { capture: true, passive: true });
     document.addEventListener('pointerout', onPointerOut);
     document.addEventListener('visibilitychange', onVisibility);
     window.addEventListener('pagehide', suspend);
@@ -144,6 +149,8 @@ export function useMoviePreview(sectionRef: RefObject<HTMLElement | null>, listR
       hover.removeEventListener('change', suspend);
       motion.removeEventListener('change', suspend);
       document.removeEventListener('pointermove', onPointer);
+      document.removeEventListener('pointerdown', onPointer, true);
+      delete section.dataset.mouseHover;
       document.removeEventListener('pointerout', onPointerOut);
       document.removeEventListener('visibilitychange', onVisibility);
       window.removeEventListener('pagehide', suspend);
