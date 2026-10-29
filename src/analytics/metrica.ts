@@ -20,7 +20,7 @@ export function setAnalyticsConsent(choice: AnalyticsConsentChoice) {
   sessionConsent = choice;
   try { localStorage.setItem(CONSENT_STORAGE_KEY, choice); } catch { /* Session-only fallback. */ }
   // The documented Yandex opt-out flag also stops an already initialized counter.
-  (window as Window & Record<string, unknown>)[`disableYaCounter${COUNTER_ID}`] = choice !== 'accepted';
+  (window as unknown as Record<string, unknown>)[`disableYaCounter${COUNTER_ID}`] = choice !== 'accepted';
 }
 
 export const goals = {
