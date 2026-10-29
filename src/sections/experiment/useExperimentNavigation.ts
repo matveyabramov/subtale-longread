@@ -2,6 +2,7 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react
 import { flushSync } from 'react-dom';
 import { experimentAnchorIds, sectionIds, type ReadingAnchorId } from '../../shared/navigation';
 import { lockPageScroll } from '../../shared/lockPageScroll';
+import { isMobileSafari26 } from '../../shared/isMobileSafari26';
 import { experimentSteps, readingViewForHash, type ExperimentStep } from './model';
 import { useSceneTransition } from './useSceneTransition';
 
@@ -38,7 +39,9 @@ export function useExperimentNavigation() {
 
   const engage = useCallback(() => {
     if (releasePage.current) return;
-    const unlock = lockPageScroll();
+    // Safari's document layer is the only flow content and cannot scroll the
+    // page. Keep the root lock, without introducing a fixed body tint candidate.
+    const unlock = lockPageScroll({ fixedBody: !isMobileSafari26() });
     const background = ['main-content', 'footer'].map((id) => document.getElementById(id))
       .filter((element): element is HTMLElement => element !== null);
     const inert = background.map((element) => element.inert);
@@ -245,5 +248,5 @@ export function useExperimentNavigation() {
     };
   }, [applyRoute, engage, navigate]);
 
-  return { ...view, navigate };
+  return { ...view, navigate, documentLayer: isMobileSafari26() };
 }

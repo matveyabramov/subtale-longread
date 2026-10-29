@@ -3,7 +3,7 @@ let restore: ((position: boolean) => void) | null = null;
 let restorePosition = true;
 
 /** One iOS-safe page lock, shared by the Experiment layer and its help dialog. */
-export function lockPageScroll() {
+export function lockPageScroll({ fixedBody = true }: { fixedBody?: boolean } = {}) {
   if (locks.size === 0) {
     restorePosition = true;
     const root = document.documentElement;
@@ -21,12 +21,14 @@ export function lockPageScroll() {
     })));
     root.style.setProperty('overflow', 'hidden');
     root.style.setProperty('overscroll-behavior', 'none');
-    body.style.setProperty('position', 'fixed');
-    body.style.setProperty('top', `${-y}px`);
-    body.style.setProperty('left', `${-x}px`);
-    body.style.setProperty('width', '100%');
-    body.style.setProperty('overflow', 'hidden');
-    if (gutter) body.style.setProperty('padding-right', `calc(${padding} + ${gutter}px)`);
+    if (fixedBody) {
+      body.style.setProperty('position', 'fixed');
+      body.style.setProperty('top', `${-y}px`);
+      body.style.setProperty('left', `${-x}px`);
+      body.style.setProperty('width', '100%');
+      body.style.setProperty('overflow', 'hidden');
+      if (gutter) body.style.setProperty('padding-right', `calc(${padding} + ${gutter}px)`);
+    }
     restore = (position) => {
       previous.forEach(({ element, name, value, priority }) => {
         if (value) element.style.setProperty(name, value, priority);

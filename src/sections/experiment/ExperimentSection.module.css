@@ -241,3 +241,11 @@
   .nextLink:hover .arrowBox { background-color: var(--color-yellow); }
   .nextLink:hover .arrowBox img { filter: brightness(0); }
 }
+
+/* Keep Safari 26 out of its cached fullscreen-fixed tint path. */
+.experiment[data-document-layer='true']:not([hidden]) {
+  position: relative;
+  height: 100vh;
+  height: 100dvh;
+}
+.experiment[data-document-layer='true'] .layer { position: absolute; }

@@ -187,7 +187,7 @@ export function ExperimentSection({ navigation }: { navigation: ReturnType<typeo
     navigation.navigate(id as ReadingAnchorId);
   };
   return createPortal(
-    <section id="experiment" aria-label="Эксперимент" data-narrative-section data-outcome={outcome}
+    <section id="experiment" data-document-layer={navigation.documentLayer || undefined} aria-label="Эксперимент" data-narrative-section data-outcome={outcome}
       data-active-step={step ? experimentSteps.find((item) => item.id === step)?.anchor : undefined}
       className={styles.experiment} hidden={!step} inert={!step}>
       {step && (

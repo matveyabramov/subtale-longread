@@ -1,4 +1,4 @@
-// UA/platform profiles check document surfaces, not real Safari chrome tint.
+// UA/platform profiles exercise fallback selection, not real Safari chrome tint.
 import assert from 'node:assert/strict';
 const { chromium, webkit } = await import(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const engine = process.env.QA_BROWSER || 'chromium';
@@ -7,8 +7,8 @@ const origin = process.env.QA_ORIGIN || 'http://127.0.0.1:4173';
 const iphone = 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1';
 const mac = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15';
 const profiles = [
-  ...[360,390,430].map(width => ({ name: 'iPhone Safari 26', width, ua: iphone })),
-  ...[768,820,1024].map(width => ({ name: 'iPad desktop UA Safari 26', width, ua: mac, ipad: true })),
+  ...[360,390,430].map(width => ({ name: 'iPhone Safari 26', width, ua: iphone, skip: true })),
+  ...[768,820,1024].map(width => ({ name: 'iPad desktop UA Safari 26', width, ua: mac, ipad: true, skip: true })),
   ...[1440,1920].map(width => ({ name: 'Desktop Safari 26', width, ua: mac })),
   { name: 'iOS Chrome', width: 390, ua: iphone.replace('Version/26.0', 'CriOS/142.0.0.0') },
   { name: 'iOS Firefox', width: 390, ua: iphone.replace('Version/26.0', 'FxiOS/144.0') },
@@ -35,18 +35,23 @@ try {
     };
     const sample = () => page.evaluate(() => ({ hash: location.hash, focus: document.activeElement.id,
       lock: document.body.style.position, bg: getComputedStyle(document.getElementById('experiment-layer')).backgroundColor }));
-    for (const entry of ['CTA', 'Start']) {
+    for (const entry of ['CTA', 'Start', 'Contents']) {
       await load();
       if (entry === 'Start') { await page.keyboard.press('PageDown'); await page.locator('dialog[open]').waitFor(); }
-      await page.locator(entry === 'CTA' ? '#hero a[href="#experiment-instructions"]' : 'dialog[open] a[href="#experiment-instructions"]').evaluate(node => {
+      if (entry === 'Contents') await page.locator('[aria-controls="contents-panel"]').click();
+      const selector = entry === 'CTA' ? '#hero a[href="#experiment-instructions"]'
+        : entry === 'Start' ? 'dialog[open] a[href="#experiment-instructions"]' : '#contents-panel a[href="#experiment"]';
+      await page.locator(selector).evaluate(node => {
         node.click();
         const animation = document.querySelector('[data-scene-transition]')?.getAnimations()[0];
         animation?.pause();
       });
-      assert.equal(await page.locator('[data-scene-transition]').count(), 1);
+      assert.equal(await page.locator('[data-scene-transition]').count(), profile.skip ? 0 : 1);
       await surface();
-      assert.deepEqual(await sample(), { hash: '#experiment-instructions', focus: 'experiment-instructions-title', lock: 'fixed', bg: 'rgb(11, 13, 15)' });
-      await page.locator('[data-scene-transition]').evaluate(n => n.getAnimations()[0].play());
+      assert.equal(await page.locator('#experiment-layer').evaluate(n => getComputedStyle(n).position), profile.skip ? 'absolute' : 'fixed');
+      assert.deepEqual(await sample(), { hash: entry === 'Contents' ? '#experiment' : '#experiment-instructions',
+        focus: 'experiment-instructions-title', lock: profile.skip ? '' : 'fixed', bg: 'rgb(11, 13, 15)' });
+      if (!profile.skip) await page.locator('[data-scene-transition]').evaluate(n => n.getAnimations()[0].play());
       await page.waitForTimeout(1100);
       assert.equal(await page.locator('[data-scene-transition]').count(), 0);
       // Live screens retain their existing route, Help and scroll-lock behavior.
@@ -82,7 +87,7 @@ try {
     await page.emulateMedia({ reducedMotion: 'reduce' });
     await page.locator('#hero a[href="#experiment-instructions"]').click();
     assert.equal(await page.locator('[data-scene-transition]').count(), 0);
-    console.log(`${engine}/${profile.name}/${profile.width}: CTA/Start, black live layer, Target/Help/Result, reading iris, return, history/hash, Hero and reduce passed`);
+    console.log(`${engine}/${profile.name}/${profile.width}: CTA/Start/Contents, black live layer, Target/Help/Result, reading iris, return, history/hash, Hero and reduce passed`);
     await page.close();
   }
   assert.deepEqual(errors, []);

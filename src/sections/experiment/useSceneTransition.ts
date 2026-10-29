@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef } from 'react';
 import type { ReadingView } from './model';
 import styles from './SceneTransition.module.css';
+import { isMobileSafari26 } from '../../shared/isMobileSafari26';
 
 // Same path commands at both endpoints: the second contour is an expanding
 // circular hole in the outgoing snapshot, never a mask on the live screen.
@@ -81,6 +82,10 @@ export function useSceneTransition() {
     const entering = previous.mode === 'experiment' && previous.step === null && next.step === 'instructions';
     const leaving = previous.step === 'result' && next.mode === 'reading' && id === 'emptiness';
     if (!entering && !leaving) return;
+    // Real-iPhone A/B: the blue Hero snapshot leaves Safari 26 chrome blue even
+    // after removal; skipping its creation keeps chrome black. The Result iris
+    // contains no Hero copy and remains enabled, as do other browsers/desktops.
+    if (entering && isMobileSafari26()) return;
     const scene = document.getElementById(entering ? 'hero' : 'experiment-layer');
     if (!scene || scene.hidden || scene.querySelector('#experiment-target')) return;
     const rect = scene.getBoundingClientRect();
