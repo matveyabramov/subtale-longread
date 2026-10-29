@@ -16,8 +16,26 @@ interface BlindZonesExplorerProps {
   meaning?: MeaningState;
 }
 
+function useCompactViewport() {
+  const [compact, setCompact] = useState(() => window.innerHeight <= 740);
+  useEffect(() => {
+    let width = window.innerWidth;
+    const resize = () => {
+      // Browser chrome changes height during a swipe. Keep the initial layout
+      // variant until a real width/orientation change, including on short phones.
+      if (window.innerWidth === width) return;
+      width = window.innerWidth;
+      setCompact(window.innerHeight <= 740);
+    };
+    window.addEventListener('resize', resize);
+    return () => window.removeEventListener('resize', resize);
+  }, []);
+  return compact;
+}
+
 // Optional initial endpoints keep the isolated A/B visual QA fixtures available.
 export function BlindZonesExplorer({ category: initialCategory = 'idiom', meaning: initialMeaning = 'A' }: BlindZonesExplorerProps) {
+  const compactViewport = useCompactViewport();
   const sectionRef = useRef<HTMLElement>(null);
   useEditorialEntrance(sectionRef);
   const [state, setState] = useState<ExplorerState>(() => ({
@@ -99,7 +117,8 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
 
   return (
     <section ref={sectionRef} id="blind-zones" aria-labelledby="blind-zones-title" data-narrative-section data-section-surface
-      className={styles.section} data-category-count={explorerCategories.length} data-category={category} data-meaning={meaning}>
+      className={styles.section} data-compact-viewport={compactViewport}
+      data-category-count={explorerCategories.length} data-category={category} data-meaning={meaning}>
       <div className={styles.texture} data-section-texture data-node-id={visual.texture} aria-hidden="true"
         style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
       <div className={styles.canvas} data-section-canvas data-node-id={visual.frame}>

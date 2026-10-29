@@ -371,13 +371,14 @@
   }
 }
 
-/* Short phones trade empty space for a useful illustration, never smaller copy. */
-@media (width <= 600px) and (height <= 740px) {
-  .canvas { --heading-size: 40px; }
-  .categories { margin-top: 12px; }
-  .card { padding: 10px; }
-  .activeDescription { margin-top: 10px; }
-  .artworkStage { margin-block: 8px; }
+/* Preserve the original short-phone geometry, without toggling row sizes as
+   the browser toolbar changes viewport height in the middle of an entrance. */
+@media (width <= 600px) {
+  .section[data-compact-viewport='true'] .canvas { --heading-size: 40px; }
+  .section[data-compact-viewport='true'] .categories { margin-top: 12px; }
+  .section[data-compact-viewport='true'] .card { padding: 10px; }
+  .section[data-compact-viewport='true'] .activeDescription { margin-top: 10px; }
+  .section[data-compact-viewport='true'] .artworkStage { margin-block: 8px; }
 }
 
 /* Only card styling interpolates; category selection and artwork A/B stay instant. */

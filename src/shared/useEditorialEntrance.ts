@@ -27,6 +27,15 @@ export function useEditorialEntrance(scopeRef: RefObject<HTMLElement | null>) {
     const start = (target: HTMLElement) => {
       target.dataset.editorialState = 'entering';
       try {
+        if (target.dataset.editorialReveal === 'card') {
+          const animations = target.getAnimations().filter(animation => animation instanceof CSSAnimation);
+          if (!animations.length) { finish(target); return; }
+          active.set(target, 0); // CSS owns completion; no wall-clock timer.
+          const complete = () => { if (active.has(target)) finish(target); };
+          // A delayed first paint must not consume part of the card's 420ms.
+          void Promise.all(animations.map(animation => animation.finished)).then(complete, complete);
+          return;
+        }
         // Some compositions animate siblings or a scaled outer slot. Read the
         // scope's actual CSS timings instead of cutting every reveal at 700ms.
         const durations = scope.getAnimations({ subtree: true }).map((animation) => {
@@ -45,6 +54,9 @@ export function useEditorialEntrance(scopeRef: RefObject<HTMLElement | null>) {
           if (active.has(target)) finish(target);
           continue;
         }
+        // A card can leave/re-enter the viewport during inertia or toolbar
+        // resize. Its finite CSS entrance must continue, rather than snap to 1.
+        if (target.dataset.editorialReveal === 'card' && active.has(target)) continue;
         const rect = target.getBoundingClientRect();
         if (!rect.width || !rect.height) continue;
         if (rect.bottom <= 0) { finish(target); continue; }
@@ -64,10 +76,9 @@ export function useEditorialEntrance(scopeRef: RefObject<HTMLElement | null>) {
     const focus = (event: FocusEvent) => {
       if (!(event.target instanceof Node)) return;
       for (const target of targets) {
-        // A pointer press must not snap a moving card away from its hit point.
-        // Keyboard focus still exposes a prepared card immediately.
-        if (target.dataset.editorialReveal === 'card' && event.target instanceof Element &&
-          !event.target.matches(':focus-visible')) continue;
+        // Focus exposes a prepared card immediately, but never interrupts one
+        // already entering (including touch/keyboard focus during a swipe).
+        if (target.dataset.editorialReveal === 'card' && active.has(target)) continue;
         if (target.contains(event.target) && (target.dataset.editorialReveal === 'load' ||
           (event.target instanceof Element && event.target.closest('a, button, input, select, textarea, [role="button"]')))) finish(target);
       }
@@ -124,6 +135,7 @@ export function useEditorialEntrance(scopeRef: RefObject<HTMLElement | null>) {
       targets.forEach((target) => {
         if (target.dataset.editorialState !== 'done') delete target.dataset.editorialState;
       });
+      active.clear(); // Ignore old CSS promises after unmount/StrictMode cleanup.
       media.removeEventListener('change', check);
       document.removeEventListener('visibilitychange', check);
       scope.removeEventListener('focusin', focus);
