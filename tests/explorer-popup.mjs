@@ -31,7 +31,7 @@ const snapshot = (section) => section.evaluate((s) => {
     question: rect(s.querySelector('[role="tabpanel"] > button')), height: s.getBoundingClientRect().height };
 });
 try {
-  for (const [width, height] of [[1920, 1080], [1440, 900], [768, 1024], [390, 844], [390, 240]]) {
+  for (const [width, height] of [[1920, 1080], [1440, 900], [768, 1024], [390, 844], [320, 844], [390, 240]]) {
     const touch = width <= 768;
     const context = await browser.newContext({ viewport: { width, height }, hasTouch: touch, isMobile: touch });
     const page = await context.newPage();
@@ -59,6 +59,7 @@ try {
         for (const method of ['close', 'Escape', 'backdrop']) {
           await activate(trigger);
           await close.waitFor();
+          await page.evaluate(() => document.fonts.ready);
           assert.equal(await trigger.getAttribute('aria-expanded'), 'true');
           assert.equal(await modal.locator('h2').textContent(), copy[category][0]);
           assert.deepEqual(await modal.locator('[data-explanation-paragraph]').allTextContents(), copy[category][2]);
@@ -84,6 +85,31 @@ try {
           assert(layout.left >= 14 && layout.top >= 14 && layout.right <= width - 14 && layout.bottom <= height - 14);
           assert(!layout.overflow && !layout.bodyOverflow && layout.bodyHeight > 0);
           assert.equal(layout.background, 'rgb(11, 13, 15)');
+          const typography = await modal.evaluate((d) => {
+            const body = d.querySelector('[role="region"]'), css = getComputedStyle(body);
+            const quote = d.querySelector('blockquote, [data-explanation-paragraph] > span[lang="en"]');
+            const quoteCss = getComputedStyle(quote), ending = getComputedStyle(body.querySelector('p:last-child'));
+            const ctx = document.createElement('canvas').getContext('2d');
+            const luminance = (color) => {
+              ctx.fillStyle = color; ctx.fillRect(0, 0, 1, 1);
+              const [r, g, b] = [...ctx.getImageData(0, 0, 1, 1).data].slice(0, 3).map((v) => {
+                v /= 255; return v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+              });
+              return r * 0.2126 + g * 0.7152 + b * 0.0722;
+            };
+            return { weight: css.fontWeight, size: parseFloat(css.fontSize), leading: parseFloat(css.lineHeight) / parseFloat(css.fontSize),
+              quoteSize: parseFloat(quoteCss.fontSize), line: quoteCss.borderLeftWidth, accent: quoteCss.borderLeftColor,
+              endingSize: parseFloat(ending.fontSize), contrast: (luminance(ending.color) + 0.05) / (luminance(getComputedStyle(d.firstElementChild).backgroundColor) + 0.05),
+              regular: [...document.fonts].filter((f) => f.family.includes('Popup Regular')).map((f) => [f.weight, f.status]) };
+          });
+          assert.equal(typography.weight, '400');
+          assert(typography.leading >= 1.399 && typography.quoteSize > typography.size);
+          assert.equal(typography.line, '2px');
+          assert.equal(typography.accent, 'rgb(254, 209, 40)');
+          assert(typography.contrast >= 7 && typography.endingSize <= typography.size);
+          assert.deepEqual(typography.regular, [['400', 'loaded'], ['400', 'loaded']]);
+          if (width >= 1440) assert.equal(typography.size, 24);
+
           if (height <= 240) {
             assert(layout.scrollable, 'short dialogs must scroll their contents');
             await modal.getByRole('region').evaluate((n) => { n.scrollTop = n.scrollHeight; });

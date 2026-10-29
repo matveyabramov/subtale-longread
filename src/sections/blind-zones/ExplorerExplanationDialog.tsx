@@ -87,7 +87,11 @@ export function ExplorerExplanationDialog({ category, trigger, onClose }: Props)
         <div ref={content} id="explorer-explanation-copy" className={styles.body} tabIndex={0}
           role="region" aria-labelledby="explorer-explanation-title">
           {copy.quote && <blockquote className={styles.quote} lang="en">{copy.quote}</blockquote>}
-          {copy.paragraphs.map((paragraph, index) => <p key={index} data-explanation-paragraph>{paragraph}</p>)}
+          {copy.paragraphs.map((paragraph, index) => (
+            <p key={index} data-explanation-paragraph className={index === copy.paragraphs.length - 1 ? styles.conclusion : undefined}>
+              {index === 0 && copy.lead && <span className={styles.phrase} lang="en">{copy.lead}</span>}{paragraph}
+            </p>
+          ))}
         </div>
       </div>
     </dialog>, document.body,
