@@ -1,80 +1,161 @@
 import { useCallback, useEffect, useRef, useState, type RefObject } from 'react';
-import type { MovieMedia } from './model';
+import { movieCases, type MovieMedia } from './model';
 
 const hoverQuery = '(hover: hover) and (pointer: fine)';
 const motionQuery = '(prefers-reduced-motion: reduce)';
+type Selection = { media: MovieMedia; autoplay: boolean; source: 'pointer' | 'explicit' | 'focus' };
 
-/** One lazily sourced, silent video. Every interruption requires a new hover. */
-export function useMoviePreview(sectionRef: RefObject<HTMLElement | null>) {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const active = useRef<HTMLElement | null>(null);
-  const request = useRef(0);
-  const [preview, setPreview] = useState<{ media: MovieMedia; top: number } | null>(null);
+/** Native scrolling changes the hit target, never the permission to preview. */
+export function useMoviePreview(sectionRef: RefObject<HTMLElement | null>, listRef: RefObject<HTMLDivElement | null>) {
+  const videos = useRef(new Map<string, HTMLVideoElement>());
+  const selected = useRef<Selection | null>(null);
+  const [preview, setPreview] = useState<Selection | null>(null);
+  const pause = useCallback(() => videos.current.forEach((video) => video.pause()), []);
   const stop = useCallback(() => {
-    request.current += 1;
-    active.current = null;
-    videoRef.current?.pause();
+    selected.current = null;
+    pause();
     setPreview(null);
-  }, []);
-
-  const permitted = () => !document.hidden && window.matchMedia(hoverQuery).matches &&
-    !window.matchMedia(motionQuery).matches && !document.querySelector('dialog[open]');
-
-  const start = (media: MovieMedia, row: HTMLElement) => {
-    const video = videoRef.current;
-    if (!video || !permitted()) return;
-    const bounds = row.getBoundingClientRect();
-    if (bounds.bottom <= 0 || bounds.top >= window.innerHeight) return;
-    const token = ++request.current;
-    active.current = row;
-    video.pause();
-    video.muted = true;
-    video.poster = media.poster;
-    if (video.getAttribute('src') !== media.video) video.src = media.video;
-    setPreview({ media, top: Math.max(16, Math.min(bounds.top + 40, window.innerHeight - 220)) });
-    // One DOM video prevents competing playback even across delayed play promises.
-    void video.play().catch(() => { if (request.current === token) stop(); });
+  }, [pause]);
+  const select = useCallback((media: MovieMedia, source: Selection['source']) => {
+    if (document.hidden || document.querySelector('dialog[open]')) return;
+    const autoplay = source !== 'focus' && !window.matchMedia(motionQuery).matches;
+    const current = selected.current;
+    if (current?.media.id === media.id && current.autoplay === autoplay && current.source === source) return;
+    // Pause synchronously, before React or any new play promise can run.
+    pause();
+    selected.current = { media, autoplay, source };
+    setPreview(selected.current);
+  }, [pause]);
+  const toggle = (media: MovieMedia) => {
+    if (selected.current?.media.id === media.id && selected.current.source === 'explicit') stop();
+    else select(media, 'explicit');
   };
-
-  const guardPlayback = () => {
-    if (!active.current || !permitted()) stop();
+  const focus = (media: MovieMedia) => {
+    if (selected.current?.media.id !== media.id) select(media, 'focus');
+  };
+  const blur = () => { if (selected.current?.source === 'focus') stop(); };
+  const guardPlayback = (video: HTMLVideoElement, media: MovieMedia) => {
+    const current = selected.current;
+    if (current?.media.id !== media.id || !current.autoplay || document.hidden ||
+      window.matchMedia(motionQuery).matches || document.querySelector('dialog[open]')) video.pause();
   };
 
   useEffect(() => {
     const section = sectionRef.current;
-    const video = videoRef.current;
-    if (!section) return;
-    const observer = new IntersectionObserver((entries) => {
-      if (entries.some((entry) => !entry.isIntersecting &&
-        (entry.target === section || entry.target === active.current))) stop();
-    });
-    observer.observe(section);
-    section.querySelectorAll('[data-movie-case]').forEach((row) => observer.observe(row));
+    const list = listRef.current;
+    if (!section || !list) return;
     const hover = window.matchMedia(hoverQuery);
     const motion = window.matchMedia(motionQuery);
-    const onVisibility = () => { if (document.hidden) stop(); };
-    hover.addEventListener('change', stop);
-    motion.addEventListener('change', stop);
-    document.addEventListener('visibilitychange', onVisibility);
-    window.addEventListener('pagehide', stop);
-    window.addEventListener('blur', stop);
-    window.addEventListener('scroll', stop, { passive: true });
-    window.addEventListener('resize', stop);
-    return () => {
-      request.current += 1;
-      active.current = null;
-      video?.pause();
-      video?.removeAttribute('src');
-      observer.disconnect();
-      hover.removeEventListener('change', stop);
-      motion.removeEventListener('change', stop);
-      document.removeEventListener('visibilitychange', onVisibility);
-      window.removeEventListener('pagehide', stop);
-      window.removeEventListener('blur', stop);
-      window.removeEventListener('scroll', stop);
-      window.removeEventListener('resize', stop);
+    let point: { x: number; y: number } | null = null;
+    let visible = false;
+    let frame = 0;
+    let lastScroll = window.scrollY;
+    let previousTime = 0;
+    let x = 0;
+    let rotation = 0;
+    let target = 0;
+    const blocked = () => document.hidden || !!document.querySelector('dialog[open]');
+    const resetMotion = () => {
+      x = rotation = target = previousTime = 0;
+      list.style.transform = '';
     };
-  }, [sectionRef, stop]);
+    const rowVisible = (row: Element) => {
+      const bounds = row.getBoundingClientRect();
+      return bounds.bottom > 0 && bounds.top < window.innerHeight;
+    };
+    const hitTest = () => {
+      if (!visible || blocked()) { stop(); return; }
+      if (selected.current?.source === 'explicit' || selected.current?.source === 'focus') {
+        const row = section.querySelector(`[data-movie-case="${selected.current.media.id}"]`);
+        if (!row || !rowVisible(row)) stop();
+        return;
+      }
+      if (!hover.matches || !point) return;
+      const row = document.elementFromPoint(point.x, point.y)?.closest<HTMLElement>('[data-movie-case]');
+      const media = row && section.contains(row) && movieCases.find((item) => item.id === row.dataset.movieCase);
+      if (media) select(media, 'pointer');
+      else stop();
+    };
+    const tick = (now: number) => {
+      frame = 0;
+      if (!visible || blocked()) { resetMotion(); stop(); return; }
+      const dt = previousTime ? Math.min(now - previousTime, 64) : 1000 / 60;
+      previousTime = now;
+      if (hover.matches && !motion.matches) {
+        // Time-based exponential ease: retarget from the current pose, no overshoot.
+        const blend = 1 - Math.exp(-dt / 80);
+        x += (target * 6 - x) * blend;
+        rotation += (target * 0.35 - rotation) * blend;
+        target *= Math.exp(-dt / 90);
+        list.style.transform = `translateX(${x.toFixed(3)}px) rotate(${rotation.toFixed(4)}deg)`;
+      } else resetMotion();
+      // Use the painted, transformed rows, including while the sway settles.
+      hitTest();
+      if (Math.abs(x) + Math.abs(rotation) + Math.abs(target) > 0.01) schedule();
+      else resetMotion();
+    };
+    const schedule = () => { if (!frame) frame = requestAnimationFrame(tick); };
+    const onPointer = (event: PointerEvent) => {
+      if (event.pointerType !== 'mouse') return;
+      point = { x: event.clientX, y: event.clientY };
+      if (selected.current?.source === 'explicit' || selected.current?.source === 'focus') stop();
+      if (visible) schedule();
+    };
+    const onScroll = () => {
+      const delta = window.scrollY - lastScroll;
+      lastScroll = window.scrollY;
+      if (!visible) return;
+      if (hover.matches && !motion.matches && !blocked() && Math.abs(delta) > 0.1) {
+        target = Math.max(-1, Math.min(1, delta / 50));
+      }
+      schedule();
+    };
+    const suspend = () => {
+      point = null;
+      cancelAnimationFrame(frame);
+      frame = 0;
+      resetMotion();
+      stop();
+    };
+    // Touch emits pointerout on every lift; only a mouse can leave the window.
+    const onPointerOut = (event: PointerEvent) => {
+      if (event.pointerType === 'mouse' && !event.relatedTarget) suspend();
+    };
+    const onVisibility = () => { if (document.hidden) suspend(); };
+    const observer = new IntersectionObserver(([entry]) => {
+      visible = !!entry?.isIntersecting;
+      if (visible) schedule(); else suspend();
+    });
+    observer.observe(section);
+    // Other dialogs (including contents) also suspend previews immediately.
+    const dialogs = new MutationObserver(() => { if (blocked()) suspend(); });
+    dialogs.observe(document.body, { subtree: true, attributes: true, attributeFilter: ['open'], childList: true });
+    hover.addEventListener('change', suspend);
+    motion.addEventListener('change', suspend);
+    document.addEventListener('pointermove', onPointer, { passive: true });
+    document.addEventListener('pointerout', onPointerOut);
+    document.addEventListener('visibilitychange', onVisibility);
+    window.addEventListener('pagehide', suspend);
+    window.addEventListener('blur', suspend);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', schedule);
+    return () => {
+      cancelAnimationFrame(frame);
+      resetMotion();
+      pause();
+      observer.disconnect();
+      dialogs.disconnect();
+      hover.removeEventListener('change', suspend);
+      motion.removeEventListener('change', suspend);
+      document.removeEventListener('pointermove', onPointer);
+      document.removeEventListener('pointerout', onPointerOut);
+      document.removeEventListener('visibilitychange', onVisibility);
+      window.removeEventListener('pagehide', suspend);
+      window.removeEventListener('blur', suspend);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', schedule);
+    };
+  }, [sectionRef, listRef, pause, select, stop]);
 
-  return { videoRef, preview, start, stop, guardPlayback };
+  return { videos, preview, stop, toggle, focus, blur, guardPlayback };
 }

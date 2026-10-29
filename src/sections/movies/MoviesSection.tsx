@@ -4,11 +4,13 @@ import { useMoviePreview } from './useMoviePreview';
 import { MovieAnalysisDialog } from './MovieAnalysisDialog';
 import { imageAssets } from '../../assets/generated';
 import { MovieCase } from './MovieCase';
+import { MoviePreviewBackdrop } from './MoviePreviewBackdrop';
 import styles from './MoviesSection.module.css';
 
 export function MoviesSection() {
   const sectionRef = useRef<HTMLElement>(null);
-  const preview = useMoviePreview(sectionRef);
+  const listRef = useRef<HTMLDivElement>(null);
+  const preview = useMoviePreview(sectionRef, listRef);
   const [analysis, setAnalysis] = useState<{ media: MovieMedia; trigger: HTMLButtonElement } | null>(null);
   const dismiss = useCallback(() => setAnalysis(null), []);
   const open = (media: MovieMedia, trigger: HTMLButtonElement) => {
@@ -21,6 +23,7 @@ export function MoviesSection() {
       data-case-count={movieCases.length} className={styles.section}>
       <div className={styles.texture} data-section-texture data-node-id="10:1795" aria-hidden="true"
         style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
+      <MoviePreviewBackdrop controller={preview} />
       <div className={styles.canvas} data-section-canvas data-node-id="10:1794">
         <FilmPerforation edge="top" />
         <FilmPerforation edge="bottom" />
@@ -28,15 +31,12 @@ export function MoviesSection() {
           <h2 id="movies-title" tabIndex={-1} className={styles.title} data-node-id="10:1918">Ты слышишь фразу.</h2>
           <p className={styles.banner} data-node-id="10:1919"><span data-node-id="10:1920">Что остаётся за ней?</span></p>
         </div>
-        <div className={styles.cases} data-node-id="10:1840">
-          {movieCases.map((media) => <MovieCase key={media.id} media={media} onOpen={open} onPreview={preview.start} onPreviewEnd={preview.stop} />)}
+        <div ref={listRef} className={styles.cases} data-node-id="10:1840" data-movie-list data-preview-active={!!preview.preview}>
+          {movieCases.map((media) => <MovieCase key={media.id} media={media} onOpen={open}
+            active={preview.preview?.media.id === media.id}
+            requested={preview.preview?.media.id === media.id && preview.preview.source === 'explicit'} onPreview={preview.toggle} onFocus={preview.focus} onBlur={preview.blur} />)}
           <div className={styles.divider} data-node-id="10:1917" aria-hidden="true" />
         </div>
-      </div>
-      <div className={styles.preview} hidden={!preview.preview} aria-hidden="true"
-        style={{ top: preview.preview?.top }}>
-        <video ref={preview.videoRef} muted loop playsInline preload="none"
-          onPlay={preview.guardPlayback} onError={preview.stop} />
       </div>
     </section>
     {analysis && <MovieAnalysisDialog key={analysis.media.id} media={analysis.media} trigger={analysis.trigger} onDismiss={dismiss} />}

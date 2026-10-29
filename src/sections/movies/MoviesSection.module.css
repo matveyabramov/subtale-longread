@@ -446,18 +446,76 @@
 .openCase:focus-visible { outline: 3px solid var(--color-yellow); outline-offset: -8px; }
 .scene:has(.openCase:hover) .arrowFrame,
 .scene:has(.openCase:focus-visible) .arrowFrame { background: var(--color-blue); }
-.preview {
-  position: fixed;
-  z-index: 10;
-  right: max(110px, calc((100vw - 1920px) / 2 + 110px));
-  width: 320px;
-  border: 2px solid var(--color-yellow);
-  background: var(--color-ink);
+/* The clip owns Movies' bounds; the fixed child still uses the visible viewport. */
+.previewClip {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  clip-path: inset(0);
   pointer-events: none;
 }
-.preview[hidden] { display: none; }
-.preview video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; }
-@media (width <= 1600px) {
-  .preview { width: clamp(100px, calc(87.5vw - 1040px), 320px); right: 100px; }
+.canvas { z-index: 1; }
+.preview {
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--duration-ui) var(--ease-out);
 }
-@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) { .preview { display: none; } }
+.preview[data-visible='true'] { opacity: 1; }
+.previewLayer, .previewShade, .preview video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.previewLayer {
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity var(--duration-ui) var(--ease-out);
+}
+.previewLayer[data-active='true'] { opacity: 1; }
+.preview video {
+  display: block;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity var(--duration-ui) var(--ease-out);
+}
+.preview video[data-playing='true'] { opacity: 1; }
+.previewShade { background: rgb(0 0 0 / 40%); }
+.scene { transition: opacity var(--duration-ui) var(--ease-out); }
+.cases[data-preview-active='true'] .scene:not([data-preview-active='true']) { opacity: 0.4; }
+.previewAction {
+  position: absolute;
+  z-index: 3;
+  top: var(--row-space, 40px);
+  right: calc(var(--gutter, 30px) + var(--arrow-size, 67px) + 12px);
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 40%);
+  color: var(--color-white);
+  background: var(--color-ink);
+  cursor: pointer;
+}
+.previewAction:focus-visible { outline: 3px solid var(--color-yellow); outline-offset: 3px; }
+@media (hover: hover) and (pointer: fine) {
+  .previewAction { opacity: 0; pointer-events: none; }
+  .scene:focus-within .previewAction { opacity: 1; pointer-events: auto; }
+}
+@media (width <= 1100px) {
+  .previewAction {
+    top: calc(var(--row-space) + var(--arrow-size) + 12px);
+    right: var(--gutter);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .preview, .previewLayer, .preview video, .scene { transition: none; }
+  .preview video[data-playing] { opacity: 0; }
+  .cases { transform: none !important; }
+}
