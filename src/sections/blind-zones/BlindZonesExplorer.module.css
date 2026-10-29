@@ -390,33 +390,22 @@
   .question:hover { color: var(--color-yellow); }
 }
 
-/* Entrance never owns the artwork stage or A/B layer transforms. The tab's
-   hit region stays fixed while its visual content settles like a collage card. */
+/* Each card has one entrance owner, including its background and all content.
+   The shared artwork stage and its A/B layer transforms remain independent. */
 @media (prefers-reduced-motion: no-preference) {
   .sectionHeading:has(> [data-editorial-state='pending']) > * { opacity: 0; }
   .sectionHeading:has(> [data-editorial-state='entering']) > * {
     animation: explorerHeadingEntrance var(--duration-editorial) var(--ease-out) backwards;
   }
-  .card { --category-delay: 120ms; --category-angle: 1.6deg; }
-  .card:nth-child(2) { --category-delay: 240ms; --category-angle: -1.6deg; }
-  .card:nth-child(3) { --category-delay: 360ms; }
-  .card:nth-child(4) { --category-delay: 480ms; --category-angle: -1.6deg; }
   .card[data-editorial-state='entering'] {
-    animation: categoryFade var(--duration-editorial) var(--ease-out) var(--category-delay) backwards;
-  }
-  .card[data-editorial-state='entering'] .cardContent {
-    animation: categoryEntrance var(--duration-editorial) var(--ease-out) var(--category-delay) backwards;
+    animation: categoryEntrance 420ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
   }
 }
 @keyframes explorerHeadingEntrance {
   from { opacity: 0; translate: 0 36px; }
   to { opacity: 1; translate: 0 0; }
 }
-@keyframes categoryFade {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
 @keyframes categoryEntrance {
-  from { translate: 0 36px; rotate: var(--category-angle); }
-  to { translate: 0 0; rotate: 0deg; }
+  from { opacity: 0; translate: 0 18px; }
+  to { opacity: 1; translate: 0 0; }
 }

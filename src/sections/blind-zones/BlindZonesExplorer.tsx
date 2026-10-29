@@ -112,7 +112,7 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
             const ids = visual.cards[index];
             if (!ids) return null;
             return (
-              <div key={copy.category} data-node-id={ids.card} data-active={category === copy.category} className={styles.card} data-editorial-reveal="scroll">
+              <div key={copy.category} data-node-id={ids.card} data-active={category === copy.category} className={styles.card} data-editorial-reveal="card">
                 <button type="button" role="tab" id={`explorer-tab-${copy.category}`} className={styles.categoryTab}
                   ref={(node) => { tabs.current[index] = node; }}
                   aria-labelledby={`explorer-label-${copy.category}`}

@@ -15,6 +15,7 @@ export function useEditorialEntrance(scopeRef: RefObject<HTMLElement | null>) {
     let mutations: MutationObserver | undefined;
     let frame = 0;
     let ready = false;
+    const entryLine = (target: HTMLElement) => target.dataset.editorialReveal === 'card' ? 0.85 : 0.6;
 
     const finish = (target: HTMLElement) => {
       clearTimeout(active.get(target));
@@ -52,7 +53,7 @@ export function useEditorialEntrance(scopeRef: RefObject<HTMLElement | null>) {
           if (!visible) finish(target);
         } else if (rect.top < 0) {
           finish(target); // A jump already passed the reading position.
-        } else if (rect.top <= window.innerHeight * 0.6) {
+        } else if (rect.top <= window.innerHeight * entryLine(target)) {
           start(target);
         }
       }
@@ -63,6 +64,10 @@ export function useEditorialEntrance(scopeRef: RefObject<HTMLElement | null>) {
     const focus = (event: FocusEvent) => {
       if (!(event.target instanceof Node)) return;
       for (const target of targets) {
+        // A pointer press must not snap a moving card away from its hit point.
+        // Keyboard focus still exposes a prepared card immediately.
+        if (target.dataset.editorialReveal === 'card' && event.target instanceof Element &&
+          !event.target.matches(':focus-visible')) continue;
         if (target.contains(event.target) && (target.dataset.editorialReveal === 'load' ||
           (event.target instanceof Element && event.target.closest('a, button, input, select, textarea, [role="button"]')))) finish(target);
       }
@@ -71,8 +76,10 @@ export function useEditorialEntrance(scopeRef: RefObject<HTMLElement | null>) {
     try {
       if (!('IntersectionObserver' in window)) { targets.forEach(finish); return; }
       // Pixel margins use viewport height; percentage IO margins use root width.
-      // The existing scroll/resize check also measures the live 60% attention line.
-      observer = new IntersectionObserver(check, { rootMargin: `0px 0px -${window.innerHeight * 0.4}px 0px`, threshold: 0 });
+      // Observe the earliest requested line; each target retains its own trigger
+      // in the existing scroll/resize check. Other sections keep their 60% line.
+      const earliestLine = Math.max(0.6, ...targets.map(entryLine));
+      observer = new IntersectionObserver(check, { rootMargin: `0px 0px -${window.innerHeight * (1 - earliestLine)}px 0px`, threshold: 0 });
       for (const target of targets) {
         if (target.dataset.editorialState === 'done') continue;
         if (target.dataset.editorialReveal === 'load') {
