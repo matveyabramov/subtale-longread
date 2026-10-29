@@ -56,6 +56,18 @@ SUBTALE строится на резкой типографике, контра�
 | M14 What-to-do `10:1272` | Чтение | Статичные советы; без имитации взаимодействия с видеосервисом | Нет replay/reset | То же |
 | M15 Footer `10:1016` | Чтение | Статичная collage/credits; hidden Union остаётся clipped | Нет loop/replay | То же |
 
+### Stage 4E — Editorial entrance (2026-10-29), Awaiting Review
+
+Согласованное расширение M01/M04/M05; остальные контракты не меняются. Назначение — первое редакционное раскрытие (rare / delight и explanation), без повторов, pin или scroll hijacking. Endpoints, ассеты, crops и paint order остаются прежними.
+
+- **Hero / M01:** при первом открытии на Hero: headline opacity + Y 18→0 (420ms); banner clip-path слева направо (460ms, delay 60ms); существующие декоративные объекты opacity + независимый scale .98→1 (500ms, delay 120ms). Вступление opacity (360ms, delay 180ms), CTA opacity (340ms, delay 240ms), без перемещения hit area. Общий endpoint 620ms. Focus немедленно завершает появление CTA. Возврат из Experiment не воспроизводит sequence.
+- **Emptiness / M04:** первый вход секции; исходные независимые слои и их DOM order сохраняются. Пиксели сгруппированы в диагональную волну по фактическим x/y (ячейка 77px), opacity 280ms, задержки 0–300ms. Персонажи opacity 440ms с delay 180ms; весь endpoint 620ms. Без transform пикселей, мерцания или source-only portrait. Рамка, labels и copy всегда видны.
+- **Elephant / M05:** первый вход иллюстрации: opacity и независимый CSS translate X 18→0, 450ms (12px на phone, внутри gutter 15px). Ниже 1920px двигается внешний artworkSlot вместе с существующим clip, чтобы не обрезать рамку в промежуточных кадрах. Figma transform matrix рамки и изображения не изменяется. Каждый levelContent отдельно: opacity + X 18→0 за 330ms; divider и layout не анимируются. Без hover-вращения.
+
+Все эффекты — CSS animation с общим `--ease-out`; один переиспользуемый IntersectionObserver-hook. Базовый DOM видим: скрытого состояния ожидания нет, animation добавляется только при входе. Уже видимый контент при начальном hash/restoration остаётся статичным; Hero с другим начальным hash пропускает intro. Offscreen, быстрый skip, hidden tab и изменение reduced motion завершают активный эффект к endpoint. Reduced motion и недоступный observer/setup оставляют полный статичный вид; возврат preference не переигрывает показанное. Никакие timers не управляют навигацией или доступностью controls. Все observer/listener/timer очищаются при unmount.
+
+Точечная проверка Stage 4E: `npm run build`; Chrome/Playwright 1920×1080, 1440×900, 768×1024, 390×844. Конечные node rects, matrices, opacity и clip-path трёх секций сравнены с `cd59856`; горизонтального overflow нет. Отдельно проверены промежуточные bounds рамки и текста четырёх уровней на всех четырёх ширинах, 54 исходных слоя assembly, возврат Experiment→Hero без replay, начальные hash, быстрый skip, runtime reduced-motion и статичный fallback при сбое setup этого hook. Полный QA и проверка на физических touch-устройствах не проводились. Художественный feel-check — Awaiting Review.
+
 ### M02 — DOM, focus и быстрые открытия
 
 Не требовать отдельной библиотеки для opacity. Fade 0↔1 принадлежит внешнему wrapper; исходные opacity/effects внутренних Figma-слоёв сохраняются. Во время exit панель уже не интерактивна (`inert`/исключена из AT), focus предварительно перемещён на существующий триггер, если он находился внутри. DOM можно временно сохранить только для fade, после него скрыть; при повторном open отменить pending hide. Старый `transitionend` не закрывает новую панель. Внешний click закрывает без кражи focus. Само оглавление/help — по рекомендуемой немодальной модели; modal-вариант требует нового UX-контракта.

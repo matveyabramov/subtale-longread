@@ -319,3 +319,16 @@
      own header row; allow natural scrolling rather than overlap the title. */
   .canvas { padding-top: calc(64px + env(safe-area-inset-top, 0px)); }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .section[data-editorial-state='entering'] .pixel {
+    animation: assemblyFade 280ms var(--ease-out) var(--assembly-delay) backwards;
+  }
+  .section[data-editorial-state='entering'] .character {
+    animation: assemblyFade 440ms var(--ease-out) 180ms backwards;
+  }
+}
+@keyframes assemblyFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

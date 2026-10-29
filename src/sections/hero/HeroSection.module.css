@@ -480,3 +480,41 @@
   .primaryCta:hover .primaryArrowBox { background-color: var(--color-yellow); }
   .primaryCta:hover .primaryArrowBox img { filter: brightness(0); }
 }
+
+/* Finite first-load sequence. Base styles always show the approved endpoint.
+   Independent scale composes with each artwork object's Figma transform. */
+@media (prefers-reduced-motion: no-preference) {
+  .hero[data-editorial-state='entering'] .headlineFirst {
+    animation: headlineEntrance 420ms var(--ease-out) backwards;
+  }
+  .hero[data-editorial-state='entering'] .headlineBanner {
+    animation: bannerEntrance 460ms var(--ease-out) 60ms backwards;
+  }
+  .hero[data-editorial-state='entering'] .artwork > * {
+    animation: collageEntrance 500ms var(--ease-out) 120ms backwards;
+  }
+  .hero[data-editorial-state='entering'] .introCopy {
+    animation: heroFade 360ms var(--ease-out) 180ms backwards;
+  }
+  .hero[data-editorial-state='entering'] .primaryCta {
+    animation: heroFade 340ms var(--ease-out) 240ms backwards;
+  }
+  .hero[data-editorial-state='entering'] .primaryCta:is(:focus-within, :active) { animation: none; }
+}
+
+@keyframes headlineEntrance {
+  from { opacity: 0; translate: 0 18px; }
+  to { opacity: 1; translate: 0 0; }
+}
+@keyframes bannerEntrance {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+@keyframes collageEntrance {
+  from { opacity: 0; scale: 0.98; }
+  to { opacity: 1; scale: 1; }
+}
+@keyframes heroFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -362,3 +362,36 @@
   .title, .banner { font-size: 45px; }
   .banner { margin-top: calc(clamp(10px, calc(0.42328vw + 8.349206px), 12px) - 2px); }
 }
+
+/* translate is independent of transform: the two source matrices stay intact.
+   Only level content enters; dividers retain their original paint and geometry. */
+@media (prefers-reduced-motion: no-preference) {
+  .artFrame[data-editorial-state='entering'] {
+    animation: elephantEntrance 450ms var(--ease-out) backwards;
+  }
+  .levelContent[data-editorial-state='entering'] {
+    animation: elephantEntrance 330ms var(--ease-out) backwards;
+  }
+
+  @media (width < 1920px) {
+    /* Move the existing clip together with the frame, never through it. */
+    .artFrame[data-editorial-state='entering'] { animation: none; }
+    .artworkSlot:has(> .artFrame[data-editorial-state='entering']) {
+      animation: elephantEntrance 450ms var(--ease-out) backwards;
+    }
+  }
+  @media (width <= 600px) {
+    .artworkSlot:has(> .artFrame[data-editorial-state='entering']) {
+      animation-name: phoneFrameEntrance;
+    }
+  }
+}
+@keyframes elephantEntrance {
+  from { opacity: 0; translate: 18px 0; }
+  to { opacity: 1; translate: 0 0; }
+}
+@keyframes phoneFrameEntrance {
+  /* Stay within the approved 15px phone gutter throughout the entrance. */
+  from { opacity: 0; translate: 12px 0; }
+  to { opacity: 1; translate: 0 0; }
+}

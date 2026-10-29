@@ -1,6 +1,13 @@
+import { useRef, type CSSProperties } from 'react';
+import { useEditorialEntrance } from '../../shared/useEditorialEntrance';
 import { imageAssets } from '../../assets/generated';
 import { characterCrops, emptinessLayers } from './emptinessArtworkData';
 import styles from './EmptinessSection.module.css';
+
+// Diagonals follow the actual 77px source grid, independently of paint order.
+const firstPixelDiagonal = Math.min(...emptinessLayers
+  .filter(({ kind }) => kind === 'square' || kind === 'union').map(({ x, y }) => x + y));
+const pixelWave = (x: number, y: number) => Math.max(0, Math.min(4, Math.floor((x + y - firstPixelDiagonal) / (77 * 3)))) * 75;
 
 function EmptinessArtwork() {
   return (
@@ -13,11 +20,12 @@ function EmptinessArtwork() {
           <div key={layer.id} data-node-id={layer.id} data-art-kind={layer.kind}
             className={image ? styles.character : styles.pixel}
             style={{
+              '--assembly-delay': `${pixelWave(layer.x, layer.y)}ms`,
               left: `calc(var(--artwork-unit) * ${layer.x})`,
               top: `calc(var(--artwork-unit) * ${layer.y})`,
               width: `calc(var(--artwork-unit) * ${layer.width})`,
               height: `calc(var(--artwork-unit) * ${layer.height})`,
-            }}>
+            } as CSSProperties}>
             {image && crop && (
               <img src={image} alt="" style={{
                 width: `calc(var(--artwork-unit) * ${layer.width / crop.matrix[0][0]})`,
@@ -36,8 +44,10 @@ function EmptinessArtwork() {
 }
 
 export function EmptinessSection() {
+  const sectionRef = useRef<HTMLElement>(null);
+  useEditorialEntrance(sectionRef);
   return (
-    <section id="emptiness" aria-labelledby="emptiness-title" data-narrative-section data-section-surface className={styles.section}>
+    <section ref={sectionRef} id="emptiness" aria-labelledby="emptiness-title" data-narrative-section data-section-surface data-editorial-reveal="scroll" className={styles.section}>
       <div className={styles.texture} data-section-texture data-node-id="10:839" aria-hidden="true"
         style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
       <div className={styles.canvas} data-section-canvas data-node-id="10:838">

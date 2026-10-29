@@ -1,4 +1,6 @@
 import { createPortal } from 'react-dom';
+import { useRef } from 'react';
+import { useEditorialEntrance } from '../../shared/useEditorialEntrance';
 import { useHeroIntroduction } from './useHeroIntroduction';
 import introStyles from './HeroIntroduction.module.css';
 import { imageAssets, vectorAssets } from '../../assets/generated';
@@ -7,8 +9,10 @@ import styles from './HeroSection.module.css';
 
 export function HeroSection({ contentsOpen = false, hidden = false }: { contentsOpen?: boolean; hidden?: boolean }) {
   const intro = useHeroIntroduction(contentsOpen);
+  const sectionRef = useRef<HTMLElement>(null);
+  useEditorialEntrance(sectionRef);
   return (
-    <section id="hero" aria-labelledby="hero-title" data-narrative-section className={styles.hero} hidden={hidden} inert={hidden}>
+    <section ref={sectionRef} id="hero" aria-labelledby="hero-title" data-narrative-section data-editorial-reveal="load" className={styles.hero} hidden={hidden} inert={hidden}>
       <div className={styles.canvas} data-node-id="10:472">
         <div className={styles.introduction} data-node-id="10:1928">
           <p className={styles.introCopy} data-node-id="10:1929">{'Слова знакомы. Сюжет продолжается.\nНо весь ли смысл остаётся с тобой?'}</p>

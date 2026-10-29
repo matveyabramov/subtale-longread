@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+import { useEditorialEntrance } from '../../shared/useEditorialEntrance';
 import { imageAssets } from '../../assets/generated';
 import { elephantArtFrame, elephantImage, elephantPixels } from './elephantArtworkData';
 import styles from './ElephantSection.module.css';
@@ -18,7 +20,7 @@ function ElephantArtwork() {
   const [[ia, ic, ix], [ib, id, iy]] = elephantImage.matrix;
   return (
     <div className={styles.artworkSlot} aria-hidden="true">
-      <div className={styles.artFrame} data-node-id="10:919"
+      <div className={styles.artFrame} data-node-id="10:919" data-editorial-reveal="scroll"
         style={{
           width: `var(--frame-width, ${elephantArtFrame.width}px)`,
           height: `var(--frame-height, ${elephantArtFrame.height}px)`,
@@ -42,8 +44,10 @@ function ElephantArtwork() {
 }
 
 export function ElephantSection() {
+  const sectionRef = useRef<HTMLElement>(null);
+  useEditorialEntrance(sectionRef);
   return (
-    <section id="elephant" aria-labelledby="elephant-title" data-narrative-section data-section-surface className={styles.section}>
+    <section ref={sectionRef} id="elephant" aria-labelledby="elephant-title" data-narrative-section data-section-surface className={styles.section}>
       <div className={styles.texture} data-section-texture data-node-id="10:918" aria-hidden="true"
         style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />
       <div className={styles.canvas} data-section-canvas data-node-id="10:917">
@@ -60,7 +64,7 @@ export function ElephantSection() {
           {levels.map((level) => (
             <div key={level.frame} className={styles.level} data-node-id={level.frame}>
               <div className={styles.divider} data-node-id={level.divider} aria-hidden="true" />
-              <div className={styles.levelContent} data-node-id={level.content}
+              <div className={styles.levelContent} data-node-id={level.content} data-editorial-reveal="scroll"
                 style={{
                   paddingLeft: `var(--level-inset, ${level.inset}px)`,
                   width: `var(--level-width, ${level.inset + level.width}px)`,
