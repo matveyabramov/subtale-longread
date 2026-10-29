@@ -4,6 +4,15 @@ html {
   background: var(--color-ink);
 }
 
+/* Experiment's fixed portal and hidden reading chapters leave no flow height.
+   Keep the existing ink document surface viewport-sized for Safari's browser
+   background sampling, including direct hashes without any scene snapshot. */
+html:has(#experiment:not([hidden])),
+body:has(#experiment:not([hidden])) {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
 /* Standard scrollbar colors in Firefox/current Chromium, with a WebKit fallback.
    Keep native sizing, scrolling and platform visibility behavior. */
 * {
