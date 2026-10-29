@@ -254,7 +254,7 @@
   /* Enlarge paint only: keep responsive slots, A/B rotation and hit area intact.
      Both layers share the full bicycle frame's center (wheels are 1px shorter). */
   .bicycleBase, .bicycleWheels {
-    scale: 1.225;
+    scale: 1.47;
     transform-origin: 50% calc(var(--art-height) / 2);
   }
 }
