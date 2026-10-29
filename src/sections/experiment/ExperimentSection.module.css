@@ -207,3 +207,30 @@
 @media (max-width: 600px), (max-width: 1000px) and (max-height: 600px) and (orientation: landscape) {
   .targetScreen { --target-size: 30px; --target-stroke: 4px; --target-separation: min(324px, calc(100vw - 66px)); --target-drop: calc(var(--target-separation) * 0.0944); }
 }
+
+/* An inset border layer reserves the stroke in both states without changing
+   the approved padding, content box, arrow slot or outer dimensions. */
+.nextLink { position: relative; transition: background-color var(--duration-feedback) var(--ease-out), border-color var(--duration-feedback) var(--ease-out), color var(--duration-feedback) var(--ease-out); }
+.nextLink::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid transparent;
+  pointer-events: none;
+  transition: border-color var(--duration-feedback) var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .nextLink:hover { background-color: transparent; color: var(--color-yellow); }
+  .nextLink:hover::before { border-color: var(--color-yellow); }
+}
+
+.backLink { transition: background-color var(--duration-feedback) var(--ease-out), border-color var(--duration-feedback) var(--ease-out), color var(--duration-feedback) var(--ease-out); }
+/* Recolor the original artwork only; its transform and direction stay fixed. */
+.backArrow img { transition: filter var(--duration-feedback) var(--ease-out); }
+.bottomLink { transition: color var(--duration-feedback) var(--ease-out); }
+.bottomLink:focus-visible { color: var(--color-yellow); }
+@media (hover: hover) and (pointer: fine) {
+  .backLink:hover { background-color: var(--color-yellow); color: var(--color-ink); }
+  .backLink:hover .backArrow img { filter: brightness(0); }
+  .bottomLink:hover { color: var(--color-yellow); }
+}

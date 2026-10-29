@@ -52,3 +52,25 @@
 @media (min-width: 600.01px) {
   .skip { font-size: var(--font-size-link-control); }
 }
+
+/* An inset border layer reserves the stroke in both states without changing
+   the approved padding, content box, arrow slot or outer dimensions. */
+.start { position: relative; transition: background-color var(--duration-feedback) var(--ease-out), border-color var(--duration-feedback) var(--ease-out), color var(--duration-feedback) var(--ease-out); }
+.start::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid transparent;
+  pointer-events: none;
+  transition: border-color var(--duration-feedback) var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .start:hover { background-color: transparent; color: var(--color-yellow); }
+  .start:hover::before { border-color: var(--color-yellow); }
+}
+
+.skip { transition: color var(--duration-feedback) var(--ease-out); }
+.skip:focus-visible { color: var(--color-yellow); }
+@media (hover: hover) and (pointer: fine) {
+  .skip:hover { color: var(--color-yellow); }
+}

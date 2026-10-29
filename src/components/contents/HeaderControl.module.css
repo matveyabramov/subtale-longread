@@ -27,7 +27,7 @@
 .cross i:last-child { top: 8px; transform: rotate(-45deg); }
 .trigger { z-index: 50; }
 .trigger[data-experiment-hidden='true'] { visibility: hidden; pointer-events: none; }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .control:hover { color: #fed128; }
 }
 .trigger[aria-expanded='true'] { opacity: 0; pointer-events: none; }
@@ -46,3 +46,7 @@
   .control > span:first-child { width: calc(100% - 48px); height: 20px; font-size: inherit; line-height: inherit; }
   .control::after { inset-block: -12px; }
 }
+
+.control { transition: color var(--duration-feedback) var(--ease-out); }
+
+.control:focus-visible { color: var(--color-yellow); }

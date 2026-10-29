@@ -48,7 +48,7 @@
 .list a[aria-current] .marker { visibility: visible; }
 .panel :focus-visible { outline: 2px solid var(--color-yellow); outline-offset: 3px; }
 .list a:focus-visible { color: var(--color-yellow); }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .list a:hover { color: var(--color-yellow); }
 }
 @media (width < 1920px) {
@@ -77,3 +77,5 @@
   .number { font-size: 11px; }
   .marker { width: 6px; height: 6px; }
 }
+
+.list a { transition: color var(--duration-feedback) var(--ease-out); }
