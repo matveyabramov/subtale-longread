@@ -444,8 +444,11 @@
   cursor: pointer;
 }
 .openCase:focus-visible { outline: 3px solid var(--color-yellow); outline-offset: -8px; }
-.scene:has(.openCase:hover) .arrowFrame,
+.arrowFrame { transition: background-color var(--duration-feedback) var(--ease-out); }
 .scene:has(.openCase:focus-visible) .arrowFrame { background: var(--color-blue); }
+@media (hover: hover) and (pointer: fine) {
+  .scene:has(.openCase:hover) .arrowFrame { background: var(--color-blue); }
+}
 /* The clip owns Movies' bounds; the fixed child still uses the visible viewport. */
 .previewClip {
   position: absolute;

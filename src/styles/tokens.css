@@ -44,9 +44,9 @@
   --radius-none: 0;
   --z-base: 0;
 
-  /* Approved Stage 0.3 baseline; declared here, no animations enabled. */
+  /* Shared motion timing; UI feedback refined in Stage 4B. */
   --duration-instant: 0ms;
-  --duration-feedback: 150ms;
+  --duration-feedback: 250ms;
   --duration-ui: 200ms;
   --duration-state: 250ms;
   --duration-half-state: 125ms;

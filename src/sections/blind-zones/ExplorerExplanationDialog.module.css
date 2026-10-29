@@ -100,7 +100,7 @@
 }
 .dialog :focus-visible { outline: 2px solid var(--color-yellow); outline-offset: 3px; }
 .body:focus-visible { outline-offset: -2px; }
-@media (hover: hover) { .close:hover { color: var(--color-yellow); } }
+@media (hover: hover) and (pointer: fine) { .close:hover { color: var(--color-yellow); } }
 @media (width < 1920px) { .title { font-size: 50px; } }
 @media (width <= 1100px) { .interior { padding: 24px; } .title { font-size: 44px; } .body { font-size: 1.25rem; } }
 @media (width <= 600px) {
@@ -119,3 +119,5 @@
   .body .conclusion { margin-top: 24px; padding-top: 18px; font-size: 1rem; line-height: 1.5; }
 }
 @media (height <= 450px) { .interior { padding: 16px; } .header { margin-bottom: 12px; } .title { font-size: 30px; } }
+
+.close { transition: color var(--duration-feedback) var(--ease-out); }
