@@ -74,3 +74,11 @@
 @media (hover: hover) and (pointer: fine) {
   .skip:hover { color: var(--color-yellow); }
 }
+
+/* Match the Hero and Experiment CTA inversion, including picture sources. */
+.arrow { transition: background-color var(--duration-feedback) var(--ease-out); }
+.arrow img { transition: filter var(--duration-feedback) var(--ease-out); }
+@media (hover: hover) and (pointer: fine) {
+  .start:hover .arrow { background-color: var(--color-yellow); }
+  .start:hover .arrow img { filter: brightness(0); }
+}
