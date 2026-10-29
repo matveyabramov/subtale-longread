@@ -1,3 +1,4 @@
+import { reachGoal } from '../../analytics/metrica';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { lockPageScroll } from '../../shared/lockPageScroll';
@@ -12,6 +13,7 @@ export function MovieAnalysisDialog({ media, trigger, onDismiss }: {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const backdropPress = useRef(false);
+  const trackedPlay = useRef(false);
   const [requested, setRequested] = useState(false);
   const [error, setError] = useState(false);
   const analysis = movieAnalysis[media.id];
@@ -112,7 +114,13 @@ export function MovieAnalysisDialog({ media, trigger, onDismiss }: {
         <div className={styles.media} data-article-scene>
           <video ref={videoRef} poster={media.poster} preload="none" playsInline controls={requested} tabIndex={0}
             aria-label={`Сцена: ${analysis.film}`} onError={() => setError(true)}
-            onPlay={(event) => { if (document.hidden) event.currentTarget.pause(); }} />
+            onPlay={(event) => { if (document.hidden) event.currentTarget.pause(); }}
+            onPlaying={() => {
+              if (!document.hidden && !trackedPlay.current) {
+                trackedPlay.current = true;
+                reachGoal('movie_video_play', { movie_id: media.id });
+              }
+            }} />
           {(!requested || error) && <button type="button" className={styles.play} onClick={play}>
             {error ? 'Повторить загрузку сцены' : 'Смотреть сцену'} <span aria-hidden="true">▶</span>
           </button>}

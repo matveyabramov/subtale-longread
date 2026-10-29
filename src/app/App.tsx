@@ -1,3 +1,4 @@
+import { useReadingAnalytics } from '../analytics/useReadingAnalytics';
 import { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import { Contents, ContentsTrigger } from '../components/contents/Contents';
 import { HeroSection } from '../sections/hero/HeroSection';
@@ -19,6 +20,7 @@ import styles from './App.module.css';
 
 export function App() {
   const experiment = useExperimentNavigation();
+  useReadingAnalytics(experiment);
   useLayoutEffect(positionInitialReadingAnchor, []);
   useInputModality();
   const reducedMotion = useReducedMotion();

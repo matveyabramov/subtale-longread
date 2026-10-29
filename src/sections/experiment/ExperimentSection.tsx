@@ -1,3 +1,4 @@
+import { milestone } from '../../analytics/metrica';
 import { useLayoutEffect, useState, type MouseEvent } from 'react';
 import { createPortal } from 'react-dom';
 import { imageAssets, vectorAssets } from '../../assets/generated';
@@ -18,7 +19,8 @@ interface NextScreenLinkProps {
 function NextScreenLink({ href, label, textWidth, nodes }: NextScreenLinkProps) {
   const [link, text, box, arrow] = nodes;
   return (
-    <a className={styles.nextLink} href={href} data-node-id={link}>
+    <a className={styles.nextLink} href={href} data-node-id={link}
+      onClick={href === '#experiment-result' ? () => milestone('experiment_attempt') : undefined}>
       <span className={styles.nextLabel} style={{ width: textWidth }} data-node-id={text}>{label}</span>
       <span className={styles.arrowBox} data-node-id={box}>
         <img src={vectorAssets['hero-cta-arrow']} alt="" data-node-id={arrow} />
@@ -78,7 +80,7 @@ function Instructions() {
       </div>
       <div className={styles.screenFooter}>
         <div className={styles.forwardActions}>
-          <a className={styles.bottomLink} href="#emptiness" data-node-id="10:729">Пропустить эксперимент</a>
+          <a className={styles.bottomLink} href="#emptiness" onClick={() => milestone('experiment_skip')} data-node-id="10:729">Пропустить эксперимент</a>
           <NextScreenLink href="#experiment-target" label="К крестику и точке" textWidth={194}
             nodes={['10:725', '10:726', '10:727', '10:728']} />
         </div>
@@ -127,7 +129,7 @@ function Target({ help }: { help: ReturnType<typeof useExperimentHelp> }) {
             <ol className={helpStyles.list}>
               <li>Держи левый глаз закрытым и не переводи взгляд с крестика.</li>{'\n'}
               <li>Медленно меняй расстояние до экрана. Эффект зависит от размера дисплея и дистанции просмотра.</li>{'\n'}
-              <li>Если не сработало — можно <a href="#emptiness">пропустить</a>.</li>
+              <li>Если не сработало — можно <a href="#emptiness" onClick={() => milestone('experiment_skip')}>пропустить</a>.</li>
             </ol>
           </div>
         </dialog>, document.body,

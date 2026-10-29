@@ -1,3 +1,4 @@
+import { reachGoal } from '../../analytics/metrica';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { KeyboardEvent } from 'react';
 import { imageAssets } from '../../assets/generated';
@@ -92,12 +93,13 @@ export function BlindZonesExplorer({ category: initialCategory = 'idiom', meanin
 
   function toggleMeaning() {
     const next = meaning === 'A' ? 'B' : 'A';
+    reachGoal('explorer_reveal', { category, meaning: next });
     setMousePreview(null);
     setState((current) => ({ ...current, stateByCategory: { ...current.stateByCategory, [category]: next } }));
   }
 
   function selectCategory(next: ExplorerCategoryId) {
-    if (next !== category) { pointerInArtwork.current = false; setMousePreview(null); }
+    if (next !== category) { reachGoal('explorer_select', { category: next }); pointerInArtwork.current = false; setMousePreview(null); }
     setFocusedCategory(next);
     setState((current) => current.category === next ? current : { ...current, category: next });
   }

@@ -1,3 +1,4 @@
+import { reachGoal } from '../../analytics/metrica';
 import { useCallback, useRef, useState } from 'react';
 import { movieCases, type MovieMedia } from './model';
 import { useMoviePreview } from './useMoviePreview';
@@ -14,6 +15,7 @@ export function MoviesSection() {
   const [analysis, setAnalysis] = useState<{ media: MovieMedia; trigger: HTMLButtonElement } | null>(null);
   const dismiss = useCallback(() => setAnalysis(null), []);
   const open = (media: MovieMedia, trigger: HTMLButtonElement) => {
+    reachGoal('movie_analysis_open', { movie_id: media.id });
     preview.stop();
     setAnalysis({ media, trigger });
   };
