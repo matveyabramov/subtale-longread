@@ -208,13 +208,13 @@
   .targetScreen { --target-size: 30px; --target-stroke: 4px; --target-separation: min(324px, calc(100vw - 66px)); --target-drop: calc(var(--target-separation) * 0.0944); }
 }
 
-/* An inset border layer reserves the stroke in both states without changing
+/* An outer border layer preserves the visible inner gap without changing
    the approved padding, content box, arrow slot or outer dimensions. */
 .nextLink { position: relative; transition: background-color var(--duration-feedback) var(--ease-out), border-color var(--duration-feedback) var(--ease-out), color var(--duration-feedback) var(--ease-out); }
 .nextLink::before {
   content: '';
   position: absolute;
-  inset: 0;
+  inset: -2px;
   border: 2px solid transparent;
   pointer-events: none;
   transition: border-color var(--duration-feedback) var(--ease-out);
