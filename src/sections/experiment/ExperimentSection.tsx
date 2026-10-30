@@ -165,8 +165,11 @@ function Result() {
       <BackLink href="#experiment-target" nodeId="153:10" />
       <ResultVisual />
       <div className={styles.screenFooter}>
-        <NextScreenLink href="#emptiness" label="Что это значит?" textWidth={163}
-          nodes={['10:769', '10:770', '10:771', '10:772']} />
+        <div className={styles.forwardActions}>
+          <span className={styles.secondaryPlaceholder} aria-hidden="true" />
+          <NextScreenLink href="#emptiness" label="Что это значит?" textWidth={163}
+            nodes={['10:769', '10:770', '10:771', '10:772']} />
+        </div>
       </div>
     </section>
   );

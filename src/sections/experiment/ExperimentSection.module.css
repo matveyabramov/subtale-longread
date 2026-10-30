@@ -150,20 +150,17 @@
 .backLabel { display: block; flex: none; width: 62px; font: 700 35px/1 var(--font-display); text-transform: uppercase; }
 .forwardActions { display: flex; flex-direction: column; align-items: flex-start; gap: 30px; width: clamp(300px, calc(22.291667vw + 14px), 442px); }
 .forwardActions .nextLink { width: 100%; }
-.forwardActions .bottomLink { height: 28px; min-height: 0; }
+.forwardActions .bottomLink, .secondaryPlaceholder { height: 28px; min-height: 0; }
 @media (min-width: 1100.01px) {
   /* Match Target's centered text line, then move only the Instructions link. */
   .instructionBody + .screenFooter .bottomLink { display: flex; align-items: center; top: 5px; }
-  .targetScreen .forwardActions { gap: 20px; }
-}
-@media (min-width: 1920px) {
-  .targetScreen .forwardActions { gap: 25px; }
+
 }
 @media (min-width: 600.01px) and (max-width: 1919.98px) {
   .backLink { width: 158px; height: 80px; padding-left: 25px; }
   .backLabel { width: 53px; font-size: 30px; }
   .forwardActions { gap: 25px; }
-  .forwardActions .bottomLink { height: 24px; }
+  .forwardActions .bottomLink, .secondaryPlaceholder { height: 24px; }
 }
 @media (min-width: 600.01px) and (max-width: 1100px) {
   .backLabel { width: 50px; font-size: 28px; }
@@ -177,7 +174,7 @@
   .forwardActions { width: 100%; gap: 20px; }
   /* Match the Instructions link line placement, including button centering. */
   .targetScreen .bottomLink { display: flex; align-items: flex-start; }
-  .forwardActions .bottomLink { height: 18px; }
+  .forwardActions .bottomLink, .secondaryPlaceholder { height: 18px; }
 }
 /* Container height follows the layer's dvh as Safari's controls change.
    Media fallbacks also keep older browsers' short screens scrollable. */

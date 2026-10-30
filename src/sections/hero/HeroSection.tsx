@@ -16,13 +16,6 @@ export function HeroSection({ contentsOpen = false, hidden = false }: { contents
       <div className={styles.canvas} data-node-id="10:472">
         <div className={styles.introduction} data-node-id="10:1928">
           <p className={styles.introCopy} data-node-id="10:1929">{'Слова знакомы. Сюжет продолжается.\nНо весь ли смысл остаётся с тобой?'}</p>
-          <a ref={intro.ctaRef} className={styles.primaryCta} href="#experiment-instructions" data-node-id="10:1930"
-            onClick={(event) => intro.navigate(event, 'experiment-instructions')}>
-            <span data-node-id="10:1931">Начни с одного эксперимента</span>
-            <span className={styles.primaryArrowBox} data-node-id="10:1932">
-              <img src={vectorAssets['hero-cta-arrow']} alt="" data-node-id="10:1933" />
-            </span>
-          </a>
         </div>
         <div className={styles.texture} data-node-id="10:473" aria-hidden="true"
           style={{ backgroundImage: `url("${imageAssets['mosaic-texture']}")` }} />

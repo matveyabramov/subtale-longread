@@ -5,11 +5,11 @@
   max-width: calc(100% - 30px);
   max-height: calc(100dvh - max(30px, env(safe-area-inset-bottom, 0px)) - max(15px, env(safe-area-inset-top, 0px)));
   margin: 0;
-  border: 5px solid #000;
-  padding: 5px;
+  border: 2px solid #fff;
+  padding: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
-  background: #fff;
+  background: #000;
   color: #fff;
 }
 .dialog::backdrop { background: transparent; }

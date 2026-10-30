@@ -11,7 +11,6 @@ export function useHeroIntroduction(contentsOpen: boolean) {
   const [state, setState] = useState<IntroState>('unseen');
   const stateRef = useRef<IntroState>('unseen');
   const dialogRef = useRef<HTMLDialogElement>(null);
-  const ctaRef = useRef<HTMLAnchorElement>(null);
   const unlockRef = useRef<(() => void) | null>(null);
 
   const finish = useCallback((restoreFocus = false) => {
@@ -20,7 +19,7 @@ export function useHeroIntroduction(contentsOpen: boolean) {
     unlockRef.current?.();
     unlockRef.current = null;
     dialogRef.current?.close();
-    if (restoreFocus) ctaRef.current?.focus({ preventScroll: true });
+    if (restoreFocus) document.getElementById('hero-title')?.focus({ preventScroll: true });
   }, []);
 
   const open = useCallback(() => {
@@ -83,22 +82,22 @@ export function useHeroIntroduction(contentsOpen: boolean) {
 
   useEffect(() => {
     const canOpen = () => {
-      if (contentsOpen || stateRef.current !== 'unseen') return false;
+      if (contentsOpen || stateRef.current !== 'unseen' || document.querySelector('dialog[open]')) return false;
       const hero = document.getElementById('hero');
-      if (!hero || hero.getBoundingClientRect().bottom <= 0 || (location.hash && location.hash !== '#hero')) {
+      if (!hero || hero.hidden || hero.getBoundingClientRect().bottom <= 0 || (location.hash && location.hash !== '#hero')) {
         finish();
         return false;
       }
       return hero.getBoundingClientRect().top < window.innerHeight;
     };
     const wheel = (event: WheelEvent) => {
-      if (event.ctrlKey || event.metaKey || event.altKey || event.shiftKey || event.deltaY <= 0 ||
+      if (!event.isTrusted || event.defaultPrevented || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey || event.deltaY <= 0 ||
         Math.abs(event.deltaX) > event.deltaY || !canOpen()) return;
       event.preventDefault();
       open();
     };
     const keydown = (event: KeyboardEvent) => {
-      if (event.ctrlKey || event.metaKey || event.altKey || event.shiftKey ||
+      if (!event.isTrusted || event.defaultPrevented || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey ||
         !['ArrowDown', 'PageDown', ' ', 'End'].includes(event.key)) return;
       if (event.target instanceof Element &&
         (event.target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])') ||
@@ -114,7 +113,7 @@ export function useHeroIntroduction(contentsOpen: boolean) {
     };
     const touchmove = (event: TouchEvent) => {
       const point = event.touches.length === 1 ? event.touches[0] : null;
-      if (!point || !touch) return;
+      if (!event.isTrusted || event.defaultPrevented || !point || !touch) return;
       const down = touch.y - point.clientY;
       // A pull-down gesture stays native even if the finger reverses direction.
       if (down < -2) touch.pulling = true;
@@ -153,5 +152,5 @@ export function useHeroIntroduction(contentsOpen: boolean) {
     if (stateRef.current === 'open') finish(true);
   };
 
-  return { state, dialogRef, ctaRef, finish, navigate, onClose };
+  return { state, dialogRef, finish, navigate, onClose };
 }
