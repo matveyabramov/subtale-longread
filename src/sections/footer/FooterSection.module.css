@@ -180,3 +180,26 @@
   font: inherit;
 }
 .privacyActions :is(button, a):focus-visible { outline: 2px solid var(--color-yellow); outline-offset: 3px; }
+
+/* Figma 208:12 / 208:39. Coordinates are local to the existing 771px board;
+   text and paper have separate measured rotations, as in the current artwork. */
+.strip { position: absolute; }
+.unsaidStrip { left: 142px; top: 23px; width: 344.35px; height: 114.783px; }
+.stripPaper { position: absolute; inset: 0; }
+.stripPaper img { position: absolute; inset: 0; width: 100%; height: 100%; max-inline-size: none; object-fit: cover; }
+.stripText { position: absolute; display: grid; place-items: center; margin: 0; color: #edd9c4; font: 500 29.528px var(--font-copy); line-height: normal; letter-spacing: -1.1811px; white-space: nowrap; }
+.unsaidStrip .stripText { left: 31.77px; top: 31.3px; width: 284.505px; height: 51.628px; }
+.unsaidStrip .stripText span { transform: rotate(2.77deg); }
+.betweenStrip { left: 1561px; top: 778px; width: 351.348px; height: 193.663px; }
+.betweenStrip .stripPaper { inset: auto; left: 8.674px; top: 41.3315px; width: 334px; height: 111px; transform: rotate(-15deg); }
+.betweenStrip .stripText { left: 49.63px; top: 45.47px; width: 251.54px; height: 99.487px; }
+.betweenStrip .stripText span { transform: rotate(-14.53deg); }
+@media (width < 1920px) {
+  .betweenStrip { left: 419.652px; top: 585px; }
+}
+@media (prefers-reduced-motion: no-preference) and (width >= 1920px) {
+  .collageBoard:has(> .collage[data-editorial-state='pending']) > .betweenStrip { opacity: 0; }
+  .collageBoard:has(> .collage[data-editorial-state='entering']) > .betweenStrip {
+    animation: footerEntrance var(--duration-ending) var(--ease-out) backwards;
+  }
+}

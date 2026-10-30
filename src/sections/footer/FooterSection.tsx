@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, type CSSProperties } from 'react';
 import { useEditorialEntrance } from '../../shared/useEditorialEntrance';
 import { imageAssets, vectorAssets } from '../../assets/generated';
-import { FooterCollage, FooterImage } from './FooterCollage';
+import { FooterCollage, FooterImage, FooterStrip } from './FooterCollage';
 import { copy } from './copy';
 import styles from './FooterSection.module.css';
 
@@ -49,6 +49,7 @@ export function FooterSection({ onOpenPrivacy }: { onOpenPrivacy: () => void }) 
             <div className={styles.collageBoard}>
               <FooterCollage />
               <FooterImage id="10:1146" />
+              <FooterStrip between />
             </div>
           </div>
           <div className={styles.banner} data-node-id="10:1147"><p className={styles.text} data-node-id="10:1148"><span>{copy['10:1148']}</span></p></div>
