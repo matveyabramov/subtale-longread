@@ -50,3 +50,16 @@
 .control { transition: color var(--duration-feedback) var(--ease-out); }
 
 .control:focus-visible { color: var(--color-yellow); }
+
+/* The plate sits outside the measured control box, preserving label/icon slots
+   and the existing hit area over photography and every section surface. */
+.trigger { isolation: isolate; }
+.trigger::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  z-index: -1;
+  background: var(--color-ink);
+  border: 1px solid var(--color-paper);
+  pointer-events: none;
+}

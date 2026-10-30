@@ -53,6 +53,7 @@ export function EmptinessSection() {
       <div className={styles.canvas} data-section-canvas data-node-id="10:838">
         <h2 id="emptiness-title" tabIndex={-1} className={styles.title} data-node-id="10:840">Мозг не любит</h2>
         <p className={styles.banner} data-node-id="10:841"><span data-node-id="10:842">Пустоту</span></p>
+        <p className={styles.scrollCue}>СКРОЛЛЬ ВНИЗ <span aria-hidden="true">↓</span></p>
         <p className={styles.copy} data-node-id="10:843">В области слепого пятна глаза нет светочувствительных клеток. Но обычно ты не видишь «дыру»: восприятие достраивает окружающую картину</p>
         <div className={styles.artFrame} data-node-id="10:844">
           <p className={styles.artLabel} data-node-id="10:845"><span>Слова знакомы</span></p>
