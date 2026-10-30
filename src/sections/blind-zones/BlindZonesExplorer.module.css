@@ -410,3 +410,13 @@
   from { opacity: 0; translate: 0 18px; }
   to { opacity: 1; translate: 0 0; }
 }
+
+/* Curator Fix 04: independent translate leaves crop/mask/Figma transforms
+   intact. Artwork never receives pointer events; the stable reveal button does. */
+.telephone { opacity: 0; pointer-events: none; }
+.telephone[data-open='true'] { opacity: 1; }
+@media (prefers-reduced-motion: no-preference) {
+  .ice { translate: 0 0; transition: translate 300ms var(--ease-in-out); }
+  .ice[data-open='true'] { translate: var(--ice-open-x) var(--ice-open-y); }
+  .telephone { transition: opacity 300ms var(--ease-in-out); }
+}

@@ -1,27 +1,33 @@
+import type { CSSProperties } from 'react';
 import { imageAssets, vectorAssets } from '../../assets/generated';
 import type { MeaningState } from './model';
 import { iceFragments, punLayers, punMatrices, snowflakes } from './explorerArtworkData';
 import { responsiveArtStyle } from './explorerResponsiveData';
 import styles from './BlindZonesExplorer.module.css';
 
+// Outward offsets are relative to each existing slot, so responsive fitting
+// and original crop/mask matrices remain the sole owners of its geometry.
+const iceSpread = [[-4, -8], [0, 16], [4, -8], [14, -3], [6, 3], [-12, 3], [-4, 8], [2, 8]] as const;
+
 export function IdiomArtwork({ meaning }: { meaning: MeaningState }) {
   return (
     <>
       {iceFragments.map((fragment, index) => {
         const [[sx, , tx], [, sy, ty]] = fragment.crop;
-        // A owns the fixed ice geometry in both states. B only adds the phone
-        // above the banner (5), below the seven foreground fragments (7–13).
+        // Preserve A/B paint order; independent translate composes the spread.
         const order = fragment.order[meaning] + (meaning === 'B' && index > 0 ? 1 : 0);
         return (
-          <div key={fragment.ids.A} data-node-id={fragment.ids[meaning]} data-art-layer="ice"
+          <div key={fragment.ids.A} data-node-id={fragment.ids[meaning]} data-art-layer="ice" data-open={meaning === 'B'}
             className={styles.ice} aria-hidden="true" style={{
               ...responsiveArtStyle(`idiomA-${index}`,
                 [fragment.x, fragment.y, fragment.width, fragment.height]),
               left: `var(--art-x, ${fragment.x}px)`, top: `var(--art-y, ${fragment.y}px)`,
               width: `var(--art-width, ${fragment.width}px)`, height: `var(--art-height, ${fragment.height}px)`,
               zIndex: order,
+              '--ice-open-x': `${(iceSpread[index]?.[0] ?? 0)}%`,
+              '--ice-open-y': `${(iceSpread[index]?.[1] ?? 0)}%`,
               maskImage: fragment.mask ? `url("${vectorAssets[fragment.mask]}")` : 'none',
-            }}>
+            } as CSSProperties}>
             <img src={imageAssets[fragment.asset]} alt="" style={{
               width: `var(--ice-image-width, ${fragment.width / sx}px)`, height: `var(--ice-image-height, ${fragment.height / sy}px)`,
               left: `var(--ice-image-left, ${-tx * fragment.width / sx}px)`, top: `var(--ice-image-top, ${-ty * fragment.height / sy}px)`,
@@ -31,12 +37,10 @@ export function IdiomArtwork({ meaning }: { meaning: MeaningState }) {
           </div>
         );
       })}
-      {meaning === 'B' && (
-        <div className={`${styles.bitmap} ${styles.telephone}`} data-node-id="10:1598" data-art-layer="telephone" aria-hidden="true"
+      <div className={`${styles.bitmap} ${styles.telephone}`} data-open={meaning === 'B'} data-node-id="10:1598" data-art-layer="telephone" aria-hidden="true"
           style={responsiveArtStyle('idiomB-1', [227, 228, 635, 851])}>
           <img src={imageAssets['idiom-telephone-cutout']} alt="" />
-        </div>
-      )}
+      </div>
     </>
   );
 }
