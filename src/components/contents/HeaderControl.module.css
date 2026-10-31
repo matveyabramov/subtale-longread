@@ -1,11 +1,14 @@
 /* Shared drawing geometry for the original Hero trigger and its close state. */
 .control {
+  --plate-inset: 8px;
+  --plate-border: 1px;
   position: fixed;
   top: max(20px, env(safe-area-inset-top, 0px));
   right: max(calc((100vw - 1920px) / 2 + 30px), env(safe-area-inset-right, 0px));
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 32px;
   align-items: center;
-  gap: 12px;
+  column-gap: 0;
   width: 171px;
   height: 27px;
   padding: 0;
@@ -15,9 +18,9 @@
   font: 600 20px/26.100000381469727px var(--font-copy);
   cursor: pointer;
 }
-.control > span:first-child { display: flex; align-items: center; justify-content: center; flex: 1; min-width: 0; height: 100%; white-space: nowrap; font-size: var(--font-size-link-control); }
+.control > span:first-child { display: flex; align-items: center; justify-content: center; grid-column: 1; grid-row: 1; min-width: 0; width: calc(100% + var(--plate-inset) - var(--plate-border)); justify-self: end; height: 100%; white-space: nowrap; font-size: var(--font-size-link-control); }
 .control::after { content: ''; position: absolute; inset: -9px 0; }
-.icon { position: relative; display: block; flex: none; width: 32px; height: 17px; }
+.icon { grid-column: 2; grid-row: 1; position: relative; display: block; flex: none; width: 32px; height: 17px; }
 .icon i { position: absolute; left: 0; top: 2px; width: 32px; height: 3px; background: currentColor; }
 .icon i:last-child { top: 12px; }
 .cross i { top: 7px; transform: rotate(45deg); }
@@ -36,7 +39,7 @@
   .control::after { inset: -10px 0; }
 }
 @media (width <= 600px) {
-  .control { right: max(15px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px)); top: calc(env(safe-area-inset-top, 0px) + 31px); width: clamp(140px, 38.974359vw, 152px); height: 20px; gap: 8px; font-size: clamp(16px, 4.615385vw, 18px); }
+  .control { right: max(15px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px)); top: calc(env(safe-area-inset-top, 0px) + 31px); width: clamp(140px, 38.974359vw, 152px); height: 20px; font-size: clamp(16px, 4.615385vw, 18px); }
   .control > span:first-child { font-size: inherit; line-height: inherit; }
   .control::after { inset-block: -12px; }
 }
@@ -45,15 +48,15 @@
 
 .control:focus-visible { color: var(--color-yellow); }
 
-/* The plate sits outside the measured control box, preserving label/icon slots
-   and the existing hit area over photography and every section surface. */
+/* Center the label between the plate’s inner left edge and the fixed icon
+   track. Include the existing outer inset minus its border in that area. */
 .control { isolation: isolate; }
 .control::before {
   content: '';
   position: absolute;
-  inset: -8px;
+  inset: calc(-1 * var(--plate-inset));
   z-index: -1;
   background: var(--color-ink);
-  border: 1px solid var(--color-paper);
+  border: var(--plate-border) solid var(--color-paper);
   pointer-events: none;
 }
