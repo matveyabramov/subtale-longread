@@ -2,6 +2,8 @@
 .control {
   --plate-inset: 8px;
   --plate-border: 1px;
+  --icon-width: 20px;
+  --icon-edge-padding: 2px;
   position: fixed;
   top: max(20px, env(safe-area-inset-top, 0px));
   right: max(calc((100vw - 1920px) / 2 + 30px), env(safe-area-inset-right, 0px));
@@ -17,11 +19,11 @@
 }
 .control > span:first-child { position: absolute; left: 50%; top: 0; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; width: max-content; height: 100%; white-space: nowrap; font-size: var(--font-size-link-control); }
 .control::after { content: ''; position: absolute; inset: -9px 0; }
-.icon { position: absolute; right: calc(var(--plate-inset) / -2); top: 50%; transform: translateY(-50%); display: block; width: 32px; height: 17px; }
-.icon i { position: absolute; left: 0; top: 2px; width: 100%; height: 3px; background: currentColor; }
-.icon i:last-child { top: 12px; }
-.cross i { top: 7px; transform: rotate(45deg); }
-.cross i:last-child { top: 7px; transform: rotate(-45deg); }
+.icon { position: absolute; right: calc(var(--icon-edge-padding) + var(--plate-border) - var(--plate-inset)); top: 50%; transform: translateY(-50%); display: block; width: var(--icon-width); height: calc(var(--icon-width) * 17 / 32); }
+.icon i { position: absolute; left: 0; top: 11.764706%; width: 100%; height: 17.647059%; background: currentColor; }
+.icon i:last-child { top: 70.588235%; }
+.cross i { top: 41.176471%; transform: rotate(45deg); }
+.cross i:last-child { top: 41.176471%; transform: rotate(-45deg); }
 .trigger { z-index: 50; }
 .trigger[data-experiment-hidden='true'] { visibility: hidden; pointer-events: none; }
 @media (hover: hover) and (pointer: fine) {
@@ -37,7 +39,7 @@
 }
 @media (width <= 600px) {
   .control { right: max(15px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px)); top: calc(env(safe-area-inset-top, 0px) + 31px); width: clamp(140px, 38.974359vw, 152px); height: 20px; font-size: clamp(16px, 4.359vw, 17px); }
-  .icon { width: 24px; }
+  .control { --icon-width: 14px; --icon-edge-padding: 1px; }
   .control > span:first-child { font-size: inherit; line-height: inherit; }
   .control::after { inset-block: -12px; }
 }
@@ -46,8 +48,8 @@
 
 .control:focus-visible { color: var(--color-yellow); }
 
-/* The symmetric plate shares the control’s center. Text and icon are
-   positioned independently, so changing the label never moves either axis. */
+/* Keep the plate and text on the same axis. The independent icon fits the
+   remaining space with a 16px minimum text gap and an inner edge inset. */
 .control { isolation: isolate; }
 .control::before {
   content: '';
