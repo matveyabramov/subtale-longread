@@ -78,7 +78,7 @@
   width: 1129px;
   height: 1020px;
   padding: 30px;
-  border: 0;
+  border: 10px solid var(--color-yellow);
   overflow: visible;
 }
 
@@ -139,7 +139,7 @@
     --gutter: clamp(20px, calc(2.083333vw - 10px), 30px);
     --heading-size: clamp(63px, calc(4.166667vw + 20px), 100px);
     --frame-left: calc(43.333333vw - 71px);
-    --frame-inset: 30px;
+    --frame-inset: 40px;
     /* The 1440 collage is 13px wider than its label slot in Figma. */
     --artwork-overhang: clamp(0px, calc(52px - 2.708333vw), 13px);
     --artwork-width: calc(100vw - var(--frame-left) - var(--gutter) - var(--frame-inset) * 2 + var(--artwork-overhang));
@@ -205,7 +205,7 @@
   .canvas {
     --gutter: clamp(15px, calc(1.322751vw + 9.84127px), 20px);
     --heading-size: clamp(34px, calc(6.084656vw + 16.269841px), 80px);
-    --frame-border: 0px;
+    --frame-border: clamp(6px, calc(0.529101vw + 3.936508px), 8px);
     --frame-padding: clamp(15px, calc(1.322751vw + 9.84127px), 20px);
     --frame-inset: calc(var(--frame-border) + var(--frame-padding));
     --artwork-width: calc(100vw - var(--gutter) * 2 - var(--frame-inset) * 2 - 4px);
