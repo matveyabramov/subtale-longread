@@ -16,15 +16,15 @@
 
 .text[data-node-id='10:2161'] { left: 0px; top: 0px; width: 57px; height: 24px; font: 500 20px/1.2 var(--font-copy); letter-spacing: -0.8px; color: rgb(238 238 231); text-transform: none; display: flex; flex-direction: column; justify-content: center; }
 
-.text[data-node-id='10:1155'] { left: 0px; top: 29px; width: 233px; height: 40px; font: 800 50px/0.8 var(--font-display); letter-spacing: 0.0px; color: rgb(255 255 255); text-transform: lowercase;  }
+.text[data-node-id='10:1155'] { left: 0px; top: 29px; width: 233px; height: 40px; font: 800 50px/0.8 var(--font-display); letter-spacing: 0.0px; color: rgb(255 255 255); text-transform: uppercase;  }
 
 .text[data-node-id='10:2163'] { left: 0px; top: 0px; width: 80px; height: 24px; font: 500 20px/1.2 var(--font-copy); letter-spacing: -0.8px; color: rgb(238 238 231); text-transform: none; display: flex; flex-direction: column; justify-content: center; }
 
-.text[data-node-id='10:1158'] { left: 0px; top: 29px; width: 224px; height: 40px; font: 800 50px/0.8 var(--font-display); letter-spacing: 0.0px; color: rgb(255 255 255); text-transform: lowercase;  }
+.text[data-node-id='10:1158'] { left: 0px; top: 29px; width: 224px; height: 40px; font: 800 50px/0.8 var(--font-display); letter-spacing: 0.0px; color: rgb(255 255 255); text-transform: uppercase;  }
 
 .text[data-node-id='10:2165'] { left: 0px; top: 0px; width: 68px; height: 24px; font: 500 20px/1.2 var(--font-copy); letter-spacing: -0.8px; color: rgb(238 238 231); text-transform: none; display: flex; flex-direction: column; justify-content: center; }
 
-.text[data-node-id='10:1161'] { left: 0px; top: 29px; width: 133px; height: 40px; font: 800 50px/0.8 var(--font-display); letter-spacing: 0.0px; color: rgb(255 255 255); text-transform: lowercase;  }
+.text[data-node-id='10:1161'] { left: 0px; top: 29px; width: 133px; height: 40px; font: 800 50px/0.8 var(--font-display); letter-spacing: 0.0px; color: rgb(255 255 255); text-transform: uppercase;  }
 .grain { mix-blend-mode: lighten; }
 .grain > img { width: 100%; height: 100%; opacity: 0.4; object-fit: fill; }
 .banner { position: absolute; left: 30px; top: 818px; width: 832px; height: 232px; background: var(--color-yellow); }

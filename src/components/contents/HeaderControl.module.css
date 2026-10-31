@@ -1,14 +1,11 @@
 /* Shared drawing geometry for the original Hero trigger and its close state. */
 .control {
-  --label-offset: 12px;
-  --close-tracking: 0px;
-  --close-bearing: 0.006em;
   position: fixed;
   top: max(20px, env(safe-area-inset-top, 0px));
   right: max(calc((100vw - 1920px) / 2 + 30px), env(safe-area-inset-right, 0px));
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
   width: 171px;
   height: 27px;
   padding: 0;
@@ -18,32 +15,29 @@
   font: 600 20px/26.100000381469727px var(--font-copy);
   cursor: pointer;
 }
-.control > span:first-child { display: flex; align-items: center; flex: none; width: 119px; height: 27px; white-space: nowrap; font-size: var(--font-size-link-control); transform: translateX(var(--label-offset)); }
+.control > span:first-child { display: flex; align-items: center; justify-content: center; flex: 1; min-width: 0; height: 100%; white-space: nowrap; font-size: var(--font-size-link-control); }
 .control::after { content: ''; position: absolute; inset: -9px 0; }
 .icon { position: relative; display: block; flex: none; width: 32px; height: 17px; }
-.icon i { position: absolute; left: 0; top: 4px; width: 32px; height: 3px; background: currentColor; }
-.icon i:last-child { top: 14px; }
-.cross i { top: 8px; transform: rotate(45deg); }
-.cross i:last-child { top: 8px; transform: rotate(-45deg); }
+.icon i { position: absolute; left: 0; top: 2px; width: 32px; height: 3px; background: currentColor; }
+.icon i:last-child { top: 12px; }
+.cross i { top: 7px; transform: rotate(45deg); }
+.cross i:last-child { top: 7px; transform: rotate(-45deg); }
 .trigger { z-index: 50; }
 .trigger[data-experiment-hidden='true'] { visibility: hidden; pointer-events: none; }
 @media (hover: hover) and (pointer: fine) {
   .control:hover { color: #fed128; }
 }
 .trigger[aria-expanded='true'] { opacity: 0; pointer-events: none; }
-.close { position: absolute; }
-/* Three fewer mono glyphs, their measured final ink bearings, and the 3.6256px
-   inset of a 32×3px line rotated 45°: match the visible gap, not the span box. */
-.close > span:first-child { transform: translateX(calc(var(--label-offset) + 3ch + var(--close-tracking) + var(--close-bearing) + 3.625631px)); }
+.close { position: fixed; }
 .control:focus-visible { outline: 2px solid currentColor; outline-offset: 8px; }
 @media (width < 1920px) {
-  .control { --close-tracking: -1.98px; --close-bearing: 0.008em; right: max(clamp(20px, calc(2.083333vw - 10px), 30px), env(safe-area-inset-right, 0px)); width: 178px; height: 24px; font: 500 22px/1.1 var(--font-copy); letter-spacing: -0.03em; }
-  .control > span:first-child { width: 126px; height: 24px; font-size: var(--font-size-link-control); line-height: 24.2px; }
+  .control { right: max(clamp(20px, calc(2.083333vw - 10px), 30px), env(safe-area-inset-right, 0px)); width: 178px; height: 24px; font: 500 22px/1.1 var(--font-copy); letter-spacing: -0.03em; }
+  .control > span:first-child { font-size: var(--font-size-link-control); line-height: 24.2px; }
   .control::after { inset: -10px 0; }
 }
 @media (width <= 600px) {
-  .control { --label-offset: 0px; --close-tracking: -0.09em; right: max(15px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px)); top: calc(env(safe-area-inset-top, 0px) + 31px); width: clamp(140px, 38.974359vw, 152px); height: 20px; gap: 16px; font-size: clamp(16px, 4.615385vw, 18px); }
-  .control > span:first-child { width: calc(100% - 48px); height: 20px; font-size: inherit; line-height: inherit; }
+  .control { right: max(15px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px)); top: calc(env(safe-area-inset-top, 0px) + 31px); width: clamp(140px, 38.974359vw, 152px); height: 20px; gap: 8px; font-size: clamp(16px, 4.615385vw, 18px); }
+  .control > span:first-child { font-size: inherit; line-height: inherit; }
   .control::after { inset-block: -12px; }
 }
 
@@ -53,8 +47,8 @@
 
 /* The plate sits outside the measured control box, preserving label/icon slots
    and the existing hit area over photography and every section surface. */
-.trigger { isolation: isolate; }
-.trigger::before {
+.control { isolation: isolate; }
+.control::before {
   content: '';
   position: absolute;
   inset: -8px;

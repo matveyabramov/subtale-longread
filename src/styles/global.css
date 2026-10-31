@@ -66,3 +66,14 @@ a {
 @media (prefers-reduced-motion: no-preference) {
   [data-editorial-state='pending'] { opacity: 0; }
 }
+
+/* Shared pixel surface for blue chapters; each owner supplies the asset URL. */
+.bluePixelTexture {
+  opacity: 0.4;
+  background-image: var(--blue-pixel-texture);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 354.9999899864197px 287.9345006942749px;
+  mix-blend-mode: normal;
+  pointer-events: none;
+}
