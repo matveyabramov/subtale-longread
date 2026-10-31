@@ -460,14 +460,16 @@
   .film {
     --film-width: clamp(260px, calc(8.91210556vw + 154.493713px), 325.60614px);
     width: var(--film-width);
-    left: min(calc(69.08772786vw + 123.515225px), calc(100% - var(--film-width) * 1.536 - var(--hero-gutter)));
-    top: min(762.8031px, calc(100% - var(--film-width) * 1.16 - var(--hero-gutter)));
+    left: calc(69.08772786vw + 123.515225px);
+    /* Let the existing canvas clip the decorative tail. The rotated top
+       corner stays below the right-hand star, even on short laptops. */
+    top: max(calc(100% - var(--film-width) * 0.5 - 20px), calc(712px + var(--film-width) * 0.5));
   }
   .star { top: min(var(--star-top), calc(100% - 140px)); }
 }
 @media (1100px < width < 1920px) {
   .canvas { --hero-gutter: max(clamp(20px, calc(2.083333vw - 10px), 30px), env(safe-area-inset-bottom, 0px)); }
-  .film { top: min(calc(24.872729vw + 285.246703px), calc(100% - var(--film-width) * 1.16 - var(--hero-gutter))); }
+  .film { top: max(calc(100% - var(--film-width) * 0.5 - 20px), calc(min(calc(20.000076vw + 277.9989px), calc(100% - 140px)) + 50px + var(--film-width) * 0.5)); }
   .star[data-node-id='10:474'] { top: min(calc(25.833333vw + 139px), calc(100% - 140px)); }
   .star[data-node-id='10:479'] { top: min(calc(23.75vw + 139px), calc(100% - 140px)); }
   .star[data-node-id='10:480'] { top: min(calc(20.625vw + 137px), calc(100% - 140px)); }
