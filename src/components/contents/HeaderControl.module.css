@@ -45,8 +45,6 @@
 .control { transition: color var(--duration-feedback) var(--ease-out); }
 
 .control:focus-visible { color: var(--color-yellow); }
-<<<<<<< Updated upstream
-=======
 
 /* The plate sits outside the measured control box, preserving label/icon slots
    and the existing hit area over photography and every section surface. */
@@ -60,4 +58,3 @@
   border: 1px solid rgb(255 255 255 / 60%);
   pointer-events: none;
 }
->>>>>>> Stashed changes
