@@ -78,13 +78,13 @@
   width: 1129px;
   height: 1020px;
   padding: 30px;
-  border: 10px solid var(--color-yellow);
+  border: 0;
   overflow: visible;
 }
 
 .artLabel {
   flex: none;
-  width: 1049px;
+  width: 100%;
   height: 56px;
   margin: 0;
   font: 800 70px/0.8 var(--font-display);
@@ -139,7 +139,7 @@
     --gutter: clamp(20px, calc(2.083333vw - 10px), 30px);
     --heading-size: clamp(63px, calc(4.166667vw + 20px), 100px);
     --frame-left: calc(43.333333vw - 71px);
-    --frame-inset: 40px;
+    --frame-inset: 30px;
     /* The 1440 collage is 13px wider than its label slot in Figma. */
     --artwork-overhang: clamp(0px, calc(52px - 2.708333vw), 13px);
     --artwork-width: calc(100vw - var(--frame-left) - var(--gutter) - var(--frame-inset) * 2 + var(--artwork-overhang));
@@ -205,7 +205,7 @@
   .canvas {
     --gutter: clamp(15px, calc(1.322751vw + 9.84127px), 20px);
     --heading-size: clamp(34px, calc(6.084656vw + 16.269841px), 80px);
-    --frame-border: clamp(6px, calc(0.529101vw + 3.936508px), 8px);
+    --frame-border: 0px;
     --frame-padding: clamp(15px, calc(1.322751vw + 9.84127px), 20px);
     --frame-inset: calc(var(--frame-border) + var(--frame-padding));
     --artwork-width: calc(100vw - var(--gutter) * 2 - var(--frame-inset) * 2 - 4px);
@@ -331,4 +331,25 @@
 @keyframes assemblyFade {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* A quiet reading cue occupies the free left column after Experiment. */
+.scrollCue {
+  position: absolute;
+  left: 30px;
+  top: 285px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  color: var(--color-paper);
+  font: 500 18px/1.2 var(--font-copy);
+  letter-spacing: -0.04em;
+}
+.scrollCue span { font-size: 30px; line-height: 1; }
+@media (1100px < width < 1920px) {
+  .scrollCue { left: var(--gutter); top: calc(var(--gutter) + var(--heading-size) * 1.6 + 100px); }
+}
+@media (width <= 1100px) {
+  .scrollCue { position: relative; inset: auto; flex: none; margin-top: 24px; font-size: 16px; }
 }

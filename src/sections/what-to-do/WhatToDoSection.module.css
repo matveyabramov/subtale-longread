@@ -37,9 +37,7 @@
 .text[data-node-id='10:1372'] { left: 67px; top: 0px; width: 663px; height: 84px; font: 500 35px/1.2 var(--font-copy); letter-spacing: -1.4px; color: rgb(11 13 15); text-transform: none; display: flex; flex-direction: column; justify-content: center; }
 
 .text[data-node-id='10:1374'] { left: 93px; top: 50px; width: 145px; height: 64px; font: 800 80px/0.8 var(--font-display); letter-spacing: 0.0px; color: rgb(11 13 15); text-transform: uppercase;  }
-.section { background: var(--color-ink); }
-.grain { mix-blend-mode: lighten; }
-.grain > img { width: 100%; height: 100%; opacity: 0.2; object-fit: fill; }
+.section { background: var(--color-blue); }
 .banner { position: absolute; left: 20px; top: 126px; width: 986px; height: 136px; background: var(--color-yellow); }
 .panel { position: absolute; width: 915px; height: 545px; overflow: hidden; background: var(--color-ink); }
 .panel::after { content: ''; position: absolute; inset: 0; pointer-events: none; border: 1px solid #7f7f7f; }
@@ -67,7 +65,7 @@
 
 .text[data-node-id='10:1371'] > span { position: relative; top: 1px; }
 
-.canvas { background: var(--color-ink); }
+.canvas { background: var(--color-blue); }
 
 .sectionHeading, .panels { display: contents; }
 
@@ -83,8 +81,7 @@
     --pixel-size: 30px;
     width: 100%; height: auto; min-height: 56.25vw; padding: var(--gutter);
   }
-  .texture { inset: 0; width: 100%; height: 100%; z-index: -1; mix-blend-mode: normal; opacity: 0.2; background: var(--responsive-mosaic) 0 0 / 354.99999px 287.9345px repeat; }
-  .texture > img { display: none; }
+  .texture { inset: 0; width: 100%; height: 100%; z-index: -1; }
   .sectionHeading {
     display: flex; flex-direction: column; align-items: flex-start;
     max-width: calc(62.5% - 20px); gap: clamp(10px, calc(0.416667vw + 6px), 12px);
@@ -142,7 +139,7 @@
 }
 
 
-/* Black breathing room belongs to this section, around both complete panels. */
+/* Breathing room belongs to this section, around both complete panels. */
 .section {
   padding-top: calc(var(--dark-section-inset, 120px) - 20px);
   padding-bottom: var(--dark-section-inset, 120px);
@@ -159,13 +156,6 @@
 @media (width <= 600px) {
   .section { padding-top: calc(100px - var(--reading-inset, 15px)); }
 }
-
-.texture {
-  display: block; opacity: 0.2; mix-blend-mode: normal;
-  background: var(--responsive-mosaic) 0 0 / 354.99999px 287.9345px repeat;
-}
-.texture > img { display: none; }
-
 @media (prefers-reduced-motion: no-preference) {
   .panel[data-editorial-state='entering'] {
     animation: adviceEntrance var(--duration-editorial) var(--ease-out) backwards;

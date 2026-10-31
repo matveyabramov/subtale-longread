@@ -39,44 +39,10 @@
   letter-spacing: -1px;
 }
 
-.primaryCta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--color-ink);
-  background: var(--color-yellow);
-  text-decoration: none;
-  font-family: var(--font-display);
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase;
-  padding: 5px 5px 5px 20px;
-}
 
-.primaryCta:focus-visible { outline-color: #fff; outline-offset: 4px; }
 
-.primaryCta {
-  position: relative;
-  margin-top: 30px;
-  width: 680px;
-  height: 86px;
-}
 
-.primaryArrowBox {
-  position: relative;
-  width: 75px;
-  height: 76px;
-  background: var(--color-ink);
-  overflow: hidden;
-}
 
-.primaryArrowBox img {
-  position: absolute;
-  left: 22.46435546875px;
-  top: 23.4644775390625px;
-  max-inline-size: none;
-}
 
 .texture {
   position: absolute;
@@ -215,10 +181,6 @@
 }
 
 /* Figma text boxes are rounded containers, not intrinsic browser glyph widths. */
-.primaryCta > span:first-child {
-  display: block;
-  width: 311px;
-}
 
 .headlineBanner > span {
   display: block;
@@ -261,27 +223,9 @@
     letter-spacing: -0.04em;
   }
 
-  .primaryCta {
-    margin-top: clamp(20px, calc(2.083333vw - 10px), 30px);
-    width: 100%;
-    height: clamp(80px, calc(1.25vw + 62px), 86px);
-    font-size: clamp(30px, calc(1.041667vw + 15px), 35px);
-    gap: 16px;
-  }
 
-  .primaryCta > span:first-child { width: auto; }
 
-  .primaryArrowBox {
-    flex: none;
-    width: auto;
-    height: 100%;
-    aspect-ratio: 1;
-  }
 
-  .primaryArrowBox img {
-    left: calc(50% - 14.53564453125px);
-    top: calc(50% - 14.5355224609375px);
-  }
 
   .brand { left: var(--hero-gutter); }
   .brandMark { top: -0.31618499755859375px; }
@@ -401,7 +345,6 @@
 
   /* Reserve Figma's trailing tracking when wrapping the tablet copy. */
   .introCopy { font-size: 20px; white-space: normal; padding-right: 0.04em; }
-  .primaryCta { margin-top: 20px; height: 80px; font-size: 28px; }
   .brand { left: 20px; }
 
 }
@@ -451,9 +394,6 @@
   }
 
   .introCopy { width: min(100%, 316px); font-size: 16px; }
-  .primaryCta { margin-top: clamp(10px, 1.8dvh, 18px); height: auto; min-height: clamp(54px, 9dvh, 70px); font-size: 25px; gap: 12px; }
-  .primaryArrowBox { width: clamp(44px, 8dvh, 60px); height: clamp(44px, 8dvh, 60px); }
-  .primaryArrowBox img { transform: scale(0.86); transform-origin: center; }
 
   .brand { left: var(--hero-gutter); top: calc(env(safe-area-inset-top, 0px) + 12px); width: 140px; height: 58px; z-index: 3; }
   .brandMark { top: -0.90166092px; transform: scale(0.875); transform-origin: 0 0; }
@@ -465,25 +405,10 @@
 
 /* An outer border layer preserves the visible inner gap without changing
    the approved padding, content box, arrow slot or outer dimensions. */
-.primaryCta { position: relative; transition: background-color var(--duration-feedback) var(--ease-out), border-color var(--duration-feedback) var(--ease-out), color var(--duration-feedback) var(--ease-out); }
-.primaryCta::before {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  border: 2px solid transparent;
-  pointer-events: none;
-  transition: border-color var(--duration-feedback) var(--ease-out);
-}
 @media (hover: hover) and (pointer: fine) {
-  .primaryCta:hover { background-color: transparent; color: var(--color-yellow); }
-  .primaryCta:hover::before { border-color: var(--color-yellow); }
 }
 
-.primaryArrowBox { transition: background-color var(--duration-feedback) var(--ease-out); }
-.primaryArrowBox img { transition: filter var(--duration-feedback) var(--ease-out); }
 @media (hover: hover) and (pointer: fine) {
-  .primaryCta:hover .primaryArrowBox { background-color: var(--color-yellow); }
-  .primaryCta:hover .primaryArrowBox img { filter: brightness(0); }
 }
 
 /* Finite first-load sequence. Base styles always show the approved endpoint.
@@ -501,10 +426,6 @@
   .hero[data-editorial-state='entering'] .introCopy {
     animation: heroFade 360ms var(--ease-out) 180ms backwards;
   }
-  .hero[data-editorial-state='entering'] .primaryCta {
-    animation: heroFade 340ms var(--ease-out) 240ms backwards;
-  }
-  .hero[data-editorial-state='entering'] .primaryCta:is(:focus-within, :active) { animation: none; }
 }
 
 @keyframes headlineEntrance {
@@ -522,4 +443,38 @@
 @keyframes heroFade {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* The header is inside this canvas. Keep its real top inset and a usable
+   collage on short desktops; exceptionally low windows scroll without clipping. */
+@media (width > 1100px) {
+  .hero { height: auto; min-height: 100vh; min-height: 100dvh; overflow: clip; }
+  .canvas {
+    --hero-gutter: max(30px, env(safe-area-inset-bottom, 0px));
+    height: max(700px, 100vh);
+    height: max(700px, 100dvh);
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .brand { top: max(20px, env(safe-area-inset-top, 0px)); }
+  .introduction { top: auto; bottom: var(--hero-gutter); }
+  .film {
+    --film-width: clamp(260px, calc(8.91210556vw + 154.493713px), 325.60614px);
+    width: var(--film-width);
+    left: calc(69.08772786vw + 123.515225px);
+    /* Let the existing canvas clip the decorative tail. The rotated top
+       corner stays below the right-hand star, even on short laptops. */
+    top: max(calc(100% - var(--film-width) * 0.5 - 20px), calc(712px + var(--film-width) * 0.5));
+  }
+  .star { top: min(var(--star-top), calc(100% - 140px)); }
+}
+@media (1100px < width < 1920px) {
+  .canvas { --hero-gutter: max(clamp(20px, calc(2.083333vw - 10px), 30px), env(safe-area-inset-bottom, 0px)); }
+  .film { top: max(calc(100% - var(--film-width) * 0.5 - 20px), calc(min(calc(20.000076vw + 277.9989px), calc(100% - 140px)) + 50px + var(--film-width) * 0.5)); }
+  .star[data-node-id='10:474'] { top: min(calc(25.833333vw + 139px), calc(100% - 140px)); }
+  .star[data-node-id='10:479'] { top: min(calc(23.75vw + 139px), calc(100% - 140px)); }
+  .star[data-node-id='10:480'] { top: min(calc(20.625vw + 137px), calc(100% - 140px)); }
+  .star[data-node-id='10:481'] { top: min(calc(18.333333vw + 138px), calc(100% - 140px)); }
+  .star[data-node-id='10:478'] { top: min(calc(25.625076vw + 305.9989px), calc(100% - 140px)); }
+  .star[data-node-id='10:482'] { top: min(calc(15.833409vw + 342.9989px), calc(100% - 140px)); }
+  .star[data-node-id='10:483'] { top: min(calc(20.000076vw + 277.9989px), calc(100% - 140px)); }
 }

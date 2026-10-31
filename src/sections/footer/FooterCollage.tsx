@@ -27,6 +27,25 @@ export function FooterImage({ id }: { id: ImageLayer['id'] }) {
   );
 }
 
+// Current Figma groups 208:12 / 208:39: paper fills plus IBM Plex Mono text.
+const paperAsset = (name: string) => `${import.meta.env.BASE_URL}assets/images/footer/${name}.webp`;
+
+export function FooterStrip({ between = false }: { between?: boolean }) {
+  return (
+    <div className={`${styles.strip} ${between ? styles.betweenStrip : styles.unsaidStrip}`} data-node-id={between ? '208:39' : '208:12'}>
+      <div className={styles.stripPaper} data-node-id={between ? '208:32' : '208:13'}>
+        {between ? <img src={paperAsset('between-paper')} alt="" /> : <>
+          <img src={paperAsset('unsaid-paper-base')} alt="" />
+          <img src={paperAsset('unsaid-paper-top')} alt="" />
+        </>}
+      </div>
+      <p className={styles.stripText} data-node-id={between ? '208:33' : '208:14'}>
+        <span>{between ? '[ между строк ]' : '[ не сказано... ]'}</span>
+      </p>
+    </div>
+  );
+}
+
 export function FooterCollage() {
   return (
     <div className={styles.collage} data-node-id="10:1019" data-editorial-reveal="scroll" aria-hidden="true">
@@ -37,9 +56,8 @@ export function FooterCollage() {
       <div className={styles.upperClip} data-node-id="10:1103">
         <FooterPixels parent="10:1103" />
         <FooterImage id="10:1142" />
-        <FooterImage id="10:1143" />
+        <FooterStrip />
       </div>
-      <FooterImage id="10:1144" />
       <FooterImage id="10:1145" />
     </div>
   );
