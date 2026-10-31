@@ -1,44 +1,83 @@
-# SUBTALE
+# SUBTALE / Сабтейл
 
-Interactive editorial longread about hidden meanings in English-language film and series dialogue. This is the new implementation; the approved Figma Desktop 1920 is the visual source of truth.
+**SUBTALE** — интерактивный редакционный лонгрид о скрытых смыслах английского языка в кино и сериалах. Через физиологический эксперимент со слепым пятном проект показывает, как можно понимать все слова реплики, но не замечать идиому, каламбур или культурную отсылку.
 
-## Status
+## Ссылка на сайт
 
-Stage 0.3 **Approved**, Stage 1A **Completed**, Stages 1B.1–1B.6 **Completed**: all ten narrative sections have static Desktop 1920 compositions, including three Experiment screens, eight Explorer endpoints, Movies (1920×1899) and Footer (1920×1334). Stage 1C integration QA is pending a separate request. Movies retains five text scenes without mounted players or poster substitution. Explorer is one section, showing Idiom A by default; category/A–B interaction remains Stage 3 work. Matching local IBM Plex Mono Latin/Cyrillic subsets are connected (docs/FONT_ASSETS.md). Comparison screenshots, checks and explicit visual limits: [Hero QA](docs/HERO_DESKTOP_QA.md), [Experiment QA](docs/EXPERIMENT_DESKTOP_QA.md), [Emptiness + Elephant QA](docs/EMPTINESS_ELEPHANT_DESKTOP_QA.md), [Blind Zones QA](docs/BLIND_ZONES_DESKTOP_QA.md), [Movies QA](docs/MOVIES_DESKTOP_QA.md) and [Final sections QA](docs/FINAL_SECTIONS_DESKTOP_QA.md); the latter explicitly records Footer filter/font exceptions.
+[GitHub Pages — SUBTALE](https://matveyabramov.github.io/subtale-longread/)
 
-## Run locally
+## Скриншот
 
-Node.js `^22.12.0 || >=24.0.0`, npm; development was checked with Node 26.10.0 / npm 11.19.1. Versions are locked in `package-lock.json`.
+Скриншот главного экрана будет добавлен после итоговой визуальной проверки.
 
-```sh
+## Автор
+
+**Матвей Абрамов**, БП25Д312.  
+Куратор — **Сергей Гриднев**.
+
+## Что я научился делать
+
+- Верстать сложные композиции по макету Figma и адаптировать их под разные экраны.
+- Работать с React, TypeScript и CSS Modules, а также настраивать интерактивные состояния.
+- Реализовывать и проверять анимации, переходы и поведение элементов при прокрутке.
+- Отлаживать навигацию, всплывающие окна и взаимодействия с пользователем.
+- Проверять сайт в браузере, находить ошибки в адаптивах и корректировать результат.
+
+## Использование ИИ
+
+ИИ использовался **как вспомогательный инструмент** при работе над визуальными материалами и кодом. Концепция, структура, художественные решения, проверка и доработка результата выполнялись при моём участии. Часть вёрстки и правок я делал самостоятельно.
+
+### Инструменты
+
+| Инструмент | Для чего использовался | Уровень помощи |
+| --- | --- | --- |
+| ChatGPT / генерация изображений | Поиск визуальных решений и генерация отдельных изображений и элементов коллажей | 1* |
+| ChatGPT | Консультации по вёрстке, CSS, адаптивам и исправлению локальных ошибок | 2 |
+| OpenAI Codex | Реализация и доработка отдельных компонентов, интерактивов и анимаций по моим заданиям | 3 |
+
+*Для визуальных материалов уровень 1 указан условно: шкала из методички описывает помощь ИИ с **кодом**, а генерация изображений — отдельный тип использования. Для кода уровень 2 означает локальные подсказки и исправления, уровень 3 — генерацию заметных фрагментов.*
+
+### Записи о запросах
+
+#### Запись №1 — визуальные материалы
+
+- **Что я хотел сделать:** подготовить изображения и элементы коллажей для лонгрида в согласованном фирменном стиле.
+- **Что я спрашивал:** просил сгенерировать или доработать отдельные визуальные элементы по описанию и референсам.
+- **Что ответил ИИ:** предложил варианты изображений и визуальных решений.
+- **Что я изменил сам:** отбирал подходящие варианты, определял композиции и размещал материалы в макете.
+- **Как проверял:** сравнивал изображения с дизайн-макетом и оценивал их в готовых секциях.
+
+#### Запись №2 — вёрстка и адаптивы
+
+- **Что я хотел сделать:** перенести сложные композиции из Figma в работающий адаптивный сайт.
+- **Что я спрашивал:** как реализовать отдельные CSS-эффекты, сохранить позиционирование коллажей и устранить ошибки на разных экранах.
+- **Что ответил ИИ:** предлагал способы реализации и изменения в CSS/React-коде.
+- **Что я изменил сам:** выполнял часть работы над вёрсткой, уточнял требования, проверял результат и возвращал на доработку неудачные решения.
+- **Как проверял:** открывал сайт в браузере, сравнивал его с Figma и тестировал разные ширины экрана.
+
+#### Запись №3 — интерактивы и исправление ошибок
+
+- **Что я хотел сделать:** реализовать и доработать эксперимент со слепым пятном, всплывающие окна, оглавление и художественные анимации.
+- **Что я спрашивал:** давал ChatGPT и Codex конкретные задания на реализацию и исправление поведения компонентов.
+- **Что ответил ИИ:** предлагал решения и в отдельных случаях создавал существенные фрагменты кода.
+- **Что я изменил сам:** определял пользовательские сценарии, тестировал взаимодействия, находил визуальные и UX-ошибки и корректировал задания.
+- **Как проверял:** проходил интерактивы вручную, проверял навигацию и адаптивы, запускал сборку проекта.
+
+### Выводы
+
+ИИ помог ускорить работу с визуальными материалами и отдельными техническими задачами. При этом предложенный код не всегда давал правильный визуальный результат: некоторые изменения приходилось пересматривать после проверки в браузере. Я убедился, что успешная сборка ещё не означает соответствия макету. Самостоятельная проверка, понимание структуры проекта и точная постановка задачи остаются необходимыми.
+
+## Запуск локально
+
+Для разработки используются Vite, React, TypeScript и CSS Modules.
+
+```bash
 npm ci
 npm run dev
 ```
 
-Vite listens on localhost. To verify or preview a production build:
+Проверка сборки:
 
-```sh
-npm run typecheck
+```bash
 npm run build
-npm run preview
-npm run assets:check
 ```
-
-`npm run build` refreshes the small runtime URL catalogue, typechecks and builds. `npm run assets:check` verifies the catalogue and runs the existing asset checker. No image optimization runs as part of these commands.
-
-For the eight isolated Explorer production fixtures, use `npm run build:explorer-qa` and `npm run preview -- --outDir dist-explorer-qa --port 4174`; visit `/qa/idiom-A.html` or the other endpoint paths listed in [Blind Zones QA](docs/BLIND_ZONES_DESKTOP_QA.md). This explicit build has a separate ignored output directory. Normal production has no fixture entry or query-based state selection.
-
-## Structure
-
-- `src/app/`: ordered longread shell; the former technical-scaffold CSS remains unused.
-- `src/sections/`: ten section components; Experiment contains three independently anchored screens in normal flow. Explorer stays one section.
-- `src/sections/{experiment,blind-zones,movies}/model.ts`: identifiers, frame/media mappings and future state types; no reducers or playback logic yet.
-- `qa/` and `vite.explorer-qa.config.ts`: isolated static Explorer fixtures; not imported by the normal application.
-- `src/shared/`: reading-anchor types and a reduced-motion subscription.
-- `src/styles/`: local font faces, verified tokens, reset and base styles.
-- `src/assets/generated.ts`: public delivery URLs, generated from the asset registries. No runtime source-archive imports.
-- `scripts/generate-runtime-assets.mjs`: validates current optimized paths and public SVG/video paths, then generates the catalogue.
-
-Use named assets, for example `imageAssets['hero-film-cutout']`, `imageAssetsByHash[hash]`, `posterAssets['airplane-surely']`, `videoAssets['airplane-surely']` or `vectorAssets['hero-cta-arrow']`. Import from `src/assets/generated.ts`; URLs respect Vite's base path. Catalogue entries do not preload media or activate hidden fills.
-
-Scope, evidence and verification: [FOUNDATION.md](docs/FOUNDATION.md), [DESIGN_TOKENS.md](docs/DESIGN_TOKENS.md), [ROADMAP.md](docs/ROADMAP.md). Approved behavior: [INTERACTION_SPEC.md](docs/INTERACTION_SPEC.md), [MOTION_SPEC.md](docs/MOTION_SPEC.md).
