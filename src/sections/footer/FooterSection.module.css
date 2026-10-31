@@ -73,7 +73,7 @@
 .credits > .credit {
   --credit-left: auto; --credit-width: auto;
   position: relative; inset: auto; height: auto;
-  display: flex; flex-direction: column; gap: 5px;
+  display: flex; flex-direction: column; gap: 10px;
 }
 .credit > .text { position: relative; inset: auto; width: auto; height: auto; }
 
@@ -106,7 +106,7 @@
   .schoolLogo { display: block; grid-area: school; position: relative; width: var(--school-width); height: calc(var(--school-width) * 80 / 201); }
   .schoolLogo > .imageLayer { --image-transform: scale(var(--footer-artwork-scale, 1)); }
   .information > .credits { grid-area: credits; position: relative; inset: auto; display: flex; flex-wrap: wrap; gap: 60px; width: 100%; height: auto; }
-  .credit { --credit-left: auto; --credit-width: auto; position: relative; inset: auto; height: auto; display: flex; flex-direction: column; gap: 5px; }
+  .credit { --credit-left: auto; --credit-width: auto; position: relative; inset: auto; height: auto; display: flex; flex-direction: column; gap: 10px; }
   .credit > .text { position: relative; inset: auto; width: auto; height: auto; }
   .credit > .text:nth-child(2) { font-size: var(--credit-name-size); }
 }

@@ -70,7 +70,7 @@
   .brandName { left: 49.25609px; top: 12.8246px; }
   .brandLatin { font-size: 12.18214px; }
   .brandCyrillic { margin-top: 6.42969px; font-size: 36.42867px; }
-  .label { font-size: 10px; }
+  .label { display: none; }
   .navigation { padding: 16px 4px; }
   .list a { grid-template-columns: 24px minmax(0, 1fr) 6px; gap: 10px; min-height: 56px; padding-block: 8px; }
   .title { font-size: clamp(24px, calc(11vw - 11px), 36px); line-height: 1; }
